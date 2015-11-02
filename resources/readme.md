@@ -4,11 +4,13 @@
 
 > Globally, we have 4 Unit Projects in WDI, each building on top of skills learned previously to scaffold students' learning over the entire course.
 
-Our projects each have an objective, deliverables, and recommendations, and tie in to the overall competencies we focus on in each unit. Dive into the detailed project spec file to read more about each project and [read about our curriculum](https://github.com/GA-WDI/curriculum)
+Our projects each have an objective, deliverables, and recommendations, and tie in to the overall competencies we focus on in each unit. Dive into the detailed project spec file to read more about each project and [read about our curriculum](#)
 
-See the [feedback guidelines](project-feedback.md) to read more about how we provide feedback to students.
+See the [feedback guidelines](#) to read more about how we provide feedback to students.
 
+## UNDER CONSTRUCTION
 
+<!--
 ### **Project 1**
 
 Students start the course focusing on the basics – HTML, CSS, and JavaScript. This is how building for the web started, and it’s an excuse to make sure they’ve got a solid grasp on important fundamentals. To wrap up Unit 1, we build a game, challenging students’ ability to create a responsive layout using HTML and CSS, and to write complex and interesting jQuery to implement game logic. We'll give them at least 3 game specs to choose from.
@@ -33,7 +35,7 @@ Most of the materials in this folder are referenced in our baseline course plan 
 Tips for browsing the links below:
 
 - Resource links with a "+" are suggested topics for that time block and do not have an existing baseline resource. We'd love for you to contribute a resource with a pull request.
-- Resource links with a "#" are time blocks dedicated for outcomes lessons. Note: As of now, many outcomes lessons are scheduled for project weeks, according to the [Baseline 2.0 Trello](https://trello.com/b/TuQiadjV/wdi-2-0-baseline) and are not included in this readme. 
+- Resource links with a "#" are time blocks dedicated for outcomes lessons. Note: As of now, many outcomes lessons are scheduled for project weeks, according to the [Baseline 2.0 Trello](https://trello.com/b/TuQiadjV/wdi-2-0-baseline) and are not included in this readme.
 
 ---
 
@@ -465,4 +467,4 @@ The final project expects students to practice everything we've taught them over
 
   - **Goal**: Build a full-stack application
   - **Project Time**: 4 days
-  - **[Detailed Spec File](../project-04.md)**
+  - **[Detailed Spec File](../project-04.md)** -->

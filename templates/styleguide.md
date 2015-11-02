@@ -116,7 +116,7 @@ Each lesson resource should contain the following files: readme.md and slides.pd
 ```
 
 
-Some lessons will have time dedicated to assigning projects.  For these lessons, simply add a folder with the necessary componenets: 
+Some lessons will have time dedicated to assigning projects.  For these lessons, simply add a folder with the necessary componenets:
 
 ```
 

@@ -12,7 +12,9 @@
 
 ## Instructor Process
 
-#### 1. Fill Out a Project Evaluation
+## UNDER CONSTRUCTION
+
+<!-- #### 1. Fill Out a Project Evaluation
 
 **Each instructor should provide feedback for a subset of their students**, so we can split up the workload between instructors. Work with your producer & city leads to figure out who's helping which students.
 
@@ -45,4 +47,4 @@ Aside from the rubrics, send students an email to talk through the evaluation, a
   - Share growth areas around technical skills and ways to remediate difficulties the student encountered
   - Help the student prioritize and identify which growth area is most important to focus on before the next project. **Set 1 or 2 specific goals for the next project.** If you’re reviewing later projects, you may want to ask them how they did against the goals they set previously!
 
-**Be sure to report a summary of your evaluations back to your team and producer.** Everyone should be able to have a good idea of how the whole class is doing if we split it up and share our findings!
+**Be sure to report a summary of your evaluations back to your team and producer.** Everyone should be able to have a good idea of how the whole class is doing if we split it up and share our findings! -->

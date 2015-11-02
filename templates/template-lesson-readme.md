@@ -32,12 +32,19 @@ creator:
 - Explain how to do something
 - Do or build something
 
-### Preparation
+### Student Preparation
 *Before this lesson, students should already be able to:*
 
 - Describe some concept
 - Explain how to do something
 - Do or build something
+
+### Instructor Preparation
+*Before this lesson, instructors will have to:*
+
+- Host this dataset
+- Clean this dataset
+- Read these instructions
 
 ## Section Title, clever (or not) Intro (20 mins)
 
@@ -69,6 +76,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 #### Some non-section heading that helps break up the content
 Natus officia maiores dolores libero quam nobis!
 
+> Assess: Ask some kind of question
+
 ## Demo of Something (15 mins)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
@@ -89,6 +98,8 @@ def another_lorem
   return this.to_json
 end
 ```
+
+> Assess: Have students write some sort of method
 
 ## Title of Some Thingy - Codealong (15 mins)
 
@@ -111,13 +122,18 @@ def another_lorem
 end
 ```
 
+> Assess: Make sure students are able to reach some sort of deliverable
+
 ## Independent Practice (20 minutes)
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
 
+> Assess: Make sure students are able to reach some sort of deliverable
+
 ## Conclusion (5 mins)
+
 - Ask some questions
 - See if anyone learned what they were supposed to
 - See if you did a good job by teaching them stuff

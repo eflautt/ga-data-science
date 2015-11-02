@@ -7,7 +7,7 @@
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 > Delete this section ^
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Building Your First Full-stack Application
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
 
 #### Overview
 
@@ -19,7 +19,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ---
 
-#### Technical Requirements
+#### Requirements
 
 Your work must:
 
@@ -41,7 +41,7 @@ Your work must:
 #### Necessary Deliverables
 
 - Something about the format of thing one
-- Descrisption the format of thing two
+- Description of the format of thing two
 - Details about the style of thing three
 
 ---
@@ -58,18 +58,20 @@ Here's a few sentences explaining any started code that's included in the `start
 
 ---
 
+> The section below is optional
+
 #### Potential Project Ideas
 
 ##### Fake Project Idea One
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
 
-##### Bookmarket
+##### Fake Project Idea Two
 
 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
 
 
-##### Photo sharing app
+##### Fake Project Idea Two
 
 Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
 
@@ -91,21 +93,13 @@ Here's a few sentences & a screenshot of what we expect you to make or do.
 #### Project Feedback + Evaluation
 
 
-* __Total__: Your instructors will give you a total score on your project between:
+Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
     **0** | _Incomplete._
     **1** | _Does not meet expectations._
-    **2** | _Meets expectactions, good job!_
+    **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
  This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
-
-
-
-
-
-
-
-

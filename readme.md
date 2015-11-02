@@ -6,9 +6,12 @@ We are building a global community of lifelong learners who are excited about de
 ### DAT Curriculum Resources
 
 <!-- MarkdownTOC -->
-
-- [resources](resources)
+- [Data Science Refresh Curriculum Proposal](https://docs.google.com/a/generalassemb.ly/presentation/d/1M3yH6c7n5ilEXTQSyhFg4L-O8sNZQ0Sm0W24hlU1Zzg/edit?usp=sharing)
+- [Drafted Projects 1-4 Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1R9p5K0rr_yIyMxzijhRI-1kjdLtxRWOF5en2ctcVzas/edit?usp=sharing)
+- [Drafted Final Project Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1kYTSL5ly_NEaP40uFNeVEGYpo93z1HUMRWpkJq53pTo/edit?usp=sharing)
+- [Resources](resources)
 - [Templates](templates)
+
 
 <!-- /MarkdownTOC -->
 
@@ -25,33 +28,34 @@ Please check out our [contributing guidelines](contributing.md) for more details
 
 ![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")
 
-MORE TO BE ADDED...
-<!-- 
+## UNDER CONSTRUCTION
+
+<!--
 ##Front-End Web Development v2.1
 
-Welcome to the FEWD Curriculum v2.1! To see what's new in v2.1, see [this changelog](changelog.md). 
+Welcome to the FEWD Curriculum v2.1! To see what's new in v2.1, see [this changelog](changelog.md).
 
 This repository contains all the materials GA supplies its Front-End Web Development instructors. Bear in mind that __many of the files in this repo are meant to be instructor-facing only__. See [the corresponding FEWD repo template](https://github.com/ga-students/FEWD-Student-Facing-Repo-Template), located in the ga-students GitHub org, for instructions on how to set up a student-facing repository for your class.  
 
-General Assembly's Front-End Web Development (FEWD) course is made up of 20 lessons that are 3 hours each. This course is split into 3 week units. 
+General Assembly's Front-End Web Development (FEWD) course is made up of 20 lessons that are 3 hours each. This course is split into 3 week units.
 
 *	Unit 1: HTML/CSS Basics
 *	Unit 2: Adding Interactivity
-*	Unit 3: Building In Concert 
+*	Unit 3: Building In Concert
 
 For a schedule of all lessons and notes on the materials provided for each lesson, please see [the sample schedule](schedule.md).
 
 ###Pre-Course Responsibilities
- 
-We __highly recommend__ you begin preparing your lessons before the course starts. You should start prepping to teach the materials 4 - 6 weeks prior to course launch. A good benchmark is to prepare the first 5 - 6 lessons before the course begins. 
 
-During these preparation weeks you should: 
+We __highly recommend__ you begin preparing your lessons before the course starts. You should start prepping to teach the materials 4 - 6 weeks prior to course launch. A good benchmark is to prepare the first 5 - 6 lessons before the course begins.
+
+During these preparation weeks you should:
 
 *	Update the slide decks for each lesson to correspond with what you plan to teach.
 
 *	Review the sample and solution code for each lesson and assignment and make sure you agree with the way it was coded. If not, you can always make tweaks to the code. Keep in mind the students' level of understanding but __don't share code you don't agree with__.
 
-*	Review all curriculum materials and think about how you would like to apply your teaching style and professional experience to the classroom. 
+*	Review all curriculum materials and think about how you would like to apply your teaching style and professional experience to the classroom.
 
 
 ##Available Materials
@@ -84,7 +88,7 @@ We've supplied a folder for each week and lesson. In these folders we've include
 
 7.	If you prefer not to use the GA-provided code alongs/in-class exercises, create your own and make sure they hit the same topics and learning objectives for that lesson. If you do build new exercises, please share your work with the curriculum team, either [via email](mailto:askpart-time@ga.co) or by sending a pull-request to this repo. We are actively working to build the best curriculum we can and are always happy to consider contributions from instructors!
 
-8.	Practice using reveal.js. It can be tricky to get the hang of the workflow (see below). 
+8.	Practice using reveal.js. It can be tricky to get the hang of the workflow (see below).
 
 ###Slides
 
@@ -92,18 +96,18 @@ We've supplied a folder for each week and lesson. In these folders we've include
 
 *	Any text following the line `Note:` in a given slide will not appear in the presented deck. However, when you share the rendered markdown (i.e as a pdf), students will see the notes. This is a great place to put presenter notes and additional information you would like students to read outside of class.
 
-*	See [here](https://github.com/hakimel/reveal.js) for further documentation about Reveal.js. 
+*	See [here](https://github.com/hakimel/reveal.js) for further documentation about Reveal.js.
 
-The slides we provide are a skeletal deck and require your customization! If there are slides you do not agree with, you can update them. If you want to introduce topics in a different order, feel free to reorder them. 
+The slides we provide are a skeletal deck and require your customization! If there are slides you do not agree with, you can update them. If you want to introduce topics in a different order, feel free to reorder them.
 
 
 ##Assignments and Projects
 
 In order to pass this course General Assembly students must:
 
-*	Complete and submit 80% of all course homework assignments. 
+*	Complete and submit 80% of all course homework assignments.
 
-	*	Students will receive feedback from instructors on their assignments within 2 - 4 days. 
+	*	Students will receive feedback from instructors on their assignments within 2 - 4 days.
 
 *	Complete and submit the course [final project](Final_Project/final_project_requirements.md), including all milestones.
 
@@ -130,7 +134,7 @@ In FEWD, we use GitHub for student-facing materials, homework submission, final 
 |[Final Project](Final_Project/final_project_requirements.md)|The personal project each student will submit and present. Share the project requirements as early as possible.|
 
 ##Credits
-	
+
 Changes to the FEWD curriculum in version 2.1 were made by the following team:
 
 * [Emerson Taymor](https://generalassemb.ly/instructors/emerson-taymor/1240), FEWD Curriculum Fellow
