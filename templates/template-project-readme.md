@@ -84,7 +84,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ---
 
-#### Deliverable
+#### Example Deliverable
 
 Here's a few sentences & a screenshot of what we expect you to make or do.
 
