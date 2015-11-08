@@ -5,7 +5,6 @@ Follow this as a guide to completing the project design writeup. The questions f
 ### Project Problem and Hypothesis
 * What's the project about? What problem are you solving?
 * Where does this seem to reside as a machine learning problem? Are you predicting some continuous number, or predicting a binary value?
-* What's the business need?
 * What kind of impact do you think it could have?
 * What do you think will have the most impact in predicting the value you are interested in solving for?
 

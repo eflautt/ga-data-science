@@ -1,11 +1,11 @@
-# Final Project: Lightning Talk
+# Final Project, Part 1: Lightning Talk
 
-### Objectives
+### Expectations
 
 * Articulate a series of ideas around a problem statement, a hypothesis, and potential data sets.
 * Gain insight and perspective in final project scope from peers
 
-## Expectations
+## Necessary Deliverables
 
 Due Date: Week 4
 
@@ -15,7 +15,9 @@ You will plan at least one "deck" that explains the following:
 * **Data** What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
 * **Hypotheses** Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
 
-_Ideally_ you should plan a couple of these: your first project idea may be your best, or not, and it's important to run though this process a few times to generate clarity around what the project could look like with different interests.
+Plan three of these: your first project idea may be your best, or not, and it's important to run though this process a few times to generate clarity around what the project could look like with different interests.
+
+Keep in mind, this is not a real deck. Think about it like an elevator pitch; be prepared, do some light research, but don't go down any rabbit holes.
 
 ## Ideas for Class Activities
 

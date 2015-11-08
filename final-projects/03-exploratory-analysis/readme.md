@@ -1,4 +1,4 @@
-# Final Project: Exploratory Data Analysis
+# Final Project, Part 3: Exploratory Data Analysis
 
 ### Objectives
 * Review the data set and project with an EIR during office hours.
@@ -6,7 +6,7 @@
 * Explore the mathematical properties and visualize data through the means of a python visualization tool (matplotlib and seaborn)
 * Provide insight about the data set and any impact on a hypothesis.
 
-### Format
+### Necessary Deliverables
 
 * Well organized Jupyter notebook with code and output, including visuals and tables showing data analysis.
 
