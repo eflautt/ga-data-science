@@ -1,0 +1,73 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 4: Modeling Performance
+
+#### Overview
+
+As we've done with practicing and building models in class and in projects, this part of the final project is an exercise in the machine learning application to your data. Then, use this model to display correlations, feature importance, and unexplained variance.
+
+---
+
+#### Requirements
+
+Through this process, you will:
+
+* Document your research with a summary
+* Explain the approach behind the modeling process and the strengths and weaknesses of variables in the process
+* Provide insight behind the modeling process and your performance, using cross validation best practices and prediction metrics for your problem (ex, MSE for regression; Accuracy/AUC for classification)
+    - There are so many metrics to choose from, be sure the one you use is reasonable for the problem. For example, explain why you might optimize toward recall instead of AUC.
+    - Explain how your model performs compared to a dummy model, and the benefit one gains by using your model to solve this problem.
+* Build visualizations that best explain outliers and the relationships of your predicted parameter and independent variables.
+* Identify areas where new data could help improve the model significantly.
+
+**Bonus:**
+
+- Many modeling approaches are all about fine-tuning the algorithm parameters and trying to find some value. Show how you optimized this value, and the cost/benefit of doing so?
+
+---
+
+#### Necessary Deliverables
+
+* A Jupyter Notebook with code, visualizations, and markdown
+* The summary will effectively summarize your work from your exploratory data analysis. Be brief, but keep in mind an audience that may be unfamiliar with your project and work.
+* Source code that does not get in the way of your notebook deliverable. Move helper functions into a python module and include this module as part of your project deliverable.
+* Visualizations that showcase the relationship between your y and at least your two strongest variables as determined by some scoring measure (p values and coefficients, gini/entropy, for example)
+
+---
+
+#### Starter code
+
+#### Suggested Ways to Get Started
+
+- Two common ways to start models:
+    -  the kitchen sink strategy: throw all the variables in and subtract out
+    -  single variable strategy (start with the most important variable and slowly add in while paying attention to performance)
+    -  it will be worth exploring both to best understand your data and problem. How slow is building and predicting the model with all the variables? How much improvement is made with each variable added?
+- Recall that your variables maybe need transformation in order to be most useful.
+- Recall that the algorithm used (say, random forest over logistic regression) have different requirements, so one make work better for your data than another.
+- Strike a balance between your writing, code, and visual aide. This notebook should feel like a blogpost with some code in it. Force yourself to write and visualize more than you think; it's easier to edit and cut back than to find ways to add more.
+
+---
+
+
+### Useful Resources
+
+- [SKLearn's documentation on metrics](http://scikit-learn.org/stable/modules/classes.html)
+- [SKLearn's model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html)
+
+---
+
+#### Deliverable
+
+This deliverable should be very similar to the modeling project (project 3) completed earlier during the course.
+
+#### Project Feedback + Evaluation
+
+Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
+
+    Score | Expectations
+    ----- | ------------
+    **0** | _Incomplete._
+    **1** | _Does not meet expectations._
+    **2** | _Meets expectations, good job!_
+    **3** | _Exceeds expectations, you wonderful creature, you!_
+
+ This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
