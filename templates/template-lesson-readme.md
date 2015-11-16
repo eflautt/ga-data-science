@@ -23,6 +23,19 @@ creator:
 >
 > _\* We normally see ~3 objectives for this length of lesson, but you should adapt based on the topic / context._
 
+
+> #### *Audience*
+
+> Keep in mind these personas as you create and iterate on this lesson:
+
+> Level up Lisa
+> Summary: She currently primarily uses Excel and SQL to do her data analysis.   She’s very excited to learn about predictive analysis but she doesn’t have the coding skills to really pick up these skills on her own.
+
+> Manager Matt
+> Summary: He currently does basic data analysis in Excel and SQL. He doesn’t necessarily want to build the models to answer those question but he wants to understand how models can help him answer those questions. Ultimately, he wants to make better managerial decisions because he understand more about the work his team is doing.
+
+---
+
 # Title of the Lesson
 
 ### Objectives
