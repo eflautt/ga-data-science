@@ -11,7 +11,7 @@ We are building a global community of lifelong learners who are excited about de
 - [Drafted Final Project Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1kYTSL5ly_NEaP40uFNeVEGYpo93z1HUMRWpkJq53pTo/edit?usp=sharing)
 - [Resources](resources)
 - [Templates](templates)
-
+- [Data Science Workflow](https://docs.google.com/document/d/14ulmOzIDXhy_1Y864Sn3A8Hs1RtVt9pvJ8VimTlIz0g/edit?ts=56475b14)
 
 <!-- /MarkdownTOC -->
 
