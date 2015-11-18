@@ -2,7 +2,9 @@
 
 #### Overview
 
-As we've done with practicing and building models in class and in projects, this part of the final project is an exercise in the machine learning application to your data. Then, use this model to display correlations, feature importance, and unexplained variance.
+Our goals for this project is to develop a working piece that would be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format, treating it as well documented work. Think about how your project pushes the reader to ask for more insightful questions, and how it avoids questions like "what does this line of code do?"
+
+From a presentation perspective, this is an exercise to the machine learning application of your data. Then, use this model to display correlations, feature importance, and unexplained variance.
 
 ---
 
@@ -28,7 +30,7 @@ Through this process, you will:
 
 * A Jupyter Notebook with code, visualizations, and markdown
 * The summary will effectively summarize your work from your exploratory data analysis. Be brief, but keep in mind an audience that may be unfamiliar with your project and work.
-* Source code that does not get in the way of your notebook deliverable. Move helper functions into a python module and include this module as part of your project deliverable.
+* Source code that does not get in the way of your notebook deliverable. Move helper functions into a python module and include this module as part of your project deliverable. Consider it like an appendix piece, though unlike an appendix, it'll be necessary for your project to function.
 * Visualizations that showcase the relationship between your y and at least your two strongest variables as determined by some scoring measure (p values and coefficients, gini/entropy, for example)
 
 ---
@@ -57,7 +59,7 @@ Through this process, you will:
 
 #### Deliverable
 
-This deliverable should be very similar to the modeling project (project 3) completed earlier during the course.
+This deliverable will be a combination of the 3rd and 4th class project (modeling and executive summary), but for your personal project. Refer to those resources and feedback provided.
 
 #### Project Feedback + Evaluation
 

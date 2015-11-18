@@ -6,6 +6,8 @@ This is it! This presentation is amassed to show what you've learned through thi
 
 The output here will be a 10 minute presentation that guides your viewers through the problem, original data and hypothesis, findings, and results; very similar to the outline and work that you've output over the last few weeks. In fact, much of this presentation is done; time to clean up your output!
 
+In response, you'll participate in a short Q/A session (roughly two minutes) with your peers--both fellow students and instructors--about your project.
+
 ---
 
 #### Requirements
@@ -16,11 +18,7 @@ Through this process, you will:
 * Summarize the work you've completed from earlier deliverables into a clean, deck-based presentation
 * Review next steps with the audience in a deployment scenario: how do you take this project beyond the scope of this course?
 
----
-
-#### Necessary Deliverables
-
-A 10 to 20 slide deck that reviews:
+This includes a presentation that reviews:
 
 * Your project's background, problem and hypothesis
 * the datasets you used and a brief description of them
@@ -28,6 +26,22 @@ A 10 to 20 slide deck that reviews:
 * an explanation of your model (think explain like I'm 5)
 * recommendations based on findings; deployment of model; next steps
 * an appendix that includes the more technical terminology and work
+
+---
+
+#### Necessary Deliverables
+
+A 10 to 20 slide deck. The breakdown should look relatively similar to what follows:
+
+* 1 slide that covers an outline of what you're talking about
+* 2-3 slides as a summary of the project, including data and problem statement
+* 3-4 slides that show off insights that helped suggest the modeling approach
+* iterations of:
+    * 2-3 slides that explain the modeling approach itself
+    * 2-3 slides that explain how the modeling went
+* 1-2 slides on conclusions
+* 1-2 slides on next steps
+* slides for acknowledgments!
 
 ---
 
@@ -54,6 +68,7 @@ Refer to the presentation template as a blueprint for how to organize your work.
 
 #### Deliverable
 
+You can find previous General Assembly Presentations and Notebooks at the (GA Gallery)[https://gallery.generalassemb.ly/DS?metro=]
 
 #### Project Feedback + Evaluation
 
