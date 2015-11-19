@@ -38,7 +38,7 @@ Please follow the installation instructions below. If your installation is not c
         - Test that Anaconda and Python were installed correctly. For example, on a Mac you can by open a Terminal window and type `ipython notebook`. If successful, in a few moments, your browser should open to a window titled "Jupyter."
 
 ### Start Practicing
-Here are a few resources that will help introduce you to some commonly used syntax and tools. Please work through them as needed.
+Here are a few resources that will introduce you to some commonly used concepts and tools.
 
 1. Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) lesson to practice your Python syntax.
     - Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
