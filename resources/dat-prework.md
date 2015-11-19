@@ -29,31 +29,28 @@ Please complete the following by the first day of class. Feel free to shoot us a
 1. [ ] Create a Github account, if you don't already have one.
 
 ### Installations
-Please follow the installation instructions below. If you have any problems, come to class ~30 min early on the first day and our TAs will help you get set up:
+Please follow the installation instructions below. If your installation is not complete or if you have any problems, plan to arrive at least 30 minutes early to the first class so that our TAs' can help you get set up!
 
-1. [ ] Install Python
-    - Follow these [installation instructions to install Python 2.7](https://www.python.org/downloads/) on your computer. 
-        - *Note: Make sure to install version 2.7, NOT Python 3. Currently, version 2.7 is the general industry standard.*
-2. [ ] Install Anaconda
-    - Follow [these instructions to download and install Anaconda](https://www.continuum.io/downloads), a popular set of Python tools used for data science.
-        - If you get stuck, try reading the [documentation](http://docs.continuum.io/anaconda/install.html).
-3. [ ] Test for Successful Install
-    - Test that Anaconda is installed correctly by opening a Terminal window and entering: `ipython notebook`. If successful, in a few moments, your browser should open to a window titled "Jupyter."
+1. [ ] Install [Python 2.7](https://www.python.org/downloads/)
+        - *Note: Make sure to install version 2.7, NOT Python 3, which has significant differences from 2.7 and is not “industry standard.” We will be using Python 2.7.*
+2. [ ] Install [Anaconda](https://www.continuum.io/downloads)
+        - Follow the installation instructions for your computer (e.g. “Mac Install”). 
+        - Test that Anaconda and Python were installed correctly. For example, on a Mac you can by open a Terminal window and type `ipython notebook`. If successful, in a few moments, your browser should open to a window titled "Jupyter."
 
 ### Start Practicing (Optional)
 Here are a few optional resources that will help introduce you to some commonly used syntax and tools. Feel free to work through them if needed.
 
-1. Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) lesson to start practicing Python syntax.
-    - Additional Option: [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) - Work through exercises 1-10.
+1. Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) lesson to practice your Python syntax.
+    - Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
 
-2. Complete our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to become more familiar with  Terminal commands.
-    - Additional Option: [Learn Command Line THW](http://cli.learncodethehardway.org/book/) - Try your hand at these exercises.
+2. Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with Terminal commands.
+    - Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
-3. Complete this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html), a common data analysis library.
-    - Additional Option: [Project Euler](https://projecteuler.net) - Practice your Python by working through these computational problems.
+3. Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html), a popular library used for data analysis.
+    - Bonus Option: Practice your Python by working through [Project Euler's computational problems](https://projecteuler.net).
 
 ### Additional Resources (Optional)
-While we won't be following any specific textbooks in this course, some students have asked for additional resources. Here are a few options, ranging from beginner to advanced:
+Consider the following reading recommendations.  These are not required but may help supplement your learning experience:
 
   * [The Quick Python Book](http://www.amazon.com/Quick-Python-Book-Second-Edition/dp/193518220X)
   * [Data Analysis With Open Source Tools](http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358)
