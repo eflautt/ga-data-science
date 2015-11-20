@@ -38,15 +38,15 @@ Please follow the installation instructions below. If your installation is not c
         - Test that Anaconda and Python were installed correctly. For example, on a Mac you can by open a Terminal window and type `ipython notebook`. If successful, in a few moments, your browser should open to a window titled "Jupyter."
 
 ### Start Practicing
-Here are a few resources that will introduce you to some commonly used concepts and tools.
+Review the following resources to introduce you to some commonly used concepts and tools.
 
-1. Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) lesson to practice your Python syntax.
+1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) lesson to practice your Python syntax.
     - Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
 
-2. Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with Terminal commands.
+2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with Terminal commands.
     - Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
-3. Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html), a popular library used for data analysis.
+3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html), a popular library used for data analysis.
     - Bonus Option: Practice your Python by working through [Project Euler's computational problems](https://projecteuler.net).
 
 ### Additional Resources (Optional)
