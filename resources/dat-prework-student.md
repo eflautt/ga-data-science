@@ -40,10 +40,10 @@ Please follow the installation instructions below. If your installation is not c
 ### Start Practicing
 Review the following resources as an introduction to some commonly used concepts and tools.
 
-1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) course to practice your Python syntax.
+1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) course to practice your Python syntax. Pay close attention to lists, dictionaries, and functions.
     - Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
 
-2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands.
+2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands. Pay particular attention to folder navigation and file creation.
     - Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
 3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library used for data analysis that we will be using in this course.
