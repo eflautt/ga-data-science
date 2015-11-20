@@ -40,17 +40,17 @@ Please follow the installation instructions below. If your installation is not c
 ### Start Practicing
 Review the following resources to introduce you to some commonly used concepts and tools.
 
-1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) lesson to practice your Python syntax.
+1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) course to practice your Python syntax.
     - Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
 
-2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with Terminal commands.
+2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands.
     - Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
-3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html), a popular library used for data analysis.
+3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library used for data analysis that we will be using in this course.
     - Bonus Option: Practice your Python by working through [Project Euler's computational problems](https://projecteuler.net).
 
 ### Additional Resources (Optional)
-Consider the following reading recommendations.  These are not required but may help supplement your learning experience:
+Consider the following reading recommendations. These are not required but may help supplement your learning experience:
 
   * [The Quick Python Book](http://www.amazon.com/Quick-Python-Book-Second-Edition/dp/193518220X)
   * [Data Analysis With Open Source Tools](http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358)
