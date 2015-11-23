@@ -45,6 +45,7 @@
 - Dimensional reduction
 - Document-based databases
 - LDA - latent dirichlet allocation
+- Leaf Node
 - NLP - natural language processing
 - NLTK - natural language toolkit
 - Random forests
