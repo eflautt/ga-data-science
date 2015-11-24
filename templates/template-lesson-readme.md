@@ -129,7 +129,7 @@ def another_lorem
 end
 ```
 
-**Check:** Here students should write out or code their own methods / functions / arguments / etc.
+**Check:** By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
 <a name="guided-practice"></a>
 ### Guided Practice: Topic (# mins)
