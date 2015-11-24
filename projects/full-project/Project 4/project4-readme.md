@@ -1,7 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #4: Executive Summary
 
 #### Overview
-In this final project you will summarize and present your analysis from parts 1-3.
+In this project, you will summarize and present your analysis from Projects 1-3.
 
 ---
 #### Requirements
@@ -9,40 +9,32 @@ In this final project you will summarize and present your analysis from parts 1-
 
 
 **Bonus:**
-
 - n/a
 
 ---
 
 #### Necessary Deliverables
-
 - Completed IPython Notebook
 
 ---
 #### Dataset  
-We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank. 
+We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank.
 
-admit- is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
-
-gre- gre score
-
-gpa- grade point average 
-
-rank- rank of an applicant's undergraduate alma mater with 1 being a high rank and 4 being the lowest rank
+- admit- is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
+- gre- GRE score
+- gpa- Grade Point Average
+- rank- Rank of an applicant's undergraduate alma mater with 1 being a high rank and 4 being the lowest rank
 
 
 #### Starter code
-
-IPython Notebook with questions is provided. Check out the Example notebook. 
+IPython Notebook with questions is provided. Check out the Example notebook.
 
 #### Suggested Ways to Get Started
-
-- Review your previous work notebooks and the feedback. 
+- Review your previous work notebooks and the feedback.
 
 ---
 
 ### Useful Resources
-
 - A link to [the example notebook]
 
 ---
@@ -51,9 +43,7 @@ IPython Notebook with questions is provided. Check out the Example notebook.
 Completed IPython Notebook
 
 #### Project Feedback + Evaluation
-
-
-Based on the requirements you can earn a maximum of 3 points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of 3 points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------

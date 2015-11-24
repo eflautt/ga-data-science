@@ -4,7 +4,7 @@
 
 > Globally, we have 3 Units in DAT, each building on top of skills learned previously to scaffold students' learning over the entire course.
 
-Our lessons each have an objective, prerequisites, resources, and project-oriented content, all tieing into the overall competencies focused on in each unit. Dive into the detailed spec file to read more about each lesson and [read about our curriculum](#)
+Our lessons each have an objective, prerequisites, resources, and project-oriented content, all tying into the overall competencies focused on in each unit. Dive into the detailed spec file to read more about each lesson and [read about our curriculum](#)
 
 See the [feedback guidelines](#) to read more about how we provide feedback to students.
 
@@ -20,9 +20,6 @@ We'll make sure everyone's up to speed on HTML5 and has a thorough understanding
   - **Goal**: Build a game, applying browser technologies like HTML, CSS, and JavaScript
   - **Project Time**: 3 days
   - **[Detailed Spec File](project-01.md)**
-
-
-
 
 
 
