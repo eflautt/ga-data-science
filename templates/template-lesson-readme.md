@@ -170,9 +170,9 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 ##Before Next Class
 |   |   |
 |---|---|
-| ##### HOMEWORK  | Example: Create Your Own Webpage! [#](Instructions)  |
-| ##### PREWORK  | Reading: CSS and Layouts  |
-| ##### PROJECT  | Example: Work on Slackbot [#](Instructions)  |
+| **HOMEWORK**  | Example: Create Your Own Webpage! [#](Instructions)  |
+| **PREWORK**  | Reading: CSS and Layouts  |
+| **PROJECT**  | Example: Work on Slackbot [#](Instructions)  |
 
 ##ADDITIONAL RESOURCES
 - Add your own resources.
