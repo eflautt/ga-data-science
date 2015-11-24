@@ -56,7 +56,7 @@ Week # | Lesson #
 - Complete Prep work required
 - Prepare any specific instructions
 
-##LESSON GUIDE
+###LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Topic description  |
@@ -173,7 +173,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 
 ***
 
-##Before Next Class
+###Before Next Class
 |   |   |
 |---|---|
 |**HOMEWORK**  | Example Assignment [#](Instructions)  |
