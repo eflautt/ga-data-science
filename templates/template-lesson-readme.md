@@ -26,7 +26,7 @@ creator:
 
 > #### *Audience*
 
-> Keep in mind these personas as you create and iterate on this lesson:
+> Keep in mind these DAT personas as you create and iterate on this lesson:
 
 > Level up Lisa
 > Summary: She currently primarily uses Excel and SQL to do her data analysis.   She’s very excited to learn about predictive analysis but she doesn’t have the coding skills to really pick up these skills on her own.
@@ -37,29 +37,45 @@ creator:
 ---
 
 # Title of the Lesson
+Week # | Lesson #
 
-### Objectives
+### Learning Objectives
 *After this lesson, students will be able to:*
-
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
-### Student Preparation
-*Before this lesson, students should already be able to:*
-
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
 ### Instructor Preparation
 *Before this lesson, instructors will have to:*
+- Materials needed for class
+- Prep work required
+- Any specific instructions
 
-- Host this dataset
-- Clean this dataset
-- Read these instructions
+### Student Pre-Work
+*Before this lesson, students should already be able to:*
+- Describe some concept
+- Explain how to do something
+- Do or build something
 
-## Section Title, clever (or not) Intro (20 mins)
+##LESSON GUIDE
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 5 min  | Opening  | Topic description  |
+| 10 min  | Introduction   | Topic description  |
+| 15 min  | Demo  | Topic description  |
+| 45 min  | Guided Practice  | Topic description  |
+| 25 min  | Independent Practice  | Topic description  |
+| 10 min  | Review  | Topic description  |
+
+### Opening: Topic (# mins)
+- Include reference to last session
+- Review of exit ticket and or pre-work if applicable
+- Hook / Real-world Relevance
+
+> Instructor Note: Lorem ipsum dolor
+
+### Introduction - Topic (# mins)
+Discuss topic and explain by dividing parts into sections.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
@@ -81,17 +97,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem vol
   </body>
 </html>
 ```
-
 ![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
 
+#### Use non-section headings to divide content
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
 
-#### Some non-section heading that helps break up the content
-Natus officia maiores dolores libero quam nobis!
+*Check:* Ask some kind of question to see if they've followed along
 
-> Assess: Ask some kind of question
-
-## Demo of Something (15 mins)
+## Demo: Topic (# mins)
+Walk students through a codealong or demonstration of something. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
@@ -112,9 +126,10 @@ def another_lorem
 end
 ```
 
-> Assess: Have students write some sort of method
+*Check:* Have students write out or code their own methods
 
-## Title of Some Thingy - Codealong (15 mins)
+### Guided Practice: Topic (# mins)
+Walk students through solving a problem or applying this topic to a real world scenario. Solving or understanding this should require the use of the current topic (in addition to any prior topics).
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
@@ -134,19 +149,32 @@ def another_lorem
   return this.to_json
 end
 ```
+*Check:* Were students able to solve the problem or complete the task?
 
-> Assess: Make sure students are able to reach some sort of deliverable
+### Independent Practice: Topic (# minutes)
+Ask the students to use the lesson topic/skill to create a deliverable that meets certain criteria. 
 
-## Independent Practice (20 minutes)
+> Instructor Note: This can be a pair programming activity or done indpendently.
 
-> ***Note:*** _This can be a pair programming activity or done independently._
+Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
+*Check:* Were students able to reach some form of deliverable?
 
-> Assess: Make sure students are able to reach some sort of deliverable
+### Conclusion (# mins)
+- Discuss independent practice deliverables
+- Review topic(s) covered in today's lesson
+- Orient them to homework or upcoming tasks
 
-## Conclusion (5 mins)
+***
 
-- Ask some questions
-- See if anyone learned what they were supposed to
-- See if you did a good job by teaching them stuff
+##Before Next Class
+|   |   |
+|---|---|
+| #####HOMEWORK  | Example: Create Your Own Webpage! [#](Instructions)  |
+| #####PREWORK  | Reading: CSS and Layouts  |
+| #####PROJECT  | Example: Work on Slackbot [#](Instructions)  |
+
+##ADDITIONAL RESOURCES
+- Add your own resources.
+- Go crazy.
+- So much room for bullets!
