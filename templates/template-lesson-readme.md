@@ -59,12 +59,12 @@ Week # | Lesson #
 ##LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
-| 5 min  | Opening  | Topic description  |
-| 10 min  | Introduction   | Topic description  |
-| 15 min  | Demo  | Topic description  |
-| 45 min  | Guided Practice  | Topic description  |
-| 25 min  | Independent Practice  | Topic description  |
-| 10 min  | Conclusion  | Topic description  |
+| 5 min  | [Opening](https://github.com/generalassembly-studio/dat-curriculum/blob/master/templates/template-lesson-readme.md#opening--mins)  | Topic description  |
+| 10 min  | [Introduction](https://github.com/generalassembly-studio/dat-curriculum/blob/master/templates/template-lesson-readme.md#introduction---topic--mins)   | Topic description  |
+| 15 min  | [Demo](https://github.com/generalassembly-studio/dat-curriculum/blob/master/templates/template-lesson-readme.md#demo-topic--mins)  | Topic description  |
+| 45 min  | [Guided Practice](https://github.com/generalassembly-studio/dat-curriculum/blob/master/templates/template-lesson-readme.md#guided-practice-topic--mins)  | Topic description  |
+| 25 min  | [Independent Practice](https://github.com/generalassembly-studio/dat-curriculum/blob/master/templates/template-lesson-readme.md#independent-practice-topic--minutes)  | Topic description  |
+| 10 min  | [Conclusion](https://github.com/generalassembly-studio/dat-curriculum/blob/master/templates/template-lesson-readme.md#conclusion--mins)  | Topic description  |
 
 ---
 
