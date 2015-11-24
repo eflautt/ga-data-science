@@ -75,6 +75,7 @@ Week # | Lesson #
 
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
+
 ### Introduction - Topic (# mins)
 Discuss topic and explain by dividing parts into sections.
 
@@ -105,6 +106,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 
 **Check:** Here is a question to see how well you understand the material
 
+
 ### Demo: Topic (# mins)
 Walk through a codealong or demonstration of something. 
 
@@ -129,6 +131,7 @@ end
 
 **Check:** Here you should write out or code your own methods
 
+
 ### Guided Practice: Topic (# mins)
 Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
 
@@ -151,6 +154,7 @@ def another_lorem
 end
 ```
 **Check:** Were you able to successfully solve the problem or complete the task?
+
 
 ### Independent Practice: Topic (# minutes)
 Use the lesson topic/skill to create a deliverable that meets certain criteria. 
