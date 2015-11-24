@@ -35,7 +35,7 @@ creator:
 > Summary: He currently does basic data analysis in Excel and SQL. He doesn’t necessarily want to build the models to answer those question but he wants to understand how models can help him answer those questions. Ultimately, he wants to make better managerial decisions because he understand more about the work his team is doing.
 
 ---
-
+![Data Science Logo]() "Data Science")
 # Title of the Lesson
 Week # | Lesson #
 
