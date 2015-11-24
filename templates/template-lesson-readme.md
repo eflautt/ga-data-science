@@ -104,7 +104,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem vol
 #### Use non-section headings to divide content
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
 
-**Check:** Here is a question to see how well you understand the material
+**Check:** Here is a question to see how well students understand the material
 
 <a name="demo"></a>
 ### Demo: Topic (# mins)
@@ -129,7 +129,7 @@ def another_lorem
 end
 ```
 
-**Check:** Here you should write out or code your own methods
+**Check:** Here students should write out or code their own methods / functions / arguments / etc.
 
 <a name="guided-practice"></a>
 ### Guided Practice: Topic (# mins)
@@ -153,7 +153,7 @@ def another_lorem
   return this.to_json
 end
 ```
-**Check:** Were you able to successfully solve the problem or complete the task?
+**Check:** Were students able to successfully solve the problem or complete the task?
 
 <a name="ind-practice"></a>
 ### Independent Practice: Topic (# minutes)
@@ -163,7 +163,7 @@ Use the lesson topic/skill to create a deliverable that meets certain criteria.
 
 Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
 
-**Check:** Were you able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
+**Check:** Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
 
 <a name="conclusion"></a>
 ### Conclusion (# mins)
