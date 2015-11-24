@@ -1,0 +1,79 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research design write up (without models)
+
+#### Overview
+"A problem well stated is half solved" -- Charles Kettering 
+
+Welcome to Data Science! In this first project you will create a framework to scope out data science projects. This framework will provide you with a guide to develop a well-articulated problem statement and analysis plan that will be robust and reproducible. 
+
+---
+
+#### Requirements
+- Identify features of the dataset including the outcome, and covariates/predictors
+- Create a data dictionary with classification of available variables 
+- Evaluate what makes a high quality problem statement
+- Write a problem statement
+- State the risks and assumptions of your data
+- Outline exploratory analysis methods 
+
+
+**Bonus:**
+- Practice writing an alternative problem statement for your dataset
+- Brownie points for articulating the assumptions and risks of the alternative model
+
+---
+#### Dataset  
+We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank. 
+
+admit- is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
+
+gre- gre score
+
+gpa- grade point average 
+
+rank- rank of an applicant's undergraduate alma mater with 1 being a high rank and 4 being the lowest rank
+
+---
+
+#### Necessary Deliverables
+
+- Completed IPython Notebook using markup
+
+---
+
+#### Starter code
+
+For this project we will be using an IPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks. 
+
+#### Suggested Ways to Get Started
+
+- Get used to the IPython Notebook. Play around with keyboard shortcuts. 
+- Try out basic markdown for commonly used formats see cheat sheet-- headers, bold, italic, tables
+- Read the docs for IPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist
+
+---
+
+### Useful Resources
+- IPython Notebook [shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
+- A link to [markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Extra relevant [IPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
+
+---
+
+#### Deliverable
+Checkout the example notebook with a data dictionary and responses to questions. Curious how to format your notebook in the same way? Click on a section to see the markdown. 
+
+![Example Notebook] add link to example 
+
+#### Project Feedback + Evaluation
+
+
+Based on the requirements you can earn a maximum of 3 points on this project. Your instructors will score each of your technical requirements using the scale below:
+
+    Score | Expectations
+    ----- | ------------
+    **0** | _Incomplete._
+    **1** | _Does not meet expectations._
+    **2** | _Meets expectations, good job!_
+    **3** | _Exceeds expectations, you wonderful creature, you!_
+
+ This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
