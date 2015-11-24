@@ -35,7 +35,6 @@ creator:
 > Summary: He currently does basic data analysis in Excel and SQL. He doesn’t necessarily want to build the models to answer those question but he wants to understand how models can help him answer those questions. Ultimately, he wants to make better managerial decisions because he understand more about the work his team is doing.
 
 ---
-![Data Science Logo]() "Data Science")
 # Title of the Lesson
 Week # | Lesson #
 
@@ -151,7 +150,7 @@ def another_lorem
   return this.to_json
 end
 ```
-**Check:** Were you able to solve the problem or complete the task?
+**Check:** Were you able to successfully solve the problem or complete the task?
 
 ### Independent Practice: Topic (# minutes)
 Use the lesson topic/skill to create a deliverable that meets certain criteria. 
@@ -160,10 +159,10 @@ Use the lesson topic/skill to create a deliverable that meets certain criteria.
 
 Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
 
-**Check:** Were you able to create the desired deliverable?
+**Check:** Were you able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
 
 ### Conclusion (# mins)
-- Review independent practice deliverables
+- Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
 
@@ -172,9 +171,9 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 ##Before Next Class
 |   |   |
 |---|---|
-| **HOMEWORK**  | Example: Create Your Own Webpage! [#](Instructions)  |
-| **PREWORK**  | Reading: CSS and Layouts  |
-| **PROJECT**  | Example: Work on Slackbot [#](Instructions)  |
+|**HOMEWORK**  | Example Assignment [#](Instructions)  |
+| **PREWORK**  | Reading Assignment: Examples  |
+| **PROJECT**  | Project Assignment: Title [#](Instructions)  |
 
 ##ADDITIONAL RESOURCES
 - Add your own resources.
