@@ -24,6 +24,9 @@ If there are any really major issues or significantly impactful reasons to chang
 <a name="important-terms"></a>
 ## Important Terms
 
+##### Opening
+
+This is what we call the beginning of a lesson, where we review prior lessons/prework/homework, discuss current objectives, and answer outstanding questions.
 
 ##### Introduction
 
@@ -41,7 +44,11 @@ This is when we're asking students to do something specific using the informatio
 
 This is a name for the chunks of a lesson when you're asking students to create a deliverable on their own. It is often used closer to the end of a lesson (though not necessarily), requiring the use of skills learned in the demo and guided practice sessions. It is intended to encapsulate the information and can act as a miniature or practice version of the unit project.
 
+##### Conclusion
 
+This is where we review the deliverable(s) from the independent practice, recap the lesson objectives, answer any outstanding questions, and discuss homework/upcoming projects/etc.
+
+---
 
 <a name="default-style"></a>
 ## Default Style
@@ -67,6 +74,7 @@ When you have multiple files sitting next to each other in a folder, number them
 
 By consistently keeping everything lowercase, we won't have to hit shift when navigating in terminal. It'll save us a tiny fraction of time, but the consistency will save us a lot of guessing.
 
+---
 
 <a name="default-names-for-files--folders"></a>
 ## Default names for files & folders
@@ -93,6 +101,8 @@ Make sure the image is **no wider than 790px**, to try to keep it visible & read
 
 ### Let Github Store the Images
 Rather than storing images in some folder in our lesson, **use [Github's Issue Attachment CDN](https://help.github.com/articles/issue-attachments/) to upload & link to images.** Essentially, pretend you're going to attach an image to a Github Issue, let it upload, and then copy & paste the CDN URL it gives and include that. There's a [detailed blog post here](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) to read more.
+
+---
 
 <a name="file-structure"></a>
 ## File Structure
@@ -216,6 +226,8 @@ The timing should be included in each section heading. We'll talk about how to c
 ```markdown
 ## Loading Data into Pandas - Intro (10 mins.)
 ```
+
+---
 
 <a name="headings--text"></a>
 ## Headings & Text
