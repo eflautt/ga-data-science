@@ -31,16 +31,34 @@ This includes a presentation that reviews:
 
 #### Necessary Deliverables
 
-A 10 to 20 slide deck. The breakdown should look relatively similar to what follows:
+A 10 to 20 slide deck. The breakdown should look relatively similar to what follows. Attached to each are questions to ask yourself in order to make sure the deck does as is needed. It may be even more helpful to go over this with a friend or family member: see if they can answer the questions by going through your presentation.
 
 * 1 slide that covers an outline of what you're talking about
+    - What is your project about?
+    - What is its history?
+    - What relevant information is required for a colleague to jump in to understand your project?
 * 2-3 slides as a summary of the project, including data and problem statement
-* 3-4 slides that show off insights that helped suggest the modeling approach
+    - what were you trying to accomplish?
+    - what steps did your project take?
+    - where did the data come from? public source? work? what does a sample look like? was there data you considered to use but decided to remove?
+* 3-4 slides that show off insights that helped suggest the modeling approach (no more than two visuals per slide; keep it simple!)
+    - what is the visualization explaining?
+    - what do the x and y axes mean?
+    - how does the visualization help either prove or disprove your work?
+    - what caveats have to be explained to best understand it?
 * iterations of:
     * 2-3 slides that explain the modeling approach itself
     * 2-3 slides that explain how the modeling went
+        - what was your model trying to optimize for? why was it the right metric for optimization?
+        - what algorithm did you try? how does it work?
+        - what worked / what didn't? why do you think so?
 * 1-2 slides on conclusions
+    - what had the most impact on your work?
+    - what can you confirm? what can you suggest? what is still to be determined? (be careful here! rarely do mathematicians ever say their theories prove anything)
 * 1-2 slides on next steps
+    - what will this project do moving forward?
+    - what would be the next two or three things you want to try? what kind of impact do you think they'd make?
+    - what do your conclusions enable others to do?
 * slides for acknowledgments!
 
 ---

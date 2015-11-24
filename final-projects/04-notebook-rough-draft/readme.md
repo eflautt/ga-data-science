@@ -61,6 +61,9 @@ Through this process, you will:
 
 This deliverable will be a combination of the 3rd and 4th class project (modeling and executive summary), but for your personal project. Refer to those resources and feedback provided.
 
+You can find previous General Assembly Presentations and Notebooks at the (GA Gallery)[https://gallery.generalassemb.ly/DS?metro=]
+
+
 #### Project Feedback + Evaluation
 
 Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
