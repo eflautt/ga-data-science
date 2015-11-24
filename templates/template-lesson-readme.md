@@ -26,7 +26,7 @@ creator:
 
 > #### *Audience*
 
-> Keep in mind these DAT personas as you create and iterate on this lesson:
+> Keep in mind these DAT personas as you create and iterate on this lesson. Write out lessons in a student-facing voice for consistency.
 
 > Level up Lisa
 > Summary: She currently primarily uses Excel and SQL to do her data analysis.   She’s very excited to learn about predictive analysis but she doesn’t have the coding skills to really pick up these skills on her own.
@@ -39,23 +39,23 @@ creator:
 # Title of the Lesson
 Week # | Lesson #
 
-### Learning Objectives
-*After this lesson, students will be able to:*
+## Learning Objectives
+*After this lesson, you will be able to:*
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
-### Instructor Preparation
-*Before this lesson, instructors will have to:*
-- Materials needed for class
-- Prep work required
-- Any specific instructions
-
-### Student Pre-Work
-*Before this lesson, students should already be able to:*
+## Student Pre-Work
+*Before this lesson, you should already be able to:*
 - Describe some concept
 - Explain how to do something
 - Do or build something
+
+## Instructor Preparation
+*Before this lesson, instructors will need to:*
+- Gather materials needed for class
+- Complete Prep work required
+- Prepare any specific instructions
 
 ##LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -65,14 +65,16 @@ Week # | Lesson #
 | 15 min  | Demo  | Topic description  |
 | 45 min  | Guided Practice  | Topic description  |
 | 25 min  | Independent Practice  | Topic description  |
-| 10 min  | Review  | Topic description  |
+| 10 min  | Conclusion  | Topic description  |
 
-### Opening: Topic (# mins)
-- Include reference to last session
-- Review of exit ticket and or pre-work if applicable
-- Hook / Real-world Relevance
+---
 
-> Instructor Note: Lorem ipsum dolor
+### Opening (# mins)
+- Reference prior lesson content
+- Review pre-work or exit ticket, if applicable
+- Include Hook / Real-world Relevance
+
+> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
 ### Introduction - Topic (# mins)
 Discuss topic and explain by dividing parts into sections.
@@ -102,10 +104,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem vol
 #### Use non-section headings to divide content
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
 
-**Check:** Ask some kind of question to see if they've followed along
+**Check:** Here is a question to see how well you understand the material
 
-## Demo: Topic (# mins)
-Walk students through a codealong or demonstration of something. 
+### Demo: Topic (# mins)
+Walk through a codealong or demonstration of something. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
@@ -126,10 +128,10 @@ def another_lorem
 end
 ```
 
-**Check:** Have students write out or code their own methods
+**Check:** Here you should write out or code your own methods
 
 ### Guided Practice: Topic (# mins)
-Walk students through solving a problem or applying this topic to a real world scenario. Solving or understanding this should require the use of the current topic (in addition to any prior topics).
+Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
@@ -149,21 +151,21 @@ def another_lorem
   return this.to_json
 end
 ```
-**Check:** Were students able to solve the problem or complete the task?
+**Check:** Were you able to solve the problem or complete the task?
 
 ### Independent Practice: Topic (# minutes)
-Ask the students to use the lesson topic/skill to create a deliverable that meets certain criteria. 
+Use the lesson topic/skill to create a deliverable that meets certain criteria. 
 
 > Instructor Note: This can be a pair programming activity or done indpendently.
 
 Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
 
-**Check:** Were students able to reach some form of deliverable?
+**Check:** Were you able to create the desired deliverable?
 
 ### Conclusion (# mins)
-- Discuss independent practice deliverables
-- Review topic(s) covered in today's lesson
-- Orient them to homework or upcoming tasks
+- Review independent practice deliverables
+- Recap topic(s) covered in today's lesson
+- Cover homework and/or upcoming tasks
 
 ***
 
