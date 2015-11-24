@@ -38,19 +38,19 @@ creator:
 # Title of the Lesson
 Week # | Lesson #
 
-## Learning Objectives
+### Learning Objectives
 *After this lesson, you will be able to:*
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
-## Student Pre-Work
+### Student Pre-Work
 *Before this lesson, you should already be able to:*
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
-## Instructor Preparation
+### Instructor Preparation
 *Before this lesson, instructors will need to:*
 - Gather materials needed for class
 - Complete Prep work required
@@ -180,7 +180,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 | **PREWORK**  | Reading Assignment: Examples  |
 | **PROJECT**  | Project Assignment: Title [#](Instructions)  |
 
-##ADDITIONAL RESOURCES
+###ADDITIONAL RESOURCES
 - Add your own resources.
 - Go crazy.
 - So much room for bullets!
