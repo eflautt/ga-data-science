@@ -54,8 +54,8 @@ This is where we review the deliverable(s) from the independent practice, recap 
 ## Default Style
 
 ### Voice
-- Projects: Project materials should be written directly for students.
-- Lessons: While lesson materials are instructor facing, they should primarily be written in a student-facing voice for consistency. If you want to make specific suggestions for instructors, use the "instructor's note" format:
+- **Projects**: Project materials should be written directly for students.
+- **Lessons**: While lesson materials are technically instructor facing, they should primarily be written in a student-facing voice for consistency. If you want to make specific suggestions for instructors, use the "instructor's note" format:
 
 > Instructor Note: Here is a sample note that is only intended for instructors.
 
