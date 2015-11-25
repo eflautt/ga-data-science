@@ -2,7 +2,7 @@
 
 #### One and Done
 
-Each student can share the project idea that they are attached to in front of the class. To keep the class moving, it'd be a better idea to leave all presentations onto _one_ computer or deck. Each student gets 60 seconds to talk through their idea, and then another 60 seconds are used for their classmates to submit feedback (via Google Form, markdown files, etc).
+Each student can share the project idea that they are attached to in front of the class. To keep the class moving, it'd be a better idea to load all presentations onto _one_ computer or deck. Each student gets 60 seconds to talk through their idea, and then another 60 seconds for their classmates to submit feedback (via Google Form, markdown files, etc).
 
 #### Small Group Share
 
