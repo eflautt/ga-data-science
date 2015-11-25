@@ -1,38 +1,28 @@
-#Get comfortable with tools
+# Getting Started with Data Science Tools
 This document helps you get up to speed with three tool families:
 
-1. Command Line Interface (CLI) tools, organized around the bash shell and git for version control.
-2. The python programming language.
+### Accounts
+1. [ ] Create a Github account, if you don't already have one.
 
-For each, you can go as deep as you need to feel comfortable:
-- Installing the software. This is the bare minimum to have the tools available.
-- A gentle introduction. This is typically an in-browser interactive which assumes no prior knowledge.
-- A deeper dive. These provide much more exposition and extend to advanced topics.
+### Installations
+Please follow the installation instructions below.
 
-##bash and git
+1. [ ] Install [Python 2.7](https://www.python.org/downloads/)
+        - *Note: Make sure to install version 2.7, NOT Python 3, which has significant differences from 2.7 and is not “industry standard.” We will be using Python 2.7.*
 
-###Install
-- If you’re running Mac OS X, bash is what you have by default in Terminal. You should install homebrew. Then brew install git.
-- If you’re running Windows, you should install Git Bash.
-- If you’re running Linux, you run bash or know better, and can install git.
+2. [ ] Install [Anaconda](https://www.continuum.io/downloads)
+        - Follow the installation instructions for your computer (e.g. “Mac Install”). 
+        - Test that Anaconda and Python were installed correctly. For example, on a Mac you can by open a Terminal window (or the Anaconda Launcher app on your desktop) and type `ipython notebook`. If successful, in a few moments, your browser should open to a window titled "Jupyter."
 
-###Gentle Introduction
-- If you haven’t used a command line interface like bash, try The Command Line Crash Course. Ignore the stuff about PowerShell.
-- If you haven't used git, Try Git will teach you the basics in 15 minutes, in your browser. For a little more explanation, check out Atlassian's Git Basics and other tutorials.
+### Start Practicing
+Review the following resources as an introduction to some commonly used concepts and tools.
 
-###Deeper Dive
-- Bash Guide for Beginners
-- Pro Git
+1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) course to practice your Python syntax. Pay close attention to lists, dictionaries, and functions.
+    - Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
 
-##python
+2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands. Pay particular attention to folder navigation and file creation.
+    - Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
-###Install
-- You really want the Anaconda python distribution. Download and install as appropriate for your system.
+3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library used for data analysis that we will be using in this course.
+    - Bonus Option: Practice your Python by working through [Project Euler's computational problems](https://projecteuler.net).
 
-###Gentle Introduction
-- If you haven't used python, the in-browser interactive tutorials from Codecademy aren't bad. They take some time to go through; skip the projects if you want to just work through the syntax.
-
-###Deeper Dive
-- Think Python: How to Think Like a Computer Scientist: This one starts out very basic but eventually includes some sophisticated general ideas about programming.
-- Learn Python the Hard Way
-This is probably the most popular intro to python, with a very distinctive voice, from the same author as the Command Line Crash Course, above.
