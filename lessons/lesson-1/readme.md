@@ -42,7 +42,7 @@ creator:
 ---
 <a name="opening"></a>
 ## Welcome to GA! (20 mins) 
-(See: Day 1 deck from production team)
+[See: Day 1 deck from production team](/DAT
 
 #### GA is a special learning environment 
 - Introduce the instructors, EIRs, Producers
@@ -63,7 +63,7 @@ creator:
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
 
-[Data Science venn diagram]()
+![Data Science venn diagram](assets/Data_Science_VD.png)
 
 
 #### Who uses Data Science
@@ -111,8 +111,7 @@ creator:
 3. Draw a normal distribution.
 4. True/False Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
-
-### Discuss Results
+#### Discuss Results
 
 <a name="introduction2"></a>
 ## Introduction: Data Science Work Flow (25 mins)
@@ -169,11 +168,11 @@ Example data dictionary:
 
 Variable | Description | Type of Variable
 ---| ---| ---
-Profession |Title of the account owner  | categorical
-Company Size | 1- small, 2- medium, 3- large| categorical
-Location | planet of the company | categorical 
-Days Since Last Delivery | integer | continuous
-Number of Deliveries | integer | continuous
+Profession | Title of the account owner | Categorical
+Company Size | 1- small, 2- medium, 3- large| Categorical
+Location | Planet of the company | Categorical 
+Days Since Last Delivery | Integer | Continuous
+Number of Deliveries | Integer | Continuous
 
 **Common questions include:**  
 - Read any documentation provided with the data (e.g. data dictionary above)
@@ -184,7 +183,7 @@ Number of Deliveries | integer | continuous
 - Verify the quality of the data (feedback loop -> 1)
 
 ##### MINE: Prepare, structure, and clean the data  
-Often times the our data will need to be cleaned prior preforming the analysis: 
+Often times, our data will need to be cleaned prior performing the analysis: 
 
 Common steps include:
 - Sample the data, determine sampling methodology 
