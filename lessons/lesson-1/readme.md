@@ -14,14 +14,14 @@ creator:
 - Describe the roles of GA staff and students to create a successful learning environment for data science 
 - Define data science and the data science workflow
 - Apply data science workflow to get to know the class
-- Setup your data sceience development environment and review python basics
+- Setup your data science development environment and review python basics
 
 ### Preparation
 *Before this lesson, students should already be able to:*
 
 - Define basic data types used in object-oriented programming
 - Recall the Python syntax for lists, dictionaries, and functions
-- Create files and navigate directories using the command line interface (for their specific environment)
+- Create files and navigate directories using the command line interface (for your specific environment)
 
 
 ## Welcome to GA! - Intro (20 mins) 
