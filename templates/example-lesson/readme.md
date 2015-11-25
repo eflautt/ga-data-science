@@ -6,10 +6,10 @@ creator:
     city: NYC
 ---
 
-# Building Models with ActiveRecord & Migrations
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Building Models with ActiveRecord & Migrations
 
-### Objectives
-*After this lesson, students will be able to:*
+### LEARNING OBJECTIVES
+*After this lesson, you will be able to:*
 
 - Create a class that inherits from ActiveRecord
 - Create a table schema to describe the class/model in our database
@@ -17,16 +17,41 @@ creator:
 - Write a migration to change our model's attributes
 - Write a migration to delete a model's attribute
 
-### Preparation
-*Before this lesson, students should already be able to:*
+### STUDENT PRE-WORK
+*Before this lesson, you should already be able to:*
 
 - Explain the concept of MVC
 - Create a Rails-like folder structure in a Sinatra app
 - Define what object properties and methods are
 - Write getter and setter methods to get retrieve and set property values
 
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
+- Gather materials needed for class
+- Complete Prep work required
+- Prepare any specific instructions
 
-## Wait, what are Models? - Intro (15 mins)
+## LESSON GUIDE
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 5 min  | [Opening](#opening)  | Lesson Objectives  |
+| 15 min  | [Introduction](#introduction)   | Intro to Models |
+| 15 min  | [Demo](#demo1)  | Active Record  |
+| 5 min  | [Demo](#demo2)  | Table Error |
+| 45 min  | [Guided Practice](#guidedpractice)  | Codealong  |
+| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
+| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+
+---
+<a name="opening"></a>
+###Opening (5 min)
+- Homework/Pre-work review
+- Current Lesson Objectives
+- Questions
+
+
+<a name="introduction"></a>
+### Intro: Wait, what are Models? (15 mins)
 
 #### Refresh on Models
 
@@ -80,7 +105,8 @@ Active Record is the M in MVC - the model - which is the layer of the system res
 This will all make a lot more sense once we start using it...so, let's start using it!
 
 
-## Requiring and using ActiveRecord - Demo (10 mins)
+<a name="demo1"></a>
+### Demo: Requiring and using ActiveRecord (10 mins)
 
 We're a successful talent management agency, Tunr, and we have designed a Sinatra app to manage our artists. Fork and clone this repository, and first, let's take a look at our app.rb & config.ru files.  Talk with a partner for a minute and discuss differences from our Sinatra apps in the beginning of the week as well as what you think each line does and how they relate to the rest of the app.
 
@@ -177,7 +203,8 @@ Start it up, check it out in your browser. Try clicking 'Add Artist' – crap!
 
 ![](http://s30.postimg.org/d5bpwkoo1/Screen_Shot_2015_07_10_at_10_42_37_AM.png)
 
-## Error?? Demo (5 mins)
+<a name="demo2"></a>
+### Demo: Error?? (5 mins)
 
 If you read through what this page is actually telling you, you can probably guess why this happened.
 
@@ -207,8 +234,8 @@ rake db:structure:dump      # Dump the database stru...
 rake db:structure:load      # Recreate the databases...
 rake db:version             # Retrieves the current ...
 ```
-
-## Let's Create Some Data Tables with migrations...and without SQL! Code Along (10 mins)
+<a name="guidedpractice"></a>
+### Guided Practice: Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
 
 You'll notice we've already set up a bit of your Rakefile for you – we're basically just using the commands that the ActiveRecord gem has built in. Don't worry about memorizing the code in this file, but _do_ make sure you understand what the commands it gives us do.
 
@@ -279,7 +306,8 @@ end
 
 Gorgeous, success! Now we change it.
 
-## Changes to our DB - Demo (10 mins)
+
+### Demo: Changes to our DB (10 mins)
 
 Just like we can write migrations to create tables, we can write migrations to add, change or delete attributes, update data types, change table names, and even delete tables.
 
