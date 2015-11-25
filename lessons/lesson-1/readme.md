@@ -117,10 +117,12 @@ creator:
 ## Introduction: Data Science Work Flow (25 mins)
 #### Overview of Steps: 
 Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce reliable and reproducible results.
-- Reliable: Findings are accurate
-- Reproducible: Others can follow your steps and get the same results. 
 
-The Steps:  
+- **Reliable**: Findings are accurate
+- **Reproducible**: Others can follow your steps and get the same results.
+
+The Steps:
+
 1. Indentify
 2. Acquire
 3. Parse
@@ -129,9 +131,12 @@ The Steps:
 6. Build
 7. Present
 
+
 ![Data Science Workflow Visual](assets/data-science-workflow-final.jpg)
 
-#### Walk through with the Futurama example from Project 1 
+
+#### Project 1: [Futurama Example](/projects/unit-projects/Project1/project1-example.ipynb)
+
 ##### IDENTIFY: Understand the problem:
 Using Planet Express customer data from January 3001-3005, determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
 
@@ -147,7 +152,9 @@ Ideal data vs. data that is available.
 Often times we start by identifing the ideal data we would want for a project. 
 During the aquistion phase we will learn about the limitations of the types of data that are available. We have to decide if the limitaions will inhibit our ability to answer our question of interst or if we will can work with what we have to find a resonable and reliable answer. 
 
-Data for this example: demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
+Data for this example: 
+- demographic information (profession, company size, location)
+- previous delivery data (days since last delivery, number of total deliveries)
 
 Questions we may ask include:  
 - Identifying the “right” data set(s)
@@ -200,8 +207,7 @@ Common steps include:
 
 ##### REFINE: Exploratory data analysis 
 An example of a basic statistics you may check: 
-
-Mean (STD) or frequency counts 
+- Mean (STD) or frequency counts 
 
 Variable | Mean (STD) or Frequency (%)
 ---| ---
@@ -271,15 +277,18 @@ Use three of the steps from the data science work flow (identify, acquire, prese
 > Students should get into 4 groups, spaced at the whiteboards around the room. 
 
 #### IDENTIFY: Understand the problem 
-Have each group develop 1 research question that they would like to know about the class and make a hypothesis (don't share with class yet)
+Have each group develop 1 research question that they would like to know about the class and make a hypothesis.
+> Note: Don't share these questions with the class just yet!
+
 Examples:
-- Current favorite tool for working with data? 
+- What is your current favorite tool for working with data?
+- What are you most excited about learning?
 - What can you help your classmates with when it comes to data analysis? 
-- What you most excited about learning?
 
 #### ACQUIRE: Obtain the data 
-Have students rotate through the groups to "collect the data" (suggest students make a easy visual way for the other students to write their answers, or select an option quickly to keep the time on this down)
-Record raw data on white boards.
+Rotate through the groups to "collect the data" and record the raw data on white boards.
+
+> Suggest students create an easy visual way for the other students to write their answers, or an option quickly to save time.
 
 #### PRESENT: Communicate the results of your analysis  
 - Summarize findings with narrative
@@ -288,12 +297,13 @@ Record raw data on white boards.
 
 <a name="demo"></a>
 ## Demo: Dev Environment Setup (65 min)
-* Brief intro to the tools we will use as a data sciencist- (detailed overview in lesson 2) 
+* Brief intro to the tools we will use as data scientists
 * Workshop to help with environment set up 
-* IPython Notebook to test set and complete Python Review
+* IPython Notebook to test dataset and complete Python Review
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
+By now, you should be able to answer the following questions with ease:
 - What is data science?
 - What is the data science workflow?
 - How can you have a successfull learning experience at GA?
