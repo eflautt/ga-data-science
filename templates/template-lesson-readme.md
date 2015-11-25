@@ -38,19 +38,19 @@ creator:
 # Title of the Lesson
 Week # | Lesson #
 
-### Learning Objectives
+### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
-### Student Pre-Work
+### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
-### Instructor Preparation
+### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 - Gather materials needed for class
 - Complete Prep work required
@@ -76,7 +76,7 @@ Week # | Lesson #
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
 <a name="introduction"></a>
-### Introduction - Topic (# mins)
+### Introduction: Topic (# mins)
 Discuss topic and explain by dividing parts into sections.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
@@ -173,10 +173,10 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 
 ***
 
-###Before Next Class
+##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-|**HOMEWORK**  | Example Assignment [#](Instructions)  |
+| **HOMEWORK** | Example Assignment [#](Instructions)  |
 | **PREWORK**  | Reading Assignment: Examples  |
 | **PROJECT**  | Project Assignment: Title [#](Instructions)  |
 
