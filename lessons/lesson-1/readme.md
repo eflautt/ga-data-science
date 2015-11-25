@@ -63,7 +63,7 @@ creator:
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
 
-[Data Science venn diagram](src='http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram')
+[Data Science venn diagram]()
 
 
 #### Who uses Data Science
