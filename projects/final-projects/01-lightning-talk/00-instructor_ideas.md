@@ -1,5 +1,3 @@
-(Jay, wasn't sure where to leave this, figured we can move this around later!)
-
 ## Ideas for Class Activities
 
 #### One and Done
