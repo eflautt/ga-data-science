@@ -8,23 +8,40 @@ creator:
 
 # Welcome to Data Science 
 
-### Objectives
-*After this lesson, students will be able to:*
+###LEARNING OBJECTIVES
+*After this lesson, you will be able to:*
 
 - Describe the roles of GA staff and students to create a successful learning environment for data science 
 - Define data science and the data science workflow
 - Apply data science workflow to get to know the class
 - Setup your data science development environment and review python basics
 
-### Preparation
-*Before this lesson, students should already be able to:*
-
+###STUDENT PRE-WORK
+*Before this lesson, you should already be able to:*
 - Define basic data types used in object-oriented programming
 - Recall the Python syntax for lists, dictionaries, and functions
 - Create files and navigate directories using the command line interface (for your specific environment)
 
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
+- Review syllabus
+- Read through lesson plans
+- Prepare slide decks
 
-## Welcome to GA! - Intro (20 mins) 
+##LESSON GUIDE
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 20 min  | [Opening](#opening)  | Welcome to GA  |
+| 20 min  | [Introduction](#introduction1)   | What is Data Science  |
+| 10 min  | [Quiz](#quiz)   | Data Science Quiz  |
+| 25 min  | [Introduction](#introduction2)  | Data Science Workflow  |
+| 25 min  | [Guided Practice](#practice)  | Workflow Application  |
+| 65 min  | [Demo](#demo)   | Data Science Dev Environment  |
+| 5 min  | [Conclusion](#conclusion)  | Review  |
+
+---
+<a name="opening"></a>
+## OPENING: Welcome to GA! (20 mins) 
 (See: Day 1 deck from production team)
 
 #### GA is a special learning environment 
@@ -40,8 +57,8 @@ creator:
 - After GA- build network, find oppurtunities, community, perks
 - Q/A
 
-
-## What is Data Science/ML- Intro (20 mins)
+<a name="introduction1"></a>
+## INTRODUCTION: What is Data Science (20 mins)
 - A set of tools and techniques used to extract useful informaiton from data
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
@@ -81,9 +98,10 @@ creator:
 
 ![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
 
-## Baseline Data Science Quiz - 10 Min 
-#### Quiz (7 min)
-(use a tool such as socrative to allow for real-time interactive results)
+<a name="quiz"></a>
+## QUIZ: Data Science Baseline (10 Min)
+#### Quiz
+> Consider presenting as a game or group activity.
 
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
 2. 2. Looking at Table.png- BMI is the _____
@@ -94,9 +112,10 @@ creator:
 4. True/False Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
 
-### Discuss Results (3 min)
+### Discuss Results
 
-## Data Science Work Flow - Introduction (25 mins)
+<a name="introduction2"></a>
+## INTRODUCTION: Data Science Work Flow (25 mins)
 #### Overview of Steps: 
 Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce reliable and reproducible results.
 - Reliable: Findings are accurate
@@ -193,7 +212,6 @@ Colgate 8| 100 (20%)
 Other| 150 (30%)
 
 These descriptive stats allow us to: 
-
 - Identify trends and outliers
 - Decide how to deal with outliers - excluding, filtering, and communication
 - Apply descriptive and inferential statistics
@@ -245,10 +263,11 @@ For example, after presenting your findings, you may want to:
 - Identify the limitations of your analysis
 - Identify relationships between visualizations
 
-## Short version Data Science Work Flow- Application (25 mins)
+<a name="practice"></a>
+## GUIDED PRACTICE: Data Sciecne Work Flow (25 mins)
 Use three of the steps from the data science work flow (identify, acquire, present) to get to know your classmates!
 
-Students should get into 4 groups- spaced at the whiteboards around the room. 
+> Students should get into 4 groups, spaced at the whiteboards around the room. 
 
 #### IDENTIFY: Understand the problem 
 Have each group develop 1 research question that they would like to know about the class and make a hypothesis (don't share with class yet)
@@ -266,13 +285,28 @@ Record raw data on white boards.
 - Provide a basic visualization for broader comprehension on white board
 - Have one student present for the group
 
-
-## Dev environment setup (65 min)
+<a name="demo"></a>
+## DEMO: Dev Environment Setup (65 min)
 * Brief intro to the tools we will use as a data sciencist- (detailed overview in lesson 2) 
 * Workshop to help with environment set up 
 * IPython Notebook to test set and complete Python Review
 
+<a name="conclusion"></a>
 ## Conclusion (5 mins)
 - What is data science?
 - What is the data science workflow?
 - How can you have a successfull learning experience at GA?
+
+***
+
+##BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **HOMEWORK** | Example Assignment [#](Instructions)  |
+| **PREWORK**  | Reading Assignment: Examples  |
+| **PROJECT**  | Project Assignment: Title, Section [#](Instructions)  |
+
+###ADDITIONAL RESOURCES
+- Add your own resources.
+- Go crazy.
+- So much room for bullets!
