@@ -67,12 +67,12 @@ creator:
 
 
 #### Who uses Data Science
-- Netflix movie recommendation example
-- Amazon "you may also like" example
-- Five Thrity Eight- election and sports coverage
-- Draft Kings- using data science to predict daily bets
-- Google translate and search results
-- Ask students if they know of any other examples
+- Netflix - movie recommendations
+- Amazon's algorithm - "you might also like x"
+- Five Thirty Eight- election and sports coverage
+- Draft Kings - using data science to predict daily bets
+- Google - autotranslate and search results
+	- Ask students if they know of any other examples
 
 #### What are the roles in Data Science?
 
@@ -94,7 +94,7 @@ creator:
 
 ![Data Science Skills](assets/datasci-skills.jpg)
 
-**Break down of skills by role**
+**Break down of skills by role:**
 
 ![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
 
@@ -104,7 +104,7 @@ creator:
 
 #### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
-2. 2. Looking at Table.png- BMI is the _____
+2. Looking at Table.png- BMI is the _____
 	* Outcome
 	* Predictor
 	* Covariate
@@ -152,7 +152,7 @@ Using Planet Express customer data from January 3001-3005, determine how likely 
 **Ideal data vs. data that is available**
 Often times we start by identifing the *ideal data* we would want for a project. 
 
-During the aquistion phase we will learn about the limitations on the types of data that are available. We have to decide if the limitaions will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
+During the data aquistion phase, we'll learn about the limitations on the types of data that are available. We have to decide if these limitaions will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
 
 Data for this example: 
 - demographic information (profession, company size, location)
@@ -229,11 +229,11 @@ These descriptive stats allow us to:
 - Transform data
 
 ##### BUILD: Create a data model
-We select a model based on the outcome we are intersted in and the assumptions of the model we are using. An example of a model statment may be: 
+We select a model based on the outcome we are interested in or the assumptions of the model we are using. An example of a model statement might look like this: 
 
 - We completed a logistic regression using Statsmodels v. XX. We calculated the probability of a customer placing another order with Planet Express.  
 
-In this case we are using a logistic model because with this we are determine the probability that a customer may place a return order, which at its heart is a *classifcation problem*. 
+Here, we are using a logistic model because we are determine the probability that a customer may place a return order, which at its heart is a *classifcation problem*. 
 
 The steps for model building are:  
 - Select appropriate model 
@@ -244,14 +244,14 @@ The steps for model building are:
 ##### PRESENT: Communicate the results of your analysis  
 Presentations are a critical part of your analysis. It doesn't matter how brillant your model is or how illuminating your findings are, if you are not able to effectively communicate your results then they will not be used. 
 
-The most basic form of a data science presentaiton should include a simple sentence that describes your results: 
-- Customers from large companies had twice (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies. 
+The most basic form of a data science presentation should include a simple sentence that describes your results: 
+- "Customers from large companies had twice (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies."
 
 Data science presentations can also be far more complex and exciting, like some of the [research presented by Nate Silver's 538 blog](http://fivethirtyeight.com/burrito/#brackets-view). 
 
 When creating a presentation, always consider your audience and make sure to practice your presentation beforehand. Consider the types of questions people might have or - better yet - test your presentation on a few people and pay attention to their response. Clarify and refine your presentation accordingly.
 
-When creating presentations, consider your needs and goals as well as those of your audience. A presentation created for your fellow data scientists will be vastly different than a presentation intended for some executives who are trying to make a business decision.
+Make sure to consider your needs and goals as well as those of your audience. A presentation created for your fellow data scientists will be vastly different than a presentation intended for some executives who are trying to make a business decision.
 
 Key factors of a good presentation include:  
 - Summarize findings with narrative and storytelling techniques 
@@ -262,12 +262,12 @@ Key factors of a good presentation include:
 - Test and evaluate the effectiveness of your presentation beforehand
 
 ##### A Note About Iteration
-Iteration is an important part of every step in the Data Science Workflow. At each point in the process, you may find yourself repeating or going back and re-doing elements in order to better understand your data, clarify your model, and refine your presentation.
+Iteration is an important part of *every step* in the Data Science Workflow. At any given point in the process, you may find yourself repeating or going back and re-doing elements in order to better understand your data, clarify your model, and refine your presentation.
 
 For example, after presenting your findings, you may want to:
-- Identify follow up problems and questions for future analysis
-- Create a visually effective summary / report
-- Consider different stakeholders, their needs, and how your report might change
+- Identify follow-up problems and questions for future analysis
+- Create a visually effective summary or report
+- Consider the needs of different stakeholders and how your report might be changed for them
 - Identify the limitations of your analysis
 - Identify relationships between visualizations
 
