@@ -53,6 +53,13 @@ This is where we review the deliverable(s) from the independent practice, recap 
 <a name="default-style"></a>
 ## Default Style
 
+### Voice
+- Projects: Project materials should be written directly for students.
+- Lessons: While lesson materials are instructor facing, they should primarily be written in a student-facing voice for consistency. If you want to make specific suggestions for instructors, use the "instructor's note" format:
+
+> Instructor Note: Here is a sample note that is only intended for instructors.
+
+
 ### Use dashes, not underscores
 While dashes & underscores are both fine choices, our structure starts looking ugly when we randomly have both, depending on preference. Underscores are wonderful, no hating on underscores.
 
