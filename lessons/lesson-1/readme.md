@@ -42,7 +42,7 @@ creator:
 ---
 <a name="opening"></a>
 ## Welcome to GA! (20 mins) 
-[See: Day 1 deck from production team](/DAT
+[See: Day 1 deck from production team](/dat-day1.key)
 
 #### GA is a special learning environment 
 - Introduce the instructors, EIRs, Producers
@@ -63,7 +63,7 @@ creator:
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
 
-![Data Science venn diagram](assets/Data_Science_VD.png)
+![Data Science venn diagram](assets/datascience-vd.png)
 
 
 #### Who uses Data Science
@@ -82,7 +82,7 @@ creator:
 * Data Creative
 * Data Businessperson
 
-![Data Science Roles](assets/DataScienceRoles1.jpg)
+![Data Science Roles](assets/datascienceroles.jpg)
 
 
 **Skills:** 
@@ -128,6 +128,8 @@ The Steps:
 5. Refine
 6. Build
 7. Present
+
+![Data Science Workflow Visual](assets/data-science-workflow-final.jpg)
 
 #### Walk through with the Futurama example from Project 1 
 ##### IDENTIFY: Understand the problem:
@@ -235,11 +237,11 @@ The steps for model building are:
 ##### PRESENT: Communicate the results of your analysis  
 Presentation is a critical part of your analysis. It doesn't matter how brillant your model is or how illuminating your findings are, if you are not able to effectively communicate your results then it will not be used. 
 
-The most simple form of communication may include a simple sentence that discribes your results: 
+The most basic form of a data science presentaiton should include a simple sentence that describes your results: 
 
-- Customers from large companies had 2.0 (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies. 
+- Customers from large companies had twice (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies. 
 
-While presentations can also be far more complex and exciting, like the embedded maps provided by the NYTimes. 
+Data science presentations can also be far more complex and exciting, like the [research presented by Nate Silver's 538 blog](http://fivethirtyeight.com/burrito/#brackets-view). 
 
 It is also important to practice your presentation. Find out what questions people have and refine your presentation to clarify any confusing points. A key factor in this is understanding your audience. You would create vastly different presentations for fellow data scientists than you would for executives who are trying to make a business decision. 
 
