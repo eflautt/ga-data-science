@@ -42,7 +42,7 @@ creator:
 ---
 <a name="opening"></a>
 ## Welcome to GA! (20 mins) 
-[See: Day 1 deck from production team](/dat-day1.key)
+[See: Day 1 deck from production team](/lessons/lesson-1/dat-day1.key)
 
 #### GA is a special learning environment 
 - Introduce the instructors, EIRs, Producers
