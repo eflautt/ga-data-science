@@ -2,7 +2,7 @@
 
 #### Overview
 
-In the field of data science, projects are practical; they relate to your working domain and require an understanding of scope.  Sometimes, your ideas approaching a project could even use a reality check.
+In the field of data science, projects are practical; they relate to your working domain and require an understanding of scope.  Sometimes, your ideas approaching a project could use a reality check.
 
 For part one of your final project, you will come up with a few different ideas around potential problems you can solve with data and present them in small groups in class. You'll get the opportunity to get some quick feedback from your peers and the instructional team that should give you direction for your final project.  Keep in mind that it's important to run though this ideation process a few times to generate clarity around what your project could look like with different interests.
 
