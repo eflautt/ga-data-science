@@ -41,7 +41,7 @@ creator:
 
 ---
 <a name="opening"></a>
-## OPENING: Welcome to GA! (20 mins) 
+## Welcome to GA! (20 mins) 
 (See: Day 1 deck from production team)
 
 #### GA is a special learning environment 
@@ -58,7 +58,7 @@ creator:
 - Q/A
 
 <a name="introduction1"></a>
-## INTRODUCTION: What is Data Science (20 mins)
+## Introduction: What is Data Science (20 mins)
 - A set of tools and techniques used to extract useful informaiton from data
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
@@ -99,10 +99,10 @@ creator:
 ![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
 
 <a name="quiz"></a>
-## QUIZ: Data Science Baseline (10 Min)
-#### Quiz
+## Quiz: Data Science Baseline (10 Min)
 > Consider presenting as a game or group activity.
 
+#### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
 2. 2. Looking at Table.png- BMI is the _____
 	* Outcome
@@ -115,7 +115,7 @@ creator:
 ### Discuss Results
 
 <a name="introduction2"></a>
-## INTRODUCTION: Data Science Work Flow (25 mins)
+## Introduction: Data Science Work Flow (25 mins)
 #### Overview of Steps: 
 Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce reliable and reproducible results.
 - Reliable: Findings are accurate
@@ -264,7 +264,7 @@ For example, after presenting your findings, you may want to:
 - Identify relationships between visualizations
 
 <a name="practice"></a>
-## GUIDED PRACTICE: Data Sciecne Work Flow (25 mins)
+## Practice: Data Science Work Flow (25 mins)
 Use three of the steps from the data science work flow (identify, acquire, present) to get to know your classmates!
 
 > Students should get into 4 groups, spaced at the whiteboards around the room. 
@@ -286,7 +286,7 @@ Record raw data on white boards.
 - Have one student present for the group
 
 <a name="demo"></a>
-## DEMO: Dev Environment Setup (65 min)
+## Demo: Dev Environment Setup (65 min)
 * Brief intro to the tools we will use as a data sciencist- (detailed overview in lesson 2) 
 * Workshop to help with environment set up 
 * IPython Notebook to test set and complete Python Review
