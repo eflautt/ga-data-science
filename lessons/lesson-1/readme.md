@@ -135,7 +135,7 @@ The Steps:
 ![Data Science Workflow Visual](assets/data-science-workflow-final.jpg)
 
 
-#### Project 1: [Futurama Example](/projects/unit-projects/Project1/project1-example.ipynb)
+#### Project 1: [Futurama Example](projects/unit-projects/Project1/project1-example.ipynb)
 
 ##### IDENTIFY: Understand the problem:
 Using Planet Express customer data from January 3001-3005, determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
@@ -144,13 +144,15 @@ Using Planet Express customer data from January 3001-3005, determine how likely 
 	- Are previous customers are to request a repeat delivery?
 - Identify and hypothesize goals and criteria for success:
 	- What factors are likely to influence a customer's decision to be reuse Planet Express for Delivery? 
-- Create a set of questions for identifying correct data set
+- Create a set of questions to help you identify the correct data set.
 
 
 ##### ACQUIRE: Obtain the data
-Ideal data vs. data that is available.
-Often times we start by identifing the ideal data we would want for a project. 
-During the aquistion phase we will learn about the limitations of the types of data that are available. We have to decide if the limitaions will inhibit our ability to answer our question of interst or if we will can work with what we have to find a resonable and reliable answer. 
+
+**Ideal data vs. data that is available**
+Often times we start by identifing the *ideal data* we would want for a project. 
+
+During the aquistion phase we will learn about the limitations on the types of data that are available. We have to decide if the limitaions will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
 
 Data for this example: 
 - demographic information (profession, company size, location)
@@ -171,7 +173,7 @@ Questions we may ask include:
 - Tool follows the format, size of the dataset 
 
 ##### PARSE: Understand the data 
-Many times we are given secondary data- or data that was collected previously. In these cases we have to learn as much as possible about our data using tools such a data dictionary and source documentation on how the data was gathered. 
+Many times we are given *secondary data*, or data that was collected previously. In these cases, we have to learn as much as possible about our data using tools like data dictionaries and source documentation to determine how the data was gathered. 
 
 Example data dictionary: 
 
@@ -192,7 +194,7 @@ Number of Deliveries | Integer | Continuous
 - Verify the quality of the data (feedback loop -> 1)
 
 ##### MINE: Prepare, structure, and clean the data  
-Often times, our data will need to be cleaned prior performing the analysis: 
+Often times, our data will need to be cleaned prior performing an analysis.
 
 Common steps include:
 - Sample the data, determine sampling methodology 
@@ -206,8 +208,7 @@ Common steps include:
 - Create necessary derived columns from the data (new data)
 
 ##### REFINE: Exploratory data analysis 
-An example of a basic statistics you may check: 
-- Mean (STD) or frequency counts 
+As an example of basic statistics, you might check the Mean (STD) or specific frequency counts.
 
 Variable | Mean (STD) or Frequency (%)
 ---| ---
@@ -232,7 +233,7 @@ We select a model based on the outcome we are intersted in and the assumptions o
 
 - We completed a logistic regression using Statsmodels v. XX. We calculated the probability of a customer placing another order with Planet Express.  
 
-In this case we are using a logistic model because this we are determine the probability that a customer may place a return order, which at its heart is a classifcation problem. 
+In this case we are using a logistic model because with this we are determine the probability that a customer may place a return order, which at its heart is a *classifcation problem*. 
 
 The steps for model building are:  
 - Select appropriate model 
@@ -241,29 +242,29 @@ The steps for model building are:
 - Predict outcomes, action items 
 
 ##### PRESENT: Communicate the results of your analysis  
-Presentation is a critical part of your analysis. It doesn't matter how brillant your model is or how illuminating your findings are, if you are not able to effectively communicate your results then it will not be used. 
+Presentations are a critical part of your analysis. It doesn't matter how brillant your model is or how illuminating your findings are, if you are not able to effectively communicate your results then they will not be used. 
 
 The most basic form of a data science presentaiton should include a simple sentence that describes your results: 
-
 - Customers from large companies had twice (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies. 
 
-Data science presentations can also be far more complex and exciting, like the [research presented by Nate Silver's 538 blog](http://fivethirtyeight.com/burrito/#brackets-view). 
+Data science presentations can also be far more complex and exciting, like some of the [research presented by Nate Silver's 538 blog](http://fivethirtyeight.com/burrito/#brackets-view). 
 
-It is also important to practice your presentation. Find out what questions people have and refine your presentation to clarify any confusing points. A key factor in this is understanding your audience. You would create vastly different presentations for fellow data scientists than you would for executives who are trying to make a business decision. 
+When creating a presentation, always consider your audience and make sure to practice your presentation beforehand. Consider the types of questions people might have or - better yet - test your presentation on a few people and pay attention to their response. Clarify and refine your presentation accordingly.
+
+When creating presentations, consider your needs and goals as well as those of your audience. A presentation created for your fellow data scientists will be vastly different than a presentation intended for some executives who are trying to make a business decision.
 
 Key factors of a good presentation include:  
-- Summarize findings with narrative, storytelling techniques 
-- Refine visualization for broader comprehension
-- Present limitations, assumptions
-- Determine degree of disclosure /integrity of analysis
-- What should I disclose to stakeholders as part of your analysis?
-- Concrete steps for testing evaluating the effectiveness of your presen
+- Summarize findings with narrative and storytelling techniques 
+- Refine your visualizations for broader comprehension
+- Present both limitations and assumptions
+- Determine the integrity of your analysis
+- Consider the degree of disclosure for various stakeholders
+- Test and evaluate the effectiveness of your presentation beforehand
 
 ##### A Note About Iteration
-Iteration is an important part of the Data Science Workflow. At every point in the process, you may find yourself repeating or going back and re-doing elements in order to better understand your data, clarify your model, and refine your presentation.
+Iteration is an important part of every step in the Data Science Workflow. At each point in the process, you may find yourself repeating or going back and re-doing elements in order to better understand your data, clarify your model, and refine your presentation.
 
 For example, after presenting your findings, you may want to:
-
 - Identify follow up problems and questions for future analysis
 - Create a visually effective summary / report
 - Consider different stakeholders, their needs, and how your report might change
@@ -272,7 +273,7 @@ For example, after presenting your findings, you may want to:
 
 <a name="practice"></a>
 ## Practice: Data Science Work Flow (25 mins)
-Use three of the steps from the data science work flow (identify, acquire, present) to get to know your classmates!
+Use three of the steps from the Data Science Workflow (identify, acquire, present) to get to know your classmates!
 
 > Students should get into 4 groups, spaced at the whiteboards around the room. 
 
@@ -291,7 +292,7 @@ Rotate through the groups to "collect the data" and record the raw data on white
 > Suggest students create an easy visual way for the other students to write their answers, or an option quickly to save time.
 
 #### PRESENT: Communicate the results of your analysis  
-- Summarize findings with narrative
+- Summarize findings in a narrative
 - Provide a basic visualization for broader comprehension on white board
 - Have one student present for the group
 
