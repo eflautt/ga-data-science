@@ -104,24 +104,24 @@ creator:
 
 #### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
-2. Looking at Table.png- BMI is the _____
+2. According to [this table](assets/Table.png), BMI is the _____
 	* Outcome
 	* Predictor
 	* Covariate
 3. Draw a normal distribution.
-4. True/False Linear regression is an unsupervised learning algorithm.
+4. True or False: Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
 #### Discuss Results
 
 <a name="introduction2"></a>
 ## Introduction: Data Science Work Flow (25 mins)
 #### Overview of Steps: 
-Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce reliable and reproducible results.
+Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce *reliable* and *reproducible* results.
 
-- **Reliable**: Findings are accurate
+- **Reliable**: Accurate findings
 - **Reproducible**: Others can follow your steps and get the same results.
 
-The Steps:
+**Data Science Workflow** Steps:
 
 1. Indentify
 2. Acquire
