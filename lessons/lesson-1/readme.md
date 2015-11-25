@@ -64,6 +64,7 @@ creator:
 * Data Researcher
 * Data Creative
 * Data Businessperson
+
 ![Data Science Roles](assets/DataScienceRoles1.jpg)
 
 
@@ -73,6 +74,7 @@ creator:
 * Math
 * Programming
 * Stats
+
 ![Data Science Skills](assets/datasci-skills.jpg)
 
 **Break down of skills by role**
