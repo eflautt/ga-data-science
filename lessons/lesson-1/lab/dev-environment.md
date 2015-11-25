@@ -1,5 +1,8 @@
 # Getting Started with Data Science Tools
-This document helps you get up to speed with three tool families:
+These items are included in the Data Science prework and are intended to help students prepare for the first day of class.
+-       Github Account
+-       Installations
+-       Syntax Practice
 
 ### Accounts
 1. [ ] Create a Github account, if you don't already have one.
