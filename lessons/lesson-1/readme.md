@@ -19,7 +19,9 @@ creator:
 ### Preparation
 *Before this lesson, students should already be able to:*
 
-- TBD- Match these to the goals of the pre-work 
+- Define basic data types used in object-oriented programming
+- Recall the Python syntax for lists, dictionaries, and functions
+- Create files and navigate directories using the command line interface (for their specific environment)
 
 
 ## Welcome to GA! - Intro (20 mins) 
@@ -44,7 +46,7 @@ creator:
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
 
-#### Data Science [venn diagram](src='http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram')
+[Data Science venn diagram](src='http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram')
 
 
 #### Who uses Data Science
@@ -55,45 +57,49 @@ creator:
 - Google translate and search results
 - Ask students if they know of any other examples
 
-#### What are the roles in Data Science? 
+#### What are the roles in Data Science?
+
 **Roles:** 
-image: DataScienceRoles1.jpg
 * Data Developer
 * Data Researcher
 * Data Creative
 * Data Businessperson
+![Data Science Roles](assets/DataScienceRoles1.jpg)
 
 
 **Skills:** 
-image: datasci-skills.jpg
 * Business
 * ML/Big Data
 * Math
 * Programming
 * Stats
+![Data Science Skills](assets/datasci-skills.jpg)
 
 **Break down of skills by role**
-image: datasci-skills-by-role.jpg
+
+![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
 
 ## Baseline Data Science Quiz - 10 Min 
 #### Quiz (7 min)
 (use a tool such as socrative to allow for real-time interactive results)
+
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
-2. Looking at Table.png- BMI is the _____
-	a. Outcome
-	b. Predictor
-	c. Covariate
-3. Draw a normal distribution. 
-4. True/False Linear regression is an unsupervised learning algorithm. 
+2. 2. Looking at Table.png- BMI is the _____
+	* Outcome
+	* Predictor
+	* Covariate
+3. Draw a normal distribution.
+4. True/False Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
 
 ### Discuss Results (3 min)
 
 ## Data Science Work Flow - Introduction (25 mins)
 #### Overview of Steps: 
-Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce reliable, and reproducible results.
-Reliable: Findings are accurate
-Reproducible: Others can follow your steps and get the same results. 
+Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce reliable and reproducible results.
+- Reliable: Findings are accurate
+- Reproducible: Others can follow your steps and get the same results. 
+
 The Steps:  
 1. Indentify
 2. Acquire
@@ -102,16 +108,15 @@ The Steps:
 5. Refine
 6. Build
 7. Present
-8. Iteration
 
 #### Walk through with the Futurama example from Project 1 
 ##### IDENTIFY: Understand the problem:
-Using Planet Express customer data from January 3001-3005 determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
+Using Planet Express customer data from January 3001-3005, determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
 
-- Identify business/product objectives 
-  Are previous customers are to request a repeat delivery?
-- Identify and hypothesize goals and criteria for success 
-  What factors are likely to influence a customer's decision to be reuse Planet Express for Delivery? 
+- Identify business/product objectives:
+	- Are previous customers are to request a repeat delivery?
+- Identify and hypothesize goals and criteria for success:
+	- What factors are likely to influence a customer's decision to be reuse Planet Express for Delivery? 
 - Create a set of questions for identifying correct data set
 
 
@@ -198,7 +203,7 @@ These descriptive stats allow us to:
 ##### BUILD: Create a data model
 We select a model based on the outcome we are intersted in and the assumptions of the model we are using. An example of a model statment may be: 
 
-We completed a logistic regression using Statsmodels v. XX. We calculated the probability of a customer placing another order with Planet Express.  
+- We completed a logistic regression using Statsmodels v. XX. We calculated the probability of a customer placing another order with Planet Express.  
 
 In this case we are using a logistic model because this we are determine the probability that a customer may place a return order, which at its heart is a classifcation problem. 
 
@@ -209,13 +214,15 @@ The steps for model building are:
 - Predict outcomes, action items 
 
 ##### PRESENT: Communicate the results of your analysis  
-Presentation is often a critical part of your analysis. It does not matter how brillant your model or findings if you are not able to effectively communicate your results it will not be used. 
+Presentation is a critical part of your analysis. It doesn't matter how brillant your model is or how illuminating your findings are, if you are not able to effectively communicate your results then it will not be used. 
 
 The most simple form of communication may include a simple sentence that discribes your results: 
 
-Customers from large companies had 2.0 (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies. 
+- Customers from large companies had 2.0 (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies. 
 
-To far more complex and exciting presentations such as the NYTimes maps. 
+While presentations can also be far more complex and exciting, like the embedded maps provided by the NYTimes. 
+
+It is also important to practice your presentation. Find out what questions people have and refine your presentation to clarify any confusing points. A key factor in this is understanding your audience. You would create vastly different presentations for fellow data scientists than you would for executives who are trying to make a business decision. 
 
 Key factors of a good presentation include:  
 - Summarize findings with narrative, storytelling techniques 
@@ -225,8 +232,10 @@ Key factors of a good presentation include:
 - What should I disclose to stakeholders as part of your analysis?
 - Concrete steps for testing evaluating the effectiveness of your presen
 
-##### Iteration / visualization
-It is important to practice your presentation. Find out what questions people have and refine your presentation to clarify any confusing points. A key factor in this is understanding your audience. You may have vastly different presentations for fellow data scientist than you would for executives who are trying to make a business decision. 
+##### A Note About Iteration
+Iteration is an important part of the Data Science Workflow. At every point in the process, you may find yourself repeating or going back and re-doing elements in order to better understand your data, clarify your model, and refine your presentation.
+
+For example, after presenting your findings, you may want to:
 
 - Identify follow up problems and questions for future analysis
 - Create a visually effective summary / report
@@ -235,16 +244,16 @@ It is important to practice your presentation. Find out what questions people ha
 - Identify relationships between visualizations
 
 ## Short version Data Science Work Flow- Application (25 mins)
-Using three of the data science work flow steps (identify, acquire, present) we will get to know the class. 
+Use three of the steps from the data science work flow (identify, acquire, present) to get to know your classmates!
 
-Divide students to into 4 groups- spaced at the whiteboards around the room. 
+Students should get into 4 groups- spaced at the whiteboards around the room. 
 
 #### IDENTIFY: Understand the problem 
 Have each group develop 1 research question that they would like to know about the class and make a hypothesis (don't share with class yet)
-Examples: 
-Current favorite tool for working with data? 
-What can you help your classmates with when it comes to data analysis? 
-What you most excited about learning?
+Examples:
+- Current favorite tool for working with data? 
+- What can you help your classmates with when it comes to data analysis? 
+- What you most excited about learning?
 
 #### ACQUIRE: Obtain the data 
 Have students rotate through the groups to "collect the data" (suggest students make a easy visual way for the other students to write their answers, or select an option quickly to keep the time on this down)
