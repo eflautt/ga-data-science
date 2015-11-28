@@ -32,6 +32,10 @@ creator:
 - review materials
 - be familiar with the datasets
 
+## Where are we in the data science workflow?
+
+The data we are working with for this lesson has been **Acquired** and **parsed**. Through today's process we will be **refining** the data and **building** models, using some plotting to **represent** the results.
+
 ## Simple Linear Regression (50 mins)
 
 #### It starts with a simple correlation
