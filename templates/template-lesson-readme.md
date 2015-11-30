@@ -109,7 +109,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 
 
 <a name="demo"></a>
-### Demo: Topic (# mins)
+### Demo / Codealong: Topic (# mins)
 Walk through a codealong or demonstration of something. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
