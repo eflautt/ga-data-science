@@ -2,22 +2,22 @@
 
 #### Overview
 
-In the field of data science, projects are practical; they relate to your working domain and require an understanding of scope.  Sometimes, your ideas approaching a project could use a reality check.
+In the field of data science, projects are practical. A good project is manageable and relates to your working domain; however, it can be hard to filter and scope good ideas when you're new to a field. That's where Part 1 of your final project comes in. 
 
-For part one of your final project, you will come up with a few different ideas around potential problems you can solve with data and present them in small groups in class. You'll get the opportunity to get some quick feedback from your peers and the instructional team that should give you direction for your final project.  Keep in mind that it's important to run though this ideation process a few times to generate clarity around what your project could look like with different interests.
+One of the best ways to test expectations and get feedback is to share your ideas with others. For part one of your final project, you'll come up with a few different ideas you could potentially solve with data, then present them in small groups to the class.
+
+You'll get the opportunity to get immediate feedback and guidance in order to help you choose an awesome final project idea. Keep in mind that it's important to run though this ideation process a few times with different ideas to clarify what your project should focus on.
 
 ---
 
 #### Requirements
 
 Your presentation must:
-
 * Explain three potential projects that include: a problem statement, a hypothesis, and potential data sets
 * Be 2-3 minutes in duration
 * Show you have spent time familiarizing yourself with the domain of the data, if you aren't already familiar
 
 **Bonus:**
-
 - High level data points can help show the "improvement" scope that's available
 - Cite similar/previous work that will better inform your strategy that can be taken
 
