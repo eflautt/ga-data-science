@@ -70,11 +70,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat di
 
 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
 
-
-##### Fake Project Idea Two
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-
 ---
 
 ### Useful Resources
@@ -93,7 +88,7 @@ Here's a few sentences & a screenshot of what we expect you to make or do.
 #### Project Feedback + Evaluation
 
 
-Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
