@@ -41,13 +41,13 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 
 ### TIMELINE
-| Deadline | Deliverable | Description |
+| Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 1  | Deliverable  | Brief project component description   |
-| Week 2  | Deliverable  | Brief project component description   |
-| Week 3  | Deliverable  | Brief project component description   |
-| Week 4  | Deliverable  | Brief project component description   |
-| Week 5  | Deliverable  | Brief project component description   |
+| Week 1: Lesson/Date | Title  | Brief component description   |
+| Week 2: Lesson/Date | Title  | Brief component description   |
+| Week 3: Lesson/Date | Title  | Brief component description   |
+| Week 4: Lesson/Date | Title  | Brief component description   |
+| Week 5: Lesson/Date | Title  | Brief component description   |
 
 ---
 
