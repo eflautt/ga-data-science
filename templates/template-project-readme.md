@@ -10,7 +10,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
 
 ### Prompt
-**Context / Directions:**
+**Context & Takeaway:**
 > Explain the circumstances/context/scenario requiring students to do/build a real world application. Tell a story!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
