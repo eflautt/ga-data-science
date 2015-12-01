@@ -9,7 +9,7 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
 
-### Prompt
+### PROMPT
 **Context & Takeaway:**
 > Explain the circumstances/context/scenario requiring students to do/build a real world application. Tell a story!
 
@@ -51,7 +51,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ---
 
-### Evaluation
+### EVALUATION
 **Guidelines & Rubric**
 Your project will be evaluated by your instructors in the following areas:
 - Guiding principle 1
@@ -69,7 +69,7 @@ Based on the requirements, you can earn a maximum of _____ points on this projec
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-### Bonus
+### BONUS
 **Optional Tips for Maximum Impact**
 - Additional features for advanced students
 - Other suggestions for design / style points
