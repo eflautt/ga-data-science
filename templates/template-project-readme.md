@@ -2,8 +2,8 @@
 >
 > - [ ] Are the requirements actionable?
 > - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
+> - [ ] Is this intended to be a group activity? Pair programming?
+> - [ ] Should students practice pseudo-coding before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 > Delete this section ^
 
@@ -11,7 +11,7 @@
 
 ### Prompt
 **Context / Directions:**
-> Explain the circumstances/ context / scenario requiring students to do/build a real world application. Tell a story!
+> Explain the circumstances / context / scenario requiring students to do/build a real world application. Tell a story!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
 
