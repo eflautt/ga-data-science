@@ -63,8 +63,7 @@ Your project will be evaluated by your instructors in the following areas:
 2. Guiding Principle
 3. Guiding Principle
 
-**Rubric**: [Link to rubric](#)
-Based on the requirements, you can earn a maximum of _____ points on this project.
+**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of _____ points on this project.
 
 #### Bonus
 - Additional features for advanced students
