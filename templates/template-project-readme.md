@@ -11,15 +11,16 @@
 
 ### PROMPT
 **Context & Takeaway:**
-> Explain the circumstances/context/scenario requiring students to do/build a real world application. Tell a story!
+> Explain the circumstances/ context / scenario requiring students to do/build a real world application. Tell a story!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
 
 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
 
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc. 
 
-**Goal:** Short one-two sentence takeaway stating primary purpose of project.
+**Goal**: Short one-two sentence takeaway stating primary purpose of project.
+
 ---
 
 ### DELIVERABLES
@@ -41,6 +42,8 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 
 ### TIMELINE
+**Deadlines & Due Dates**
+
 | Deadline | Deliverable| Description |
 |:-:|---|---|
 | Week 1: Lesson/Date | Title  | Brief component description   |
@@ -52,11 +55,13 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 ---
 
 ### EVALUATION
-**Guidelines & Rubric**
+**Guidelines & Rubric** 
+
 Your project will be evaluated by your instructors in the following areas:
-- Guiding principle 1
-- Guiding principle 2
-- Guiding Principle 3
+
+1. Guiding Principle
+2. Guiding Principle
+3. Guiding Principle
 
 **Rubric**: [Link to rubric](#)
 
@@ -69,15 +74,14 @@ Based on the requirements, you can earn a maximum of _____ points on this projec
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-### BONUS
-**Optional Tips for Maximum Impact**
+#### Bonus
 - Additional features for advanced students
 - Other suggestions for design / style points
 
 ---
 
 ### RESOURCES
-**Examples & Suggestions for Getting Started**
+**Examples & Suggestions**
 
 > Note: All components in this section are optional; only include elements that are relevant to your project.
 
@@ -88,8 +92,8 @@ Example 1: Here's a screenshot of what we expect you to make or do.
 > Include additional screenshots as needed.
 
 #### Materials / Starter Code 
-- Describe relevant project materials.
-- Explain any material in the starter code folder.
+- Describe other relevant project materials *(if applicable)*
+- Explain any material in the starter code folder *(if applicable)*
 
 #### Links to Past Projects
 - Prior [example student project 1](#)
