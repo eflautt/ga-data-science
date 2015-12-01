@@ -56,7 +56,7 @@ Week # | Lesson #
 - Complete Prep work required
 - Prepare any specific instructions
 
-###LESSON GUIDE
+### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Topic description  |
@@ -178,14 +178,14 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 
 ***
 
-##BEFORE NEXT CLASS
+### BEFORE NEXT CLASS
 |   |   |
 |---|---|
 | **HOMEWORK** | Example Assignment [#](Instructions)  |
 | **PREWORK**  | Reading Assignment: Examples  |
 | **PROJECT**  | Project Assignment: Title [#](Instructions)  |
 
-###ADDITIONAL RESOURCES
+### ADDITIONAL RESOURCES
 - Add your own resources.
 - Go crazy.
 - So much room for bullets!
