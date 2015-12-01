@@ -11,8 +11,7 @@
 
 ### Prompt
 **Context / Directions:**
-
-> Explain the circumstances around doing/building something. Tell a story!
+> Explain the circumstances/ context / scenario requiring students to do/build a real world application. Tell a story!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
 
@@ -40,7 +39,6 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 #### 2. Insert Next Deliverable Title
 > Iterate as needed.
 
----
 
 ### TIMELINE
 | Deadline | Deliverable | Description |
@@ -62,9 +60,7 @@ Your project will be evaluated by your instructors in the following areas:
 
 **Rubric**: [Link to rubric](#)
 
-Based on the requirements, you can earn a maximum of _____ points on this project.
-
-Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
