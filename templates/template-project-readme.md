@@ -92,8 +92,8 @@ Example 1: Here's a screenshot of what we expect you to make or do.
 - Explain any material in the starter code folder.
 
 #### Links to Past Projects
-- Prior example student project 1
-- Prior example student project 2
+- Prior [example student project 1](#)
+- Prior [example student project 2](#)
 
 #### Suggestions for Getting Started 
 - Do this to help brainstorm
