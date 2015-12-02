@@ -7,7 +7,6 @@ creator:
 ---
 
 > #### *Guiding Questions When Using This Template*
->
 > - [ ] If there is an existing resource, is there enough content for an hour and fifteen minutes?
 >   - [ ] Are there enough learning objectives?*
 >   - [ ] Are the learning objectives specific enough?
@@ -17,21 +16,23 @@ creator:
 >   - [ ] How will this lesson culminate? (final activity + conclusion)
 >
 > Use this to provide guidance on what you should add to the existing resource
->
 > - [ ] What will instructors have to do to prepare for this lesson?
 > - [ ] What will students have to do to prepare for this lesson?
+> - [ ] What should students do to review or prepare for the next lesson?
 >
-> _\* We normally see ~3 objectives for this length of lesson, but you should adapt based on the topic / context._
+> #### *How to Use This Template*
+> * Objectives: We normally see ~3 objectives for this length of lesson, but you should adapt based on the topic / context.
+> * Static Components: All courses should reserve 5 min for Opening and at least 5 min for Conclusion (review).
+> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
 
 
-> #### *Audience*
-
+> #### *Your Audience*
 > Keep in mind these DAT personas as you create and iterate on this lesson. Write out lessons in a student-facing voice for consistency.
 
-> Level up Lisa
+> **Level up Lisa**
 > Summary: She currently primarily uses Excel and SQL to do her data analysis.   She’s very excited to learn about predictive analysis but she doesn’t have the coding skills to really pick up these skills on her own.
 
-> Manager Matt
+> **Manager Matt**
 > Summary: He currently does basic data analysis in Excel and SQL. He doesn’t necessarily want to build the models to answer those question but he wants to understand how models can help him answer those questions. Ultimately, he wants to make better managerial decisions because he understand more about the work his team is doing.
 
 ---
