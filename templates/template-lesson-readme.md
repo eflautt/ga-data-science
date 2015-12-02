@@ -7,12 +7,15 @@ creator:
 ---
 
 > #### *Guiding Questions When Using This Template*
-> - [ ] If there is an existing resource, is there enough content for an hour and fifteen minutes?
->   - [ ] Are there enough learning objectives?*
->   - [ ] Are the learning objectives specific enough?
 >
 > - [ ] Are the learning objectives measurable?
+>   - [ ] Are there between 2-5 learning objectives?*
+>   - [ ] Are the learning objectives specific enough?
 >   - [ ] Do these learning objectives help students work toward the unit project?
+>
+> - [ ] Are activities spaced out with enough time for each?
+>   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
+>   - [ ] If reusing an existing resource, is there enough content for a given length of time?
 >   - [ ] How will this lesson culminate? (final activity + conclusion)
 >
 > Use this to provide guidance on what you should add to the existing resource:
@@ -21,8 +24,7 @@ creator:
 > - [ ] What should students do to review or prepare for the next lesson?
 >
 > #### *How to Use This Template*
-> * Objectives: We normally see ~3 objectives for this length of lesson, but you should adapt based on the topic / context.
-> * Static Components: All courses should reserve 5 min for Opening and at least 5 min for Conclusion (review).
+> * Static Components: Reserve 5 min for Opening, 5 unscheduled "buffer" mins, & at least 5 min for Conclusion (review). 
 > * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
 
 
