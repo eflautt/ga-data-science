@@ -309,7 +309,7 @@ Next class we'll go into further detail on other regression techniques, but for 
 * `linear_model.Ridge()`
 * `linear_model.ElasticNet()`
 
-**Check:** Were students able to complete the task?
+**Check:** Did the implementation run without error? What were the r-squared outputs for each estimator?
 
 
 <a name="intro3"></a>
