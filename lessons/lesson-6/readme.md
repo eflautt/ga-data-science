@@ -152,6 +152,7 @@ sns.lmplot(x, y, log_mammals)
 
 **Check:** Were students successfully able to use the code to determine correlations between body weight and the three given variables?
 
+
 <a name="intro2"></a>
 ### Introduction: Single Regression Analysis in sklearn (40 mins)
 
@@ -222,8 +223,9 @@ R-Squared: 0.871949198087
 
 ![04-mammals-residuals-hist](https://cloud.githubusercontent.com/assets/846010/11454351/cca7186e-95f6-11e5-9e12-e2b7abee9749.png)
 
-Our output tells us:
+**Check:**  What does our ouput tell us?
 
+Our output tells us that:
 * The relationship between bodywt and brainwt isn't random (p value approaching 0)
 * The model explains, roughly, 87% of the variance of the dataset (the largest errors being in the large brain and body sizes)
 * With this current model, `brainwt` is _roughly_ `bodywt * 0.00096395`
@@ -242,7 +244,7 @@ print lm.predict([[0]])
 array([ 0.08591731])
 ```
 
-What would we expect an animal's brainwt to be if their bodywt is 0?
+**Check:** What would we expect an animal's brainwt to be if their bodywt is 0?
 
 With linear modeling we call this part of the __linear assumption__. Consider it a test to the model. If an animal's body weights nothing, we expect their brain to be nonexistent. That given, we can improve the model by telling sklearn's LinearRegression object we do not want to fit a y intercept.
 
@@ -264,9 +266,10 @@ R-Squared: 0.864418807451
 * Because we start at 0, the large outliers have a greater effect, so the coefficient has increased.
 * Fitting the this linear assumption also explains slightly less of the variance.
 
-Is this a better or worse model? Why?
+**Check:** Is this a better or worse model? Why?
 
-#### Practice together using the `LinearRegression()` object
+<a name="guided-practice2"></a>
+### Guided Practice: Using the `LinearRegression()` object (# mins)
 
 We learned earlier that the the data in it's current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
 
@@ -280,11 +283,12 @@ for boolean in loop:
     get_linear_model_metrics(X, y, lm)
     print
 ```
-
+**Check:**
 * Out of the four, which model performed the best?
 * Out of the four, which model performed the worst?
 
-#### On Your Own: base linear regression classes
+<a name="ind-practice"></a>
+### Independent Practice: Base linear regression classes (# minutes)
 
 Next class we'll go into further detail on other regression techniques, but for now, experiment with the model evaluation function we have (`get_linear_model_metrics`) with the following sklearn estimator classes to show how easy it is to implement different estimators:
 
@@ -292,7 +296,10 @@ Next class we'll go into further detail on other regression techniques, but for 
 * `linear_model.Ridge()`
 * `linear_model.ElasticNet()`
 
-## Multiple Regression Analysis (50 minutes)
+**Check:** Were students able to complete the task?
+
+<a name="intro3"></a>
+### Introduction: Multiple Regression Analysis (50 minutes)
 
 While in the above example one variable well explained the variance of another, more often than not, we will need multiple variables. For example, a house's price may be best measured by square feet, but a lot of other variables play a vital role: bedrooms, bathrooms, location, appliances, etc. For a linear regression, we want these variables to be largely independent of each other, but all help explain the y variable.
 
