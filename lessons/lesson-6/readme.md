@@ -30,7 +30,7 @@ Week # | Lesson 6
 - Review materials
 - Be familiar with the datasets
 
-## LESSON GUIDE
+### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Where are we in the Data Science Workflow?  |
