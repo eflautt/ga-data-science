@@ -39,7 +39,7 @@ Week # | Lesson 6
 | 15 min  | [Guided Practice](#guided-practice1)  | Seaborn & Single Variable Linear Model Plots  |
 | 10 min  | [Introduction](#intro2)   | Single Regression Analysis in sklearn  |
 | 20 min  | [Demo](#demo2)  | Significance is Key   |
-| 15 min  | [Guided Practice](#guided-practice2)  | Using the `LinearRegression()` Object  |
+| 15 min  | [Guided Practice](#guided-practice2)  | Using the LinearRegression Object  |
 | 20 min  | [Independent Practice](#ind-practice1)  | Base Linear Regression Classes  |
 | 10 min  | [Introduction](#intro3)   | Multiple Regression Analysis  |
 | 15 min  | [Guided Practice](#guided-practice3)  | Multicollinearity with Dummy Variables |
