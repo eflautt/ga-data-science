@@ -1,9 +1,9 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research design write up (without models)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research Design Write-Up
 
 ### PROMPT
 **Context & Takeaway:**
 
-"A problem well stated is half solved" -- Charles Kettering
+"A problem well-stated is half-solved" -- Charles Kettering
 
 Welcome to Data Science! In this first project you will create a framework to scope out data science projects. This framework will provide you with a guide to develop a well-articulated problem statement and analysis plan that will be robust and reproducible.
 
