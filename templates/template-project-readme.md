@@ -26,20 +26,19 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-#### 1. Deliverable Title
-**Breakdown:** Breakdown of deliverable requirements:
+#### Deliverable Title
+- **Breakdown:** Breakdown of deliverable requirements:
   - Your project is to make a thing that does something
   - Your project should also do something else
   - Your project must meet these expectations
 
-**Submission:**	 State how the deliverable should be submitted.
+- **Submission:**	 State how the deliverable should be submitted.
 
-**Bonus:** Additional features for advanced students
+- **Bonus:** Additional features for advanced students
   - Suggestions for design / style points
 
 
-#### 2. Insert Next Deliverable Title
-> Iterate as needed.
+> Iterate as needed with additional deliverables.
 
 
 ### TIMELINE
