@@ -31,9 +31,9 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 Your project will be evaluated by your instructors in the following areas:
 
-1. Guiding Principle
-2. Guiding Principle
-3. Guiding Principle
+1. Identify
+2. Parse
+3. Refine
 
 #### Rubric:
 Based on the requirements, you can earn a maximum of 3 points on this project. Your instructors will score each of your technical requirements using the scale below:
