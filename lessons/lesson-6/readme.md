@@ -33,23 +33,31 @@ Week # | Lesson 6
 ## LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
-| 5 min  | [Opening](#opening)  | Topic description  |
-| 10 min  | [Introduction](#intro1)   | Topic description  |
-| 15 min  | [Demo](#demo1)  | Topic description  |
-| 45 min  | [Guided Practice](#guided-practice)  | Topic description  |
-| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
-| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+| 5 min  | [Opening](#opening)  | Where are we in the data science workflow?  |
+| 10 min  | [Introduction](#intro1)   | Simple Linear Regression  |
+| 10 min  | [Demo](#demo1)  | Regressing and normal distributions   |
+| 15 min  | [Guided Practice](#guided-practice1)  | Seaborn & Single Variable Linear Model Plots  |
+| 10 min  | [Introduction](#intro2)   | Single Regression Analysis in sklearn  |
+| 15 min  | [Demo](#demo2)  | Significance is key   |
+| 10 min  | [Guided Practice](#guided-practice2)  | Using the `LinearRegression()` object  |
+| 20 min  | [Independent Practice](#ind-practice1)  | Base linear regression classes  |
+| 10 min  | [Introduction](#intro3)   | Multiple Regression Analysis  |
+| 10 min  | [Guided Practice](#guided-practice3)  | Multicollinearity with dummy variables |
+| 10 min  | [Guided Practice](#guided-practice4)  | Combining non-correlated features |
+| 25 min  | [Independent Practice](#ind-practice2)  | Building Models for Other Y Variables  |
+| 5 min  | [Conclusion](#conclusion)  | Topic Review  |
+
 
 ---
 
 <a name="opening"></a>
-### Opening (# mins)
+### Opening (5 mins)
 ####Where are we in the data science workflow?
 
-The data we are working with for this lesson has been **Acquired** and **parsed**. Through today's process we will be **refining** the data and **building** models, using some plotting to **represent** the results.
+The data we are working with for this lesson has been **acquired** and **parsed**. Through today's process we will be **refining** the data and **building** models, using some plotting to **represent** the results.
 
 <a name="intro1"></a>
-### Introduction: Simple Linear Regression (50 mins)
+### Introduction: Simple Linear Regression (10 mins)
 
 #### It starts with a simple correlation
 
@@ -79,7 +87,7 @@ A linear regression works best when:
 **Check:** What is linear regression and when does can it be applied?
 
 <a name="demo1"></a>
-### Demo: Regressing and normal distributions (# mins)
+### Demo: Regressing and normal distributions (10 mins)
 
 When working with linear regressions, it helps to have data with normal distributions. Linear regressions have linear solutions, and we want this linear solution to explain the majority, "normal" part of our data; not the outliers! If the data is not normally distributed, the model could introduce _bias_, a term we will be discussing in more detail later on in the course.
 
@@ -136,7 +144,7 @@ Even though we changed the way the data was shaped, this is still a _linear_ res
 
 
 <a name="guided-practice1"></a>
-### Guided Practice: Using Seaborn to generate single variable linear model plots (# mins)
+### Guided Practice: Using Seaborn to generate single variable linear model plots (15 mins)
 
 Update and complete the code below to use `lmplot` and display correlations between body weight and three dependent variables: `sleep_rem` and `awake`.
 
@@ -154,7 +162,7 @@ sns.lmplot(x, y, log_mammals)
 
 
 <a name="intro2"></a>
-### Introduction: Single Regression Analysis in sklearn (40 mins)
+### Introduction: Single Regression Analysis in sklearn (10 mins)
 
 #### Defining model objects
 When modeling with sklearn, you'll use the following base principals.
@@ -183,8 +191,9 @@ With this information, we can build a simple process for linear regressions that
 
 **Check:** Describe some of the base principles for sklearn model objects. 
 
-<a name="demo3"></a>
-### Demo: Significance is key (# mins)
+
+<a name="demo2"></a>
+### Demo: Significance is key (15 mins)
 
 With the sklearn library, we can generate an sklearn model object and explore important evaluation values for linear regression.
 
@@ -270,8 +279,9 @@ R-Squared: 0.864418807451
 
 **Check:** Is this a better or worse model? Why?
 
+
 <a name="guided-practice2"></a>
-### Guided Practice: Using the `LinearRegression()` object (# mins)
+### Guided Practice: Using the `LinearRegression()` object (10 mins)
 
 We learned earlier that the the data in it's current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
 
@@ -291,7 +301,7 @@ for boolean in loop:
 
 
 <a name="ind-practice1"></a>
-### Independent Practice: Base linear regression classes (# minutes)
+### Independent Practice: Base linear regression classes (20 minutes)
 
 Next class we'll go into further detail on other regression techniques, but for now, experiment with the model evaluation function we have (`get_linear_model_metrics`) with the following sklearn estimator classes to show how easy it is to implement different estimators:
 
@@ -301,8 +311,9 @@ Next class we'll go into further detail on other regression techniques, but for 
 
 **Check:** Were students able to complete the task?
 
+
 <a name="intro3"></a>
-### Introduction: Multiple Regression Analysis (50 minutes)
+### Introduction: Multiple Regression Analysis (10 minutes)
 
 While in the above example one variable well explained the variance of another, more often than not, we will need multiple variables. For example, a house's price may be best measured by square feet, but a lot of other variables play a vital role: bedrooms, bathrooms, location, appliances, etc. For a linear regression, we want these variables to be largely independent of each other, but all help explain the y variable.
 
@@ -388,7 +399,7 @@ While temperature's coefficient is higher, the logical output still makes sense:
 
 
 <a name="guided-practice3"></a>
-### Guided Practice: Multicollinearity with dummy variables (# mins)
+### Guided Practice: Multicollinearity with dummy variables (10 mins)
 
 There can be a similar effect from a feature set that is a singular matrix, which is when there is a clear relationship in the matrix (for example, the sum of all rows = 1).
 
@@ -420,7 +431,7 @@ R-Squared: 0.0233906873841
 This model makes more sense, because we can more easily explain the variables _compared to_ the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well at all.
 
 <a name="guided-practice4"></a>
-### Guided Practice: Combining non-correlated features into a better model (# mins)
+### Guided Practice: Combining non-correlated features into a better model (10 mins)
 
 With a partner, complete this code together and visualize the correlations of all the numerical features built into the data set.
 
@@ -446,7 +457,7 @@ get_linear_model_metrics(final_feature_set, y, lm)
 **Check:** Were groups able to add all three conditions into the model? Did they come up with two additional predictive features?
 
 <a name="ind-practice2"></a>
-### Independent Practice: Building models for other y variables (# minutes)
+### Independent Practice: Building models for other y variables (25 minutes)
 
 We've completely a model together that explains casual guest riders. It's now your turn to build another model, but using a different y variable: registered riders.
 
