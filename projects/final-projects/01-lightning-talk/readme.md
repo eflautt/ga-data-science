@@ -1,6 +1,8 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 1: Lightning Talk
 
-#### Overview
+
+### PROMPT
+**Context & Takeaway:**
 
 In the field of data science, projects are practical. A good project is manageable and relates to your working domain; however, it can be hard to filter and scope good ideas when you're new to a field. That's where Part 1 of your final project comes in. 
 
@@ -8,18 +10,35 @@ One of the best ways to test expectations and get feedback is to share your idea
 
 You'll get the opportunity to get immediate feedback and guidance in order to help you choose an awesome final project idea. Keep in mind that it's important to run though this ideation process a few times with different ideas to clarify what your project should focus on.
 
+**Goal**: Create a brief minute presentation covering three potential project topics.
 ---
 
-#### Requirements
+### DELIVERABLES
+**Project Requirements & Constraints**
 
+#### 1. Lightning Presentation
 Your presentation must:
-* Explain three potential projects that include: a problem statement, a hypothesis, and potential data sets
+* Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
 * Be 2-3 minutes in duration
-* Show you have spent time familiarizing yourself with the domain of the data, if you aren't already familiar
+* Demonstrate familiarity with the domain of the data
+
+**Submission:**	
+Present materials in class, submit presentation to instructor via email.
 
 **Bonus:**
 - High level data points can help show the "improvement" scope that's available
 - Cite similar/previous work that will better inform your strategy that can be taken
+
+### TIMELINE
+**Deadlines & Due Dates**
+
+| Deadline | Deliverable| Description |
+|:-:|---|---|
+| Week 4: Lesson: 8 | Title  | Lightening Presentation   |
+| Week 2: Lesson/Date | Title  | Brief component description   |
+| Week 3: Lesson/Date | Title  | Brief component description   |
+| Week 4: Lesson/Date | Title  | Brief component description   |
+| Week 5: Lesson/Date | Title  | Brief component description   |
 
 ---
 
