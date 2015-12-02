@@ -8,22 +8,23 @@ In the field of data science, projects are practical. A good project is manageab
 
 One of the best ways to test expectations and get feedback is to share your ideas with others. For part one of your final project, you'll come up with a few different ideas you could potentially solve with data, then present them in small groups to the class.
 
-You'll get the opportunity to get immediate feedback and guidance in order to help you choose an awesome final project idea. Keep in mind that it's important to run though this ideation process a few times with different ideas to clarify what your project should focus on.
+You'll get the opportunity to get immediate feedback and guidance in order to help you choose an awesome final project idea. Keep in mind that it's important to run though this ideation process a few times with different ideas to clarify what your project should focus on. 
 
 **Goal**: Create a brief minute presentation covering three potential project topics.
+
 ---
 
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-#### 1. Lightning Presentation
+#### Lightning Presentation
 **Requirements:** You should present from a prepared deck that explains the following:
 
 * ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
 * ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
 * ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
 
-**Deliverables:** Your presentation _must_:
+**Deliverables:** Your presentation must:
 * Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
 * Be 2-3 minutes in duration
 * Demonstrate familiarity with the domain of the data
@@ -54,9 +55,9 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 Your project will be evaluated by your instructors in the following areas:
 
-1. Guiding Principle
-2. Guiding Principle
-3. Guiding Principle
+1. Identify
+2. Acquire
+3. Present
 
 **Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
 
