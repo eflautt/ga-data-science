@@ -19,7 +19,6 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 #### Lightning Presentation
 **Requirements:** You should present from a prepared deck that explains the following:
-
 * ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
 * ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
 * ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
@@ -45,14 +44,13 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 | Week 4: Lesson 8 | Lightning Presentation  | Present 3 problem statements   |
 | Week 7: Lesson 14 | Experiment Writeup  |  Research Design writeup and approval  |
 | Week 8: Lesson 16 | Exploratory Analysis  | Dataset approval and exploratory analysis   |
-| Week 9: Lesson 18 | Notebook Draft  |  IPython notebook & model “report”  |
+| Week 9: Lesson 18 | Notebook Draft  |  iPython notebook & model “report”  |
 | Week 10: Lesson 20 | Presentation  | Demo your findings   |
 
 ---
 
 ### EVALUATION
 **Guidelines & Rubric** 
-
 Your project will be evaluated by your instructors in the following areas:
 
 1. Identify
@@ -75,13 +73,13 @@ Your project will be evaluated by your instructors in the following areas:
 **Examples & Suggestions**
 
 #### Suggested Ways to Get Started
-- Try putting together a three-slide deck, for each of your project ideas, to keep organized
-- Look for example (or real) data to get a feel for what information exists for you to use
-- Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie
-- Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes
+- Try putting together a three-slide deck for each of your project ideas, in order to stay organized.
+- Look for example (or real) data to get a feel for what information exists that you can use.
+- Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie.
+- Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes".
 
 #### Example Deliverable
-Take a look at the [sample deck](#) provided.  There are three slides, corresponding to three potential project ideas, and al include a problem, hypothesis, and potential data sets.
+Take a look at the [sample deck](#) provided.  There are three slides corresponding to three potential project ideas, and all include a problem, hypothesis, and potential data sets.
 
 #### Useful Resources
 - For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
