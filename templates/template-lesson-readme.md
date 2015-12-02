@@ -78,7 +78,7 @@ Week # | Lesson #
 
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
-
+***
 
 <a name="introduction"></a>
 ### Introduction: Topic (# mins)
@@ -111,7 +111,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 
 **Check:** Here is a question to see how well students understand the material
 
-
+***
 
 <a name="demo"></a>
 ### Demo / Codealong: Topic (# mins)
@@ -138,7 +138,7 @@ end
 
 **Check:** By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
-
+***
 
 <a name="guided-practice"></a>
 ### Guided Practice: Topic (# mins)
@@ -164,7 +164,7 @@ end
 ```
 **Check:** Were students able to successfully solve the problem or complete the task?
 
-
+***
 
 <a name="ind-practice"></a>
 ### Independent Practice: Topic (# minutes)
@@ -176,6 +176,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 
 **Check:** Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
 
+***
 
 <a name="conclusion"></a>
 ### Conclusion (# mins)
