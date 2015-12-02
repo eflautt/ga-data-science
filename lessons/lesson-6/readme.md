@@ -134,6 +134,7 @@ sns.lmplot('bodywt', 'brainwt', log_mammals)
 
 Even though we changed the way the data was shaped, this is still a _linear_ result: it's just linear in the log10 of the data, instead of in the data's natural state.
 
+
 <a name="guided-practice1"></a>
 ### Guided Practice: Using Seaborn to generate single variable linear model plots (# mins)
 
@@ -149,11 +150,12 @@ sns.lmplot(x, y, mammals)
 sns.lmplot(x, y, log_mammals)
 ```
 
+**Check:** Were students successfully able to use the code to determine correlations between body weight and the three given variables?
 
-## Single Regression Analysis in sklearn (40 mins)
+<a name="intro2"></a>
+### Introduction: Single Regression Analysis in sklearn (40 mins)
 
 #### Defining model objects
-
 When modeling with sklearn, you'll use the following base principals.
 
 1. All sklearn estimators (modeling classes) are based on this [base estimator](http://scikit-learn.org/stable/modules/generated/sklearn.base.BaseEstimator.html). This allows you to easily rotate through estimators without changing much code.
@@ -174,11 +176,12 @@ estimator.predict(new_X)
 estimator.transform(new_X)
 ```
 
-For today, our `LinearRegression()` does not have a transform function... but some do! We will not use it today.
+For today, our `LinearRegression()` does not have a transform function... but some do! We will not be using it today.
 
 With this information, we can build a simple process for linear regressions that take advantage of a feature_selection function and the linear regression estimator, as well as get familiar with how to implement parameters.
 
-#### Significance is key
+<a name="demo2"></a>
+### Demo: Significance is key (# mins)
 
 With the sklearn library, we can generate an sklearn model object and explore important evaluation values for linear regression.
 
@@ -225,6 +228,7 @@ Our output tells us:
 * The model explains, roughly, 87% of the variance of the dataset (the largest errors being in the large brain and body sizes)
 * With this current model, `brainwt` is _roughly_ `bodywt * 0.00096395`
 * The _residuals_, or error in the prediction, is _not normal_, with outliers on the right. A better with will have similar to normally distributed error.
+
 
 #### Evaluating Fit, Evaluating Sense
 
