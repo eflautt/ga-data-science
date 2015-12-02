@@ -11,7 +11,8 @@ Welcome to Data Science! In this first project you will create a framework to sc
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-#### Completed IPython Notebook using markup
+
+#### Deliverable: Completed IPython Notebook using markup
 **Breakdown:**
 - Identify features of the dataset including the outcome, and covariates/predictors
 - Create a data dictionary with classification of available variables
