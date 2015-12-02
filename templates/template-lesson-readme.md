@@ -18,10 +18,10 @@ creator:
 >   - [ ] If reusing an existing resource, is there enough content for a given length of time?
 >   - [ ] How will this lesson culminate? (final activity + conclusion)
 >
-> Use this to provide guidance on what you should add to the existing resource:
-> - [ ] What will instructors have to do to prepare for this lesson?
-> - [ ] What will students have to do to prepare for this lesson?
-> - [ ] What should students do to review or prepare for the next lesson?
+> - [ ] Did you provide guidance for both students & instructors?
+>   - [ ] What will instructors have to do to prepare for this lesson?
+>   - [ ] What will students have to do to prepare for this lesson?
+>   - [ ] What should students do to review or prepare for the next lesson?
 >
 > #### *How to Use This Template*
 > * Static Components: Reserve 5 min for Opening, 5 unscheduled "buffer" mins, & at least 5 min for Conclusion (review). 
