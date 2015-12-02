@@ -1,9 +1,9 @@
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Pair programming?
-> - [ ] Should students practice pseudo-coding before beginning?
+> - [ ] What will students have to do to prepare for this project?
+> - [ ] Are components intended to be worked on individually? In pairs?
+> - [ ] Should students practice pre-work tasks before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 > Delete this section ^
 
