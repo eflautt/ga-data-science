@@ -181,7 +181,9 @@ For today, our `LinearRegression()` does not have a transform function... but so
 
 With this information, we can build a simple process for linear regressions that take advantage of a feature_selection function and the linear regression estimator, as well as get familiar with how to implement parameters.
 
-<a name="demo2"></a>
+**Check:** Describe some of the base principles for sklearn model objects. 
+
+<a name="demo3"></a>
 ### Demo: Significance is key (# mins)
 
 With the sklearn library, we can generate an sklearn model object and explore important evaluation values for linear regression.
@@ -287,7 +289,8 @@ for boolean in loop:
 * Out of the four, which model performed the best?
 * Out of the four, which model performed the worst?
 
-<a name="ind-practice"></a>
+
+<a name="ind-practice1"></a>
 ### Independent Practice: Base linear regression classes (# minutes)
 
 Next class we'll go into further detail on other regression techniques, but for now, experiment with the model evaluation function we have (`get_linear_model_metrics`) with the following sklearn estimator classes to show how easy it is to implement different estimators:
@@ -371,7 +374,7 @@ R-Squared: 0.21124723661
 
 Even though the 2-variable model `temp + atemp` has a higher explanation of variance than two two variables on their own, and both variables are considered significant (p values approaching 0), we can see that together,their coefficients are wildly different. This can introduce error in how we explain models.
 
-What happens if we use a second variable that isn't highly correlated with temperature, like humidity?
+**Check:** What happens if we use a second variable that isn't highly correlated with temperature, like humidity?
 
 ```bash
 temp, hum
@@ -383,7 +386,9 @@ R-Squared: 0.310901196913
 
 While temperature's coefficient is higher, the logical output still makes sense: for guest riders we expected a positive relationship with temperature and a negative relationship with humidity, and our model suggests it as well.
 
-#### Try It: multicollinearity with dummy variables
+
+<a name="guided-practice3"></a>
+### Guided Practice: Multicollinearity with dummy variables (# mins)
 
 There can be a similar effect from a feature set that is a singular matrix, which is when there is a clear relationship in the matrix (for example, the sum of all rows = 1).
 
@@ -410,9 +415,12 @@ y-intercept: 2.66666666652
 R-Squared: 0.0233906873841
 ```
 
-This model makes more sense, because we can more easily explain the variables _compared to_ the one we left out. For example, This suggests that that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well at all.
+**Check:** Are students able to explain how coefficients changed once all the weather situations were included?
 
-## Try It: Combining non-correlated features into a better model
+This model makes more sense, because we can more easily explain the variables _compared to_ the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well at all.
+
+<a name="guided-practice4"></a>
+### Guided Practice: Combining non-correlated features into a better model (# mins)
 
 With a partner, complete this code together and visualize the correlations of all the numerical features built into the data set.
 
@@ -435,12 +443,14 @@ final_feature_set = bikemodel_data[columns_to_keep]
 get_linear_model_metrics(final_feature_set, y, lm)
 ```
 
-#### Independent Practice: Building models for other y variables
+**Check:** Were groups able to add all three conditions into the model? Did they come up with two additional predictive features?
+
+<a name="ind-practice2"></a>
+### Independent Practice: Building models for other y variables (# minutes)
 
 We've completely a model together that explains casual guest riders. It's now your turn to build another model, but using a different y variable: registered riders.
 
 **Pay attention to:**
-
 * the distribution of riders (should we rescale the data?)
 * checking correlations with variables and registered riders
 * having a feature space (our matrix) with low multicollinearity
@@ -448,20 +458,33 @@ We've completely a model together that explains casual guest riders. It's now yo
 * the linear assumption -- given all feature values being 0, should we have no ridership? negative ridership? positive ridership?
 
 **Bonus**
-
 * Which variables would make sense to dummy (because they are categorical, not continuous)?
 * What features might explain ridership but aren't included in the data set?
     * Is there a way to build these using pandas and the features available?
 
-**Goal**
 
-If your model at least improves upon the original model and the explanatory effects (coefficients) make sense, consider this a complete task.
+**Check:** If your model at least improves upon the original model and the explanatory effects (coefficients) make sense, consider this a complete task.
 
-If your model has an r-squared above .4, this a relatively effective model for the data available. Kudos!
+- If your model has an r-squared above .4, this a relatively effective model for the data available. Kudos!
 
-## Conclusion (5 mins)
+<a name="conclusion"></a>
+### Conclusion (5 mins)
 - How do you dummy a categorical variable?
     - How do you avoid a singular matrix?
 - What is a single linear regression?
 - What makes multi-variable regressions more useful?
     - What challenges do they introduce?
+
+***
+
+##BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **HOMEWORK** | Example Assignment [#](Instructions)  |
+| **PREWORK**  | Reading Assignment: Examples  |
+| **PROJECT**  | Project Assignment: Title, Section [#](Instructions)  |
+
+###ADDITIONAL RESOURCES
+- Add your own resources.
+- Go crazy.
+- So much room for bullets!
