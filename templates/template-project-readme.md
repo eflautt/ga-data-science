@@ -27,18 +27,14 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 **Project Requirements & Constraints**
 
 #### 1. Deliverable Title
-- **Description:** Briefly discuss deliverable component
-
-- **Constraints:** Explain any limitations, if applicable
-
-- **Breakdown:** Breakdown of deliverable requirements:
+**Breakdown:** Breakdown of deliverable requirements:
   - Your project is to make a thing that does something
   - Your project should also do something else
   - Your project must meet these expectations
 
-- **Submission:**	 State how the deliverable should be submitted.
+**Submission:**	 State how the deliverable should be submitted.
 
-- **Bonus**
+**Bonus:**
   - Additional features for advanced students
   - Other suggestions for design / style points
 
