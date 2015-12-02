@@ -8,35 +8,48 @@ creator:
     dataset: citibike ridership and weather data
 ---
 
-# Intro to Regression Analysis
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Regression Analysis
+Week # | Lesson 6
 
-### Objectives
-*After this lesson, students will be able to:*
-
+### LEARNING OBJECTIVES
+*After this lesson, you will be able to:*
 - Define data modeling and simple linear regression
 - Build a linear regression model using a dataset that meets the linearity assumption using the sci-kit learn library
 - Understand and identify multicollinearity in a multiple regression.
 
-### Preparation
-*Before this lesson, students should already be able to:*
-
+### STUDENT PRE-WORK
+*Before this lesson, you should already be able to:*
 - Effectively show correlations between an independent variable `x` and a dependent variable `y`
 - Be familiar with the `get_dummies` function in pandas
 - Understand the difference between vectors, matrices, Series, and DataFrames
 - Understand the concepts of outliers and distance.
 - Be able to interpret p values and confidence intervals
 
-### Instructor Preparation
-*Before this lesson, instructors will have to:*
-
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
 - review materials
 - be familiar with the datasets
 
-## Where are we in the data science workflow?
+## LESSON GUIDE
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 5 min  | [Opening](#opening)  | Topic description  |
+| 10 min  | [Introduction](#intro1)   | Topic description  |
+| 15 min  | [Demo](#demo1)  | Topic description  |
+| 45 min  | [Guided Practice](#guided-practice)  | Topic description  |
+| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
+| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+
+---
+
+<a name="opening"></a>
+### Opening (# mins)
+####Where are we in the data science workflow?
 
 The data we are working with for this lesson has been **Acquired** and **parsed**. Through today's process we will be **refining** the data and **building** models, using some plotting to **represent** the results.
 
-## Simple Linear Regression (50 mins)
+<a name="intro1"></a>
+### Introduction: Simple Linear Regression (50 mins)
 
 #### It starts with a simple correlation
 
@@ -63,9 +76,12 @@ A linear regression works best when:
 * The Xs are independent of each other (low multicollinearity)
 * The resulting values passes linear assumptions (dependent on problem)
 
-#### Regressing and normal distributions
+**Check:** What is linear regression and when does can it be applied?
 
-When working with linear regressions, it helps to have data with normal distributions. Linear regressions have linear solutions, and we want this linear solution to explain the majority, "normal" part of our data; not the outliers! If the data is not normally distributed, the model could introduce _bias_, a term we will discuss more in detail further into the course.
+<a name="demo1"></a>
+### Demo: Regressing and normal distributions (# mins)
+
+When working with linear regressions, it helps to have data with normal distributions. Linear regressions have linear solutions, and we want this linear solution to explain the majority, "normal" part of our data; not the outliers! If the data is not normally distributed, the model could introduce _bias_, a term we will be discussing in more detail later on in the course.
 
 For example, let's look at explaining the relationship between an animal's body weight, and their brain weight.
 
@@ -114,11 +130,12 @@ sns.lmplot('bodywt', 'brainwt', log_mammals)
 
 ![03-mammals-plot](https://cloud.githubusercontent.com/assets/846010/11454354/ccb17da4-95f6-11e5-98dd-879dd30da086.png)
 
-Does this explain the animal's brain weight better or worse than the original data?
+**Check:** Does this explain the animal's brain weight better or worse than the original data?
 
 Even though we changed the way the data was shaped, this is still a _linear_ result: it's just linear in the log10 of the data, instead of in the data's natural state.
 
-#### You try: Using Seaborn to generate single variable linear model plots
+<a name="guided-practice1"></a>
+### Guided Practice: Using Seaborn to generate single variable linear model plots (# mins)
 
 Update and complete the code below to use `lmplot` and display correlations between body weight and three dependent variables: `sleep_rem` and `awake`.
 
@@ -131,6 +148,7 @@ log_mammals[log_columns] = log_mammals[log_columns].apply(np.log10)
 sns.lmplot(x, y, mammals)
 sns.lmplot(x, y, log_mammals)
 ```
+
 
 ## Single Regression Analysis in sklearn (40 mins)
 
