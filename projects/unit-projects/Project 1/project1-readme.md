@@ -69,7 +69,7 @@ For this project we will be using an IPython notebook. Notebooks are a handy way
 
 #### Links to Past Projects
 Check out the example notebook below with a data dictionary and responses to questions. Wonder how to format your notebook the same way? Click on a section to see the markdown.
-* ![Example Notebook](#) add link to example
+* ![Example Notebook](#)
 
 ### Useful Resources
 - [IPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
