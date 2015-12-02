@@ -38,7 +38,6 @@ Your project will be evaluated by your instructors in the following areas:
 1. Parse
 2. Mine
 3. Refine
-4. Build
 
 #### Rubric: [Link to rubric](#). 
 
