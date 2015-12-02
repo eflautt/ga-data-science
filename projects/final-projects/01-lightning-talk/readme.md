@@ -17,13 +17,20 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 **Project Requirements & Constraints**
 
 #### 1. Lightning Presentation
-Your presentation must:
+**Requirements:** You should present from a prepared deck that explains the following:
+
+* ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
+* ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
+* ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
+
+**Deliverables:** Your presentation _must_:
 * Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
 * Be 2-3 minutes in duration
 * Demonstrate familiarity with the domain of the data
 
 **Submission:**	
-Present materials in class, submit presentation to instructor via email.
+* Present materials in class
+* Submit presentation to instructor via email.
 
 **Bonus:**
 - High level data points can help show the "improvement" scope that's available
@@ -34,46 +41,24 @@ Present materials in class, submit presentation to instructor via email.
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 4: Lesson: 8 | Title  | Lightening Presentation   |
-| Week 2: Lesson/Date | Title  | Brief component description   |
-| Week 3: Lesson/Date | Title  | Brief component description   |
-| Week 4: Lesson/Date | Title  | Brief component description   |
-| Week 5: Lesson/Date | Title  | Brief component description   |
+| Week 4: Lesson 8 | Lightning Presentation  | Present 3 problem statements   |
+| Week 7: Lesson 14 | Experiment Writeup  |  Research Design writeup and approval  |
+| Week 8: Lesson 16 | Exploratory Analysis  | Dataset approval and exploratory analysis   |
+| Week 9: Lesson 18 | Notebook Draft  |  IPython notebook & model “report”  |
+| Week 10: Lesson 20 | Presentation  | Demo your findings   |
 
 ---
 
-#### Necessary Deliverables
+### EVALUATION
+**Guidelines & Rubric** 
 
-You should present from a prepared deck that explains the following:
+Your project will be evaluated by your instructors in the following areas:
 
-* **The Problem** What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
-* **Data** What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
-* **Hypotheses** Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
+1. Guiding Principle
+2. Guiding Principle
+3. Guiding Principle
 
----
-
-#### Suggested Ways to Get Started
-
-- Try putting together a three-slide deck, for each of your project ideas, to keep organized
-- Look for example (or real) data to get a feel for what information exists for you to use
-- Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie
-- Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes
-
----
-
-### Useful Resources
-
-- For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
-
----
-
-#### Example Deliverable
-
-Take a look at the [sample deck](#) provided.  There are three slides, corresponding to three potential project ideas, and al include a problem, hypothesis, and potential data sets.
-
-#### Project Feedback + Evaluation
-
-Base on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
+**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -83,3 +68,19 @@ Base on the requirements, you can earn a maximum of 9 points on this project. Yo
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
  This will serve as a gauge of whether you met the project goals and can help you identify where to focus your efforts moving forward!
+
+---
+### RESOURCES
+**Examples & Suggestions**
+
+#### Suggested Ways to Get Started
+- Try putting together a three-slide deck, for each of your project ideas, to keep organized
+- Look for example (or real) data to get a feel for what information exists for you to use
+- Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie
+- Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes
+
+#### Example Deliverable
+Take a look at the [sample deck](#) provided.  There are three slides, corresponding to three potential project ideas, and al include a problem, hypothesis, and potential data sets.
+
+#### Useful Resources
+- For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
