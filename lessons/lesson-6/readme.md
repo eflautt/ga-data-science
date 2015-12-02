@@ -27,23 +27,23 @@ Week # | Lesson 6
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- review materials
-- be familiar with the datasets
+- Review materials
+- Be familiar with the datasets
 
 ## LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
-| 5 min  | [Opening](#opening)  | Where are we in the data science workflow?  |
+| 5 min  | [Opening](#opening)  | Where are we in the Data Science Workflow?  |
 | 10 min  | [Introduction](#intro1)   | Simple Linear Regression  |
-| 10 min  | [Demo](#demo1)  | Regressing and normal distributions   |
+| 10 min  | [Demo](#demo1)  | Regressing and Normal Distributions   |
 | 15 min  | [Guided Practice](#guided-practice1)  | Seaborn & Single Variable Linear Model Plots  |
 | 10 min  | [Introduction](#intro2)   | Single Regression Analysis in sklearn  |
-| 20 min  | [Demo](#demo2)  | Significance is key   |
-| 15 min  | [Guided Practice](#guided-practice2)  | Using the `LinearRegression()` object  |
-| 20 min  | [Independent Practice](#ind-practice1)  | Base linear regression classes  |
+| 20 min  | [Demo](#demo2)  | Significance is Key   |
+| 15 min  | [Guided Practice](#guided-practice2)  | Using the `LinearRegression()` Object  |
+| 20 min  | [Independent Practice](#ind-practice1)  | Base Linear Regression Classes  |
 | 10 min  | [Introduction](#intro3)   | Multiple Regression Analysis  |
-| 15 min  | [Guided Practice](#guided-practice3)  | Multicollinearity with dummy variables |
-| 15 min  | [Guided Practice](#guided-practice4)  | Combining non-correlated features |
+| 15 min  | [Guided Practice](#guided-practice3)  | Multicollinearity with Dummy Variables |
+| 15 min  | [Guided Practice](#guided-practice4)  | Combining Non-Correlated Features |
 | 25 min  | [Independent Practice](#ind-practice2)  | Building Models for Other Y Variables  |
 | 5 min  | [Conclusion](#conclusion)  | Topic Review  |
 
