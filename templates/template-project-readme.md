@@ -19,7 +19,7 @@ Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
 
 Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc. 
 
-**Goal**: Short one-two sentence takeaway stating primary purpose of project.
+**Goal:** Short one-two sentence takeaway stating primary purpose of project.
 
 ---
 
@@ -27,14 +27,20 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 **Project Requirements & Constraints**
 
 #### 1. Deliverable Title
-- Description: Briefly discuss deliverable component
-- Constraints: Explain any limitations, if applicable
-- Breakdown: Breakdown of deliverable requirements:
+**Description:** Briefly discuss deliverable component
+
+**Constraints:** Explain any limitations, if applicable
+
+**Breakdown:** Breakdown of deliverable requirements:
   - Your project is to make a thing that does something
   - Your project should also do something else
   - Your project must meet these expectations
 
-**Submission**:	 *State how the deliverable should be submitted.*
+**Submission:**	 State how the deliverable should be submitted.
+
+**Bonus**
+- Additional features for advanced students
+- Other suggestions for design / style points
 
 
 #### 2. Insert Next Deliverable Title
@@ -63,11 +69,9 @@ Your project will be evaluated by your instructors in the following areas:
 2. Guiding Principle
 3. Guiding Principle
 
-**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of _____ points on this project.
+#### Rubric: [Link to rubric](#). 
 
-#### Bonus
-- Additional features for advanced students
-- Other suggestions for design / style points
+Based on the requirements, you can earn a maximum of _____ points on this project.
 
 ---
 
@@ -100,3 +104,4 @@ Example 1: Here's a screenshot of what we expect you to make or do.
 - Extra relevant [resource for students](#)
 
 ---
+
