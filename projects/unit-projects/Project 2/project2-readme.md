@@ -8,7 +8,7 @@ Before completing an analysis, it is critical to understand your data. You will 
 
 Following these steps will help you better understand your dataset.
 
-**Goal:** 
+**Goal:** An iPython notebook writeup that provides a dataset overview with visualizations and statistical analysis.
 
 ---
 #### Necessary Deliverables
@@ -27,7 +27,7 @@ Following these steps will help you better understand your dataset.
 **Bonus:**
 - Replace missing values using the median replacement method
 - Log transform data to meet normality requirements
-- Advanced Option: Replace missing values using multiple imputation methods
+- *Advanced Option*: Replace missing values using multiple imputation methods
 
 ---
 ### EVALUATION
@@ -35,9 +35,10 @@ Following these steps will help you better understand your dataset.
 
 Your project will be evaluated by your instructors in the following areas:
 
-1. Guiding Principle
-2. Guiding Principle
-3. Guiding Principle
+1. Parse
+2. Mine
+3. Refine
+4. Build
 
 #### Rubric: [Link to rubric](#). 
 
