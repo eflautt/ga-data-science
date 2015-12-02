@@ -63,11 +63,11 @@ Week # | Lesson #
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Topic description  |
-| 10 min  | [Introduction](#introduction)   | Topic description  |
-| 15 min  | [Demo](#demo)  | Topic description  |
-| 45 min  | [Guided Practice](#guided-practice<a name="opening"></a>)  | Topic description  |
-| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
-| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+| 10-15 mins  | [Introduction](#introduction)   | Topic description  |
+| 10-15 mins  | [Demo](#demo)  | Topic description  |
+| 20-35 mins  | [Guided Practice](#guided-practice<a name="opening"></a>)  | Topic description  |
+| 20-25 mins  | [Independent Practice](#ind-practice)  | Topic description  |
+| 5-10 mins  | [Conclusion](#conclusion)  | Topic description  |
 
 ---
 <a name="opening"></a>
