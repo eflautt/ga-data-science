@@ -24,7 +24,7 @@ creator:
 >   - [ ] What should students do to review or prepare for the next lesson?
 >
 > #### *How to Use This Template*
-> * Static Components: Reserve 5 min for Opening, 5 unscheduled "buffer" mins, & at least 5 min for Conclusion (review). 
+> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review). 
 > * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
 
 
