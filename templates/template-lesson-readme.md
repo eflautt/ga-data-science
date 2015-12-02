@@ -15,7 +15,7 @@ creator:
 >   - [ ] Do these learning objectives help students work toward the unit project?
 >   - [ ] How will this lesson culminate? (final activity + conclusion)
 >
-> Use this to provide guidance on what you should add to the existing resource
+> Use this to provide guidance on what you should add to the existing resource:
 > - [ ] What will instructors have to do to prepare for this lesson?
 > - [ ] What will students have to do to prepare for this lesson?
 > - [ ] What should students do to review or prepare for the next lesson?
