@@ -316,7 +316,7 @@ By now, you should be able to answer the following questions with ease:
 |---|---|
 | **HOMEWORK** | Example Assignment [#](Instructions)  |
 | **PREWORK**  | Reading Assignment: Examples  |
-| **PROJECT**  | Project Assignment: Title, Section [#](Instructions)  |
+| **PROJECT**  | Project 1 [#](Instructions)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.
