@@ -1,6 +1,6 @@
 ---
 title: Intro to Regression Analysis
-duration: 2:30
+duration: "02:30"
 creator:
     name: Ed Podojil
     city: NYC
