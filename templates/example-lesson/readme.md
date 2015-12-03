@@ -30,7 +30,7 @@ Week # | Lesson #
 - Complete Prep work required
 - Prepare any specific instructions
 
-## LESSON GUIDE
+### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Lesson Objectives  |
@@ -45,14 +45,14 @@ Week # | Lesson #
 
 ---
 <a name="opening"></a>
-###Opening (5 min)
+## Opening (5 min)
 - Homework/Pre-work review
 - Current Lesson Objectives
 - Questions
 
 
 <a name="introduction"></a>
-### Intro: Wait, what are Models? (15 mins)
+## Intro: Wait, what are Models? (15 mins)
 
 #### Refresh on Models
 
@@ -109,7 +109,7 @@ This will all make a lot more sense once we start using it...so, let's start usi
 
 
 <a name="demo1"></a>
-### Demo: Requiring and using ActiveRecord (10 mins)
+## Demo: Requiring and using ActiveRecord (10 mins)
 
 We're a successful talent management agency, Tunr, and we have designed a Sinatra app to manage our artists. Fork and clone this repository, and first, let's take a look at our app.rb & config.ru files.  Talk with a partner for a minute and discuss differences from our Sinatra apps in the beginning of the week as well as what you think each line does and how they relate to the rest of the app.
 
@@ -128,7 +128,7 @@ Artist.find(params[:id]) #nah uh!!
 We get all these awesome methods - that we don't have to write ourselves - and we can call them on our Artist class; and this is all possible when we require ActiveRecord (yes, it's just another gem!)
 
 <a name="code1"></a>
-### Codealong: Setting up a class and our DB with ActiveRecord (15 mins)
+## Codealong: Setting up a class and our DB with ActiveRecord (15 mins)
 
 These ```.all``` ```.find``` ActiveRecord methods will write the SQL for us, and since we've connected our database, we can pull any data we need real, real easily.  But before we can, we have to set up our file and classes to use ActiveRecord and a database to talk to:
 
@@ -212,7 +212,7 @@ Start it up, check it out in your browser. Try clicking 'Add Artist' – crap!
 
 
 <a name="demo2"></a>
-### Demo: Table Error?? (5 mins)
+## Demo: Table Error?? (5 mins)
 
 If you read through what this page is actually telling you, you can probably guess why this happened.
 
@@ -246,7 +246,7 @@ rake db:version             # Retrieves the current ...
 
 
 <a name="guidedpractice"></a>
-### Guided Practice: Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
+## Guided Practice: Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
 
 You'll notice we've already set up a bit of your Rakefile for you – we're basically just using the commands that the ActiveRecord gem has built in. Don't worry about memorizing the code in this file, but _do_ make sure you understand what the commands it gives us do.
 
@@ -321,7 +321,7 @@ Gorgeous, success! Now we change it.
 
 
 <a name="demo3"></a>
-### Demo: More changes to our DB (10 mins)
+## Demo: More changes to our DB (10 mins)
 
 Just like we can write migrations to create tables, we can write migrations to add, change or delete attributes, update data types, change table names, and even delete tables.
 
@@ -410,21 +410,21 @@ For the last part of class, the guys at Tunr, decided they need more information
 **Check:** Were students able to add columns and update the page with new data?
 
 <a name="conclusion"></a>
-### Conclusion (5 mins)
+## Conclusion (5 mins)
 - What is ActiveRecord and how does it interact with your database?
 - What are migrations?
 - Briefly, describe how to configure your Sinatra app to use ActiveRecord.
 
 ***
 
-##BEFORE NEXT CLASS
+### BEFORE NEXT CLASS
 |   |   |
 |---|---|
 | **HOMEWORK** | Finish Tunr Assignment [#](Instructions)  |
 | **PREWORK**  | Do this Reading Assignment: RubyGems  |
 | **PROJECT**  | Work on Project 1 Deliverable [#](Instructions)  |
 
-###ADDITIONAL RESOURCES
+### ADDITIONAL RESOURCES
 - Sinatra Resources
 - ActiveRecord Documentation
 - Other Useful Ruby Gems
