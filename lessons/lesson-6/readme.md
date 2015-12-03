@@ -193,7 +193,7 @@ With this information, we can build a simple process for linear regressions that
 
 
 <a name="demo2"></a>
-## Demo: Significance is key (20 mins)
+## Demo: Significance is Key (20 mins)
 
 With the sklearn library, we can generate an sklearn model object and explore important evaluation values for linear regression.
 
@@ -281,7 +281,7 @@ R-Squared: 0.864418807451
 
 
 <a name="guided-practice2"></a>
-## Guided Practice: Using the `LinearRegression()` object (15 mins)
+## Guided Practice: Using the LinearRegression object (15 mins)
 
 We learned earlier that the the data in it's current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
 
