@@ -1,11 +1,11 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 2: Project Design Writeup and Approval
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 2: Project Design Writeup
 
 ### PROMPT
 **Context & Takeaway:**
 
 Project outlines are a valuable resource to working through data projects. They help keep your project organized. Even if/as challenges come up with your project that may derail you away from your plan, as least you'll go in with a thoughtful approach. A well constructed outline can make your project seem effortless, while a poorly written outline may  of your time.
 
-For this project, you will need to complete an outline for ***one*** of the three lightning talks you designed, which serves as the starting point for getting your project off the ground. You should aim to complete this outline as soon as you have a clear idea of which project you want to work on from your lighning talk. Remember, completing this task earlier will allow more for more chances to iterate and improve upon your process!
+For this project, you will need to complete a problem statement and research design outline for ***one*** of the three lightning talks you designed, which serves as the starting point for getting your project off the ground. You should aim to complete this outline as soon as you have a clear idea of which project you want to work on. Remember, completing this task earlier will give you more chances to iterate and improve!
 
 **Goal:** Create an outline of your research design approach, including hypothesis, assumptions, risks, and success metrics. 
 ---
@@ -49,7 +49,7 @@ Your project will be evaluated by your instructors in the following areas:
 
 1. Identify
 2. Acquire
-3. Present
+3. Parse
 
 **Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
 
@@ -66,50 +66,16 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 ### RESOURCES
 **Examples & Suggestions**
 
+#### Starter Code
+- Please use the [template](01-template.md) provided.
 
+#### Specific Tips
+- Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
+- Show a clear connection between the datasets and the problem presented. The project should avoid working with independent variables (or features) that would not ordinarily be available in order to predict your target.
 
-
----
-
-#### Starter code
-
-Please use the [template](01-template.md) provided.
-
-#### Suggested Ways to Get Started
-
+#### Suggestions for Getting Started
 - The more time you spend researching, the less time you'll likely spend writing; this is a positive sign!
 - While researching, keep track of all of your resources. Make sure they're trustworthy.
 - If you've seen similar work online, see if you can find the code that implemented the data munging. It might come in handy!
 - If your project requires using an API, make sure you can get access to it. Not everyone gives away API keys immediately, and you don't want to be caught with no data with one week left to work!
-
-    * Flesh out to a more complete scope for one of your lightning project ideas
-    * Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
-    * Show a clear connection between the datasets and the problem presented. The project should avoid working with independent variables (or features) that would not ordinarily be available in order to predict your target.
-
----
-
-### Useful Resources
-
-
-
----
-
-#### Deliverable
-
-Include example
-
-#### Project Feedback + Evaluation
-
-Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
-
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
-
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
-
-
 
