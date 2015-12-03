@@ -26,7 +26,7 @@ In response, you'll participate in a short Q/A session (roughly two minutes) wit
     * An explanation of your model (for non-technical audiences)
     * Recommendations based on your findings
     * An appendix that includes all of your work and technical terminology
-  * Review next steps in a deployment scenario with your audience; how could you take this project beyond the scope of this course?
+  * Review next steps with your audience; what could you do beyond the scope of this course?
 
 - **Breakdown:**
     * A 10 to 20 slide deck consisting of:
