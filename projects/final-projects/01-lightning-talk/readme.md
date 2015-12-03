@@ -18,23 +18,23 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 **Project Requirements & Constraints**
 
 #### Lightning Presentation
-**Requirements:** You should present from a prepared deck that explains the following:
-* ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
-* ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
-* ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
+- **Requirements:** You should present from a prepared deck that explains the following:
+    * ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
+    * ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
+    * ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
 
-**Deliverables:** Your presentation must:
-* Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
-* Be 2-3 minutes in duration
-* Demonstrate familiarity with the domain of the data
+- **Deliverables:** Your presentation must:
+    * Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
+    * Be 2-3 minutes in duration
+    * Demonstrate familiarity with the domain of the data
 
-**Submission:**	
-* Present materials in class
-* Submit presentation to instructor via email.
+- **Submission:**	
+    * Present materials in class
+    * Submit presentation to instructor via email.
 
-**Bonus:**
-- High level data points can help show the "improvement" scope that's available
-- Cite similar/previous work that will better inform your strategy that can be taken
+- **Bonus:**
+    - High level data points can help show the "improvement" scope that's available
+    - Cite similar/previous work that will better inform your strategy that can be taken
 
 ### TIMELINE
 **Deadlines & Due Dates**
@@ -66,7 +66,7 @@ Your project will be evaluated by your instructors in the following areas:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
- This will serve as a gauge of whether you met the project goals and can help you identify where to focus your efforts moving forward!
+While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
 
 ---
 ### RESOURCES
