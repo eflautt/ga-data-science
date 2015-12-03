@@ -59,14 +59,22 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 Your project will be evaluated by your instructors in the following areas:
 
-1. Guiding Principle
-2. Guiding Principle
-3. Guiding Principle
+1. Guiding Principle / Technical Requirement 1
+2. Guiding Principle/ Technical Requirement 2
+3. Guiding Principle/ Technical Requirement 3
 
 #### Rubric: [Link to rubric](#). 
 
-Based on the requirements, you can earn a maximum of _____ points on this project.
+Based on the requirements, you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
 
+    Score | Expectations
+    ----- | ------------
+    **0** | _Incomplete._
+    **1** | _Does not meet expectations._
+    **2** | _Meets expectations, good job!_
+    **3** | _Exceeds expectations, you wonderful creature, you!_
+
+While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
 ---
 
 ### RESOURCES
