@@ -8,6 +8,7 @@ Project outlines are a valuable resource to working through data projects. They 
 For this project, you will need to complete a problem statement and research design outline for ***one*** of the three lightning talks you designed, which serves as the starting point for getting your project off the ground. You should aim to complete this outline as soon as you have a clear idea of which project you want to work on. Remember, completing this task earlier will give you more chances to iterate and improve!
 
 **Goal:** Create an outline of your research design approach, including hypothesis, assumptions, risks, and success metrics. 
+
 ---
 
 ### DELIVERABLES
