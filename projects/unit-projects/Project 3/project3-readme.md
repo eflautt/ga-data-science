@@ -2,6 +2,7 @@
 
 ### PROMPT
 **Context & Takeaway:**
+
 In this project, you will perform a logistic regression on the admissions data we've been working with in projects 1 and 2. For more instructions, follow the questions included in the starter code.
 
 **Goal:** Completed iPython notebook that includes basic modeling using logistic regression
