@@ -23,6 +23,7 @@ In this project, you will perform a logistic regression on the admissions data w
     - Plot the predicted portabilities
     - Brainstorm ways to improve your analysis
 
+
 ### TIMELINE
 **Deadlines & Due Dates**
 
