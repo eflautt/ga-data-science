@@ -68,3 +68,40 @@ Base on the requirements you can earn a maximum of _____ points on this project.
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
  This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+
+
+### TIMELINE
+**Deadlines & Due Dates**
+
+| Deadline | Deliverable| Description |
+|:-:|---|---|
+| Week 4: Lesson 8 | Lightning Presentation  | Present 3 problem statements   |
+| Week 7: Lesson 14 | Experiment Writeup  |  Research Design writeup and approval  |
+| Week 8: Lesson 16 | Exploratory Analysis  | Dataset approval and exploratory analysis   |
+| Week 9: Lesson 18 | Notebook Draft  |  iPython notebook & model “report”  |
+| Week 10: Lesson 20 | Presentation  | Demo your findings   |
+
+---
+
+### EVALUATION
+**Guidelines & Rubric** 
+Your project will be evaluated by your instructors in the following areas:
+
+1. Identify
+2. Acquire
+3. Present
+
+**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
+
+    Score | Expectations
+    ----- | ------------
+    **0** | _Incomplete._
+    **1** | _Does not meet expectations._
+    **2** | _Meets expectations, good job!_
+    **3** | _Exceeds expectations, you wonderful creature, you!_
+
+While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+
+---
+### RESOURCES
+**Examples & Suggestions**
