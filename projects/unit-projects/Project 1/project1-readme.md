@@ -40,6 +40,7 @@ Your project will be evaluated by your instructors in the following areas:
 3. Refine
 
 #### Rubric:
+
 Based on the requirements, you can earn a maximum of 3 points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
@@ -49,7 +50,7 @@ Based on the requirements, you can earn a maximum of 3 points on this project. Y
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
 
 ---
 ### RESOURCES
