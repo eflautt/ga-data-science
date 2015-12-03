@@ -11,23 +11,26 @@ Following these steps will help you better understand your dataset.
 **Goal:** An iPython notebook writeup that provides a dataset overview with visualizations and statistical analysis.
 
 ---
-#### Necessary Deliverables
-- Completed IPython Notebook
+### DELIVERABLES
+**Project Requirements & Constraints**
 
-#### Requirements
-- Read in your dataset
-- Determine how many samples are present and ID any missing data
-- Create a table of descriptive statistics for each of the variables (n, mean, median, standard deviation)
-- Describe the distributions of your data
-- Plot box plots for each variable
-- Create a covariance matrix
-- Determine any issues or limitations your analysis may have based on the results of the exploratory analysis
+#### iPython Notebook Exploratory Analysis
+- **Breakdown:**
+  - Read in your dataset
+  - Determine how many samples are present and ID any missing data
+  - Create a table of descriptive statistics for each of the variables (n, mean, median, standard deviation)
+  - Describe the distributions of your data
+  - Plot box plots for each variable
+  - Create a covariance matrix
+  - Determine any issues or limitations your analysis may have based on the results of the exploratory analysis
 
+- **Submission:**
+    - Instructor TBD 
 
-**Bonus:**
-- Replace missing values using the median replacement method
-- Log transform data to meet normality requirements
-- *Advanced Option*: Replace missing values using multiple imputation methods
+- **Bonus:**
+    - Replace missing values using the median replacement method
+    - Log transform data to meet normality requirements
+    - *Advanced Option*: Replace missing values using multiple imputation methods
 
 ---
 ### EVALUATION
