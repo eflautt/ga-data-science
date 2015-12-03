@@ -22,6 +22,9 @@ Welcome to Data Science! In this first project you will create a framework to sc
     - State the risks and assumptions of your data
     - Outline exploratory analysis methods
 
+- **Submission:**
+    - TBD by Instructor 
+
 - **Bonus:**
     - Practice writing an alternative problem statement for your dataset
     - Brownie points for articulating the assumptions and risks of the alternative model
