@@ -68,6 +68,7 @@ For this project we will be using an IPython notebook. Notebooks are a handy way
 
 #### Sample Deliverables 
 Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply click on a section to see the markdown.
+
 ![Example Notebook](/projects/unit-projects/Project 1/assets/Example_ipynb.jpg)
 
 #### Suggested Ways to Get Started
