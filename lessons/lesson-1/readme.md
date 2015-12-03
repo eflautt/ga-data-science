@@ -315,7 +315,7 @@ By now, you should be able to answer the following questions with ease:
 |   |   |
 |---|---|
 | **HOMEWORK**  | Assignment: Examples  |
-| **UPCOMING PROJECTS**  | Project 1 [#](Instructions)  |
+| **UPCOMING PROJECTS**  | [Project 1Instructions](projects/unit-projects/Project 1/project1-readme.md)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.
