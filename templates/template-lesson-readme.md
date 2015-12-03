@@ -71,7 +71,7 @@ Week # | Lesson #
 
 ---
 <a name="opening"></a>
-### Opening (# mins)
+## Opening (# mins)
 - Reference prior lesson content
 - Review pre-work or exit ticket, if applicable
 - Include Hook / Real-world Relevance
@@ -81,7 +81,7 @@ Week # | Lesson #
 ***
 
 <a name="introduction"></a>
-### Introduction: Topic (# mins)
+## Introduction: Topic (# mins)
 Discuss topic and explain by dividing parts into sections.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
@@ -114,7 +114,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 ***
 
 <a name="demo"></a>
-### Demo / Codealong: Topic (# mins)
+## Demo / Codealong: Topic (# mins)
 Walk through a codealong or demonstration of something. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
@@ -141,7 +141,7 @@ end
 ***
 
 <a name="guided-practice"></a>
-### Guided Practice: Topic (# mins)
+## Guided Practice: Topic (# mins)
 Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
@@ -167,7 +167,7 @@ end
 ***
 
 <a name="ind-practice"></a>
-### Independent Practice: Topic (# minutes)
+## Independent Practice: Topic (# minutes)
 Use the lesson topic/skill to create a deliverable that meets certain criteria. 
 
 > Instructor Note: This can be a pair programming activity or done indpendently.
@@ -179,7 +179,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 ***
 
 <a name="conclusion"></a>
-### Conclusion (# mins)
+## Conclusion (# mins)
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
