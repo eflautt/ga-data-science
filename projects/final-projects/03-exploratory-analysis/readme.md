@@ -24,9 +24,9 @@ Your exploratory data analysis will effectively help you tell your data's story,
 - **Breakdown:** 
    * A well organized iPython notebook with code and output
    * At least one visual for each independent variable and, if possible, its relationship to your dependent variable.
-      * It's just as important to show what's not correlated as it is to show the real correlations found.
+      * It's just as important to show what's not correlated as it is to show any actual correlations found.
       * Visuals should be well labeled and intuitive based on the data types. 
-        * For example, if your X variable is temperature and Y is "did it rain," a reasonable visual would be two histograms of temperature, one where it did rain, and one where it did not.
+        * For example, if your X variable is temperature and Y is "did it rain," a reasonable visual would be two histograms of temperature, one where it rained, and one where it didn't.
    * Tables are a perfectly valid visualization tool! Interweave them into your work.
 
 - **Submission:**
