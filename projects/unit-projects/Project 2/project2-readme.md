@@ -62,13 +62,13 @@ Based on the requirements, you can earn a maximum of 9 points on this project. Y
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank.
 
-- admit- is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
-- gre- GRE score
-- gpa- Grade Point Average
-- rank- Rank of an applicant's undergraduate alma mater with 1 being a high rank and 4 being the lowest rank
+- 'admit' is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
+- 'gre' is GRE score
+- 'gpa' stands for Grade Point Average
+- 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
 
 #### Starter code
-For this project we will be using an IPython notebook. This notebook will use matplotlib for plotting and visualizing our data. This type of visualization is handy for prototyping and quick data analysis. We will discuss more advanced data visualizations for disseminating your work.
+For this project we will be using an iPython notebook. This notebook will use matplotlib for plotting and visualizing our data. This type of visualization is handy for prototyping and quick data analysis. We will discuss more advanced data visualizations for disseminating your work.
 
 #### Suggested Ways to Get Started
 - Read in your dataset
@@ -82,9 +82,9 @@ For this project we will be using an IPython notebook. This notebook will use ma
 - **Read the docs for Pandas.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist.
 
 #### Links to Past Projects
-Checkout this example notebook for an example of the types of visualizations we will look for in your notebook.
+Checkout this example notebook for an example of the types of visualizations you can use in your notebook.
 
-![Example Notebook](/projects/unit-projects/Project 1/assets/Example_ipynb.jpg)
+![Example Notebook](https://github.com/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb)
 
 
 #### Useful Resources
