@@ -7,7 +7,7 @@ Our goals for this project is to develop a working piece that would be shared am
 
 From a presentation perspective, this is an exercise to the machine learning application of your data. Then, use this model to display correlations, feature importance, and unexplained variance.
 
-**Goal:** Exploratory dataset analysis 
+**Goal:**  An iPython notebook with a “report” of your models
 
 ---
 
@@ -29,7 +29,6 @@ From a presentation perspective, this is an exercise to the machine learning app
   - The summary will effectively summarize your work from your exploratory data analysis. Be brief, but keep in mind an audience that may be unfamiliar with your project and work.
   - Source code that does not get in the way of your notebook deliverable. Move helper functions into a python module and include this module as part of your project deliverable. Consider it like an appendix piece, though unlike an appendix, it'll be necessary for your project to function.
   - Visualizations that showcase the relationship between your y and at least your two strongest variables as determined by some scoring measure (p values and coefficients, gini/entropy, for example)
-
 
 
 **Bonus:**
