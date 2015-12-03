@@ -7,7 +7,7 @@ Exploratory data analysis is a crucial and informative step in the data process,
 
 Your exploratory data analysis will effectively help you tell your data's story, and should help inform the predictive analytics process that your project will take.
 
-**Goal:** 
+**Goal:** Dataset approval and exploratory analysis writeup.
 
 ---
 
@@ -15,7 +15,6 @@ Your exploratory data analysis will effectively help you tell your data's story,
 **Project Requirements & Constraints**
 
 #### Deliverable Title
-
 - **Requirements:** 
    * [ ] Review the data set and project with an EIR during office hours.
    * [ ] Practice importing (potentially unformatted) data into clean matrices|data frames, and if necessary, export into a form that makes sense (text files or a database, for example).
@@ -23,10 +22,11 @@ Your exploratory data analysis will effectively help you tell your data's story,
    * [ ] Provide insight about the data set and any impact on a hypothesis.
 
 - **Breakdown:** 
-   * A well organized Jupyter notebook with code and output
+   * A well organized iPython notebook with code and output
    * At least one visual for each independent variable and, if possible, its relationship to your dependent variable.
       * It's just as important to show what's not correlated as it is to show the real correlations found.
-      * Visuals should be well labeled and intuitive based on the data types. For example, if your X variable is temperature and Y is "did it rain," a reasonable visual would be two histograms of temperature, one where it did rain, and one where it did not.
+      * Visuals should be well labeled and intuitive based on the data types. 
+        * For example, if your X variable is temperature and Y is "did it rain," a reasonable visual would be two histograms of temperature, one where it did rain, and one where it did not.
    * Tables are a perfectly valid visualization tool! Interweave them into your work.
 
 - **Submission:**
@@ -53,9 +53,9 @@ Your exploratory data analysis will effectively help you tell your data's story,
 **Guidelines & Rubric** 
 Your project will be evaluated by your instructors in the following areas:
 
-1. Identify
-2. Acquire
-3. Present
+1. Acquire
+2. Parse
+3. Mine
 
 **Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
 
@@ -83,4 +83,3 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - DRY: Don't Repeat Yourself. If you see yourself copy and pasting code a lot, turn it into a function, and use the function instead!
 
 ---
-
