@@ -32,6 +32,8 @@ Following these steps will help you better understand your dataset.
     - Log transform data to meet normality requirements
     - *Advanced Option*: Replace missing values using multiple imputation methods
 
+### TIMELINE
+**Deadlines & Due Dates**
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
