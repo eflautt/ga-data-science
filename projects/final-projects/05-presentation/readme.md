@@ -3,11 +3,11 @@
 ### PROMPT
 **Context & Takeaway:**
 
-This is it! This presentation is amassed to show what you've learned through this course to a "non data science" audience. It is very common in both interviews and in the job to be presenting your findings and work to business partners or other interested parties that don't know anything about data science, therefore; it's important to communicate effectively your work in a way that anyone can understand.
+This is it! This presentation is your way of showing what you've learned to a non-technical audience. Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why it's important to practice communicating clearly and effectively so that anyone can understand.
 
-The output here will be a 10 minute presentation that guides your viewers through the problem, original data and hypothesis, findings, and results; very similar to the outline and work that you've output over the last few weeks. In fact, much of this presentation is done; time to clean up your output!
+The output here will be a 10 minute presentation that guides your viewers through the problem, original data and hypothesis, findings, and results. This is what you've been building toward over the past few weeks - and indeed, over the entire course! You should already have most of the actual analytical work complete - now it's time to clean up your findings!
 
-In response, you'll participate in a short Q/A session (roughly two minutes) with your peers--both fellow students and instructors--about your project.
+After you present your work, you'll participate in a short Q/A session (roughly two minutes) with your peers--both fellow students and instructors--about your project.
 
 **Goal:** A slide deck that describes your analysis and findings to a non-technical audience.
 
