@@ -16,10 +16,10 @@ Your exploratory data analysis will effectively help you tell your data's story,
 
 #### Deliverable Title
 - **Requirements:** 
-   * [ ] Review the data set and project with an EIR during office hours.
-   * [ ] Practice importing (potentially unformatted) data into clean matrices|data frames, and if necessary, export into a form that makes sense (text files or a database, for example).
-   * [ ] Explore the mathematical properties and visualize data through a python visualization tool (matplotlib and seaborn)
-   * [ ] Provide insight about the data set and any impact on a hypothesis.
+   * Review the data set and project with an EIR during office hours.
+   * Practice importing (potentially unformatted) data into clean matrices|data frames, and if necessary, export into a form that makes sense (text files or a database, for example).
+   * Explore the mathematical properties and visualize data through a python visualization tool (matplotlib and seaborn)
+   * Provide insight about the data set and any impact on a hypothesis.
 
 - **Breakdown:** 
    * A well organized iPython notebook with code and output
@@ -74,7 +74,7 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 **Examples & Suggestions**
 
 #### Project Tips / Sample Projects
-- This deliverable should be similar to Unit Project 2 that you completed earlier.
+- This deliverable should be similar to the work you did for Unit Project 2 earlier in the course.
 
 #### Suggested Ways to Get Started
 - Keep the project simple! The "cool" part of the analysis will come; just looking at simple relationships between variables can be incredibly insightful.
