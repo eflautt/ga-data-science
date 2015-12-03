@@ -11,7 +11,10 @@ From a presentation perspective, this is an exercise to the machine learning app
 
 ---
 
-#### Requirements
+### DELIVERABLES
+**Project Requirements & Constraints**
+
+#### Notebook Draft
 * Document your research with a summary
 * Explain the approach behind the modeling process and the strengths and weaknesses of variables in the process
 * Provide insight behind the modeling process and your performance, using cross validation best practices and prediction metrics for your problem (ex, MSE for regression; Accuracy/AUC for classification)
