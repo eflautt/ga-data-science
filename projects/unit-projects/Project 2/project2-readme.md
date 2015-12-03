@@ -32,7 +32,12 @@ Following these steps will help you better understand your dataset.
     - Log transform data to meet normality requirements
     - *Advanced Option*: Replace missing values using multiple imputation methods
 
+| Deadline | Deliverable| Description |
+|:-:|---|---|
+| Week 3: Lesson 5 | Project 2  | Exploratory Data Analysis   |
+
 ---
+
 ### EVALUATION
 **Guidelines & Rubric** 
 
