@@ -80,6 +80,6 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Keep the project simple! The "cool" part of the analysis will come; just looking at simple relationships between variables can be incredibly insightful.
 - Consider building some helper functions that help you quickly visualize and interpret data. 
    - Exploratory data analysis should be formulaic; the code should not be holding you back. There are plenty of "starter code" examples from class materials.
-- DRY: Don't Repeat Yourself. If you see yourself copy and pasting code a lot, turn it into a function, and use the function instead!
+- DRY: Don't Repeat Yourself! If you see yourself copy and pasting code a lot, turn it into a function, and use the function instead!
 
 ---
