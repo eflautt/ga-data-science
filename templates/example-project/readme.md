@@ -51,19 +51,19 @@ This second project is your first foray into **building a full-stack application
 
 Your project will be evaluated by your instructors in the following 9 areas:
 
-1. Guiding Principle / Technical Requirement 1
-2. Guiding Principle/ Technical Requirement 2
-3. Guiding Principle/ Technical Requirement 3
-4. sdf
-5. sfs
-6. sdfds
-7. sdfs
-8. sdfs
-9. sdf
+1. Model Architecture
+2. OAuth / Login Functionality
+3. RESTful Resources
+4. Database Table Structure
+5. Wireframes & User Stories
+6. Semantic HTML/CSS
+7. Hosting & Documentation
+8. Deployment & Accessibility 
+9. Working Functionality
 
 #### Rubric: [Link to rubric](#). 
 
-Based on the requirements, you can earn a maximum of 27 points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of ***27*** points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -90,17 +90,17 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 
 #### Potential Project Ideas
 
-- ##### Cheerups
+- **Cheerups**
 The world is a depressing place.
 
 Your task is to create an app that will allow people to create and share "cheerups" - happy little quips to brighten other peoples' days. Cheerups will be small - limited to 139 characters. Members will be able to promote Cheerups that they like and maybe even boost the reputation of the Cheerupper.
 
-- ##### Bookmarket
+- **Bookmarket**
 You will create an application where users can bookmark links they want to keep.
 
 But what if users could trade bookmarks for other bookmarks? Or sell bookmarks for points? Or send bookmarks to your friends. Or something even crazier.
 
-- ##### Photo sharing app
+- **Photo sharing app**
 Users will be able to register and create albums and photos. Albums and photos will need to be named and described by their owners. Users will be able to view other users' albums. Maybe users can comment on photos, or either up/down vote them.
 
 
