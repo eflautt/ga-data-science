@@ -491,9 +491,8 @@ We've completely a model together that explains casual guest riders. It's now yo
 ##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **PREWORK**  | Reading Assignment: Examples  |
-| **PROJECT**  | Project Assignment: Title, Section [#](Instructions)  |
+| **PRE-WORK**  | Assignment: Examples  |
+| **UPCOMING PROJECTS**  | Final Project, Deliverable 1 [#](Instructions)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.
