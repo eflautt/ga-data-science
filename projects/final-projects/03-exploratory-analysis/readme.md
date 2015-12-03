@@ -14,7 +14,7 @@ Your exploratory data analysis will effectively help you tell your data's story,
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-#### Deliverable Title
+#### Exploratory Analysis Writeup
 - **Requirements:** 
    * Review the data set and project with an EIR during office hours.
    * Practice importing (potentially unformatted) data into clean matrices|data frames, and if necessary, export into a form that makes sense (text files or a database, for example).
