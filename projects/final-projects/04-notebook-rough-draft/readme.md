@@ -3,9 +3,13 @@
 ### PROMPT
 **Context & Takeaway:**
 
-Our goals for this project is to develop a working piece that would be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format, treating it as well documented work. Think about how your project pushes the reader to ask for more insightful questions, and how it avoids questions like "what does this line of code do?"
+Our goal for this project is to develop a working draft that could be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format. Your project should push the reader to ask for more insightful questions, and avoid issues like, "what does this line of code do?" From a presentation perspective, think about the machine learning applications of your data. Use this model to display correlations, feature importance, and unexplained variance. 
 
-From a presentation perspective, this is an exercise to the machine learning application of your data. Then, use this model to display correlations, feature importance, and unexplained variance.
+Document your research with a summary, explaining your modeling approach as well as the strengths and weaknesses of any variables in the process. You should provide insight into your analysis, using best practices like cross validation or any applicable prediction metrics (ex: MSE for regression; Accuracy/AUC for classification). 
+
+There are so many metrics to choose from, be sure the one you use is reasonable for the problem. For example, explain why you might optimize toward recall instead of AUC. Look at how your model performs compared to a dummy model, and the benefit one gains by using your model to solve this problem.
+
+Build visualizations that best explain outliers and the relationships of your predicted parameter and independent variables. Identify areas where new data could help improve the model significantly.
 
 **Goal:**  An iPython notebook with a “report” of your models
 
@@ -16,18 +20,10 @@ From a presentation perspective, this is an exercise to the machine learning app
 
 #### iPython Report Draft
 
-- **Requirements:**
-    - Document your research with a summary
-    - Explain the approach behind the modeling process and the strengths and weaknesses of variables in the process
-    - Provide insight behind the modeling process and your performance, using cross validation best practices and prediction metrics for your problem (ex, MSE for regression; Accuracy/AUC for classification)
-        - There are so many metrics to choose from, be sure the one you use is reasonable for the problem. For example, explain why you might optimize toward recall instead of AUC.
-        - Explain how your model performs compared to a dummy model, and the benefit one gains by using your model to solve this problem.
-    - Build visualizations that best explain outliers and the relationships of your predicted parameter and independent variables.
-    - Identify areas where new data could help improve the model significantly.
-
 - **Breakdown:**
   - A Jupyter Notebook with code, visualizations, and markdown
-  - The summary will effectively summarize your work from your exploratory data analysis. Be brief, but keep in mind an audience that may be unfamiliar with your project and work.
+  - The summary will effectively summarize your work from your exploratory data analysis. 
+    - Be brief! And keep in mind that your audience may not be familiar with your work!
   - Source code that does not get in the way of your notebook deliverable. Move helper functions into a python module and include this module as part of your project deliverable. Consider it like an appendix piece, though unlike an appendix, it'll be necessary for your project to function.
   - Visualizations that showcase the relationship between your y and at least your two strongest variables as determined by some scoring measure (p values and coefficients, gini/entropy, for example)
 
