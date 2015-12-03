@@ -29,6 +29,8 @@ Welcome to Data Science! In this first project you will create a framework to sc
     - Practice writing an alternative problem statement for your dataset
     - Brownie points for articulating the assumptions and risks of the alternative model
 
+### TIMELINE
+**Deadlines & Due Dates**
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
