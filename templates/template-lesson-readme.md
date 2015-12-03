@@ -190,8 +190,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 |   |   |
 |---|---|
 | **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **PREWORK**  | Reading Assignment: Examples  |
-| **PROJECT**  | Project Assignment: Title [#](Instructions)  |
+| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Add your own resources.
