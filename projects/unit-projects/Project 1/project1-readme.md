@@ -66,14 +66,14 @@ We'll be using the same dataset as UCLA's Logit Regression in R tutorial to expl
 #### Starter code
 For this project we will be using an IPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks.
 
+#### Sample Deliverables 
+Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply click on a section to see the markdown.
+* ![Example Notebook](/projects/unit-projects/Project 1/assets/Example_ipynb.jpg)
+
 #### Suggested Ways to Get Started
 - Get used to the IPython Notebook. Play around with keyboard shortcuts.
-- Try out basic markdown for commonly used formats; see cheat sheet-- headers, bold, italic, tables
+- Try out basic markdown for commonly used formats; look up commands for headers, bold, italic, tables.
 - **Read the docs for IPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
-
-#### Links to Past Projects
-Check out the example notebook below with a data dictionary and responses to questions. Wonder how to format your notebook the same way? Click on a section to see the markdown.
-* ![Example Notebook](#)
 
 ### Useful Resources
 - [IPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
