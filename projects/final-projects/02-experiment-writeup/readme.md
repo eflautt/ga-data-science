@@ -14,7 +14,7 @@ For this project, you will need to complete a problem statement and research des
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-#### Deliverable Title
+#### Project Design Writeup
 - **Breakdown:**
     - Well-articulated problem statement with "specific aim" and hypothesis, based on your lightning talk
     - An outline of any potential methods and models
