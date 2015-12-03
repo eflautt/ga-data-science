@@ -83,11 +83,11 @@ Base on the requirements you can earn a maximum of _____ points on this project.
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 4: Lesson 8 | Lightning Presentation  | Present 3 problem statements   |
-| Week 7: Lesson 14 | Experiment Writeup  |  Research Design writeup and approval  |
-| Week 8: Lesson 16 | Exploratory Analysis  | Dataset approval and exploratory analysis   |
-| Week 9: Lesson 18 | Notebook Draft  |  iPython notebook & model “report”  |
-| Week 10: Lesson 20 | Presentation  | Demo your findings   |
+| Week 4: Lesson 8 | Lightning Presentation  | Present 3 Problem Statements   |
+| Week 7: Lesson 14 | Experiment Writeup  |  Research Design Problem Statement & Outline   |
+| Week 8: Lesson 16 | Exploratory Analysis  | Dataset Approval and Exploratory Analysis   |
+| Week 9: Lesson 18 | Notebook Draft  |  iPython Notebook & Model Draft  |
+| Week 10: Lesson 20 | Presentation  | Present Your Final Report   |
 
 ---
 
