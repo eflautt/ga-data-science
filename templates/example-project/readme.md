@@ -34,15 +34,15 @@ This second project is your first foray into **building a full-stack application
     - **Wireframes of your app**, hosted somewhere & linked in your readme
     - A link in your ``readme.md`` to the publically-accessible **user stories you created**
 
-- **Bonus:** Additional features for advanced students
-    - Suggestions for design / style points
+- **Bonus:** 
+    - Include some of the extra features we discussed in class!
 
 ### TIMELINE
 **Deadlines & Due Dates**
 
-| Deadline | Deliverable| Description |
-|:-:|---|---|
-| Week 7: Lesson 14 | Rails App  | Working Public App!  |
+| Deadline | Deliverable|
+|:-:|---|
+| Week 7: Lesson 14 | Full-Stack Rails App  |
 
 ---
 
