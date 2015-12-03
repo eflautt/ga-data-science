@@ -82,9 +82,8 @@ For this project we will be using an iPython notebook. This notebook will use ma
 - **Read the docs for Pandas.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist.
 
 #### Links to Past Projects
-Checkout this example notebook for an example of the types of visualizations you can use in your notebook.
-
-![Example Notebook](https://github.com/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb)
+Look at some sample notebooks for an example of the types of visualizations you can use in your notebook.
+* [Example Notebook](https://github.com/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb)
 
 
 #### Useful Resources
