@@ -2,6 +2,7 @@
 
 ### PROMPT
 **Context & Takeaway:**
+
 In this project, you will summarize and present your analysis from Projects 1-3. Your goal is to complete your ongoing iPython Notebook, combining prior deliverables from projects 1-3 with an appendix and executive summary. This will be a final overview of your analysis that incorporates past feedback and demonstrates your approach.
 
 **Goal:** Write up an executive summary that outlines your findings and the methods used in projects 1-3.
