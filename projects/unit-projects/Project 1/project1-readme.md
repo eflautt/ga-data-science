@@ -7,11 +7,13 @@
 
 Welcome to Data Science! In this first project you will create a framework to scope out data science projects. This framework will provide you with a guide to develop a well-articulated problem statement and analysis plan that will be robust and reproducible.
 
+**Goal:** Create a structured iPython notebook using markup
+
 ---
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-#### Deliverable: Completed IPython Notebook using markup
+#### Deliverable: Completed iPython Notebook
 - **Breakdown:**
     - Identify features of the dataset including the outcome, and covariates/predictors
     - Create a data dictionary with classification of available variables
