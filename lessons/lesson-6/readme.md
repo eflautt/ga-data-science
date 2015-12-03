@@ -492,7 +492,7 @@ We've completely a model together that explains casual guest riders. It's now yo
 |   |   |
 |---|---|
 | **PRE-WORK**  | Assignment: Examples  |
-| **UPCOMING PROJECTS**  | [Final Project, Deliverable 1](#)  |
+| **UPCOMING PROJECTS**  | [Final Project, Deliverable 1](/projects/final-projects/01-lightning-talk/readme.md)  |
 
 ### ADDITIONAL RESOURCES
 - Add your own resources.
