@@ -314,9 +314,8 @@ By now, you should be able to answer the following questions with ease:
 ##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **PREWORK**  | Reading Assignment: Examples  |
-| **PROJECT**  | Project 1 [#](Instructions)  |
+| **PRE-WORK**  | Assignment: Examples  |
+| **UPCOMING PROJECTS**  | Project 1 [#](Instructions)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.
