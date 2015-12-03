@@ -21,17 +21,18 @@ Look at how your model performs compared to a dummy model, and articulate the be
 #### iPython Report Draft
 
 - **Breakdown:**
-  - A Jupyter Notebook with code, visualizations, and markdown
-  - The summary will effectively summarize your work from your exploratory data analysis. 
-    - Be brief! And keep in mind that your audience may not be familiar with your work!
-  - Source code that does not get in the way of your notebook deliverable. Move helper functions into a python module and include this module as part of your project deliverable. Consider it like an appendix piece, though unlike an appendix, it'll be necessary for your project to function.
-  - Visualizations that showcase the relationship between your y and at least your two strongest variables as determined by some scoring measure (p values and coefficients, gini/entropy, for example)
+  - An iPython Notebook with code, visualizations, and markdown
+  - Brief summary that covers your exploratory data analysis. 
+  - Source code that does not get in the way of your notebook deliverable. 
+    - Move helper functions into a python module and include this module as part of your project deliverable. 
+    - Consider it like an appendix piece (though unlike an appendix, it'll be necessary for your project to function!).
+  - Visualizations that showcase the relationship between your Y and your two strongest variables (at least), as determined by some scoring measure (p values and coefficients, gini/entropy, etc).
 
 - **Submission:**	
   - TBD by instructor.
 
 - **Bonus:**
-    - Many modeling approaches are all about fine-tuning the algorithm parameters and trying to find some value. Show how you optimized this value, and the cost/benefit of doing so.
+    - Many modeling approaches are all about fine-tuning the algorithm parameters and trying to find a specific value. Show how you optimized for this value, and the costs/benefits of doing so.
 
 
 ### TIMELINE
@@ -72,7 +73,7 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 **Examples & Suggestions**
 
 #### Project Tips
-- This deliverable combines unit Projects 3 and 4 from earlier in the course; however, now you will be using your own data. Refer to any resources and feedback provided during those projects.
+- This deliverable combines unit Projects 3 and 4 from earlier in the course; however, now you will be using your own data! But feel free to refer to any resources and feedback provided during those projects.
 
 #### Links to Past Projects
 - You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=).
@@ -81,7 +82,7 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Two common ways to start models:
     -  "Kitchen Sink Strategy": throw all the variables in and subtract them out, one by one.
     -  "Single Variable Strategy": start with the most important variable and slowly add in while paying attention to performance)
-        - It will be worth exploring both to understand your data and problem. How slow is building and predicting the model with all the variables? How much improvement is made with each variable added?
+        - It may be worth exploring both to understand your data and problem. How slow is building and predicting the model with all the variables? How much improvement is made with each variable added?
 - Recall that your variables maybe need transformation in order to be most useful.
 - Algorithms have different requirements (say, random forest vs logistic regression), and one may work better for your data than another.
 - Strike a balance between writing, code, and visual aids. Your notebook should feel like a blogpost with some code in it. Force yourself to write and visualize more than you think!
