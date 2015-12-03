@@ -11,19 +11,18 @@ Welcome to Data Science! In this first project you will create a framework to sc
 ### DELIVERABLES
 **Project Requirements & Constraints**
 
-
 #### Deliverable: Completed IPython Notebook using markup
-**Breakdown:**
-- Identify features of the dataset including the outcome, and covariates/predictors
-- Create a data dictionary with classification of available variables
-- Evaluate what makes a high quality problem statement
-- Write a problem statement
-- State the risks and assumptions of your data
-- Outline exploratory analysis methods
+- **Breakdown:**
+    - Identify features of the dataset including the outcome, and covariates/predictors
+    - Create a data dictionary with classification of available variables
+    - Evaluate what makes a high quality problem statement
+    - Write a problem statement
+    - State the risks and assumptions of your data
+    - Outline exploratory analysis methods
 
-**Bonus:**
-- Practice writing an alternative problem statement for your dataset
-- Brownie points for articulating the assumptions and risks of the alternative model
+- **Bonus:**
+    - Practice writing an alternative problem statement for your dataset
+    - Brownie points for articulating the assumptions and risks of the alternative model
 
 ---
 ### EVALUATION
@@ -54,10 +53,10 @@ Based on the requirements, you can earn a maximum of 3 points on this project. Y
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It contains four variables- admit, gre, gpa, rank.
 
-- admit- is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
-- gre- GRE score
-- gpa- Grade Point Average
-- rank- Rank of an applicant's undergraduate alma mater with 1 being a high rank and 4 being the lowest rank
+- 'admit' is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
+- 'gre' is GRE score
+- 'gpa' stands for Grade Point Average
+- 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
 
 #### Starter code
 For this project we will be using an IPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks.
