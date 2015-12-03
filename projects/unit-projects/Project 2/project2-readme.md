@@ -84,7 +84,7 @@ For this project we will be using an IPython notebook. This notebook will use ma
 #### Links to Past Projects
 Checkout this example notebook for an example of the types of visualizations we will look for in your notebook.
 
-![Example Notebook](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
+![Example Notebook](/projects/unit-projects/Project 1/assets/Example_ipynb.jpg)
 
 
 #### Useful Resources
