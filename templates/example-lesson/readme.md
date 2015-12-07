@@ -46,9 +46,9 @@ Week # | Lesson #
 ---
 <a name="opening"></a>
 ## Opening (5 min)
-- Homework/Pre-work review
-- Current Lesson Objectives
-- Questions
+- Homework/Pre-work Discussion & Questions
+- Review Current Lesson Objectives
+    - Prior Knowledge Check: Define object properties and methods; explain MVC architecture.
 
 
 <a name="introduction"></a>
