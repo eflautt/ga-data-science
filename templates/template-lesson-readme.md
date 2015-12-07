@@ -72,17 +72,20 @@ Week # | Lesson #
 ---
 <a name="opening"></a>
 ## Opening (# mins)
-- Reference prior lesson content
-- Review pre-work or exit ticket, if applicable
-- Include Hook / Real-world Relevance
+- Review pre-work, projects, or exit ticket, if applicable
+- Review current lesson objectives
+- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
+- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
+
+Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
 
 ***
 
 <a name="introduction"></a>
 ## Introduction: Topic (# mins)
-Discuss topic and explain by dividing parts into sections.
+Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
@@ -109,7 +112,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem vol
 #### Use non-section headings to divide content
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
 
-**Check:** Here is a question to see how well students understand the material
+**Check:** Insert 1-2 guiding questions to ensure students are comprehending the material.
 
 ***
 
