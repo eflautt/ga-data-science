@@ -6,21 +6,38 @@ creator:
     city: NYC
 ---
 
-### Objectives
-*After this lesson, students will be able to:*
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Decision Trees & Random Forests
+Week 6 | Lesson 12
 
+### LEARNING OBJECTIVES
+*After this lesson, you will be able to:*
 - Understand and build decision tree models for classification and regression
 - Understand the differences between linear and non-linear models
 - Understand and build random forest models for classification and regression
 - Know how to extract the most important predictors in a random forest model
 
-### Preparation
-*Before this lesson, students should already be able to:*
-
+### STUDENT PRE-WORK
+*Before this lesson, you should already be able to:*
 - Use seaborn to create plots
 - Knowledge of a boostrap sample
 - Previous lesson on overfitting
 - Know how to build and evaluate _some_ classification model in sckit-learn using cross-validation and AUC
+
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
+- Review materials & dataset
+
+### LESSON GUIDE
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 5 min  | [Opening](#opening)  | Topic description  |
+| 10 min  | [Introduction](#introduction)   | Topic description  |
+| 15 min  | [Demo](#demo)  | Topic description  |
+| 45 min  | [Guided Practice](#guided-practice)  | Topic description  |
+| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
+| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+
+---
 
 ## Review of the Modeling Assignment (30 min)
 
