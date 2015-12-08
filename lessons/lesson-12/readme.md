@@ -81,6 +81,8 @@ In a group:
 
 **Check:** Were students able to plot the requested features? Did students build intuition for the dataset?
 
+***
+
 <a name="introduction1"></a>
 ## Introduction: Let's Explore Some Decision Trees (30 mins)
 
@@ -146,6 +148,7 @@ Predictions are made in the decision tree from answering each of the questions. 
 
 In the sample tree, if we want to classify a new article, we proceed by first asking - does the article contain word recipe. If it doesn't, we can check does the article have a lot of images. If it does, 630 / 943 articles are evegreen - so we assign a 0.67 probability to be evergreen.  
 
+***
 
 <a name="guided-practice2"></a>
 ## Guided Practice: ecision Trees in scikit-learn (60 mins)
@@ -156,12 +159,13 @@ In the sample tree, if we want to classify a new article, we proceed by first as
 
 **Check:** Each student should evaluate the decision tree model using prior techniques in cross-validation
 
-#### Overfitting in a Decision Tree (Practice) 
+
+<a name="demo"></a>
+## Demo: Overfitting in a Decision Tree (# mins)
 
 Decision trees tend to be weak models, mostly because they can memorize or overfit to a dataset.  Remember, a model is _overfit_ when it instead of picking up on general trends in the data it memorizes or bends to a few specific examples. If we simply memorized each article and it's classification we would overfit. This is akin to utilizing every word in every article as a feature.
 
-Revisiting our predicting news article example.  We could ask the following questions
-  
+Revisiting our predicting news article example.  We could ask the following questions:
 - Is the first word 'The'?
 - Is the second word 'president'
 - Is the third word 'of'
@@ -169,27 +173,32 @@ Revisiting our predicting news article example.  We could ask the following ques
 
 This model is attempting to recreate the articles exactly as opposed to learning any general trend.
 
-An uncontrainsed decision tree can learn a fairly extreme tree!
+An unconstrained decision tree can learn a fairly extreme tree!
 ![](complex-tree.png)
 
-We can limit this in decision trees in a few ways
+We can limit this in decision trees in a few ways:
   - Limiting the number of questions (nodes) a tree can have
   - Limiting the number of samples in the leaf nodes 
 
 > See notebook for code.
 
+**Check:** Why are decision trees generally thought of as weak models? 
 
-<a name="ind-practice"></a>
-## Independent Practice: Decision Trees (# minutes)
+***
 
-Work on your own to adjust the given model using the following parameters:
+<a name="guided-practice"></a>
+## Guided Practice: Decision Trees (# minutes)
+
+Adjust the given model using the following parameters:
 - `max_depth`
 - `min_samples_in_leaf`
 
 **Check:** Were students able to adjust the model using the parameters?
 
+***
 
-## Random Forests (30 min)
+<a name="introduction"></a>
+## Introduction: Random Forests (30 min)
 
 Random Forests are some of the most widespread classifiers used.  They are relatively simple to use (very few parameters to set and easy to avoid overfitting). 
 
@@ -218,43 +227,73 @@ Training a Random Forest model involves training many decision tree models.  Sin
 
 Predictions from a Random Forest come from each decision tree.  Each tree makes an individual prediction. The individual predictions are combined in a majority vote.
 
-#### Random Forest in scikit-learn (Demo)
+***
 
-_See notebook for code_
+<a name="guided-practice"></a>
+## Guided Practice: Topic (# mins)
+
+#### Random Forest in scikit-learn
+> See notebook for code.
 
 The key parameter to remember is `n_estimators` - the number of trees to use in the model.
 
-#### Exercises (Independent Practice)
+#### Retrieving the important aspects of the model
 
-> Assess: Each student should adjust the given model using the `n_estimators` parameter
+Random Forests have a good way of extracting what features are important. Unlike with Logistic Regression, we don't have coeffcients that tell us whether some input postively or negatively affects our output. But we can keep track of which inputs are most important. We do this by keeping track of the features that give us the best splits.
 
-#### Retrieving the important aspects of the model (Demo/Code-along)
-
-Random Forests have a good way of extracting what features are important. Unlike we Logistic Regression, we don't have coeffcients that tell us whether some input postively or negatively affects our output. But we can keep track of which inputs are most important. we do this by keeping track of the features give us the best splits.
-
-_See notebook for code_
+> See notebook for code.
 
 #### Regression with Decision Trees and Random Forests
 
-The same models, both decision trees and random forests can be used for both classification and regression. While predictions for classification problems are made by predicting the majority class in the leaf node, in regression, predictions are made by predicting the average value of the samples in the leaf node.
+The same models, decision trees and random forests, can be used for both classification and regression. While predictions for classification problems are made by predicting the majority class in the leaf node, in regression, predictions are made by predicting the average value of the samples in the leaf node.
+
+**Check:** Each student should adjust the given model using the `n_estimators` parameter
+
+***
 
 ## Independent Practice (25 minutes)
 
 1. Continue adding input variables to the model that you think make be relevant
-2. For each feature
-  - evaluate the model for improved predictive performance using cross-validation
-  - evaluate the _importance_ of the feature
+2. For each feature:
+  - Evaluate the model for improved predictive performance using cross-validation
+  - Evaluate the _importance_ of the feature
+  - 
+3. **Bonus**: Just like the 'recipe' feature, add in similar text features and evaluate their performance
 
-3. Bonus: Like the 'recipe' feature, add in similar text features and evaluate their performance
+> See notebook for code
 
-_See notebook for code_
+**Check:** Each student should improve on their original model (in AUC) either by increasing the size of the model or adding in additional features.
 
-> Assess: Each student should improve on their original model (in AUC) either by increasing the size of the model or adding in additional features
+***
 
-
+<a name="conclusion"></a>
 ## Conclusion (5 mins)
+
+#### Review Q&A
+1. What are decision trees?
 - Decision trees are non-linear models that can be used for classification or regression.
-- Training involves using the data to decide the best questions to separate the data into our two classses and predictions are made by answering those questions
+
+2. What does training involve?
+- Training means using the data to decide the best questions to separate the data into our two classses. Predictions are then made by answering those questions.
+
+3. What are some common problems with Decision Trees?
 - Decision trees are typically weak models and overfit very easily
+
+4. What are Random Forests?
 - Random forests are collections of decision trees and are much more powerful models
-- While they are very good predictive models they are more often a black-box and lack the explanatory features of linear/logistic regression
+
+5. What are some common problems with Random Forests?
+- While they are very good predictive models, they are more often a black-box and lack the explanatory features of linear/logistic regression
+
+***
+
+### BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **HOMEWORK** |[Example Assignment](#)  |
+| **UPCOMING PROJECTS**  |[Project: Title](#)  |
+
+### ADDITIONAL RESOURCES
+- Add your own resources.
+- Go crazy.
+- So much room for bullets!
