@@ -99,57 +99,52 @@ For example, suppose we want to predict if an article is a news article. We may 
     - If it does, it must be a news article
     - If not, let's ask another question - does the article contain other political figures? etc.
 
-Using our dataset from earlier, try to predict whether an article is evergreen.
-
+**Check**: Using our dataset from earlier, try to predict whether an article is evergreen.
 
 #### Comparison to previous models 
 Decision trees have an advantage over logistic regression by being _non-linear_. A _linear_ model is one in which a change in an input variable has a constant change on the output variable. 
 
 Think of years of education and salary. We know that as education increases, salary should as well. A linear model would say this effect is constant.  As your years of education goes from 10 to 15 or 15 to 20, the increase in salary should be the same. A _non-linear_ allows us to change the effect depending on the input. We can say  that if the increase in salary due to a change in education of 10 years to 15 years is 20k, but from 15 years to 20k it might only be 5k or even negative.
 
-Additionally, trees automatically contain interactions of features. Since each question is dependent on the last the features are naturally interacting.
+Additionally, trees automatically contain interactions of features. Since each question is dependent on the last, the features are naturally interacting.
+
+**Check**: Why do decision trees have an advantage over logistic regression?
 
 #### Training a Decision Tree Model
-
 Training a decision tree is about deciding on the best set of questions to ask. A good question will be one that best segregates the positive group from the negative group and narrows in on the correct answer. For example, in our toy problem of classifying news stories, the best question we can ask is one that creates 2 groups, one that is mostly news stories and on that is mostly non-news stories.
 
-Like all data science techniques, we need to quantify this segregation.  We do that with any of the following metrics:
-
+Like all data science techniques, we need to quantify this segregation.  We can do so with any of the following metrics:
 - [Classification Error]
 - [Entropy]
 - [Gini](https://en.wikipedia.org/wiki/Gini_coefficient)
 
-Each of these measures the _purity_ of the separtion. Classification error asks, what percent are positive in each group. The lowest error would be a separation that has 100% positive in one group and 0% in the other (completely separating news stories from non-news stories.)
+Each of these measures the _purity_ of the separtion. Classification error asks: what percent are positive in each group? The lowest error would be a separation that has 100% positive in one group and 0% in the other (completely separating news stories from non-news stories.)
 
-When training, we want to choose the question that gives us the best _change_ in our purity measure. Given our current set of data points (articles), what question will make the largest change in purity.
+When training, we want to choose the question that gives us the best _change_ in our purity measure. Given our current set of data points (articles), you could ask: what question will make the largest change in purity?
 
-At each training step, we take our current set, choose the best feature to split on (the best question to ask) based on information gain and then have two new groups. This process is repeated _recursively_ for those two groups.
+At each training step, we take our current set and choose the best feature to split (in other words, the best question to ask) based on information gain. After splitting, we then have two new groups. This process is next repeated _recursively_ for each of those two groups.
 
-Let's build a sample tree for our evergreen prediction problem.  Assume our features are
-    - whether the article contains the recipe
-    - the image ratio
-    - the html ratio
+Let's build a sample tree for our evergreen prediction problem. Assume our features are:
+    - Whether the article contains the recipe
+    - The image ratio
+    - The html ratio
 
 First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe _featureL_
 
 ![](single-node-tree.png)
 
-Then, we take each side of the tree and repeat the process. Choosing the feature that best splits the remaining samples. 
+Then, we take each side of the tree and repeat the process, choosing the feature that best splits the remaining samples. 
 
 ![](depth-2-tree.png)
 
-As you can see the best feature is different on both sides of this tree. This shows the interaction of features. If the article does not contain 'recipe' we care about the image_ratio, but otherwise we don't.
-
-We can continue that process until we have asked as many questions as we want or our leaf nodes are completely pure.
-
+As you can see, the best feature is different on both sides of this tree. This shows the interaction of features. If the article does not contain 'recipe' then we care about the image_ratio, but otherwise we don't. We can continue that process until we have asked as many questions as we want or until our leaf nodes are completely pure.
 
 #### Making predictions from a Decision Tree
-
 Predictions are made in the decision tree from answering each of the questions. Once we reach a leaf node, our prediction is made by taking the majority label of the training samples that fulfill the questions. If there are 10 training samples that match our new sample, and 6 are positive, we will predict positive since 6/10 (60%) are positive.
 
-In the sample tree, if we want to classify a new article, we proceed by first asking - does the article contain word recipe. If it doesn't, we can check does the article have a lot of images. If it does, 630 / 943 articles are evegreen - so we assign a 0.67 probability to be evergreen.  
+In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.  
 
-**Check**: How do
+**Check**: How do we classify a new article? 
 
 ***
 
@@ -253,13 +248,12 @@ The same models, decision trees and random forests, can be used for both classif
 ## Independent Practice: Evaluate Random Forest Using Cross-Validation (25 minutes)
 > See ipython notebook for starter and solution code
 
-1. Continue adding input variables to the model that you think make be relevant
+1. Continue adding input variables to the model that you think may be relevant
 2. For each feature:
   - Evaluate the model for improved predictive performance using cross-validation
   - Evaluate the _importance_ of the feature
   - 
-3. **Bonus**: Just like the 'recipe' feature, add in similar text features and evaluate their performance
-
+3. **Bonus**: Just like the 'recipe' feature, add in similar text features and evaluate their performance.
 
 **Check:** Each student should improve on their original model (in AUC) either by increasing the size of the model or adding in additional features.
 
@@ -289,8 +283,7 @@ The same models, decision trees and random forests, can be used for both classif
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** |[Example Assignment](#)  |
-| **UPCOMING PROJECTS**  |[Project: Title](#)  |
+| **UPCOMING PROJECTS**  | Final Project, Deliverable 2  |
 
 ### ADDITIONAL RESOURCES
 - Add your own resources.
