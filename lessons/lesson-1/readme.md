@@ -7,10 +7,10 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Welcome to Data Science 
+Week 1 | Lesson 1
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-
 - Describe the roles of GA staff and students to create a successful learning environment for data science 
 - Define data science and the data science workflow
 - Apply data science workflow to get to know the class
@@ -39,7 +39,8 @@ creator:
 | 65 min  | [Demo](#demo)   | Data Science Dev Environment  |
 | 5 min  | [Conclusion](#conclusion)  | Review  |
 
----
+***
+
 <a name="opening"></a>
 ## Welcome to GA! (20 mins) 
 [See: Day 1 deck from production team](/lessons/lesson-1/dat-day1.key)
@@ -56,6 +57,8 @@ creator:
 - GA graduation requirements
 - After GA- build network, find oppurtunities, community, perks
 - Q/A
+
+***
 
 <a name="introduction1"></a>
 ## Introduction: What is Data Science (20 mins)
@@ -98,6 +101,8 @@ creator:
 
 ![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
 
+***
+
 <a name="quiz"></a>
 ## Quiz: Data Science Baseline (10 Min)
 > Consider presenting as a game or group activity.
@@ -113,8 +118,10 @@ creator:
 5. What is a hypothesis test? 
 #### Discuss Results
 
+***
+
 <a name="introduction2"></a>
-## Introduction: Data Science Work Flow (25 mins)
+## Introduction: The Data Science Work Flow (25 mins)
 #### Overview of Steps: 
 Throughout the class and for the our projects we will be following a general workflow. This workflow will help you produce *reliable* and *reproducible* results.
 
@@ -271,6 +278,7 @@ For example, after presenting your findings, you may want to:
 - Identify the limitations of your analysis
 - Identify relationships between visualizations
 
+***
 
 <a name="practice"></a>
 ## Practice: Data Science Work Flow (25 mins)
@@ -297,6 +305,7 @@ Rotate through the groups to "collect the data" and record the raw data on white
 - Provide a basic visualization for broader comprehension on white board
 - Have one student present for the group
 
+***
 
 <a name="demo"></a>
 ## Demo: Dev Environment Setup (65 min)
@@ -304,6 +313,7 @@ Rotate through the groups to "collect the data" and record the raw data on white
 * Workshop to help with environment set up 
 * IPython Notebook to test dataset and complete Python Review
 
+***
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
@@ -317,7 +327,6 @@ By now, you should be able to answer the following questions with ease:
 ##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK**  | Assignment: Examples  |
 | **UPCOMING PROJECTS**  | [Project 1 Instructions](/projects/unit-projects/Project 1/project1-readme.md)  |
 
 ###ADDITIONAL RESOURCES
