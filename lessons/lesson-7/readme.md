@@ -53,13 +53,13 @@ creator:
 
 #### Recalling: What's residual error?
 
-In the last class, we reviewed one expectation of linear models: that the residual error be normal (with hopefully the median being close to 0!).
+In the last class, we reviewed one expectation of linear models: that the residual error be normal, and a median close to 0.
 
 `y = betas * x + alpha + epsilon` <- epsilon == error
 
-![](residual error histogram)
+![residual_histogram](https://cloud.githubusercontent.com/assets/846010/11647511/d51bcfa2-9d36-11e5-8496-a29a2b01f5c1.png)
 
-Obviously, residual error for each value, while effective at understanding where your error lies, is not an effective summary metric. Instead, we'll use some mean of the error as a scaler interpretation to the error in the model.
+Knowing individual residual error is beneficial to the user, as it demonstrates where your error resides (do you have more outliers estimated too high? too low?). However, it is convoluted and not very effective for optimizing a model around each and every point; instead, we use summary metrics, like _mean squared error_, to summarize the error in our model into one value. Mean squared error is as it sounds: the mean, or average, residual error in our model.
 
 #### Mean Squared Error (MSE)
 
@@ -75,6 +75,30 @@ sklearn's metrics module includes a mean_squared_error function. Sklearn's metri
 from sklearn import metrics
 metrics.mean_squared_error(y, model.predict(X))
 ```
+
+For example, if we to compare two arrays of the same values, we'd expect a mean squared error of 0:
+
+```python
+from sklearn import metrics
+metrics.mean_squared_error([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
+```
+
+```bash
+0.0
+```
+
+With the opposite scenario from above having a mean squared error of 8:
+
+```python
+from sklearn import metrics
+metrics.mean_squared_error([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
+# (4^2 + 2^2 + 0^2 + 2^2 + 4^2) / 5
+```
+
+```bash
+8.0
+```
+
 
 #### How do we minimize error?
 
@@ -109,12 +133,28 @@ lm = linear_model.LinearRegression().fit(biased_df[['x']], biased_df['y'])
 print metrics.mean_squared_error(df['y'], lm.predict(df[['x']]))
 ```
 
-In the biased sample, one member of the sample is oversampled, which introduces error. This would be similar to building a model that predicts hourly guest bike share riders, but the prediction is built off a biased data set; perhaps it only looks at one neighborhood, or it only uses data from the afternoon. As data scientists, it is in our best interest to pragmatically account for biased error for _generalized_ error; that is, we'd prefer if the error was distributed more evenly across the model.
+
+![explanation of bias error](http://i.stack.imgur.com/JLDET.png)
+
+When our error is described as _biased_, it means that the learner's prediction is consistently far away from the actual answer. This is a sign of poor sampling: perhaps the population is not well represented in the model, or other data needs to be collected.
+
+Otherwise, one objective of a _biased_ model is to trade this biased error for _generalized_ error. That is, we'd prefer if the error was distributed more evenly across the model, even if that means it doesn't explain the sample as well.
+
+Since whole point of prediction is for a model to work on data that the model hasn't seen at all, the model should perform _generally_ well on that data it has not seen! If your model has a lot of _bias_, then even if you have a good r-squared or mean squared error with the data learned from, it could perform **poorly** on the data it is actually supposed to predict!
+
+- Knowledge Check: Which situation would be better as a weatherman?
+
+    1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
+    2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am only at most 10 degrees off on future days?
+
+    The second case is what we are shooting for as good model fit.
 
 <a name="demo-cv"></a>
 ## Demo: Cross Validation (20 minutes)
 
-One approach data scientists use to account for bias is cross validation. The basic idea of cross validation is to generate several models based on different cross sections of the data, measure performance of each, and then take the mean performance.
+One approach data scientists use to account for bias is cross validation. The basic idea of cross validation is to generate several models based on different cross sections of the data, measure performance of each, and then take the mean performance. This technique is our approach for trading bias error in our model for generalized error (situation #2 for the temperature prediction above).
+
+![crossvalidation_kfold](http://i.stack.imgur.com/8hyyh.png)
 
 One of the most common cross validation techniques is k-fold: split the data into _k_ groups, _train_ the data on all segments except one, and then _test_ the performance on the remaining set. If k equals five, then that means we generate five different models.
 
@@ -141,15 +181,18 @@ lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-While it's apparent that the cross validated approach here generated more error, which of the two approaches do we think would predict more accurately on **new**data: the single model, or the cross validated, average one?
+- Knowledge Check:
+    While it's apparent that the cross validated approach here generated more error, which of the two approaches would predict on new data more accurately: the single model, or the cross validated, averaged one? Why?
 
 <a name="guided-practice-cv"></a>
 ## Guided Practice: cross validation with linear regression (20 mins)
 
+- Knowledge Check: If we were to continue increasing the number of folds in cross validation, which with each increase would also increase the training set; do you expect error to increase or decrease?
+
 Apply the following code through a loop of numbers 2 to 50 and find answers to these questions: `range(2, 51, 2)`
 
-1. What does shuffle=True do?
-2. When shuffle=False, at what point does cross validation no longer seem to help the model?
+1. What does `shuffle=True` do?
+2. At what point does cross validation no longer seem to help the model? The error line should look similar to a flat line.
 
 ```python
 kf = cross_validation.KFold(len(modeldata), n_folds=i)
@@ -165,6 +208,20 @@ for train_index, test_index in kf:
 #### What's Regularization? Why do we use it?
 
 _Regularization_ is an additive approach to protect models against _overfitting_, or being potentially biased and overconfident. In regressions, regularization becomes an additional weight to coefficients, which is either added (L1) or squared then added (L2). These are also known as Lasso and Ridge Regressions, which we toyed with as practice last class. As good practice, we should use Lasso (L1) when we have a higher number of features (k) than we have observations (n), and use Ridge (L2) in about all other cases.
+
+#### Wait a sec, what's overfitting?
+
+![overfitting](https://cloud.githubusercontent.com/assets/846010/11647961/77c2781e-9d3c-11e5-9793-363dab993e14.png)
+
+Above, we see three different linear models (yes, even the two "curved," polynomial models are linear!).
+
+The first model, which is relatively flat, poorly explains roughly half the data. From our visual, it is clear that this is not a representative model.
+
+The second model, a single polynomial curve, well explains the general curve of our data. While there is error, it is spread throughout the entire dataset, and if plotted, the residuals would likely be normally distributed.
+
+The last mode, (which is roughly a polynomial model up to the 13th power), is _overfit_ to the data. It matches each value perfectly. However, when attempting to predict new data it has not seen, we would expect this model to fail.
+
+Regularization, which introduces the weights to these coefficients, would help prevent this last model from being a perfect fit, and would generate a model that seemed more applicable to a wider set of data.
 
 #### Where Regularization Makes Sense
 
@@ -192,7 +249,9 @@ Regularization, like any important optimization function, will be more important
 <a name="demo-reg"></a>
 ## Demo: Understanding Regularization Effects (15 mins)
 
-Let's test a variety of alpha weights for Ridge Regression on the bikeshare data (why are we using Ridge Regression?).
+-- Knowledge Check: We are working with the bikeshare data to predict riders over hours/days with a few features. Why does it make sense to use a ridge regression over a lasso regression?
+
+Let's test a variety of alpha weights for Ridge Regression on the bikeshare data.
 
 ```python
 alphas = np.logspace(-10, 10, 21)
@@ -213,8 +272,30 @@ for a in alphas:
 
 We can tell sklearn to try all of these alphas in less code using a _grid search_. Grid search sounds exactly like what it means: telling the computer to exhaustively search through all options to find the best solution.
 
+A grid search will end up trying as many combos as you specicy in the `param_grid` argument. For example:
+
+```python
+{
+    'intercept': [True, False],
+    'alpha': [1, 2, 3],
+}
+```
+
+This `param_grid` has 6 different options:
+
+1. intercept True, alpha 1
+2. intercept True, alpha 2
+3. intercept True, alpha 3
+4. intercept False, alpha 1
+5. intercept False, alpha 2
+6. intercept False, alpha 3
+
+This makes grid search an incredibly powerful tool in machine learning! Check out the example below.
+
 ```python
 from sklearn import grid_search
+
+alphas = np.logspace(-10, 10, 21)
 gs = grid_search.GridSearchCV(
     estimator=linear_model.Ridge(),
     param_grid={'alpha': alphas},
@@ -222,9 +303,9 @@ gs = grid_search.GridSearchCV(
 
 gs.fit(modeldata, y)
 
-print -gs.best_score_
-print gs.best_estimator_
-print gs.grid_scores_
+print -gs.best_score_ # mean squared error here comes in negative, so let's make it positive.
+print gs.best_estimator_ # explains which grid_search setup worked best
+print gs.grid_scores_ # shows all the grid pairings and their performances.
 ```
 
 <a name="guided-practice-reg"></a>
@@ -246,7 +327,7 @@ One last approach to minimizing error is Gradient Descent. The concept behind Gr
 3. If the solver finds a better solution (optimizing toward a metric such as mean squared error), this is the new starting point.
 4. Repeat these steps until the performance is optimized and no "next steps" perform better. The size of the steps will shrink over time.
 
-Gradient Descent is very similar to traversal or dynamic programming, programming concepts that by design work through iteration.
+Gradient Descent is very similar to traversal or dynamic programming, programming concepts that by design work through iteration. For example, if you had a bunch of user data about Facebook checkins and wanted to solve for the longest path (number of days) of straight checkins, that would be solved through dynamic programming.
 
 #### Stepping away from the data and getting the concept right
 
@@ -283,6 +364,10 @@ One particular challenge with gradient descent is that it could potentially solv
 
 You can think of this like trying to get directions to grandmother's house (over the river and through the woods). Gradient Descent might accidentally say "I got close to her house, but can't get over the river, so this is the best I can do," thus minimizing for a _local_ minimum distance; however the _global_ minimum would have been to step away from the river first and find the bridge, then go over the river and actually get much closer to the house.
 
+![optimum examples](http://i.stack.imgur.com/XaKx6.png)
+
+In this chart, our local optimum distance is us missing the bridge; the global optimum required a little more distance first (unexpected error) before it being a much better solution.
+
 <a name="demo-gds"></a>
 ## Demo: Application of Gradient Descent (15 mins)
 
@@ -315,6 +400,4 @@ Explore the Gradient Descent regressor object, and build a grid search using the
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
-
-
 
