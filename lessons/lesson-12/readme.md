@@ -146,6 +146,7 @@ Predictions are made in the decision tree from answering each of the questions. 
 
 In the sample tree, if we want to classify a new article, we proceed by first asking - does the article contain word recipe. If it doesn't, we can check does the article have a lot of images. If it does, 630 / 943 articles are evegreen - so we assign a 0.67 probability to be evergreen.  
 
+
 <a name="guided-practice2"></a>
 ## Guided Practice: ecision Trees in scikit-learn (60 mins)
 
@@ -175,11 +176,18 @@ We can limit this in decision trees in a few ways
   - Limiting the number of questions (nodes) a tree can have
   - Limiting the number of samples in the leaf nodes 
 
-> See notebook for code
+> See notebook for code.
 
-#### Exercises (Independent Practice)
 
-> Assess: Each student should adjust the given model using the `max_depth` and `min_samples_in_leaf` parameters
+<a name="ind-practice"></a>
+## Independent Practice: Decision Trees (# minutes)
+
+Work on your own to adjust the given model using the following parameters:
+- `max_depth`
+- `min_samples_in_leaf`
+
+**Check:** Were students able to adjust the model using the parameters?
+
 
 ## Random Forests (30 min)
 
