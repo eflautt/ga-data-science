@@ -9,7 +9,7 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Regression Analysis
-Week # | Lesson 6
+Week 3 | Lesson 6
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -491,7 +491,6 @@ We've completely a model together that explains casual guest riders. It's now yo
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK**  | Assignment: Examples  |
 | **UPCOMING PROJECTS**  | [Final Project, Deliverable 1](/projects/final-projects/01-lightning-talk/readme.md)  |
 
 ### ADDITIONAL RESOURCES
