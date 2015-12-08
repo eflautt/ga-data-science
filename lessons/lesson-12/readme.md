@@ -39,45 +39,52 @@ Week 6 | Lesson 12
 
 ---
 
-## Review of the Modeling Assignment (30 min)
+<a name="opening"></a>
+## Opening (# mins)
+- Review pre-work, projects, or exit ticket, if applicable
+- Review current lesson objectives
+- Review prior modeling assignment.
 
-## Modeling and the Data Science Workflow (25 min)
-#### The dataset
+Check: Ask students to define the difference between the precision and recall of a model.
 
-The dataset we will be looking at today is from [StumbleUpon](http://stumbleupon.com). StumbleUpon provides a service to recommend webpages to users, and mostly they would like these websites to be 'evergreen'.
-
-What are 'evergreen' sites?
-
-Evergreen sites are those that are always relevant. As opposed to breaking news or current events, evergreen websites are relevant no matter the time or season. This typically means websites that are **not** current events like recipes, how-to guides or art.
-
-##### Exercises to explore the dataset (Independent Practice)
-We will revisit our data science workflow to explore the dataset and answer questions about what are the most important characteristics for a webpage to be 'evergreen'.
-
-1. In a group: 
-
-Prior to looking at the available data, brainstorm 3 - 5 characteristics that would be useful for predicting evergreen websites
-
-After looking at the dataset, can model or quantify any of the characteristics you wanted?
- - I.E. If you believe high-image content websites are likely to be evergreen how you can you build a feature that represents high image content
- - I.E. If you believe weather content is likely to NOT be evergreen how can you build a feature that represents that.
-
-_See notebook for data dictionary_
-_See notebook for starter code for exercises_
-
-2. Does being a news site affect greeness? Compute or plot the percent of evergreen sites for news sites.
-3. Does category in general affect greeness? Plot the rate of evergreen sites for all Alchemy categories.
-4. How many articles are there per category?
-4. Create a feature for the title containing 'recipe'. Is the % of evegreen websites higher or lower on pages that have recipe in the the title?
-
-> Assess: Each student should build intuition for the dataset by plotting the requested features
-
-##### Review the data science workflow
-
+#### Review the Data Science Workflow
 In this lesson we will focus on mining the dataset and building a model. We will focus on refining the model for the best predicitive ability.
 
-## Introduction to Decision Trees (30 min)
-#### Intuition
+***
 
+<a name="guided-practice1"></a>
+## Guided Practice: Explore the Dataset ( mins)
+
+#### The Dataset
+The dataset we will be looking at today is from [StumbleUpon](http://stumbleupon.com). StumbleUpon provides a service to recommend webpages to users, and mostly they would like these websites to be "evergreen".
+
+What are _evergreen_ sites? Evergreen sites are sites that are **always relevant**. As opposed to breaking news or current events, evergreen websites are relevant no matter the time or season. This usually means websites that avoid topical content and instead focus on recipes, how-to guides, or art projects.
+
+#### Exercises to Get Started
+We will revisit our data science workflow to explore the dataset and answer questions about what are the most important characteristics for a webpage to be 'evergreen'.
+
+In a group: 
+
+1. Prior to looking at the available data, brainstorm 3 - 5 characteristics that would be useful for predicting evergreen websites
+
+2. After looking at the dataset, can model or quantify any of the characteristics you wanted?
+    - I.E. If you believe high-image content websites are likely to be evergreen how you can you build a feature that represents high image content
+    - I.E. If you believe weather content is likely to NOT be evergreen how can you build a feature that represents that.
+
+        * _See notebook for data dictionary_
+        * _See notebook for starter code for exercises_
+
+3. Does being a news site affect greeness? Compute or plot the percent of evergreen sites for news sites.
+4. Does category in general affect greeness? Plot the rate of evergreen sites for all Alchemy categories.
+5. How many articles are there per category?
+6. Create a feature for the title containing 'recipe'. Is the % of evegreen websites higher or lower on pages that have recipe in the the title?
+
+**Check:** Were students able to plot the requested features? Did students build intuition for the dataset?
+
+<a name="introduction1"></a>
+## Introduction: Let's Explore Some Decision Trees (30 mins)
+
+#### Intuition
 Decisions trees are similar to the game 20 questions. They make predictions by answering a series of questions, most often yes or no questions.  What we typically want is the smallest set of questions to get to to the right answer. We want each question to reduce our search space as much as possible.
 
 _Trees_ are a data structure made up of _nodes_ and _branches_. Each node typically has two (or more) branches that connect it to it's children. Each child is another node in the tree and contains it's own _subtree_. Nodes without any children are known as _leaf_ nodes.
@@ -90,7 +97,7 @@ For example, suppose we want to predict if an article is a news article. We may 
     - If it does, it must be a news article
     - If not, let's ask another question - does the article contain other political figures? etc.
 
-Using our dataset from earlier. We want to predict whether an article is evergreen.  So our tree may look like:
+Using our dataset from earlier. We want to predict whether an article is evergreen. 
 
 #### Comparison to previous models 
 Decision trees have an advantage over logistic regression by being _non-linear_. A _linear_ model is one in which a change in an input variable has a constant change on the output variable. 
@@ -120,7 +127,7 @@ Let's build a sample tree for our evergreen prediction problem.  Assume our feat
     - the image ratio
     - the html ratio
 
-First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe feature
+First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe featureL
 
 ![](single-node-tree.png)
 
@@ -139,13 +146,14 @@ Predictions are made in the decision tree from answering each of the questions. 
 
 In the sample tree, if we want to classify a new article, we proceed by first asking - does the article contain word recipe. If it doesn't, we can check does the article have a lot of images. If it does, 630 / 943 articles are evegreen - so we assign a 0.67 probability to be evergreen.  
 
-## Decision Trees in scikit-learn (60 min)
+<a name="guided-practice2"></a>
+## Guided Practice: ecision Trees in scikit-learn (60 mins)
 
-#### Training a model in sckit-learn (Demo) 
+#### Training a model in sckit-learn 
 
-_See notebook for code_
+> See notebook for code.
 
-> Assess: Each student should evaluate the decision tree model using previous techniques in cross-validation
+**Check:** Each student should evaluate the decision tree model using prior techniques in cross-validation
 
 #### Overfitting in a Decision Tree (Practice) 
 
@@ -160,13 +168,14 @@ Revisiting our predicting news article example.  We could ask the following ques
 
 This model is attempting to recreate the articles exactly as opposed to learning any general trend.
 
-An uncontrainsed decision tree can learn a fairly extreme tree. ![](complex-tree.png)
+An uncontrainsed decision tree can learn a fairly extreme tree!
+![](complex-tree.png)
 
 We can limit this in decision trees in a few ways
   - Limiting the number of questions (nodes) a tree can have
   - Limiting the number of samples in the leaf nodes 
 
-_See notebook for code_
+> See notebook for code
 
 #### Exercises (Independent Practice)
 
