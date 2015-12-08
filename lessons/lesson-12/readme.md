@@ -25,27 +25,32 @@ Week 6 | Lesson 12
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Review materials & dataset
+- Review materials & dataset (sample code)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
-| 5 min  | [Opening](#opening)  | Topic description  |
-| 10 min  | [Introduction](#introduction)   | Topic description  |
-| 15 min  | [Demo](#demo)  | Topic description  |
-| 45 min  | [Guided Practice](#guided-practice)  | Topic description  |
-| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
-| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+| 5 min  | [Opening](#opening)  | Objectives & Prep  |
+| 25 min  | [Guided Practice](#guided-practice1)  | Explore the Dataset  |
+| 30 min  | [Introduction](#introduction1)   | Training Decision Trees  |
+| 15 min  | [Guided Practice](#guided-practice2)  | Decision Trees in scikit-learn  |
+| 20 min  | [Demo](#demo)  | Overfitting in Decision Trees   |
+| 15 min  | [Guided Practice](#guided-practice3)  | Adjusting Decision Trees to Avoid Overfitting  |
+| 10 min  | [Introduction](#introduction2)   | Running through the Random Forests  |
+| 20 min  | [Guided Practice](#guided-practice4)  | Regression with Decision Trees & Random Forests  |
+| 25 min  | [Independent Practice](#ind-practice)  | Evaluate Random Forest Using Cross-Validation  |
+| 5 min  | [Conclusion](#conclusion)  | Review & Recap  |
 
 ---
 
 <a name="opening"></a>
-## Opening (# mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Review prior modeling assignment.
+## Opening (5 mins)
+- Review pre-work, projects, or prior exit ticket, if applicable
+- Discuss current lesson objectives
+- Review basics of logistic regression
+- Orient material to the Data Science workflow
 
-Check: Ask students to define the difference between the precision and recall of a model.
+**Check**: Ask students to define the difference between the precision and recall of a model.
 
 #### Review the Data Science Workflow
 In this lesson we will focus on mining the dataset and building a model. We will focus on refining the model for the best predicitive ability.
@@ -53,7 +58,7 @@ In this lesson we will focus on mining the dataset and building a model. We will
 ***
 
 <a name="guided-practice1"></a>
-## Guided Practice: Explore the Dataset ( mins)
+## Guided Practice: Explore the Dataset (25 mins)
 
 #### The Dataset
 The dataset we will be looking at today is from [StumbleUpon](http://stumbleupon.com). StumbleUpon provides a service to recommend webpages to users, and mostly they would like these websites to be "evergreen".
@@ -84,7 +89,7 @@ In a group:
 ***
 
 <a name="introduction1"></a>
-## Introduction: Let's Explore Some Decision Trees (30 mins)
+## Introduction: Training Decision Trees (30 mins)
 
 #### Intuition
 Decisions trees are similar to the game 20 questions. They make predictions by answering a series of questions, most often yes or no questions.  What we typically want is the smallest set of questions to get to to the right answer. We want each question to reduce our search space as much as possible.
@@ -149,7 +154,7 @@ In the sample tree, if we want to classify a new article, we can proceed by firs
 ***
 
 <a name="guided-practice2"></a>
-## Guided Practice: Decision Trees in scikit-learn (60 mins)
+## Guided Practice: Decision Trees in scikit-learn (15 mins)
 
 #### Training a model in sckit-learn 
 > See notebook for code.
@@ -160,7 +165,7 @@ In your groups from earlier, work on evaluating the the decision tree using cros
 
 
 <a name="demo"></a>
-## Demo: Overfitting in a Decision Tree (# mins)
+## Demo: Overfitting in Decision Trees (20 mins)
 
 Decision trees tend to be weak models, mostly because they can memorize or overfit to a dataset.  Remember, a model is _overfit_ when it instead of picking up on general trends in the data it memorizes or bends to a few specific examples. If we simply memorized each article and it's classification we would overfit. This is akin to utilizing every word in every article as a feature.
 
@@ -183,8 +188,8 @@ We can limit this in decision trees in a few ways:
 
 ***
 
-<a name="guided-practice"></a>
-## Guided Practice: Adjusting Decision Trees to Avoid Overfitting (# minutes)
+<a name="guided-practice3"></a>
+## Guided Practice: Adjusting Decision Trees to Avoid Overfitting (15 minutes)
 
 Control for overfitting in the decision model by adjusting one of the following parameters:
 - `max_depth`: Control the maximum number of questions
@@ -194,8 +199,8 @@ Control for overfitting in the decision model by adjusting one of the following 
 
 ***
 
-<a name="introduction"></a>
-## Introduction: Random Forests (30 min)
+<a name="introduction2"></a>
+## Introduction: Running through the Random Forests (10 min)
 
 Random Forests are some of the most widespread classifiers used.  They are relatively simple to use (very few parameters to set and easy to avoid overfitting). 
 
@@ -226,8 +231,8 @@ Predictions from a Random Forest come from each decision tree.  Each tree makes 
 
 ***
 
-<a name="guided-practice"></a>
-## Guided Practice: Regression with Decision Trees & Random Forests (# mins)
+<a name="guided-practice4"></a>
+## Guided Practice: Regression with Decision Trees & Random Forests (20 mins)
 > See ipython notebook for starter and solution code
 
 #### Random Forest in scikit-learn
