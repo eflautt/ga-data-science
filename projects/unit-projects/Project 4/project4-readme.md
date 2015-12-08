@@ -1,49 +1,55 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #4: Executive Summary
 
-#### Overview
-In this project, you will summarize and present your analysis from Projects 1-3.
+### PROMPT
+**Context & Takeaway:**
 
----
-#### Requirements
-- Create an executive summary.
+In this project, you will summarize and present your analysis from Projects 1-3. Your goal is to complete your ongoing iPython Notebook, combining prior deliverables from projects 1-3 with an appendix and executive summary. This will be a final overview of your analysis that incorporates past feedback and demonstrates your approach.
 
-
-**Bonus:**
-- n/a
+**Goal:** Write up an executive summary that outlines your findings and the methods used in projects 1-3.
 
 ---
 
-#### Necessary Deliverables
-- Completed IPython Notebook
+### DELIVERABLES
+**Project Requirements & Constraints**
+
+#### iPython Notebook with Executive Summary
+- **Breakdown:**
+    -  “Specific aim”
+    -  Outlined methods and models 
+    -  Articulation of datasets 
+    -  Risks and assumptions 
+    -  Goals and criteria for success
+    -  A exploratory data analysis overview with visualizations and statistical analysis 
+    -  A writeup on the interpretation of findings including an executive summary with conclusions and next steps 
+
+- **Submission:**	
+    - TBD by instructor. 
+
+- **Bonus:** 
+    - Always consider your audience - what do they already know vs. what should you define or explain?
+    - Visualize your findings! Use charts, graphs, or other images as appropriate.
+
+### TIMELINE
+**Deadlines & Due Dates**
+
+| Deadline | Deliverable| Description |
+|:-:|---|---|
+| Week 6: Lesson 11 | Project 4  | Notebook with Executive Summary   |
 
 ---
-#### Dataset  
-We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank.
 
-- admit- is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
-- gre- GRE score
-- gpa- Grade Point Average
-- rank- Rank of an applicant's undergraduate alma mater with 1 being a high rank and 4 being the lowest rank
+### EVALUATION
+**Guidelines & Rubric** 
 
+Your project will be evaluated by your instructors in the following areas:
 
-#### Starter code
-IPython Notebook with questions is provided. Check out the Example notebook.
+1. Refine
+2. Build
+3. Present
 
-#### Suggested Ways to Get Started
-- Review your previous work notebooks and the feedback.
+#### Rubric: [Link to rubric](#). 
 
----
-
-### Useful Resources
-- A link to [the example notebook]
-
----
-
-#### Deliverable
-Completed IPython Notebook
-
-#### Project Feedback + Evaluation
-Based on the requirements, you can earn a maximum of 3 points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -52,4 +58,26 @@ Based on the requirements, you can earn a maximum of 3 points on this project. Y
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+
+---
+
+### RESOURCES
+**Examples & Suggestions**
+
+#### Dataset  
+We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank.
+
+- 'admit' is a binary variable. It indicates whether or not a candidate was admitted admit =1) our not (admit= 0)
+- 'gre' is GRE score
+- 'gpa' stands for Grade Point Average
+- 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
+
+#### Starter code
+An iPython Notebook with guiding questions is provided.
+
+#### Suggested Ways to Get Started
+- Review your previous  notebooks and any intructor feedback.
+- Look up sample executive summaries online.
+
+---

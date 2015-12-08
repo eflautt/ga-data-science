@@ -8,30 +8,33 @@ creator:
 
 > #### *Guiding Questions When Using This Template*
 >
-> - [ ] If there is an existing resource, is there enough content for an hour and fifteen minutes?
->   - [ ] Are there enough learning objectives?*
->   - [ ] Are the learning objectives specific enough?
->
 > - [ ] Are the learning objectives measurable?
+>   - [ ] Are there between 2-5 learning objectives?*
+>   - [ ] Are the learning objectives specific enough?
 >   - [ ] Do these learning objectives help students work toward the unit project?
+>
+> - [ ] Are activities spaced out with enough time for each?
+>   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
+>   - [ ] If reusing an existing resource, is there enough content for a given length of time?
 >   - [ ] How will this lesson culminate? (final activity + conclusion)
 >
-> Use this to provide guidance on what you should add to the existing resource
+> - [ ] Did you provide guidance for both students & instructors?
+>   - [ ] What will instructors have to do to prepare for this lesson?
+>   - [ ] What will students have to do to prepare for this lesson?
+>   - [ ] What should students do to review or prepare for the next lesson?
 >
-> - [ ] What will instructors have to do to prepare for this lesson?
-> - [ ] What will students have to do to prepare for this lesson?
->
-> _\* We normally see ~3 objectives for this length of lesson, but you should adapt based on the topic / context._
+> #### *How to Use This Template*
+> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review). 
+> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
 
 
-> #### *Audience*
-
+> #### *Your Audience*
 > Keep in mind these DAT personas as you create and iterate on this lesson. Write out lessons in a student-facing voice for consistency.
 
-> Level up Lisa
+> **Level up Lisa**
 > Summary: She currently primarily uses Excel and SQL to do her data analysis.   She’s very excited to learn about predictive analysis but she doesn’t have the coding skills to really pick up these skills on her own.
 
-> Manager Matt
+> **Manager Matt**
 > Summary: He currently does basic data analysis in Excel and SQL. He doesn’t necessarily want to build the models to answer those question but he wants to understand how models can help him answer those questions. Ultimately, he wants to make better managerial decisions because he understand more about the work his team is doing.
 
 ---
@@ -56,29 +59,33 @@ Week # | Lesson #
 - Complete Prep work required
 - Prepare any specific instructions
 
-###LESSON GUIDE
+### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Topic description  |
-| 10 min  | [Introduction](#introduction)   | Topic description  |
-| 15 min  | [Demo](#demo)  | Topic description  |
-| 45 min  | [Guided Practice](#guided-practice<a name="opening"></a>)  | Topic description  |
-| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
-| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+| 10-15 mins  | [Introduction](#introduction)   | Topic description  |
+| 10-15 mins  | [Demo](#demo)  | Topic description  |
+| 20-35 mins  | [Guided Practice](#guided-practice<a name="opening"></a>)  | Topic description  |
+| 20-25 mins  | [Independent Practice](#ind-practice)  | Topic description  |
+| 5-10 mins  | [Conclusion](#conclusion)  | Topic description  |
 
 ---
 <a name="opening"></a>
-### Opening (# mins)
-- Reference prior lesson content
-- Review pre-work or exit ticket, if applicable
-- Include Hook / Real-world Relevance
+## Opening (# mins)
+- Review pre-work, projects, or exit ticket, if applicable
+- Review current lesson objectives
+- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
+- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
+Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+
+***
 
 <a name="introduction"></a>
-### Introduction: Topic (# mins)
-Discuss topic and explain by dividing parts into sections.
+## Introduction: Topic (# mins)
+Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
@@ -105,11 +112,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem vol
 #### Use non-section headings to divide content
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
 
-**Check:** Here is a question to see how well students understand the material
+**Check:** Insert 1-2 guiding questions to ensure students are comprehending the material.
 
+***
 
 <a name="demo"></a>
-### Demo: Topic (# mins)
+## Demo / Codealong: Topic (# mins)
 Walk through a codealong or demonstration of something. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
@@ -133,9 +141,10 @@ end
 
 **Check:** By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
+***
 
 <a name="guided-practice"></a>
-### Guided Practice: Topic (# mins)
+## Guided Practice: Topic (# mins)
 Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
@@ -158,9 +167,10 @@ end
 ```
 **Check:** Were students able to successfully solve the problem or complete the task?
 
+***
 
 <a name="ind-practice"></a>
-### Independent Practice: Topic (# minutes)
+## Independent Practice: Topic (# minutes)
 Use the lesson topic/skill to create a deliverable that meets certain criteria. 
 
 > Instructor Note: This can be a pair programming activity or done indpendently.
@@ -169,23 +179,23 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 
 **Check:** Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
 
+***
 
 <a name="conclusion"></a>
-### Conclusion (# mins)
+## Conclusion (# mins)
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
 
 ***
 
-##BEFORE NEXT CLASS
+### BEFORE NEXT CLASS
 |   |   |
 |---|---|
 | **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **PREWORK**  | Reading Assignment: Examples  |
-| **PROJECT**  | Project Assignment: Title [#](Instructions)  |
+| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
-###ADDITIONAL RESOURCES
+### ADDITIONAL RESOURCES
 - Add your own resources.
 - Go crazy.
 - So much room for bullets!

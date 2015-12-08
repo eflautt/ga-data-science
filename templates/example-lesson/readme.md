@@ -7,10 +7,10 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Building Models with ActiveRecord & Migrations
+Week # | Lesson #
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-
 - Create a class that inherits from ActiveRecord
 - Create a table schema to describe the class/model in our database
 - Write a migration to update our model with new attributes
@@ -19,7 +19,6 @@ creator:
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-
 - Explain the concept of MVC
 - Create a Rails-like folder structure in a Sinatra app
 - Define what object properties and methods are
@@ -31,27 +30,29 @@ creator:
 - Complete Prep work required
 - Prepare any specific instructions
 
-## LESSON GUIDE
+### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Lesson Objectives  |
 | 15 min  | [Introduction](#introduction)   | Intro to Models |
 | 15 min  | [Demo](#demo1)  | Active Record  |
-| 5 min  | [Demo](#demo2)  | Table Error |
-| 45 min  | [Guided Practice](#guidedpractice)  | Codealong  |
-| 25 min  | [Independent Practice](#ind-practice)  | Topic description  |
-| 10 min  | [Conclusion](#conclusion)  | Topic description  |
+| 15 min  | [Codealong](#code1)  | Setting up Class & DB  |
+| 5 min  | [Demo](#demo2)  | Table Error! |
+| 10 min  | [Guided Practice](#guidedpractice)  | Table Migrations  |
+| 10 min  | [Demo](#demo3)  | Even More Table Changes  |
+| 15 min  | [Independent Practice](#ind-practice)  | Tunr Tuneup |
+| 5 min  | [Conclusion](#conclusion)  | Tunr & HW Review  |
 
 ---
 <a name="opening"></a>
-###Opening (5 min)
-- Homework/Pre-work review
-- Current Lesson Objectives
-- Questions
+## Opening (5 min)
+- Homework/Pre-work Discussion & Questions
+- Review Current Lesson Objectives
+    - Prior Knowledge Check: Define object properties and methods; explain MVC architecture.
 
 
 <a name="introduction"></a>
-### Intro: Wait, what are Models? (15 mins)
+## Intro: Wait, what are Models? (15 mins)
 
 #### Refresh on Models
 
@@ -102,16 +103,19 @@ Active Record, as an ORM Framework, gives us several mechanisms, the most import
 
 Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic.
 
+**Check:** What is the model layer responsible for? What does an active record do?
+
 This will all make a lot more sense once we start using it...so, let's start using it!
 
 
 <a name="demo1"></a>
-### Demo: Requiring and using ActiveRecord (10 mins)
+## Demo: Requiring and using ActiveRecord (10 mins)
 
 We're a successful talent management agency, Tunr, and we have designed a Sinatra app to manage our artists. Fork and clone this repository, and first, let's take a look at our app.rb & config.ru files.  Talk with a partner for a minute and discuss differences from our Sinatra apps in the beginning of the week as well as what you think each line does and how they relate to the rest of the app.
 
 > Note: Read through the app.rb & config.ru files and point out the comments below and how they reflect each code segment; ask students to add this to their code; and point out that ActiveRecord is a gem
 
+**Check:** Are students been able to successfully recall gem properties and identify ActiveRecord?
 
 Do you notice any odd methods in the seven restful actions? I do:
 
@@ -123,7 +127,8 @@ Artist.find(params[:id]) #nah uh!!
 
 We get all these awesome methods - that we don't have to write ourselves - and we can call them on our Artist class; and this is all possible when we require ActiveRecord (yes, it's just another gem!)
 
-## Setting up a class and our DB with ActiveRecord - Codealong (15 mins)
+<a name="code1"></a>
+## Codealong: Setting up a class and our DB with ActiveRecord (15 mins)
 
 These ```.all``` ```.find``` ActiveRecord methods will write the SQL for us, and since we've connected our database, we can pull any data we need real, real easily.  But before we can, we have to set up our file and classes to use ActiveRecord and a database to talk to:
 
@@ -141,7 +146,7 @@ gem "pg" #allows us to use postgresql as a DBMS for our app
 gem "tux" #allows us to have an interactive shell to play with object creation
 ```
 
-And don't forget, what do we do every time we modify the Gemfile? `bundle install`!
+**Check: **And don't forget, what do we do every time we modify the Gemfile? `bundle install`!
 
 #### Database configuration
 
@@ -193,6 +198,8 @@ Now, we can wrap that up in one terminal command:
 
 Run it. Boom, database created.
 
+**Check:** What does Rake stand for? How is it used? What are the benefits of using Rake vs typing out commands?
+
 Now let's boot up our application and see what we get.
 
 ```
@@ -203,8 +210,9 @@ Start it up, check it out in your browser. Try clicking 'Add Artist' – crap!
 
 ![](http://s30.postimg.org/d5bpwkoo1/Screen_Shot_2015_07_10_at_10_42_37_AM.png)
 
+
 <a name="demo2"></a>
-### Demo: Error?? (5 mins)
+## Demo: Table Error?? (5 mins)
 
 If you read through what this page is actually telling you, you can probably guess why this happened.
 
@@ -234,18 +242,23 @@ rake db:structure:dump      # Dump the database stru...
 rake db:structure:load      # Recreate the databases...
 rake db:version             # Retrieves the current ...
 ```
+**Check:** Review some of these common commands.
+
+
 <a name="guidedpractice"></a>
-### Guided Practice: Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
+## Guided Practice: Let's Create Some Data Tables with migrations...and without SQL! (10 mins)
 
 You'll notice we've already set up a bit of your Rakefile for you – we're basically just using the commands that the ActiveRecord gem has built in. Don't worry about memorizing the code in this file, but _do_ make sure you understand what the commands it gives us do.
 
 The real meat & potatoes here, after creating a database, is to create a _table_.
 
-To create a table we need to create a "migration".  From [rubyonrails.org](rubyonrails.org):
+To create a table we need to create a "migration". Definition taken from [rubyonrails.org](rubyonrails.org):
 
 *"Migrations are a convenient way to alter your database schema over time in a consistent and easy way. They use a Ruby DSL so that you don't have to write SQL by hand, allowing your schema and changes to be database independent. You can think of each migration as being a new 'version' of the database."*
 
 Migrations tell your application what goes into your database, and each one is timestamped, so it knows how to walk through them over time. This is crucial, especially when on a team of developers, because it keeps your database up-to-date even when someone else changes it – the computer always has a history of changes via new migration files.
+
+**Check:** What does a migration do?
 
 So let's build a new version of our database that has an artists table:
 
@@ -307,7 +320,8 @@ end
 Gorgeous, success! Now we change it.
 
 
-### Demo: Changes to our DB (10 mins)
+<a name="demo3"></a>
+## Demo: More changes to our DB (10 mins)
 
 Just like we can write migrations to create tables, we can write migrations to add, change or delete attributes, update data types, change table names, and even delete tables.
 
@@ -332,7 +346,7 @@ You can probably guess what this line - ```add_column :artists, :instruments, :s
 
 Do this _every_ time you need to change your database – whether it's adding or removing. Changing the database in any way means making a new migration, and telling the computer what you need done. Think of it as an assistant; you don't do the tedious Postgres work, you just tell it what needs doing and tell it to go do it.
 
-#### Changing or deleting column
+#### Changing or deleting columns
 
 By now, you've felt the pattern: create a migration, add the appropriate code to the migration, and then run the migration.  Same applies for each time you want to modify your database.  In the case of a updating a column, you would:
 
@@ -374,7 +388,10 @@ According to [the official ActiveRecord docs](http://edgeguides.rubyonrails.org/
 As always, if you can't remember the exact syntax, take to the Google!
 
 
-## Independent Practice (10 minutes)
+**Check:** Were students able to successfully change or delete columns?
+
+<a name="ind-practice"></a>
+## Independent Practice: Tunr Tune-Up (15 minutes)
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
@@ -384,14 +401,30 @@ For the last part of class, the guys at Tunr, decided they need more information
 - Add a column with a different data type, and then delete it
 - Update an existing column to have a different name
 
-#### Bonus:
-
+#### Bonus!
 - Update the artist show page to display the new data
 - Try using `tux` to add/edit/destroy instances of Artist models (and thus, records in your database)
 - Register a new artist using the ```artists/new``` end point
 
 
+**Check:** Were students able to add columns and update the page with new data?
+
+<a name="conclusion"></a>
 ## Conclusion (5 mins)
 - What is ActiveRecord and how does it interact with your database?
 - What are migrations?
 - Briefly, describe how to configure your Sinatra app to use ActiveRecord.
+
+***
+
+### BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **HOMEWORK** | Finish Tunr Assignment [#](Instructions)  |
+| **PREWORK**  | Do this Reading Assignment: RubyGems  |
+| **PROJECT**  | Work on Project 1 Deliverable [#](Instructions)  |
+
+### ADDITIONAL RESOURCES
+- Sinatra Resources
+- ActiveRecord Documentation
+- Other Useful Ruby Gems

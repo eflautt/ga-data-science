@@ -8,7 +8,7 @@ creator:
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Welcome to Data Science 
 
-###LEARNING OBJECTIVES
+### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
 - Describe the roles of GA staff and students to create a successful learning environment for data science 
@@ -16,7 +16,7 @@ creator:
 - Apply data science workflow to get to know the class
 - Setup your data science development environment and review python basics
 
-###STUDENT PRE-WORK
+### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 - Define basic data types used in object-oriented programming
 - Recall the Python syntax for lists, dictionaries, and functions
@@ -28,7 +28,7 @@ creator:
 - Read through lesson plans
 - Prepare slide decks
 
-##LESSON GUIDE
+### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 20 min  | [Opening](#opening)  | Welcome to GA  |
@@ -271,6 +271,7 @@ For example, after presenting your findings, you may want to:
 - Identify the limitations of your analysis
 - Identify relationships between visualizations
 
+
 <a name="practice"></a>
 ## Practice: Data Science Work Flow (25 mins)
 Use three of the steps from the Data Science Workflow (identify, acquire, present) to get to know your classmates!
@@ -296,27 +297,28 @@ Rotate through the groups to "collect the data" and record the raw data on white
 - Provide a basic visualization for broader comprehension on white board
 - Have one student present for the group
 
+
 <a name="demo"></a>
 ## Demo: Dev Environment Setup (65 min)
 * Brief intro to the tools we will use as data scientists
 * Workshop to help with environment set up 
 * IPython Notebook to test dataset and complete Python Review
 
+
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 By now, you should be able to answer the following questions with ease:
 - What is data science?
 - What is the data science workflow?
-- How can you have a successfull learning experience at GA?
+- How can you have a successful learning experience at GA?
 
 ***
 
 ##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **PREWORK**  | Reading Assignment: Examples  |
-| **PROJECT**  | Project Assignment: Title, Section [#](Instructions)  |
+| **HOMEWORK**  | Assignment: Examples  |
+| **UPCOMING PROJECTS**  | [Project 1 Instructions](/projects/unit-projects/Project 1/project1-readme.md)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.
