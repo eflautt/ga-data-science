@@ -65,9 +65,9 @@ We will revisit our data science workflow to explore the dataset and answer ques
 
 In a group: 
 
-1. Prior to looking at the available data, brainstorm 3 - 5 characteristics that would be useful for predicting evergreen websites
+1. Prior to looking at the available data, brainstorm 3 - 5 characteristics that would be useful for predicting evergreen websites.
 
-2. After looking at the dataset, can model or quantify any of the characteristics you wanted?
+2. After looking at the dataset, can you model or quantify any of the characteristics you wanted?
     - I.E. If you believe high-image content websites are likely to be evergreen how you can you build a feature that represents high image content
     - I.E. If you believe weather content is likely to NOT be evergreen how can you build a feature that represents that.
 
@@ -95,11 +95,12 @@ A _decision tree_ contains a question at every node. Depending on the answer to 
 
 It's important to note the next question we ask is dependent on the last.  We'll see how this sets decision trees apart from previously seen models.
 
-For example, suppose we want to predict if an article is a news article. We may start by asking does it mention a President? 
+For example, suppose we want to predict if an article is a news article. We may start by asking: does it mention a President? 
     - If it does, it must be a news article
     - If not, let's ask another question - does the article contain other political figures? etc.
 
-Using our dataset from earlier. We want to predict whether an article is evergreen. 
+Using our dataset from earlier, try to predict whether an article is evergreen.
+
 
 #### Comparison to previous models 
 Decision trees have an advantage over logistic regression by being _non-linear_. A _linear_ model is one in which a change in an input variable has a constant change on the output variable. 
@@ -129,7 +130,7 @@ Let's build a sample tree for our evergreen prediction problem.  Assume our feat
     - the image ratio
     - the html ratio
 
-First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe featureL
+First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe _featureL_
 
 ![](single-node-tree.png)
 
@@ -148,16 +149,19 @@ Predictions are made in the decision tree from answering each of the questions. 
 
 In the sample tree, if we want to classify a new article, we proceed by first asking - does the article contain word recipe. If it doesn't, we can check does the article have a lot of images. If it does, 630 / 943 articles are evegreen - so we assign a 0.67 probability to be evergreen.  
 
+**Check**: How do
+
 ***
 
 <a name="guided-practice2"></a>
-## Guided Practice: ecision Trees in scikit-learn (60 mins)
+## Guided Practice: Decision Trees in scikit-learn (60 mins)
 
 #### Training a model in sckit-learn 
-
 > See notebook for code.
 
-**Check:** Each student should evaluate the decision tree model using prior techniques in cross-validation
+In your groups from earlier, work on evaluating the the decision tree using cross-validation methods. What metrics would work best? Why?
+
+**Check:** Are you able to evaluate the decision tree model using cross-validation methods?
 
 
 <a name="demo"></a>
@@ -178,20 +182,18 @@ An unconstrained decision tree can learn a fairly extreme tree!
 
 We can limit this in decision trees in a few ways:
   - Limiting the number of questions (nodes) a tree can have
-  - Limiting the number of samples in the leaf nodes 
+  - Limiting the number of samples in the leaf nodes
 
-> See notebook for code.
-
-**Check:** Why are decision trees generally thought of as weak models? 
+**Check:** Why are decision trees generally thought of as weak models? How can we limit our decision trees?
 
 ***
 
 <a name="guided-practice"></a>
-## Guided Practice: Decision Trees (# minutes)
+## Guided Practice: Adjusting Decision Trees to Avoid Overfitting (# minutes)
 
-Adjust the given model using the following parameters:
-- `max_depth`
-- `min_samples_in_leaf`
+Control for overfitting in the decision model by adjusting one of the following parameters:
+- `max_depth`: Control the maximum number of questions
+- `min_samples_in_leaf`: Control the minimum number of records in each node
 
 **Check:** Were students able to adjust the model using the parameters?
 
@@ -230,28 +232,26 @@ Predictions from a Random Forest come from each decision tree.  Each tree makes 
 ***
 
 <a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
+## Guided Practice: Regression with Decision Trees & Random Forests (# mins)
+> See ipython notebook for starter and solution code
 
 #### Random Forest in scikit-learn
-> See notebook for code.
+Your new goal is to build a random forest model to predict the evergreeness of a website, using our existing dataset. 
 
-The key parameter to remember is `n_estimators` - the number of trees to use in the model.
+* The key parameter to remember is `n_estimators` - the number of trees to use in the model.
 
 #### Retrieving the important aspects of the model
-
-Random Forests have a good way of extracting what features are important. Unlike with Logistic Regression, we don't have coeffcients that tell us whether some input postively or negatively affects our output. But we can keep track of which inputs are most important. We do this by keeping track of the features that give us the best splits.
-
-> See notebook for code.
+Random Forests are a good way of extracting which features are important. Unlike Logistic Regression, we don't have coefficients that tell us whether some input positively or negatively affects our output. But we can keep track of which inputs are most important. We do this by keeping track of the features that give us the best splits.
 
 #### Regression with Decision Trees and Random Forests
-
 The same models, decision trees and random forests, can be used for both classification and regression. While predictions for classification problems are made by predicting the majority class in the leaf node, in regression, predictions are made by predicting the average value of the samples in the leaf node.
 
-**Check:** Each student should adjust the given model using the `n_estimators` parameter
+**Check:** By this point, you should be able to adjust the given model using the `n_estimators` parameter.
 
 ***
 
-## Independent Practice (25 minutes)
+## Independent Practice: Evaluate Random Forest Using Cross-Validation (25 minutes)
+> See ipython notebook for starter and solution code
 
 1. Continue adding input variables to the model that you think make be relevant
 2. For each feature:
@@ -260,7 +260,6 @@ The same models, decision trees and random forests, can be used for both classif
   - 
 3. **Bonus**: Just like the 'recipe' feature, add in similar text features and evaluate their performance
 
-> See notebook for code
 
 **Check:** Each student should improve on their original model (in AUC) either by increasing the size of the model or adding in additional features.
 
