@@ -38,10 +38,9 @@ Week # | Lesson #
 | 10 min  | [Guided Practice](#guidedpractice)  | Write a research question with raw data
   |
 | 5 min  | [Review](#review1)  | Section 1 Review |
-
-| 5 min  | [Introduction](#introduction2)   | Datascience workflow steps 2. Acquire and 3. Parse|
+| 5 min  | [Introduction](#introduction2)   | Datascience workflow steps 2. Acquire and 3. Parse |
 | 10 min  | [Demo](#demo2)   | Walkthrough Acquire and Parse with Pandas |
-| 30 min  | [Codealong](#codealong)  | Pandas Intro|
+| 30 min  | [Codealong](#codealong)  | Pandas Intro |
 | 5 min  | [Introduction](#introduction3)  | Lab Walkthrough  |
 | 20 min  | [Independent Practice](#lab)  | Lesson 2 lab |
 | 10 min  | [Conclusion](#conclusion)  | Review lab and lesson objectives |
