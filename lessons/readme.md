@@ -1,6 +1,6 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DAT Lessons
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Lessons
 
-> Globally, we have 3 Units in DAT, each building on top of skills learned previously to scaffold students' learning over the entire course.
+> Globally, we have 3 Units in DS, each building on top of skills learned previously to scaffold students' learning over the entire course.
 
 Our lessons each have an objective, prerequisites, resources, and project-oriented content, all tying into the overall competencies focused on in each unit. Dive into the detailed spec file to read more about each lesson and [read about our curriculum](#)
 
