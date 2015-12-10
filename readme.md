@@ -3,7 +3,7 @@
 ## Data Science
 We are building a global community of lifelong learners who are excited about using data to solve real world problems.
 
-### DAT Curriculum Resources
+### DS Curriculum Resources
 
 <!-- MarkdownTOC -->
 - [Data Science Refresh Curriculum Proposal](https://docs.google.com/a/generalassemb.ly/presentation/d/1M3yH6c7n5ilEXTQSyhFg4L-O8sNZQ0Sm0W24hlU1Zzg/edit?usp=sharing)
