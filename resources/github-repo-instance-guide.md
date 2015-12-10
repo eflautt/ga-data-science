@@ -11,7 +11,7 @@ For instructions on how to set up a student-facing GitHub repository for your DS
 
 ##Setting Up Your Student-Facing Repo
 
-In Data Science, we recommend using a student-facing repo to distribute project prompts, sample and solution code, slides and notes. The instructor or producer should create a student-facing repo for their course by following these steps:
+In Data Science, we recommend using a student-facing repo to distribute project prompts, sample / solution code, slides, and notes. The instructor or producer should create a student-facing repo for their course by following these steps:
 
 ***
 
