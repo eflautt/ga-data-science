@@ -5,4 +5,4 @@ Our PT DS course includes two types of projects - unit projects and a final proj
 
 1. [Unit Projects](ds-curriculum/projects/unit-projects)
 
-2. [Final Projects](ds-curriculum/projects/final-projects/)
+2. [Final Projects](/projects/final-projects)
