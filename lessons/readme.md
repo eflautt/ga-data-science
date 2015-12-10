@@ -1,470 +1,247 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
-
-# DAT Lessons
-
-> Globally, we have 3 Units in DAT, each building on top of skills learned previously to scaffold students' learning over the entire course.
-
-Our lessons each have an objective, prerequisites, resources, and project-oriented content, all tieing into the overall competencies focused on in each unit. Dive into the detailed spec file to read more about each lesson and [read about our curriculum](#)
-
-See the [feedback guidelines](#) to read more about how we provide feedback to students.
-
-## UNDER CONSTRUCTION
-
-<!--
-### **Project 1**
-
-Students start the course focusing on the basics – HTML, CSS, and JavaScript. This is how building for the web started, and it’s an excuse to make sure they’ve got a solid grasp on important fundamentals. To wrap up Unit 1, we build a game, challenging students’ ability to create a responsive layout using HTML and CSS, and to write complex and interesting jQuery to implement game logic. We'll give them at least 3 game specs to choose from.
-
-We'll make sure everyone's up to speed on HTML5 and has a thorough understanding of using CSS – and using it _well_. So many graduates have gotten jobs because their projects caught an employer's eye, so giving them a lot of time to get good at implementing designs and interfaces on the front end will be a huge improvement and set them up to make all of their projects that much more impressive.
-
-  - **Goal**: Build a game, applying browser technologies like HTML, CSS, and JavaScript
-  - **Project Time**: 3 days
-  - **[Detailed Spec File](project-01.md)**
-
-
-
-
-
-
-# Global Materials
-
-> _Use this folder to reference our baseline resources. Anyone is welcome to submit new lessons in the appropriate folders, or suggest changes to existing ones._
-
-Most of the materials in this folder are referenced in our baseline course plan on [Trello](https://trello.com/b/TuQiadjV/wdi-2-0-baseline). Take a look.
-
-Tips for browsing the links below:
-
-- Resource links with a "+" are suggested topics for that time block and do not have an existing baseline resource. We'd love for you to contribute a resource with a pull request.
-- Resource links with a "#" are time blocks dedicated for outcomes lessons. Note: As of now, many outcomes lessons are scheduled for project weeks, according to the [Baseline 2.0 Trello](https://trello.com/b/TuQiadjV/wdi-2-0-baseline) and are not included in this readme.
-
+---
+title: Experimental Design and Pandas
+duration: "1:45"
+creator:
+    name: Amy Roberts, Lab/Codealong from GADS11
+    city: NYC
 ---
 
-## Unit 1
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Experimental Design and Pandas
+Week # | Lesson #
 
-Unit 1 is all about showing the humble beginnings of the web and introducing students to foundational programming concepts that we'll use for the entire rest of the course.
+### LEARNING OBJECTIVES
+*After this lesson, you will be able to:*
+- Define a problem and types of data
+- Identify data set types
+- Define the data science workflow
+- Apply the data science workflow in the pandas context
+- Write an IPython Notebook to import, format and clean data using the Pandas Library
 
-Since our prework a large portion of our curriculum practices programming concepts in JavaScript, in this unit, we review data types, functions, and other foundational concepts in JavaScript.
+### STUDENT PRE-WORK
+*Before this lesson, you should already be able to:*
+- Create, open and create and IPython Notebook
+- Have completed python pre-work
 
-Another goal of this unit is also to get students feeling the need for HTML templates and saving data, so that they appreciate the necessity of the topics in the units to follow.
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
+- Gather materials needed for class
+- Complete Prep work required
+- Prepare any specific instructions
 
-#### Week 1
+### LESSON GUIDE
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 5 min  | [Opening](#opening)  | Lesson Objectives  |
+| 10 min  | [Introduction](#introduction1)   | The why's and how's of a good question |
+| 10 min  | [Demo](#demo1)  | Diagraming a high quality aim |
+| 10 min  | [Lecture](#lecture1)  | Types of datasets |
+| 10 min  | [Guided Practice](#guidedpractice)  | Write a research question with raw data
+  |
+| 5 min  | [Review](#review1)  | Section 1 Review |
 
-
-
-
-Day 1                                   | Day 2                                | Day 3                                    | Day 4                                     | Day 5
---------------------------------        | ------------------------------------ | ------------------------------------     | ---------------------------------------   | -----------------------------------
-[+Your learning experience][1-1A]       | [Chrome dev tools][1-2A]             | [Box model and positioning][1-3A]         | [Functions and scope][1-4A]             | [Mastering control flow][1-5A]
-[How the internet works][1-1B]          | [CSS selector basics ][1-2B]         | [Lab: CSS website replication][1-3B]      | [Lab: JavaScript functions][1-4B]        | [Debugging in JavaScript][1-5B]
-[Navigating the file system][1-1C]      | [Lab: Build a website][1-2C]         | [Data types, variables, and arrays][1-3C] | [+DOM manipulation and events][1-4C]     | [Lab: Tic-Tac-Toe][1-5C]
-[Lab: Command line][1-1D]               | [+Web Typography][1-2D]               | [JavaScript objects][1-3D]              | [Lab: DOM manipulation][1-4D]             | [+Instructor retro][1-5D]
-[+HW: HTML Reading and Challenge][1-1E] | [+HW: CSS and design challenge][1-2E]  | [+HW: JavaScript challenges][1-3E]     | [+HW: Add interactivity to a blog][1-4E]  |
-
-[1-1A]: # " "
-[1-1B]: 00-programming/internet-fundamentals-lesson                   "Internet fundamentals"
-[1-1C]: 01-workflow/terminal-navigating-the-file-system-lesson         "Navigating the file system"
-[1-1D]: 01-workflow/command-line-lab                                  "Command line lab"
-[1-1E]: # " "
-
-[1-2A]: 01-workflow/chrome-dev-tools-lesson                      "Chrome Dev Tools"
-[1-2B]: 02-front-end-intro/css-selector-basics                    "CSS Selector Basics"
-[1-2C]: 02-front-end-intro/html-css-website-lab                   "Build a website"
-[1-2D]: # " "
-[1-2E]: # " "
-
-[1-3A]: 02-front-end-intro/css-box-model-and-positioning          "Box model and positioning"
-[1-3B]: 02-front-end-intro/css-site-replication-lab               "CSS website replication"
-[1-3C]: 00-programming/js-data-types-variables-and-arrays        "Data types, variables, and arrays"
-[1-3D]: 00-programming/js-objects-lesson                        "JavaScript objects"
-[1-3E]: # " "
-
-[1-4A]: 00-programming/js-functions-and-scope                   "Functions and scope"
-[1-4B]: 00-programming/js-functions-lab                         "JavaScript functions lab"
-[1-4C]: # " "
-[1-4D]: 02-front-end-intro/js-dom-manipulation-lab                "DOM manipulation lab"
-[1-4E]: # " "
-
-[1-5A]: 00-programming/js-control-flow-lesson                      "Mastering control flow"
-[1-5B]: 00-programming/js-debugging-lesson                        "Debugging JS"
-[1-5C]: 02-front-end-intro/js-tic-tac-toe-lab                     "JavaScript tic tac toe lab"
-[1-5D]: # " "
-[1-5E]: # " "
-
-
-#### Week 2
-
-
-Day 1                                      | Day 2                                | Day 3                                      | Day 4                                      | Day 5
---------------------------------           | ------------------------------------ | ------------------------------------       | ---------------------------------------    | -----------------------------------
-[Git and GitHub][2-1A]                     | [+Closures][2-2A]                     | [Branching and GitHub pages][2-3A]        | [+SASS/CSS preprocessors][2-4A]            | [Agile development, wireframes, and user stories][2-5A]
-[Lab: Git and GitHub][2-1B]                | [Lab: JavaScript calculator][2-2B]    | [Intro to jQuery][2-3B]                   | [+Lab: Mockup to HTML/SASS][2-4B]          | [Review][2-5B]
-[Callbacks][2-1C]                          | [Lab: JavaScript calculator][2-2C]    | [Intermediate jQuery][2-3C]              | [Responsive CSS][2-4C]                     | [+Instructor Retro][2-5C]
-[+Lab: Callback hell][2-1D]                 | [+JavaScript calculator review][2-2D]| [+Lab: Tic Tac Toe with jQuery][2-3D]     | [+Lab: Mobile website with HTML/SASS][2-4D]|
-[+HW: Code challenge with callbacks][2-1E] | [+HW: Practice with closures][2-2E]  | [+HW: Finish and deploy Tic Tac Toe][2-3E] | [+HW: CSS animation][2-4E]                 |
-
-[2-1A]: 01-workflow/git-github-lesson "Git and GitHub"
-[2-1B]: 01-workflow/git-github-lab "Git and GitHub lab"
-[2-1C]: 00-programming/js-callbacks-lesson "Callbacks"
-[2-1D]: # " "
-[2-1E]: # " "
-
-[2-2A]: # " "
-[2-2B]: 02-front-end-intro/js-calculator-lab "JavaScript calculator Lab"
-[2-2C]: 02-front-end-intro/js-calculator-lab "JavaScript calculator Lab"
-[2-2D]: # " "
-[2-2E]: # " "
-
-[2-3A]: 01-workflow/git-github-branches-github-pages-lesson          "Branching and GitHub pages"
-[2-3B]: 02-front-end-intro/js-jquery-intro-lesson                   "Intro to jQuery"
-[2-3C]: 02-front-end-intro/js-jquery-intermediate-lesson          "Intermediate jQuery"
-[2-3D]: # " "
-[2-3E]: # " "
-
-[2-4A]: # " "
-[2-4B]: # " "
-[2-4C]: 02-front-end-intro/css-responsive-design-lesson         "Responsive CSS"
-[2-4D]: # " "
-[2-4E]: # " "
-
-[2-5A]: 01-workflow/agile-user-stories-wireframes-lesson "Agile development, wireframes, and user stories"
-[2-5B]: # " "
-[2-5C]: # " "
-[2-5D]: # " "
-[2-5E]: # " "
-
-#### Week 3
-
-##### Project Week: Project 1
-
-Let's start out with something fun - a game!
-
-Everyone will get a chance to be creative and work through some really tough programming challenges – since students will have already gotten their feet wet with Tic Tac Toe, they'll have to come up with another fun and interesting game for project 1.
-
-This will be an independent project where students will build functionality that renders a game in a browser that allows two players to play at a time.
-
-- **Goal**: Build a browser game that allows for players to take turns and visually display a winner.
-- **Project Time**: 3 days
-- **[Detailed Spec File](../projects/project-01.md)**
+| 5 min  | [Introduction](#introduction2)   | Datascience workflow steps 2. Acquire and 3. Parse|
+| 10 min  | [Demo](#demo2)   | Walkthrough Acquire and Parse with Pandas |
+| 30 min  | [Codealong](#codealong)  | Pandas Intro|
+| 5 min  | [Introduction](#introduction3)  | Lab Walkthrough  |
+| 20 min  | [Independent Practice](#lab)  | Lesson 2 lab |
+| 10 min  | [Conclusion](#conclusion)  | Review lab and lesson objectives |
+| 15 min  | [Wrap-up](#wrapup)  | Unit 1, project, where we're headed |
 
 ---
+<a name="opening"></a>
+## Opening (5 min)
+- Review Current Lesson Objectives
+    - Review Data Science workflow
+    1. Identify
+    2. Acquire
+    3. Parse
+    4. Mine
+    5. Refine
+    6. Build 
+    7. Present 
 
+  Today we will focus on steps 1-2, we will dive into steps 3-5 in the next few classes.
 
-## Unit 2
-
-By default, this unit starts with Sinatra and later, focuses on Rails. By starting with Sinatra, and slowly building up to the processes and file/folder structure used by Rails, we are able to scaffold the learning experience without overwhelming students, at first, with the Rails file structure. We try to build an understanding of the reasons that Rails arrived on the scene. We generally don't get to APIs in this unit because there are enough foundational topics to cover in OOP, MVC, data modeling, and more. This is where students get to build their first real set of full-stack applications.
-
-#### Week 4
 
-Day 1                            | Day 2                                          | Day 3                                       | Day 4                                           | Day 5
--------------------------------- | ------------------------------------           | ------------------------------------        | ---------------------------------------         | -----------------------------------
-[Intro to Ruby data types][4-1A] | [Classes, objects, methods][4-2A]              | [Intro to relational data modeling][4-3A]  | [Building models with ActiveRecord][4-4A]        | [Building and submitting forms][4-5A]
-[Control flow in Ruby ][4-1B]    | [Lab: Classes, objects, methods][4-2B]         | [Lab: Practice database design][4-3B]       | [Lab: Models and migrations][4-4B]              | [+Review session][4-5B]
-[Arrays, hashes, and blocks][4-1C]| [Sinatra setup / layouts and templating][4-2C] | [SQL - Setup, insert, update, delete][4-3C] |  [ActiveRecord methods and finders][4-4C]       | [#Outcomes: 1:1 Career coaching sessions][4-5C]
-[Lab: Arrays and hashes][4-1D]   | [Sinatra controllers & RESTful routing][4-2D]   | [Lab: SQL select][4-3D]                    | [Lab: ActiveRecord finders and methods][4-4D]   | [Lab: Weekend Sinatra app][4-5D]
-[+HW: Ruby data types][4-1E]  | [+HW: Your own Sinatra app][4-2E]                  | [HW: Database design challenges][4-3E]      | [+HW: Advanced ActiveRecord concepts][4-4E]  |
 
-[4-1A]: 00-programming/ruby-data-types-variables-lesson                    "Intro to Ruby - Data Types & Variables"
-[4-1B]: 00-programming/ruby-control-flow-lesson                            "Control flow in Ruby"
-[4-1C]: 00-programming/ruby-arrays-hashes-and-blocks-lesson                "Arrays, Hashes, & Blocks"
-[4-1D]: 00-programming/ruby-arrays-and-hashes-lab                          "Arrays & Hashes Lab"
-[4-1E]: # " "
-
-[4-2A]: 00-programming/ruby-classes-objects-and-methods-lesson             "Objects & Methods in Ruby"
-[4-2B]: 00-programming/ruby-classes-objects-and-methods-lab                "Classes, Objects, & Methods Lab"
-[4-2C]: 04-server-applications/sinatra-intro-lesson                        "Sinatra Setup + Layouts & Templating"
-[4-2D]: 04-server-applications/sinatra-controllers-routing-lesson          "Controllers & RESTful Routing"
-[4-2E]: # " "
-
-[4-3A]: 05-databases/data-modeling-intro-lesson                             "Intro to Relational Data Modeling"
-[4-3B]: 05-databases/data-modeling-erd-design-lab                           "Practice Database Design"
-[4-3C]: 05-databases/sql-setup-insert-update-delete-lesson                  "SQL - Setup, Insert, Update, Delete"
-[4-3D]: 05-databases/sql-select-lab                                         "SQL Select"
-[4-3E]: 05-databases/data-modeling-database-design-challenge-homework         "Data Modeling Homework"
-
-[4-4A]: 04-server-applications/sinatra-activerecord-models-migrations-lesson         "Building Models with ActiveRecord and Migrations"
-[4-4B]: 04-server-applications/sinatra-activerecord-models-migrations-lab             "Models and Migrations Lab"
-[4-4C]: 04-server-applications/sinatra-activerecord-methods-and-finders-lesson        "ActiveRecord Methods and Finders"
-[4-4D]: 04-server-applications/sinatra-activerecord-finders-lab                        "ActiveRecord Finders lab"
-[4-4E]: # " "
-
-[4-5A]: 04-server-applications/sinatra-forms-lesson                        "Building and Submitting Forms"
-[4-5B]: # " "
-[4-5C]: # " "
-[4-5D]: 04-server-applications/sinatra-app-weekend-lab                      "Weekend Sinatra app"
-[4-5E]: # " "
-
-#### Week 5
-
-Day 1                                                            | Day 2                                      | Day 3                                                 | Day 4                                   | Day 5
---------------------------------                                 | ------------------------------------       | ------------------------------------                  | --------------------------------------- | -----------------------------------
-[Modeling relationships][5-1A]                                   | [Controllers and routes in Rails][5-2A]    | [Lab: Building a Rails app with relationships][5-3A]  | [Lab: Hello, Bootstrap][5-4A]           | [+Review session][5-5A]
-[Lab: Modeling relationships][5-1B]                              | [Lab: Building your first Rails app][5-2B] | [User models with passwords][5-3B]                    | [Deploying to Heroku][5-4B]             | [Accessing third-party APIs][5-5B]
-[Lab Modeling relationships with multiple controllers][5-1C]     | [Layouts, partials, and views][5-2C]       | [Sessions/logging in by hand][5-3C]                   | [Lab: Full CRUD app depoyed][5-4C]      | [Lab: API hackathon][5-5C]
-[Intro to Rails][5-1D]                                           | [Lab: Layouts, partials, and views][5-2D]  | [Lab: Sessions/logging in by hand][5-3D]              | [Intro to testing][5-4D]                | [+Introduce project 2 + project time][5-5D]
-[+HW: Reading up on Rails][5-1E]                                 | [+HW: Build your second Rails app][5-2E]   | [+HW: Full CRUD app with views][5-3E]                 | [+HW: Rails and RSpec][5-4E]            |
-
-[5-1A]: 04-server-applications/sinatra-activerecord-modeling-relationships-lesson                              "Modeling Relationships"
-[5-1B]: 04-server-applications/sinatra-activerecord-modeling-relationships-lab                                  "Relationships with Multiple Models"
-[5-1C]: 04-server-applications/sinatra-activerecord-relationships-multiple-controllers-lab              "Relationships with Multiple Controllers"
-[5-1D]: 04-server-applications/rails-intro-lesson                                      "Intro to Rails"
-[5-1E]: # " "
-
-[5-2A]: 04-server-applications/rails-controllers-and-routes-lesson                  "Controllers and Routes in Rails"
-[5-2B]: 04-server-applications/rails-first-app-lab                         "Building your First Rails app"
-[5-2C]: 04-server-applications/rails-layouts-views-lesson                       "Layouts, Views, and Partials"
-[5-2D]: 04-server-applications/rails-layouts-views-lab                            "Layouts, Views, and Partials Lab"
-[5-2E]: # " "
-
-[5-3A]: 04-server-applications/rails-relationships-lab               "Building a Rails app with Relationships Lab"
-[5-3B]: 04-server-applications/rails-user-passwords-lesson                         "User Models with Passwords"
-[5-3C]: 04-server-applications/rails-sessions-custom-auth-lesson                     "Sessions/Logging in by Hand"
-[5-3D]: 04-server-applications/rails-sessions-login-lab                                       "Sessions/Login Lab"
-[5-3E]: # " "
-
-[5-4A]: 02-front-end-intro/css-bootstrap-lab                                      "Hello Bootstrap Lab"
-[5-4B]: 07-deployment/heroku-intro-lesson                               "Deploying to Heroku"
-[5-4C]: 04-server-applications/rails-full-crud-app-lab                     "Full CRUD app with Views Deployed Lab"
-[5-4D]: 06-testing/ruby-testing-intro-lesson
-[5-4E]: # " "
-
-[5-5A]: # " "
-[5-5B]: 00-programming/ruby-accessing-third-party-apis-lesson                              "Accessing Third-Party APIs"
-[5-5C]: 06-server-applications/apis/apis-hackathon                                            "API Hackathon"
-[5-5D]: ..*/projects/project-02.md "Project 2"
-[5-5E]: # " "
-
-#### Week 6
-
-##### Project Week: Project 2
-
-For the mid-course project, we build and deploy a standard, secured CRUD app. We currently cover Ruby and Rails in this unit, focusing on mastering key concepts in object-oriented programming, MVC design patterns, and relational data modeling prior to moving on to modern full-stack web development in JavaScript.
-
-The second unit project is an individual project. We'll give students several project specs to choose from and help them scope the project appropriately, but also invite students to exercise a little more creativity.
-
-  - **Goal**: Build a full-stack CRUD app in Rails, that interacts with a database and includes at least a few relationships between models, server-side rendering of templates, and encryption & authentication.
-  - **Project Time**: 4 days
-  - **[Detailed Spec File](../projects/project-02.md)**
-
----
-
-## Unit 3
+<a name="introduction"></a>
+## Intro: The why's and how's of a good question (10 mins)
 
-Unit 3 is all about APIs. We want students to be able to use them and create them, with both Ruby and JavaScript frameworks.  Because they've just spent so much time with Rails, we'll start with APIs in Rails, enough to have a solid foundation if they want to go further.  This unit is where they'll learn Node, via Express & MongoDB. Since MongoDB goes well with Express, it gives us a chance to teach about an alternative to SQL databases that are relevant to the industry; and since they're building APIs, they'll have to consume them. Throughout the unit, students won't have an understanding of any front-end frameworks, partially because until recently, these frameworks haven't really become necessary. In their learning it won't either – we'll learn them in the next unit, once they feel the pain of AJAX and templating the old-fashioned way and crave something more organized.
+#### Why we need a good question/aim
+"A problem well stated is half solved."
 
-#### Week 7
+By having a high quality question/aim you set yourself up for success as you being your analysis. You also establish the basis for making your analysis reproducible. A clearly articulated research question not only helps other data scientists learn from, and reproduce your work, but also helps them expand on your work in the future. 
 
+#### What is a good question? 
+The goals of a high quality, reproducible question are similar to the SMART Goals Framework. 
+S- specific 
+M- measureable
+A- attainable
+R- reproducible *this step is different from smart goals*
+T- timebound
 
+1. Specific- The dataset and key variables are clearly defined. 
+2. Measureable- The the type of anlysis and major assumptions are articulated. 
+3. Attainable- The question you are asking is feasible for your dataset and is not likely to be biased.
+4. Reproducible- Another person (or you in 6 months!) can read your state and understand exactly how the analysis is being preformed
+5. Timebound- You clearly state the time period and population for which this analysis will pertain
 
-Day 1                                    | Day 2                                 | Day 3                                | Day 4                                    | Day 5
---------------------------------         | ------------------------------------- | ------------------------------------ | ---------------------------------------- | -----------------------------------
-[Git team workflow part 1][7-1A]         | [Intro to Node.js][7-2A]             | [#Resumes and Cover Letters][7-3A]    | [+Instructor choice][7-4A]               | [Prototypes and constructors][7-5A]
-[Git team workflow part 2][7-1B]         | [Intro to Express][7-2B]              | [Intro to NoSQL w/ Mongo][7-3B]       | [Lab: Mongoose modeling][7-4B]        | [+Review session][7-5B]
-[Rails API][7-1C]                        | [Lab: Building Express routes][7-2C] | [Mongo-backed models with Mongoose][7-3C] | [Deploying a Node application][7-4C]     | [+Lab: Single model, RESTful JSON API][7-5C]
-[Lab: Rails API ][7-1D]                  | [Debugging and logging in Node][7-2D]| [Lab: CRUD with Mongoose][7-3D]      | [Lab: Connecting Express routes to Mongo][7-4D]       |
-[+HW: Add an API to prevoius work][7-1E] | [+HW: Debugging and logging ][7-2E]   | [+HW: Mongo data modeling][7-3E]     | [+HW: Finishing and Deploying an Express app][7-4E]  |
+<a name="demo1"></a>
+## Demo: Diagraming an aim (5 mins)
+Example aim: 
+Determine the association of foods in the home with child dietary intake. Using one 24-hour recall from tbe cross-sectional NHANES 2007-2010 we will determine the factors associated with food available in the homes of American children and adolescents. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food. Hypothesis: Children will be more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never. (From Dr. Amy Roberts' Dissertation)
 
-[7-1A]: 01-workflow/git-team-workflow-lesson-part-1    "Git Team Workflow Part 1"
-[7-1B]: 01-workflow/git-team-workflow-lesson-part-2     "Git Team Workflow Part 2"
-[7-1C]: 04-server-applications/rails-api-lesson         "Rails API"
-[7-1D]: 04-server-applications/rails-api-lab            "Rails API lab"
-[7-1E]: # " "
+Note for each of these give one 1 example and ask the class to id others.  
 
-[7-2A]: 04-server-applications/node-intro-lesson             "Intro to Node.js"
-[7-2B]: 04-server-applications/node-express-intro-lesson     "Intro to Express / Express Routing"
-[7-2C]: 04-server-applications/node-express-routing-lab      "Building Express Routes Lab"
-[7-2D]: 04-server-applications/node-debugging-lesson         "Debugging and logging in Node"
-[7-2E]: # " "
+1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010 we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Hypothesis: Children will be **more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never**.
 
-[7-3A]: # " "
-[7-3B]: 05-databases/mongo-nosql-intro-lesson                    "Intro to node with Mongo"
-[7-3C]: 04-server-applications/node-express-mongo-models-lesson  "Mongo-backed models with Mongoose"
-[7-3D]: 04-server-applications/node-express-mongo-crud-lab       "Mongoose CRUD Lab"
-[7-3E]: # " "
+How data was collected is indicated: 24-hour recall, self-reported
 
-[7-4A]: # " "
-[7-4B]: 04-server-applications/node-express-mongo-modeling-lab       "Mongoose Modeling Embedded and Reference Lab"
-[7-4C]: 07-deployment/heroku-node-deployment-lesson                  "Deploying a Node application"
-[7-4D]: 04-server-applications/node-express-mongo-routing-lab        "Connecting Express Routes to Mongo Lab"
-[7-4E]: # " "
+What data was collected is indicated: fruits, dark green vegetables, low fat milk or sugar sweetened beverages, always vs rarely never available
 
-[7-5A]: 00-programming/js-constructors-and-prototypes                      "Constructors and Prototypes"
-[7-5B]: # " "
-[7-5C]: # " "
-[7-5D]: # " "
-[7-5E]: # " "
+How the data will be analysised- using USDA recommendations as a gold-standard to measure the association
 
-#### Week 8
+The specific hypothesis along with the direction of the expected association: more likely to meet their recommended intake level
 
 
+2. Measureable: Determine the association of foods in the home with child dietary intake. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food. 
 
-Day 1                                 | Day 2                                               | Day 3                                              | Day 4                                     | Day 5
---------------------------------      | -------------------------------------               | ------------------------------------               | ----------------------------------------  | -----------------------------------
-[Views in Express][8-1A]              | [Encrypting passwords with Express/Mongoose][8-2A]  | [API Authentication with Express Tokens][8-3A]      | [Testing Node with Mocah/Chai][8-4A]        | [+Underscore and Underscore Templates][8-5A]
-[Lab: Views in Express][8-1B]         | [Lab: Encrypted user models][8-2B]                  | [Lab: Securing APIs with token][8-3B]                | [Lab: Testing with Mocha/Chai][8-4B]          | [+Lab: Underscore...][8-5B]
-[AJAX with JS and jQuery][8-1C]       | [Local auth with Express][8-2C]                     | [Intro to OAuth and 3rd party APIs][8-3C]           | [Websockets with Socket.io][8-4C]         | [+Introduce Project 3, project time][8-5C]
-[Lab: Practicing AJAX][8-1D]          | [Lab: Local auth with Express][8-2D]                | [Lab: Integrating social logins][8-3D]              | [Lab: Build a real-time app][8-4D]       |
-[+HW: AJAXify your weekend lab][8-1E] | [+HW: Add local auth to your weekend lab ][8-2E]    | [+HW: Adding social login to your weekend lab][8-3E]| [+HW: Getting better at testing][8-4E]    |
+3. Attainable: Cross-sectional data has specific limitations- one of the most common is that causal inference is typically not possible. Note that we are determining the association between two items (food available in the home and children meeting their dietary recommendations). Because we are using cross-sectional data we cannot say that having fruits and vegetables in the home causes children to meet their dietary requirments. 
 
-[8-1A]: 04-server-applications/node-express-views-lesson            "Views with Express"
-[8-1B]: 04-server-applications/node-express-views-lab                 "Views with Express Lab"
-[8-1C]: 02-front-end-intro/js-ajax-lesson                 "AJAX with JS and jQuery"
-[8-1D]: 02-front-end-intro/js-ajax-lab                       "Practicing AJAX Lab"
-[8-1E]: # " "
+4. Reproducible: By having all the specifics we indicated previously it would be straight forward to Google NHANES pull the right datasets and reproduce this work. 
 
-[8-2A]: 04-server-applications/node-express-passwords-lesson "Encrypting Passwords with Express and Mongoose Lesson"
-[8-2B]: 04-server-applications/node-express-models-lab                 "Encrypted user Models Lab"
-[8-2C]: 04-server-applications/node-express-local-auth-lesson       "Local Authentication with Express"
-[8-2D]: 04-server-applications/node-express-auth-lab                          "Auth with Node Lab"
-[8-2E]: # " "
+5. Time Bound: Using one 24-hour recall from **NHANES 2007-2010** we will determine the factors associated with food available in the homes of **American children and adolescents**.
+Trends often change over time and vary by the population or source of your data. It is important to clearly define who/what you included in your anaylsis and the time period for the analysis.
 
-[8-3A]: 04-server-applications/node-express-jwt-tokens-lesson "API Auth with Express tokens"
-[8-3B]: 04-server-applications/node-express-jwt-token-lab              "Securing APIs with Tokens Lab"
-[8-3C]: 04-server-applications/node-express-oauth-intro-lesson                         "Intro to OAuth"
-[8-3D]: 04-server-applications/node-express-passport-social-logins-lab               "Integrating Social Logins Lab"
-[8-3E]: # " "
 
-[8-4A]: 06-testing/node-mocha-testing-intro            "Testing Node with Mocha and Chai"
-[8-4B]: 06-testing/node-tdd-mocha-lab                  "Testing with Mocha Lab"
-[8-4C]: 04-server-applications/node-express-websockets-lesson   "Websockets with socket.io"
-[8-4D]: 04-server-applications/node-express-websockets-lab        "Build a Realtime app Lab"
-[8-4E]: # " "
+#### Context 
+Depending on your setting the types of questoins you will answer may vary. The previous example is from a research setting. In a business setting you will need to clearly articulate the business objectives. Id and hhypothesize goals and criteria for success (e.g., success for the Netflix recommendation engine may be if 70% of customers over the age of 18 select a movie from the recommended queue during Q3 of 2015). Regardless of the setting it is important that you state your question following the SMART framework. 
 
-[8-5A]: # " "
-[8-5B]: # " "
-[8-5C]: # " "
-[8-5D]: # " "
-[8-5E]: # " "
+## Why dataset types matter. 
+As we saw in the attainable section above, different types of data have set limitations and strengths. As such certain types of analysis will not be possible with certain datasets. We are going to do a breif overview of the different types of datasets here. 
 
-#### Week 9
+Cross-sectional data: All information is determined at the same time. In other words the data is all coming from the same time period. 
 
-##### Project Week: Project 3
+Things to consider: 
+TEMPORALITY 
 
-For the third project, we have students, as a group, design and build an API in Express.
+No distinction between exposure and outcome-- e.g. why in the example above we can't say that the availability of fruit in the home caused children to meet their recommendations. It is just as likely that the opposite is true. 
 
-We'll give students technical requirements, the deliverables we expect, and a short list of potential project ideas, but we're looking for students to get more creative and to use Git/GitHub to work as a team.
+**Strengths**
+often population based  
+generalizability   
+reduced cost compared to other types of data collection methods
 
-  - **Goal**: Work collaboratively with other classmates to architect, design, and collaboratively build an API of your own design.
-  - **Project Time**: 4 days
-  - **[Detailed Spec File](../projects/project-03.md)**
+**Weaknesses** 
+separation of cause and effect may be difficult or impossible
+Variables/Cases with long duration are over-represented 
 
+Time-Series/Longitudional data: The information (data) is collected over a period of time. 
 
+**Strengths**
+Unambiguous temporal sequence – exposure precedes outcome
+Multiple outcomes can be measured
 
+**Limitations**
+Expense
+Takes a long time
+Vulnerable to missing data 
 
----
 
+<a name="#guidedpractice"></a>
+## Guided Practice: Write a research question with raw data (10 mins)
+Looking at the data from Kaggle's Titanic competition, let's write a high quality reserch question 
+[data dictionary](href='https://www.kaggle.com/c/titanic/data')
+Format: Think, Pair, Share
 
+1. What type of data is this cross-sectional or longitudinal? 
 
-## Unit 4
+cross-sectional
 
-Unit 4, our final unit, returns to focus on the front-end looking at JavaScript frameworks. The world of JavaScript frameworks is changing rapidly. After _lots_ research, there's no clear standout in front-end frameworks right now, and there are jobs available in _all_ the frameworks. They all address similar challenges but use slightly different concepts that are worth learning.
+2. What will be measuring (hint: look back at the previous example)
 
-In our public-facing syllabus, we attempt to define these topics as broadly as possible, referencing the following overarching topics:
+The association between being a woman or a child and survival on the Titanic.
 
-- Introduction to Angular.js
-- Extending DOM Elements with Custom Behaviors
-- Client-side Models and Data Binding
-- Views and Templates
-- Client-side Form Validation
-- Connecting and Syncing with a REST API
-- Managing Authentication State
+3. Write a SMART aim 
 
-You'll notice that **Angular.js** is the only framework that we reference (briefly) in the public syllabus at the moment. In many of our markets, we are seeing students getting jobs because they know Angular. This doesn't mean it's necessarily the best framework to teach from a pedagogical perspective, but it's led us to decide to build out our core lessons and materials using Angular. It's important for everyone to have at least one overview lesson introducing Angular, even if your market decides to teach most of the topics above using one of the other frameworks.
+Using data from April 15, 1912, taken from  the Titanic diaster, we will determine the association of gender, age (in years) and survival. 
 
-After week 10, this unit also leaves time for a few other important topics. We'll take about a day to cover key computer science concepts that may pop up in interviews: data structures, big O notation, search algorithms, etc. We'll also leave a day for optional topics - like ES2015, background jobs, AWS hosting, etc. - and a couple days for review-focused codealongs.
+<a name="review1"></a>
+We covered the Identify step of the data science workflow. We also explored the strengths and weaknesses of two types of data.
 
+1. SMART analysis aims 
+2. Types of a datasets
 
-#### Week 10
+Questions? 
 
-Day 1                                                           | Day 2                                           | Day 3                                         | Day 4                                       | Day 5
---------------------------------                                | -------------------------------------           | ------------------------------------          | ----------------------------------------    | -----------------------------------
-[Intro to Angular - setup, controllers, two-way binding][10-1A]  | [#Track your job search][10-2A]                  | [Building factories with $http][10-3A]        | [Front-end routing with UI Router][10-4A]    | [+Student research of frameworks][10-5A]
-[Lab: Binding controller and view with hardcoded data][10-1B]    | [ng-class and CSS animation][10-2B]              | [+Lab: Building factories with $http][10-3B]   | [Lab: Front-end routing with UI Router][10-4B]| [+Student research presentations][10-5B]
-[Angular directives ][10-1C]                                     | [Angular $http][10-2C]                           | [+Lab:  Building factories with $http][10-3C]  | [Authentication with Angular ][10-4C]       | [Writing custom directives][10-5C]
-[Lab: Angular directives][10-1D]                                 | [Lab: Angular $http][10-2D]                      | [+Anguler review][10-3D]                       | [*Lab: Authentication with Angular][10-4D]   | [+Weekend lab][10-5D]
-[+HW: Basic hardcoded Angular app][10-1E]                        | [+HW: Angular CRUD with pre-existing API][10-2E] | [+HW: Factories practice][10-3E]               | [+HW: Authentication with Angular][10-4E]    |
+<a name="introduction2")></a>   |
+## Datascience workflow steps 2. Acquire and 3. Parse (5 mins)
+During this section we are going to walk through a the key features of steps 2 & 3 of the data science workflow. We will be working with an IPython Notebook. I'll demo the steps frist, then we will try them together. During the last part of class you will try your hand at the steps individually. 
 
-[10-1A]: 03-front-end-frameworks/angular-controllers-2-way-binding-lesson             "Intro to Angular Setup; Controller Two-Way Binding"
-[10-1B]: 03-front-end-frameworks/angular-controllers-101-lab                        "Binding Controller and View with Hardcoded data Lab"
-[10-1C]: 03-front-end-frameworks/angular-directives-lesson                               "Angular Directives"
-[10-1D]: 03-front-end-frameworks/angular-directives-lab                                     "Angular Directives Lab"
-[10-1E]: # "Basic Hardcoded Angular App"
+<a name="demo2"></a>
+## Demo: Walkthrough Acquire and Parse with Pandas (30 mins)
 
-[10-2A]: # " "
-[10-2B]: 03-front-end-frameworks/angular-ng-class-css-animation-lesson         "ng-class and CSS Animation"
-[10-2C]: 03-front-end-frameworks/angular-http-lesson                           "Angular HTTP"
-[10-2D]: 03-front-end-frameworks/angular-http-lab                            "Angular HTTP Lab"
-[10-2E]: # " "
+#### Acquire
+You'll remember from the previous class that the aquire step is where we determine if the dataset we have it the "right" dataset for our question. One factor is what type of data is it? Cross-sectional? Longitudinal/Time Series? The next question is how well was the data collected? Does it have a ton of missing data? Was the instrument used to collect the data validated and reliable? Is this dataset aggregated? Can we use the aggregation or do we need to get it pre-aggregation?
 
-[10-3A]: 03-front-end-frameworks/angular-resource-factories-lesson            "Building factories with $http"
-[10-3B]: # " "
-[10-3C]: # " "
-[10-3D]: # " "
-[10-3E]: # " "
+#### Intro to data dictionaries and documentation (part of Parse step as well)
+This is often our primary souce to help you judege the quality of your data and also to understand how it is coded. Your gender variable is coded 0 and 1. How do you know which is male and which is female? Your data dictionary! Is your currency varibale in dollars or euros? Data dictionary! 
 
-[10-4A]: 03-front-end-frameworks/angular-ui-router-lesson                     "Front-end Routing with UI Router"
-[10-4B]: 03-front-end-frameworks/angular-ui-router-lab                       "Front-end Routing with UI Router Lab"
-[10-4C]: 03-front-end-frameworks/angular-authentication-lesson                "Authentication with Angular "
-[10-4D]: # " "
-[10-4E]: # " "
+Show a few examples from Kaggle pages or your own work (i.e. the Titanic basic one from above to any one of the many more elaborate ones).
 
-[10-5A]: # " "
-[10-5B]: # " "
-[10-5C]: 03-front-end-frameworks/angular-custom-directives-lesson            "Writing Custom Directives"
-[10-5D]: # " "
-[10-5E]: # " "
+This is also where you will find out info on any requirements, assumptions, and constraints of your data. Through you should never assume that the data dictionary is complete. Is it often up to you to test your assumptions. 
 
+#### Logistics of aquiring your data 
+You can access data through a variety of different methods including: 
+1. Web (Google Analytics, HTML, XML)
+2. File (CSV, XML, TXT, JSON)
+3. Preexisting database (SQL, no-sql)
 
-#### Week 11
+Today will be using a CSV (comma separted value) file in the lab. 
 
->Note: For this week, there is a lot of room for instructors to include computer science and optional topics of their choosing.  As of now, no baseline materials are provided for week 11.
+#### Parse- understanding your data
+Perform exploratory surface analysis via filtering, sorting, and simple visualizations 
+Describe data structure and the information being collected
+Explore variables, data types via select 
 
 
-Day 1                                       | Day 2                                   | Day 3                                   | Day 4                                       | Day 5
---------------------------------            | -------------------------------------   | ------------------------------------    | ----------------------------------------    | -----------------------------------
-[+Package manager and build systems][11-1A] | [+MEAN stack codealong review][11-2A]   | [+Computer science block][11-3A]        | [+Optional topic 1][11-4A]                  | [+Weekly instructor retro][11-5A]
-[+Generating an app with Yeoman][11-1B]     | [+MEAN stack codealong review][11-2B]   | [+Lab: Computer science block][11-3B]   | [+Lab: Optional topic 1][11-4B]             | [+Introduce project 4][11-5B]
-[+Neogtiating][11-1C]                        | [+MEAN stack codealong review][11-2C]  | [+Computer science block][11-3C]        | [+Optional topic 2][11-4C]                  | [+Profolio project - kickoff workshop][11-5C]
-[+MEAN stack codealong review - kickoff][11-1D]| [+MEAN stack codealong review][11-2D]| [+Lab: Computer science block][11-3D]   | [+Lab: Optional topic 2][11-4D]             | [+Profolio project - kickoff workshop][11-5D]
-                                              | [+HW: Practice with MEAN stack][11-2E] | [+HW: Practice with CS topics][11-3E]  |                                             |
 
-[11-1A]: # " "
-[11-1B]: # " "
-[11-1C]: # " "
-[11-1D]: # " "
-[11-1E]: # " "
+<a name="codealong"></a>
+## Codealong- Pandas intro (30 minutes)
+See labs/lesson2_numpy_and_pandas.ipynb
 
-[11-2A]: # " "
-[11-2B]: # " "
-[11-2C]: # " "
-[11-2D]: # " "
-[11-2E]: # " "
+<a name="introduction3"></a>
+## Lab walk through (5 min)
+This is lab is based on a quiz given in Roger Peng Coursera class Computing for Data Analysis. During the lab you will read in and merge two datasets "ozone" and "data". By the end of the lab you will:
+1. Merge datasets
+2. Check basic fetures- column names, number of observations
+3. Find and drop missing values
+4. Find basic stats mean, max (more on these next time!)
 
-[11-3A]: # " "
-[11-3B]: # " "
-[11-3C]: # " "
-[11-3D]: # " "
-[11-3E]: # " "
 
-[11-4A]: # " "
-[11-4B]: # " "
-[11-4C]: # " "
-[11-4D]: # " "
-[11-4E]: # " "
+<a name="lab"></a>
+## Lesson 2 Lab (20 min)
 
-[11-5A]: # " "
-[11-5B]: # " "
-[11-5C]: # " "
-[11-5D]: # " "
-[11-5E]: # " "
 
-#### Week 12
+<a name="conclusion"></a>
+## Conclusion (10 mins)
+- Review questions from lab
+- Review objectives from class 
 
-##### Project Week: Project 4
+<a name="wrapup"></a>
+## Unit 1, project, where we're headed (15 mins)
+- Review Unit 1 objectives
+- Introduce the first project
+- Exit tickes
 
-For the fourth project, students are to build a full-stack application using their own front- and back-end.
+***
 
-The final project expects students to practice everything we've taught them over the course of 11 weeks: APIs, Git/GitHub, user stories and wireframing, and writing documentation. As always, we'll give students technical requirements and the deliverables we expect, but students are responsible for putting together a reasonable project proposal to build a full-stack application that's visually appealing.
+### BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **HOMEWORK** | TBD |
+| **PREWORK**  | TBD  |
+| **PROJECT**  | TBD  |
 
-  - **Goal**: Build a full-stack application
-  - **Project Time**: 4 days
-  - **[Detailed Spec File](../project-04.md)** -->
+### ADDITIONAL RESOURCES
+- see ipython notebook
