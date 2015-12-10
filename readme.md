@@ -20,7 +20,7 @@ The structure of this repository provides a way for us to organize our informati
 
 Some cities maintain forks of this repository for collaboration by their local instructors. However, we also encourage the teaching team for each cohort to fork this repository directly, and use it to store your new and improved resources. By the end of the course, we hope you'll have some things to submit to make our curriculum better.
 
-If you have any questions about the organization of resources, or about the scope of the DAT curriculum, you can feel free to open an issue.
+If you have any questions about the organization of resources, or about the scope of the DS curriculum, you can feel free to open an issue.
 
 Please check out our [contributing guidelines](contributing.md) for more details.
 
