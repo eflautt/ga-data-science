@@ -6,3 +6,9 @@ Our PT DS course includes two types of projects - unit projects and a final proj
 1. [Unit Projects](/projects/unit-projects)
 
 2. [Final Projects](/projects/final-projects)
+
+***
+
+See the [feedback guidelines](#) to read more about how we provide feedback to students.
+
+## UNDER CONSTRUCTION
