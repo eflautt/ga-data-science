@@ -1,6 +1,4 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
-
-# Providing Project Feedback
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Providing Project Feedback
 > _Every student should have the chance to understand how they're doing, and get valuable feedback on the work they've done from trusted mentors like us._
 
 ## Guiding Principles
