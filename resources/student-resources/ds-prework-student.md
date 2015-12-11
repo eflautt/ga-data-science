@@ -43,11 +43,11 @@ Please complete the following by the first day of class. Feel free to shoot us a
 Please follow the installation instructions below. If your installation is not complete or if you have any problems, plan to arrive at least 30 minutes early to the first class so that our TAs' can help you get set up!
 
 1. [ ] Install [Python 2.7](https://www.python.org/downloads/)
-   * Note: Make sure to install version 2.7, NOT Python 3, which has significant differences from 2.7 and is not “industry standard.” *We will be using Python 2.7.*
+   * **Note**: Make sure to install version 2.7, NOT Python 3, which has significant differences from 2.7 and is not “industry standard.” *We will be using Python 2.7.*
 2. [ ] Install [Anaconda](https://www.continuum.io/downloads)
    * Test for successful installation. For example, on a Mac you can by open a Terminal window (using the Anaconda Launcher app, if needed) and type `ipython notebook`. In a few moments, your browser should open to a window titled "Jupyter."
 3. [ ] Install [Pip](http://pip.readthedocs.org/en/stable/installing/), the recommended package manager for Python.
-   * Note: Most versions of Python come with Pip pre-installed. Check by opening your Terminal and running `pip install -U pip` to see if you have the latest version.
+   * **Note**: Most versions of Python come with Pip pre-installed. Check by opening your Terminal and running `pip install -U pip` to see if you have the latest version.
 
 <a name="practice"></a>
 ### Start Practicing
