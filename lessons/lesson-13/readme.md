@@ -12,10 +12,10 @@ Week # | Lesson 13
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Understand what natural lanuage processing is and common tasks associated with
+- Understand what natural language processing is and common tasks associated with it
   - use-cases
   - tokenization, tagging and parsing
-- Understand how to classify text or documents using scikit-learn
+- Understand how to classify text or documents using `scikit-learn`
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -41,27 +41,29 @@ Week # | Lesson 13
 | 20 mins  | [Review](#review)   | Decision Trees and Random Forests  |
 | 30 mins  | [Introduction](#introduction-nlp)   | Natural Language Processing (NLP)  |
 | 30 mins  | [Demo](#demo-spacy)  | NLP with spacy in Python  |
-| 5 mins  | [Conclusion](#conclusion-nlp)  |  Common Problems in NLP |
 | 30 mins  | [Introduction](#introduction-classification)   | Text Classification  |
 | 30 mins  | [Demo](#demo-text-sklearn)  | Text Classification with scikit-learn |
-| 20 mins  | [Independent Practice](#ind-practice)  | Text Classification with scikit-learn  |
+| 30 mins  | [Independent Practice](#ind-practice)  | Text Classification with scikit-learn  |
 | 10 mins  | [Conclusion](#conclusion)  |   |
 
 ---
-<a name="opening"></a>
-## Opening (# mins)
-
 <a name="review"></a>
-## Review: Decision Trees and Random Forests  (15 mins)
+## Review: Decision Trees and Random Forests  (10 mins)
+Revisit Decision Trees and Random Forest
+  - Decision trees are weak learners that are easy to overfit
+  - Random forests are strong models that made up a collection of decision trees
+    - They are non-linear (while logistic regression is linear)
+    - They are mostly black-boxes (no coefficients, but we do have a measure of feature importance)
+    - They can be used for classification or regression
 
 <a name="introduction-nlp"></a>
 ## Introduction: Natural Language Processing (30 mins)
 
 ### What is Natural Language Procesing (NLP)
 
-Natural language processing is the task of extracting meaning and information from text documents. There are many pieces of information we want to extract.  These might include simple classification tasks, such as deciding what category a text falls into or what tone it has or more complex texts such as translating or summarizing the text.
+Natural language processing is the task of extracting meaning and information from text documents. There are many pieces of information we want to extract.  These might include simple classification tasks, such as deciding what category a piece of text falls into, what tone it has, or more complex tasks such as translating or summarizing the text.
 
-Most AI or assistant systems are typically powered by fairly advanced NLP. A system like Siri uses voice-to-transcription to record the command and then various NLP algorithms to identify the question and asked and possible answers.
+Most AI or assistant systems are typically powered by fairly advanced NLP engine. A system like Siri uses voice-to-transcription to record the command and then various NLP algorithms to identify the question asked and possible answers.
 
 For any of the task, from classification to translation, a fair amount pre-processing is required to make the text digestible for our algorithms. Typically we need to add some structure to the text (unstructured data) before we can make decisions based on it.
 
@@ -75,7 +77,7 @@ _The L.A. Lakers won the NBA championship in 2010, defeating the Boston Celtics.
 For proper analysis, we need to identify that:
 - The periods in _L.A._ don't mark the end of a sentence but an abbreviation.
 - _L.A. Lakers_ and _Boston Celtics_ are one concept.
-- _2010_ is the word used, not _2010,_
+- _"2010"_ is the word used, not _"2010,"_
 
 ### Lemmatization and Stemming
 
@@ -88,7 +90,9 @@ How can we know that 'bad' and 'badly' are related? Or 'different' and 'differen
 
 This is useful so that we can treat the word `happy` and `happily` similarly. 
 
-**Lemmatization** attempts to accomplish the same task, but does so by attempting to use more specific grammar and language rules.
+There are many well-known stemmers that know many of these common endings, most notable the [Porter stemmer]()
+
+**Lemmatization** attempts to accomplish the same task, but does so by attempting to use more specific grammar and language rules. Traditionally, lemmatizer will have a collection of grammar rules to follow to perform the task. 
 
 For example, we can identify that "bad" and "badly" are similar using stemming.  However, we can't identify that that "better" and "best" are similar with the same heuristics. We need to use something more complex like lemmatization
 
@@ -119,7 +123,7 @@ Most of the techniques for pre-processing text for the natural language tasks us
 
 Two popular NLP toolkits in Python are `nltk` and `spacy`. While `nltk` has been one of the most popular, it has not kept up with advances in NLP and has not been well maintained. `spacy`, while more modern, is not available for commericial-use.
 
-We will utilize `spacy` in this class, `nltk` has a similar interface and similar functionality. Most the utilities and individual tasks have their own very specialized tools available as well.
+We will utilize `spacy` in this class; `nltk` has a similar interface and similar functionality. Most of the utilities and individual tasks have their own very specialized tools available as well.
 
 Let's start by attempting to process some of the titles. 
 
@@ -136,7 +140,7 @@ Let's start by attempting to process some of the titles.
     - a tagger: to identify _what_ the words are
     - a parser: to identify the phrases and links between the different words
 
-Each of these can be overriden with a specific tool you have (you may want a specialized tokenizer or stock quotes or instagram posts compared to news headlines), but we will use the defaults for now.
+Each of these pre-processing can be overriden with a specific tool you have (you may want a specialized tokenizer or stock quotes or instagram posts compared to news headlines). You could write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides, but we will use the defaults for now.
 
 The first title is:
  > IBM Sees Holographic Calls, Air Breathing Batteries
@@ -234,10 +238,10 @@ def references_organization_and_person(title):
     return has_org and has_person
 
 data['references_organization_and_person'] = data['title'].fillna('').map(references_organization_and_person)  
-data[data['references_organization_and_person']][['title']].head()```
+data[data['references_organization_and_person']][['title']].head()
+```
 
-<a name="conclusion-nlp"></a>
-## Conclusion: Common Problems in NLP (5 mins)
+### Common Problems in NLP
 
 It's important to keep in mind that each of these subtasks are still very difficult because of the complexity of language. Most often we are looking for heuristics to search through large amounts of text data. There is still a lot of active research in each of these areas.
 
@@ -254,7 +258,7 @@ Text classification is the task of predicting what category or topic a piece of 
 
 Typically this is done by using the text as the features or input to the model, and as in previous classifications using the label (sports or business, positive or negative) as the target or output to train on.
 
-When we want to include the text as features, we usually create a _binary_ feature for each word. Then each feature boils down do, does this piece of text contain that word.
+When we want to include the text as features, we usually create a _binary_ feature for each word. Then each feature boils down do - "does this piece of text contain that word?"
 
 To do this, we first need to create a vocabulary, where we know all of the possible words in our universe. We will do this in a data-driven way, usually, taking all of the words that appear in our corpus. We filter them based on occurrence or usefulness.
 
@@ -272,7 +276,7 @@ The answer to each of these is problem dependent, but each will affect the model
 - Case may matter
   - "Python" is more likely to refer to a programming language, while "python" may refer to a programming language or a snake.
 
-Classifcation using the words as features is known as **bag-of-words** classification.
+Classification using the words as features is known as **bag-of-words** classification.
 
 
 **Check:** Identify common classification tasks for text documents.
@@ -292,6 +296,8 @@ There are built-in utilities to pull out features from text in `scikit-learn` - 
 
 REMEMBER: Using all of the words can be very useful, but we need to remember to use regularization to avoid overfitting. Otherwise, using a rare words may result in the model learning something when it is not generalizable.
 
+For example, if we attempting to predict sentiment and see an article that has the word "bessst!", we may link this word to positive sentiment. But, very few articles in the future may use this word, so it may not be useful to keep in our model. 
+
 ```python
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -305,23 +311,25 @@ vectorizer = CountVectorizer(max_features = 1000,
 `CountVectorizer` arguments
         - `ngram_range` - a range of of length of phrases to use 
             - `(1,1)` means use all single words
-            - `(1,2)` all contiguous pairs of words in the title
+            - `(1,2)` all contiguous pairs of words
             - `(1,3)` all triples etc.
         - `stop_words='english'`
            - Stop words are non-content words - (to, the, it, at, what).  
            - They aren't helpful for prediction (most of the time) and this parameter removes them.
         - `max_features=1000` 
-          - maximum number of words to consider (uses the first N most frequent
+          - maximum number of words to consider (uses the first N most frequent)
         - `binary=True` 
           - to use a dummy column as the entry (1 or 0, as opposed to the count)
-          - This is useful if you think a word appearing 10 times is not more important than whether the word appear at all.
+          - This is useful if you think a word appearing 10 times is not more important than whether the word appearing at all.
 
 Like models or estimators in `scikit-learn`, vectorizers follow a similar interface.  
   - We create a vectorizer object with the parameters of our feature space. 
   - We `fit` a vectorizer to learn the vocabulary
   - We `transform` a set of text into that feature space.
 
-The distinction of `fit` and `transform` when it comes to splitting datasets into training and test sets. We want to fit (or learn our vocabulary) from our test set, as to to not like information leak through from our test set into our training.  (See more on `model leak`).  Then we `transform` both of the tranining and test sets (and any future dataset) in the same way.
+The distinction of `fit` and `transform` when it comes to splitting datasets into training and test sets. We want to fit (or learn our vocabulary) from our training set. Since choosing features is a part of our model building process, we **should not** look at our test set to do this.
+
+Whenever we want to make predictions, we will need to create a new data point that contains **exactly** the same columns as our model.  If feature 234 in our model represents the word 'cheeseburger', then we need to make sure our test or future example also has 'cheeseburger' as feature 234. We can use`transform` to do perform this conversion on the test set (and any future dataset) in the same way.
 
 #### Term Frequency - Inverse Document Frequency (TF-IDF)
 
@@ -384,3 +392,5 @@ vectorizer = TfidfVectorizer()
 | **UPCOMING PROJECTS**  | |
 
 ### ADDITIONAL RESOURCES
+- [Natural Language Understanding: Foundations and State of the Art](icml.cc/2015/tutorials/icml2015-nlu-tutorial.pdf)
+- [Text Mining Online](http://textminingonline.com/)
