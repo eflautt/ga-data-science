@@ -48,6 +48,13 @@ creator:
 <a name="opening"></a>
 ## Opening (5 mins)
 
+- What is r-squared?
+- What is a residual?
+
+Recall the central metric introduced for linear regressions, r-squared. If we had to compare two models we **built**, one with an r-squared of .79, and another of .81, which model performed better? If r-squared is an explanation of variance, then we know the value closer to 1, .82, is a better model. But what about error? Does r-squared tell us how far off our predictions are? Or about the scale of that error? How do you explain r-squared to a business owner?
+
+It is typical to use multiple prediction metrics while solving for an optimal solution to a regression problem. In particular, we're interested in the advantages of a loss function; that is, putting a cost against our prediction algorithm. While we use r-squared to inch our ways closer to 1, we'll explore loss functions and find ways to **refine** our model in order to minimize that value toward 0.
+
 <a name="introduction-cv"></a>
 ## Introduction: Linear Models and Error (15 mins)
 
@@ -138,7 +145,7 @@ print metrics.mean_squared_error(df['y'], lm.predict(df[['x']]))
 
 When our error is described as _biased_, it means that the learner's prediction is consistently far away from the actual answer. This is a sign of poor sampling: perhaps the population is not well represented in the model, or other data needs to be collected.
 
-Otherwise, one objective of a _biased_ model is to trade this biased error for _generalized_ error. That is, we'd prefer if the error was distributed more evenly across the model, even if that means it doesn't explain the sample as well.
+Otherwise, one objective of a _biased_ model is to trade this biased error for _generalized_ error. That is, we'd prefer if the error was distributed more evenly across the model, even if that means it doesn't explain the sample as well. This is called error due to _variance_.
 
 Since whole point of prediction is for a model to work on data that the model hasn't seen at all, the model should perform _generally_ well on that data it has not seen! If your model has a lot of _bias_, then even if you have a good r-squared or mean squared error with the data learned from, it could perform **poorly** on the data it is actually supposed to predict!
 
@@ -195,11 +202,11 @@ Apply the following code through a loop of numbers 2 to 50 and find answers to t
 2. At what point does cross validation no longer seem to help the model? The error line should look similar to a flat line.
 
 ```python
-kf = cross_validation.KFold(len(modeldata), n_folds=i)
-scores = []
-for train_index, test_index in kf:
-    lm = linear_model.LinearRegression().fit(modeldata.iloc[train_index], y.iloc[train_index])
-    scores.append(metrics.mean_squared_error(y.iloc[test_index], lm.predict(modeldata.iloc[test_index])))
+    kf = cross_validation.KFold(len(modeldata), n_folds=i)
+    scores = []
+    for train_index, test_index in kf:
+        lm = linear_model.LinearRegression().fit(modeldata.iloc[train_index], y.iloc[train_index])
+        scores.append(metrics.mean_squared_error(y.iloc[test_index], lm.predict(modeldata.iloc[test_index])))
 ```
 
 <a name="introduction-reg"></a>
@@ -380,6 +387,8 @@ Gradient descent's advantages are huge: with a very large data set, OLS will tak
 
 Like Ridge and Lasso regression, we can penalize (add in weights) to the gradient descent solver.
 
+To follow along with either our "grandmother's house" example, or the python example code above, try turning the estimator's argument `verbose` to 1. It will print its optimizations up to the number of iterations you allow it to run (default is 5).
+
 ```python
 lm = linear_model.SGDRegressor()
 lm.fit(modeldata, y)
@@ -392,12 +401,50 @@ Untuned, how well did gradient descent perform compared to OLS?
 <a name="ind-practice"></a>
 ## On your Own (30 mins)
 
-Explore the Gradient Descent regressor object, and build a grid search using the stochastic gradient descent estimator for the bikeshare data set. Continue with either the model you evaluated last class or the simpler one from today. In particular:
+There is a plethora of choices to approaching a regression problem. The regularization techniques appended to ordinary least squares optimizes the size of coefficients to best account for error. Gradient Descent also introduces learning rate (how aggressively do we solve the problem), epsilon (at what point do we say the error introduced is okay), and iterations (when should we stop no matter what?)
 
-1. Explore the penalties of L2 and elastic net (Which is a combination of l1 and l2).
-2. Solve to optimize alpha.
-3. Ensure you are using kfold cross validation with the grid search.
+Our objects are:
+
+- implement the gradient descent approach to our bikeshare modeling problem
+- showcase how gradient descent solves and optimizes the solution.
+- showcase this using the grid_search module!
+
+Exploring, the Gradient Descent regressor object, you will build a grid search using the stochastic gradient descent estimator for the bikeshare data set. Continue with either the model you evaluated last class or the simpler one from today. In particular, you will implement the param_grid in the grid search to get answers for the following questions:
+
+1. With a set of alpha values between 10^-10 and 10^-1, how does the mean squared error change?
+2. We know when to properly use l1 vs l2 regularization based on the data. By using a grid search with l1_ratios between 0 and 1 (increasing every 0.05), does that statement hold true?
+    * (if it didn't look like it, did gradient descent have enough iterations?)
+3. How do results change when you alter the learning rate (power_t)?
+
+**Bonus** Can you see the advantages and disadvantages of using gradient descent after finishing this exercise?
+
+You can use the following starter code to get you going:
+
+```python
+params = {} # put your gradient descent parameters here
+gs = grid_search.GridSearchCV(
+    estimator=linear_model.SGDRegressor(),
+    cv=cross_validation.KFold(len(modeldata), n_folds=5, shuffle=True),
+    param_grid=params,
+    scoring='mean_squared_error',
+    )
+
+gs.fit(modeldata, y)
+
+print 'BEST ESTIMATOR'
+print -gs.best_score_
+print gs.best_estimator_
+print 'ALL ESTIMATORS'
+print gs.grid_scores_
+```
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
+
+1. What's the (typical) range of r-squared?
+2. What's the range of mean squared error?
+3. How would changing the scale or interpretation of y (your target variable) effect mean squared error?
+4. What's cross validation, and why do we use it in machine learning?
+5. What is error due to bias? What is error due to variance? Which is better for a model to have, if it had to have one?
+6. How does gradient descent try a different approach to minimizing error?
 
