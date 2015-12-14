@@ -76,8 +76,12 @@ We'll be using the same dataset as UCLA's Logit Regression in R tutorial to expl
 - 'gpa' stands for Grade Point Average
 - 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
 
+Dataset: [Admissions.csv](./assets/admissions.csv)
+
 #### Starter code
 For this project we will be using an iPython notebook. This notebook will use matplotlib for plotting and visualizing our data. This type of visualization is handy for prototyping and quick data analysis. We will discuss more advanced data visualizations for disseminating your work.
+
+* Open the [starter code instructions](./starter-code/project2-starter.ipynb) in iPython notebook.
 
 #### Suggested Ways to Get Started
 - Read in your dataset
