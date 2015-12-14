@@ -61,8 +61,8 @@ A 10 to 20 slide deck consisting of:
 
 
 **Bonus:**
-    * An Acknowledgements Slide is always a good idea :)
-    * You might also include a Citations Slide, if necessary
+  * An Acknowledgements Slide is always a good idea :)
+  * You might also include a Citations Slide, if necessary
 
 ### TIMELINE
 **Deadlines & Due Dates**
