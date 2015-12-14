@@ -113,11 +113,11 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Practice your presentation with a friend or family member! Outside feedback can help you identify gaps in your material.
 
 #### Links to Past Projects
-- You can find previous General Assembly Presentations and Notebooks at the (GA Gallery)[https://gallery.generalassemb.ly/DS?metro=]
+- You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=)
 
 ### Useful Resources
-- Presentations from (PyData)[http://www.slideshare.net/PyData/presentations]
-- Presentations from (DataGotham)[https://www.youtube.com/user/DataGotham]), a shortly-ran data conference in NYC.
-- (Seaborn)[https://stanford.edu/~mwaskom/software/seaborn/tutorial/aesthetics.html#scaling-plot-elements-with-plotting-context-and-set-context] has a handy easy way to set figures into a "talk" context, which blows up the text and makes it easier to read.
+- Presentations from [PyData](http://www.slideshare.net/PyData/presentations)
+- Presentations from [DataGotham](https://www.youtube.com/user/DataGotham), a shortly-ran data conference in NYC.
+- [Seaborn](https://stanford.edu/~mwaskom/software/seaborn/tutorial/aesthetics.html#scaling-plot-elements-with-plotting-context-and-set-context) has a handy easy way to set figures into a "talk" context, which blows up the text and makes it easier to read.
 
 ---
