@@ -106,7 +106,7 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Keep your charts simple, and make sure they are clearly labeled.
 
 #### Starter Code 
-- Refer to the [presentation template](/projects/final-projects/02-experiment-writeup/01-template.md) as a blueprint for how to organize your work.
+- Refer to the [presentation template](../02-experiment-writeup/project-design-template.md) as a blueprint for how to organize your work.
 
 #### Suggested Ways to Get Started
 - A quick outline (e.g. "what do I need" and "where can I find it") can help you prepare.
