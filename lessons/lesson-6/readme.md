@@ -61,19 +61,17 @@ The data we are working with for this lesson has been **acquired** and **parsed*
 
 #### It starts with a simple correlation
 
-A linear regression is an explanation of a continuous variable given a series of independent variables. In it's simplest form, a linear regression would remind us of a basic algebraic function: a line of best fit:
+A linear regression is _an explanation of a continuous variable given a series of independent variables._ In it's simplest form, a linear regression reminds us of a basic algebraic function - a line of best fit:
 
 `y = mx + b`
 
-That is:
-
-Given some value __x__, its power in explanation __m__, and a starting point __b__, explain the value __y__.
+That is: given some value __x__, its power in explanation __m__, and a starting point __b__, explain the value __y__.
 
 However, the power of a linear regression is that we can use linear algebra to explain _multiple_ x's together in order to explain y:
 
 `y = betas * X + alpha (+ error)`
 
-Our terminology now being:
+Our terminology is now:
 
 Given a matrix __X__, their relative coefficients __beta__, and a y-intercept __alpha__, explain a dependent vector, __y__.
 
