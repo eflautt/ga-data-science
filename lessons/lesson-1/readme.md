@@ -142,7 +142,7 @@ Throughout the class and for the our projects we will be following a general wor
 ![Data Science Workflow Visual](./assets/images/data-science-workflow-final.jpg)
 
 
-#### Project 1: [Futurama Example](../../projects/unit-projects/project-1/assets/project1-example.ipynb)
+### Project 1: [Futurama Example](../../projects/unit-projects/project-1/assets/project1-example.ipynb)
 
 ##### IDENTIFY: Understand the problem:
 Using Planet Express customer data from January 3001-3005, determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
