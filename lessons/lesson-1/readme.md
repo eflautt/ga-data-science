@@ -43,7 +43,7 @@ Week 1 | Lesson 1
 
 <a name="opening"></a>
 ## Welcome to GA! (20 mins) 
-[See: Day 1 deck from production team](/lessons/lesson-1/dat-day1.key)
+[See: Day 1 deck from production team](./assets/ds-day1.key)
 
 #### GA is a special learning environment 
 - Introduce the instructors, EIRs, Producers
@@ -66,7 +66,7 @@ Week 1 | Lesson 1
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
 
-![Data Science venn diagram](assets/datascience-vd.png)
+![Data Science venn diagram](./assets/images/datascience-vd.png)
 
 
 #### Who uses Data Science
@@ -85,7 +85,7 @@ Week 1 | Lesson 1
 * Data Creative
 * Data Businessperson
 
-![Data Science Roles](assets/datascienceroles.jpg)
+![Data Science Roles](./assets/images/datascienceroles.jpg)
 
 
 **Skills:** 
@@ -95,11 +95,11 @@ Week 1 | Lesson 1
 * Programming
 * Stats
 
-![Data Science Skills](assets/datasci-skills.jpg)
+![Data Science Skills](./assets/images/datasci-skills.jpg)
 
 **Break down of skills by role:**
 
-![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
+![Data Science Skills by Role](./assets/images/datasci-skills-by-role.jpg)
 
 ***
 
@@ -109,7 +109,7 @@ Week 1 | Lesson 1
 
 #### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
-2. According to [this table](assets/Table.png), BMI is the _____
+2. According to [this table](./assets/images/Table.png), BMI is the _____
 	* Outcome
 	* Predictor
 	* Covariate
@@ -139,10 +139,10 @@ Throughout the class and for the our projects we will be following a general wor
 7. Present
 
 
-![Data Science Workflow Visual](assets/data-science-workflow-final.jpg)
+![Data Science Workflow Visual](./assets/images/data-science-workflow-final.jpg)
 
 
-#### Project 1: [Futurama Example](projects/unit-projects/Project1/project1-example.ipynb)
+#### Project 1: [Futurama Example](../../projects/unit-projects/project-1/assets/project1-example.ipynb)
 
 ##### IDENTIFY: Understand the problem:
 Using Planet Express customer data from January 3001-3005, determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
