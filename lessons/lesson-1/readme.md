@@ -160,7 +160,7 @@ Using Planet Express customer data from January 3001-3005, determine how likely 
 **Ideal data vs. data that is available**
 Often times we start by identifing the *ideal data* we would want for a project. 
 
-During the data aquistion phase, we'll learn about the limitations on the types of data that are available. We have to decide if these limitaions will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
+During the data aquisition phase, we'll learn about the limitations on the types of data that are available. We have to decide if these limitations will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
 
 Data for this example: 
 - demographic information (profession, company size, location)
