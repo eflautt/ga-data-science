@@ -68,7 +68,7 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 **Examples & Suggestions**
 
 #### Starter Code
-- Please use the [template](01-template.md) provided.
+- Please use the [template](./project-design-template.md) provided.
 
 #### Specific Tips
 - Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
