@@ -71,8 +71,12 @@ We'll be using the same dataset as UCLA's Logit Regression in R tutorial to expl
 - 'gpa' stands for Grade Point Average
 - 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
 
+Dataset: [Admissions.csv](./assets/admissions.csv)
+
 #### Starter code
-For this project we will be using an IPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks.
+For this project we will be using an iPython notebook. Notebooks are a handy way to communicate your research with your team and share your analysis. Using markup syntax will allow you create more visually appealing notebooks.
+
+* Open the [starter code instructions](./starter-code/project1-starter.ipynb) in iPython notebook.
 
 #### Sample Deliverables 
 Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply click on a section to see the markdown.
@@ -80,13 +84,13 @@ Check out the example notebook in our starter code, which includes a data dictio
 ![Example Notebook](./assets/images/Example_ipynb.jpg)
 
 #### Suggested Ways to Get Started
-- Get used to the IPython Notebook. Play around with keyboard shortcuts.
+- Get used to the iPython Notebook. Play around with keyboard shortcuts.
 - Try out basic markdown for commonly used formats; look up commands for headers, bold, italic, tables.
-- **Read the docs for IPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
+- **Read the docs for iPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
 
 ### Useful Resources
-- [IPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
+- [iPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
 - [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [IPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
+- [iPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
 
 ---
