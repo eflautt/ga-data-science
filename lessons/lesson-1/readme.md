@@ -11,10 +11,10 @@ Week 1 | Lesson 1
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe the roles of GA staff and students to create a successful learning environment for data science 
+- Describe the roles and components of a successful learning environment
 - Define data science and the data science workflow
-- Apply data science workflow to get to know the class
-- Setup your data science development environment and review python basics
+- Apply the data science workflow to meet your classmates
+- Setup your development environment and review python basics
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
