@@ -116,7 +116,8 @@ Week 1 | Lesson 1
 3. Draw a normal distribution.
 4. True or False: Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
-#### Discuss Results
+
+**Discuss Results**
 
 ***
 
