@@ -17,7 +17,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
 **Project Requirements & Constraints**
 
 #### Final Presentation
-- **Requirements:**
+**Requirements:**
   * Show off your work to what would be a less technical, more business oriented audience
   * Summarize the work you've completed from earlier deliverables into a clean presentation, including:
     * Your project's background, problem and hypothesis
@@ -28,7 +28,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
     * An appendix that includes all of your work and technical terminology
   * Review next steps with your audience; what could you do beyond the scope of this course?
 
-- **Breakdown:**
+**Breakdown:**
 A 10 to 20 slide deck consisting of:
  * *1 Outline Slide*
    - What is your project about?
@@ -56,11 +56,11 @@ A 10 to 20 slide deck consisting of:
    - What would be the next two or three things you want to try? What impact might they have?
    - What might your conclusions enable others to do?
 
-- **Submission:**	
+**Submission:**	
   - Final format and submission location are TBD by instructor.
 
 
-- **Bonus:**
+**Bonus:**
     * An Acknowledgements Slide is always a good idea :)
     * You might also include a Citations Slide, if necessary
 
