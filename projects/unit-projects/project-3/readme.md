@@ -75,7 +75,7 @@ Dataset: [Admissions.csv](./assets/admissions.csv)
 Review the questions in the [iPython Notebook](./starter-code/project3-starter.ipynb) provided.
 
 #### Suggested Ways to Get Started
-- Review logistic regression, odds ratios and probabilities from your lessons.
+- Review logistic regression, odds ratios and probabilities from prior lessons.
 - **Read the docs for Stats models.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
 
 ### Useful Resources
