@@ -59,6 +59,7 @@ A 10 to 20 slide deck consisting of:
 - **Submission:**	
   - Final format and submission location are TBD by instructor.
 
+
 - **Bonus:**
     * An Acknowledgements Slide is always a good idea :)
     * You might also include a Citations Slide, if necessary
