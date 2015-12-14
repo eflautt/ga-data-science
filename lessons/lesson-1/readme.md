@@ -241,7 +241,7 @@ We select a model based on the outcome we are interested in or the assumptions o
 
 - We completed a logistic regression using Statsmodels v. XX. We calculated the probability of a customer placing another order with Planet Express.  
 
-Here, we are using a logistic model because we are determine the probability that a customer may place a return order, which at its heart is a *classifcation problem*. 
+Here, we are using a logistic model because we are determine the probability that a customer may place a return order, which at its heart is a *classification problem*. 
 
 The steps for model building are:  
 - Select appropriate model 
