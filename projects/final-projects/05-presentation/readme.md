@@ -31,30 +31,30 @@ After you present your work, you'll participate in a short Q/A session (roughly 
 - **Breakdown:**
 A 10 to 20 slide deck consisting of:
  * *1 Outline Slide*
-  - What is your project about?
-  - What is its history?
-  - What relevant information is required for a colleague to jump in to understand your project?
+   - What is your project about?
+   - What is its history?
+   - What relevant information is required for a colleague to jump in to understand your project?
  * *2-3 Summary Slides* (including data and problem statement)
-  - What were you trying to accomplish?
-  - What steps did your project take?
-  - Where did the data come from? What does a sample look like? Was there data you considered but decided to remove?
+   - What were you trying to accomplish?
+   - What steps did your project take?
+   - Where did the data come from? What does a sample look like? Was there data you considered but decided to remove?
  * *3-4 Modeling Insight Slides*
-  - What is the visualization explaining?
-  - What do the x and y axes mean?
-  - How does the visualization help either prove or disprove your work?
-  - What caveats have to be explained to best understand it?
+   - What is the visualization explaining?
+   - What do the x and y axes mean?
+   - How does the visualization help either prove or disprove your work?
+   - What caveats have to be explained to best understand it?
  * *2-3 Modeling Approach Slides*
-  - What was your model trying to optimize for? Why was it the right metric for optimization?
-  - What algorithm did you try? How does it work?  
+   - What was your model trying to optimize for? Why was it the right metric for optimization?
+   - What algorithm did you try? How does it work?  
  * *2-3 Results Slides*
-  - What worked? What didn't? Why?
+   - What worked? What didn't? Why?
  * *1-2 Conclusion Slides*
-  - What had the most impact on your work?
-  - What can you confirm? What can you suggest? What is still to be determined?
+   - What had the most impact on your work?
+   - What can you confirm? What can you suggest? What is still to be determined?
  * *1-2 Next Steps Slides*
-  - What should this project do moving forward?
-  - What would be the next two or three things you want to try? What impact might they have?
-  - What might your conclusions enable others to do?
+   - What should this project do moving forward?
+   - What would be the next two or three things you want to try? What impact might they have?
+   - What might your conclusions enable others to do?
 
 - **Submission:**	
   - Final format and submission location are TBD by instructor.
