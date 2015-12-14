@@ -327,7 +327,7 @@ By now, you should be able to answer the following questions with ease:
 ##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **UPCOMING PROJECTS**  | [Project 1 Instructions](/projects/unit-projects/Project 1/project1-readme.md)  |
+| **UPCOMING PROJECTS**  | [Project 1 Instructions](../../projects/unit-projects/project-1/readme.md)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.
