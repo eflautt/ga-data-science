@@ -69,13 +69,13 @@ We'll be using the same dataset as UCLA's Logit Regression in R tutorial to expl
 - 'gpa' stands for Grade Point Average
 - 'rank' is the rank of an applicant's undergraduate alma mater, with 1 being the highest and 4 as the lowest
 
-Dataset: [admissions.csv](assets/admissions.csv)
+Dataset: [Admissions.csv](./assets/admissions.csv)
 
 #### Starter code
-Review the questions in the iPython Notebook provided.
+Review the questions in the [iPython Notebook](./starter-code/project3-starter.ipynb) provided.
 
 #### Suggested Ways to Get Started
-- Review logistic regression, odds ratios and probabilities from lecture
+- Review logistic regression, odds ratios and probabilities from your lessons.
 - **Read the docs for Stats models.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
 
 ### Useful Resources
