@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 4: Modeling Performance
 
-### PROMPT
-**Context & Takeaway:**
+## PROMPT
 
 Our goal for this project is to develop a working draft that could be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format. Your project should push the reader to ask for more insightful questions, and avoid issues like, "what does this line of code do?" 
 
@@ -15,8 +14,7 @@ Look at how your model performs compared to a dummy model, and articulate the be
 
 ---
 
-### DELIVERABLES
-**Project Requirements & Constraints**
+## DELIVERABLES
 
 #### iPython Report Draft
 
@@ -28,15 +26,15 @@ Look at how your model performs compared to a dummy model, and articulate the be
     - Consider it like an appendix piece (though unlike an appendix, it'll be necessary for your project to function!).
   - Visualizations that showcase the relationship between your Y and your two strongest variables (at least), as determined by some scoring measure (p values and coefficients, gini/entropy, etc).
 
-- **Submission:**	
-  - TBD by instructor.
-
 - **Bonus:**
     - Many modeling approaches are all about fine-tuning the algorithm parameters and trying to find a specific value. Show how you optimized for this value, and the costs/benefits of doing so.
 
+- **Submission:**	
+  - TBD by instructor.
 
-### TIMELINE
-**Deadlines & Due Dates**
+---
+
+## TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -48,15 +46,17 @@ Look at how your model performs compared to a dummy model, and articulate the be
 
 ---
 
-### EVALUATION
-**Guidelines & Rubric** 
+## EVALUATION
 Your project will be evaluated by your instructors in the following areas:
 
 1. Mine
 2. Refine
 3. Build
+4. Professional Development
 
-**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
+#### Rubric: [Click here for the complete rubric](#). 
+
+Based on the requirements, you can earn a maximum of  **12**  points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -65,20 +65,13 @@ Your project will be evaluated by your instructors in the following areas:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
 
-### RESOURCES
-**Examples & Suggestions**
+## RESOURCES
 
-#### Project Tips
-- This deliverable combines unit Projects 3 and 4 from earlier in the course; however, now you will be using your own data! But feel free to refer to any resources and feedback provided during those projects.
-
-#### Links to Past Projects
-- You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=).
-
-#### Suggested Ways to Get Started
+#### Suggestions for Getting Started
 - Two common ways to start models:
     -  "Kitchen Sink Strategy": throw all the variables in and subtract them out, one by one.
     -  "Single Variable Strategy": start with the most important variable and slowly add in while paying attention to performance)
@@ -87,7 +80,13 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Algorithms have different requirements (say, random forest vs logistic regression), and one may work better for your data than another.
 - Strike a balance between writing, code, and visual aids. Your notebook should feel like a blogpost with some code in it. Force yourself to write and visualize more than you think!
 
-### Useful Resources
+#### Specific Tips
+- This deliverable combines unit Projects 3 and 4 from earlier in the course; however, now you will be using your own data! But feel free to refer to any resources and feedback provided during those projects.
+
+#### Past Projects
+- You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=).
+
+#### Additional Links
 - [SKLearn's documentation on metrics](http://scikit-learn.org/stable/modules/classes.html)
 - [SKLearn's model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html)
 
