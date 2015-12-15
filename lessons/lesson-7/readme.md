@@ -11,15 +11,13 @@ creator:
 Week # | Lesson #
 
 ### LEARNING OBJECTIVES
-*After this lesson, students will be able to:*
-
+*After this lesson, you will be able to:*
 - Define regularization, bias, and error metrics for regression problems
 - Evaluate model fit by using loss functions including mean absolute error, mean squared error, root mean squared error
 - Select regression methods based on fit and complexity
 
 ### STUDENT PRE-WORK
-*Before this lesson, students should already be able to:*
-
+*Before this lesson, you should already be able to:*
 - Understand goodness of fit (r-squared)
 - Measure statistical significance of features
 - Recall what a _residual_ is
@@ -27,15 +25,14 @@ Week # | Lesson #
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will have to:*
-
 - review materials
 - be familiar with the datasets
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
-| 5 min  | [Opening](#opening)  | a  |
-| 10-15 mins  | [Introduction](#introduction-cv)  | Reviewing concepts of error for regression models and cross validation  |
+| 5 min  | [Opening](#opening)  | Discuss lesson objectives  |
+| 10-15 mins  | [Introduction](#introduction-cv)  | Reviewing concepts of error for regression models and cross validation |
 | 10-15 mins  | [Demo](#demo-cv)  | demo using cross validation |
 | 20-25 mins  | [Guided Practice](#guided-practice-cv)  | Cross Validation in sklearn  |
 | 10-15 mins  | [Introduction](#introduction-reg)   | what are lasso and ridge doing differently? |
@@ -55,6 +52,8 @@ Week # | Lesson #
 Recall the central metric introduced for linear regressions, r-squared. If we had to compare two models we **built**, one with an r-squared of .79, and another of .81, which model performed better? If r-squared is an explanation of variance, then we know the value closer to 1, .82, is a better model. But what about error? Does r-squared tell us how far off our predictions are? Or about the scale of that error? How do you explain r-squared to a business owner?
 
 It is typical to use multiple prediction metrics while solving for an optimal solution to a regression problem. In particular, we're interested in the advantages of a loss function; that is, putting a cost against our prediction algorithm. While we use r-squared to inch our ways closer to 1, we'll explore loss functions and find ways to **refine** our model in order to minimize that value toward 0.
+
+
 
 <a name="introduction-cv"></a>
 ## Introduction: Linear Models and Error (15 mins)
@@ -150,7 +149,7 @@ Otherwise, one objective of a _biased_ model is to trade this biased error for _
 
 Since whole point of prediction is for a model to work on data that the model hasn't seen at all, the model should perform _generally_ well on that data it has not seen! If your model has a lot of _bias_, then even if you have a good r-squared or mean squared error with the data learned from, it could perform **poorly** on the data it is actually supposed to predict!
 
-- Knowledge Check: Which situation would be better as a weatherman?
+**Check:** Which situation would be better as a weatherman?
 
     1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
     2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am only at most 10 degrees off on future days?
@@ -189,13 +188,12 @@ lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-- Knowledge Check:
-    While it's apparent that the cross validated approach here generated more error, which of the two approaches would predict on new data more accurately: the single model, or the cross validated, averaged one? Why?
+**Check:** While it's apparent that the cross validated approach here generated more error, which of the two approaches would predict on new data more accurately: the single model, or the cross validated, averaged one? Why?
 
 <a name="guided-practice-cv"></a>
 ## Guided Practice: cross validation with linear regression (20 mins)
 
-- Knowledge Check: If we were to continue increasing the number of folds in cross validation, which with each increase would also increase the training set; do you expect error to increase or decrease?
+**Check:** If we were to continue increasing the number of folds in cross validation, which with each increase would also increase the training set; do you expect error to increase or decrease?
 
 Apply the following code through a loop of numbers 2 to 50 and find answers to these questions: `range(2, 51, 2)`
 
@@ -254,10 +252,12 @@ In this example; L1 (lasso) massively increases our error (likely from not fitti
 
 Regularization, like any important optimization function, will be more important during _cross validation_. In particular, we will optimize the regularization weight parameter _through_ cross validation.
 
+**Check:**
+
 <a name="demo-reg"></a>
 ## Demo: Understanding Regularization Effects (15 mins)
 
--- Knowledge Check: We are working with the bikeshare data to predict riders over hours/days with a few features. Why does it make sense to use a ridge regression over a lasso regression?
+**Check:** We are working with the bikeshare data to predict riders over hours/days with a few features. Why does it make sense to use a ridge regression over a lasso regression?
 
 Let's test a variety of alpha weights for Ridge Regression on the bikeshare data.
 
@@ -325,6 +325,8 @@ Use similar code from above, but now:
 2. Addto the param_grid dictionary fit_intercept = True and False.
 3. Re-investigate the best score, best estimator, and grid scores attributes as a result of the grid search.
 
+
+
 <a name="introduction-gds"></a>
 ## Minimizing Loss Through Gradient Descent (15 mins)
 
@@ -336,6 +338,7 @@ One last approach to minimizing error is Gradient Descent. The concept behind Gr
 4. Repeat these steps until the performance is optimized and no "next steps" perform better. The size of the steps will shrink over time.
 
 Gradient Descent is very similar to traversal or dynamic programming, programming concepts that by design work through iteration. For example, if you had a bunch of user data about Facebook checkins and wanted to solve for the longest path (number of days) of straight checkins, that would be solved through dynamic programming.
+
 
 #### Stepping away from the data and getting the concept right
 
@@ -362,13 +365,13 @@ while not optimized:
         print start, 'is closest to', num_to_approach
 
 ```
-
+**Check:**
 1. What is the code doing?
 2. What could go wrong?
 
 One particular challenge with gradient descent is that it could potentially solve for a _local_ minimum of error, instead of a _global_ minimum.
 
-##### an anecdote
+##### An Anecdote
 
 You can think of this like trying to get directions to grandmother's house (over the river and through the woods). Gradient Descent might accidentally say "I got close to her house, but can't get over the river, so this is the best I can do," thus minimizing for a _local_ minimum distance; however the _global_ minimum would have been to step away from the river first and find the bridge, then go over the river and actually get much closer to the house.
 
@@ -397,7 +400,7 @@ print lm.score(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-Untuned, how well did gradient descent perform compared to OLS?
+**Check:** Untuned, how well did gradient descent perform compared to OLS?
 
 <a name="ind-practice"></a>
 ## On your Own (30 mins)
@@ -449,3 +452,14 @@ print gs.grid_scores_
 5. What is error due to bias? What is error due to variance? Which is better for a model to have, if it had to have one?
 6. How does gradient descent try a different approach to minimizing error?
 
+***
+
+### BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **UPCOMING PROJECTS**  |[Final Project, Deliverable 1](../../projects/final-projects/01-lightning-talk/readme.md)  |
+
+### ADDITIONAL RESOURCES
+- Add your own resources.
+- Go crazy.
+- So much room for bullets!
