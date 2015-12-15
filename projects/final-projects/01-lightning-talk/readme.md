@@ -78,8 +78,5 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie.
 - Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes".
 
-#### Example Deliverable
-Take a look at the [sample deck](#) provided.  There are three slides corresponding to three potential project ideas, and all include a problem, hypothesis, and potential data sets.
-
 #### Useful Resources
 - For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
