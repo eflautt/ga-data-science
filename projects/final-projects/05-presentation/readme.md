@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 5: Final Presentation
 
-### PROMPT
-**Context & Takeaway:**
+## PROMPT
 
 This is it! This presentation is your way of showing what you've learned to a non-technical audience. Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why it's important to practice communicating clearly and effectively so that anyone can understand.
 
@@ -13,8 +12,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
 
 ---
 
-### DELIVERABLES
-**Project Requirements & Constraints**
+## DELIVERABLES
 
 #### Final Presentation
 **Requirements:**
@@ -28,7 +26,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
     * An appendix that includes all of your work and technical terminology
   * Review next steps with your audience; what could you do beyond the scope of this course?
 
-**Breakdown:**
+**Detailed Breakdown:**
 A 10 to 20 slide deck consisting of:
  * *1 Outline Slide*
    - What is your project about?
@@ -56,16 +54,16 @@ A 10 to 20 slide deck consisting of:
    - What would be the next two or three things you want to try? What impact might they have?
    - What might your conclusions enable others to do?
 
-**Submission:**	
-  - Final format and submission location are TBD by instructor.
-
-
 **Bonus:**
   * An Acknowledgements Slide is always a good idea :)
   * You might also include a Citations Slide, if necessary
 
-### TIMELINE
-**Deadlines & Due Dates**
+**Submission:**	
+  - Final format and submission location are TBD by instructor.
+
+---
+
+## TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -77,15 +75,18 @@ A 10 to 20 slide deck consisting of:
 
 ---
 
-### EVALUATION
-**Guidelines & Rubric** 
-Your project will be evaluated by your instructors in the following areas:
+## EVALUATION
+
+Your project will assessed using the following course standards:
 
 1. Refine
 2. Build
 3. Present
+4. Professional Development
 
-**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your requirements using the scale below:
+#### Rubric: [Click here for the complete rubric](#). 
+
+Based on the requirements, you can earn a maximum of  **12**  points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -94,29 +95,29 @@ Your project will be evaluated by your instructors in the following areas:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
-### RESOURCES
-**Examples & Suggestions**
 
-#### Project Tips
+## RESOURCES
+
+#### Starter Code 
+- Refer to the [presentation template](../02-experiment-writeup/project-design-template.md) as a blueprint for how to organize your work.
+
+#### Suggestions for Getting Started
+- A quick outline (e.g. "what do I need" and "where can I find it") can help you prepare.
+- Practice your presentation with a friend or family member! Outside feedback can help you identify gaps in your material.
+
+#### Specific Tips
 - Limit the amount of visuals and text on your slides for maximum clarity.
     - For instance, try not to use more than 2 visuals or 3-5 bullets per slide.
 - Clean & informative presentations > Fancy Presentations!
 - Keep your charts simple, and make sure they are clearly labeled.
 
-#### Starter Code 
-- Refer to the [presentation template](../02-experiment-writeup/project-design-template.md) as a blueprint for how to organize your work.
-
-#### Suggested Ways to Get Started
-- A quick outline (e.g. "what do I need" and "where can I find it") can help you prepare.
-- Practice your presentation with a friend or family member! Outside feedback can help you identify gaps in your material.
-
-#### Links to Past Projects
+#### Past Projects
 - You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=)
 
-### Useful Resources
+### Additional Links
 - Presentations from [PyData](http://www.slideshare.net/PyData/presentations)
 - Presentations from [DataGotham](https://www.youtube.com/user/DataGotham), a shortly-ran data conference in NYC.
 - [Seaborn](https://stanford.edu/~mwaskom/software/seaborn/tutorial/aesthetics.html#scaling-plot-elements-with-plotting-context-and-set-context) has a handy easy way to set figures into a "talk" context, which blows up the text and makes it easier to read.
