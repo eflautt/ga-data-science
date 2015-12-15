@@ -74,6 +74,7 @@ Based on the requirements, you can earn a maximum of _____ points on this projec
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
+
 While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
 ---
 
