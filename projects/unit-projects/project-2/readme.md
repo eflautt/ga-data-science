@@ -43,18 +43,16 @@ Following these steps will help you better understand your dataset.
 ---
 
 ## EVALUATION
-**Guidelines & Rubric** 
 
 Your project will assessed using the following course standards:
 
 1. Parse
 2. Mine
 3. Refine
-4. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
+Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
