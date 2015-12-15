@@ -56,7 +56,9 @@ Your project will assessed using the following course standards:
 3. Mine
 4. Professional Development
 
-**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your standards using the scale below:
+#### Rubric: [Click here for the complete rubric](#). 
+
+Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
