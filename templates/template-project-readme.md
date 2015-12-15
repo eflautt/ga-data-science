@@ -63,16 +63,16 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ## EVALUATION
 
-Your project will assessed using the following standards:
+Your project will assessed using the following course standards:
 
 1. Standard 1
 2. Standard 2
 3. Standard 3
 4. Professional Development
 
-#### Rubric: [Link to rubric](#). 
+#### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **#** points on this project. Your instructors will score each of your standards using the scale below:
+Based on the requirements, you can earn a maximum of  **#**  points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
