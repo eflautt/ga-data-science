@@ -371,14 +371,16 @@ while not optimized:
 
 One particular challenge with gradient descent is that it could potentially solve for a _local_ minimum of error, instead of a _global_ minimum.
 
-##### An Anecdote
-There's an American nursury rhyme that says: "over the river and through the woods, to grandmother's house we go"
+##### Global vs Local Minimum
+You can think of the difference between _local_ minimum and _global_ minimum in terms of directions. Let's say you're trying to get to your relative's house and you have a choice between shortest distance and fastest route.
 
-You can think of Gradient Descent as an attempt to get directions to grandmother's house. The function might accidentally say "I got close to her house, but can't get over the river, so this is the best I can do," thus minimizing for a _local_ minimum distance. However the _global_ minimum would have been to step away from the river first and find the bridge, then go over the river and actually get much closer to the house.
+A _local_ minimum distance would look at a very small part of the map and try to optimize for that section. This would be equivalent to telling you the "shortest distance," since it only looks at a small sliver of information: your location and your destination.
+
+However, solving for _global_ minimum would be equivalent to choosing the "fastest route". A _global_ minimum distance would zoom out and look at the sum of all the different data sections. This would take into account information that might be left out of a single _local_ minimum sample, like for instance: construction or heavy traffic. In this case, the "fastest route" would give you a more complete set of directions based on a broader sample of the available data.
 
 ![optimum examples](http://i.stack.imgur.com/XaKx6.png)
 
-In this chart, our local optimum distance means missing the bridge; the global optimum required a little more distance first (unexpected error) before it becomes a much better solution.
+In this chart, our local optimum distance gets you close to your desired location but stuck in heavy traffic; meanwhile, the global optimum returns a longer route but is a much better solution for actually getting to where you want to go.
 
 ***
 
