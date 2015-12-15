@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research Design Write-Up
 
 ### PROMPT
-**Context & Takeaway:**
 
 "A problem well-stated is half-solved" -- Charles Kettering
 
@@ -11,10 +10,9 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 ---
 ### DELIVERABLES
-**Project Requirements & Constraints**
 
-#### Deliverable: Completed iPython Notebook
-- **Breakdown:**
+#### Completed iPython Notebook
+- **Requirements:**
     - Identify features of the dataset including the outcome, and covariates/predictors
     - Create a data dictionary with classification of available variables
     - Evaluate what makes a high quality problem statement
@@ -22,15 +20,14 @@ Welcome to Data Science! In this first project you will create a framework to sc
     - State the risks and assumptions of your data
     - Outline exploratory analysis methods
 
-- **Submission:**
-    - TBD by Instructor 
-
 - **Bonus:**
     - Practice writing an alternative problem statement for your dataset
     - Brownie points for articulating the assumptions and risks of the alternative model
 
+- **Submission:**
+    - TBD by Instructor 
+
 ### TIMELINE
-**Deadlines & Due Dates**
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -38,17 +35,17 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 ---
 ### EVALUATION
-**Guidelines & Rubric** 
 
-Your project will be evaluated by your instructors in the following areas:
+Your project will assessed using the following standards:
 
 1. Identify
 2. Parse
 3. Refine
+4. Professional Development
 
-#### Rubric:
+#### Rubric: [A detailed rubric can be found here](#)
 
-Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -57,11 +54,11 @@ Based on the requirements, you can earn a maximum of 9 points on this project. Y
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals,  __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
+
 ### RESOURCES
-**Examples & Suggestions**
 
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It contains four variables- admit, gre, gpa, rank.
@@ -79,16 +76,16 @@ For this project we will be using an iPython notebook. Notebooks are a handy way
 * Open the [starter code instructions](./starter-code/project1-starter.ipynb) in iPython notebook.
 
 #### Sample Deliverables 
-Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply click on a section to see the markdown.
+Check out the example notebook in our starter code, which includes a data dictionary and responses to questions. Wonder how to format your notebook the same way? Simply double-click on any section to view the markdown.
 
 ![Example Notebook](./assets/images/Example_ipynb.jpg)
 
-#### Suggested Ways to Get Started
-- Get used to the iPython Notebook. Play around with keyboard shortcuts.
+#### Suggestions for Getting Started 
+- Get used to the iPython Notebook layout. Play around with keyboard shortcuts.
 - Try out basic markdown for commonly used formats; look up commands for headers, bold, italic, tables.
 - **Read the docs for iPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
 
-### Useful Resources
+### Additional Links
 - [iPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
 - [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [iPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
