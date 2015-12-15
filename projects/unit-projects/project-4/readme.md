@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #4: Executive Summary
 
-### PROMPT
-**Context & Takeaway:**
+## PROMPT
 
 In this project, you will summarize and present your analysis from Projects 1-3. Your goal is to complete your ongoing iPython Notebook, combining prior deliverables from projects 1-3 with an appendix and executive summary. This will be a final overview of your analysis that incorporates past feedback and demonstrates your approach.
 
@@ -9,11 +8,10 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 
 ---
 
-### DELIVERABLES
-**Project Requirements & Constraints**
+## DELIVERABLES
 
 #### iPython Notebook with Executive Summary
-- **Breakdown:**
+- **Requirements:**
     -  “Specific aim”
     -  Outlined methods and models 
     -  Articulation of datasets 
@@ -22,15 +20,16 @@ In this project, you will summarize and present your analysis from Projects 1-3.
     -  A exploratory data analysis overview with visualizations and statistical analysis 
     -  A writeup on the interpretation of findings including an executive summary with conclusions and next steps 
 
-- **Submission:**	
-    - TBD by instructor. 
-
 - **Bonus:** 
     - Always consider your audience - what do they already know vs. what should you define or explain?
     - Visualize your findings! Use charts, graphs, or other images as appropriate.
 
-### TIMELINE
-**Deadlines & Due Dates**
+- **Submission:**	
+    - TBD by instructor. 
+
+---
+
+## TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -38,18 +37,18 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 
 ---
 
-### EVALUATION
-**Guidelines & Rubric** 
+## EVALUATION
 
 Your project will be evaluated by your instructors in the following areas:
 
 1. Refine
 2. Build
 3. Present
+4. Professional Development
 
-#### Rubric: [Link to rubric](#). 
+#### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -58,12 +57,11 @@ Based on the requirements, you can earn a maximum of 9 points on this project. Y
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
 
 ### RESOURCES
-**Examples & Suggestions**
 
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank.
@@ -78,7 +76,7 @@ Dataset: [Admissions.csv](./assets/admissions.csv)
 #### Starter code
 Open the [iPython Notebook](./starter-code/project4-starter.ipynb) and follow the questions provided.
 
-#### Suggested Ways to Get Started
+#### Suggestions for Getting Started
 - Review your previous work and any prior intructor feedback.
 - Look up sample executive summaries online.
 
