@@ -1,10 +1,12 @@
 > #### *Guiding Questions When Using This Template*
 >
+> - [ ] Is this for an assignment or project?
 > - [ ] Are the requirements actionable?
 > - [ ] What will students have to do to prepare for this project?
 > - [ ] Are components intended to be worked on individually? In pairs?
 > - [ ] Should students practice pre-work tasks before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
+
 > Delete this section ^
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) PROJECT #: TITLE
@@ -34,7 +36,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
   - [ ] Element 1
   - [ ] Element 2
 
-> Optional: Include if further details are required. Example: Screenshots of desired outputs would go in this section.
+> Optional: Include if further details are required. Screenshots of desired outputs would go in this section.
 
 - **Bonus:**
   - Suggestions for design / style points
