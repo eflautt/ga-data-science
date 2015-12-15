@@ -44,11 +44,10 @@ Your project will be evaluated by your instructors in the following areas:
 1. Refine
 2. Build
 3. Present
-4. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
+Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
