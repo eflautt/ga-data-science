@@ -286,7 +286,7 @@ The same models, decision trees and random forests, can be used for both classif
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **UPCOMING PROJECTS**  | Final Project, Deliverable 2  |
+| **UPCOMING PROJECTS**  | [Final Project, Deliverable 2](../../projects/final-projects/02-experiment-writeup/readme.md)  |
 
 ### ADDITIONAL RESOURCES
 - Add your own resources.
