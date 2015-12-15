@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 2: Project Design Writeup
 
 ### PROMPT
-**Context & Takeaway:**
 
 Project outlines are a valuable resource to working through data projects. They help keep your project organized. Even if/as challenges come up with your project that may derail you away from your plan, as least you'll go in with a thoughtful approach. A well constructed outline can make your project seem effortless, while a poorly written outline may  of your time.
 
@@ -12,10 +11,9 @@ For this project, you will need to complete a problem statement and research des
 ---
 
 ### DELIVERABLES
-**Project Requirements & Constraints**
 
 #### Project Design Writeup
-- **Breakdown:**
+- **Requirements:**
     - Well-articulated problem statement with "specific aim" and hypothesis, based on your lightning talk
     - An outline of any potential methods and models
     - Detailed explanation of extant data available (ie: build a data dictionary or link to pre-built data dictionaries)
@@ -23,16 +21,16 @@ For this project, you will need to complete a problem statement and research des
     - Demonstrate domain knowledge, including specific features or relevant benchmarks from similar projects 
     - Define your goals and criteria, in order to explain what success looks like
 
-- **Submission:**	 
-  - TBD by instructor. 
-
 - **Bonus:**
     - Consider alternative hypotheses: if your project is a regression problem, is it possible to rewrite it as a classification problem?
     - "Convert" your goal metric from a statistical one (like Mean Squared Error) and tie it to something non-data people can understand, like a cost/benefit analysis, etc.
 
+- **Submission:**	 
+  - TBD by instructor. 
 
-### TIMELINE
-**Deadlines & Due Dates**
+---
+
+## TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -44,15 +42,17 @@ For this project, you will need to complete a problem statement and research des
 
 ---
 
-### EVALUATION
-**Guidelines & Rubric** 
-Your project will be evaluated by your instructors in the following areas:
+## EVALUATION
+
+Your project will assessed using the following course standards:
 
 1. Identify
 2. Acquire
 3. Parse
+4. Professional Development
 
-**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
+#### Rubric: [Click here for the complete rubric](#).
+Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -61,18 +61,14 @@ Your project will be evaluated by your instructors in the following areas:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
-### RESOURCES
-**Examples & Suggestions**
+
+## RESOURCES
 
 #### Starter Code
 - Please use the [template](./project-design-template.md) provided.
-
-#### Specific Tips
-- Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
-- Show a clear connection between the datasets and the problem presented. The project should avoid working with independent variables (or features) that would not ordinarily be available in order to predict your target.
 
 #### Suggestions for Getting Started
 - The more time you spend researching, the less time you'll likely spend writing; this is a positive sign!
@@ -80,3 +76,6 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - If you've seen similar work online, see if you can find the code that implemented the data munging. It might come in handy!
 - If your project requires using an API, make sure you can get access to it. Not everyone gives away API keys immediately, and you don't want to be caught with no data with one week left to work!
 
+#### Specific Tips
+- Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
+- Show a clear connection between the datasets and the problem presented. The project should avoid working with independent variables (or features) that would not ordinarily be available in order to predict your target.
