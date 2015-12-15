@@ -414,7 +414,7 @@ Exploring, the Gradient Descent regressor object, you will build a grid search u
 1. With a set of alpha values between 10^-10 and 10^-1, how does the mean squared error change?
 2. We know when to properly use l1 vs l2 regularization based on the data. By using a grid search with l1_ratios between 0 and 1 (increasing every 0.05), does that statement hold true?
     * (if it didn't look like it, did gradient descent have enough iterations?)
-3. How do results change when you alter the learning rate (power_t)?
+3. How do results change when you alter the learning rate (eta0)?
 
 **Bonus** Can you see the advantages and disadvantages of using gradient descent after finishing this exercise?
 
