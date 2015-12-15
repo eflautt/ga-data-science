@@ -190,10 +190,12 @@ print metrics.mean_squared_error(y, lm.predict(modeldata))
 
 **Check:** While it's apparent that the cross validated approach here generated more error, which of the two approaches would predict on new data more accurately: the single model, or the cross validated, averaged one? Why?
 
+***
+
 <a name="guided-practice-cv"></a>
 ## Guided Practice: cross validation with linear regression (20 mins)
 
-**Check:** If we were to continue increasing the number of folds in cross validation, which with each increase would also increase the training set; do you expect error to increase or decrease?
+If we were to continue increasing the number of folds in cross validation, which with each increase would also increase the training set; do you expect error to increase or decrease?
 
 Apply the following code through a loop of numbers 2 to 50 and find answers to these questions: `range(2, 51, 2)`
 
@@ -208,12 +210,14 @@ Apply the following code through a loop of numbers 2 to 50 and find answers to t
         scores.append(metrics.mean_squared_error(y.iloc[test_index], lm.predict(modeldata.iloc[test_index])))
 ```
 
+***
+
 <a name="introduction-reg"></a>
 ## Regularization and Cross Validation (15 mins)
 
-#### What's Regularization? Why do we use it?
+#### What's Regularization? And why do we use it?
 
-_Regularization_ is an additive approach to protect models against _overfitting_, or being potentially biased and overconfident. In regressions, regularization becomes an additional weight to coefficients, which is either added (L1) or squared then added (L2). These are also known as Lasso and Ridge Regressions, which we toyed with as practice last class. As good practice, we should use Lasso (L1) when we have a higher number of features (k) than we have observations (n), and use Ridge (L2) in about all other cases.
+_Regularization_ is an additive approach to protect models against _overfitting_, or being potentially biased and overconfident. In regressions, regularization becomes an additional weight to coefficients, which is either added (L1) or squared then added (L2). These are also known as Lasso and Ridge Regressions, which we toyed with as practice during our last class. As good practice, we should use Lasso (L1) when we have a higher number of features (k) than we have observations (n), and use Ridge (L2) in about all other cases.
 
 #### Wait a sec, what's overfitting?
 
@@ -223,14 +227,13 @@ Above, we see three different linear models (yes, even the two "curved," polynom
 
 The first model, which is relatively flat, poorly explains roughly half the data. From our visual, it is clear that this is not a representative model.
 
-The second model, a single polynomial curve, well explains the general curve of our data. While there is error, it is spread throughout the entire dataset, and if plotted, the residuals would likely be normally distributed.
+The second model, a single polynomial curve, helps explain the general curve of our data. While there is error, it is spread throughout the entire dataset, and if plotted, the residuals would likely be normally distributed.
 
 The last mode, (which is roughly a polynomial model up to the 13th power), is _overfit_ to the data. It matches each value perfectly. However, when attempting to predict new data it has not seen, we would expect this model to fail.
 
-Regularization, which introduces the weights to these coefficients, would help prevent this last model from being a perfect fit, and would generate a model that seemed more applicable to a wider set of data.
+Regularization, which introduces the weights to these coefficients, would help prevent this last model from being a perfect fit, and would generate a model that would be applicable to a wider set of data.
 
 #### Where Regularization Makes Sense
-
 Consider this: what happens to MSE if we just directly use a Lasso or Ridge Regression?
 
 ```python
@@ -252,7 +255,9 @@ In this example; L1 (lasso) massively increases our error (likely from not fitti
 
 Regularization, like any important optimization function, will be more important during _cross validation_. In particular, we will optimize the regularization weight parameter _through_ cross validation.
 
-**Check:**
+**Check:** Why is regularization important? What does it protect against and how?
+
+***
 
 <a name="demo-reg"></a>
 ## Demo: Understanding Regularization Effects (15 mins)
@@ -280,7 +285,7 @@ for a in alphas:
 
 We can tell sklearn to try all of these alphas in less code using a _grid search_. Grid search sounds exactly like what it means: telling the computer to exhaustively search through all options to find the best solution.
 
-A grid search will end up trying as many combos as you specicy in the `param_grid` argument. For example:
+A grid search will end up trying as many combos as you specify in the `param_grid` argument. For example:
 
 ```python
 {
@@ -316,8 +321,10 @@ print gs.best_estimator_ # explains which grid_search setup worked best
 print gs.grid_scores_ # shows all the grid pairings and their performances.
 ```
 
+***
+
 <a name="guided-practice-reg"></a>
-## Guided Practice: grid search cv, solving for alpha (25 mins)
+## Guided Practice: Grid Search CV, Solving for Alpha (25 mins)
 
 Use similar code from above, but now:
 
@@ -325,7 +332,7 @@ Use similar code from above, but now:
 2. Addto the param_grid dictionary fit_intercept = True and False.
 3. Re-investigate the best score, best estimator, and grid scores attributes as a result of the grid search.
 
-
+***
 
 <a name="introduction-gds"></a>
 ## Minimizing Loss Through Gradient Descent (15 mins)
@@ -337,7 +344,7 @@ One last approach to minimizing error is Gradient Descent. The concept behind Gr
 3. If the solver finds a better solution (optimizing toward a metric such as mean squared error), this is the new starting point.
 4. Repeat these steps until the performance is optimized and no "next steps" perform better. The size of the steps will shrink over time.
 
-Gradient Descent is very similar to traversal or dynamic programming, programming concepts that by design work through iteration. For example, if you had a bunch of user data about Facebook checkins and wanted to solve for the longest path (number of days) of straight checkins, that would be solved through dynamic programming.
+Gradient Descent is very similar to traversal or dynamic programming, programming concepts that by design work through iteration. For example, if you had a bunch of user data about Facebook checkins and wanted to solve for the longest path (total number of days) of continual checkins, that would be solved through dynamic programming.
 
 
 #### Stepping away from the data and getting the concept right
@@ -378,7 +385,7 @@ A _local_ minimum distance would look at a very small part of the map and try to
 
 However, solving for _global_ minimum would be equivalent to choosing the "fastest route". A _global_ minimum distance would zoom out and look at the sum of all the different data sections. This would take into account information that might be left out of a single _local_ minimum sample, like for instance: construction or heavy traffic. In this case, the "fastest route" would give you a more complete set of directions based on a broader sample of the available data.
 
-![optimum examples](http://i.stack.imgur.com/XaKx6.png)
+![Optimum Examples](http://i.stack.imgur.com/XaKx6.png)
 
 In this chart, our local optimum distance gets you close to your desired location but stuck in heavy traffic; meanwhile, the global optimum returns a longer route but is a much better solution for actually getting to where you want to go.
 
