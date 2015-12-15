@@ -14,10 +14,9 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 #### Completed iPython Notebook
 - **Requirements:**
-    - Identify features of the dataset including the outcome, and covariates/predictors
+    - Identify features of the dataset, including the outcome and covariates/predictors
     - Create a data dictionary with classification of available variables
-    - Evaluate what makes a high quality problem statement
-    - Write a problem statement
+    - Write a high quality problem statement
     - State the risks and assumptions of your data
     - Outline exploratory analysis methods
 
