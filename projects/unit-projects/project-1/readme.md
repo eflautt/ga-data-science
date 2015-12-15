@@ -45,11 +45,10 @@ Your project will assessed using the following standards:
 1. Identify
 2. Parse
 3. Refine
-4. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
