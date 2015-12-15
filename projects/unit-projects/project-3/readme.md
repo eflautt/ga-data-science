@@ -40,11 +40,10 @@ Your project will assessed using the following course standards:
 1. Mine
 2. Refine
 3. Build
-4. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
