@@ -7,10 +7,9 @@
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 > Delete this section ^
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) PROJECT #: TITLE
 
-### PROMPT
-**Context & Takeaway:**
+## PROMPT
 > Explain the circumstances/ context / scenario requiring students to do/build a real world application. Tell a story!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
@@ -23,26 +22,31 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ---
 
-### DELIVERABLES
-**Project Requirements & Constraints**
+## DELIVERABLES
 
-#### Deliverable Title
-- **Breakdown:** Breakdown of deliverable requirements:
+#### Title
+- **Requirements/Contraints:**
   - Your project is to make a thing that does something
   - Your project should also do something else
   - Your project must meet these expectations
 
-- **Submission:**	 State how the deliverable should be submitted.
+- **Detail Breakdown:**
+  - [ ] Element 1
+  - [ ] Element 2
 
-- **Bonus:** Additional features for advanced students
+> Optional: Include if further details are required. Example: Screenshots of desired outputs would go in this section.
+
+- **Bonus:**
   - Suggestions for design / style points
 
+- **Submission:**	
+  - TBD by instructor.
 
 > Iterate as needed with additional deliverables.
 
 
-### TIMELINE
-**Deadlines & Due Dates**
+## TIMELINE
+> Optional: include for multi-part projects
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -54,18 +58,18 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ---
 
-### EVALUATION
-**Guidelines & Rubric** 
+## EVALUATION
 
-Your project will be evaluated by your instructors in the following areas:
+Your project will assessed using the following standards:
 
-1. Guiding Principle / Technical Requirement 1
-2. Guiding Principle/ Technical Requirement 2
-3. Guiding Principle/ Technical Requirement 3
+1. Standard 1
+2. Standard 2
+3. Standard 3
+4. Professional Development
 
 #### Rubric: [Link to rubric](#). 
 
-Based on the requirements, you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of _____ points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -74,12 +78,11 @@ Based on the requirements, you can earn a maximum of _____ points on this projec
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
+While your total score may serve as a helpful gauge of whether you met project goals,  __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
 ---
 
-### RESOURCES
-**Examples & Suggestions**
+## RESOURCES
 
 > Note: All components in this section are optional; only include elements that are relevant to your project.
 
@@ -87,24 +90,19 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 - Describe other relevant project materials *(if applicable)*
 - Explain any material in the starter code folder *(if applicable)*
 
-#### Sample Deliverables
-Example 1: Here's a screenshot of what we expect you to make or do.
-![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
-
-> Include additional screenshots as needed.
-
-#### Links to Past Projects
-- Prior [example student project 1](#)
-- Prior [example student project 2](#)
-
 #### Suggestions for Getting Started 
 - Do this to help brainstorm
 - Read the docs for this tool
 - Practice using this technique
 
-#### Useful Resources
+
+
+#### Past Projects
+- Prior [example student project 1](#)
+- Prior [example student project 2](#)
+
+#### Additional Links
 - Link to [something useful](#)
 - Extra relevant [resource for students](#)
 
 ---
-
