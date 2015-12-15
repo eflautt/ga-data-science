@@ -79,7 +79,7 @@ Week # | Lesson #
 
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+**Check:** Ask students to define, explain, or recall any **general** prior concepts or tools.
 
 ***
 
