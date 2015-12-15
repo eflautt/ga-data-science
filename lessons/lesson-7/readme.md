@@ -372,26 +372,29 @@ while not optimized:
 One particular challenge with gradient descent is that it could potentially solve for a _local_ minimum of error, instead of a _global_ minimum.
 
 ##### An Anecdote
+There's an American nursury rhyme that says: "over the river and through the woods, to grandmother's house we go"
 
-You can think of this like trying to get directions to grandmother's house (over the river and through the woods). Gradient Descent might accidentally say "I got close to her house, but can't get over the river, so this is the best I can do," thus minimizing for a _local_ minimum distance; however the _global_ minimum would have been to step away from the river first and find the bridge, then go over the river and actually get much closer to the house.
+You can think of Gradient Descent as an attempt to get directions to grandmother's house. The function might accidentally say "I got close to her house, but can't get over the river, so this is the best I can do," thus minimizing for a _local_ minimum distance. However the _global_ minimum would have been to step away from the river first and find the bridge, then go over the river and actually get much closer to the house.
 
 ![optimum examples](http://i.stack.imgur.com/XaKx6.png)
 
-In this chart, our local optimum distance is us missing the bridge; the global optimum required a little more distance first (unexpected error) before it being a much better solution.
+In this chart, our local optimum distance means missing the bridge; the global optimum required a little more distance first (unexpected error) before it becomes a much better solution.
+
+***
 
 <a name="demo-gds"></a>
 ## Demo: Application of Gradient Descent (15 mins)
 
 Gradient Descent works best when:
 
-1. We are working with a large data set. Because smaller sets are more prone to error, and proneness to error could be steps in the wrong direction.
-2. data is severely cleaned up and normalized (such as the bikeshare data set).
+1. We are working with a large data set. Smaller sets are more prone to error, and proneness to error could be steps in the wrong direction.
+2. Data is severely cleaned up and normalized (such as the bikeshare data set).
 
 Gradient descent's advantages are huge: with a very large data set, OLS will take significantly longer to solve (computationally). We may not notice it as much on the smaller data sets in class, but in a live system with millions of data points, gradient descent is vastly superior. You'll particularly see this with the regressors `partial_fit()` function.
 
 Like Ridge and Lasso regression, we can penalize (add in weights) to the gradient descent solver.
 
-To follow along with either our "grandmother's house" example, or the python example code above, try turning the estimator's argument `verbose` to 1. It will print its optimizations up to the number of iterations you allow it to run (default is 5).
+To follow along with either our "grandmother's house" example or the python example code above, try turning the estimator's argument `verbose` to 1. It will print its optimizations up to the number of iterations you allow it to run (default is 5).
 
 ```python
 lm = linear_model.SGDRegressor()
@@ -402,27 +405,29 @@ print metrics.mean_squared_error(y, lm.predict(modeldata))
 
 **Check:** Untuned, how well did gradient descent perform compared to OLS?
 
+***
+
 <a name="ind-practice"></a>
 ## On your Own (30 mins)
 
-There is a plethora of choices to approaching a regression problem. The regularization techniques appended to ordinary least squares optimizes the size of coefficients to best account for error. Gradient Descent also introduces learning rate (how aggressively do we solve the problem), epsilon (at what point do we say the error introduced is okay), and iterations (when should we stop no matter what?)
+There are tons of ways to approach a regression problem. The regularization techniques appended to ordinary least squares optimizes the size of coefficients to best account for error. Gradient Descent also introduces learning rate (how aggressively do we solve the problem), epsilon (at what point do we say the error margin is acceptable), and iterations (when should we stop no matter what?)
 
-Our objects are:
+For this deliverable, our goals are to:
 
-- implement the gradient descent approach to our bikeshare modeling problem
-- showcase how gradient descent solves and optimizes the solution.
-- showcase this using the grid_search module!
+- implement the gradient descent approach to our bikeshare modeling problem,
+- show how gradient descent solves and optimizes the solution,
+- demonstrate the grid_search module!
 
-Exploring, the Gradient Descent regressor object, you will build a grid search using the stochastic gradient descent estimator for the bikeshare data set. Continue with either the model you evaluated last class or the simpler one from today. In particular, you will implement the param_grid in the grid search to get answers for the following questions:
+While exploring the Gradient Descent regressor object, you'll build a grid search using the stochastic gradient descent estimator for the bikeshare data set. Continue with either the model you evaluated last class or the simpler one from today. In particular, be sure to implement the "param_grid" in the grid search to get answers for the following questions:
 
 1. With a set of alpha values between 10^-10 and 10^-1, how does the mean squared error change?
-2. We know when to properly use l1 vs l2 regularization based on the data. By using a grid search with l1_ratios between 0 and 1 (increasing every 0.05), does that statement hold true?
-    * (if it didn't look like it, did gradient descent have enough iterations?)
-3. How do results change when you alter the learning rate (eta0)?
+2. Based on the data, we know when to properly use l1 vs l2 regularization. By using a grid search with l1_ratios between 0 and 1 (increasing every 0.05), does that statement hold true? If not, did gradient descent have enough iterations?
+3. How do these results change when you alter the learning rate (eta0)?
 
 **Bonus** Can you see the advantages and disadvantages of using gradient descent after finishing this exercise?
 
-You can use the following starter code to get you going:
+#### Materials:
+You can use the following starter code to get started:
 
 ```python
 params = {} # put your gradient descent parameters here
@@ -442,9 +447,14 @@ print 'ALL ESTIMATORS'
 print gs.grid_scores_
 ```
 
+**Check:** Were you able to answer all three questions? What questions do you have?
+
+***
+
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 
+#### Lesson Review:
 1. What's the (typical) range of r-squared?
 2. What's the range of mean squared error?
 3. How would changing the scale or interpretation of y (your target variable) effect mean squared error?
