@@ -7,7 +7,8 @@ creator:
     dataset: citibike ridership and weather data
 ---
 
-# Evaluating Model Fit
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Evaluating Model Fit
+Week # | Lesson #
 
 ### LEARNING OBJECTIVES
 *After this lesson, students will be able to:*
