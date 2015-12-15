@@ -32,7 +32,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
   - Your project should also do something else
   - Your project must meet these expectations
 
-- **Detail Breakdown:**
+- **Detailed Breakdown:**
   - [ ] Element 1
   - [ ] Element 2
 
