@@ -72,7 +72,7 @@ Your project will assessed using the following standards:
 
 #### Rubric: [Link to rubric](#). 
 
-Based on the requirements, you can earn a maximum of _____ points on this project. Your instructors will score each of your standards using the scale below:
+Based on the requirements, you can earn a maximum of **#** points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
