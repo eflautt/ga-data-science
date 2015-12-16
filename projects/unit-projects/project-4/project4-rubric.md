@@ -24,8 +24,8 @@ Acceptable performance for this standard is based on how well you've applied spe
 | Exploratory data analysis overview with visualizations and statistical analysis | | | | |
 | Writeup with interpretation of findings, an executive summary, conclusions, and next steps | | | | |
 
-Section Subscore:  / 18
-Notes:
+- Section Subscore:  / 18
+- Notes:
 
 
 ---
@@ -45,8 +45,8 @@ Notes:
 | Do you respond well to constructive feedback? Are you implementing suggested improvements? | | | | |
 | *Optional*: Are you resolving conflict in a professional and respectful manner? | | | | |
 
-Section Sub-Score:  / 15
-Notes:
+- Section Sub-Score:  / 15
+- Notes:
 
 ---
 
