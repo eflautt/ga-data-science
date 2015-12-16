@@ -44,7 +44,7 @@ Your project will be assessed using the following standards:
 1. Present Results
 2. Professional Development
 
-#### Rubric: [Click here for the complete rubric](#). 
+#### Rubric: [Click here for the complete rubric](./project4-rubric.md). 
 
 Requirements for these standards will be assessed using the scale below:
 
