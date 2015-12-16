@@ -37,7 +37,7 @@ In this project, you will perform a logistic regression on the admissions data w
 
 Your project will be assessed using the following standards:
 
-1. Build a Data Model
+1. Refine the Data
 
 #### Rubric: [Click here for the complete rubric](#). 
 
