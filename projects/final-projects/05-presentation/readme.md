@@ -67,11 +67,11 @@ A 10 to 20 slide deck consisting of:
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 4: Lesson 8 | Lightning Presentation  | Present 3 Problem Statements   |
-| Week 7: Lesson 14 | Experiment Writeup  |  Research Design Problem Statement & Outline   |
-| Week 8: Lesson 16 | Exploratory Analysis  | Dataset Approval and Exploratory Analysis   |
-| Week 9: Lesson 18 | Notebook Draft  |  iPython Notebook & Model Draft  |
-| Week 10: Lesson 20 | Presentation  | Present Your Final Report   |
+| Week 4: Lesson 8 |  Part 1 - Lightning Presentation  | Present 3 Problem Statements   |
+| Week 7: Lesson 14 | Part 2 - Experiment Writeup  |  Research Design Problem Statement & Outline   |
+| Week 8: Lesson 16 | Part 3 - Exploratory Analysis  | Dataset Approval and Exploratory Analysis   |
+| Week 9: Lesson 18 | Part 4 - Notebook Draft  |  iPython Notebook & Model Draft  |
+| Week 10: Lesson 20 | Part 5 - Presentation  | Present Your Final Report   |
 
 ---
 
