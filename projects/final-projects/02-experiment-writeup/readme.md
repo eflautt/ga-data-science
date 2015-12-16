@@ -46,12 +46,9 @@ For this project, you will need to complete a problem statement and research des
 
 Your project will be assessed using the following standards:
 
-1. Identify
-2. Acquire
-3. Parse
-4. Professional Development
+1. Identify the Problem
 
-#### Rubric: [Click here for the complete rubric](#).
+#### Rubric: [Click here for the complete rubric](./final project-2-rubric.md).
 
 Requirements for these standards will be assessed using the scale below:
 
