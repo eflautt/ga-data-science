@@ -1,3 +1,14 @@
+> #### *Guiding Questions When Using This Template*
+>
+> - [ ] Is this for an assignment or project?
+> - [ ] Are the requirements actionable?
+> - [ ] What will students have to do to prepare for this project?
+> - [ ] Are components intended to be worked on individually? In pairs?
+> - [ ] Should students practice pre-work tasks before beginning?
+> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
+
+> Delete this section ^
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) RUBRIC
 **Project # | Course**	 	 						
 
