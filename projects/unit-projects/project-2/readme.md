@@ -16,13 +16,12 @@ Following these steps will help you better understand your dataset.
 
 #### iPython Notebook Exploratory Analysis
 - **Requirements:**
-  - Read in your dataset
-  - Determine how many samples are present and ID any missing data
+  - Read in your dataset, determine how many samples are present, and ID any missing data
   - Create a table of descriptive statistics for each of the variables (n, mean, median, standard deviation)
   - Describe the distributions of your data
   - Plot box plots for each variable
   - Create a covariance matrix
-  - Determine any issues or limitations your analysis may have based on the results of the exploratory analysis
+  - Determine any issues or limitations, based on your exploratory analysis
 
 - **Bonus:**
     - Replace missing values using the median replacement method
