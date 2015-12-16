@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Research Design Write-Up
 
-## PROMPT
+### PROMPT
 
 "A problem well-stated is half-solved" -- Charles Kettering
 
@@ -10,7 +10,7 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### Completed iPython Notebook
 - **Requirements:**
@@ -29,7 +29,7 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -37,9 +37,9 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 ---
 
-## EVALUATION
+### EVALUATION
 
-Your project will assessed using the following standards:
+Your project will be assessed using the following standards:
 
 1. Identify the Problem
 
@@ -58,7 +58,7 @@ While your total score is a helpful gauge of whether you've met overall project 
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It contains four variables- admit, gre, gpa, rank.
