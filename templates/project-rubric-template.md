@@ -42,12 +42,10 @@ Application of these learning goals will be assessed using the requirements belo
 
 > SME Note: Requirements should be specific/technical deliverable criteria. I.e. "Create a data dictionary with variable classification"
 
-
 Notes:
 
 
---- 
-
+---
 
 > ID Note: The following section is only intended for mid-course and final projects.
 
@@ -65,8 +63,15 @@ Meets Expectations: Demonstrates ability to communicate and collaborate with oth
 | Do you organize your project materials in a structured, easily navigable manner? | | | | |
 | Do you respond well to constructive feedback? Are you implementing suggested improvements? | | | | |
 | *Optional*: Are you resolving conflict in a professional and respectful manner? | | | | |
-
 Notes:
+
+
+---
+
+## Score:
+Based on the requirements, you can earn a maximum of  **#**  points on this project. 
+
+#### Your total score is: **#**
 
 ---
 
