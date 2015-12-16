@@ -8,7 +8,7 @@ The output here will be a 10 minute presentation that guides your viewers throug
 
 After you present your work, you'll participate in a short Q/A session (roughly two minutes) with your peers--both fellow students and instructors--about your project.
 
-**Goal:** A slide deck that describes your analysis and findings to a non-technical audience.
+**Goal:** A 10-20 slide deck that describes your analysis and findings to a non-technical audience.
 
 ---
 
