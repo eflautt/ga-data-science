@@ -29,7 +29,8 @@ Application of these learning goals will be assessed using the requirements belo
 | Specific Requirement #2 | | | | |
 | Specific Requirement #3 | | | | |
 
-> ID Note: Requirements should be tied to or organized by learning goal. I.e. "Data Science Fundamentals: Create a data dictionary with variable classification"
+> ID Note: Requirements should be specific deliverable criteria. I.e. "Create a data dictionary with variable classification"
+
 
 Notes:
 
