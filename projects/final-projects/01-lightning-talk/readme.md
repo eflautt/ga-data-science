@@ -54,7 +54,7 @@ Your project will be assessed using the following standards:
 
 1. Identify
 
-#### Rubric: [Click here for the complete rubric](#).
+#### Rubric: [Click here for the complete rubric](./final project-1-rubric.md).
 
 Requirements for these standards will be assessed using the scale below:
 
