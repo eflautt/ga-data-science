@@ -1,15 +1,11 @@
 > #### *Guiding Questions When Using This Template*
 >
-> - [ ] Is this for an assignment or project?
-> - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this project?
-> - [ ] Are components intended to be worked on individually? In pairs?
-> - [ ] Should students practice pre-work tasks before beginning?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
+> - [ ] Have you defined 2-3 learning goals for this assignment?
+> - [ ] Did you list clear technical requirements?
 
 > #### *How to Use This Template*
 
-> Content: SME's are only responsible for areas marked: "SME Notes". Specifically, SME's should create 2-3 learning goals for the assignment and list the technical requirements within the rubric.
+> Content: You are only responsible for areas marked: "SME Notes". Specifically, you should create 2-3 learning goals for the assignment and list any technical requirements within the rubric below.
 
 > Delete this section ^
 
