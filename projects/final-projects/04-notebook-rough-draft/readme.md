@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 4: Modeling Performance
 
-## PROMPT
+### PROMPT
 
 Our goal for this project is to develop a working draft that could be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format. Your project should push the reader to ask for more insightful questions, and avoid issues like, "what does this line of code do?" 
 
@@ -14,11 +14,11 @@ Look at how your model performs compared to a dummy model, and articulate the be
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### iPython Report Draft
 
-- **Breakdown:**
+- **Requirements:**
   - An iPython Notebook with code, visualizations, and markdown
   - Brief summary that covers your exploratory data analysis. 
   - Source code that does not get in the way of your notebook deliverable. 
@@ -34,7 +34,7 @@ Look at how your model performs compared to a dummy model, and articulate the be
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -46,8 +46,8 @@ Look at how your model performs compared to a dummy model, and articulate the be
 
 ---
 
-## EVALUATION
-Your project will be evaluated by your instructors in the following areas:
+### EVALUATION
+Your project will be assessed using the following standards:
 
 1. Mine
 2. Refine
@@ -56,7 +56,7 @@ Your project will be evaluated by your instructors in the following areas:
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of  **12**  points on this project. Your instructors will score each of your standards using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -69,7 +69,7 @@ While your total score may serve as a helpful gauge of whether you've met projec
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Suggestions for Getting Started
 - Two common ways to start models:
