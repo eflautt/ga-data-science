@@ -49,10 +49,7 @@ Look at how your model performs compared to a dummy model, and articulate the be
 ### EVALUATION
 Your project will be assessed using the following standards:
 
-1. Mine
-2. Refine
-3. Build
-4. Professional Development
+1. Refine the Data
 
 #### Rubric: [Click here for the complete rubric](#). 
 
