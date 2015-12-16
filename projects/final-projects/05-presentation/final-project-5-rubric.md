@@ -18,7 +18,7 @@ Acceptable performance for this standard is based on how well you've applied spe
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
 | Include project TOC, background, problem, and hypothesis | | | | |
-| Describe datasets and exploration with summary and charts | | | | |
+| Describe datasets and analysis with summary and charts | | | | |
 | Demonstrate your model with visualizations| | | | |
 | Review the conclusions from your findings | | | | |
 | Create a list of recommendations and next steps based on your work | | | | |
