@@ -45,7 +45,7 @@ Your project will assessed using the following standards:
 2. Parse
 3. Refine
 
-#### Rubric: [Click here for the complete rubric](./project-1/project1-rubric.md). 
+#### Rubric: [Click here for the complete rubric](./project1-rubric.md). 
 
 Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your technical requirements using the scale below:
 
