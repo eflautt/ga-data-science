@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #3: Modeling Assignment
 
-## PROMPT
+### PROMPT
 
 In this project, you will perform a logistic regression on the admissions data we've been working with in projects 1 and 2. For more instructions, follow the questions included in the starter code.
 
@@ -8,7 +8,7 @@ In this project, you will perform a logistic regression on the admissions data w
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 - **Requirements:**
     - Create dummy variables
@@ -25,7 +25,7 @@ In this project, you will perform a logistic regression on the admissions data w
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -33,7 +33,7 @@ In this project, you will perform a logistic regression on the admissions data w
 
 ---
 
-## EVALUATION
+### EVALUATION
 
 Your project will be assessed using the following standards:
 
@@ -54,7 +54,7 @@ While your total score is a helpful gauge of whether you've met overall project 
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It contains four variables- admit, gre, gpa, rank.
