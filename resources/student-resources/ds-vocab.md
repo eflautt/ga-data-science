@@ -32,17 +32,32 @@
 - Classification
 - Confusion Matrix
 - Continuous variables
+- Cross Validation
+- Generalized Error
+- Global Minimum
+- Gradient Descent
+- K-Fold
 - KNN - K-Nearest Neighbor
+- Lasso Regression
 - Linear regression
+- Local Minimum
 - Logistic regression
 - Loss functions
 - Mean absolute error
 - Mean squared error
+- Model Fit
 - Odds / Odds Ratios
+- Ordinary Least Squares
+- Overfitting
+- R-Squared
 - Regularization
+- Residual
+- Ridge Regression
 - ROC - Receiver operating characteristic
 - Root mean squared error
+- Sampling
 - Sigmoid Function
+- Variance
 
 ##Unit 3
 - ARIMA model - Autoregressive integrated moving average
