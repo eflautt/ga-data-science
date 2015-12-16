@@ -43,7 +43,7 @@ Your project will assessed using the following course standards:
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your technical requirements using the scale below:
+Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -52,7 +52,7 @@ Based on the requirements, you can earn a maximum of **9** points on this projec
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score may serve as a helpful gauge of whether you've met project goals,  __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
+While your total score is a helpful gauge of whether you've met overall project goals, __specific scores are more important__ since they'll show you where to focus your efforts in the future!
 
 ---
 
