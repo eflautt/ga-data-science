@@ -41,13 +41,11 @@ Welcome to Data Science! In this first project you will create a framework to sc
 
 Your project will assessed using the following standards:
 
-1. Identify
-2. Parse
-3. Refine
+1. Identify the Problem
 
 #### Rubric: [Click here for the complete rubric](./project1-rubric.md). 
 
-Based on the requirements, you can earn a maximum of **9** points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of **3** points on this project. Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
