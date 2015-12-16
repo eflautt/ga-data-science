@@ -41,9 +41,8 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 
 Your project will be evaluated by your instructors in the following areas:
 
-1. Refine
-2. Build
-3. Present
+1. Present Results
+2. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
