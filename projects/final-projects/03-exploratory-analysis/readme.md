@@ -51,10 +51,7 @@ Your exploratory data analysis will effectively help you tell your data's story,
 ### EVALUATION
 Your project will be assessed using the following standards:
 
-1. Acquire
-2. Parse
-3. Mine
-4. Professional Development
+1. Parse the Data
 
 #### Rubric: [Click here for the complete rubric](#). 
 
