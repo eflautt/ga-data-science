@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #4: Executive Summary
 
-## PROMPT
+### PROMPT
 
 In this project, you will summarize and present your analysis from Projects 1-3. Your goal is to complete your ongoing iPython Notebook, combining prior deliverables from projects 1-3 with an appendix and executive summary. This will be a final overview of your analysis that incorporates past feedback and demonstrates your approach.
 
@@ -8,7 +8,7 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### iPython Notebook with Executive Summary
 - **Requirements:**
@@ -29,7 +29,7 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -37,16 +37,16 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 
 ---
 
-## EVALUATION
+### EVALUATION
 
-Your project will be evaluated by your instructors in the following areas:
+Your project will be assessed using the following standards:
 
 1. Present Results
 2. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Your instructors will score each of your standards using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
