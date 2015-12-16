@@ -2,19 +2,16 @@
 **Project 1 | Data Science** 	 						
 
 Your project will be assessed using the following course standards:
-- [ ] Identify
+- [ ] Identify The Problem
 
 This assessment is based on how well you've applied specific principles of the data science workflow within your deliverable. To review the full list of standards, see the course syllabus.
 
 ---
 
 ## IDENTIFY
-**Meets Expectations**: Acceptable performance for this standard includes the following learning goals: 
-- A. Demonstrates comprehension of project objectives.
-- B. Articulates the goals and criteria for success. 
-- C. Creates guiding questions to identify data and potential methods of analysis. 
+**Meets Expectations**: Acceptable performance for this standard is based on the following learning goals. Do you: Demonstrate comprehension of project objectives? Articulate the goals and criteria for success? Create guiding questions to identify data and potential methods of analysis?
 
-Your performance will be assessed based on the criteria in the rubric below:
+Performance will be assessed based on the criteria in the rubric below:
 
 
 #### Performance Evaluation
@@ -22,11 +19,11 @@ Your performance will be assessed based on the criteria in the rubric below:
 
 | Learning Goals | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
-| A. Create a data dictionary with classification of available variables | | | | |
-| A. Correctly identify features of the dataset, including the outcome and covariates/predictors | | | | |
-| B. Write a high-quality problem statement | | | | |
-| C. State the risks and assumptions of your data | | | | |
-| C. Outline exploratory analysis methods | | | | |
+| Create a data dictionary with classification of available variables | | | | |
+| Correctly identify features of the dataset, including the outcome and covariates/predictors | | | | |
+| Write a high-quality problem statement | | | | |
+| State the risks and assumptions of your data | | | | |
+| Outline exploratory analysis methods | | | | |
 
 Notes:
 
