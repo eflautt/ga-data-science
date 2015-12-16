@@ -14,9 +14,10 @@ This assessment is based on how well you've applied specific goals of the [stand
 ---
 
 ## STANDARD #1
-**Meets Expectations**: Acceptable performance for this standard is based on the following learning goals. Do you: X? Y? Z?
+**Meets Expectations**: Acceptable performance for this standard is based on the following learning goals. Do you: 
+X? Y? Z?
 
-> - SME Note: Fill these in X/Y/Z with 2-3 learning goals. What should the student be able to demonstrate, identify, articulate, or do as part of this standard? I.e. Demonstrate comprehension of data science fundamentals? Define a valid sampling methodology?
+> SME Note: Fill these in X/Y/Z with 2-3 learning goals. What should the student be able to demonstrate, identify, articulate, or do as part of this standard? I.e. Demonstrate comprehension of data science fundamentals? Define a valid sampling methodology?
 
 Application of these learning goals will be assessed using the requirements below:
 
