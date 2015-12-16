@@ -27,6 +27,12 @@ Acceptable performance for this standard is based on how well you've applied spe
 Notes:
 
 
+---
+
+## Score:
+Based on the requirements, you can earn a maximum of  **21**  points on this project. 
+
+#### Your total score is: **#**
 
 
 ---
