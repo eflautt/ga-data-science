@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 3: Exploratory Data Analysis
 
-## PROMPT
+### PROMPT
 
 Exploratory data analysis is a crucial and informative step in the data process, as it helps confirm or deny your initial hypotheses from the original problem scope, and helps visualize the positive and negative relationships your data has. It can also help inform data transformations that need to occur in order to optimize the machine learning approach that will come.
 
@@ -10,7 +10,7 @@ Your exploratory data analysis will effectively help you tell your data's story,
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### Exploratory Analysis Writeup
 - **Requirements:** 
@@ -36,7 +36,7 @@ Your exploratory data analysis will effectively help you tell your data's story,
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -48,8 +48,8 @@ Your exploratory data analysis will effectively help you tell your data's story,
 
 ---
 
-## EVALUATION
-Your project will assessed using the following course standards:
+### EVALUATION
+Your project will be assessed using the following standards:
 
 1. Acquire
 2. Parse
@@ -58,7 +58,7 @@ Your project will assessed using the following course standards:
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -71,7 +71,7 @@ While your total score may serve as a helpful gauge of whether you've met projec
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Suggestions for Getting Started 
 - Keep the project simple! The "cool" part of the analysis will come; just looking at simple relationships between variables can be incredibly insightful.
