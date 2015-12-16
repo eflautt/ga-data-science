@@ -25,7 +25,7 @@ Your exploratory data analysis will effectively help you tell your data's story,
       * It's just as important to show what's not correlated as it is to show any actual correlations found.
       * Visuals should be well labeled and intuitive based on the data types. 
         * For example, if your X variable is temperature and Y is "did it rain," a reasonable visual would be two histograms of temperature, one where it rained, and one where it didn't.
-   * Tables are a perfectly valid visualization tool! Interweave them into your work.
+      * Tables are a perfectly valid visualization tool! Interweave them into your work.
 
 - **Bonus:**
    - Surface and share your analysis online. Jupyter makes this very simple and the setup should not take long.
