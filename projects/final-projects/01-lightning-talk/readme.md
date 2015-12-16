@@ -49,14 +49,13 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 ---
 
 ## EVALUATION
-Your project will be evaluated by your instructors in the following areas:
+Your project will assessed using the following standards:
 
 1. Identify
 
-
 #### Rubric: [Click here for the complete rubric](#).
 
-Your instructors will score each of your standards using the scale below:
+Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -65,7 +64,7 @@ Your instructors will score each of your standards using the scale below:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
+While your total score is a helpful gauge of whether you've met overall project goals, __specific scores are more important__ since they'll show you where to focus your efforts in the future!
 
 ---
 
