@@ -43,13 +43,13 @@ Following these steps will help you better understand your dataset.
 
 ## EVALUATION
 
-Your project will assessed using the following course standards:
+Your project will be assessed using the following standards:
 
 1. Parse the Data
 
 #### Rubric: [Click here for the complete rubric](./project2-rubric.md). 
 
-Your instructors will score each of your standards using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
