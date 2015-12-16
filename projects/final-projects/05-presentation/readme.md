@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 5: Final Presentation
 
-## PROMPT
+### PROMPT
 
 This is it! This presentation is your way of showing what you've learned to a non-technical audience. Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why it's important to practice communicating clearly and effectively so that anyone can understand.
 
@@ -12,7 +12,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### Final Presentation
 **Requirements:**
@@ -63,7 +63,7 @@ A 10 to 20 slide deck consisting of:
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -75,9 +75,9 @@ A 10 to 20 slide deck consisting of:
 
 ---
 
-## EVALUATION
+### EVALUATION
 
-Your project will assessed using the following course standards:
+Your project will be assessed using the following standards:
 
 1. Refine
 2. Build
@@ -86,7 +86,7 @@ Your project will assessed using the following course standards:
 
 #### Rubric: [Click here for the complete rubric](#). 
 
-Based on the requirements, you can earn a maximum of  **12**  points on this project. Your instructors will score each of your standards using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -99,7 +99,7 @@ While your total score may serve as a helpful gauge of whether you've met projec
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Starter Code 
 - Refer to the [presentation template](../02-experiment-writeup/project-design-template.md) as a blueprint for how to organize your work.
