@@ -42,6 +42,7 @@ Application of these learning goals will be assessed using the requirements belo
 
 > SME Note: Requirements should be specific/technical deliverable criteria. I.e. "Create a data dictionary with variable classification"
 
+Section Sub-score: # / # [optional]
 Notes:
 
 
@@ -49,8 +50,8 @@ Notes:
 
 > ID Note: The following section is only intended for mid-course and final projects.
 
-## PROFESSIONAL SKILLS
-Meets Expectations: Demonstrates ability to communicate and collaborate with others in the classroom and/or on a team. You treat your peers, teammates, instructors with respect, make and follow agreements, and maintain a growth mindset. Your performance will be assessed based on the criteria in the rubric below:
+## PROFESSIONAL DEVELOPMENT
+**Meets Expectations**: Demonstrates ability to communicate and collaborate with others in the classroom and/or on a team. You treat your peers, teammates, instructors with respect, make and follow agreements, and maintain a growth mindset. Application of these learning goals will be assessed using the criteria below:
 
 #### Performance Evaluation
 > Mark boxes with 'X'
@@ -63,6 +64,8 @@ Meets Expectations: Demonstrates ability to communicate and collaborate with oth
 | Do you organize your project materials in a structured, easily navigable manner? | | | | |
 | Do you respond well to constructive feedback? Are you implementing suggested improvements? | | | | |
 | *Optional*: Are you resolving conflict in a professional and respectful manner? | | | | |
+
+Section Sub-Score: # / #
 Notes:
 
 
