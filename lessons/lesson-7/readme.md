@@ -43,6 +43,8 @@ Week # | Lesson #
 | 30-35 mins  | [Independent Practice](#ind-practice)  | Application of above techniques to create a generalized and improved model of the bikeshare casual riders data  |
 | 5-10 mins  | [Conclusion](#conclusion)  | review topics |
 
+---
+
 <a name="opening"></a>
 ## Opening (5 mins)
 
@@ -53,7 +55,7 @@ Recall the central metric introduced for linear regressions, r-squared. If we ha
 
 It is typical to use multiple prediction metrics while solving for an optimal solution to a regression problem. In particular, we're interested in the advantages of a loss function; that is, putting a cost against our prediction algorithm. While we use r-squared to inch our ways closer to 1, we'll explore loss functions and find ways to **refine** our model in order to minimize that value toward 0.
 
-
+---
 
 <a name="introduction-cv"></a>
 ## Introduction: Linear Models and Error (15 mins)
@@ -155,6 +157,8 @@ Since whole point of prediction is for a model to work on data that the model ha
     2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am only at most 10 degrees off on future days?
 
     The second case is what we are shooting for as good model fit.
+
+***
 
 <a name="demo-cv"></a>
 ## Demo: Cross Validation (20 minutes)
