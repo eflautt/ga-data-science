@@ -1,6 +1,4 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
-
-# DS Styleguide
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DS Styleguide
 
 While this certainly won't be a totally all-inclusive styleguide, we want to nail down some rules, especially around creating materials, so we can be consistent.
 
