@@ -30,7 +30,7 @@ For this project, you will need to complete a problem statement and research des
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -42,9 +42,9 @@ For this project, you will need to complete a problem statement and research des
 
 ---
 
-## EVALUATION
+### EVALUATION
 
-Your project will assessed using the following course standards:
+Your project will be assessed using the following standards:
 
 1. Identify
 2. Acquire
@@ -52,7 +52,8 @@ Your project will assessed using the following course standards:
 4. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#).
-Based on the requirements, you can earn a maximum of **12** points on this project. Your instructors will score each of your standards using the scale below:
+
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -61,11 +62,11 @@ Based on the requirements, you can earn a maximum of **12** points on this proje
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
+While your total score is a helpful gauge of whether you've met overall project goals, __specific scores are more important__ since they'll show you where to focus your efforts in the future!
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Starter Code
 - Please use the [template](./project-design-template.md) provided.
