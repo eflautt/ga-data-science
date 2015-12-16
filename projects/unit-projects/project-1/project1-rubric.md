@@ -4,14 +4,14 @@
 Your project will be assessed using the following course standards:
 - [ ] Identify The Problem
 
-This assessment is based on how well you've applied specific principles of the data science workflow within your deliverable. To review the full list of standards, see the course syllabus.
+This assessment is based on how well you've applied specific goals of the data science workflow within your deliverable. To review the full list of standards, see the course syllabus.
 
 ---
 
 ## IDENTIFY
 **Meets Expectations**: Acceptable performance for this standard is based on the following learning goals. Do you: Demonstrate comprehension of project objectives? Articulate the goals and criteria for success? Create guiding questions to identify data and potential methods of analysis?
 
-Performance will be assessed based on the criteria in the rubric below:
+Application of these learning goals will be assessed using the requirements below:
 
 
 #### Performance Evaluation
