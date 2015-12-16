@@ -79,12 +79,10 @@ A 10 to 20 slide deck consisting of:
 
 Your project will be assessed using the following standards:
 
-1. Refine
-2. Build
-3. Present
-4. Professional Development
+1. Present
+2. Professional Development
 
-#### Rubric: [Click here for the complete rubric](#). 
+#### Rubric: [Click here for the complete rubric](./final-project-5-rubric.md). 
 
 Requirements for these standards will be assessed using the scale below:
 
