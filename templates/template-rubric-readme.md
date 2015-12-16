@@ -42,8 +42,8 @@ Application of these learning goals will be assessed using the requirements belo
 
 > SME Note: Requirements should be specific/technical deliverable criteria. I.e. "Create a data dictionary with variable classification"
 
-Section Sub-score: # / # [optional]
-Notes:
+- Section Sub-score: # / # [optional]
+- Notes:
 
 
 ---
@@ -65,8 +65,8 @@ Notes:
 | Do you respond well to constructive feedback? Are you implementing suggested improvements? | | | | |
 | *Optional*: Are you resolving conflict in a professional and respectful manner? | | | | |
 
-Section Sub-Score: # / #
-Notes:
+- Section Sub-Score: # / #
+- Notes:
 
 
 ---
