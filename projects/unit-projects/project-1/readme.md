@@ -45,7 +45,7 @@ Your project will assessed using the following standards:
 
 #### Rubric: [Click here for the complete rubric](./project1-rubric.md). 
 
-Based on the requirements, you can earn a maximum of **3** points on this project. Your instructors will score each of your technical requirements using the scale below:
+Your instructors will score each of your technical requirements using the scale below:
 
     Score | Expectations
     ----- | ------------
