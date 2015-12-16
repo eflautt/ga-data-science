@@ -34,14 +34,14 @@ Week # | Lesson #
 | 5 min  | [Opening](#opening)  | Discuss lesson objectives  |
 | 10-15 mins  | [Introduction](#introduction-cv)  | Reviewing concepts of error for regression models and cross validation |
 | 10-15 mins  | [Demo](#demo-cv)  | demo using cross validation |
-| 20-25 mins  | [Guided Practice](#guided-practice-cv)  | Cross Validation in sklearn  |
-| 10-15 mins  | [Introduction](#introduction-reg)   | what are lasso and ridge doing differently? |
+| 20-25 mins  | [Guided Practice](#guided-practice-cv)  | Cross validation in sklearn  |
+| 10-15 mins  | [Introduction](#introduction-reg)   | What are Lasso and Ridge doing differently? |
 | 10-15 mins  | [Demo](#demo-reg)  | Zeroing coefficients using alpha |
 | 20-25 mins  | [Guided Practice](#guided-practice-reg)  | Solving for alpha using a grid search  |
 | 10-15 mins  | [Introduction](#introduction-sgd)  | Using Gradient Descent to minimize error |
 | 10-15 mins  | [Demo](#demo-sgd)  | Application of Stochastic Gradient Descent |
-| 30-35 mins  | [Independent Practice](#ind-practice)  | Application of above techniques to create a generalized and improved model of the bikeshare casual riders data  |
-| 5-10 mins  | [Conclusion](#conclusion)  | review topics |
+| 30-35 mins  | [Independent Practice](#ind-practice)  | Create an improved model of bikeshare rider data  |
+| 5-10 mins  | [Conclusion](#conclusion)  | Review topics |
 
 ---
 
@@ -51,9 +51,11 @@ Week # | Lesson #
 - What is r-squared?
 - What is a residual?
 
-Recall the central metric introduced for linear regressions, r-squared. If we had to compare two models we **built**, one with an r-squared of .79, and another of .81, which model performed better? If r-squared is an explanation of variance, then we know the value closer to 1, .82, is a better model. But what about error? Does r-squared tell us how far off our predictions are? Or about the scale of that error? How do you explain r-squared to a business owner?
+Recall the central metric introduced for linear regressions, r-squared. If we had to compare two models we **built**, one with an r-squared of .79, and another of .81, which model performed better? If r-squared is an explanation of variance, then we know the value closer to 1 (.82) is a better model. But what about error? Does r-squared tell us how far off our predictions are? Or about the scale of that error? How do you explain r-squared to a business owner?
 
 It is typical to use multiple prediction metrics while solving for an optimal solution to a regression problem. In particular, we're interested in the advantages of a loss function; that is, putting a cost against our prediction algorithm. While we use r-squared to inch our ways closer to 1, we'll explore loss functions and find ways to **refine** our model in order to minimize that value toward 0.
+
+**Check:** What is r-squared? What is a residual?
 
 ---
 
@@ -74,11 +76,11 @@ Knowing individual residual error is beneficial to the user, as it demonstrates 
 
 For squared error, we will:
 
-1. Calculate the difference between each target y and the model's predicted value y hat (this is how we determine the _residual_)
+1. Calculate the difference between each target y and the model's predicted value y-hat (this is how we determine the _residual_)
 2. Square each residual.
 3. Take the mean of the squared residual error.
 
-sklearn's metrics module includes a mean_squared_error function. Sklearn's metrics module will be home to evaluating the performance of majority of our models:
+sklearn's metrics module includes a mean_squared_error function. Sklearn's metrics module will be the tool we use to evaluate performance for the majority of our models:
 
 ```python
 from sklearn import metrics
@@ -96,7 +98,7 @@ metrics.mean_squared_error([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
 0.0
 ```
 
-With the opposite scenario from above having a mean squared error of 8:
+While the opposite scenario should have a mean squared error of 8:
 
 ```python
 from sklearn import metrics
@@ -111,7 +113,7 @@ metrics.mean_squared_error([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
 
 #### How do we minimize error?
 
-The regression we've been using in class is called "ordinary least squares," which literally means given a matrix X, solve for the _least_ amount of squared error for y. However, this approach assumes that the sample X is representative of the population; that is, the sample is _unbiased_. For example, let's compare these two random models:
+The regression we've been using in class is called "ordinary least squares," which literally means given a matrix X, solve for the _least_ amount of squared error for y. However, this approach assumes that the sample X is representative of the population; that is, it assumes that the sample is _unbiased_. For example, let's compare these two random models:
 
 ```python
 import numpy as np
@@ -149,14 +151,15 @@ When our error is described as _biased_, it means that the learner's prediction 
 
 Otherwise, one objective of a _biased_ model is to trade this biased error for _generalized_ error. That is, we'd prefer if the error was distributed more evenly across the model, even if that means it doesn't explain the sample as well. This is called error due to _variance_.
 
-Since whole point of prediction is for a model to work on data that the model hasn't seen at all, the model should perform _generally_ well on that data it has not seen! If your model has a lot of _bias_, then even if you have a good r-squared or mean squared error with the data learned from, it could perform **poorly** on the data it is actually supposed to predict!
+Since the whole point of prediction is for a model to work on data that the model hasn't seen yet, your want your model to perform _generally_ well on new data! If your model has a lot of _bias_, then even if you have a good r-squared or mean squared error from learned data, it could still perform **poorly** on new predictive data.
 
-**Check:** Which situation would be better as a weatherman?
+**Check:** Which of the following scenarios would be better for a weatherman:
 
     1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
-    2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am only at most 10 degrees off on future days?
+    2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am at most only 10 degrees off on future days?
 
-    The second case is what we are shooting for as good model fit.
+
+If you said the second case, you just described what we call a good model fit.
 
 ***
 
