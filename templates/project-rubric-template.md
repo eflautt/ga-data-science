@@ -7,6 +7,10 @@
 > - [ ] Should students practice pre-work tasks before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 
+> #### *How to Use This Template*
+
+> Content: SME's are only responsible for areas marked: "SME Notes". Specifically, SME's should create 2-3 learning goals for the assignment and list the technical requirements within the rubric.
+
 > Delete this section ^
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) RUBRIC
@@ -40,7 +44,7 @@ Application of these learning goals will be assessed using the requirements belo
 | Specific Requirement #2 | | | | |
 | Specific Requirement #3 | | | | |
 
-> SME Note: Requirements should be specific deliverable criteria. I.e. "Create a data dictionary with variable classification"
+> SME Note: Requirements should be specific/technical deliverable criteria. I.e. "Create a data dictionary with variable classification"
 
 
 Notes:
@@ -65,6 +69,7 @@ Meets Expectations: Demonstrates ability to communicate and collaborate with oth
 | Do you organize your project materials in a structured, easily navigable manner? | | | | |
 | Do you respond well to constructive feedback? Are you implementing suggested improvements? | | | | |
 | *Optional*: Are you resolving conflict in a professional and respectful manner? | | | | |
+
 Notes:
 
 ---
