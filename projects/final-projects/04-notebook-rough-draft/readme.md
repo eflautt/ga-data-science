@@ -19,12 +19,14 @@ Look at how your model performs compared to a dummy model, and articulate the be
 #### iPython Report Draft
 
 - **Requirements:**
-  - An iPython Notebook with code, visualizations, and markdown
-  - Brief summary that covers your exploratory data analysis. 
-  - Source code that does not get in the way of your notebook deliverable. 
-    - Move helper functions into a python module and include this module as part of your project deliverable. 
-    - Consider it like an appendix piece (though unlike an appendix, it'll be necessary for your project to function!).
-  - Visualizations that showcase the relationship between your Y and your two strongest variables (at least), as determined by some scoring measure (p values and coefficients, gini/entropy, etc).
+  - Create an iPython Notebook with code, visualizations, and markdown
+  - Summarize your exploratory data analysis. 
+  - Explain your choice of validation and prediction metrics.
+  - Frame source code so it enhances your notebook explanations.
+  - Include a separate python module with helper functions
+    - Consider it like an appendix piece; although unlike an appendix, it'll be necessary for your project to function!
+  - Visualize relationships between your Y and your two strongest variables, as determined by some scoring measure (p values and coefficients, gini/entropy, etc).
+  - Identify areas where new data could help improve the model
 
 - **Bonus:**
     - Many modeling approaches are all about fine-tuning the algorithm parameters and trying to find a specific value. Show how you optimized for this value, and the costs/benefits of doing so.
