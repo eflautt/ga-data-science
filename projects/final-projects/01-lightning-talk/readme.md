@@ -52,7 +52,7 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 Your project will be assessed using the following standards:
 
-1. Identify
+1. Identify the Problem
 
 #### Rubric: [Click here for the complete rubric](./final-project-1-rubric.md).
 
