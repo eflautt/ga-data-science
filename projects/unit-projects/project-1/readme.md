@@ -45,7 +45,7 @@ Your project will assessed using the following standards:
 
 #### Rubric: [Click here for the complete rubric](./project1-rubric.md). 
 
-Your instructors will score each of your technical requirements using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
