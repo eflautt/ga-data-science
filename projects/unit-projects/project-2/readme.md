@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Exploratory Analysis
 
-## PROMPT
+### PROMPT
 
 In this project, you will implement the exploratory analysis plan developed in Project 1. This will lay the groundwork for our our first modeling exercise in Project 3.
 
@@ -12,7 +12,7 @@ Following these steps will help you better understand your dataset.
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### iPython Notebook Exploratory Analysis
 - **Requirements:**
@@ -33,7 +33,7 @@ Following these steps will help you better understand your dataset.
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -41,7 +41,7 @@ Following these steps will help you better understand your dataset.
 
 ---
 
-## EVALUATION
+### EVALUATION
 
 Your project will be assessed using the following standards:
 
@@ -62,7 +62,7 @@ While your total score is a helpful gauge of whether you've met overall project 
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Dataset  
 We'll be using the same dataset as UCLA's Logit Regression in R tutorial to explore logistic regression in Python. Our goal will be to identify the various factors that may influence admission into graduate school. It containes four variables- admit, gre, gpa, rank.
