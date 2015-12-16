@@ -1,7 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Final Project, Part 1: Lightning Talk
 
 
-## PROMPT
+### PROMPT
 
 In the field of data science, projects are practical. A good project is manageable and relates to your working domain; however, it can be hard to filter and scope good ideas when you're new to a field. That's where Part 1 of your final project comes in. 
 
@@ -13,7 +13,7 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 ---
 
-## DELIVERABLES
+### DELIVERABLES
 
 #### Lightning Presentation
 - **Requirements:** You should present from a prepared deck that explains the following:
@@ -36,7 +36,7 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 ---
 
-## TIMELINE
+### TIMELINE
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -48,14 +48,15 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 
 ---
 
-## EVALUATION
-Your project will assessed using the following standards:
+### EVALUATION
+
+Your project will be assessed using the following standards:
 
 1. Identify
 
 #### Rubric: [Click here for the complete rubric](#).
 
-Your instructors will score each of your technical requirements using the scale below:
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -64,11 +65,11 @@ Your instructors will score each of your technical requirements using the scale 
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score is a helpful gauge of whether you've met overall project goals, __specific scores are more important__ since they'll show you where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
 
-## RESOURCES
+### RESOURCES
 
 #### Suggestions for Getting Started
 - Try putting together a three-slide deck for each of your project ideas, in order to stay organized.
