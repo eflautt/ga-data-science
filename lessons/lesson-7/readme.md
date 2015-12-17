@@ -145,7 +145,7 @@ print metrics.mean_squared_error(df['y'], lm.predict(df[['x']]))
 ```
 
 
-![explanation of bias error](http://i.stack.imgur.com/JLDET.png)
+![Explanation of bias error](http://i.stack.imgur.com/JLDET.png)
 
 When our error is described as _biased_, it means that the learner's prediction is consistently far away from the actual answer. This is a sign of poor sampling: perhaps the population is not well represented in the model, or other data needs to be collected.
 
@@ -166,13 +166,13 @@ If you said the second case, you just described what we call a good model fit.
 <a name="demo-cv"></a>
 ## Demo: Cross Validation (20 minutes)
 
-One approach data scientists use to account for bias is cross validation. The basic idea of cross validation is to generate several models based on different cross sections of the data, measure performance of each, and then take the mean performance. This technique is our approach for trading bias error in our model for generalized error (situation #2 for the temperature prediction above).
+One approach data scientists use to account for bias is cross validation. The basic idea of cross validation is to generate several models based on different cross sections of the data, measure performance of each, and then take the mean performance. This technique is one way to swap bias error for generalized error in our model. In other words, this method helps us create weatherman Scenario #2 - describing previous trends with a general amount of accuracy in order to make more specifically accurate predictions about future trends.
 
 ![crossvalidation_kfold](http://i.stack.imgur.com/8hyyh.png)
 
-One of the most common cross validation techniques is k-fold: split the data into _k_ groups, _train_ the data on all segments except one, and then _test_ the performance on the remaining set. If k equals five, then that means we generate five different models.
+One of the most common cross validation techniques is called **k-fold**: split the data into _k_ groups, _train_ the data on all segments except one, and then _test_ the performance on the remaining set. If k equals five, then you split the data into five groups and generate five different models.
 
-What happens to mean squared error if we use 5 fold validation to _generalize_ the error?
+What happens to mean squared error if we use k-fold validation to _generalize_ the error?
 
 ```python
 from sklearn import cross_validation
@@ -195,16 +195,16 @@ lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-**Check:** While it's apparent that the cross validated approach here generated more error, which of the two approaches would predict on new data more accurately: the single model, or the cross validated, averaged one? Why?
+**Check:** While the cross validated approach here generated more overall error, which of the two approaches would predict new data more accurately: the single model or the cross validated, averaged one? Why?
 
 ***
 
 <a name="guided-practice-cv"></a>
-## Guided Practice: cross validation with linear regression (20 mins)
+## Guided Practice: Cross Validation with Linear Regression (20 mins)
 
-If we were to continue increasing the number of folds in cross validation, which with each increase would also increase the training set; do you expect error to increase or decrease?
+If we were to continue increasing the number of folds in cross validation, which each increase would also increase the training set? Do you expect error to increase or decrease?
 
-Apply the following code through a loop of numbers 2 to 50 and find answers to these questions: `range(2, 51, 2)`
+Apply the following code through a loop of numbers 2 to 50 and find answers to the following questions: `range(2, 51, 2)`
 
 1. What does `shuffle=True` do?
 2. At what point does cross validation no longer seem to help the model? The error line should look similar to a flat line.
@@ -224,7 +224,7 @@ Apply the following code through a loop of numbers 2 to 50 and find answers to t
 
 #### What's Regularization? And why do we use it?
 
-_Regularization_ is an additive approach to protect models against _overfitting_, or being potentially biased and overconfident. In regressions, regularization becomes an additional weight to coefficients, which is either added (L1) or squared then added (L2). These are also known as Lasso and Ridge Regressions, which we toyed with as practice during our last class. As good practice, we should use Lasso (L1) when we have a higher number of features (k) than we have observations (n), and use Ridge (L2) in about all other cases.
+_Regularization_ is an additive approach to protect models against _overfitting_, or being potentially biased and overconfident. In regressions, regularization becomes an additional weight to coefficients, which is either added (L1) or squared and then added (L2). These are also known as Lasso and Ridge Regressions, which we experimented with during our last class. As good practice, we should use Lasso (L1) when we have a higher number of features (k) than we have observations (n), and use Ridge (L2) in about all other cases.
 
 #### Wait a sec, what's overfitting?
 
