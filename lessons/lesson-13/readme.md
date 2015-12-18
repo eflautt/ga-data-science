@@ -140,7 +140,7 @@ Let's start by attempting to process some of the titles.
     - a tagger: to identify _what_ the words are
     - a parser: to identify the phrases and links between the different words
 
-Each of these pre-processing can be overriden with a specific tool you have (you may want a specialized tokenizer or stock quotes or instagram posts compared to news headlines). You could write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides, but we will use the defaults for now.
+Each of these pre-processing can be overridden with a specific tool you have (you may want a specialized tokenizer or stock quotes or instagram posts compared to news headlines). You could write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides, but we will use the defaults for now.
 
 The first title is:
  > IBM Sees Holographic Calls, Air Breathing Batteries
@@ -287,6 +287,7 @@ Classification using the words as features is known as **bag-of-words** classifi
 
 Scikit-learn has many pre-processing utilities to make many of the tasks of converting text into feature for a model easy. These are in the `sklearn.preprocesing.text` package.
 
+We will use the StumbleUpon web crawl dataset again and perform a text classification text. Instead of using other features of the webpages, we will use the text content itself to predict whether or not the webpage is 'evergreen'.
 
 #### CountVectorizer
 
@@ -330,6 +331,44 @@ Like models or estimators in `scikit-learn`, vectorizers follow a similar interf
 The distinction of `fit` and `transform` when it comes to splitting datasets into training and test sets. We want to fit (or learn our vocabulary) from our training set. Since choosing features is a part of our model building process, we **should not** look at our test set to do this.
 
 Whenever we want to make predictions, we will need to create a new data point that contains **exactly** the same columns as our model.  If feature 234 in our model represents the word 'cheeseburger', then we need to make sure our test or future example also has 'cheeseburger' as feature 234. We can use`transform` to do perform this conversion on the test set (and any future dataset) in the same way.
+
+```python
+
+titles = data['title'].fillna('')
+
+from sklearn.feature_extraction.text import CountVectorizer
+
+vectorizer = CountVectorizer(max_features = 1000, 
+                             ngram_range=(1, 2), 
+                             stop_words='english',
+                             binary=True)
+
+# Use `fit` to learn the vocabulary of the titles
+vectorizer.fit(titles)
+
+# Use `tranform` to generate the sample X word matrix - one column per feature (word or n-grams)
+X = vectorizer.transform(titles)
+```
+
+- Build a random forest model to predict evergreeness of a website using the title features
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+model = RandomForestClassifier(n_estimators = 20)
+    
+# Use `fit` to learn the vocabulary of the titles
+vectorizer.fit(titles)
+
+# Use `tranform` to generate the sample X word matrix - one column per feature (word or n-grams)
+X = vectorizer.transform(titles)
+y = data['label']
+
+from sklearn.cross_validation import cross_val_score
+
+scores = cross_val_score(model, X, y, scoring='roc_auc')
+print('CV AUC {}, Average AUC {}'.format(scores, scores.mean()))
+```
 
 #### Term Frequency - Inverse Document Frequency (TF-IDF)
 
