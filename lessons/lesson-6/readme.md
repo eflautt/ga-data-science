@@ -144,7 +144,7 @@ Even though we changed the way the data was shaped, this is still a _linear_ res
 <a name="guided-practice1"></a>
 ## Guided Practice: Using Seaborn to generate single variable linear model plots (15 mins)
 
-Update and complete the code below to use `lmplot` and display correlations between body weight and three dependent variables: `sleep_rem` and `awake`.
+Update and complete the code below to use `lmplot` and display correlations between body weight and two dependent variables: `sleep_rem` and `awake`.
 
 ```python
 log_columns = ['bodywt', 'brainwt',]  # any others?
@@ -156,7 +156,7 @@ sns.lmplot(x, y, mammals)
 sns.lmplot(x, y, log_mammals)
 ```
 
-**Check:** Were students successfully able to use the code to determine correlations between body weight and the three given variables?
+**Check:** Were students successfully able to use the code to determine correlations between body weight and the variables?
 
 
 <a name="intro2"></a>
@@ -281,7 +281,7 @@ R-Squared: 0.864418807451
 <a name="guided-practice2"></a>
 ## Guided Practice: Using the LinearRegression object (15 mins)
 
-We learned earlier that the the data in it's current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
+We learned earlier that the the data in its current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
 
 ```python
 X =
@@ -294,8 +294,7 @@ for boolean in loop:
     print
 ```
 **Check:**
-* Out of the four, which model performed the best?
-* Out of the four, which model performed the worst?
+* Out of the four, which model performed the best? The worst?
 
 
 <a name="ind-practice1"></a>
