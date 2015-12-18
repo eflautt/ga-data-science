@@ -380,9 +380,9 @@ y-intercept: -22.8703398286
 R-Squared: 0.21124723661
 ```
 
-Even though the 2-variable model `temp + atemp` has a higher explanation of variance than two two variables on their own, and both variables are considered significant (p values approaching 0), we can see that together,their coefficients are wildly different. This can introduce error in how we explain models.
+Even though the 2-variable model `temp + atemp` has a higher explanation of variance than two variables on their own, and both variables are considered significant (p values approaching 0), we can see that together, their coefficients are wildly different. This can introduce error in how we explain models.
 
-**Check:** What happens if we use a second variable that isn't highly correlated with temperature, like humidity?
+What happens if we use a second variable that isn't highly correlated with temperature, like humidity? 
 
 ```bash
 temp, hum
@@ -394,6 +394,7 @@ R-Squared: 0.310901196913
 
 While temperature's coefficient is higher, the logical output still makes sense: for guest riders we expected a positive relationship with temperature and a negative relationship with humidity, and our model suggests it as well.
 
+**Check:** What is multicollinearity? Why might this cause problems in a model?
 
 <a name="guided-practice3"></a>
 ## Guided Practice: Multicollinearity with dummy variables (15 mins)
@@ -425,7 +426,7 @@ R-Squared: 0.0233906873841
 
 **Check:** Are students able to explain how coefficients changed once all the weather situations were included?
 
-This model makes more sense, because we can more easily explain the variables _compared to_ the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well at all.
+This model makes more sense, because we can more easily explain the variables compared to the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well.
 
 <a name="guided-practice4"></a>
 ## Guided Practice: Combining non-correlated features into a better model (15 mins)
