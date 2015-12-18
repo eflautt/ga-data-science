@@ -20,13 +20,11 @@ Week # | Lesson 14
 *Before this lesson, you should already be able to:*
 - Install `gensim` with `pip install gensim` 
 - Previous introduction to _unsupervised learning_
-- Previous introduction to probability distributions, specifically discrete mutlinomial distributions
-- Setup Twitter API credentials at [](http://dev.twitter.com)
+- Previous introduction to probability distributions, specifically discrete multinomial distributions
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Setup Twitter API credentials at [](http://dev.twitter.com)
-    - This will be useful for instruction and to give to students that don't have Twitter accounts
+
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -49,7 +47,7 @@ Much of the advances in natural language processing have been in using data to l
     - _Stemming_ or _lemmatization_ to understand bases or roots of words
     - _Parsing_ and _tagging_ to understand each piece of the sentences.
 
-Each of these are based on a classical or theroretical understanding of language - essentially, let's attmept to re-create the rules that guide language.
+Each of these are based on a classical or theoretical understanding of language - essentially, let's attempt to re-create the rules that guide language.
 
 _Latent variable models_ are different in that instead of attempting to recreate rules of language, we will try to understand language based on how the words are used.
 
@@ -72,7 +70,7 @@ Instead of attempting to learn the rules of 'proper' grammar, we instead learn t
 
 Our previous 'representation' of a set of text documents (articles) for classification was a matrix with one row per document and one column per word (or n-gram).
 
-![img](word-matrix-factorization.png)
+![Word Factorization Matrix](./assets/word-matrix-factorization.png)
 
 While this does sum up most of the information, it does drop a few things - mostly structure and order.
 
@@ -100,7 +98,7 @@ There are many dimensionality techniques built into `scikit-learn`, most common 
 
 ### Mixture Models and Language Processing
 
-Mixture models (and specifically **LDA** or **Latent Dirichlet Allocation**) take this concept further and generate more structure around the documents. Instead of just replace correlated columns, we create clusters of common words and generate probability distributions to explicitly state how related the words are. 
+Mixture models (and specifically **LDA** or **Latent Dirichlet Allocation**) take this concept further and generate more structure around the documents. Instead of just replacing correlated columns, we create clusters of common words and generate probability distributions to explicitly state how related the words are. 
 
 To understand this better, let's imagine a new way to generate text. 
 
@@ -111,6 +109,8 @@ To understand this better, let's imagine a new way to generate text.
 1. Repeat for the next document
 
 What this 'model' of text is assuming is that each document is some _mixture_ of topics. It may be mostly science, but may contain some business information. What _latent_ structure we want to uncover are the topics (or concepts) that generated that text.
+
+![Latent Dirichlet Allocation]('./assets/lda-mixture-graphic.jpg')
 
 _Latent Dirichlet Allocation_ is a model that assumes this is the way text is generated and then attempts to learn two things:
     1. What is the _word distribution_ of each topic
@@ -142,6 +142,7 @@ Bloomberg article: [business: 0.7, science: 0.2, sports: 0.1]
 
 For each topic and document pair, we learn some `P ( topic | document) `
 
+![LDA Topic Allocation]('./lda-topic-distribution.jpg')
 
 Topic models are useful for organizing a collection of documents and uncovering the main underlying concepts.
 
@@ -153,6 +154,8 @@ There are many variants as well, that incorporate attempt to add more structure 
     - Use not what words occur in what document but where they occur
  - Variable number of topics
     - Test different number of topics and find the best model
+
+**Check:** Take an recent news-article. Have students brainstorm what 3 topics this story is most likely made up. Have them brainstorm which words are most likely from which of those 3 topics.
 
 <a name="demo-lda"></a>
 ## Demo: LDA in gensim (30 mins)
@@ -235,6 +238,8 @@ while
 ```
 is a topic mostly related to fashion and style.
 
+**Check:** Have students demonstrate their code generate the topics above. Have them hypothesize other topic interpretations.
+
 <a name="introduction-word2vec"></a>
 ## Introduction: Word2Vec (20 mins)
 
@@ -278,6 +283,10 @@ We replace columns ['_ is a city', '_ is a capital', 'I flew into _ today'] by a
 
 A common feature of `word2vec` is then being able to ask what words are similar to each other. If we have data on multiple languages a system like word2vec could be used for translation.
 
+![Word2Vec translation]('./assets/word2vec-translation.png')
+
+**Check:** After showing the analogies, have them brainstorm other word vector math. I.E. the prototypical example of 'King' - 'Man' = 'Queen'
+
 <a name="demo-word2vec"></a>
 ## Demo: Word2Vec in gensim (20 min)
 
@@ -309,7 +318,7 @@ model.most_similar(positive=['cookie', 'brownie'])
 It can easily identify words related to those from this dataset (again most of the articles in this dataset are food or cooking related)
 
 <a name="independent-practice"></a>
-## Indpendent Practice (45 min)
+## Independent Practice (45 min)
 
 In this exercise, we will compare some of the classical NLP tools from the last class, with the more modern latent variable techniques. We will do this by comparing information extraction techniques on Twitter using the two methods.
 
@@ -341,7 +350,7 @@ for tweet in tweets:
 ```
 
 Now we'd like to do a few things:
-1. Use `spacy` to write a function to filter tweets to those where Google in announcing a product.
+1. Use `spacy` to write a function to filter tweets to those where Google is announcing a product.
     - Think of how we might do this.
     - One way might be to identify verbs, where 'Google' is the noun and their is some action like 'announcing' or some new product  
 1. Build a `word2vec` model of the tweets we have collected using `gensim`
@@ -369,9 +378,16 @@ Now we'd like to do a few things:
 | **UPCOMING PROJECTS**  | |
 
 ### ADDITIONAL RESOURCES
-- [Introduction to LDA](http://blog.echen.me/2011/08/22/introduction-to-latent-dirichlet-allocation/)
-- [How Google Converted Language Translation Into a Problem of Vector Space Mathematics](http://www.technologyreview.com/view/519581/how-google-converted-language-translation-into-a-problem-of-vector-space-mathematics/)
 - [Five Takeaways on the State of Natural Language Processing](http://www.wise.io/tech/five-takeaways-on-the-state-of-natural-language-processing)
-- [A word is worth a thousand vectors](http://multithreaded.stitchfix.com/blog/2015/03/11/word-is-worth-a-thousand-vectors/)
-- [Gensim Word2Vec documentation](https://radimrehurek.com/gensim/models/word2vec.html)
+
+#### LDA (Latent Dirichlet Allocation)
+- [Introduction to LDA](http://blog.echen.me/2011/08/22/introduction-to-latent-dirichlet-allocation/)
 - [Gensim LDA documentation](https://radimrehurek.com/gensim/models/lda.html)
+
+#### Word2Vec
+- [Gensim Word2Vec documentation](https://radimrehurek.com/gensim/models/word2vec.html)
+- [How Google Converted Language Translation Into a Problem of Vector Space Mathematics](http://www.technologyreview.com/view/519581/how-google-converted-language-translation-into-a-problem-of-vector-space-mathematics/)
+- [A word is worth a thousand vectors](http://multithreaded.stitchfix.com/blog/2015/03/11/word-is-worth-a-thousand-vectors/)
+- [Word Embeddings For Fashion](http://developers.lyst.com/2014/11/11/word-embeddings-for-fashion/)
+
+
