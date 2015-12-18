@@ -53,7 +53,7 @@ Week 6 | Lesson 12
 **Check**: Define the difference between the precision and recall of a model. What are some common components and use cases for logistic regression?
 
 #### Review the Data Science Workflow
-In this lesson we will focus on mining the dataset and building a model. We will focus on refining the model for the best predictive ability.
+In this lesson we will focus on mining the dataset and building a model. We will focus on refining our model for the best predictive ability.
 
 ***
 
@@ -109,7 +109,7 @@ It's important to note the next question we ask is always dependent on the last.
 #### Comparison to previous models 
 Decision trees have an advantage over logistic regression by being _non-linear_. A _linear_ model is one in which a change in an input variable has a constant change on the output variable. 
 
-An example of this difference is the relationship between years of education and salary. We know that as education increases, salary should as well. A linear model would say this effect is constant.  As your years of education goes from 10 to 15 or 15 to 20, the increase in salary should be the same. A _non-linear_ allows us to change the effect depending on the input. We can say  that if the increase in salary due to a change in education of 10 years to 15 years is 20k, but from 15 years to 20k it might only be 5k or even negative.
+An example of this difference is the relationship between years of education and salary. We know that as education increases, salary should as well. A linear model would say this effect is constant.  As your years of education goes from 10 to 15 years or 15 to 20 years, the corresponding increase in salary would be about the same. A _non-linear_ model allows us to change the effect depending on the input. For instance, with a non-linear model you could show how the relationship of education to salary changes dramatically from 0-15 years, but neglibly from years 15-20. 
 
 Additionally, trees automatically contain interactions of features. Since each question is dependent on the last, the features are naturally interacting.
 
@@ -142,14 +142,14 @@ Then, we take each side of the tree and repeat the process, choosing the feature
 
 ![](./assets/depth-2-tree.png)
 
-As you can see the best feature is different on both sides of this tree. This shows the interaction of features. If the article does not contain 'recipe' we care about the image_ratio, but otherwise we don't.
+As you can see the best feature is different on both sides of this tree, which shows the interaction of features. If the article does not contain 'recipe', then we care about the image_ratio, but otherwise we don't.
 
-We can continue that process until we have asked as many questions as we want or our leaf nodes are completely pure.
+We can continue that process until we have asked as many questions as we want or until our leaf nodes are completely pure.
 
 #### Making predictions from a Decision Tree
 Predictions are made in the decision tree from answering each of the questions. Once we reach a leaf node, our prediction is made by taking the majority label of the training samples that fulfill the questions. If there are 10 training samples that match our new sample, and 6 are positive, we will predict positive since 6/10 (60%) are positive.
 
-In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.  
+In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.
 
 **Check**: How do we classify a new article? How do we make predictions from a decision tree?
 
@@ -161,7 +161,7 @@ In the sample tree, if we want to classify a new article, we can proceed by firs
 #### Training a Model in sckit-learn 
 > See ipython notebook for starter and solution code
 
-In your groups from earlier, work on evaluating the the decision tree using cross-validation methods. What metrics would work best? Why?
+In your groups from earlier, work on evaluating the decision tree using cross-validation methods. What metrics would work best? Why?
 
 **Check:** Are you able to evaluate the decision tree model using cross-validation methods?
 
@@ -177,7 +177,7 @@ For instance, revisiting our previous example, we might ask questions like:
 - Is the third word 'of'
 - etc.
 
-This model is attempting to recreate the articles exactly as opposed to learning any general trend. An unconstrained decision tree can learn a fairly extreme tree:
+This model is attempting to recreate the articles exactly as opposed to learning a general trend. An unconstrained decision tree can learn a fairly extreme tree:
 ![](./assets/complex-tree-min.png)
 
 We can limit this function in decision trees using a few methods:
@@ -219,7 +219,7 @@ Disadvantages:
 
 #### Training a Random Forest
 
-Training a Random Forest model involves training many decision tree models.  Since decision trees overfit very easily, we use many decision trees together and randomize the way they are created.
+Training a Random Forest model involves training many decision tree models. Since decision trees overfit very easily, we use many decision trees together and randomize the way they are created.
 
 1. Take a bootstrap sample of the dataset
 2. Train a decision tree on the bootstrap sample
@@ -241,7 +241,7 @@ Your new goal is to build a random forest model to predict the evergreeness of a
 * The key parameter to remember is `n_estimators` or the number of trees to use in the model.
 
 #### Retrieving the important aspects of the model
-Random Forests have a good way of extracting what features are important. Unlike we Logistic Regression, we don't have coeffcients that tell us whether some input positively or negatively affects our output. But we can keep track of which inputs are most important. We do this by keeping track of the features give us the best splits.
+Random Forests have a good way of extracting what features are important. Unlike Logistic Regression, we don't have coeffcients that tell us whether some input positively or negatively affects our output. But we can keep track of which inputs are most important. We do this by keeping track of the features give us the best splits.
 
 #### Regression with Decision Trees and Random Forests
 The same models, both decision trees and random forests can be used for both classification and regression. While predictions for classification problems are made by predicting the majority class in the leaf node, in regression, predictions are made by predicting the average value of the samples in the leaf node.
