@@ -312,9 +312,9 @@ Next class we'll go into further detail on other regression techniques, but for 
 <a name="intro3"></a>
 ## Introduction: Multiple Regression Analysis (10 minutes)
 
-While in the above example one variable well explained the variance of another, more often than not, we will need multiple variables. For example, a house's price may be best measured by square feet, but a lot of other variables play a vital role: bedrooms, bathrooms, location, appliances, etc. For a linear regression, we want these variables to be largely independent of each other, but all help explain the y variable.
+In the previous example, one variable explained the variance of another; however, more often than not, we will need multiple variables. For example, a house's price may be best measured by square feet, but a lot of other variables play a vital role: bedrooms, bathrooms, location, appliances, etc. For a linear regression, we want these variables to be largely independent of each other, but all of them should help explain the y variable.
 
-We'll work with bikeshare data to help showcase what this means; and to explain a concept called _multicollinearity_.
+We'll work with bikeshare data to showcase what this means and to explain a concept called _multicollinearity_.
 
 #### What is Multicollinearity?
 
