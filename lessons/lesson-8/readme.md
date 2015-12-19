@@ -1,5 +1,5 @@
 ---
-title: Evaluating Model Fit
+title: Introduction to Classification
 duration: 3:00
 creator:
     name: Ed Podojil
@@ -7,7 +7,7 @@ creator:
     dataset: iris dataset
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Evaluating Model Fit
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Introduction to Classification
 Week # | Lesson #
 
 ### LEARNING OBJECTIVES
@@ -46,42 +46,76 @@ Week # | Lesson #
 <a name="opening"></a>
 ## Opening (5 mins)
 
-todo
+In class so far we've primarily worked with regression problems: machine learning approaches to solving or predicting, a continuous set of values. Since regressions are continuous (for example, 1 is greater than 0, and 100 is greater than 1), we've been able to use distance to measure how accurately our prediction is.
+
+But, while predicting something like the cost of a house or number of clicks on an ad can exist within some range, other prediction problems, like if a loan is going to default or not, doesn't really have that range. It either is, or isn't!
+
+How do we try **build** a model to predict set values, like a status, color, or gender of a baby? Do the same principals apply from working on a regression problem?
 
 ---
 
 <a name="introduction-class"></a>
 ## Introduction: What is Classification (5 mins)
 
-todo
+**Classification** is a machine learning problem for solving a set value given the knowledge we have about that value.
+
+Many classification problems boil down to a *binary* problem. That is, it either _is_ something, or it _isn't_. For example, with patient data, one could be working on solving a treatment problem for smokers... but first we need to know if their medical history suggests, or is predictive, of the patient being a smoker or not.
+
+Even if it doesn't seem like a binary problem, say, predicting if a pixel in a picture is red or blue, it still can boil down to a *boolean* value: with the picture example, we could change the problem to "is red" or "is not red."
+
+Binary classification is the simplest form of classification, though a classification problem can certainly be wrapped around multiple _class labels_.
+
+### What is a class label?
+
+A class label is a representation of what we are trying to predict: our target. The examples of class labels from above would be:
+
+data problem | class labels
+-------------|--------------
+Patient data problem | is smoker, is not smoker
+pixel color | red, blue (green, orange, etc)
+
+The easiest way to understand if our `y`, the dependent variable, is a classification problem or not, is to see if the values can be ordered given math. For example, if predicting revenue, $100MM is greater than $90MM (and more so, could be negative!), so revenue prediction sounds like a _regression_ problem. Red is not greater than or less than blue (at least, not in this context), therefore predicting this pixel is a _classification_ problem, with "red" and "blue" as the class labels.
+
+<a name="guided-practice-class"></a>
+## Guided Practice: Regression or Classification? (20 mins)
+
+On your own, decide for each of the following situations if it is a regression problem, classification problem, or neither.
+
+1. Using the total number of explosions in a movie, predict if the movie is by JJ Abrams or Michael Bay.
+2. Determine how many tickets will be sold to a concert given who is performing, where, and the date and time.
+3. Given the temperature over the last year by day, predict tomorrow's temperature outside.
+4. Using data from four cell phone microphones, reduce the noisy sounds so the voice is crystal clear to the receiving phone.
+5. With customer data, determine if a user will return or not in the next 7 days to an e-commerce website.
+
+The primary difference between regression and classification is the _result_; the data used as input should resonate with what we've used in the past. In fact, writing a classifier could look a lot like control flow, a pattern in coding.
 
 <a name="independent-practice-class"></a>
 ## Independent Practice: Build a classifier! (20 mins)
+
+With our knowledge above on class labels and classification, we realize that it would be relatively straightforward to write a computer program that returns class labels based on some prior knowledge.
+
+Our goal below is to (re) explore the iris dataset, which has 50 samples of 3 different class labels, and see if we can write a program that classifies the data. We can do this very easily with python if-else statements and some pandas functions.
+
+Then, measure the _accuracy_ of your classifier using the math of "total correct" over "total samples."
+
+The classifier should be able to:
+
+1. Get one class label 100% correct: one of the irises is very easy to distinguish from the other 2.
+2. Accurately predict the majority of the other two, with some error: the samples for the remaining class labels are a little intertwined, so you may need to _generalize_.
+
+Here's some starter code to get you going:
 
 ```python
 from sklearn import datasets, neighbors, metrics
 import pandas as pd
 
 iris = datasets.load_iris()
-print iris.data
-print iris.targets
-```
-
-On a small dataset, we can solve for an "if-else" classifier: using some basic traits of the iris data set, build a classifier! Measure it's accuracy as total correct vs total rows (150).
-
-1. How simple could the if-else classifier be to still be _relatively_ accurate?
-2. How complicated could this if-else classifier be to be _completely_ accurate?
-3. **RECALL** Which if-else classifier would work better against iris data that it hasn't seen? Why is that the case?
-
-```python
 irisdf = pd.DataFrame(iris.data, names=iris.feature_names)
 irisdf['target'] = iris.target
 irisdf.plot('petal length (cm)', 'petal width (cm)', kind='scatter', c=irisdf.target)
 print irisdf.plot('petal length (cm)', 'petal width (cm)', kind='scatter', c=irisdf.target)
 print irisdf.describe()
-```
 
-```python
 # starter code
 def my_classifier(row):
     if row['petal length(cm)'] < 2:
@@ -90,7 +124,12 @@ def my_classifier(row):
         return 1
 
 predictions = irisdf.apply(my_classifier, axis=1)
+
 ```
+
+1. How simple could the if-else classifier be to still be _relatively_ accurate?
+2. How complicated could this if-else classifier be to be _completely_ accurate? How many if-else statements would you need, or nested if-else statements, in order to get the classifier 100% accurate?
+3. **RECALL** Which if-else classifier would work better against iris data that it hasn't seen? Why is that the case?
 
 ---
 
@@ -140,7 +179,7 @@ In regressions, we could use L1 regularization when we have significantly more f
 With KNN, we do _not_ have regularization, and a different problem: since KNN works with distance, higher dimensionality of data (more features) requires _significantly_ more samples in order to have the same predictive power. Consider it this way: with more dimensions, all points slowly start averaging out to be equally distant; this causes significant issues for KNN! Keep the feature space limited, and KNN can do well!
 
 <a name="ind-practice-knn"></a>
-## Independent Practice: Solving for K
+## Guided Practice: Solving for K
 
 One of the primary challenges of KNN is solving for k--how many neighbors do we use?
 
@@ -153,10 +192,15 @@ Use the following starter code to test and evaluate the following questions:
 2. How well does using (most of, all) the other points as neighbors perform?
 3. At what point, with cross validation, does k optimize accuracy?
 
+Look at the grid_scores and contextualize the results a bit more with a figure using matplotlib, where the x-axis represents `k`, and the y-axis represents accuracy.
+
 ```python
 from sklearn import grid_search
 
-params = {'n_neighbors': }# some n_list! keep in mind cross validation!}
+# some n_list! keep in mind cross validation!}
+# recall: what's an effective way to create a numerical list in python?
+params = {'n_neighbors': }
+
 gs = grid_search.GridSearchCV(
     estimator=,
     param_grid=,
