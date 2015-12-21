@@ -11,10 +11,10 @@ Week # | Lesson #
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Use NumPy and Pandas libraries to analyze datasets using basic summary statistics: mean, median, mode, max, min, quartile, inter-quartile, range, variance, standard deviation and correlation 
-- Create data visualization - scatter plots, scatter matrix, line graph, box blots, and histograms- to discern characteristics and trends in a dataset 
+- Use NumPy and Pandas libraries to analyze datasets using basic summary statistics: mean, median, mode, max, min, quartile, inter-quartile range, variance, standard deviation and correlation 
+- Create data visualization - line graph, box plots, and histograms- to discern characteristics and trends in a dataset (scatter plots will come in part 2)
 - Identify a normal distribution within a dataset using summary statistics and visualization
-- Variable types and dummy coding
+- Id variable types and complete dummy coding by hand
 
 
 ### STUDENT PRE-WORK
@@ -34,13 +34,13 @@ Week # | Lesson #
 | 5 min  | [Opening](#opening)  | Lesson Objectives  |
 | 10 min  | [Introduction](#introduction1)   | Laying the ground work |
 | 30 min  | [Codealong](#codealong1)  | Summary statistics in Pandas |
-| 5 min  | [Introduction](#introduction2)   | Is this normal? |
+| 10 min  | [Introduction](#introduction2)   | Is this normal? |
 | 15 min  | [Demo](#demo)   | Determining the distribution of your data |
 | 10 min  | [Guided Practice ](#guidedpractice2)  | Is this skewed?  |
-| 10 min  | [Introduction](#introduction3) | Variable types |
-| 15 min  | [Demo](#demo2)  | Classes |
-| 30 min  | [Independent Practice](#lab)  | Wash, rise, repeat |
-| 10 min  | [Conclusion](#conclusion)  | Review lab and lesson objectives |
+| 20 min  | [Introduction](#introduction3) | Variable types |
+| 10 min  | [Demo](#demo2)  | Classes |
+| 10 min  | [Independent Practice](#practice)  | Dummy colors |
+| 10 min  | [Conclusion](#conclusion)  | Review dummies and lesson objectives |
 | 15 min  | [Wrap-up](#wrapup)  | Project questions and Next Project|
 
 ---
@@ -153,7 +153,7 @@ Min = 38
 
 
 <a name="#codealong1"></a>
-## Codealong: Summary statistics in Pandas 
+## Codealong: Summary statistics in Pandas (30 min)
 ### Codealong Part 1: Basic Stats
 We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min from above.
 
@@ -204,7 +204,7 @@ To calculate the SD in pandas you have a couple of methods either the std or des
 The correlation is a quantity measuring the extent of interdependence of variable quantities. 
 
 <a name="introduction2"></a>
-## Introduction: Is this normal? (5 mins)
+## Introduction: Is this normal? (10 mins)
 A normal distribution is a key assumption to many models we will later be using. But what is normal? 
 
 Normal equation. The value of the random variable Y is:
@@ -222,17 +222,18 @@ In probability theory and statistics, skewness is a measure of the asymmetry of 
 **Kurtosis**  
 Kurtosis is a measure of whether the data are peaked or flat relative to a normal distribution.That is, data sets with high kurtosis tend to have a distinct peak near the mean, decline rather rapidly, and have heavy tails.
 
-
 <a name="demo"></a>
 ## Demo: Determining the distribution of your data (15 mins)
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
-Walk through images of normal, skewed, sigmodial etc distributions have students stand up and vote on the types
+Walk through images of normal, skewed, sigmod etc distributions have students stand up and vote on the types. Instructor note- Use your own work or check out this gallery for images of different distribution types - http://www.itl.nist.gov/div898/handbook/eda/section3/eda366.htm
+
 After each discuss methods of correcting the issue. 
 
-Skewed? centering on the mean or median
-Not smooth? log transformation
+For example: 
+Skewed? discuss centering on the mean or median
+Not smooth? log transformations
 Sigmodial? that's a feature- use logistic regression! 
 
 <a name="introduction3"></a>
@@ -247,20 +248,65 @@ Categorical variables are things such as race, gender, paint colors, movie title
 <a name="demo2"></a>
 ## Demo: Classes (15 mins)
 
-Class/Dummy Variables
-We have to represent categorical variables numerically, but we can't simply code it as 0=rural, 1=suburban, 2=urban because that would imply an **ordered relationship** between suburban and urban (and thus urban is somehow "twice" the suburban category).
+###Class/Dummy Variables
+Let's say we have a categorical variable called "area". It is saved in our dataset as one of the following strings:  
+*	"rural"  
+*	"suburban"  
+*	"urban"
+
+We have to represent categorical variables numerically, but we can't simply code it as 0=rural, 1=suburban, 2=urban because that would imply an **ordered relationship** between suburban and urban (and thus urban is somehow "twice" the suburban category). We do this by converting our 1 location variable into two new variables- area_urban and area_suburban. 
+
+####Instructor note- Draw this on the board:
+Using the example above lets draw out the table of how these varibles can be represented mathmatically without implying an order. We can do this with 0s and 1s. One of our categories will be all 0s- that will be our reference category. It is often good to select your reference category to be the group with 1) with the largest sample size 2) one that will help with your interpretations of your models. (e.g., often if you are testing for a disease the reference category will be those without the disease)
+
+Step 1: Select a reference category. Here we will choose rural as our reference. Because urban is our reference catefory we will not have to include it when we make our two new variables.
+
+Step 2. Convert the values urban, suburban and urban to a numeric reprensentation that does not imply an order. 
+
+Step 3. Create two new variables: area_urban and area_suburban
 
 Why do we only need **two dummy variables, not three?** Because two dummies capture all of the information about the Area feature, and implicitly defines rural as the reference level. (In general, if you have a categorical feature with k levels, you create k-1 dummy variables.)
 
-my_categorical_var_dummies = pd.get_dummies(my_categorical_var, prefix='Area').iloc[:, 1:]
+	| area_urban | area_suburban 
+--- | --- | ---
+rural | 0 | 0
+suburban | 0 | 1
+urban | 1 | 0 
 
-<a name="lab"></a>
-## Lesson 3 Lab (30 min)
+Great! Let's look at a second example. Let's say we have a category called gender with two categories 1. male and 2. female.  
+1. How many dummy variables will we have in our data set? (# of categories - 1 = 2-1 = 1)
+2. We will make male our reference so male will be coded 0, and female will be coded 1
+
+	| gender_female
+--- | ---
+male | 0
+female | 1
+
+We can do this in pandas with the "get_dummies" method. Let's checkit out in the demo.
+
+
+<a name="practice"></a>
+## Independent Practice: Dummy Colors (15 mins)
+It's important to understand the concept before we use get_dummies so today we will create dummies by hand. In future classes we will use get_dummies to create these. 
+
+Have each student draw a table like we did above on the white board or table. 
+Create dummy varibales for the variable "colors" that has 6 categories- blue, red, green, purple, grey, brown. Set grey as the reference. 
+
+Answer: 
+
+	| color_blue | color_red | color_green | color_purple | color_brown
+--- | --- | --- | --- | --- | --- 
+blue | 1 | 0 | 0 | 0 | 0
+red  | 0 | 1 | 0 | 0 | 0
+green | 0 | 0 | 1 | 0 | 0 
+purple | 0 | 0 | 0 | 1 | 0
+grey | 0 | 0 | 0 | 0 | 0
+brown | 0 | 0 | 0 | 0 | 1
 
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
-- Review questions from lab
+- Review questions from dummy practice
 - Review objectives from class 
 
 <a name="wrapup"></a>
