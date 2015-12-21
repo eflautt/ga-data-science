@@ -7,7 +7,7 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Experimental Design and Pandas
-Week # | Lesson #
+Week # 2 | Lesson # 3
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -185,7 +185,7 @@ The standard error of the mean (SEM) quantifies the precision of the mean. It is
 
 As the standard error of an estimated value generally increases with the size of the estimate, a large standard error may not necessarily result in an unreliable estimate. Therefore it is often better to compare the error in relation to the size of the estimate.
 
-Recall that the regression line is the line that minimizes the sum of squared deviations of prediction (also called the sum of squares error). The standard error of the estimate is closely related to this quantity and is defined below:
+The regression line is the line that minimizes the sum of squared deviations of prediction (also called the sum of squares error). The standard error of the estimate is closely related to this quantity and is defined below:
 
          σest = sqrt((sum(Y-Y')^2)/N )
 
@@ -193,7 +193,7 @@ where σest is the standard error of the estimate, Y is an actual score, Y' is a
 
 
 #### Codealong Part 3
-To calculate the SD in pandas you have a couple of methods either the std or describe. 
+To calculate the variance and SD in pandas.
 
 	Methods include: 
 		.std() - Compute Standard Deviation
