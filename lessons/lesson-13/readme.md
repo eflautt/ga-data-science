@@ -12,15 +12,18 @@ Week # | Lesson 13
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Understand what natural language processing is and common tasks associated with it
+- Define natural language processing
+- List common tasks associated with:
   - use-cases
-  - tokenization, tagging and parsing
-- Understand how to classify text or documents using `scikit-learn`
+  - tokenization
+  - tagging 
+  - parsing
+- Demonstrate how to classify text or documents using `scikit-learn`
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 - Experience with sckit-learn classifiers, specifically Random Forests and Decision trees
-- Install `spacy` with `pip install spacy` (or have Anaconda)
+- Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
   ```python
   python -m spacy.en.download --force all
@@ -28,7 +31,7 @@ Week # | Lesson 13
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Install `spacy` with `pip install spacy` (or have Anaconda)
+- Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
   ```python
   python -m spacy.en.download --force all
@@ -37,8 +40,7 @@ Week # | Lesson 13
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
-| 5 min  | [Opening](#opening)  |  |
-| 20 mins  | [Review](#review)   | Decision Trees and Random Forests  |
+| 10 min  | [Opening](#opening)  | Decision Trees and Random Forests |
 | 30 mins  | [Introduction](#introduction-nlp)   | Natural Language Processing (NLP)  |
 | 30 mins  | [Demo](#demo-spacy)  | NLP with spacy in Python  |
 | 30 mins  | [Introduction](#introduction-classification)   | Text Classification  |
@@ -47,9 +49,11 @@ Week # | Lesson 13
 | 10 mins  | [Conclusion](#conclusion)  |   |
 
 ---
-<a name="review"></a>
+<a name="opening"></a>
 ## Review: Decision Trees and Random Forests  (10 mins)
-Revisit Decision Trees and Random Forest
+Recall definitions of Decision Trees and Random Forests from previous lesson.
+
+**Check:** What are some important features of decision trees and random forests?
   - Decision trees are weak learners that are easy to overfit
   - Random forests are strong models that made up a collection of decision trees
     - They are non-linear (while logistic regression is linear)
@@ -61,65 +65,72 @@ Revisit Decision Trees and Random Forest
 
 ### What is Natural Language Procesing (NLP)
 
-Natural language processing is the task of extracting meaning and information from text documents. There are many pieces of information we want to extract.  These might include simple classification tasks, such as deciding what category a piece of text falls into, what tone it has, or more complex tasks such as translating or summarizing the text.
+Natural language processing is the task of extracting meaning and information from text documents. There are many pieces of information we want to extract.  These might include simple classification tasks, such as deciding what category a piece of text falls into or what tone it has as well as more complex tasks like translating or summarizing text.
 
 Most AI or assistant systems are typically powered by fairly advanced NLP engine. A system like Siri uses voice-to-transcription to record the command and then various NLP algorithms to identify the question asked and possible answers.
 
-For any of the task, from classification to translation, a fair amount pre-processing is required to make the text digestible for our algorithms. Typically we need to add some structure to the text (unstructured data) before we can make decisions based on it.
+For any of the tasks, from classification to translation, a fair amount pre-processing is required to make the text digestible for our algorithms. Typically we need to add some structure to the text (unstructured data) before we can make decisions based on it.
+
 
 ### Tokenization
 
-Tokenization is the task of separating a sentence into it's constiuients, or **tokens**. How do we know what the "words" are in the sentence? While this may seem easy (we can also separate on spaces) it becomes more complex when we consider unusual punctuation (common in social media) or different conventions.
+Tokenization is the task of separating a sentence into it's constiuient parts, or **tokens**. How do we know what the "words" are in a particular sentence? While this may seem easy (for example, we can separate words using spaces or pauses) it becomes more complex when we consider unusual punctuation (common in social media) or different language conventions.
 
-For example in sentence:
+For example, can you spot any potential difficulties with this sentence?
 _The L.A. Lakers won the NBA championship in 2010, defeating the Boston Celtics._
 
-For proper analysis, we need to identify that:
+
+To perform a proper analysis, we need to be able to identify that:
 - The periods in _L.A._ don't mark the end of a sentence but an abbreviation.
 - _L.A. Lakers_ and _Boston Celtics_ are one concept.
 - _"2010"_ is the word used, not _"2010,"_
 
+
 ### Lemmatization and Stemming
 
-Lemmatization and stemming are two related problems. Once we've identified the **tokens** of the text, can we identify the common roots?
+As we've seen, not only can abbreviations, proper nouns, and dates pose a problem, but other language features also have to be broken down. Consider the terms 'bad' and 'badly', or 'different' and 'differences'. How can we describe the relationship between these terms?
 
-How can we know that 'bad' and 'badly' are related? Or 'different' and 'differences'?
+Stemming and lemmatization are two solutions to this type of problem. Once we've identified the **tokens** of our sample text, we can use these tools to identify common roots.
 
-**Stemming** is a crude process of removing common ending from sentences:
-  - Remove endings with `s`, `es`, `ly`, `ing`, `ed`.
+**Stemming** is a crude process of removing common endings from sentences:
+  - Stemming removes endings with `s`, `es`, `ly`, `ing`, and `ed`.
 
 This is useful so that we can treat the word `happy` and `happily` similarly. 
 
-There are many well-known stemmers that know many of these common endings, most notable the [Porter stemmer]()
+There are many well-known stemmer functions that can import many of these common endings, most notably the [Porter stemmer](http://tartarus.org/martin/PorterStemmer/).
 
-**Lemmatization** attempts to accomplish the same task, but does so by attempting to use more specific grammar and language rules. Traditionally, lemmatizer will have a collection of grammar rules to follow to perform the task. 
+**Lemmatization** is a more refined version that attempts to accomplish the same goal as stemming, but uses specific language and grammar rules to do so. A lemmatizer relies on a large collection of pre-defined grammar rules to perform this task.
 
-For example, we can identify that "bad" and "badly" are similar using stemming.  However, we can't identify that that "better" and "best" are similar with the same heuristics. We need to use something more complex like lemmatization
+For example, we can identify that "bad" and "badly" are similar using stemming.  However, this heuristic won't be able to tell that "better" and "best" are similar. That's where lemmatization comes in handy.
+
+**Check:** Can you think of other problem words or phrases that might require these tools?
 
 ### Parsing and Tagging
 
-Another classic NLP problem is _parsing_ text and _tagging_. Can we identify the various elements of the sentence (**tagging**) and their dependencies (**parsing**). If we can, we can identify the actions and actors in the text and make decisions based on it. 
+Another classic NLP problem involves _parsing_ text and _tagging_. In order to understand the various elements of a sentence, we need to **tag** important topics and **parse** their dependencies. Our goal is to successfully identify the actors and actions in the text in order to make informed decisions. 
 
-If we are processing financial news, can we identify the companies and the actions that they are taking? Do we need to create an alert when a certain company releases a new product?  
+For example if we are processing financial news, we might need to identify which companies are involved and any actions they are taking. We would then be able to create an alert when a specific company releases a new product.  
 
-If we are writing an assistant application, can we identify command phrases and what was asked for? 'Siri, what time is my next appointment'.
+Alternatively, if we are writing an assistant application, we might need to identify command phrases and determine what is being asked. For instance, given the phrase: 'Siri, what time is my next appointment?' what needs to be tagged and what needs to be parsed?
 
-This problem is made up a few overlapping subproblems:
-  - Part of speech tagging:
-    - Can we identify what part of speech each word in a sentence is? Noun, verb, etc.
-  - Chunking
-    - Can we identify the various pieces of the sentences, i.e., noun phrases or verb phrases
-  - Named entity recognition
-    - Can we identify _what_ the nouns are. Are they people or locations?
+Tagging and parsing is in fact made up of a few overlapping sub-problems:
+  - "Part of speech" tagging:
+    - Can we identify the parts of speech in a sentence? Which is the noun, verb, adjective, etc?
+  - Chunking:
+    - Can we identify the pieces of the sentence that go together in meaningful chunks? For instance, noun or verb phrases?
+  - Named entity recognition:
+    - Can we identify *specific* proper nouns? Can we pick out people and locations?
 
-**Check:** Have the students identify applications of NLP in their jobs and/or final projects
+As you can see, NLP requires a large number of overlapping rules and dictionaries; however, the potential benefits are enormous.
+
+**Check:** Can you identify how NLP could be applied within your jobs or final projects?
 
 ***
 
 <a name="demo-spacy"></a>
-## Demo / Codealong: Natural Language Processing with spaCy
+## Demo / Codealong: Natural Language Processing with 'spacy'
 
-Most of the techniques for pre-processing text for the natural language tasks use large collections of annotated text to learn rules about language. There many of these systems for English and many popular languages, but other languages tend to have less tools available. Each tool typically using a large amount of data to learn rules and general patterns for it's task. Many require large databases of special-cases since their are many tricky aspects of the English-language.
+Most techniques for natural language tasks involve pre-processing large collections of annotated text in order to learn specific rules about language. There are many of these systems in-use for English and other popular languages, but some languages tend to have fewer tools available. Each tool typically uses a large amount of data to learn general rules and patterns for its task. Many require large databases of special use-cases since languages like English have tons of inconsistencies.å
 
 Two popular NLP toolkits in Python are `nltk` and `spacy`. While `nltk` has been one of the most popular, it has not kept up with advances in NLP and has not been well maintained. `spacy`, while more modern, is not available for commericial-use.
 
