@@ -178,7 +178,7 @@ For instance, revisiting our previous example, we might ask questions like:
 - etc.
 
 This model is attempting to recreate the articles exactly as opposed to learning a general trend. An unconstrained decision tree can learn a fairly extreme tree:
-![](./assets/images/complex-tree.png)
+![](./assets/images/complex-tree-min.png)
 
 We can limit this function in decision trees using a few methods:
   - Limiting the number of questions (nodes) a tree can have
