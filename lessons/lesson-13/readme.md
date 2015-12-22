@@ -88,7 +88,7 @@ To perform a proper analysis, we need to be able to identify that:
 
 ### Lemmatization and Stemming
 
-As we've seen, not only can abbreviations, proper nouns, and dates pose a problem, but other language features also have to be broken down. Consider the terms 'bad' and 'badly', or 'different' and 'differences'. How can we describe the relationship between these terms?
+Abbreviations, proper nouns, and dates can pose a problem but there are many other language features that also have to be broken down. Consider the terms 'bad' and 'badly' or 'different' and 'differences'. How can we describe the relationship between these terms?
 
 Stemming and lemmatization are two solutions to this type of problem. Once we've identified the **tokens** of our sample text, we can use these tools to identify common roots.
 
@@ -114,7 +114,7 @@ For example if we are processing financial news, we might need to identify which
 Alternatively, if we are writing an assistant application, we might need to identify command phrases and determine what is being asked. For instance, given the phrase: 'Siri, what time is my next appointment?' what needs to be tagged and what needs to be parsed?
 
 Tagging and parsing is in fact made up of a few overlapping sub-problems:
-  - "Part of speech" tagging:
+  - "Parts of speech" tagging:
     - Can we identify the parts of speech in a sentence? Which is the noun, verb, adjective, etc?
   - Chunking:
     - Can we identify the pieces of the sentence that go together in meaningful chunks? For instance, noun or verb phrases?
@@ -123,22 +123,22 @@ Tagging and parsing is in fact made up of a few overlapping sub-problems:
 
 As you can see, NLP requires a large number of overlapping rules and dictionaries; however, the potential benefits are enormous.
 
-**Check:** Can you identify how NLP could be applied within your jobs or final projects?
+**Check:** How might NLP be applied within your current jobs or final projects? What are some potential use-cases?
 
 ***
 
 <a name="demo-spacy"></a>
 ## Demo / Codealong: Natural Language Processing with 'spacy'
 
-Most techniques for natural language tasks involve pre-processing large collections of annotated text in order to learn specific rules about language. There are many of these systems in-use for English and other popular languages, but some languages tend to have fewer tools available. Each tool typically uses a large amount of data to learn general rules and patterns for its task. Many require large databases of special use-cases since languages like English have tons of inconsistencies.å
+Most techniques for NLP involve pre-processing large collections of annotated text in order to learn specific language rules. There are many of these systems in-use for English and other popular languages, but some languages tend to have fewer tools available. Each tool typically uses a large amount of data to learn general rules and patterns for its task. Many require large databases of special use-cases, since languages like English are full of inconsistencies.
 
-Two popular NLP toolkits in Python are `nltk` and `spacy`. While `nltk` has been one of the most popular, it has not kept up with advances in NLP and has not been well maintained. `spacy`, while more modern, is not available for commericial-use.
+Two popular NLP toolkits in Python are `nltk` and `spacy`. `nltk` is the most popular, but it hasn't kept up with advances and isn't very well maintained. `spacy` is more modern, but isn't available for commercial-use.
 
-We will utilize `spacy` in this class; `nltk` has a similar interface and similar functionality. Most of the utilities and individual tasks have their own very specialized tools available as well.
+We'll be using `spacy` in this class, although `nltk` has a similar interface and functionality. Most of the utilities and individual tasks we'll be performing also have their own specialized tools available as well.
 
 Let's start by attempting to process some of the titles. 
 
-`spacy` has very simple interface. You will load an NLP toolkit depending on the language
+First, we'll load our NLP toolkit by specifying the language:
 
   ```python
   from spacy.en import English
@@ -147,8 +147,8 @@ Let's start by attempting to process some of the titles.
   ```
 
   This toolkit has 3 pre-processing engines.
-    - a tokenizer: to identify the tokens (or words)
-    - a tagger: to identify _what_ the words are
+    - a tokenizer: to identify the word tokens
+    - a tagger: to identify the concepts described by the words
     - a parser: to identify the phrases and links between the different words
 
 Each of these pre-processing can be overridden with a specific tool you have (you may want a specialized tokenizer or stock quotes or instagram posts compared to news headlines). You could write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides, but we will use the defaults for now.
