@@ -136,11 +136,11 @@ Let's build a sample tree for our evergreen prediction problem. Assume our featu
 
 First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe feature.
 
-![](./assets/single-node-tree.png)
+![](./assets/images/single-node-tree.png)
 
 Then, we take each side of the tree and repeat the process, choosing the feature that best splits the remaining samples. 
 
-![](./assets/depth-2-tree.png)
+![](./assets/images/depth-2-tree.png)
 
 As you can see the best feature is different on both sides of this tree, which shows the interaction of features. If the article does not contain 'recipe', then we care about the image_ratio, but otherwise we don't.
 
@@ -178,7 +178,7 @@ For instance, revisiting our previous example, we might ask questions like:
 - etc.
 
 This model is attempting to recreate the articles exactly as opposed to learning a general trend. An unconstrained decision tree can learn a fairly extreme tree:
-![](./assets/complex-tree-min.png)
+![](./assets/images/complex-tree.png)
 
 We can limit this function in decision trees using a few methods:
   - Limiting the number of questions (nodes) a tree can have
