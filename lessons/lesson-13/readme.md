@@ -128,7 +128,7 @@ As you can see, NLP requires a large number of overlapping rules and dictionarie
 ***
 
 <a name="demo-spacy"></a>
-## Demo / Codealong: Natural Language Processing with 'spacy'
+## Demo / Codealong: Natural Language Processing with 'spacy' (30 mins)
 
 Most techniques for NLP involve pre-processing large collections of annotated text in order to learn specific language rules. There are many of these systems in-use for English and other popular languages, although some languages tend to have fewer tools available. Each tool typically requires a large amount of data in order to learn general rules and patterns for its task. Many also require large databases of special use-cases, since languages like English are full of inconsistencies and slang.
 
@@ -264,7 +264,7 @@ In the last few years, there has been less focus on the rule-based systems seen 
 ***
 
 <a name="introduction-classification"></a>
-## Introduction: Text Classification (20 mins)
+## Introduction: Text Classification (30 mins)
 
 Text classification is the task of predicting what category or topic a piece of text is from. For example, we may want to identify whether an article is a sports or a business story.  We may also want to identify whether an article is positive or negative in sentiment.
 
@@ -299,7 +299,7 @@ Classification using words from the text as features is known as **bag-of-words*
 ***
 
 <a name="demo-text-sklearn"></a>
-## Demo / Codealong: Text Processing in scikit-learn (# mins)
+## Demo / Codealong: Text Processing in scikit-learn (30 mins)
 
 Scikit-learn has many pre-processing utilities that simplify many of the tasks required to convert text into features for a model. These can be found in the `sklearn.preprocesing.text` package.
 
@@ -311,11 +311,12 @@ There are built-in utilities to pull out features from text in `scikit-learn` - 
 
 `CountVectorizer` takes a column of text and creates a new dataset - one row per piece of text (i.e. one row per title) and generates a feature for **every** word in the all of the titles.
 
-REMEMBER: Using all of the words can be very useful, but we need to remember to use regularization to avoid overfitting. Otherwise, using a rare words may result in the model learning something when it is not generalizable.
+REMEMBER: Using all of the words can be very useful, but we also need to remember to use regularization to avoid overfitting. Otherwise, using rare words may result in the model learning something that isn't generalizable.
 
-For example, if we attempting to predict sentiment and see an article that has the word "bessst!", we may link this word to positive sentiment. But, very few articles in the future may use this word, so it may not be useful to keep in our model. 
+For example, if we are attempting to predict sentiment and see an article that has the word "bessst!", we may link this word to positive sentiment. However, very few articles may ever use this word, so it isn't actually very useful for our model. 
 
-```python
+```
+python
 from sklearn.feature_extraction.text import CountVectorizer
 
 vectorizer = CountVectorizer(max_features = 1000, 
@@ -325,30 +326,29 @@ vectorizer = CountVectorizer(max_features = 1000,
 ```
 
 
-`CountVectorizer` arguments
-        - `ngram_range` - a range of of length of phrases to use 
-            - `(1,1)` means use all single words
-            - `(1,2)` all contiguous pairs of words
-            - `(1,3)` all triples etc.
-        - `stop_words='english'`
-           - Stop words are non-content words - (to, the, it, at, what).  
-           - They aren't helpful for prediction (most of the time) and this parameter removes them.
-        - `max_features=1000` 
-          - maximum number of words to consider (uses the first N most frequent)
-        - `binary=True` 
-          - to use a dummy column as the entry (1 or 0, as opposed to the count)
-          - This is useful if you think a word appearing 10 times is not more important than whether the word appearing at all.
+`CountVectorizer` arguments:
+- `ngram_range` - a range of of length of phrases to use
+    - `(1,1)` means use all single words
+    - `(1,2)` all contiguous pairs of words
+    - `(1,3)` all triples etc.
+- `stop_words='english'`
+    - Stop words are non-content words (e.g. 'to', 'the', 'it', 'at'). They aren't helpful for prediction (most of the time) so this parameter removes them.
+- `max_features=1000`
+    - Maximum number of words to consider (uses the first N as most frequent)
+- `binary=True`
+    - To use a dummy column as the entry (1 or 0, as opposed to the count). This is useful if you think a word appearing 10 times is not more important than whether the word appears at all.
 
-Like models or estimators in `scikit-learn`, vectorizers follow a similar interface.  
+Like models or estimators in `scikit-learn`, vectorizers follow a similar interface:  
   - We create a vectorizer object with the parameters of our feature space. 
   - We `fit` a vectorizer to learn the vocabulary
   - We `transform` a set of text into that feature space.
 
-The distinction of `fit` and `transform` when it comes to splitting datasets into training and test sets. We want to fit (or learn our vocabulary) from our training set. Since choosing features is a part of our model building process, we **should not** look at our test set to do this.
+There is a distinction between `fit` and `transform` when it comes to splitting datasets into 'training' and 'test' sets. We want to fit (i.e. learn our vocabulary) from our training set. Since choosing features is a part of our model building process, we **should not** look at our test set to do this.
 
-Whenever we want to make predictions, we will need to create a new data point that contains **exactly** the same columns as our model.  If feature 234 in our model represents the word 'cheeseburger', then we need to make sure our test or future example also has 'cheeseburger' as feature 234. We can use`transform` to do perform this conversion on the test set (and any future dataset) in the same way.
+Whenever we want to make predictions, we will need to create a new data point that contains **exactly** the same columns as our model. If feature 234 in our model represents the word 'cheeseburger', then we need to make sure our test or future example also has 'cheeseburger' as feature 234. We can use `transform` to perform this conversion on the test set (and any future dataset) in the same way.
 
-```python
+```
+python
 
 titles = data['title'].fillna('')
 
@@ -366,9 +366,11 @@ vectorizer.fit(titles)
 X = vectorizer.transform(titles)
 ```
 
-- Build a random forest model to predict evergreeness of a website using the title features
+#### Random Forest Prediction Model
+Build a random forest model to predict evergreeness of a website using the title features
 
-```python
+```
+python
 from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier(n_estimators = 20)
@@ -388,25 +390,26 @@ print('CV AUC {}, Average AUC {}'.format(scores, scores.mean()))
 
 #### Term Frequency - Inverse Document Frequency (TF-IDF)
 
-An alternative representation of, rather than the _bag-of-words_ approach from `CountVectorizer` is a TF-IDF representation.  TF-IDF stands for Term Frequency - Inverse Document Frequency.
+An alternative representation of the _bag-of-words_ approach from `CountVectorizer` is a TF-IDF representation. TF-IDF stands for **Term Frequency - Inverse Document Frequency**.
 
-As opposed to using the count of words as features, TF-IDF uses the product of two intermediate values, the Term Frequency and the Inverse Document Frequency.
+As opposed to using the count of words as features, TF-IDF uses the product of two intermediate values, the _Term Frequency_ and the _Inverse Document Frequency_.
 
-The Term Frequency is equivalent to the `CountVectorizer` features, the number of times (or count) that a word appear in the document.  This is our most basic representation of text.
+The Term Frequency is equivalent to `CountVectorizer` features, or the number of times (i.e. 'count') that a word appears in the document. This is our most basic representation of text.
 
-To define Inverse Document Frequency, first let's define Document Frequency.  **Document Frequency** is the % of documents that a particular word appears in.  For example, you could assume `the` appears in 100% of documents, while words like `Syria` would have low document frequency.  
+To define Inverse Document Frequency, first let's define Document Frequency. **Document Frequency** is the % of documents that a particular word appears in. For example, you could assume `the` appears in 100% of documents, while words like `Syria` would have relatively low document frequency.  
 
-**Inverse Document Frequency** is simply `1 / Document Frequency` (although frequently this is altered to `log(1 / Document Frequency)`). 
+**Inverse Document Frequency** is simply `1 / Document Frequency` (although sometimes this is altered to `log(1 / Document Frequency)`). 
 
 Looking at our final term:
   Term Frequency * Inverse Document Frequency 
   = Term Frequency / Document Frequency.  
 
-The intuition behind a TF-IDF representation is that words that have high weight are those that either appear frequently in this document or appear in rarely in other documents (somehow unique to this document).
+The intuition behind a TF-IDF representation is that words that have high weight are those that either appear frequently in this document or appear rarely in other documents (therefore unique to this document).
 
 This is a good alternative to using a static set of stop-words.
 
-```python
+```
+python
 from sklearn.feature_extraction.text import TfidfVectorizer
 vectorizer = TfidfVectorizer()
 
@@ -414,37 +417,38 @@ vectorizer = TfidfVectorizer()
 
 `TfidfVectorizer` follows the same `fit` and `fit_transform` interface of `CountVectorizer`.
 
-**Check:** Have the student use `TfidfVectorizer` to create a feature representation of the titles.
+**Check:** What does TF-IDF stand for? What does this function do and why is it useful?
+**Check:** Use `TfidfVectorizer` to create a feature representation of the stumbleupon titles.
 
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Text Classification in scikit-learn (# minutes)
+## Independent Practice: Text Classification in scikit-learn (30 mins)
 
-- Tie together the text features of the title with one more feature sets from the previous random forest model. Train and model and see if this improves the AUC.
+- Tie together the text features of the title with one more feature sets from the previous random forest model. Train this model to see if this improves the AUC.
 - Use the `body` text instead of the `title` text - is this an improvement?
 - Use `TfIdfVectorizer` instead of `CountVectorizer` - is this an improvement?
 
-**Check:** Can the student prepare a model that uses both quantitative features and text features? Does this model improve the AUC?
+**Check:** Were you able to prepare a model that uses both quantitative features and text features? Does this model improve the AUC?
 
 ***
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 
+Let's review:
 - Natural language processing is the task of pulling meaning and information from text
-- This typically involves solving many subproblems - tokenizing, cleaning (stemming and lemmatization) and parsing.
-- After we have structured our text somewhat, we can use the identified features of the text for other tasks: classification, summarization, translation.
-- In `scikit-learn` we use vectorizers to create text features for classification, either `CountVectorizer` or `TfIdfVectorizer`
-
+- This typically involves solving many subproblems, including: tokenizing, cleaning (stemming and lemmatization) and parsing.
+- After we have structured our text, we can identified features for other tasks, including: classification, summarization, and translation.
+- In `scikit-learn` we use vectorizers to create text features for classification, such as `CountVectorizer` or `TfIdfVectorizer`
 
 ***
+
 
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | |
-| **UPCOMING PROJECTS**  | |
+| **UPCOMING PROJECTS**  | [Final Project, Part 2](#) is due next class |
 
 ### ADDITIONAL RESOURCES
 - [Natural Language Understanding: Foundations and State of the Art](icml.cc/2015/tutorials/icml2015-nlu-tutorial.pdf)
