@@ -448,7 +448,7 @@ Let's review:
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **UPCOMING PROJECTS**  | [Final Project, Part 2](#) is due next class |
+| **UPCOMING PROJECTS**  | [Final Project, Part 2](../../../projects/final-projects/02-experiment-writeup/readme.md) is due next class |
 
 ### ADDITIONAL RESOURCES
 - [Natural Language Understanding: Foundations and State of the Art](icml.cc/2015/tutorials/icml2015-nlu-tutorial.pdf)
