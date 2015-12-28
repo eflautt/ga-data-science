@@ -65,16 +65,16 @@ Recall definitions of Decision Trees and Random Forests from previous lesson.
 
 ### What is Natural Language Procesing (NLP)
 
-Natural language processing is the task of extracting meaning and information from text documents. There are many pieces of information we want to extract.  These might include simple classification tasks, such as deciding what category a piece of text falls into or what tone it has as well as more complex tasks like translating or summarizing text.
+Natural language processing is the task of extracting meaning and information from text documents. There are many types of information we might want to extract; these include simple classification tasks, such as deciding what category a piece of text falls into or what tone it has, as well as more complex tasks like translating or summarizing text.
 
-Most AI or assistant systems are typically powered by fairly advanced NLP engine. A system like Siri uses voice-to-transcription to record the command and then various NLP algorithms to identify the question asked and possible answers.
+Most AI assistant systems are typically powered by fairly advanced NLP engines. A system like Siri uses voice-to-transcription to record a command and then various NLP algorithms to identify the question asked and possible answers.
 
-For any of the tasks, from classification to translation, a fair amount pre-processing is required to make the text digestible for our algorithms. Typically we need to add some structure to the text (unstructured data) before we can make decisions based on it.
+For any of these tasks, from classification to translation, a fair amount pre-processing is required to make the text digestible for our algorithms. Typically we need to add some structure to the text (unstructured data) before we can make decisions based on it.
 
 
 ### Tokenization
 
-Tokenization is the task of separating a sentence into it's constiuient parts, or **tokens**. How do we know what the "words" are in a particular sentence? While this may seem easy (for example, we can separate words using spaces or pauses) it becomes more complex when we consider unusual punctuation (common in social media) or different language conventions.
+Tokenization is the task of separating a sentence into it's constituent parts, or **tokens**. How do we know what the "words" are in a particular sentence? While this may seem easy (for example, we can separate words using spaces or pauses) it becomes more complex when we consider unusual punctuation (common in social media) or different language conventions.
 
 For example, can you spot any potential difficulties with this sentence?
 _The L.A. Lakers won the NBA championship in 2010, defeating the Boston Celtics._
@@ -88,7 +88,7 @@ To perform a proper analysis, we need to be able to identify that:
 
 ### Lemmatization and Stemming
 
-Abbreviations, proper nouns, and dates can pose a problem but there are many other language features that also have to be broken down. Consider the terms 'bad' and 'badly' or 'different' and 'differences'. How can we describe the relationship between these terms?
+Abbreviations, proper nouns, and dates can pose a problem, but there are many other language features that also have to be broken down. Consider the terms 'bad' and 'badly' or 'different' and 'differences'. How can we describe the relationships between these terms?
 
 Stemming and lemmatization are two solutions to this type of problem. Once we've identified the **tokens** of our sample text, we can use these tools to identify common roots.
 
@@ -99,7 +99,7 @@ This is useful so that we can treat the word `happy` and `happily` similarly.
 
 There are many well-known stemmer functions that can import many of these common endings, most notably the [Porter stemmer](http://tartarus.org/martin/PorterStemmer/).
 
-**Lemmatization** is a more refined version that attempts to accomplish the same goal as stemming, but uses specific language and grammar rules to do so. A lemmatizer relies on a large collection of pre-defined grammar rules to perform this task.
+**Lemmatization** is a more refined version that attempts to accomplish the same goal as stemming, but does so by using specific language and grammar rules. A lemmatizer relies on a large collection of pre-defined grammar rules to perform this type of task.
 
 For example, we can identify that "bad" and "badly" are similar using stemming.  However, this heuristic won't be able to tell that "better" and "best" are similar. That's where lemmatization comes in handy.
 
@@ -111,11 +111,11 @@ Another classic NLP problem involves _parsing_ text and _tagging_. In order to u
 
 For example if we are processing financial news, we might need to identify which companies are involved and any actions they are taking. We would then be able to create an alert when a specific company releases a new product.  
 
-Alternatively, if we are writing an assistant application, we might need to identify command phrases and determine what is being asked. For instance, given the phrase: 'Siri, what time is my next appointment?' what needs to be tagged and what needs to be parsed?
+Alternatively, if we are writing an assistant application, we might need to identify specific command phrases in order to determine what is being asked. For instance, given the phrase: 'Siri, what time is my next appointment?' what needs to be tagged and what needs to be parsed?
 
 Tagging and parsing is in fact made up of a few overlapping sub-problems:
   - "Parts of speech" tagging:
-    - Can we identify the parts of speech in a sentence? Which is the noun, verb, adjective, etc?
+    - What are the parts of speech in a sentence? Which is the noun, verb, adjective, etc?
   - Chunking:
     - Can we identify the pieces of the sentence that go together in meaningful chunks? For instance, noun or verb phrases?
   - Named entity recognition:
@@ -130,7 +130,7 @@ As you can see, NLP requires a large number of overlapping rules and dictionarie
 <a name="demo-spacy"></a>
 ## Demo / Codealong: Natural Language Processing with 'spacy'
 
-Most techniques for NLP involve pre-processing large collections of annotated text in order to learn specific language rules. There are many of these systems in-use for English and other popular languages, but some languages tend to have fewer tools available. Each tool typically uses a large amount of data to learn general rules and patterns for its task. Many require large databases of special use-cases, since languages like English are full of inconsistencies.
+Most techniques for NLP involve pre-processing large collections of annotated text in order to learn specific language rules. There are many of these systems in-use for English and other popular languages, although some languages tend to have fewer tools available. Each tool typically requires a large amount of data in order to learn general rules and patterns for its task. Many also require large databases of special use-cases, since languages like English are full of inconsistencies and slang.
 
 Two popular NLP toolkits in Python are `nltk` and `spacy`. `nltk` is the most popular, but it hasn't kept up with advances and isn't very well maintained. `spacy` is more modern, but isn't available for commercial-use.
 
@@ -151,14 +151,14 @@ First, we'll load our NLP toolkit by specifying the language:
     - a tagger: to identify the concepts described by the words
     - a parser: to identify the phrases and links between the different words
 
-Each of these pre-processing can be overridden with a specific tool you have (you may want a specialized tokenizer or stock quotes or instagram posts compared to news headlines). You could write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides, but we will use the defaults for now.
+Each of these pre-processing tasks can be overridden with a specific tool you have (you may want a specialized tokenizer that looks for stock quotes or instagram posts instead of news headlines). You could also write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides. For now, we'll use the defaults.
 
 The first title is:
  > IBM Sees Holographic Calls, Air Breathing Batteries
 
  [http://www.bloomberg.com/news/articles/2010-12-23/ibm-predicts-holographic-calls-air-breathing-batteries-by-2015](http://www.bloomberg.com/news/articles/2010-12-23/ibm-predicts-holographic-calls-air-breathing-batteries-by-2015)
 
- From this we may wish to extract that it references a company and the company is referencing a new possible product: air-breathing batteries.
+ From this we may wish to extract that the article references a company and that the company is referencing a new possible product: air-breathing batteries.
 
  ```python
 
@@ -173,11 +173,12 @@ The first title is:
     print("\t Parent of this word: {}".format(word.head.lemma_))
 ```
 
-The `nlp_toolkit` here runs each of the individual pre-processing tools. First tokenizing the sentence, identifying the components and building an interpretation of the sentence.
+The `nlp_toolkit` here runs each of the individual pre-processing tools: first it tokenizes the sentence, then it identifies the components, and finally it builds an interpretation of the sentence.
 
 Output:
 
-```Word: IBM 
+```
+Word: IBM 
    Phrase type: nsubj
    Is the word a known entity type? ORG
    Lemma: ibm
@@ -228,7 +229,8 @@ In this output,
 
 We can also use this to find all titles that discuss an organization.
 
-```python
+```
+python
 def references_organization(title):
   parsed = nlp(title)
   return any([word.ent_type_ == 'ORG' for word in parsed])
@@ -238,10 +240,11 @@ data['references_organization'] = data['title'].fillna('').map(references_organi
 data[data['references_organization']][['title']].head()
 ```
 
-**Check:** Write function to identify titles that have mention an organization (ORG) and person (PERSON)
+**Check:**  Write function to identify titles that have mention an organization (ORG) and person (PERSON)
 
 Solution:
-```python
+```
+python
 def references_organization_and_person(title):
     parsed = nlp(title)
     has_org = any([word.ent_type_ == 'ORG' for word in parsed])
@@ -254,55 +257,57 @@ data[data['references_organization_and_person']][['title']].head()
 
 ### Common Problems in NLP
 
-It's important to keep in mind that each of these subtasks are still very difficult because of the complexity of language. Most often we are looking for heuristics to search through large amounts of text data. There is still a lot of active research in each of these areas.
+It's important to keep in mind that each of these subtasks are still very difficult because of the complexity of language. Most often we are looking for heuristics to search through large amounts of text data. There is still a lot of active research being done in each of these areas.
 
-In the last few years there has been less focus on the rule-based systems seen here to more flexible approaches. While these techniques first attempt to uncover the rules of the language and then use those rules to understand text, modern approaches do not attempt to _parse_ or understand the structure of a sentence and instead just rely on what words are used.
-
-We will see those approaches in the next class.
+In the last few years, there has been less focus on the rule-based systems seen here. Instead, researchers are looking for more flexible approaches. While older techniques first attempt to uncover the rules of the language and then use those rules to understand text, modern approaches do not attempt to _parse_ or understand the structure of a sentence first. Instead, they just rely on which words are being used. We'll see an example of these modern approaches in the next class.
 
 ***
 
 <a name="introduction-classification"></a>
 ## Introduction: Text Classification (20 mins)
 
-Text classification is the task of predicting what category or topic a piece of text is from. We may want to identify whether an article is a sports or a business story.  We may want to identify whether an article is positive in sentiment or negative in sentiment.
+Text classification is the task of predicting what category or topic a piece of text is from. For example, we may want to identify whether an article is a sports or a business story.  We may also want to identify whether an article is positive or negative in sentiment.
 
-Typically this is done by using the text as the features or input to the model, and as in previous classifications using the label (sports or business, positive or negative) as the target or output to train on.
+Typically this is done by using the text as the features input for the model, and - as in previous classifications - using the label (sports or business, positive or negative) as the target output for it to train on.
 
-When we want to include the text as features, we usually create a _binary_ feature for each word. Then each feature boils down do - "does this piece of text contain that word?"
+When we want to include the text as features, we usually create a _binary_ feature for each word. Then each feature boils down to: "does this piece of text contain that word?"
 
-To do this, we first need to create a vocabulary, where we know all of the possible words in our universe. We will do this in a data-driven way, usually, taking all of the words that appear in our corpus. We filter them based on occurrence or usefulness.
+To do this, we must first create a vocabulary, in order to account for all the possible words in our universe. We will do this in a data-driven way, which usually means taking in all of the words that appear in our corpus. We'll then filter them based on occurrence or usefulness.
 
-We have many encoding or representation questions along the way.
+In doing so, we'll have many encoding or representation questions along the way, such as:
   - Does the order of words matter?
   - Does punctuation matter?
-  - Upper or lower case? Should we treat Python different from python?
+  - Upper or lower case? Should we treat 'Python' as different from 'python'?
 
-The answer to each of these is problem dependent, but each will affect the modeling problem.
+The answer to each of these is problem dependent, but all of them will affect our modeling problem.
 
-- Order of words may matter
-  - If we are predicting postive or negative sentiment, 
-- Punctuation may matter
-  - Again in sentiment prediction, saying "amazing!!!" may be different than "amazing."
-- Case may matter
-  - "Python" is more likely to refer to a programming language, while "python" may refer to a programming language or a snake.
+**Check:** What do you think? Does word order matter? Case? Punctuation? Discuss and explain your reasoning.
 
-Classification using the words as features is known as **bag-of-words** classification.
+Solution:
+- [ ] Yes, order of words may matter.
+  - This is especially true when trying to predict postive or negative sentiment.
+- [ ] Yes, punctuation may matter.
+  - In sentiment prediction, saying "amazing!!!" may result in a diferent tone than "amazing."
+- [ ] Yes, letter case may matter.
+  - Upper-case words or phrases are usually proper nouns. For instance, "Python" is more likely to refer to a programming language, while "python" may refer to either the programming language or a type of snake.
+
+Classification using words from the text as features is known as **bag-of-words** classification.
 
 
-**Check:** Identify common classification tasks for text documents.
+**Check:** What is "bag-of-words" classification stand for and when should it be used? Why? What are some benefits to this approach?
+
 ***
 
 <a name="demo-text-sklearn"></a>
 ## Demo / Codealong: Text Processing in scikit-learn (# mins)
 
-Scikit-learn has many pre-processing utilities to make many of the tasks of converting text into feature for a model easy. These are in the `sklearn.preprocesing.text` package.
+Scikit-learn has many pre-processing utilities that simplify many of the tasks required to convert text into features for a model. These can be found in the `sklearn.preprocesing.text` package.
 
 We will use the StumbleUpon web crawl dataset again and perform a text classification text. Instead of using other features of the webpages, we will use the text content itself to predict whether or not the webpage is 'evergreen'.
 
 #### CountVectorizer
 
-There are built-in utilities to pull out features from text in `scikit-learn` - most importantly `CountVectorizer`. It converts a collection of text, into a matrix of features.  Each row will be a sample (an article or piece of text) and each column will be a text feature (usually a count or binary feature per word).
+There are built-in utilities to pull out features from text in `scikit-learn` - most importantly, `CountVectorizer`. It converts a collection of text into a matrix of features. Each row will be a sample (an article or piece of text) and each column will be a text feature (usually a count or binary feature per word).
 
 `CountVectorizer` takes a column of text and creates a new dataset - one row per piece of text (i.e. one row per title) and generates a feature for **every** word in the all of the titles.
 
