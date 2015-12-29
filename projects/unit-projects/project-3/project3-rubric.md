@@ -2,13 +2,13 @@
 **Project 3 | Data Science** 	 						
 
 Your project will be assessed using the following standards, as defined by the data science workflow:
-- [ ] Refine the Data
+- [ ] Refine & Build
 
 Acceptable performance for this standard is based on how well you've applied specific learning goals within your deliverable. To review the full list of data science standards, see the course syllabus.
 
 ---
 
-## REFINE
+## REFINE THE DATA
 **Meets Expectations**: Did you: Identify trends and outliers? Apply descriptive and inferential statistics? Document and transform data?
 
 #### Performance Evaluation
