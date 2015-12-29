@@ -2,14 +2,14 @@
 **Project 4 | Data Science** 	 						
 
 Your project will be assessed using the following standards, as defined by the course syllabus and the data science workflow:
-- [ ] Present the Results
+- [ ] Present & Communicate
 - [ ] Professional Development
 
 Acceptable performance for this standard is based on how well you've applied specific learning goals within your deliverable. To review the full list of data science standards, see the course syllabus.
 
 ---
 
-## PRESENT
+## PRESENT THE RESULTS
 **Meets Expectations**: Did you: Summarize findings with narrative techniques? Present limitations and assumptions of your analysis? Identify follow-up problems and questions for future analysis?
 
 #### Performance Evaluation
