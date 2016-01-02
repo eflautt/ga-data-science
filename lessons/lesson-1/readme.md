@@ -11,10 +11,10 @@ Week 1 | Lesson 1
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe the roles of GA staff and students to create a successful learning environment for data science 
+- Describe the roles and components of a successful learning environment
 - Define data science and the data science workflow
-- Apply data science workflow to get to know the class
-- Setup your data science development environment and review python basics
+- Apply the data science workflow to meet your classmates
+- Setup your development environment and review python basics
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -43,7 +43,7 @@ Week 1 | Lesson 1
 
 <a name="opening"></a>
 ## Welcome to GA! (20 mins) 
-[See: Day 1 deck from production team](/lessons/lesson-1/dat-day1.key)
+[See: Day 1 deck from production team](./assets/ds-day1.key)
 
 #### GA is a special learning environment 
 - Introduce the instructors, EIRs, Producers
@@ -66,7 +66,7 @@ Week 1 | Lesson 1
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
 
-![Data Science venn diagram](assets/datascience-vd.png)
+![Data Science venn diagram](./assets/images/datascience-vd.png)
 
 
 #### Who uses Data Science
@@ -85,7 +85,7 @@ Week 1 | Lesson 1
 * Data Creative
 * Data Businessperson
 
-![Data Science Roles](assets/datascienceroles.jpg)
+![Data Science Roles](./assets/images/datascienceroles.jpg)
 
 
 **Skills:** 
@@ -95,11 +95,11 @@ Week 1 | Lesson 1
 * Programming
 * Stats
 
-![Data Science Skills](assets/datasci-skills.jpg)
+![Data Science Skills](./assets/images/datasci-skills.jpg)
 
 **Break down of skills by role:**
 
-![Data Science Skills by Role](assets/datasci-skills-by-role.jpg)
+![Data Science Skills by Role](./assets/images/datasci-skills-by-role.jpg)
 
 ***
 
@@ -109,14 +109,15 @@ Week 1 | Lesson 1
 
 #### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
-2. According to [this table](assets/Table.png), BMI is the _____
+2. According to [this table](./assets/images/Table.png), BMI is the _____
 	* Outcome
 	* Predictor
 	* Covariate
 3. Draw a normal distribution.
 4. True or False: Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
-#### Discuss Results
+
+**Discuss Results**
 
 ***
 
@@ -139,10 +140,10 @@ Throughout the class and for the our projects we will be following a general wor
 7. Present
 
 
-![Data Science Workflow Visual](assets/data-science-workflow-final.jpg)
+![Data Science Workflow Visual](./assets/images/data-science-workflow-final.jpg)
 
 
-#### Project 1: [Futurama Example](projects/unit-projects/Project1/project1-example.ipynb)
+### Project 1: [Futurama Example](../../projects/unit-projects/project-1/assets/project1-example.ipynb)
 
 ##### IDENTIFY: Understand the problem:
 Using Planet Express customer data from January 3001-3005, determine how likely previous customers are to request a repeat delivery using demographic information (profession, company size, location) and previous delivery data (days since last delivery, number of total deliveries)
@@ -159,7 +160,7 @@ Using Planet Express customer data from January 3001-3005, determine how likely 
 **Ideal data vs. data that is available**
 Often times we start by identifing the *ideal data* we would want for a project. 
 
-During the data aquistion phase, we'll learn about the limitations on the types of data that are available. We have to decide if these limitaions will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
+During the data aquisition phase, we'll learn about the limitations on the types of data that are available. We have to decide if these limitations will inhibit our ability to answer our question of interest or if we can work with what we have to find a reasonable and reliable answer. 
 
 Data for this example: 
 - demographic information (profession, company size, location)
@@ -240,7 +241,7 @@ We select a model based on the outcome we are interested in or the assumptions o
 
 - We completed a logistic regression using Statsmodels v. XX. We calculated the probability of a customer placing another order with Planet Express.  
 
-Here, we are using a logistic model because we are determine the probability that a customer may place a return order, which at its heart is a *classifcation problem*. 
+Here, we are using a logistic model because we are determine the probability that a customer may place a return order, which at its heart is a *classification problem*. 
 
 The steps for model building are:  
 - Select appropriate model 
@@ -327,7 +328,7 @@ By now, you should be able to answer the following questions with ease:
 ##BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **UPCOMING PROJECTS**  | [Project 1 Instructions](/projects/unit-projects/Project 1/project1-readme.md)  |
+| **UPCOMING PROJECTS**  | [Project 1 Instructions](../../projects/unit-projects/project-1/readme.md)  |
 
 ###ADDITIONAL RESOURCES
 - Add your own resources.

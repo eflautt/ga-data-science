@@ -61,19 +61,17 @@ The data we are working with for this lesson has been **acquired** and **parsed*
 
 #### It starts with a simple correlation
 
-A linear regression is an explanation of a continuous variable given a series of independent variables. In it's simplest form, a linear regression would remind us of a basic algebraic function: a line of best fit:
+A linear regression is _an explanation of a continuous variable given a series of independent variables._ In it's simplest form, a linear regression reminds us of a basic algebraic function - a line of best fit:
 
 `y = mx + b`
 
-That is:
-
-Given some value __x__, its power in explanation __m__, and a starting point __b__, explain the value __y__.
+That is: given some value __x__, its power in explanation __m__, and a starting point __b__, explain the value __y__.
 
 However, the power of a linear regression is that we can use linear algebra to explain _multiple_ x's together in order to explain y:
 
 `y = betas * X + alpha (+ error)`
 
-Our terminology now being:
+Our terminology is now:
 
 Given a matrix __X__, their relative coefficients __beta__, and a y-intercept __alpha__, explain a dependent vector, __y__.
 
@@ -146,7 +144,7 @@ Even though we changed the way the data was shaped, this is still a _linear_ res
 <a name="guided-practice1"></a>
 ## Guided Practice: Using Seaborn to generate single variable linear model plots (15 mins)
 
-Update and complete the code below to use `lmplot` and display correlations between body weight and three dependent variables: `sleep_rem` and `awake`.
+Update and complete the code below to use `lmplot` and display correlations between body weight and two dependent variables: `sleep_rem` and `awake`.
 
 ```python
 log_columns = ['bodywt', 'brainwt',]  # any others?
@@ -158,7 +156,7 @@ sns.lmplot(x, y, mammals)
 sns.lmplot(x, y, log_mammals)
 ```
 
-**Check:** Were students successfully able to use the code to determine correlations between body weight and the three given variables?
+**Check:** Were students successfully able to use the code to determine correlations between body weight and the variables?
 
 
 <a name="intro2"></a>
@@ -283,7 +281,7 @@ R-Squared: 0.864418807451
 <a name="guided-practice2"></a>
 ## Guided Practice: Using the LinearRegression object (15 mins)
 
-We learned earlier that the the data in it's current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
+We learned earlier that the the data in its current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
 
 ```python
 X =
@@ -296,8 +294,7 @@ for boolean in loop:
     print
 ```
 **Check:**
-* Out of the four, which model performed the best?
-* Out of the four, which model performed the worst?
+* Out of the four, which model performed the best? The worst?
 
 
 <a name="ind-practice1"></a>
@@ -315,9 +312,9 @@ Next class we'll go into further detail on other regression techniques, but for 
 <a name="intro3"></a>
 ## Introduction: Multiple Regression Analysis (10 minutes)
 
-While in the above example one variable well explained the variance of another, more often than not, we will need multiple variables. For example, a house's price may be best measured by square feet, but a lot of other variables play a vital role: bedrooms, bathrooms, location, appliances, etc. For a linear regression, we want these variables to be largely independent of each other, but all help explain the y variable.
+In the previous example, one variable explained the variance of another; however, more often than not, we will need multiple variables. For example, a house's price may be best measured by square feet, but a lot of other variables play a vital role: bedrooms, bathrooms, location, appliances, etc. For a linear regression, we want these variables to be largely independent of each other, but all of them should help explain the y variable.
 
-We'll work with bikeshare data to help showcase what this means; and to explain a concept called _multicollinearity_.
+We'll work with bikeshare data to showcase what this means and to explain a concept called _multicollinearity_.
 
 #### What is Multicollinearity?
 
@@ -383,9 +380,9 @@ y-intercept: -22.8703398286
 R-Squared: 0.21124723661
 ```
 
-Even though the 2-variable model `temp + atemp` has a higher explanation of variance than two two variables on their own, and both variables are considered significant (p values approaching 0), we can see that together,their coefficients are wildly different. This can introduce error in how we explain models.
+Even though the 2-variable model `temp + atemp` has a higher explanation of variance than two variables on their own, and both variables are considered significant (p values approaching 0), we can see that together, their coefficients are wildly different. This can introduce error in how we explain models.
 
-**Check:** What happens if we use a second variable that isn't highly correlated with temperature, like humidity?
+What happens if we use a second variable that isn't highly correlated with temperature, like humidity? 
 
 ```bash
 temp, hum
@@ -397,6 +394,7 @@ R-Squared: 0.310901196913
 
 While temperature's coefficient is higher, the logical output still makes sense: for guest riders we expected a positive relationship with temperature and a negative relationship with humidity, and our model suggests it as well.
 
+**Check:** What is multicollinearity? Why might this cause problems in a model?
 
 <a name="guided-practice3"></a>
 ## Guided Practice: Multicollinearity with dummy variables (15 mins)
@@ -428,7 +426,7 @@ R-Squared: 0.0233906873841
 
 **Check:** Are students able to explain how coefficients changed once all the weather situations were included?
 
-This model makes more sense, because we can more easily explain the variables _compared to_ the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well at all.
+This model makes more sense, because we can more easily explain the variables compared to the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well.
 
 <a name="guided-practice4"></a>
 ## Guided Practice: Combining non-correlated features into a better model (15 mins)

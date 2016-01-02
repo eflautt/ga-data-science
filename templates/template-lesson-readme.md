@@ -1,11 +1,3 @@
----
-title: Title of the Lesson
-duration: "3:00"
-creator:
-    name: John Doe
-    city: NYC
----
-
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the learning objectives measurable?
@@ -37,9 +29,19 @@ creator:
 > **Manager Matt**
 > Summary: He currently does basic data analysis in Excel and SQL. He doesn’t necessarily want to build the models to answer those question but he wants to understand how models can help him answer those questions. Ultimately, he wants to make better managerial decisions because he understand more about the work his team is doing.
 
+> Delete this section ^
+
 ---
+
+| Title | Duration | Name | City |
+| --- | --- | --- | --- |
+| Title of Lesson | "3:00" | John Doe | NYC |
+
+---
+
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title
-Week # | Lesson #
+**Week # | Lesson #**
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -79,7 +81,7 @@ Week # | Lesson #
 
 > Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+**Check:** Ask students to define, explain, or recall any **general** prior concepts or tools.
 
 ***
 

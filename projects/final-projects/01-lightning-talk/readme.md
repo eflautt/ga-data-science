@@ -2,7 +2,6 @@
 
 
 ### PROMPT
-**Context & Takeaway:**
 
 In the field of data science, projects are practical. A good project is manageable and relates to your working domain; however, it can be hard to filter and scope good ideas when you're new to a field. That's where Part 1 of your final project comes in. 
 
@@ -15,7 +14,6 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 ---
 
 ### DELIVERABLES
-**Project Requirements & Constraints**
 
 #### Lightning Presentation
 - **Requirements:** You should present from a prepared deck that explains the following:
@@ -23,41 +21,42 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
     * ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
     * ___Hypotheses___: Given the problem and data you're aware of, what do you believe is the solution? What does success look like?
 
-- **Deliverables:** Your presentation must:
+- **Detailed Breakdown:** Your presentation must:
     * Explain three potential projects, including: a problem statement, a hypothesis, and potential data sets
     * Be 2-3 minutes in duration
     * Demonstrate familiarity with the domain of the data
-
-- **Submission:**	
-    * Present materials in class
-    * Submit presentation to instructor via email.
 
 - **Bonus:**
     - High level data points can help show the "improvement" scope that's available
     - Cite similar/previous work that will better inform your strategy that can be taken
 
+- **Submission:**	
+    * Present materials in class
+    * Submit presentation to instructor via email.
+
+---
+
 ### TIMELINE
-**Deadlines & Due Dates**
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 4: Lesson 8 | Lightning Presentation  | Present 3 Problem Statements   |
-| Week 7: Lesson 14 | Experiment Writeup  |  Research Design Problem Statement & Outline   |
-| Week 8: Lesson 16 | Exploratory Analysis  | Dataset Approval and Exploratory Analysis   |
-| Week 9: Lesson 18 | Notebook Draft  |  iPython Notebook & Model Draft  |
-| Week 10: Lesson 20 | Presentation  | Present Your Final Report   |
+| Week 4: Lesson 8 |  Part 1 - Lightning Presentation  | Present 3 Problem Statements   |
+| Week 7: Lesson 14 | Part 2 - Experiment Writeup  |  Research Design Problem Statement & Outline   |
+| Week 8: Lesson 16 | Part 3 - Exploratory Analysis  | Dataset Approval and Exploratory Analysis   |
+| Week 9: Lesson 18 | Part 4 - Notebook Draft  |  iPython Notebook & Model Draft  |
+| Week 10: Lesson 20 | Part 5 - Presentation  | Present Your Final Report   |
 
 ---
 
 ### EVALUATION
-**Guidelines & Rubric** 
-Your project will be evaluated by your instructors in the following areas:
 
-1. Identify
-2. Acquire
-3. Present
+Your project will be assessed using the following standards:
 
-**Rubric**: [Link to rubric](#). Based on the requirements, you can earn a maximum of 9 points on this project. Your instructors will score each of your requirements using the scale below:
+1. Identify the Problem
+
+#### Rubric: [Click here for the complete rubric](./final-project-1-rubric.md).
+
+Requirements for these standards will be assessed using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -66,20 +65,17 @@ Your project will be evaluated by your instructors in the following areas:
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While the overall rubric will serve as a helpful gauge of whether you met project goals, your __specific scores are more important__ since they can help you identify where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
-### RESOURCES
-**Examples & Suggestions**
 
-#### Suggested Ways to Get Started
+### RESOURCES
+
+#### Suggestions for Getting Started
 - Try putting together a three-slide deck for each of your project ideas, in order to stay organized.
 - Look for example (or real) data to get a feel for what information exists that you can use.
 - Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie.
 - Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes".
 
-#### Example Deliverable
-Take a look at the [sample deck](#) provided.  There are three slides corresponding to three potential project ideas, and all include a problem, hypothesis, and potential data sets.
-
-#### Useful Resources
+#### Additional Links
 - For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
