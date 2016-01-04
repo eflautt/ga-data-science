@@ -104,10 +104,14 @@ Determine the association of foods in the home with child dietary intake. Using 
 
 1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010 we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Hypothesis: Children will be **more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never**.
 
-- How data was collected is indicated: 24-hour recall, self-reported
-- What data was collected is indicated: Fruits, dark green vegetables, low fat milk or sugar sweetened beverages, always vs rarely available
-- How data will be analyzed: Using USDA recommendations as a gold-standard to measure the association
-- The specific hypothesis & direction of the expected association: More likely to meet their recommended intake level
+- How data was collected is indicated: 
+    - 24-hour recall, self-reported
+- What data was collected is stated: 
+    - Fruits, dark green vegetables, low fat milk or sugar sweetened beverages, always vs rarely available
+- How data will be analyzed is defined: 
+    - Using USDA recommendations as a gold-standard to measure the association
+- The specific hypothesis & direction of the expected associations are described: 
+    - Children will be more likely to meet their recommended intake level
 
 
 2. Measurable: Determine the association of foods in the home with child dietary intake. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food.
@@ -118,7 +122,8 @@ Determine the association of foods in the home with child dietary intake. Using 
 
 5. Time Bound: Using one 24-hour recall from **NHANES 2007-2010** we will determine the factors associated with food available in the homes of **American children and adolescents**.
 
-Trends often change over time and vary by the population or source of your data. It is important to clearly define who/what you included in your analysis and the time period for the analysis.
+
+**Point**: Trends often change over time and vary by the population or source of your data. It is important to clearly define who/what you included in your analysis and the time period for the analysis.
 
 
 #### Context
