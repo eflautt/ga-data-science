@@ -16,7 +16,7 @@ Your project will be assessed using the following standards:
 					
 - [ ] Standard 1
 - [ ] Standard 2
-- [ ] Professional Development [*optional: use at mid/end of course*]
+- [ ] Professional Development [*Optional: use at mid/end of course*]
 
 > ID Note: Fill these in with specific course standards				
 
