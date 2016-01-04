@@ -80,14 +80,16 @@ The goals of a high quality, reproducible question are similar to the SMART Goal
 - S: specific
 - M: measurable
 - A: attainable
-- R: reproducible *this step is different from smart goals*
+- R: reproducible
 - T: time-bound
 
-1. Specific- The dataset and key variables are clearly defined.
-2. Measureable- The the type of analysis and major assumptions are articulated.
-3. Attainable- The question you are asking is feasible for your dataset and is not likely to be biased.
-4. Reproducible- Another person (or you in 6 months!) can read your state and understand exactly how the analysis is being performed
-5. Timebound- You clearly state the time period and population for which this analysis will pertain
+Let's break this down further:
+
+1. Specific: The dataset and key variables are clearly defined.
+2. Measureable: The the type of analysis and major assumptions are articulated.
+3. Attainable: The question you are asking is feasible for your dataset and is not likely to be biased.
+4. Reproducible: Another person (or you in 6 months!) can read your state and understand exactly how your analysis is performed
+5. Timebound: You clearly state the time period and population for which this analysis will pertain
 
 ![](./assets/smart-goal-image.jpg)
 
@@ -103,11 +105,8 @@ Determine the association of foods in the home with child dietary intake. Using 
 1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010 we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Hypothesis: Children will be **more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never**.
 
 - How data was collected is indicated: 24-hour recall, self-reported
-
 - What data was collected is indicated: Fruits, dark green vegetables, low fat milk or sugar sweetened beverages, always vs rarely available
-
 - How data will be analyzed: Using USDA recommendations as a gold-standard to measure the association
-
 - The specific hypothesis & direction of the expected association: More likely to meet their recommended intake level
 
 
@@ -294,7 +293,7 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **UPCOMING PROJECTS** | Unit Project 1 |
+| **UPCOMING PROJECTS** | [Unit Project 1](../../projects/unit-projects/project-1/readme.md) |
 
 
 ### ADDITIONAL RESOURCES
