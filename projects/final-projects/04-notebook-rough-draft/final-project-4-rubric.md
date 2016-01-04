@@ -8,7 +8,7 @@ Acceptable performance for this standard is based on how well you've applied spe
 
 ---
 
-## REFINE THE DATA
+## REFINE & BUILD
 **Meets Expectations**: Did you: Document and transform your data? Apply descriptive and inferential statistics? Identify trends and outliers? Application of these learning goals will be assessed using the requirements below:
 
 #### Performance Evaluation
