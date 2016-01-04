@@ -71,6 +71,7 @@ While your total score may serve as a helpful gauge of whether you've met projec
 ### RESOURCES
 
 #### Suggestions for Getting Started
+
 - Two common ways to start models:
     -  "Kitchen Sink Strategy": throw all the variables in and subtract them out, one by one.
     -  "Single Variable Strategy": start with the most important variable and slowly add in while paying attention to performance)
@@ -80,12 +81,15 @@ While your total score may serve as a helpful gauge of whether you've met projec
 - Strike a balance between writing, code, and visual aids. Your notebook should feel like a blogpost with some code in it. Force yourself to write and visualize more than you think!
 
 #### Specific Tips
+
 - This deliverable combines unit Projects 3 and 4 from earlier in the course; however, now you will be using your own data! But feel free to refer to any resources and feedback provided during those projects.
 
 #### Past Projects
+
 - You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=).
 
 #### Additional Links
+
 - [SKLearn's documentation on metrics](http://scikit-learn.org/stable/modules/classes.html)
 - [SKLearn's model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html)
 
