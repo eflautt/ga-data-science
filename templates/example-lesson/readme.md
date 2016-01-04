@@ -70,8 +70,7 @@ Well, that's where ORMs come in.  ORM stands for: **O**bject **R**elational **M*
 
 Let's pretend we have a User class with the attributes id, name, age, and address:
 
-```
-ruby
+```ruby
 class User
   attr_accessor :id, :name, :age, :address
 end
@@ -124,8 +123,7 @@ We're a successful talent management agency, Tunr, and we have designed a Sinatr
 
 Do you notice any odd methods in the seven restful actions? I do:
 
-```
-ruby
+```ruby
 Artist.all #what?
 Artist.create(params[:artist]) #who?
 Artist.find(params[:id]) #nah uh!!
@@ -142,8 +140,7 @@ These (`.all`, `.find`) ActiveRecord methods will write the SQL for us, and sinc
 
 ActiveRecord is a gem!  But since we're building an app with a bunch of gems, we'll use Bundler. We'll only specify gems that we need, but for now, let's `bundle init in the app's root directory and add:
 
-```
-ruby
+```ruby
 source "https://rubygems.org"  #tells your app where to get the gems from
 gem "sinatra" #allows us to use and run Sinatra record
 gem "sinatra-activerecord" #allows us to use Sinatra with ActiveRecord  
@@ -163,8 +160,7 @@ But we're about to start using a SQL database, so we gotta configure our Sinatra
 
 Let's make a folder called `config` in the root directory. And inside that, `touch config/database.yml`. YAML is a nice little format that essentially works like a Ruby hash, but is written in plaintext. Key-value. Great for configuration, it'll be super easy.
 
-```
-yaml
+```yaml
 development:
   adapter: postgresql
   database: tunr_development
@@ -191,8 +187,7 @@ Rake technically stands for 'ruby make', which is a tool we're going to use to d
 
 Whereas earlier you learned to do this:
 
-```
-bash
+```bash
 $ psql
 psql (9.4.1, server 9.3.5)
 Type "help" for help.
@@ -271,8 +266,7 @@ Migrations tell your application what goes into your database, and each one is t
 
 So let's build a new version of our database that has an artists table:
 
-```
-bash
+```bash
 rake db:create_migration NAME=create_artists
 
 db/migrate/20150710152405_create_artists.rb
@@ -286,8 +280,7 @@ Now let's visit the ```db/migrate/20150710152405_create_artists.rb``` and put th
 
 > Note: Explain the block and how it creates the necessary columns.
 
-```
-ruby
+```ruby
 class CreateArtists < ActiveRecord::Migration
   def change
      create_table :artists do |t|
@@ -302,8 +295,7 @@ end
 
 Run the migration with ```rake db:migrate```. That'll fetch any migrations it hasn't run yet and run 'em.
 
-```
-bash
+```bash
 == 20150710152405 CreateArtistsTable: migrating ===============================
 == 20150710152405 CreateArtistsTable: migrated (0.0000s) ======================
 ```
@@ -312,8 +304,7 @@ And we have a table! Nice work!  And _now_ you've got a `schema.rb` file – th
 
 If ever you're unsure what a database looks like, browse your `schema.rb`.
 
-```
-ruby
+```ruby
 ActiveRecord::Schema.define(version: 20150710152405) do
 
   # These are extensions that must be enabled in order to support this database
@@ -340,16 +331,14 @@ Just like we can write migrations to create tables, we can write migrations to a
 
 We decided we want to collect data about the instruments the artists play, so we need to create a migration:
 
-```
-bash
+```bash
 rake db:create_migration NAME=add_instrument_to_artists
 db/migrate/20150710154423_add_instrument_to_artists.rb
 ```
 
 In ```db/migrate/20150710154423_add_instrument_to_artists.rb```:
 
-```
-ruby
+```ruby
 class AddInstrumentToArtists < ActiveRecord::Migration
   def change
     add_column :artists, :instruments, :string
@@ -372,8 +361,7 @@ rake db:create_migration NAME=change_column_in_artists_to_new_column
 
 In the migration add:
 
-```
-ruby
+```ruby
 def change
   rename_column :table, :old_column, :new_column
 end
@@ -381,8 +369,7 @@ end
 
 Then:
 
-```
-bash
+```bash
 rake db:migrate
 ```
 
