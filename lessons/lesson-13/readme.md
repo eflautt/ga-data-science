@@ -147,8 +147,7 @@ Let's start by attempting to process some of the titles.
 
 First, we'll load our NLP toolkit by specifying the language:
 
-  ```
-  python
+  ``` python
   from spacy.en import English
 
   nlp_toolkit = English()
@@ -168,8 +167,7 @@ The first title is:
 
  From this we may wish to extract that the article references a company and that the company is referencing a new possible product: air-breathing batteries.
 
- ```
- python
+ ``` python
 
  title = "IBM sees holographic calls, air breathing batteries"
  parsed = nlp_toolkit(title)
@@ -239,8 +237,7 @@ In this output:
 
 We can also use this to find all titles that discuss an organization.
 
-```
-python
+```python
 def references_organization(title):
   parsed = nlp(title)
   return any([word.ent_type_ == 'ORG' for word in parsed])
@@ -254,8 +251,7 @@ data[data['references_organization']][['title']].head()
 
 Solution:
 
-```
-python
+```python
 def references_organization_and_person(title):
     parsed = nlp(title)
     has_org = any([word.ent_type_ == 'ORG' for word in parsed])
@@ -328,8 +324,7 @@ There are built-in utilities to pull out features from text in `scikit-learn` - 
 
 For example, if we are attempting to predict sentiment and see an article that has the word "bessst!", we may link this word to positive sentiment. However, very few articles may ever use this word, so it isn't actually very useful for our model. 
 
-```
-python
+```python
 from sklearn.feature_extraction.text import CountVectorizer
 
 vectorizer = CountVectorizer(max_features = 1000, 
@@ -362,8 +357,7 @@ There is a distinction between `fit` and `transform` when it comes to splitting 
 
 Whenever we want to make predictions, we will need to create a new data point that contains **exactly** the same columns as our model. If feature 234 in our model represents the word 'cheeseburger', then we need to make sure our test or future example also has 'cheeseburger' as feature 234. We can use `transform` to perform this conversion on the test set (and any future dataset) in the same way.
 
-```
-python
+```python
 
 titles = data['title'].fillna('')
 
@@ -384,8 +378,7 @@ X = vectorizer.transform(titles)
 #### Random Forest Prediction Model
 Build a random forest model to predict evergreeness of a website using the title features
 
-```
-python
+```python
 from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier(n_estimators = 20)
@@ -422,8 +415,7 @@ The intuition behind a TF-IDF representation is that words that have high weight
 
 This is a good alternative to using a static set of stop-words.
 
-```
-python
+```python
 from sklearn.feature_extraction.text import TfidfVectorizer
 vectorizer = TfidfVectorizer()
 ```
