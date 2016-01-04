@@ -86,8 +86,10 @@ The goals of a high quality, reproducible question are similar to the SMART Goal
 1. Specific- The dataset and key variables are clearly defined.
 2. Measureable- The the type of analysis and major assumptions are articulated.
 3. Attainable- The question you are asking is feasible for your dataset and is not likely to be biased.
-4. Reproducible- Another person (or you in 6 months!) can read your state and understand exactly how the analysis is being preformed
+4. Reproducible- Another person (or you in 6 months!) can read your state and understand exactly how the analysis is being performed
 5. Timebound- You clearly state the time period and population for which this analysis will pertain
+
+![[](./assets/smart-goal-image.jpg)
 
 <a name="demo1"></a>
 ## Demo: Diagraming an aim (5 mins)
@@ -173,7 +175,7 @@ The information (data) is collected over a period of time.
 ## Guided Practice: Write a research question with raw data (10 mins)
 Looking at the data from Kaggle's Titanic competition, let's write a high quality research question.
 
-- Resource: [Data dictionary](href='https://www.kaggle.com/c/titanic/data')
+- Resource: [Data dictionary](https://www.kaggle.com/c/titanic/data)
 - Format: Think, Pair, Share
 
 1. Q: What type of data is this cross-sectional or longitudinal?
@@ -238,7 +240,7 @@ Data dictionaries are also where you'll identify any requirements, assumptions, 
 
 <a name="codealong"></a>
 ## Codealong- Numpy and Pandas intro (30 minutes)
-> Instructor Note: See labs/lesson2_numpy_and_pandas.ipynb
+> Instructor Note: See [NumPy & Pandas notebook](./lab/lesson2_numpy_and_pandas.ipynb)
 
 What is Numpy and Pandas?
 Pandas is built on Python. In Numpy, we use arrays. With arrays you can do:
@@ -274,7 +276,7 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 
 <a name="lab"></a>
 ## Lesson 2 Lab (20 min)
-> Instructor Note: See labs/lesson2_numpy_and_pandas.ipynb
+> Instructor Note: See [Lesson 2 Lab](./lab/lesson2- lab.ipynb)
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
