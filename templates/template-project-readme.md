@@ -1,99 +1,78 @@
 > #### *Guiding Questions When Using This Template*
 >
+> - [ ] Is this for an assignment or project?
 > - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
+> - [ ] What will students have to do to prepare for this project?
+> - [ ] Are components intended to be worked on individually? In pairs?
+> - [ ] Should students practice pre-work tasks before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
+
 > Delete this section ^
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) PROJECT #: TITLE
 
-#### Overview
+## PROMPT
+> Explain the circumstances/ context / scenario requiring students to do/build a real world application. Tell a story!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
 
 Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
 
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc. 
+
+**Goal:** Short one-two sentence takeaway stating primary purpose of project.
 
 ---
 
-#### Requirements
+## DELIVERABLES
 
-Your work must:
+#### Title
 
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
+- **Requirements/Contraints:**
+  - Your project is to make a thing that does something
+  - Your project should also do something else
+  - Your project must meet these expectations
 
-**Bonus:**
+- **Detailed Breakdown:**
+  - [ ] Element 1
+  - [ ] Element 2
 
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
+> Optional: Include if further details are required. Screenshots of desired outputs would go in this section.
 
----
+- **Bonus:**
+  - Suggestions for design / style points
 
-#### Necessary Deliverables
+- **Submission:**	
+  - TBD by instructor.
 
-- Something about the format of thing one
-- Description of the format of thing two
-- Details about the style of thing three
+> _Iterate as needed with additional deliverables._
 
 ---
 
-#### Starter code
+## TIMELINE
+> Optional: Only need to include for multi-part projects
 
-Here's a few sentences explaining any started code that's included in the `starter-code` folder.
-
-#### Suggested Ways to Get Started
-
-- Don’t hesitate to write throwaway code to solve short term problems
-- Read the docs for whatever technologies you use.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a developer
-- Write pseudocode before you write actual code.** Thinking through the logic of something helps.   
-
----
-
-> The section below is optional
-
-#### Potential Project Ideas
-
-##### Fake Project Idea One
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
-
-##### Fake Project Idea Two
-
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
-
-
-##### Fake Project Idea Two
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+| Deadline | Deliverable| Description |
+|:-:|---|---|
+| Week 1: Lesson/Date | Title  | Brief component description   |
+| Week 2: Lesson/Date | Title  | Brief component description   |
+| Week 3: Lesson/Date | Title  | Brief component description   |
+| Week 4: Lesson/Date | Title  | Brief component description   |
+| Week 5: Lesson/Date | Title  | Brief component description   |
 
 ---
 
-### Useful Resources
+## EVALUATION
 
-- A link to [something useful](http://www.w3schools.com/jsref/dom_obj_all.asp)
-- Extra relevant [resource for students](https://developer.mozilla.org/en-US/docs/Web/Events)
+Your project will assessed using the following course standards:
 
----
+1. Standard 1
+2. Standard 2
+3. Professional Development
 
-#### Example Deliverable
+#### Rubric: [Click here for the complete rubric](#). 
 
-Here's a few sentences & a screenshot of what we expect you to make or do.
-
-![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
-
-#### Project Feedback + Evaluation
-
-
-Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
+Based on the requirements, you can earn a maximum of  **#**  points on this project. Your instructors will score each of your standards using the scale below:
 
     Score | Expectations
     ----- | ------------
@@ -102,4 +81,33 @@ Base on the requirements you can earn a maximum of _____ points on this project.
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
+
+---
+
+## RESOURCES
+
+> Note: All components in this section are optional; _only include elements that are relevant to your project._
+
+#### Materials / Starter Code / Dataset
+
+- Describe other relevant project materials *(if applicable)*
+- Explain any material in the starter code folder *(if applicable)*
+
+#### Suggestions for Getting Started
+
+- Do this to help brainstorm
+- Read the docs for this tool
+- Practice using this technique
+
+#### Past Projects / Sample Deliverables
+
+- Prior [example student project 1](#)
+- Prior [example student project 2](#)
+
+#### Additional Links
+
+- Link to [something useful](#)
+- Extra relevant [resource for students](#)
+
+---

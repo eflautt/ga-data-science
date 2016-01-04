@@ -1,9 +1,7 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science
+We are building a global community of lifelong learners who are excited about using data to solve real world problems.
 
-## Data Science
-We are building a global community of lifelong learners who are excited about developing applications for the web.
-
-### DAT Curriculum Resources
+### DS Curriculum Resources
 
 <!-- MarkdownTOC -->
 - [Data Science Refresh Curriculum Proposal](https://docs.google.com/a/generalassemb.ly/presentation/d/1M3yH6c7n5ilEXTQSyhFg4L-O8sNZQ0Sm0W24hlU1Zzg/edit?usp=sharing)
@@ -22,7 +20,7 @@ The structure of this repository provides a way for us to organize our informati
 
 Some cities maintain forks of this repository for collaboration by their local instructors. However, we also encourage the teaching team for each cohort to fork this repository directly, and use it to store your new and improved resources. By the end of the course, we hope you'll have some things to submit to make our curriculum better.
 
-If you have any questions about the organization of resources, or about the scope of the DAT curriculum, you can feel free to open an issue.
+If you have any questions about the organization of resources, or about the scope of the DS curriculum, you can feel free to open an issue.
 
 Please check out our [contributing guidelines](contributing.md) for more details.
 

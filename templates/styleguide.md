@@ -1,8 +1,6 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DS Styleguide
 
-# DAT Styleguide
-
-While this certainly won't be a totally all-inclusive styleguide, we want to nail down some rules, especially around creating materials, so we can be consistent
+While this certainly won't be a totally all-inclusive styleguide, we want to nail down some rules, especially around creating materials, so we can be consistent.
 
 A few may seem arbitrary, but they're based on how easy it is to be inconsistent, so let's consider it a part of working together and use it as our shared defaults.
 
@@ -24,28 +22,41 @@ If there are any really major issues or significantly impactful reasons to chang
 <a name="important-terms"></a>
 ## Important Terms
 
+##### Opening
 
-##### Intro _(I Do)_
+This is what we call the beginning of a lesson, where we review prior lessons/prework/homework, discuss current objectives, and answer outstanding questions.
+
+##### Introduction
 
 This is what we'll call the beginning of a lesson, when we're mostly just lecturing. It'll probably include the history of the topic, how it connects to other topics we've covered, and why it's important.
 
-##### Demo _(I Do)_
+##### Demo
 
-This is when we'll be lecturing & probably showing something while we do it. We can still throw in interactive techniques, but if this chunk of a lesson is basically showing & talking, it's a demo.
+This is when we'll be showing something while we do it. We can also throw in interactive techniques or ask students to perform a task along with us.
 
-##### Guided Practice _(We Do)_
+##### Guided Practice
 
-This is when we're demoing, but asking students to code along with us. It's also a lot of lecturing, but differs in that it's doing something together with students, and generally to create some end product that you've already demoed.
+This is when we're asking students to do something specific using the information we've just given. Walk students through solving a problem or applying this topic to a real world scenario. Solving or understanding this should require the use of the lesson topic (in addition to any prior topics).
 
-##### Independent Practice _(You Do)_
+##### Independent Practice
 
-This is a name for the chunks of a lesson when you're asking students to do something on their own. It probably most often follows a demo or codealong (though not necessarily), and it's intended to get students doing instead of just watching us & zoning out.
+This is a name for the chunks of a lesson when you're asking students to create a deliverable on their own. It is often used closer to the end of a lesson (though not necessarily), requiring the use of skills learned in the demo and guided practice sessions. It is intended to encapsulate the information and can act as a miniature or practice version of the unit project.
 
+##### Conclusion
 
+This is where we review the deliverable(s) from the independent practice, recap the lesson objectives, answer any outstanding questions, and discuss homework/upcoming projects/etc.
 
+---
 
 <a name="default-style"></a>
 ## Default Style
+
+### Voice
+- **Projects**: Project materials should be written directly for students.
+- **Lessons**: While lesson materials are technically instructor facing, they should primarily be written in a student-facing voice for consistency. If you want to make specific suggestions for instructors, use the "instructor's note" format:
+
+> Instructor Note: Here is a sample note that is only intended for instructors.
+
 
 ### Use dashes, not underscores
 While dashes & underscores are both fine choices, our structure starts looking ugly when we randomly have both, depending on preference. Underscores are wonderful, no hating on underscores.
@@ -68,6 +79,7 @@ When you have multiple files sitting next to each other in a folder, number them
 
 By consistently keeping everything lowercase, we won't have to hit shift when navigating in terminal. It'll save us a tiny fraction of time, but the consistency will save us a lot of guessing.
 
+---
 
 <a name="default-names-for-files--folders"></a>
 ## Default names for files & folders
@@ -94,6 +106,8 @@ Make sure the image is **no wider than 790px**, to try to keep it visible & read
 
 ### Let Github Store the Images
 Rather than storing images in some folder in our lesson, **use [Github's Issue Attachment CDN](https://help.github.com/articles/issue-attachments/) to upload & link to images.** Essentially, pretend you're going to attach an image to a Github Issue, let it upload, and then copy & paste the CDN URL it gives and include that. There's a [detailed blog post here](http://solutionoptimist.com/2013/12/28/awesome-github-tricks/) to read more.
+
+---
 
 <a name="file-structure"></a>
 ## File Structure
@@ -140,9 +154,9 @@ Some lessons will have time dedicated to assigning projects.  For these lessons,
 
 ```
 
-### Readme In Every Folder
+### A Readme In Every Folder
 
-Every folder should have a readme.
+**Every folder should have a readme.**
 
 That means that looking on Github, every folder will come with some explanation of what it is & what to do with it.
 
@@ -198,7 +212,8 @@ We want to have as minimal information as necessary, but stuff that's still usef
 
 We also want to include the type (lesson, lab) and any core competency categories this lesson covers. This will help us organize later.
 
-```yaml
+```
+yaml
 title: 'What is Data Science?'
 duration: "3:00"
 creator:
@@ -214,9 +229,12 @@ It's beneficial to have suggested timing in each lesson, it gives us an idea how
 
 The timing should be included in each section heading. We'll talk about how to choose which level headings in the next section (ba dum chhhh). **But timings are only necessary on H2s.** Here's an example:
 
-```markdown
+```
+markdown
 ## Loading Data into Pandas - Intro (10 mins.)
 ```
+
+---
 
 <a name="headings--text"></a>
 ## Headings & Text
@@ -259,7 +277,8 @@ Err on the side of having too many paragraphs if possible, even if a paragraph i
 
 Use triple-tick code blocks with languages to make code auto-syntax-highlighted.
 
-    ```python
+    ```
+    python
       def sayHi:
         print("hi!")
     ```

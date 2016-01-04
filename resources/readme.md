@@ -1,12 +1,8 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Resources
 
-# Our DAT Projects
+> Our goal is to provide a range of useful resources to maximize student outcomes for this course.
 
-> Globally, we have 4 Unit Projects in WDI, each building on top of skills learned previously to scaffold students' learning over the entire course.
-
-Our projects each have an objective, deliverables, and recommendations, and tie in to the overall competencies we focus on in each unit. Dive into the detailed project spec file to read more about each project and [read about our curriculum](#)
-
-See the [feedback guidelines](#) to read more about how we provide feedback to students.
+We've created resources for both students and instructors. Dive into the detailed project spec file to read more about each project or look here to [read about our curriculum](#)
 
 ## UNDER CONSTRUCTION
 
