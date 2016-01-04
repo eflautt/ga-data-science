@@ -1,6 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Vocabulary List
 
 ##Unit 1
+
 - Box plots
 - Classification problem
 - Confidence intervals
@@ -26,6 +27,7 @@
 - Visualization
 
 ##Unit 2
+
 - AOC - Area over the curve
 - Bias
 - Categorical variables
@@ -60,6 +62,7 @@
 - Variance
 
 ##Unit 3
+
 - ARIMA model - Autoregressive integrated moving average
 - Decision trees
 - Dimensional reduction
