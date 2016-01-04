@@ -11,6 +11,7 @@ In this project, you will summarize and present your analysis from Projects 1-3.
 ### DELIVERABLES
 
 #### iPython Notebook with Executive Summary
+
 - **Requirements:**
     -  “Specific aim”
     -  Outlined methods and models 
@@ -75,6 +76,7 @@ Dataset: [Admissions.csv](./assets/admissions.csv)
 Open the [iPython Notebook](./starter-code/project4-starter.ipynb) and follow the questions provided.
 
 #### Suggestions for Getting Started
+
 - Review your previous work and any prior intructor feedback.
 - Look up sample executive summaries online.
 
