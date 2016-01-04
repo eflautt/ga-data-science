@@ -141,33 +141,27 @@ Which of the following questions uses the SMART framework? Why? What is missing?
 
 As we saw in the attainable section above, different types of data have different limitations and strengths. Therefore, certain types of analysis will not be possible with certain datasets. Here is a brief overview of some of the different types of datasets:
 
-1. Cross-Sectional Data:
-All information is determined at the same time; all the data comes from the same time period.
+1. **Cross-Sectional Data:** All information is determined at the same time; all the data comes from the same time period.
 
-- Things to consider: TEMPORALITY
+    - Things to consider: TEMPORALITY. There is no distinction between _exposure_ and _outcome_. This is why in the example above, we can't say that the availability of fruit in the home actually **causes** children to meet their recommendations. It is just as likely that the opposite may be true.
+    - Strengths
+        - Often population-based  
+        - Generalizability   
+        - Reduced cost compared to other types of data collection methods
+    - **Weaknesses**
+        - Separation of cause and effect may be difficult or impossible
+        - Variables/Cases with long duration are over-represented
 
-No distinction between _exposure_ and _outcome_. This is why in the example above, we can't say that the availability of fruit in the home actually **causes** children to meet their recommendations. It is just as likely that the opposite may be true.
+2. **Time-Series/Longitudinal Data:** The information (data) is collected over a period of time.
 
-- **Strengths**
-  - Often population based  
-  - Generalizability   
-  - Reduced cost compared to other types of data collection methods
-
-- **Weaknesses**
-  - Separation of cause and effect may be difficult or impossible
-  - variables/Cases with long duration are over-represented
-
-2. Time-Series/Longitudinal data:
-The information (data) is collected over a period of time.
-
-- **Strengths**
-  - Unambiguous temporal sequence – exposure precedes outcome
-  - Multiple outcomes can be measured
-
-- **Limitations**
-  - Expense
-  - Takes a long time
-  - Vulnerable to missing data
+    - **Strengths**
+        - Unambiguous temporal sequence – exposure precedes outcome
+        - Multiple outcomes can be measured
+    
+    - **Limitations**
+        - Expense
+        - Takes a long time
+        - Vulnerable to missing data
 
 #### Knowledge Check
 
@@ -182,14 +176,16 @@ Looking at the data from Kaggle's Titanic competition, let's write a high qualit
 - Resource: [Data dictionary](https://www.kaggle.com/c/titanic/data)
 - Format: Think, Pair, Share
 
+**Check:**
+
 1. Q: What type of data is this cross-sectional or longitudinal?
-- A: cross-sectional
+    - A: cross-sectional
 
 2. Q: What will we be measuring (hint: look back at the previous example)
-- A: The association between being a woman or a child and survival on the Titanic.
+    - A: The association between being a woman or a child and survival on the Titanic.
 
-3. Q: Write a SMART aim
-- A: Using data from April 15, 1912, taken from  the Titanic diaster, we will determine the association of gender, age (in years) and survival.
+3. Q: Write out a SMART aim for this data:
+    - A: Using data from April 15, 1912, taken from  the Titanic diaster, we will determine the association of gender, age (in years) and survival.
 
 <a name="review1"></a>
 ## SMART Review
@@ -199,7 +195,6 @@ The S.M.A.R.T. process covers the "Identify" step of the data science workflow. 
 2. Types of a datasets: Cross-Sectional vs Longitudinal/Time Series
 
 Questions?
-
 
 <a name="introduction2")></a>
 ## Data science workflow: Acquire & Parse (5 mins)
