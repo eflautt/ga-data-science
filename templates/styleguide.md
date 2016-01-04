@@ -154,9 +154,9 @@ Some lessons will have time dedicated to assigning projects.  For these lessons,
 
 ```
 
-### Readme In Every Folder
+### A Readme In Every Folder
 
-Every folder should have a readme.
+**Every folder should have a readme.**
 
 That means that looking on Github, every folder will come with some explanation of what it is & what to do with it.
 
@@ -212,7 +212,8 @@ We want to have as minimal information as necessary, but stuff that's still usef
 
 We also want to include the type (lesson, lab) and any core competency categories this lesson covers. This will help us organize later.
 
-```yaml
+```
+yaml
 title: 'What is Data Science?'
 duration: "3:00"
 creator:
@@ -228,7 +229,8 @@ It's beneficial to have suggested timing in each lesson, it gives us an idea how
 
 The timing should be included in each section heading. We'll talk about how to choose which level headings in the next section (ba dum chhhh). **But timings are only necessary on H2s.** Here's an example:
 
-```markdown
+```
+markdown
 ## Loading Data into Pandas - Intro (10 mins.)
 ```
 
@@ -275,7 +277,8 @@ Err on the side of having too many paragraphs if possible, even if a paragraph i
 
 Use triple-tick code blocks with languages to make code auto-syntax-highlighted.
 
-    ```python
+    ```
+    python
       def sayHi:
         print("hi!")
     ```
