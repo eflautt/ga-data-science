@@ -73,10 +73,12 @@ While your total score may serve as a helpful gauge of whether you've met projec
 ### RESOURCES
 
 #### Suggestions for Getting Started
+
 - Try putting together a three-slide deck for each of your project ideas, in order to stay organized.
 - Look for example (or real) data to get a feel for what information exists that you can use.
 - Think about how much time you can dedicate to the project each week, and where you think the largest challenges will lie.
 - Think about this as an elevator pitch: be prepared, do some light research, but don't go down any "rabbit holes".
 
 #### Additional Links
+
 - For overall project ideas, consider looking at former [General Assembly Data Science Projects](https://gallery.generalassemb.ly/DS?metro=)
