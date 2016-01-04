@@ -16,6 +16,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
 
 #### Final Presentation
 **Requirements:**
+
   * Show off your work to what would be a less technical, more business oriented audience
   * Summarize the work you've completed from earlier deliverables into a clean presentation, including:
     * Your project's background, problem and hypothesis
@@ -28,6 +29,7 @@ After you present your work, you'll participate in a short Q/A session (roughly 
 
 **Detailed Breakdown:**
 A 10 to 20 slide deck consisting of:
+
  * *1 Outline Slide*
    - What is your project about?
    - What is its history?
@@ -55,10 +57,12 @@ A 10 to 20 slide deck consisting of:
    - What might your conclusions enable others to do?
 
 **Bonus:**
+
   * An Acknowledgements Slide is always a good idea :)
   * You might also include a Citations Slide, if necessary
 
 **Submission:**	
+
   - Final format and submission location are TBD by instructor.
 
 ---
@@ -100,22 +104,27 @@ While your total score may serve as a helpful gauge of whether you've met projec
 ### RESOURCES
 
 #### Starter Code 
+
 - Refer to the [presentation template](../02-experiment-writeup/project-design-template.md) as a blueprint for how to organize your work.
 
 #### Suggestions for Getting Started
+
 - A quick outline (e.g. "what do I need" and "where can I find it") can help you prepare.
 - Practice your presentation with a friend or family member! Outside feedback can help you identify gaps in your material.
 
 #### Specific Tips
+
 - Limit the amount of visuals and text on your slides for maximum clarity.
     - For instance, try not to use more than 2 visuals or 3-5 bullets per slide.
 - Clean & informative presentations > Fancy Presentations!
 - Keep your charts simple, and make sure they are clearly labeled.
 
 #### Past Projects
+
 - You can find previous General Assembly Presentations and Notebooks at the [GA Gallery](https://gallery.generalassemb.ly/DS?metro=)
 
 ### Additional Links
+
 - Presentations from [PyData](http://www.slideshare.net/PyData/presentations)
 - Presentations from [DataGotham](https://www.youtube.com/user/DataGotham), a shortly-ran data conference in NYC.
 - [Seaborn](https://stanford.edu/~mwaskom/software/seaborn/tutorial/aesthetics.html#scaling-plot-elements-with-plotting-context-and-set-context) has a handy easy way to set figures into a "talk" context, which blows up the text and makes it easier to read.
