@@ -15,6 +15,7 @@ Following these steps will help you better understand your dataset.
 ### DELIVERABLES
 
 #### iPython Notebook Exploratory Analysis
+
 - **Requirements:**
   - Read in your dataset, determine how many samples are present, and ID any missing data
   - Create a table of descriptive statistics for each of the variables (n, mean, median, standard deviation)
@@ -80,6 +81,7 @@ For this project we will be using an iPython notebook. This notebook will use ma
 * Open the [starter code instructions](./starter-code/project2-starter.ipynb) in iPython notebook.
 
 #### Suggestions for Getting Started
+
 - Read in your dataset
 - Try out a few pandas commands for describing your data:
   - '''df['dataframeName'].describe(),'''
