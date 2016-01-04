@@ -8,7 +8,7 @@ Acceptable performance for this standard is based on how well you've applied spe
 
 ---
 
-## IDENTIFY THE PROBLEM
+## IDENTIFY & ACQUIRE
 **Meets Expectations**: Did you: Demonstrate comprehension of project objectives? Articulate the goals and criteria for success? Create guiding questions to identify data and potential methods of analysis? Application of these learning goals will be assessed using the requirements below:
 
 #### Performance Evaluation
