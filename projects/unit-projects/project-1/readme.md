@@ -13,6 +13,7 @@ Welcome to Data Science! In this first project you will create a framework to sc
 ### DELIVERABLES
 
 #### Completed iPython Notebook
+
 - **Requirements:**
     - Identify features of the dataset, including the outcome and covariates/predictors
     - Create a data dictionary with classification of available variables
@@ -81,11 +82,13 @@ Check out the example notebook in our starter code, which includes a data dictio
 ![Example Notebook](./assets/images/Example_ipynb.jpg)
 
 #### Suggestions for Getting Started 
+
 - Get used to the iPython Notebook layout. Play around with keyboard shortcuts.
 - Try out basic markdown for commonly used formats; look up commands for headers, bold, italic, tables.
 - **Read the docs for iPython Notebooks.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist!
 
 ### Additional Links
+
 - [iPython Notebook Shortcuts](https://ipython.org/ipython-doc/1/interactive/notebook.html#keyboard-shortcuts)
 - [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [iPython Notebook Docs](http://ipython.readthedocs.org/en/stable/)
