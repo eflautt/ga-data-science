@@ -12,12 +12,14 @@ Week # | Lesson #
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Define regularization, bias, and error metrics for regression problems
 - Evaluate model fit by using loss functions including mean absolute error, mean squared error, root mean squared error
 - Select regression methods based on fit and complexity
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Understand goodness of fit (r-squared)
 - Measure statistical significance of features
 - Recall what a _residual_ is
@@ -25,6 +27,7 @@ Week # | Lesson #
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will have to:*
+
 - review materials
 - be familiar with the datasets
 
@@ -66,7 +69,7 @@ It is typical to use multiple prediction metrics while solving for an optimal so
 
 In the last class, we reviewed one expectation of linear models: that the residual error be normal, and a median close to 0.
 
-`y = betas * x + alpha + epsilon` <- epsilon == error
+y = betas * x + alpha + epsilon` <- epsilon == error
 
 ![residual_histogram](https://cloud.githubusercontent.com/assets/846010/11647511/d51bcfa2-9d36-11e5-8496-a29a2b01f5c1.png)
 
@@ -76,25 +79,28 @@ Knowing individual residual error is beneficial to the user, as it demonstrates 
 
 For squared error, we will:
 
-1. Calculate the difference between each target y and the model's predicted value y-hat (this is how we determine the _residual_)
+1. Calculate the difference between each target y and the models predicted predicted value y-hat (this is how we determine the _residual_)
 2. Square each residual.
 3. Take the mean of the squared residual error.
 
-sklearn's metrics module includes a mean_squared_error function. Sklearn's metrics module will be the tool we use to evaluate performance for the majority of our models:
+sklearn's metrics module includes a mean_squared_error function. Sklearn's metrics module will be the tool we use to evaluate performance for the majority of our models
 
-```python
+```
+python
 from sklearn import metrics
 metrics.mean_squared_error(y, model.predict(X))
 ```
 
-For example, if we to compare two arrays of the same values, we'd expect a mean squared error of 0:
+For example, if we to compare two arrays of the same values, we would expect a mean squared error of 0:
 
-```python
+```
+python
 from sklearn import metrics
 metrics.mean_squared_error([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
 ```
 
-```bash
+```
+bash
 0.0
 ```
 
@@ -106,7 +112,8 @@ metrics.mean_squared_error([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
 # (4^2 + 2^2 + 0^2 + 2^2 + 4^2) / 5
 ```
 
-```bash
+```
+bash
 8.0
 ```
 
@@ -115,7 +122,8 @@ metrics.mean_squared_error([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
 
 The regression we've been using in class is called "ordinary least squares," which literally means given a matrix X, solve for the _least_ amount of squared error for y. However, this approach assumes that the sample X is representative of the population; that is, it assumes that the sample is _unbiased_. For example, let's compare these two random models:
 
-```python
+```
+python
 import numpy as np
 import pandas as pd
 from sklearn import linear_model
@@ -135,11 +143,11 @@ df['y'] = append_jitter(df.y)
 biased_df['x'] = append_jitter(biased_df.x)
 biased_df['y'] = append_jitter(biased_df.y)
 
-## fit
+- Fit:
 lm = linear_model.LinearRegression().fit(df[['x']], df['y'])
 print metrics.mean_squared_error(df['y'], lm.predict(df[['x']]))
 
-## biased fit
+- Biased fit:
 lm = linear_model.LinearRegression().fit(biased_df[['x']], biased_df['y'])
 print metrics.mean_squared_error(df['y'], lm.predict(df[['x']]))
 ```
@@ -174,7 +182,8 @@ One of the most common cross validation techniques is called **k-fold**: split t
 
 What happens to mean squared error if we use k-fold validation to _generalize_ the error?
 
-```python
+```
+python
 from sklearn import cross_validation
 wd = '../../datasets/'
 bikeshare = pd.read_csv(wd + 'bikeshare/bikeshare.csv')
@@ -190,7 +199,7 @@ for train_index, test_index in kf:
 
 print np.mean(scores)
 
-# this score will be lower, but we're trading off bias error for generalized error
+- This score will be lower, but we're trading off bias error for generalized error:
 lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
@@ -209,7 +218,8 @@ Apply the following code through a loop of numbers 2 to 50 and find answers to t
 1. What does `shuffle=True` do?
 2. At what point does cross validation no longer seem to help the model? The error line should look similar to a flat line.
 
-```python
+```
+python
     kf = cross_validation.KFold(len(modeldata), n_folds=i)
     scores = []
     for train_index, test_index in kf:
@@ -243,7 +253,8 @@ Regularization, which introduces the weights to these coefficients, would help p
 #### Where Regularization Makes Sense
 Consider this: what happens to MSE if we just directly use a Lasso or Ridge Regression?
 
-```python
+```
+python
 lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 lm = linear_model.Lasso().fit(modeldata, y)
@@ -252,7 +263,8 @@ lm = linear_model.Ridge().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-```bash
+```
+bash
 1672.58110765 # OLS
 1725.41581608 # L1
 1672.60490113 # L2
@@ -273,7 +285,8 @@ Regularization, like any important optimization function, will be more important
 
 Let's test a variety of alpha weights for Ridge Regression on the bikeshare data.
 
-```python
+```
+python
 alphas = np.logspace(-10, 10, 21)
 for a in alphas:
     print 'Alpha:', a
@@ -294,7 +307,8 @@ We can tell sklearn to try all of these alphas in less code using a _grid search
 
 A grid search will end up trying as many combos as you specify in the `param_grid` argument. For example:
 
-```python
+```
+python
 {
     'intercept': [True, False],
     'alpha': [1, 2, 3],
@@ -312,7 +326,8 @@ This `param_grid` has 6 different options:
 
 This makes grid search an incredibly powerful tool in machine learning! Check out the example below.
 
-```python
+```
+python
 from sklearn import grid_search
 
 alphas = np.logspace(-10, 10, 21)
@@ -358,7 +373,8 @@ Gradient Descent is very similar to traversal or dynamic programming, programmin
 
 Walk through this code, which suggests a similar pattern to how gradient descent behaves:
 
-```python
+```
+python
 num_to_approach, start, steps, optimized = 6.2, 0., [-1, 1], False
 while not optimized:
     current_distance = num_to_approach - start
@@ -412,7 +428,8 @@ Like Ridge and Lasso regression, we can penalize (add in weights) to the gradien
 
 To follow along with either our "grandmother's house" example or the python example code above, try turning the estimator's argument `verbose` to 1. It will print its optimizations up to the number of iterations you allow it to run (default is 5).
 
-```python
+```
+python
 lm = linear_model.SGDRegressor()
 lm.fit(modeldata, y)
 print lm.score(modeldata, y)
@@ -445,7 +462,8 @@ While exploring the Gradient Descent regressor object, you'll build a grid searc
 #### Materials:
 You can use the following starter code to get started:
 
-```python
+```
+python
 params = {} # put your gradient descent parameters here
 gs = grid_search.GridSearchCV(
     estimator=linear_model.SGDRegressor(),
@@ -471,6 +489,7 @@ print gs.grid_scores_
 ## Conclusion (5 mins)
 
 #### Lesson Review:
+
 1. What's the (typical) range of r-squared?
 2. What's the range of mean squared error?
 3. How would changing the scale or interpretation of y (your target variable) effect mean squared error?
