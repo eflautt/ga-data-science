@@ -7,7 +7,7 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Experimental Design and Pandas
-Week # | Lesson #
+Week #1 | Lesson #2
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -37,7 +37,7 @@ Week # | Lesson #
 | 10 min  | [Lecture](#lecture1)  | Types of datasets |
 | 10 min  | [Guided Practice](#guidedpractice)  | Write a research question with raw data
   |
-| 5 min  | [Review](#review1)  | Section 1 Review |
+| 5 min  | [Knowledge Check](#review1)  | Section 1 Review |
 | 5 min  | [Introduction](#introduction2)   | Datascience workflow steps 2. Acquire and 3. Parse |
 | 10 min  | [Demo](#demo2)   | Walkthrough Acquire and Parse with Pandas |
 | 30 min  | [Codealong](#codealong)  | Pandas Intro |
@@ -114,7 +114,12 @@ Trends often change over time and vary by the population or source of your data.
 
 
 #### Context 
-Depending on your setting the types of questoins you will answer may vary. The previous example is from a research setting. In a business setting you will need to clearly articulate the business objectives. Id and hhypothesize goals and criteria for success (e.g., success for the Netflix recommendation engine may be if 70% of customers over the age of 18 select a movie from the recommended queue during Q3 of 2015). Regardless of the setting it is important that you state your question following the SMART framework. 
+Depending on your setting the types of questoins you will answer may vary. The previous example is from a research setting. In a business setting you will need to clearly articulate the business objectives. Id and hypothesize goals and criteria for success (e.g., success for the Netflix recommendation engine may be if 70% of customers over the age of 18 select a movie from the recommended queue during Q3 of 2015). Regardless of the setting it is important that you state your question following the SMART framework. 
+
+#### Knowledge Check
+Which of the following is follows the SMART framework? Why? What is missing?
+1. I am looking to see if there is an association with number of passengers with carry on luggage and delayed take-off time. 
+2. Determine if the number of passengers on JetBlue, Delta and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015. 
 
 ## Why dataset types matter. 
 As we saw in the attainable section above, different types of data have set limitations and strengths. As such certain types of analysis will not be possible with certain datasets. We are going to do a breif overview of the different types of datasets here. 
@@ -146,6 +151,11 @@ Expense
 Takes a long time
 Vulnerable to missing data 
 
+#### Knowledge Check
+What type of data is the flightstats data? 
+Determine if the number of passengers on JetBlue, Delta and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015. 
+
+Can you create a cross-sectional analysis from a longitudinal data collection? How? 
 
 <a name="#guidedpractice"></a>
 ## Guided Practice: Write a research question with raw data (10 mins)
@@ -157,7 +167,7 @@ Format: Think, Pair, Share
 
 cross-sectional
 
-2. What will be measuring (hint: look back at the previous example)
+2. What will we be measuring (hint: look back at the previous example)
 
 The association between being a woman or a child and survival on the Titanic.
 
@@ -171,26 +181,27 @@ We covered the Identify step of the data science workflow. We also explored the 
 1. SMART analysis aims 
 2. Types of a datasets
 
+
 Questions? 
 
 <a name="introduction2")></a>   |
-## Datascience workflow steps 2. Acquire and 3. Parse (5 mins)
-During this section we are going to walk through a the key features of steps 2 & 3 of the data science workflow. We will be working with an IPython Notebook. I'll demo the steps frist, then we will try them together. During the last part of class you will try your hand at the steps individually. 
+## Data science workflow steps 2. Acquire and 3. Parse (5 mins)
+During this section we are going to walk through key features of steps 2 & 3 of the data science workflow. We will be working with an IPython Notebook. I'll demo the steps frist, then we will try them together. During the last part of class you will try your hand at the steps individually. 
 
 <a name="demo2"></a>
 ## Demo: Walkthrough Acquire and Parse with Pandas (30 mins)
 
 #### Acquire
-You'll remember from the previous class that the aquire step is where we determine if the dataset we have it the "right" dataset for our question. One factor is what type of data is it? Cross-sectional? Longitudinal/Time Series? The next question is how well was the data collected? Does it have a ton of missing data? Was the instrument used to collect the data validated and reliable? Is this dataset aggregated? Can we use the aggregation or do we need to get it pre-aggregation?
+You'll remember from the previous class that the acquire step is where we determine if the dataset we have it the "right" dataset for our question. One factor is what type of data is it? Cross-sectional? Longitudinal/Time Series? The next question is how well was the data collected? Does it have a ton of missing data? Was the instrument used to collect the data validated and reliable? Is this dataset aggregated? Can we use the aggregation or do we need to get it pre-aggregation?
 
 #### Intro to data dictionaries and documentation (part of Parse step as well)
-This is often our primary souce to help you judege the quality of your data and also to understand how it is coded. Your gender variable is coded 0 and 1. How do you know which is male and which is female? Your data dictionary! Is your currency varibale in dollars or euros? Data dictionary! 
+This is often our primary source to help you judge the quality of your data and also to understand how it is coded. Your gender variable is coded 0 and 1. How do you know which is male and which is female? Your data dictionary! Is your currency varibale in dollars or euros? Data dictionary! 
 
 Show a few examples from Kaggle pages or your own work (i.e. the Titanic basic one from above to any one of the many more elaborate ones).
 
 This is also where you will find out info on any requirements, assumptions, and constraints of your data. Through you should never assume that the data dictionary is complete. Is it often up to you to test your assumptions. 
 
-#### Logistics of aquiring your data 
+#### Logistics of acquiring your data 
 You can access data through a variety of different methods including: 
 1. Web (Google Analytics, HTML, XML)
 2. File (CSV, XML, TXT, JSON)
@@ -203,19 +214,29 @@ Perform exploratory surface analysis via filtering, sorting, and simple visualiz
 Describe data structure and the information being collected
 Explore variables, data types via select 
 
-
-
 <a name="codealong"></a>
-## Codealong- Pandas intro (30 minutes)
+## Codealong- Numpy and Pandas intro (30 minutes)
 See labs/lesson2_numpy_and_pandas.ipynb
+What is Numpy and Pandas? 
+Pandas is built on Pandas. In Numpy we use arrays. (see example in notebook). With arrays you can do 
+1. basic math. 
+2. splicing, indexing etc. 
+
+Pandas is uses data structures that will look more familiar to folks who have used excel or other spreadsheet based tools. In Pandas will use a Dataframe. A Dataframe contains rows and columns. 
+
+Similarly you can select pieces of data, do basic operations and calculate summary statistics. Let's see some examples. (see lab)
+
+Additionally, we often have to merge data together, correct missing data, and plot our findings. Let's see some examples of each of these. 
 
 <a name="introduction3"></a>
 ## Lab walk through (5 min)
 This is lab is based on a quiz given in Roger Peng Coursera class Computing for Data Analysis. During the lab you will read in and merge two datasets "ozone" and "data". By the end of the lab you will:
 1. Merge datasets
-2. Check basic fetures- column names, number of observations
+2. Check basic features- column names, number of observations
 3. Find and drop missing values
 4. Find basic stats mean, max (more on these next time!)
+
+The purpose of this lab is to get practice working with Pandas. We will dive into the stats more next week.
 
 
 <a name="lab"></a>
@@ -231,7 +252,7 @@ This is lab is based on a quiz given in Roger Peng Coursera class Computing for 
 ## Unit 1, project, where we're headed (15 mins)
 - Review Unit 1 objectives
 - Introduce the first project
-- Exit tickes
+- Exit tickets
 
 ***
 
