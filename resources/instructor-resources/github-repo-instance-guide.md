@@ -8,7 +8,7 @@ This guide is intended to help create a student-facing repository for your DS in
 - Project Prompts & Rubrics
 - Student Resources
 
-NOTE: Instructors should **also** create a local instance of the official instructor-facing curriculum for their own use. Please make sure to refresh/pull content from the master every week while we continue to build out the course.
+NOTE: Instructors should **also** create a local instance of the official instructor-facing curriculum for their own use.
 
 For instructions on how to set up a student-facing GitHub repository for your DS class, please see below.
 > __IMPORTANT: Once you are done setting up your repo, please delete or overwrite the contents of this Readme!__
