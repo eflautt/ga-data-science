@@ -8,7 +8,7 @@ Acceptable performance for this standard is based on how well you've applied spe
 
 ---
 
-## REFINE THE DATA
+## REFINE & BUILD
 **Meets Expectations**: Did you: Identify trends and outliers? Apply descriptive and inferential statistics? Document and transform data?
 
 #### Performance Evaluation
