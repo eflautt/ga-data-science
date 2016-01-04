@@ -5,6 +5,7 @@ Welcome to Data Science at General Assembly!
 We're all really excited that you're joining the General Assembly community. In order to ensure your success in the course, we’ve created a pre-work checklist that will take most students between 10-15 hours to complete. 
 
 Please complete these pre-work items before your first day so that both you and your computer will be prepared for class. In the meantime, feel free to reach out with any questions (or just to say hi)!
+
 * __Instructor__: (Name | Email)
 * __TA's__: (Names | Emails)
 * __Expert-in-Residence__: (Name | Email)
@@ -21,6 +22,7 @@ Please complete the following by the first day of class. Feel free to shoot us a
 
 <a name="schedule"></a>
 ### Schedule
+
 - [ ] Add the following information to your calendars:
 * **Time**: (Time)
 * **Meeting days**: (Days)
@@ -31,11 +33,13 @@ Please complete the following by the first day of class. Feel free to shoot us a
 
 <a name="intro"></a>
 ### Introductions
+
 1. [ ] Fill out this [Student Profile Survey] in order for us to get to know you.
 2. [ ] Complete this [Preliminary Skills Survey] in order to help us place you in complementary groups.
 
 <a name="account"></a>
 ### Accounts
+
 1. [ ] Create a Github account, if you don't already have one.
 
 <a name="install"></a>
