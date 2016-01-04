@@ -11,6 +11,7 @@ Week # | Lesson #
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Create a class that inherits from ActiveRecord
 - Create a table schema to describe the class/model in our database
 - Write a migration to update our model with new attributes
@@ -19,6 +20,7 @@ Week # | Lesson #
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Explain the concept of MVC
 - Create a Rails-like folder structure in a Sinatra app
 - Define what object properties and methods are
@@ -26,6 +28,7 @@ Week # | Lesson #
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Gather materials needed for class
 - Complete Prep work required
 - Prepare any specific instructions
@@ -46,6 +49,7 @@ Week # | Lesson #
 ---
 <a name="opening"></a>
 ## Opening (5 min)
+
 - Homework/Pre-work Discussion & Questions
 - Review Current Lesson Objectives
     - Prior Knowledge Check: Define object properties and methods; explain MVC architecture.
@@ -66,7 +70,8 @@ Well, that's where ORMs come in.  ORM stands for: **O**bject **R**elational **M*
 
 Let's pretend we have a User class with the attributes id, name, age, and address:
 
-```ruby
+```
+ruby
 class User
   attr_accessor :id, :name, :age, :address
 end
@@ -74,13 +79,15 @@ end
 
 And let's pretend that we create a new user, Rob Stark, whose object is shown below:
 
-```ruby
+```
+ruby
 => #<User:0x007fc8b18c5718 @address="1 Winterfell Lane", @age=16, @id=1, @name="Rob Stark", @king?=true>
 ```
 
 With an ORM, we're able to take that instance of class User and map it to our relational database:
 
-```psql
+```
+psql
 id |   name    | age |                      address                       | king?
 ----+-----------+-----+----------------------------------------------------+-------
   1 | Rob Stark |  16 | 1 Winterfell Lane                                  | true
@@ -113,13 +120,14 @@ This will all make a lot more sense once we start using it...so, let's start usi
 
 We're a successful talent management agency, Tunr, and we have designed a Sinatra app to manage our artists. Fork and clone this repository, and first, let's take a look at our app.rb & config.ru files.  Talk with a partner for a minute and discuss differences from our Sinatra apps in the beginning of the week as well as what you think each line does and how they relate to the rest of the app.
 
-> Note: Read through the app.rb & config.ru files and point out the comments below and how they reflect each code segment; ask students to add this to their code; and point out that ActiveRecord is a gem
+> Note: Read through the app.rb & config.ru files and point out the comments below and how they reflect each code segment; ask students to add this to their code; and point out that ActiveRecord is a gem.
 
 **Check:** Are students been able to successfully recall gem properties and identify ActiveRecord?
 
 Do you notice any odd methods in the seven restful actions? I do:
 
-```ruby
+```
+ruby
 Artist.all #what?
 Artist.create(params[:artist]) #who?
 Artist.find(params[:id]) #nah uh!!
@@ -130,13 +138,14 @@ We get all these awesome methods - that we don't have to write ourselves - and w
 <a name="code1"></a>
 ## Codealong: Setting up a class and our DB with ActiveRecord (15 mins)
 
-These ```.all``` ```.find``` ActiveRecord methods will write the SQL for us, and since we've connected our database, we can pull any data we need real, real easily.  But before we can, we have to set up our file and classes to use ActiveRecord and a database to talk to:
+These (`.all`, `.find`) ActiveRecord methods will write the SQL for us, and since we've connected our database, we can pull any data we need real, real easily.  But before we can, we have to set up our file and classes to use ActiveRecord and a database to talk to:
 
 #### Get the ActiveRecord library
 
 ActiveRecord is a gem!  But since we're building an app with a bunch of gems, we'll use Bundler. We'll only specify gems that we need, but for now, let's `bundle init in the app's root directory and add:
 
-```ruby
+```
+ruby
 source "https://rubygems.org"  #tells your app where to get the gems from
 gem "sinatra" #allows us to use and run Sinatra record
 gem "sinatra-activerecord" #allows us to use Sinatra with ActiveRecord  
@@ -156,7 +165,8 @@ But we're about to start using a SQL database, so we gotta configure our Sinatra
 
 Let's make a folder called `config` in the root directory. And inside that, `touch config/database.yml`. YAML is a nice little format that essentially works like a Ruby hash, but is written in plaintext. Key-value. Great for configuration, it'll be super easy.
 
-```yaml
+```
+yaml
 development:
   adapter: postgresql
   database: tunr_development
@@ -183,7 +193,8 @@ Rake technically stands for 'ruby make', which is a tool we're going to use to d
 
 Whereas earlier you learned to do this:
 
-```bash
+```
+bash
 $ psql
 psql (9.4.1, server 9.3.5)
 Type "help" for help.
@@ -222,7 +233,8 @@ Just like we used a wonderful Rake command to help us quickly create a database,
 
 > Note: Explain some of the common commands we'll be using and they'll have access to.
 
-```bash
+```
+bash
 $ rake -T
 
 rake db:create              # Creates the database f...
@@ -262,7 +274,8 @@ Migrations tell your application what goes into your database, and each one is t
 
 So let's build a new version of our database that has an artists table:
 
-```bash
+```
+bash
 rake db:create_migration NAME=create_artists
 
 db/migrate/20150710152405_create_artists.rb
@@ -276,7 +289,8 @@ Now let's visit the ```db/migrate/20150710152405_create_artists.rb``` and put th
 
 > Note: Explain the block and how it creates the necessary columns.
 
-```ruby
+```
+ruby
 class CreateArtists < ActiveRecord::Migration
   def change
      create_table :artists do |t|
@@ -291,7 +305,8 @@ end
 
 Run the migration with ```rake db:migrate```. That'll fetch any migrations it hasn't run yet and run 'em.
 
-```bash
+```
+bash
 == 20150710152405 CreateArtistsTable: migrating ===============================
 == 20150710152405 CreateArtistsTable: migrated (0.0000s) ======================
 ```
@@ -300,7 +315,8 @@ And we have a table! Nice work!  And _now_ you've got a `schema.rb` file – th
 
 If ever you're unsure what a database looks like, browse your `schema.rb`.
 
-```ruby
+```
+ruby
 ActiveRecord::Schema.define(version: 20150710152405) do
 
   # These are extensions that must be enabled in order to support this database
@@ -327,14 +343,16 @@ Just like we can write migrations to create tables, we can write migrations to a
 
 We decided we want to collect data about the instruments the artists play, so we need to create a migration:
 
-```bash
+```
+bash
 rake db:create_migration NAME=add_instrument_to_artists
 db/migrate/20150710154423_add_instrument_to_artists.rb
 ```
 
 In ```db/migrate/20150710154423_add_instrument_to_artists.rb```:
 
-```ruby
+```
+ruby
 class AddInstrumentToArtists < ActiveRecord::Migration
   def change
     add_column :artists, :instruments, :string
@@ -350,13 +368,15 @@ Do this _every_ time you need to change your database – whether it's adding o
 
 By now, you've felt the pattern: create a migration, add the appropriate code to the migration, and then run the migration.  Same applies for each time you want to modify your database.  In the case of a updating a column, you would:
 
-```bash
+```
+bash
 rake db:create_migration NAME=change_column_in_artists_to_new_column
 ```
 
 In the migration add:
 
-```ruby
+```
+ruby
 def change
   rename_column :table, :old_column, :new_column
 end
@@ -364,7 +384,8 @@ end
 
 Then:
 
-```bash
+```
+bash
 rake db:migrate
 ```
 
@@ -402,6 +423,7 @@ For the last part of class, the guys at Tunr, decided they need more information
 - Update an existing column to have a different name
 
 #### Bonus!
+
 - Update the artist show page to display the new data
 - Try using `tux` to add/edit/destroy instances of Artist models (and thus, records in your database)
 - Register a new artist using the ```artists/new``` end point
@@ -411,6 +433,7 @@ For the last part of class, the guys at Tunr, decided they need more information
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
+
 - What is ActiveRecord and how does it interact with your database?
 - What are migrations?
 - Briefly, describe how to configure your Sinatra app to use ActiveRecord.
@@ -425,6 +448,7 @@ For the last part of class, the guys at Tunr, decided they need more information
 | **PROJECT**  | Work on Project 1 Deliverable [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
+
 - Sinatra Resources
 - ActiveRecord Documentation
 - Other Useful Ruby Gems
