@@ -4,6 +4,7 @@
 ### Repo Guide
 
 This guide is intended to help create a student-facing repository for your DS instance. This is __not__ the DS instructor curriculum; these are the student-facing materials, which include:
+
 - Lab Startercode & Datasets
 - Project Prompts & Rubrics
 - Student Resources
@@ -16,6 +17,7 @@ For instructions on how to set up a student-facing GitHub repository for your DS
 ---
 
 ## Requirements
+
 * [ ] **Github Usernames**: Before you get started, you should have a list of usernames for all relevant instructors, TA's, and students.
 > If they don't already have one, ask them to signup (it's free). 
 
@@ -88,13 +90,14 @@ In Data Science, we recommend using a student-facing repo to distribute project 
 ***
 
 ## Benefits
-- Students can now use the GitHub desktop app (or Terminal commands) to access all of the materials in the repo, including notes/links, starter code, projects, etc.
 
+- Students can now use the GitHub desktop app (or Terminal commands) to access all of the materials in the repo, including notes/links, starter code, projects, etc.
 - Optionally, instructors can also choose to give students access to submit their project assignments by pull request, which makes it easy for instructors and TA's to leave comments and feedback. 
 
 ***
 
 ## Additional Resources
+
 - Github has a ton of online resources, and the Desktop app comes with a sample tutorial.
 - Both Codecademy and Codeschool offer free Git/Github related walkthroughs.
 
