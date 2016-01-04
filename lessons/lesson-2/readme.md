@@ -97,13 +97,16 @@ Let's break this down further:
 ## Demo: Diagraming an aim (5 mins)
 
 Example aim:
-Determine the association of foods in the home with child dietary intake. Using one 24-hour recall from the cross-sectional NHANES 2007-2010 we will determine the factors associated with food available in the homes of American children and adolescents. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food. Hypothesis: Children will be more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never.
+Determine the association of foods in the home with child dietary intake. Using one 24-hour recall from the cross-sectional NHANES 2007-2010 we will determine the factors associated with food available in the homes of American children and adolescents. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food. 
+
+Hypothesis: Children will be more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never.
 > Source: From Dr. Amy Roberts' Dissertation
 
 > Instructor Note: For each of these, give one 1 example and ask the class to id others.  
 
-1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010 we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Hypothesis: Children will be **more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never**.
+1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010 we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Our hypothesis is that children will be **more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never**.
 
+Note:
 - How data was collected is indicated: 
     - 24-hour recall, self-reported
 - What data was collected is stated: 
