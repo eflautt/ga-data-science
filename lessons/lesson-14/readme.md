@@ -21,10 +21,12 @@ Week # | Lesson 14
 - Install `gensim` with `pip install gensim` 
 - Previous introduction to _unsupervised learning_
 - Previous introduction to probability distributions, specifically discrete multinomial distributions
+- Previous lesson on NLP essentials, including experience with `spacy`
+- EXTRA: If you are interested in students accessing the Twitter API themselves, they will need to setup Twitter API credentials. There are instructions at [](twitter-instructions.md)
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-
+- EXTRA: If you are interested in retrieving tweets as well, you will need to setup Twitter API credentials. There are instructions at [](twitter-instructions.md)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -41,6 +43,8 @@ Week # | Lesson 14
 ## Opening
 
 This lesson will continue on natural language processing with an emphasis on _latent variable models_.
+
+In our data science workflow, we will often be MINEing datasets with a large amount of text or unstructured data. In our last class, we saw many techniques for MINEing this data includes pre-processing and building linguistic rules to uncover patterns. We could create classifiers from this unstructured data. In this class we continue with methods for MINEing or REFINEing our understanding of text data by attempting to uncover structure or organization inherent in the text.
 
 Much of the advances in natural language processing have been in using data to learn rules of grammar and language and then using those tools to extract information or build classification algorithms from the text. We saw these tools in the last class.
     - We could use _tokenization_ to break apart pieces of text
@@ -65,6 +69,14 @@ _Latent variable models_ are models in which we assume that the data we are obse
 Text processing is a common application of latent variable models. Again, in the classical sense we know that language is built by a set of pre-structured grammar rules and vocabulary. However, we also we know that we break those rules often and expand the vocabulary (see: selfie).
 
 Instead of attempting to learn the rules of 'proper' grammar, we instead learn the hidden structure and ignore the fact that it might fit with proper grammar or not. Most of the time, the hidden structure we uncover _are_ the rules of English (or any language) but sometimes they may unveil something new.
+
+This techniques are commonly used for recommending news articles or mining large troves of data data trying to find commonalities. Topic modeling, a method we will discuss in today's class is used in the [NY times recommendation engine](http://open.blogs.nytimes.com/2015/08/11/building-the-next-new-york-times-recommendation-engine/?_r=0)
+
+They attempt to map their articles to a latent space (or underlying structure) of topics using the content of the article.
+
+![](./assets/frick_museum2.png)
+
+[Lyst](http://developers.lyst.com/2014/11/11/word-embeddings-for-fashion/), an online fashion retailer, uses latent representations of clothing descriptions to find similar clothing. If we can map phrases like 'chelsea boot' or 'felted hat' to some underlying structure, we can use that new structure to find similar products.
 
 ## Dimensionality Reduction in Text Representation
 
@@ -160,9 +172,10 @@ There are many variants as well, that incorporate attempt to add more structure 
 <a name="demo-lda"></a>
 ## Demo: LDA in gensim (30 mins)
 
-```
+```python
 import gensim
 ```
+
 `gensim` is another library of language processing tools focused on latent variable models of text.
 
 We begin by first translating our set of documents (articles) into the same matrix reprsentation, with a row per document and a column per feature (word or n-gram).
@@ -322,42 +335,77 @@ It can easily identify words related to those from this dataset (again most of t
 
 In this exercise, we will compare some of the classical NLP tools from the last class, with the more modern latent variable techniques. We will do this by comparing information extraction techniques on Twitter using the two methods.
 
-We will use the Twitter API to build a collection of tweets to learn from. After that we will filter future tweets based on some established conditions.
+>>NOTE: Below are instructions if you want students to capture their own collection of tweets using the Twitter API.  It requires some setup and a Twitter account. Instructions are at [](twitter-instructions.md)
+If not - there a file that already exists of captured tweets related to collection of tech companies and Middle Eastern companies.
 
-To collect tweets we run the follow code.
+> EXTRA: INSTRUCTIONS to collect your own tweets
+>We will use the Twitter API to build a collection of tweets to learn from. After that we will filter future tweets based on some established conditions.
 
-Each tweet comes in as a Python dictionary, which contains many fields of metadata. The one we are most interested in is `text` which has the actual text of the tweet.
+>To collect tweets we run the follow code.
 
-The `retrieve_tweets` function takes a topic, to limit the tweets we receive to that topic.
+>Each tweet comes in as a Python dictionary, which contains many fields of metadata. The one we are most interested in is `text` which has the actual text of the tweet.
 
-```python
+>The `retrieve_tweets` function takes a topic, to limit the tweets we receive to that topic.
+
+>```python
 import twitter
 
-tweets = twitter.retrieve_tweets(topic = 'google')
+>tweets = twitter.retrieve_tweets(topic = 'google')
 
-num_tweets_to_collect = 2000
+>num_tweets_to_collect = 2000
 tweets_text = []
 
-n = 0
-for tweet in tweets:
-    tweet_text = tweet['text']
-    tweets_text.append(tweet_text)
+>n = 0
+>for tweet in tweets:
+>   tweet_text = tweet['text']
+>    tweets_text.append(tweet_text)
 
-    n = n + 1
+>    n = n + 1
 
-    if n == num_tweets_to_collect:
-        break
+>    if n == num_tweets_to_collect:
+>        break
+>```
+
+You can collect your own tweets, or use the collection in `assets/data/captured-tweets.txt`
+
+#### Loading the data
+
+```python
+tweets = [tweet for tweet in open('../../assets/data/captured-tweets.txt', 'r')]
 ```
 
-Now we'd like to do a few things:
-1. Use `spacy` to write a function to filter tweets to those where Google is announcing a product.
-    - Think of how we might do this.
-    - One way might be to identify verbs, where 'Google' is the noun and their is some action like 'announcing' or some new product  
-1. Build a `word2vec` model of the tweets we have collected using `gensim`
-1. Use `word2vec` similarity function to find words similar to announcing
-1. Use `word2vec` similarity function to find words similar to Google products (android, chrome, etc)
-1. Filter tweets that contain those words.
+#### Setting up spacy
+```python
+from spacy.en import English
+nlp_toolkit = English()
+```
 
+
+Now we'd like to do a few things:
+
+1. Use `spacy` to write a function to filter tweets to those where Google is announcing a product. Think of how we might do this. One way might be to identify verbs, where 'Google' is the noun and their is some action like 'announcing'
+    a. Write a function that can take a take a sentence parsed by `spacy` and identify it mentions a company named 'Google'. Remember, `spacy` can find entities and codes them `ORG` if they are a company.
+    b. BONUS: Make this function work for any company
+    c. Write a function that can take a sentence parsed by `spacy` and return the verbs of the sentence (preferably lemmatized)
+    d. For each tweet, parse it using it `spacy` and print it out if the tweet has 'release' or 'announce' as a verb.
+    e. Write a function that identifies countries - HINT: the entity label for countries is GPE  (or GeoPolitical Entity)
+    f. Re-run (d) find countries tweets that discuss 'Iran' announcing or releasing.
+
+1. Build a `word2vec` model of the tweets we have collected using `gensim`
+    a. First take the collection of tweets and tokenize them using `spacy`
+        i. Think about how this should be done. Should you only use upper-case or lower-case? Should you remove punctuations or symbols? 
+    b. Build a `word2vec` model
+        i. Test the window size as well - this is how many surrounding words to use to model a word. What do you think is appropriate for Twitter.
+    c. Test your word2vec model with a few similarity functions.
+        i. Find words similar to 'Syria'
+        ii. Find words similar to 'war'
+        iii. Find words similar to 'Iran'
+        iv. Find words similar to 'Verizon'
+    d. Adjust the choices in (b) and (c) as necessary
+
+1. Filter tweets to those that mention 'Iran' or similar entities and 'war' or similar entities.
+    a. Do this using just `spacy`
+    b. Do this using `word2vec` similarity scores
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
@@ -389,5 +437,6 @@ Now we'd like to do a few things:
 - [How Google Converted Language Translation Into a Problem of Vector Space Mathematics](http://www.technologyreview.com/view/519581/how-google-converted-language-translation-into-a-problem-of-vector-space-mathematics/)
 - [A word is worth a thousand vectors](http://multithreaded.stitchfix.com/blog/2015/03/11/word-is-worth-a-thousand-vectors/)
 - [Word Embeddings For Fashion](http://developers.lyst.com/2014/11/11/word-embeddings-for-fashion/)
+- [Building the Next New York Times Recommendation Engine](http://open.blogs.nytimes.com/2015/08/11/building-the-next-new-york-times-recommendation-engine/?_r=0)
 
 
