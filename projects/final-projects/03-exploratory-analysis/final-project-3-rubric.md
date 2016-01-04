@@ -8,7 +8,7 @@ Acceptable performance for this standard is based on how well you've applied spe
 
 ---
 
-## PARSE THE DATA
+## PARSE & MINE
 **Meets Expectations**: Did you: Review and document your data? Perform an exploratory analysis? Verify the quality of your data? Application of these learning goals will be assessed using the requirements below:
 
 #### Performance Evaluation
