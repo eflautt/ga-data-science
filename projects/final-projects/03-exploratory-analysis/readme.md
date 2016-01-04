@@ -13,6 +13,7 @@ Your exploratory data analysis will effectively help you tell your data's story,
 ### DELIVERABLES
 
 #### Exploratory Analysis Writeup
+
 - **Requirements:** 
    * Review the data set and project with an EIR during office hours.
    * Practice importing (potentially unformatted) data into clean matrices|data frames, and if necessary, export into a form that makes sense (text files or a database, for example).
@@ -71,12 +72,14 @@ While your total score may serve as a helpful gauge of whether you've met projec
 ### RESOURCES
 
 #### Suggestions for Getting Started 
+
 - Keep the project simple! The "cool" part of the analysis will come; just looking at simple relationships between variables can be incredibly insightful.
 - Consider building some helper functions that help you quickly visualize and interpret data. 
    - Exploratory data analysis should be formulaic; the code should not be holding you back. There are plenty of "starter code" examples from class materials.
-- DRY: Don't Repeat Yourself! If you see yourself copy and pasting code a lot, turn it into a function, and use the function instead!
+- **DRY:** Don't Repeat Yourself! If you see yourself copy and pasting code a lot, turn it into a function, and use the function instead!
 
 #### Specific Tips
+
 - This deliverable should be similar to the work you did for Unit Project 2 earlier in the course.
 
 ---
