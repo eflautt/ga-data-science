@@ -11,6 +11,7 @@ Week 6 | Lesson 12
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Understand and build decision tree models for classification and regression
 - Understand the differences between linear and non-linear models
 - Understand and build random forest models for classification and regression
@@ -18,6 +19,7 @@ Week 6 | Lesson 12
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Use seaborn to create plots
 - Knowledge of a bootsrap sample
 - Explain the concepts of cross-validation, logistic regression, and overfitting
@@ -25,6 +27,7 @@ Week 6 | Lesson 12
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Review materials & dataset (sample code)
 
 ### LESSON GUIDE
@@ -45,6 +48,7 @@ Week 6 | Lesson 12
 
 <a name="opening"></a>
 ## Opening (5 mins)
+
 - Review pre-work, projects, or prior exit ticket, if applicable
 - Discuss current lesson objectives
 - Review basics of logistic regression
@@ -99,10 +103,11 @@ _Trees_ are a data structure made up of _nodes_ and _branches_. Each node typica
 A _decision tree_ contains a question at every node. Depending on the answer to that question, we will proceed down the left or right branch of the tree and ask another question. Once we don't have any more questions at the _leaf_ nodes, we make a prediction.
 
 It's important to note the next question we ask is always dependent on the last.  We'll see how this sets decision trees apart from previous models. For example, suppose we want to predict if an article is a news article. We may start by asking: does it mention a President? 
-    - If it does, it must be a news article
-    - If not, let's ask another question - does the article contain other political figures?
-    - If not, does the article contain references to political topics?
-    - Etc
+
+- If it does, it must be a news article
+- If not, let's ask another question - does the article contain other political figures?
+- If not, does the article contain references to political topics?
+- Etc
 
 **Check**: Using our dataset from earlier, try to predict whether a given article is evergreen.
 
@@ -119,6 +124,7 @@ Additionally, trees automatically contain interactions of features. Since each q
 Training a decision tree is about deciding on the best set of questions to ask. A good question will be one that best segregates the positive group from the negative group and then narrows in on the correct answer. For example, in our toy problem of classifying news stories, the best question we can ask is one that creates 2 groups, one that is mostly news stories and on that is mostly non-news stories.
 
 Like all data science techniques, we need to quantify this segregation.  We can do so with any of the following metrics:
+
 - [Classification Error]
 - [Entropy]
 - [Gini](https://en.wikipedia.org/wiki/Gini_coefficient)
@@ -130,9 +136,10 @@ When training, we want to choose the question that gives us the best _change_ in
 At each training step, we take our current set and choose the best feature to split (in other words, the best question to ask) based on information gain. After splitting, we then have two new groups. This process is next repeated _recursively_ for each of those two groups.
 
 Let's build a sample tree for our evergreen prediction problem. Assume our features are:
-    - Whether the article contains a recipe
-    - The image ratio
-    - The html ratio
+
+- Whether the article contains a recipe
+- The image ratio
+- The html ratio
 
 First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe feature.
 
@@ -172,15 +179,18 @@ In your groups from earlier, work on evaluating the decision tree using cross-va
 Decision trees tend to be weak models because they can memorize or overfit to a dataset.  Remember, a model is _overfit_ when it instead of picking up on general trends in the data, it memorizes or bends to a few specific examples. If we simply memorized each article and it's classification, our model would overfit. This is like using every word in every article as a feature.
 
 For instance, revisiting our previous example, we might ask questions like:
+
 - Is the first word 'The'?
 - Is the second word 'president'
 - Is the third word 'of'
 - etc.
 
 This model is attempting to recreate the articles exactly as opposed to learning a general trend. An unconstrained decision tree can learn a fairly extreme tree:
+
 ![](./assets/images/complex-tree-min.png)
 
 We can limit this function in decision trees using a few methods:
+
   - Limiting the number of questions (nodes) a tree can have
   - Limiting the number of samples in the leaf nodes
 
@@ -193,6 +203,7 @@ We can limit this function in decision trees using a few methods:
 > See ipython notebook for starter and solution code.
 
 Control for overfitting in the decision model by adjusting one of the following parameters:
+
 - `max_depth`: Control the maximum number of questions
 - `min_samples_in_leaf`: Control the minimum number of records in each node
 
@@ -207,12 +218,14 @@ Random Forests are some of the most widespread classifiers used.  They are relat
 
 Random Forests are an _ensemble_ or collection of decision trees.
 
-Advantages:
+**Advantages:**
+
 - Easy to tune, built-in protection against overfitting, no regularization
 - Non-linear
 - Built-in interaction effects
 
-Disadvantages:
+**Disadvantages:**
+
 - Slow
 - Black-box
 - No "coefficients", we don't know what positively or negatively impacts a website being evergreen
@@ -268,20 +281,21 @@ The same models, both decision trees and random forests can be used for both cla
 ## Conclusion (5 mins)
 
 #### Review Q&A
+
 1. What are decision trees?
-- Decision trees are non-linear models that can be used for classification or regression.
+    - Decision trees are non-linear models that can be used for classification or regression.
 
 2. What does training involve?
-- Training means using the data to decide the best questions to separate the data into our two classes. Predictions are then made by answering those questions.
+    - Training means using the data to decide the best questions to separate the data into our two classes. Predictions are then made by answering those questions.
 
 3. What are some common problems with Decision Trees?
-- Decision trees are typically weak models and overfit very easily
+    - Decision trees are typically weak models and overfit very easily
 
 4. What are Random Forests?
-- Random forests are collections of decision trees and are much more powerful models
+    - Random forests are collections of decision trees and are much more powerful models
 
 5. What are some common problems with Random Forests?
-- While they are very good predictive models, they are more often a black-box and lack the explanatory features of linear/logistic regression
+    - While they are very good predictive models, they are more often a black-box and lack the explanatory features of linear/logistic regression
 
 ***
 
