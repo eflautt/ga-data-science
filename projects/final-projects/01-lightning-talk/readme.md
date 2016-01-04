@@ -16,6 +16,7 @@ You'll get the opportunity to get immediate feedback and guidance in order to he
 ### DELIVERABLES
 
 #### Lightning Presentation
+
 - **Requirements:** You should present from a prepared deck that explains the following:
     * ___The Problem___: What's the background and scope of the project idea? What problem are you attempting to address or solve? Who may it matter to?
     * ___Data___: What data exists to help solve this problem? Where is it coming from? What does the data look like? What is the observation?
