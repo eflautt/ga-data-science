@@ -13,6 +13,7 @@ For this project, you will need to complete a problem statement and research des
 ### DELIVERABLES
 
 #### Project Design Writeup
+
 - **Requirements:**
     - Well-articulated problem statement with "specific aim" and hypothesis, based on your lightning talk
     - An outline of any potential methods and models
@@ -66,14 +67,17 @@ While your total score is a helpful gauge of whether you've met overall project 
 ### RESOURCES
 
 #### Starter Code
+
 - Please use the [template](./project-design-template.md) provided.
 
 #### Suggestions for Getting Started
+
 - The more time you spend researching, the less time you'll likely spend writing; this is a positive sign!
 - While researching, keep track of all of your resources. Make sure they're trustworthy.
 - If you've seen similar work online, see if you can find the code that implemented the data munging. It might come in handy!
 - If your project requires using an API, make sure you can get access to it. Not everyone gives away API keys immediately, and you don't want to be caught with no data with one week left to work!
 
 #### Specific Tips
+
 - Provide a sense of depth and scale to the project, which can be used to guide where the majority of your time should be spent working on the project.
 - Show a clear connection between the datasets and the problem presented. The project should avoid working with independent variables (or features) that would not ordinarily be available in order to predict your target.
