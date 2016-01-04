@@ -16,6 +16,7 @@
 >   - [ ] What should students do to review or prepare for the next lesson?
 >
 > #### *How to Use This Template*
+
 > * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review). 
 > * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
 
@@ -45,18 +46,21 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Describe some concept
 - Explain how to do something
 - Do or build something
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Gather materials needed for class
 - Complete Prep work required
 - Prepare any specific instructions
@@ -74,6 +78,7 @@
 ---
 <a name="opening"></a>
 ## Opening (# mins)
+
 - Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
 - Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
@@ -91,7 +96,8 @@ Discuss topic and explain by dividing parts into sections. Ask students to defin
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
-```html
+```
+html
 <!DOCTYPE html>
 <html>
   <head>
@@ -124,7 +130,8 @@ Walk through a codealong or demonstration of something.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
+```
+ruby
 def lorem
   return 'some stuff'
 end
@@ -134,7 +141,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nem
 
 Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
+```
+ruby
 def another_lorem
   this = some_method(0+2)
   return this.to_json
@@ -151,7 +159,8 @@ Solve a problem or apply this topic to a real world scenario. Solving or underst
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
+```
+ruby
 def lorem
   return 'some stuff'
 end
@@ -161,7 +170,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nem
 
 Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
+```
+ruby
 def another_lorem
   this = some_method(0+2)
   return this.to_json
@@ -185,6 +195,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 
 <a name="conclusion"></a>
 ## Conclusion (# mins)
+
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
@@ -198,6 +209,7 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 | **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
+
 - Add your own resources.
 - Go crazy.
 - So much room for bullets!
