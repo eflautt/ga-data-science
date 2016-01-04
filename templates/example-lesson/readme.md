@@ -79,15 +79,13 @@ end
 
 And let's pretend that we create a new user, Rob Stark, whose object is shown below:
 
-```
-ruby
+```ruby
 => #<User:0x007fc8b18c5718 @address="1 Winterfell Lane", @age=16, @id=1, @name="Rob Stark", @king?=true>
 ```
 
 With an ORM, we're able to take that instance of class User and map it to our relational database:
 
-```
-psql
+```psql
 id |   name    | age |                      address                       | king?
 ----+-----------+-----+----------------------------------------------------+-------
   1 | Rob Stark |  16 | 1 Winterfell Lane                                  | true
@@ -233,8 +231,7 @@ Just like we used a wonderful Rake command to help us quickly create a database,
 
 > Note: Explain some of the common commands we'll be using and they'll have access to.
 
-```
-bash
+```bash
 $ rake -T
 
 rake db:create              # Creates the database f...
