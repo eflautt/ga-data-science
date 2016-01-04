@@ -6,6 +6,7 @@
 - Classification problem
 - Confidence intervals
 - Correlation
+- Dataframe
 - Historgrams
 - Line graph
 - Logistic Model
