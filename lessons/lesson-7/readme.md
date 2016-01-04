@@ -85,22 +85,19 @@ For squared error, we will:
 
 sklearn's metrics module includes a mean_squared_error function. Sklearn's metrics module will be the tool we use to evaluate performance for the majority of our models
 
-```
-python
+``` python
 from sklearn import metrics
 metrics.mean_squared_error(y, model.predict(X))
 ```
 
 For example, if we to compare two arrays of the same values, we would expect a mean squared error of 0:
 
-```
-python
+```python
 from sklearn import metrics
 metrics.mean_squared_error([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
 ```
 
-```
-bash
+```bash
 0.0
 ```
 
@@ -112,8 +109,7 @@ metrics.mean_squared_error([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])
 # (4^2 + 2^2 + 0^2 + 2^2 + 4^2) / 5
 ```
 
-```
-bash
+```bash
 8.0
 ```
 
@@ -122,8 +118,7 @@ bash
 
 The regression we've been using in class is called "ordinary least squares," which literally means given a matrix X, solve for the _least_ amount of squared error for y. However, this approach assumes that the sample X is representative of the population; that is, it assumes that the sample is _unbiased_. For example, let's compare these two random models:
 
-```
-python
+```python
 import numpy as np
 import pandas as pd
 from sklearn import linear_model
@@ -182,8 +177,7 @@ One of the most common cross validation techniques is called **k-fold**: split t
 
 What happens to mean squared error if we use k-fold validation to _generalize_ the error?
 
-```
-python
+```python
 from sklearn import cross_validation
 wd = '../../datasets/'
 bikeshare = pd.read_csv(wd + 'bikeshare/bikeshare.csv')
@@ -218,8 +212,7 @@ Apply the following code through a loop of numbers 2 to 50 and find answers to t
 1. What does `shuffle=True` do?
 2. At what point does cross validation no longer seem to help the model? The error line should look similar to a flat line.
 
-```
-python
+```python
     kf = cross_validation.KFold(len(modeldata), n_folds=i)
     scores = []
     for train_index, test_index in kf:
@@ -253,8 +246,7 @@ Regularization, which introduces the weights to these coefficients, would help p
 #### Where Regularization Makes Sense
 Consider this: what happens to MSE if we just directly use a Lasso or Ridge Regression?
 
-```
-python
+```python
 lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 lm = linear_model.Lasso().fit(modeldata, y)
@@ -263,8 +255,7 @@ lm = linear_model.Ridge().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-```
-bash
+```bash
 1672.58110765 # OLS
 1725.41581608 # L1
 1672.60490113 # L2
@@ -285,8 +276,7 @@ Regularization, like any important optimization function, will be more important
 
 Let's test a variety of alpha weights for Ridge Regression on the bikeshare data.
 
-```
-python
+```python
 alphas = np.logspace(-10, 10, 21)
 for a in alphas:
     print 'Alpha:', a
@@ -307,8 +297,7 @@ We can tell sklearn to try all of these alphas in less code using a _grid search
 
 A grid search will end up trying as many combos as you specify in the `param_grid` argument. For example:
 
-```
-python
+```python
 {
     'intercept': [True, False],
     'alpha': [1, 2, 3],
@@ -326,8 +315,7 @@ This `param_grid` has 6 different options:
 
 This makes grid search an incredibly powerful tool in machine learning! Check out the example below.
 
-```
-python
+```python
 from sklearn import grid_search
 
 alphas = np.logspace(-10, 10, 21)
@@ -373,8 +361,7 @@ Gradient Descent is very similar to traversal or dynamic programming, programmin
 
 Walk through this code, which suggests a similar pattern to how gradient descent behaves:
 
-```
-python
+```python
 num_to_approach, start, steps, optimized = 6.2, 0., [-1, 1], False
 while not optimized:
     current_distance = num_to_approach - start
@@ -428,8 +415,7 @@ Like Ridge and Lasso regression, we can penalize (add in weights) to the gradien
 
 To follow along with either our "grandmother's house" example or the python example code above, try turning the estimator's argument `verbose` to 1. It will print its optimizations up to the number of iterations you allow it to run (default is 5).
 
-```
-python
+```python
 lm = linear_model.SGDRegressor()
 lm.fit(modeldata, y)
 print lm.score(modeldata, y)
@@ -462,8 +448,7 @@ While exploring the Gradient Descent regressor object, you'll build a grid searc
 #### Materials:
 You can use the following starter code to get started:
 
-```
-python
+```python
 params = {} # put your gradient descent parameters here
 gs = grid_search.GridSearchCV(
     estimator=linear_model.SGDRegressor(),
