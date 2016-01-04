@@ -27,6 +27,7 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 ## DELIVERABLES
 
 #### Title
+
 - **Requirements/Contraints:**
   - Your project is to make a thing that does something
   - Your project should also do something else
@@ -44,12 +45,12 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 - **Submission:**	
   - TBD by instructor.
 
-> Iterate as needed with additional deliverables.
+> _Iterate as needed with additional deliverables._
 
 ---
 
 ## TIMELINE
-> Optional: include for multi-part projects
+> Optional: Only need to include for multi-part projects
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
@@ -67,8 +68,7 @@ Your project will assessed using the following course standards:
 
 1. Standard 1
 2. Standard 2
-3. Standard 3
-4. Professional Development
+3. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
@@ -81,28 +81,32 @@ Based on the requirements, you can earn a maximum of  **#**  points on this proj
     **2** | _Meets expectations, good job!_
     **3** | _Exceeds expectations, you wonderful creature, you!_
 
-While your total score may serve as a helpful gauge of whether you've met project goals,  __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
+While your total score may serve as a helpful gauge of whether you've met project goals, __specific standards scores are more important__ since they can show you where to focus your efforts in the future!
 
 ---
 
 ## RESOURCES
 
-> Note: All components in this section are optional; only include elements that are relevant to your project.
+> Note: All components in this section are optional; _only include elements that are relevant to your project._
 
 #### Materials / Starter Code / Dataset
+
 - Describe other relevant project materials *(if applicable)*
 - Explain any material in the starter code folder *(if applicable)*
 
 #### Suggestions for Getting Started
+
 - Do this to help brainstorm
 - Read the docs for this tool
 - Practice using this technique
 
 #### Past Projects / Sample Deliverables
+
 - Prior [example student project 1](#)
 - Prior [example student project 2](#)
 
 #### Additional Links
+
 - Link to [something useful](#)
 - Extra relevant [resource for students](#)
 
