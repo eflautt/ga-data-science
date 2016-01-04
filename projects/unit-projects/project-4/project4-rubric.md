@@ -9,7 +9,7 @@ Acceptable performance for this standard is based on how well you've applied spe
 
 ---
 
-## PRESENT THE RESULTS
+## PRESENT & COMMUNICATE
 **Meets Expectations**: Did you: Summarize findings with narrative techniques? Present limitations and assumptions of your analysis? Identify follow-up problems and questions for future analysis?
 
 #### Performance Evaluation
