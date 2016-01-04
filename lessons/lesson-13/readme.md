@@ -12,6 +12,7 @@ Week # | Lesson 13
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Define natural language processing
 - List common tasks associated with:
   - use-cases
@@ -22,6 +23,7 @@ Week # | Lesson 13
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Experience with sckit-learn classifiers, specifically Random Forests and Decision trees
 - Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
@@ -31,6 +33,7 @@ Week # | Lesson 13
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
   ```python
@@ -54,6 +57,7 @@ Week # | Lesson 13
 Recall definitions of Decision Trees and Random Forests from previous lesson.
 
 **Check:** What are some important features of decision trees and random forests?
+
   - Decision trees are weak learners that are easy to overfit
   - Random forests are strong models that made up a collection of decision trees
     - They are non-linear (while logistic regression is linear)
@@ -81,6 +85,7 @@ _The L.A. Lakers won the NBA championship in 2010, defeating the Boston Celtics.
 
 
 To perform a proper analysis, we need to be able to identify that:
+
 - The periods in _L.A._ don't mark the end of a sentence but an abbreviation.
 - _L.A. Lakers_ and _Boston Celtics_ are one concept.
 - _"2010"_ is the word used, not _"2010,"_
@@ -93,6 +98,7 @@ Abbreviations, proper nouns, and dates can pose a problem, but there are many ot
 Stemming and lemmatization are two solutions to this type of problem. Once we've identified the **tokens** of our sample text, we can use these tools to identify common roots.
 
 **Stemming** is a crude process of removing common endings from sentences:
+
   - Stemming removes endings with `s`, `es`, `ly`, `ing`, and `ed`.
 
 This is useful so that we can treat the word `happy` and `happily` similarly. 
@@ -114,6 +120,7 @@ For example if we are processing financial news, we might need to identify which
 Alternatively, if we are writing an assistant application, we might need to identify specific command phrases in order to determine what is being asked. For instance, given the phrase: 'Siri, what time is my next appointment?' what needs to be tagged and what needs to be parsed?
 
 Tagging and parsing is in fact made up of a few overlapping sub-problems:
+
   - "Parts of speech" tagging:
     - What are the parts of speech in a sentence? Which is the noun, verb, adjective, etc?
   - Chunking:
@@ -140,13 +147,15 @@ Let's start by attempting to process some of the titles.
 
 First, we'll load our NLP toolkit by specifying the language:
 
-  ```python
+  ```
+  python
   from spacy.en import English
 
   nlp_toolkit = English()
   ```
 
-  This toolkit has 3 pre-processing engines.
+  This toolkit has 3 pre-processing engines:
+  
     - a tokenizer: to identify the word tokens
     - a tagger: to identify the concepts described by the words
     - a parser: to identify the phrases and links between the different words
@@ -154,13 +163,13 @@ First, we'll load our NLP toolkit by specifying the language:
 Each of these pre-processing tasks can be overridden with a specific tool you have (you may want a specialized tokenizer that looks for stock quotes or instagram posts instead of news headlines). You could also write your own tokenizer or tagger for those tasks and use them in place of the default ones `spacy` provides. For now, we'll use the defaults.
 
 The first title is:
- > IBM Sees Holographic Calls, Air Breathing Batteries
 
- [http://www.bloomberg.com/news/articles/2010-12-23/ibm-predicts-holographic-calls-air-breathing-batteries-by-2015](http://www.bloomberg.com/news/articles/2010-12-23/ibm-predicts-holographic-calls-air-breathing-batteries-by-2015)
+- [_IBM Sees Holographic Calls, Air Breathing Batteries_](http://www.bloomberg.com/news/articles/2010-12-23/ibm-predicts-holographic-calls-air-breathing-batteries-by-2015)
 
  From this we may wish to extract that the article references a company and that the company is referencing a new possible product: air-breathing batteries.
 
- ```python
+ ```
+ python
 
  title = "IBM sees holographic calls, air breathing batteries"
  parsed = nlp_toolkit(title)
@@ -220,7 +229,8 @@ Word: batteries
    Parent of this word: call
 ```
 
-In this output, 
+In this output:
+
 - "IBM" is identified as an organization (ORG). 
 - We identify a phrase 'holographic calls' 
 - We identify a compand noun phrase at the end - 'air breathing batteries'.
@@ -240,9 +250,10 @@ data['references_organization'] = data['title'].fillna('').map(references_organi
 data[data['references_organization']][['title']].head()
 ```
 
-**Check:**  Write function to identify titles that have mention an organization (ORG) and person (PERSON)
+**Check:** Write a function to identify titles that have mention an organization (ORG) and person (PERSON).
 
 Solution:
+
 ```
 python
 def references_organization_and_person(title):
@@ -275,6 +286,7 @@ When we want to include the text as features, we usually create a _binary_ featu
 To do this, we must first create a vocabulary, in order to account for all the possible words in our universe. We will do this in a data-driven way, which usually means taking in all of the words that appear in our corpus. We'll then filter them based on occurrence or usefulness.
 
 In doing so, we'll have many encoding or representation questions along the way, such as:
+
   - Does the order of words matter?
   - Does punctuation matter?
   - Upper or lower case? Should we treat 'Python' as different from 'python'?
@@ -284,6 +296,7 @@ The answer to each of these is problem dependent, but all of them will affect ou
 **Check:** What do you think? Does word order matter? Case? Punctuation? Discuss and explain your reasoning.
 
 Solution:
+
 - [ ] Yes, order of words may matter.
   - This is especially true when trying to predict postive or negative sentiment.
 - [ ] Yes, punctuation may matter.
@@ -291,10 +304,10 @@ Solution:
 - [ ] Yes, letter case may matter.
   - Upper-case words or phrases are usually proper nouns. For instance, "Python" is more likely to refer to a programming language, while "python" may refer to either the programming language or a type of snake.
 
-Classification using words from the text as features is known as **bag-of-words** classification.
 
+Note: Classification using words from the text as features is known as **bag-of-words** classification.
 
-**Check:** What is "bag-of-words" classification stand for and when should it be used? Why? What are some benefits to this approach?
+**Check:** What is "bag-of-words" classification stand for and when should it be used? What are some benefits to this approach?
 
 ***
 
@@ -311,7 +324,7 @@ There are built-in utilities to pull out features from text in `scikit-learn` - 
 
 `CountVectorizer` takes a column of text and creates a new dataset - one row per piece of text (i.e. one row per title) and generates a feature for **every** word in the all of the titles.
 
-REMEMBER: Using all of the words can be very useful, but we also need to remember to use regularization to avoid overfitting. Otherwise, using rare words may result in the model learning something that isn't generalizable.
+**REMEMBER**: Using all of the words can be very useful, but we also need to remember to use regularization to avoid overfitting. Otherwise, using rare words may result in the model learning something that isn't generalizable.
 
 For example, if we are attempting to predict sentiment and see an article that has the word "bessst!", we may link this word to positive sentiment. However, very few articles may ever use this word, so it isn't actually very useful for our model. 
 
@@ -327,6 +340,7 @@ vectorizer = CountVectorizer(max_features = 1000,
 
 
 `CountVectorizer` arguments:
+
 - `ngram_range` - a range of of length of phrases to use
     - `(1,1)` means use all single words
     - `(1,2)` all contiguous pairs of words
@@ -339,6 +353,7 @@ vectorizer = CountVectorizer(max_features = 1000,
     - To use a dummy column as the entry (1 or 0, as opposed to the count). This is useful if you think a word appearing 10 times is not more important than whether the word appears at all.
 
 Like models or estimators in `scikit-learn`, vectorizers follow a similar interface:  
+
   - We create a vectorizer object with the parameters of our feature space. 
   - We `fit` a vectorizer to learn the vocabulary
   - We `transform` a set of text into that feature space.
@@ -359,10 +374,10 @@ vectorizer = CountVectorizer(max_features = 1000,
                              stop_words='english',
                              binary=True)
 
-# Use `fit` to learn the vocabulary of the titles
+- Use `fit` to learn the vocabulary of the titles
 vectorizer.fit(titles)
 
-# Use `tranform` to generate the sample X word matrix - one column per feature (word or n-grams)
+- Use `tranform` to generate the sample X word matrix - one column per feature (word or n-grams)
 X = vectorizer.transform(titles)
 ```
 
@@ -375,10 +390,10 @@ from sklearn.ensemble import RandomForestClassifier
 
 model = RandomForestClassifier(n_estimators = 20)
     
-# Use `fit` to learn the vocabulary of the titles
+- Use `fit` to learn the vocabulary of the titles
 vectorizer.fit(titles)
 
-# Use `tranform` to generate the sample X word matrix - one column per feature (word or n-grams)
+- Use `tranform` to generate the sample X word matrix - one column per feature (word or n-grams)
 X = vectorizer.transform(titles)
 y = data['label']
 
@@ -401,8 +416,7 @@ To define Inverse Document Frequency, first let's define Document Frequency. **D
 **Inverse Document Frequency** is simply `1 / Document Frequency` (although sometimes this is altered to `log(1 / Document Frequency)`). 
 
 Looking at our final term:
-  Term Frequency * Inverse Document Frequency 
-  = Term Frequency / Document Frequency.  
+  Term Frequency * Inverse Document Frequency = Term Frequency / Document Frequency.  
 
 The intuition behind a TF-IDF representation is that words that have high weight are those that either appear frequently in this document or appear rarely in other documents (therefore unique to this document).
 
@@ -412,12 +426,12 @@ This is a good alternative to using a static set of stop-words.
 python
 from sklearn.feature_extraction.text import TfidfVectorizer
 vectorizer = TfidfVectorizer()
-
 ```
 
 `TfidfVectorizer` follows the same `fit` and `fit_transform` interface of `CountVectorizer`.
 
 **Check:** What does TF-IDF stand for? What does this function do and why is it useful?
+
 **Check:** Use `TfidfVectorizer` to create a feature representation of the stumbleupon titles.
 
 ***
@@ -437,6 +451,7 @@ vectorizer = TfidfVectorizer()
 ## Conclusion (5 mins)
 
 Let's review:
+
 - Natural language processing is the task of pulling meaning and information from text
 - This typically involves solving many subproblems, including: tokenizing, cleaning (stemming and lemmatization) and parsing.
 - After we have structured our text, we can identified features for other tasks, including: classification, summarization, and translation.
