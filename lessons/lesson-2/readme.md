@@ -196,7 +196,7 @@ The S.M.A.R.T. process covers the "Identify" step of the data science workflow. 
 Questions?
 
 
-<a name="introduction2")></a>   |
+<a name="introduction2")></a>
 ## Data science workflow: Acquire & Parse (5 mins)
 
 During this section we are going to walk through key features of steps 2 & 3 of the data science workflow. We will be working with an iPython Notebook. I'll demo the steps first, then we will try them together. During the last part of class, you will try your hand at the steps individually.
