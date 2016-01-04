@@ -154,7 +154,11 @@ Min = 38
 
 <a name="#codealong1"></a>
 ## Codealong: Summary statistics in Pandas (30 min)
-### Codealong Part 1: Basic Stats
+Have students open and use file- lesson-3-codealong-starter-code. The solutions for the instructors (and after posting class for students) are available in lesson-3-codealong-solutions.ipynb. 
+
+### Codealong Part 1: Basic Stats-
+See the the following concepts in action "Part 1. Basic Stats" of the lesson-3-codealong-starter-code/lesson-3-codealong-solutions.ipynb
+
 We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min from above.
 
 	Methods available include: 
@@ -170,6 +174,7 @@ We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min
 Quartiles divide a rank-ordered data set into four equal parts. The values that divide each part are called the first, second, and third quartiles; and they are denoted by Q1, Q2, and Q3, respectively. The interquartile range (IQR) is a measure of variability, based on dividing a data set into quartiles. Let's take a look in the notebook. 
 
 ### Codealong Part 2: Box Plot
+See the the following concepts in action "Part 2. Box Plot" of the lesson-3-codealong-starter-code/lesson-3-codealong-solutions.ipynb
 There is a handy graph- the box-plot that gives us a nice visual of these metrics as well as the quartile and the interquaritle range. 
 
 ### Bias vs Variance 
@@ -185,14 +190,12 @@ The standard error of the mean (SEM) quantifies the precision of the mean. It is
 
 As the standard error of an estimated value generally increases with the size of the estimate, a large standard error may not necessarily result in an unreliable estimate. Therefore it is often better to compare the error in relation to the size of the estimate.
 
-The regression line is the line that minimizes the sum of squared deviations of prediction (also called the sum of squares error). The standard error of the estimate is closely related to this quantity and is defined below:
-
-         σest = sqrt((sum(Y-Y')^2)/N )
-
-where σest is the standard error of the estimate, Y is an actual score, Y' is a predicted score, and N is the number of pairs of scores. The numerator is the sum of squared differences between the actual scores and the predicted scores.
+The regression line is the line that minimizes the sum of squared deviations of prediction (also called the sum of squares error). The standard error of the estimate is closely related to this quantity. 
 
 
 #### Codealong Part 3
+See the the following concepts in action "Part 3. Standard Deviation and Variance" of the lesson-3-codealong-starter-code/lesson-3-codealong-solutions.ipynb
+
 To calculate the variance and SD in pandas.
 
 	Methods include: 
@@ -203,14 +206,20 @@ To calculate the variance and SD in pandas.
 ### Correlation
 The correlation is a quantity measuring the extent of interdependence of variable quantities. 
 
+### Knowledge Check
+1. What is the difference between bias and variance?
+	- see above for the answer 
+2. What is a commonly used metric that describes variance?
+	- STD
+3. What is the formula for this metric? 
+	- square root of variance
+
+#### Context
+Often times when you are working on a project, descriptive statistics will be the first, and often times the only, step for analysis. Say you need to understand the demographics of your customer base-- descriptive stats will give you the answer. You don't need a fancy model to answer the most common business questions. In the academic setting this information will come in the form of a "table 1". 
+ 
 <a name="introduction2"></a>
 ## Introduction: Is this normal? (10 mins)
 A normal distribution is a key assumption to many models we will later be using. But what is normal? 
-
-Normal equation. The value of the random variable Y is:
-Y = [ 1/σ * sqrt(2π) ] * e -(x - μ)2/2σ2
-
-where X is a normal random variable, μ is the mean, σ is the standard deviation, π is approximately 3.14159, and e is approximately 2.71828.
 
 The graph of the normal distribution depends on two factors - the mean and the standard deviation. The mean of the distribution determines the location of the center of the graph, and the standard deviation determines the height of the graph. When the standard deviation is large, the curve is short and wide; when the standard deviation is small, the curve is tall and narrow. All normal distributions look like a symmetric, bell-shaped curve.
 
@@ -224,10 +233,11 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 
 <a name="demo"></a>
 ## Demo: Determining the distribution of your data (15 mins)
+Instructors should use the file "lesson-3-demo" for this section. Walk through each section in the notebook in order. 
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
-Walk through images of normal, skewed, sigmod etc distributions have students stand up and vote on the types. Instructor note- Use your own work or check out this gallery for images of different distribution types - http://www.itl.nist.gov/div898/handbook/eda/section3/eda366.htm
+Walk through images of normal, skewed, sigmod etc distributions have students stand up and vote on the types. Instructor note- Use your own work or the images in the asset folder. 
 
 After each discuss methods of correcting the issue. 
 
@@ -287,7 +297,7 @@ We can do this in pandas with the "get_dummies" method. Let's checkit out in the
 
 <a name="practice"></a>
 ## Independent Practice: Dummy Colors (15 mins)
-It's important to understand the concept before we use get_dummies so today we will create dummies by hand. In future classes we will use get_dummies to create these. 
+It's important to understand the concept before we use get_dummies so today we will create dummies by hand. In future classes we will use get_dummies to create these.  We will use dummy variables in almost every analysis you complete because it is rare in most fields to only have continuous variables.
 
 Have each student draw a table like we did above on the white board or table. 
 Create dummy varibales for the variable "colors" that has 6 categories- blue, red, green, purple, grey, brown. Set grey as the reference. 
