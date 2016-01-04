@@ -16,6 +16,7 @@ This second project is your first foray into **building a full-stack application
 **Project Requirements & Constraints**
 
 #### Deliverable Title
+
 - **Breakdown:**
   * **Have at _least_ 2 models** (more if they make sense); one representing someone using your application, and one that represents the main functional idea for your app
   * **Include sign up/log in functionality**, with encrypted passwords & an authorization flow
@@ -80,6 +81,7 @@ While the overall rubric will serve as a helpful gauge of whether you met projec
 **Examples & Suggestions**
 
 #### Suggested Ways to Get Started
+
 * **Begin with the end in mind.** Know where you want to go by planning with wireframes & user stories, so you don't waste time building things you don't need
 * **Don’t hesitate to write throwaway code to solve short term problems**
 * **Read the docs for whatever technologies you use.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a developer
