@@ -11,6 +11,7 @@ Week 1 | Lesson 1
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Describe the roles and components of a successful learning environment
 - Define data science and the data science workflow
 - Apply the data science workflow to meet your classmates
@@ -18,12 +19,14 @@ Week 1 | Lesson 1
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Define basic data types used in object-oriented programming
 - Recall the Python syntax for lists, dictionaries, and functions
 - Create files and navigate directories using the command line interface (for your specific environment)
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Review syllabus
 - Read through lesson plans
 - Prepare slide decks
@@ -46,12 +49,14 @@ Week 1 | Lesson 1
 [See: Day 1 deck from production team](./assets/ds-day1.key)
 
 #### GA is a special learning environment 
+
 - Introduce the instructors, EIRs, Producers
 - GA is a global community of individuals empowered to persure the work we love.
 - GA Resources- discounts, community events, hub, office hours
 - GA feedback loop- exit tickets, mid-course feedback, final feedback
 
 #### Road to Success 
+
 - Emotional cycle of change
 - Student learning responsiblity 
 - GA graduation requirements
@@ -62,6 +67,7 @@ Week 1 | Lesson 1
 
 <a name="introduction1"></a>
 ## Introduction: What is Data Science (20 mins)
+
 - A set of tools and techniques used to extract useful informaiton from data
 - A interdisciplinary, problem-solving oriented subject
 - Application of scientific techniques to practical problems
@@ -70,6 +76,7 @@ Week 1 | Lesson 1
 
 
 #### Who uses Data Science
+
 - Netflix - movie recommendations
 - Amazon's algorithm - "you might also like x"
 - Five Thirty Eight- election and sports coverage
@@ -80,6 +87,7 @@ Week 1 | Lesson 1
 #### What are the roles in Data Science?
 
 **Roles:** 
+
 * Data Developer
 * Data Researcher
 * Data Creative
@@ -89,6 +97,7 @@ Week 1 | Lesson 1
 
 
 **Skills:** 
+
 * Business
 * ML/Big Data
 * Math
@@ -110,6 +119,7 @@ Week 1 | Lesson 1
 #### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
 2. According to [this table](./assets/images/Table.png), BMI is the _____
+
 	* Outcome
 	* Predictor
 	* Covariate
@@ -167,6 +177,7 @@ Data for this example:
 - previous delivery data (days since last delivery, number of total deliveries)
 
 Questions we may ask include:  
+
 - Identifying the “right” data set(s)
 - Is there enough data?
 - Does it appropriately align with the question/problem statement?
@@ -194,6 +205,7 @@ Days Since Last Delivery | Integer | Continuous
 Number of Deliveries | Integer | Continuous
 
 **Common questions include:**  
+
 - Read any documentation provided with the data (e.g. data dictionary above)
 - Perform exploratory surface analysis via filtering, sorting, and simple visualizations 
 - Describe data structure and the information being collected
@@ -205,6 +217,7 @@ Number of Deliveries | Integer | Continuous
 Often times, our data will need to be cleaned prior performing an analysis.
 
 Common steps include:
+
 - Sample the data, determine sampling methodology 
 - Iterate and explore outliers, null values via select 
 - Intro qualitative vs quantitative data
@@ -228,6 +241,7 @@ Colgate 8| 100 (20%)
 Other| 150 (30%)
 
 These descriptive stats allow us to: 
+
 - Identify trends and outliers
 - Decide how to deal with outliers - excluding, filtering, and communication
 - Apply descriptive and inferential statistics
@@ -244,6 +258,7 @@ We select a model based on the outcome we are interested in or the assumptions o
 Here, we are using a logistic model because we are determine the probability that a customer may place a return order, which at its heart is a *classification problem*. 
 
 The steps for model building are:  
+
 - Select appropriate model 
 - Build model
 - Evaluate and refine model
@@ -253,6 +268,7 @@ The steps for model building are:
 Presentations are a critical part of your analysis. It doesn't matter how brillant your model is or how illuminating your findings are, if you are not able to effectively communicate your results then they will not be used. 
 
 The most basic form of a data science presentation should include a simple sentence that describes your results: 
+
 - "Customers from large companies had twice (CI 1.9, 2.1) the odds of of placing another order with Planet Express compared to customers from small companies."
 
 Data science presentations can also be far more complex and exciting, like some of the [research presented by Nate Silver's 538 blog](http://fivethirtyeight.com/burrito/#brackets-view). 
@@ -262,6 +278,7 @@ When creating a presentation, always consider your audience and make sure to pra
 Make sure to consider your needs and goals as well as those of your audience. A presentation created for your fellow data scientists will be vastly different than a presentation intended for some executives who are trying to make a business decision.
 
 Key factors of a good presentation include:  
+
 - Summarize findings with narrative and storytelling techniques 
 - Refine your visualizations for broader comprehension
 - Present both limitations and assumptions
@@ -273,6 +290,7 @@ Key factors of a good presentation include:
 Iteration is an important part of *every step* in the Data Science Workflow. At any given point in the process, you may find yourself repeating or going back and re-doing elements in order to better understand your data, clarify your model, and refine your presentation.
 
 For example, after presenting your findings, you may want to:
+
 - Identify follow-up problems and questions for future analysis
 - Create a visually effective summary or report
 - Consider the needs of different stakeholders and how your report might be changed for them
@@ -292,6 +310,7 @@ Have each group develop 1 research question that they would like to know about t
 > Note: Don't share these questions with the class just yet!
 
 Examples:
+
 - What is your current favorite tool for working with data?
 - What are you most excited about learning?
 - What can you help your classmates with when it comes to data analysis? 
@@ -302,6 +321,7 @@ Rotate through the groups to "collect the data" and record the raw data on white
 > Suggest students create an easy visual way for the other students to write their answers, or an option quickly to save time.
 
 #### PRESENT: Communicate the results of your analysis  
+
 - Summarize findings in a narrative
 - Provide a basic visualization for broader comprehension on white board
 - Have one student present for the group
@@ -310,6 +330,7 @@ Rotate through the groups to "collect the data" and record the raw data on white
 
 <a name="demo"></a>
 ## Demo: Dev Environment Setup (65 min)
+
 * Brief intro to the tools we will use as data scientists
 * Workshop to help with environment set up 
 * IPython Notebook to test dataset and complete Python Review
@@ -319,6 +340,7 @@ Rotate through the groups to "collect the data" and record the raw data on white
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 By now, you should be able to answer the following questions with ease:
+
 - What is data science?
 - What is the data science workflow?
 - How can you have a successful learning experience at GA?
