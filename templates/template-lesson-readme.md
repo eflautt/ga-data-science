@@ -96,8 +96,7 @@ Discuss topic and explain by dividing parts into sections. Ask students to defin
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
-```
-html
+``` html
 <!DOCTYPE html>
 <html>
   <head>
@@ -130,8 +129,7 @@ Walk through a codealong or demonstration of something.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```
-ruby
+```ruby
 def lorem
   return 'some stuff'
 end
@@ -141,8 +139,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nem
 
 Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```
-ruby
+```ruby
 def another_lorem
   this = some_method(0+2)
   return this.to_json
@@ -159,8 +156,7 @@ Solve a problem or apply this topic to a real world scenario. Solving or underst
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```
-ruby
+``` ruby
 def lorem
   return 'some stuff'
 end
@@ -170,8 +166,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nem
 
 Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```
-ruby
+``` ruby
 def another_lorem
   this = some_method(0+2)
   return this.to_json
