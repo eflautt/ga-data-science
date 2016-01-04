@@ -163,8 +163,8 @@ Since the whole point of prediction is for a model to work on data that the mode
 
 **Check:** Which of the following scenarios would be better for a weatherman:
 
-    1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
-    2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am at most only 10 degrees off on future days?
+1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
+2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am at most only 10 degrees off on future days?
 
 
 If you said the second case, you just described what we call a good model fit.
