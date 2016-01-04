@@ -13,12 +13,14 @@ Week 3 | Lesson 6
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Define data modeling and simple linear regression
 - Build a linear regression model using a dataset that meets the linearity assumption using the sci-kit learn library
 - Understand and identify multicollinearity in a multiple regression.
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Effectively show correlations between an independent variable `x` and a dependent variable `y`
 - Be familiar with the `get_dummies` function in pandas
 - Understand the difference between vectors, matrices, Series, and DataFrames
@@ -27,6 +29,7 @@ Week 3 | Lesson 6
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Review materials
 - Be familiar with the datasets
 
@@ -91,21 +94,25 @@ When working with linear regressions, it helps to have data with normal distribu
 
 For example, let's look at explaining the relationship between an animal's body weight, and their brain weight.
 
-```python
-# Import libraries
+```
+python
+- Import libraries
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-# read in the mammal dataset, and drop missing data.
+- Read in the mammal dataset, and drop missing data.
 mammals = pd.read_csv('../data/msleep.csv')
 mammals = mammals[mammals.brainwt.notnull()].copy()
-# create a matplotlib figure
+
+- Create a matplotlib figure
 plt.figure()
-# generate a scatterplot inside the figure
+
+- Generate a scatterplot inside the figure
 plt.plot(mammals.bodywt, mammals.brainwt, '.')
-# show the plot
+
+- Show the plot
 plt.show()
 ```
 
@@ -113,7 +120,8 @@ plt.show()
 
 In the plot, it's apparent that there is a relationship between the two values, but as it stands, it's not a linear solution. Using the seaborn library, we can plot the linear regression fit with these two variables:
 
-```python
+```
+python
 # generate a plot of a single variable linear model of brain weight given body weight.
 sns.lmplot('bodywt', 'brainwt', mammals)
 ```
@@ -127,8 +135,10 @@ Notice:
 
 Because both values are a log-log distribution, some math properties allow us to transform them into normal distributions. Then, we can solve for the linear regression!
 
-```python
-# create a new data set that converts all numeric variables into log10
+```
+python
+
+- Create a new data set that converts all numeric variables into log10
 log_mammals = mammals[['bodywt', 'brainwt']].apply(np.log10)
 
 sns.lmplot('bodywt', 'brainwt', log_mammals)
@@ -146,12 +156,13 @@ Even though we changed the way the data was shaped, this is still a _linear_ res
 
 Update and complete the code below to use `lmplot` and display correlations between body weight and two dependent variables: `sleep_rem` and `awake`.
 
-```python
+```
+python
 log_columns = ['bodywt', 'brainwt',]  # any others?
 log_mammals = mammals.copy()
 log_mammals[log_columns] = log_mammals[log_columns].apply(np.log10)
 
-# complete below for sleep_rem and awake as a y, with variables you've already used as x.
+- Complete below for sleep_rem and awake as a y, with variables you've already used as x.
 sns.lmplot(x, y, mammals)
 sns.lmplot(x, y, log_mammals)
 ```
@@ -170,17 +181,23 @@ When modeling with sklearn, you'll use the following base principals.
 3. Many estimators also take a vector, y, when working on a supervised machine learning problem. Regressions are supervised learning because we already have examples of y given X.
 4. All estimators have parameters that can be set. This allows for customization and higher level of detail to the learning process. The parameters are appropriate to each estimator algorithm.
 
-```python
-# generate an instance of an estimator class
+```
+python
+
+- Generate an instance of an estimator class
 estimator = base_models.AnySKLearnObject()
-# fit your data
-estimator.fit(X, y)
-# score it with the default scoring method (recommended to use the metrics module in the future)
-estimator.score(X, y)
-# predict a new set of data
-estimator.predict(new_X)
-# transform a new X if changes were made to the original X while fitting
-estimator.transform(new_X)
+
+- Fit your data
+    estimator.fit(X, y)
+
+- Score it with the default scoring method (recommended to use the metrics module in the future)
+    estimator.score(X, y)
+
+- Predict a new set of data
+    estimator.predict(new_X)
+
+- Transform a new X if changes were made to the original X while fitting
+    estimator.transform(new_X)
 ```
 
 For today, our `LinearRegression()` does not have a transform function... but some do! We will not be using it today.
@@ -195,26 +212,29 @@ With this information, we can build a simple process for linear regressions that
 
 With the sklearn library, we can generate an sklearn model object and explore important evaluation values for linear regression.
 
-```python
-# import sklearn
+```
+python
+
+- Import sklearn
 from sklearn import feature_selection, linear_model
 
 def get_linear_model_metrics(X, y, algo):
-    # get the pvalue of X given y. Ignore f-stat for now.
-    pvals = feature_selection.f_regression(X, y)[1]
-    # start with an empty linear regression object
-    # .fit() runs the linear regression function on X and y
+    - Get the pvalue of X given y. Ignore f-stat for now.
+        pvals = feature_selection.f_regression(X, y)[1]
+    - Start with an empty linear regression object
+    - .fit() runs the linear regression function on X and y
     algo.fit(X,y)
-    residuals = (y-algo.predict(X)).values
+        residuals = (y-algo.predict(X)).values
 
-    # print the necessary values
+- Print the necessary values
     print 'P Values:', pvals
     print 'Coefficients:', algo.coef_
     print 'y-intercept:', algo.intercept_
     print 'R-Squared:', algo.score(X,y)
     plt.figure()
     plt.hist(residuals, bins=np.ceil(np.sqrt(len(y))))
-    # keep the model
+    
+- Keep the model
     return algo
 
 X = mammals[['bodywt']]
@@ -223,7 +243,8 @@ lm = linear_model.LinearRegression()
 lm = get_linear_model_metrics(X, y, lm)
 ```
 
-```bash
+```
+bash
 P Values: [  9.15540205e-26]
 Coefficients: [ 0.00096395]
 y-intercept: 0.0859173102936
@@ -235,6 +256,7 @@ R-Squared: 0.871949198087
 **Check:**  What does our ouput tell us?
 
 Our output tells us that:
+
 * The relationship between bodywt and brainwt isn't random (p value approaching 0)
 * The model explains, roughly, 87% of the variance of the dataset (the largest errors being in the large brain and body sizes)
 * With this current model, `brainwt` is _roughly_ `bodywt * 0.00096395`
@@ -245,11 +267,13 @@ Our output tells us that:
 
 Although we know there is a _better_ solution to the model, we should evaluate some other sense things first. For example, given this model, what is an animal's brainwt if their bodywt is 0?
 
-```python
+```
+python
 print lm.predict([[0]])
 ```
 
-```bash
+```
+bash
 array([ 0.08591731])
 ```
 
@@ -257,13 +281,15 @@ array([ 0.08591731])
 
 With linear modeling we call this part of the __linear assumption__. Consider it a test to the model. If an animal's body weights nothing, we expect their brain to be nonexistent. That given, we can improve the model by telling sklearn's LinearRegression object we do not want to fit a y intercept.
 
-```python
+```
+python
 lm = linear_model.LinearRegression(fit_intercept=False)
 lm = get_linear_model_metrics(X, y, lm)
 print lm.predict([[0]])
 ```
 
-```bash
+```
+bash
 P Values: [  9.15540205e-26]
 Coefficients: [ 0.00098291]
 y-intercept: 0.0
@@ -283,7 +309,8 @@ R-Squared: 0.864418807451
 
 We learned earlier that the the data in its current state does not allow for the best linear regression fit. With a partner, generate two more models using the log-transformed data to see how this transform changes the model's performance. Complete the following code to update X and y to match the log-transformed data. Complete the loop by setting the list to be one True and one False.
 
-```python
+```
+python
 X =
 y =
 loop = []
@@ -320,7 +347,8 @@ We'll work with bikeshare data to showcase what this means and to explain a conc
 
 With the bike share data, let's compare three data points: actual temperature, "feel" temperature, and guest ridership. Our data is already normalized between 0 and 1, so we'll start off with the correlations and modeling.
 
-```python
+```
+python
 bike_data = pd.read_csv('data/bikeshare.csv')
 cmap = sns.diverging_palette(220, 10, as_cmap=True)
 
@@ -329,7 +357,8 @@ print correlations
 print sns.heatmap(correlations, cmap=cmap)
 ```
 
-```bash
+```
+bash
             temp     atemp    casual
 temp    1.000000  0.987672  0.459616
 atemp   0.987672  1.000000  0.454080
@@ -346,7 +375,8 @@ Including both of these fields in a model could introduce a pain point of _multi
 
 We can measure this effect in the coefficients:
 
-```python
+```
+python
 y = bike_data['casual']
 x_sets = (
     ['temp'],
@@ -360,7 +390,8 @@ for x in x_sets:
     print
 ```
 
-```bash
+```
+bash
 temp
 P Values: [ 0.]
 Coefficients: [ 117.68705779]
@@ -384,7 +415,8 @@ Even though the 2-variable model `temp + atemp` has a higher explanation of vari
 
 What happens if we use a second variable that isn't highly correlated with temperature, like humidity? 
 
-```bash
+```
+bash
 temp, hum
 P Values: [ 0.  0.]
 Coefficients: [ 112.02457031  -80.87301833]
@@ -403,16 +435,19 @@ There can be a similar effect from a feature set that is a singular matrix, whic
 
 Run through the following code on your own. What happens to the coefficients when you include all weather situations instead of just including all except one?
 
-```python
+```
+python
 lm = linear_model.LinearRegression()
 weather = pd.get_dummies(bike_data.weathersit)
 get_linear_model_metrics(weather[[1, 2, 3, 4]], y, lm)
 print
-# drop the least significant, weather situation  = 4
+
+- Drop the least significant, weather situation  = 4
 get_linear_model_metrics(weather[[1, 2, 3]], y, lm)
 ```
 
-```bash
+```
+bash
 P Values: [  3.75616929e-73   3.43170021e-22   1.57718666e-55   2.46181288e-01]
 Coefficients: [  4.05237297e+12   4.05237297e+12   4.05237297e+12   4.05237297e+12]
 y-intercept: -4.05237297302e+12
@@ -434,10 +469,12 @@ This model makes more sense, because we can more easily explain the variables co
 With a partner, complete this code together and visualize the correlations of all the numerical features built into the data set.
 
 We want to:
+
 * Add the three significant weather situations into our current model
 * Find two more features that are not correlated with current features, but could be strong indicators for predicting guest riders.
 
-```python
+```
+python
 lm = linear_model.LinearRegression()
 bikemodel_data = bike_data.join() # add in the three weather situations
 
@@ -460,6 +497,7 @@ get_linear_model_metrics(final_feature_set, y, lm)
 We've completely a model together that explains casual guest riders. It's now your turn to build another model, but using a different y variable: registered riders.
 
 **Pay attention to:**
+
 * the distribution of riders (should we rescale the data?)
 * checking correlations with variables and registered riders
 * having a feature space (our matrix) with low multicollinearity
@@ -467,6 +505,7 @@ We've completely a model together that explains casual guest riders. It's now yo
 * the linear assumption -- given all feature values being 0, should we have no ridership? negative ridership? positive ridership?
 
 **Bonus**
+
 * Which variables would make sense to dummy (because they are categorical, not continuous)?
 * What features might explain ridership but aren't included in the data set?
     * Is there a way to build these using pandas and the features available?
@@ -478,6 +517,7 @@ We've completely a model together that explains casual guest riders. It's now yo
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
+
 - How do you dummy a categorical variable?
     - How do you avoid a singular matrix?
 - What is a single linear regression?
