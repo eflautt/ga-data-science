@@ -4,6 +4,7 @@
 ## Guiding Principles
 
 **The goal of providing feedback on student projects is to give personal guidance to each student, including meaningful suggestions and input that isn’t immediately obvious.**
+
 - **Students should be shown a copy of the blank rubric when given their project prompt**
 - The rubric is based on a **simple 3-point scale**
 - **The actual measurement for “meets expectation” is tied to the project prompt, and will be different by project**
