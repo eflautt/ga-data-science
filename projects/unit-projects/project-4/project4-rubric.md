@@ -2,6 +2,7 @@
 **Project 4 | Data Science** 	 						
 
 Your project will be assessed using the following standards, as defined by the course syllabus and the data science workflow:
+
 - [ ] Present & Communicate
 - [ ] Professional Development
 
