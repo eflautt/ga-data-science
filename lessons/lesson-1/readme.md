@@ -347,12 +347,12 @@ By now, you should be able to answer the following questions with ease:
 
 ***
 
-##BEFORE NEXT CLASS
+### BEFORE NEXT CLASS
 |   |   |
 |---|---|
 | **UPCOMING PROJECTS**  | [Project 1 Instructions](../../projects/unit-projects/project-1/readme.md)  |
 
-###ADDITIONAL RESOURCES
+### ADDITIONAL RESOURCES
 - Add your own resources.
 - Go crazy.
 - So much room for bullets!
