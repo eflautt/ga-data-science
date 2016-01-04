@@ -67,7 +67,7 @@ Week #1 | Lesson #2
 
 
 <a name="introduction"></a>
-## Intro: The why's and how's of a good question (10 mins)
+## Intro: Asking a good question (10 mins)
 
 #### Why we need a good question/aim
 "A problem well stated is half solved."
@@ -131,7 +131,7 @@ Which of the following questions uses the SMART framework? Why? What is missing?
 1. I am looking to see if there is an association with number of passengers with carry on luggage and delayed take-off time.
 2. Determine if the number of passengers on JetBlue, Delta and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
 
-## Why dataset types matter
+#### Why data types matter
 
 As we saw in the attainable section above, different types of data have different limitations and strengths. Therefore, certain types of analysis will not be possible with certain datasets. Here is a brief overview of some of the different types of datasets:
 
@@ -192,13 +192,14 @@ The S.M.A.R.T. process covers the "Identify" step of the data science workflow. 
 1. SMART analysis aims
 2. Types of a datasets: Cross-Sectional vs Longitudinal/Time Series
 
-
 Questions?
+
 
 <a name="introduction2")></a>   |
 ## Data science workflow: Acquire & Parse (5 mins)
 
 During this section we are going to walk through key features of steps 2 & 3 of the data science workflow. We will be working with an iPython Notebook. I'll demo the steps first, then we will try them together. During the last part of class, you will try your hand at the steps individually.
+
 
 <a name="demo2"></a>
 ## Demo: Walkthrough Acquire and Parse with Pandas (30 mins)
@@ -233,6 +234,7 @@ Data dictionaries are often our primary source to help judge the quality of our 
 Data dictionaries are also where you'll identify any requirements, assumptions, and constraints of your data. Note that you should never assume that a pre-existing data dictionary is complete. It is often going to be up to you to test your assumptions and add to your dictionary.
 
 **Check:** What is a 'data dictionary' and what is it used for? Why?
+
 
 <a name="codealong"></a>
 ## Codealong- Numpy and Pandas intro (30 minutes)
