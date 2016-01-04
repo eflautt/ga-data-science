@@ -89,7 +89,7 @@ The goals of a high quality, reproducible question are similar to the SMART Goal
 4. Reproducible- Another person (or you in 6 months!) can read your state and understand exactly how the analysis is being performed
 5. Timebound- You clearly state the time period and population for which this analysis will pertain
 
-![[](./assets/smart-goal-image.jpg)
+![](./assets/smart-goal-image.jpg)
 
 <a name="demo1"></a>
 ## Demo: Diagraming an aim (5 mins)
