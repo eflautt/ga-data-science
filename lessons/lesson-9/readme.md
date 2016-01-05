@@ -32,17 +32,16 @@ Week # | Lesson 9
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening) | Discuss lesson objectives, Reviewing Probability |
-| 10-15 mins | [Introduction](#introduction) | Intro to Logistic Regression |
-| 10-15 mins | [Demo](#demo)  |  |
-| 20-25 mins | [Guided Practice](#guided-practice)  | |
-| 10-15 mins | [Introduction](#introduction) | |
-| 10-15 mins | [Demo](#demo)  |  |
-| 20-25 mins | [Guided Practice](#guided-practice) | |
-| 10-15 mins | [Introduction](#introduction-eval) | Intro to additional classification metrics and the confusion matrix |
+| 20-25 mins | [Introduction](#intro-logit) | Intro to Logistic Regression |
+| 10-15 mins | [Demo](#demo-logit)  | Demo of the Sigmoid Function |
+| 10-15 mins | [Guided Practice](#guided-practice-logit)  | Calculating Probabilities given Odds using Sigmoid |
+| 15-20 mins | [Independent Practice](#ind-practice-logit) | Implementing and Practicing Logistic Regression in Sklearn |
+| 20-25 mins | [Introduction](#intro-eval) | Intro to additional classification metrics and the confusion matrix |
 | 10-15 mins | [Guided Practice](#guided-practice-eval) | Determining proper metrics given classification problems |
 | 30-35 mins | [Independent Practice](#ind-practice-eval)  | Optimizing a logistic regression using new metrics  |
 | 5-10 mins | [Conclusion](#conclusion) | Wrapup |
 
+<a name="opening"></a>
 ## Opening (5 minutes)
 
 Read through the next two questions and brainstorm some ideas on how to answer each.
@@ -51,6 +50,7 @@ Read through the next two questions and brainstorm some ideas on how to answer e
 
 2. What advantages could we have, compared to KNN, using a linear model like OLS to solve classification? What would be the challenges to using OLS to solve classification (say, if the values were either 1 or 0)?
 
+<a name="intro-logit"></a>
 ## Introduction to Logistic Regression
 
 Logistic Regression is a _linear_ approach to solving a classification problem. That is, we can use a linear model, simile to Linear Regression, in order so solve if a item belongs or does not belong to a class label.
@@ -79,7 +79,8 @@ We'll start with sigmoid function. A _sigmoid function_, quite simply, is a func
 
 Our sigmoid function is defined mathematically as `1 / 1 + e^-t`: (recall, `e` is the inverse of the natural log), where as t increases/decreases, the result is closer to 1 or 0 (when t = 0, the result would be 0.5). Since it is `t` that decides how much to increase or decrease the value away from 0.5, `t` can help with interpretation to solve for something like a coefficient. But in its current form, it is not as useful.
 
-### Demo: What does the Sigmoid Function Look Like on a chart?
+<a name="demo-logit"></a>
+### Demo: What does the Sigmoid Function look like on a chart?
 
 Use the sigmoid function above (`1 / 1 + e^-t`) with values of `t` between -6 and 6 and chart in on a graph. Do this by hand or write some python code to evaluate it (`e = 2.71`). Confirm: do we get the s shape we expect?
 
@@ -101,6 +102,7 @@ with a mean probability of 0.5, means the adjusted probability would be _about_ 
 
 While the logit value (log odds) represents the _coefficients_ in the logistic function, we can convert them into odds ratios that would be more easily interpretable.
 
+<a name="guided-practice-logit"></a>
 ## Guided Practice: Wager these odds!
 
 Given the odds below for some football games, use the _logit_ function and the _sigmoid_ function to solve for the _probability_ that better team would win.
@@ -124,7 +126,8 @@ def sigmoid_func(logit):
 4. Houston : Florida State, 1.8:1
 5. Ohio State : Notre Dame, 1.6:1
 
-### Independent Practice: Logistic Regression Implementation
+<a name="ind--practice-logit"></a>
+## Independent Practice: Logistic Regression Implementation
 
 Use the data `collegeadmissions.csv` and the (LogisticRegression)[http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html] estimator in sklearn in order to predict the target variable `admit`. Your objectives are:
 
@@ -177,7 +180,7 @@ For each of the following examples:
 3. You build a spam classifier for your email system.
 
 <a name="ind-practice-eval"></a>
-## Independent Practice: evaluating KNN with alternative metrics
+## Independent Practice: evaluating Logistic Regression with alternative metrics
 
 [Kaggle's common online exercise](https://www.kaggle.com/c/titanic) is exploring survival data from the Titanic.
 
@@ -185,6 +188,6 @@ For each of the following examples:
 
 1. Spend a few minutes determining which data would be most important to use in the prediction problem. You may need to create new features based on the data available. Consider using a feature selection aide in sklearn. But a worst case scenario; identify one or two strong features that would be useful to include in the model.
 2. Spend 1-2 minutes considering which _metric_ makes the most sense to optimize. Accuracy? FPR or TPR? AUC? Given the business problem (understanding survival rate aboard the Titanic), why should you use this metric?
-3. Build a KNN model that solves for K. Be prepared to explain why you picked this K, metric, and feature set in predicting survival using the tools necessary (such as a fit chart).
+3. Build a tuned Logistic model. Be prepared to explain your design (including regularization), metric, and feature set in predicting survival using the tools necessary (such as a fit chart).
 
 Use the starter code included to get you going.
