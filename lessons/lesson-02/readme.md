@@ -91,7 +91,7 @@ Let's break this down further:
 4. Reproducible: Another person (or you in 6 months!) can read your state and understand exactly how your analysis is performed
 5. Timebound: You clearly state the time period and population for which this analysis will pertain
 
-![](./assets/smart-goal-image.jpg)
+![](./assets/images/smart-goal-image.jpg)
 
 <a name="demo1"></a>
 ## Demo: Diagraming an aim (5 mins)
@@ -143,8 +143,9 @@ As we saw in the attainable section above, different types of data have differen
 
 1. **Cross-Sectional Data:** All information is determined at the same time; all the data comes from the same time period.
 
-    - Things to consider: TEMPORALITY. There is no distinction between _exposure_ and _outcome_. This is why in the example above, we can't say that the availability of fruit in the home actually **causes** children to meet their recommendations. It is just as likely that the opposite may be true.
-    - Strengths
+    - **Issues**: TEMPORALITY. 
+        - There is no distinction between _exposure_ and _outcome_. This is why in the example above, we can't say that the availability of fruit in the home actually **causes** children to meet their recommendations. It is just as likely that the opposite may be true.
+    - **Strengths**
         - Often population-based  
         - Generalizability   
         - Reduced cost compared to other types of data collection methods
@@ -239,7 +240,7 @@ Data dictionaries are also where you'll identify any requirements, assumptions, 
 
 <a name="codealong"></a>
 ## Codealong- Numpy and Pandas intro (30 minutes)
-> Instructor Note: See [NumPy & Pandas notebook](./lab/lesson2_numpy_and_pandas.ipynb)
+> Instructor Note: See [NumPy & Pandas notebook](./code/numpy-and-pandas.ipynb)
 
 What is Numpy and Pandas?
 Pandas is built on Python. In Numpy, we use arrays. With arrays you can do:
@@ -275,7 +276,7 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 
 <a name="lab"></a>
 ## Lesson 2 Lab (20 min)
-> Instructor Note: See [Lesson 2 Lab](./lab/lesson2- lab.ipynb)
+> Instructor Note: See [Lesson 2 Lab](./code/starter-code/starter-code-2.ipynb)
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
