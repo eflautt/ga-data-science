@@ -8,7 +8,7 @@ This guide is intended to help create a repository for your DS instance.
 - Lesson Plans & Slide Decks
 - Workshop datasets + starter & solution code
 - Project Prompts, Rubrics, & Solution Code (where applicable)
-- Links to other course Resources
+- Resources for students and instructors
 
 **The DS student-facing repo includes:**
 
