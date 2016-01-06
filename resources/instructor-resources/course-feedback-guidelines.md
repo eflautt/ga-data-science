@@ -1,3 +1,9 @@
+> Note: These guidelines are still being finalized. To provide feedback in the interim, please email Jessica Viaud (jessicat@ga.co)
+
+^^^
+
+---
+
 # Contributing
 
 Our instructor community has grown tremendously, and local markets do so much to adapt, correct bugs, and enhance this curriculum as they prepare for the classroom.  For this reason, if you have the time, we ask that you contribute your work back to the master repository and use the documentation below as guidance.
