@@ -2,14 +2,20 @@
 
 
 ### Repo Guide
+This guide is intended to help create a repository for your DS instance. 
 
-This guide is intended to help create a student-facing repository for your DS instance. This is __not__ the DS instructor curriculum; these are the student-facing materials, which include:
+The DS instructor repo includes:
+- Lesson Plans & Slide Decks
+- Workshop datasets + starter & solution code
+- Project Prompts, Rubrics, & Solution Code (where applicable)
+- Links to other course Resources
 
-- Lab Startercode & Datasets
+The DS student-facing repo includes:
+
+- Lesson Startercode & Datasets
 - Project Prompts & Rubrics
 - Student Resources
-
-NOTE: Instructors should **also** create a local instance of the official instructor-facing curriculum for their own use.
+ - Note: It does NOT include solution codes or lesson slide decks.
 
 For instructions on how to set up a student-facing GitHub repository for your DS class, please see below.
 > __IMPORTANT: Once you are done setting up your repo, please delete or overwrite the contents of this Readme!__
