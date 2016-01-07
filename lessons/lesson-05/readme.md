@@ -77,22 +77,24 @@ Let's take a look at the file directory system through finder and then through t
 ## Command Line Demo
 Demo a few commands-
 
-1. cd 
-2. pwd
-3. $home
-4. mkdir
-5. open
+1. `cd` 
+2. `pwd`
+3. `$home`
+4. `mkdir`
+5. `open`
 
 As we mentioned, we can access many tools with terminal. Let's walk through a few that are important for data science.
 
-So far we've been using iPython notebook in place of a text editor. However, there are lots of other options availablee, including: Emacs, Vim, Sublime, Atom. Do you know any others? 
+So far we've been using iPython notebook in place of a text editor. However, there are lots of other options availablee, including: Emacs, Vim, Sublime. 
+
+**Check**: What is a text editor? Can you name any other examples? 
 
 <a name="demo2"></a>
 ## Text Editor - Sublime
 
 Let's do a demo of Sublime with python. 
 
-> Instructor Note: Pull up the text editor and demo writing a simple python program. You can also use [say-hi.py ](./code/say-hi.py).
+> Instructor Note: Pull up the text editor and demo writing a simple python program. You can use [say-hi.py ](./code/say-hi.py).
 
 <a name="intro2"></a>
 ## iPython Notebook
