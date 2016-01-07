@@ -59,7 +59,8 @@ Today we are going to review some of the tools we use in data science and see ho
 
 *Command line*- This is your portal to your computer and the outside world. 
 
-> Instructor note: Walk through the bottom half of [landscape.jpg](./assets/images/landscape.JPG). 
+> Instructor note: Walk through the bottom half of this diagram:
+![landscape.jpg](./assets/images/landscape.JPG). 
 
 ### Local machine
 On your local machine you have a variety of tools at your disposal, including:
