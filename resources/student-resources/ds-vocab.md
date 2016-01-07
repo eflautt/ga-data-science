@@ -49,6 +49,7 @@
 - Loss functions
 - Mean absolute error
 - Mean squared error
+- Minkowski Metric
 - Model Fit
 - Odds / Odds Ratios
 - Ordinary Least Squares
