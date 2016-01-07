@@ -8,24 +8,28 @@ creator:
 
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Latent Variables and Natural Language Processing
-Week # | Lesson 14
+Week 7 | Lesson 14
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Understand what _latent_ variables are
 - Understand the uses of _latent variables_ in language processing
 - Use the _word2vec_ and _LDA_ algorithms of _gensim_
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Install `gensim` with `pip install gensim` 
 - Previous introduction to _unsupervised learning_
 - Previous introduction to probability distributions, specifically discrete multinomial distributions
 - Previous lesson on NLP essentials, including experience with `spacy`
-- EXTRA: If you are interested in students accessing the Twitter API themselves, they will need to setup Twitter API credentials. There are instructions at [](twitter-instructions.md)
+
+- EXTRA: If you are interested in accessing the Twitter API, you will need to setup Twitter API credentials. [Here are instructions](./code/twitter-instructions.md)
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - EXTRA: If you are interested in retrieving tweets as well, you will need to setup Twitter API credentials. There are instructions at [](twitter-instructions.md)
 
 ### LESSON GUIDE
@@ -47,9 +51,10 @@ This lesson will continue on natural language processing with an emphasis on _la
 In our data science workflow, we will often be MINEing datasets with a large amount of text or unstructured data. In our last class, we saw many techniques for MINEing this data includes pre-processing and building linguistic rules to uncover patterns. We could create classifiers from this unstructured data. In this class we continue with methods for MINEing or REFINEing our understanding of text data by attempting to uncover structure or organization inherent in the text.
 
 Much of the advances in natural language processing have been in using data to learn rules of grammar and language and then using those tools to extract information or build classification algorithms from the text. We saw these tools in the last class.
-    - We could use _tokenization_ to break apart pieces of text
-    - _Stemming_ or _lemmatization_ to understand bases or roots of words
-    - _Parsing_ and _tagging_ to understand each piece of the sentences.
+
+- We could use _tokenization_ to break apart pieces of text
+- _Stemming_ or _lemmatization_ to understand bases or roots of words
+- _Parsing_ and _tagging_ to understand each piece of the sentences.
 
 Each of these are based on a classical or theoretical understanding of language - essentially, let's attempt to re-create the rules that guide language.
 
@@ -74,7 +79,7 @@ This techniques are commonly used for recommending news articles or mining large
 
 They attempt to map their articles to a latent space (or underlying structure) of topics using the content of the article.
 
-![](./assets/frick_museum2.png)
+![Frick Museum](./assets/images/frick_museum2.png)
 
 [Lyst](http://developers.lyst.com/2014/11/11/word-embeddings-for-fashion/), an online fashion retailer, uses latent representations of clothing descriptions to find similar clothing. If we can map phrases like 'chelsea boot' or 'felted hat' to some underlying structure, we can use that new structure to find similar products.
 
@@ -82,7 +87,7 @@ They attempt to map their articles to a latent space (or underlying structure) o
 
 Our previous 'representation' of a set of text documents (articles) for classification was a matrix with one row per document and one column per word (or n-gram).
 
-![Word Factorization Matrix](./assets/word-matrix-factorization.png)
+![Word Factorization Matrix](./assets/images/word-matrix-factorization.png)
 
 While this does sum up most of the information, it does drop a few things - mostly structure and order.
 
@@ -99,8 +104,9 @@ Another is perform `dimensionality reduction` - where we first identify the corr
 I.E. We could replace the 'IPO', 'stocks', and 'NASDAQ' column with a single - 'HasFinancialWords' column.
 
 There are many techniques to do this automatically and most follow a very similar approach:
-    - identify correlated columns
-    - replace them with a new column that encapsulates the others
+
+- identify correlated columns
+- replace them with a new column that encapsulates the others
 
 The techniques vary in how they define correlation and how much of the relationship between the original and new columns you need to save.
 
@@ -122,7 +128,7 @@ To understand this better, let's imagine a new way to generate text.
 
 What this 'model' of text is assuming is that each document is some _mixture_ of topics. It may be mostly science, but may contain some business information. What _latent_ structure we want to uncover are the topics (or concepts) that generated that text.
 
-![Latent Dirichlet Allocation]('./assets/lda-mixture-graphic.jpg')
+![Latent Dirichlet Allocation](./assets/images/lda-mixture-graphic.jpg)
 
 _Latent Dirichlet Allocation_ is a model that assumes this is the way text is generated and then attempts to learn two things:
     1. What is the _word distribution_ of each topic
@@ -154,7 +160,7 @@ Bloomberg article: [business: 0.7, science: 0.2, sports: 0.1]
 
 For each topic and document pair, we learn some `P ( topic | document) `
 
-![LDA Topic Allocation]('./lda-topic-distribution.jpg')
+![LDA Topic Allocation](./assets/images/lda-topic-distribution.jpg)
 
 Topic models are useful for organizing a collection of documents and uncovering the main underlying concepts.
 
@@ -296,7 +302,7 @@ We replace columns ['_ is a city', '_ is a capital', 'I flew into _ today'] by a
 
 A common feature of `word2vec` is then being able to ask what words are similar to each other. If we have data on multiple languages a system like word2vec could be used for translation.
 
-![Word2Vec translation]('./assets/word2vec-translation.png')
+![Word2Vec translation](./assets/images/word2vec-translation.png)
 
 **Check:** After showing the analogies, have them brainstorm other word vector math. I.E. the prototypical example of 'King' - 'Man' = 'Queen'
 
@@ -422,7 +428,6 @@ Now we'd like to do a few things:
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | |
 | **UPCOMING PROJECTS**  | |
 
 ### ADDITIONAL RESOURCES
