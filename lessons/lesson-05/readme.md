@@ -91,7 +91,7 @@ So far we've been using iPython notebook in place of a text editor. However, the
 
 Let's do a demo of Sublime with python. 
 
-> Instructor Note: Pull up the text editor and demo writing a simple python program. You can also use [say-hi.py ](.code/say-hi.py).
+> Instructor Note: Pull up the text editor and demo writing a simple python program. You can also use [say-hi.py ](./code/say-hi.py).
 
 <a name="intro2"></a>
 ## iPython Notebook
