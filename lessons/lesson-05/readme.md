@@ -7,7 +7,8 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Flex lesson
-Week # 3 | Lesson # 5
+Week # 3 | Lesson # 5 
+> Instructor Note: Feel free to run this workshop earlier, as needed
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
