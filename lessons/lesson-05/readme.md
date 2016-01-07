@@ -12,9 +12,9 @@ Week # 3 | Lesson # 5
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
--  Data science toolkit
--  Github and the Command Line
--  Probablity vs Odds
+-  Identify the data science toolkit
+-  Navigate Git and the Command Line
+-  Describe Probablity vs Odds
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -57,13 +57,13 @@ Week # 3 | Lesson # 5
 ## Intro: Tools of the Trade (10 mins) 
 Today we are going to review some of the tools we use in data science and see how they fit into the wider programming environemnt. 
 
+*Command line*- This is your portal to your computer and the outside world. 
 
-Command line- This is your portal to your computer and the outside world. 
-
-> Instructor note: Walk through the bottom half of "landscape.jpg". 
+> Instructor note: Walk through the bottom half of [landscape.jpg](./assets/images/landscape.JPG). 
 
 ### Local machine
 On your local machine you have a variety of tools at your disposal, including:
+
 1. Text editor 
 2. Programs/Packages/Tools
 3. Your files
@@ -75,6 +75,7 @@ Let's take a look at the file directory system through finder and then through t
 <a name="demo1"></a>
 ## Command Line Demo
 Demo a few commands-
+
 1. cd 
 2. pwd
 3. $home
@@ -109,7 +110,7 @@ As you just saw, terminal allows us to run programs such as python or javascript
 
 When we do this with python we often use a tool called _pip_. Let's pip install a package. We could do this with a GUI, but the best way is to use the CL. 
 
-- [Python Library - Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
+Here we will checkout a popular [Python Library, Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup):
 
 ```python
 pip install beautifulsoup4
@@ -141,7 +142,7 @@ git commit
 git push 
 ```
 
-When a colleague wants to implement our change, they can use a command called ```git pull```. 
+When a colleague wants to implement our change, they can use a command called `git pull`. 
 
 > Instructor Note: draw this new connection on the board
 
@@ -157,18 +158,18 @@ Ok! That was a lot of material. Let's reveiw.
 	- Graphical user interface (e.g. finder vs terminal )
 	
 3. Will I destroy my computer if I use terminal?
-	- NO. Although you should be careful with the ```sudo``` command and cautious when deleting files with ```rm```
+	- NO. Although you should be careful with the `sudo` command and cautious when deleting files with `rm`
 
 
 <a name="#lab1"></a>
 ## Independent Practice- GIT and Command Line (50 min)
 > Instructor Note - Review any of the following exercises:
 
-**Required Pre-Work:**
+**Course Pre-Work:**
 - Codecademy Python
 - GA Command Line
 
-**Additional Resources:**
+**Alternative Resources:**
 
 - [Github Challenges](https://try.github.io/levels/1/challenges/1)
 - [Python the Hard Way](http://learnpythonthehardway.org/book/appendixa.html)
@@ -177,6 +178,7 @@ Ok! That was a lot of material. Let's reveiw.
 
 <a name="intro4"></a>
 ## Introduction: Odds and Probability (5 mins)
+
 
 <a name="guided-practice"></a>
 ## Guided Practice- Odds and Probability (20 min)
