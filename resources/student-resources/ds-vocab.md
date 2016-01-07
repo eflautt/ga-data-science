@@ -66,6 +66,7 @@
 
 - Aperiodic cycles
 - ARIMA model - Autoregressive integrated moving average
+- Decay
 - Decision trees
 - Dimensional reduction
 - Document-based databases
@@ -79,3 +80,4 @@
 - Rolling means
 - Tokenize
 - Topic models
+- Weighted Moving Average
