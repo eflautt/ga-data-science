@@ -97,45 +97,45 @@ Let's break this down further:
 ## Demo: Diagraming an aim (5 mins)
 
 Example aim:
-Determine the association of foods in the home with child dietary intake. Using one 24-hour recall from the cross-sectional NHANES 2007-2010 we will determine the factors associated with food available in the homes of American children and adolescents. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food. 
+Determine the association of foods in the home with child dietary intake. Using one 24-hour recall from the cross-sectional NHANES 2007-2010, we will determine the factors associated with food available in the homes of American children and adolescents. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar-sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food. 
 
 Hypothesis: Children will be more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never.
 > Source: From Dr. Amy Roberts' Dissertation
 
 > Instructor Note: For each of these, give one 1 example and ask the class to id others.  
 
-1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010 we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Our hypothesis is that children will be **more likely to meet their recommended intake level when a food is always available in their home compared to rarely of never**.
+1. Specific: Using **one 24-hour recall** from the cross-sectional National Health and Nutrition Examination Survey (NHANES) 2007-2010, we will determine the factors associated with food available in the homes of **American children and adolescents**. We will test if **self-reported availability of fruits, dark green vegetables, low fat milk or sugar-sweetened beverages available in the home increases** the likelihood that children and adolescents will meet their **USDA recommended dietary intake** for that food. Our hypothesis is that children will be **more likely to meet their recommended intake level when a food is** _always_ **available in their home** (compared to rarely or never).
     - How data was collected is indicated: 
         - 24-hour recall, self-reported
     - What data was collected is stated: 
-        - Fruits, dark green vegetables, low fat milk or sugar sweetened beverages, always vs rarely available
+        - Fruits, dark green vegetables, low fat milk or sugar-sweetened beverages; always vs rarely available
     - How data will be analyzed is defined: 
         - Using USDA recommendations as a gold-standard to measure the association
     - The specific hypothesis & direction of the expected associations are described: 
         - Children will be more likely to meet their recommended intake level
 
-2. Measurable: Determine the association of foods in the home with child dietary intake. We will test if reported availability of fruits, dark green vegetables, low fat milk or sugar sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food.
+2. Measurable: Determine the association of foods in the home with child dietary intake. We will test if the reported availability of fruits, dark green vegetables, low fat milk or sugar-sweetened beverages available in the home increases the likelihood that children and adolescents will meet their USDA recommended dietary intake for that food.
 
-3. Attainable: Cross-sectional data has specific limitations- one of the most common is that **causal inference is typically not possible**. Note that we are determining the association between two items (food available in the home and children meeting their dietary recommendations). Because we are using cross-sectional data we cannot say that having fruits and vegetables in the home causes children to meet their dietary requirements.
+3. Attainable: Cross-sectional data has specific limitations- one of the most common is that **causal inference is typically not possible**. Note that we are determining the association between two items (food available in the home and children meeting their dietary recommendations). Because we are using cross-sectional data, we cannot say that having fruits and vegetables in the home actually _causes_ children to meet their dietary requirements.
 
-4. Reproducible: By having all the specifics we indicated previously it would be straight forward to Google NHANES pull the right datasets and reproduce this work.
+4. Reproducible: By having all the specifics we indicated previously, it should be straight forward for others to Google NHANES, pull the right datasets, and reproduce this work.
 
-5. Time Bound: Using one 24-hour recall from **NHANES 2007-2010** we will determine the factors associated with food available in the homes of **American children and adolescents**.
+5. Time Bound: Using one 24-hour recall from **NHANES 2007-2010**, we will determine the factors associated with food available in the homes of **American children and adolescents**.
 
 
-**Point**: Trends often change over time and vary by the population or source of your data. It is important to clearly define who/what you included in your analysis and the time period for the analysis.
+**Point**: Trends often change over time and vary by the population or source of your data. It is important to clearly define who/what you included in your analysis as well as the time period for the analysis.
 
 
 #### Context
-Depending on your setting, the types of questions you will answer may vary. The previous example is from a research setting. In a business setting you will need to clearly articulate the business objectives. ID and hypothesize the goals and criteria for success.
+Depending on your setting, the types of questions you will answer may vary. The previous example is from a research setting. In a business setting, you will need to clearly articulate the business objectives. You should also ID and hypothesize the goals and criteria for success.
 
-For example, success for the Netflix recommendation engine may be if 70% of customers over the age of 18 select a movie from the recommended queue during Q3 of 2015. Regardless of setting, stating your question using the SMART framework will help you achieve your objectives.
+For example, "success" for the Netflix recommendation engine might be stated as: 70% of customers over the age of 18 select a movie from the recommended queue during Q3 of 2015. Regardless of setting, stating your question using the SMART framework will help you achieve your objectives.
 
 #### Knowledge Check
 Which of the following questions uses the SMART framework? Why? What is missing?
 
 1. I am looking to see if there is an association with number of passengers with carry on luggage and delayed take-off time.
-2. Determine if the number of passengers on JetBlue, Delta and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
+2. Determine if the number of passengers on JetBlue, Delta, and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
 
 #### Why data types matter
 
@@ -167,7 +167,7 @@ As we saw in the attainable section above, different types of data have differen
 #### Knowledge Check
 
 - What type of data is the flightstats data?
-- Determine if the number of passengers on JetBlue, Delta and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
+- Determine if the number of passengers on JetBlue, Delta, and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
 - Can you create a cross-sectional analysis from a longitudinal data collection? How?
 
 <a name="#guidedpractice"></a>
