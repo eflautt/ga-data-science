@@ -43,6 +43,7 @@
 - KNN - K-Nearest Neighbor
 - Lasso Regression
 - Linear regression
+- Link Function
 - Local Minimum
 - Logistic regression
 - Loss functions
