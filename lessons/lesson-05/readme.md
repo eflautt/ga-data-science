@@ -144,7 +144,7 @@ git push
 
 When a colleague wants to implement our change, they can use a command called `git pull`. 
 
-> Instructor Note: draw this new connection on the board
+> Instructor Note: _Draw this new connection on the board._
 
 Ok! That was a lot of material. Let's reveiw. 
 
@@ -166,6 +166,7 @@ Ok! That was a lot of material. Let's reveiw.
 > Instructor Note - Review any of the following exercises:
 
 **Course Pre-Work:**
+
 - Codecademy Python
 - GA Command Line
 
@@ -182,11 +183,12 @@ Ok! That was a lot of material. Let's reveiw.
 
 <a name="guided-practice"></a>
 ## Guided Practice- Odds and Probability (20 min)
-Walk through guided-practice.ipynb with students 
+> Instructor Note: Walk through [starter code](./code/starter-code/starter-code-5.ipynb) with students.
 
 
 <a name="wrapup"></a>
 ## Review (5-15 mins)
+
 - What did we cover today?
 - What are some common data science tools?
 - Why are these tools useful?
@@ -200,4 +202,5 @@ Walk through guided-practice.ipynb with students
 | **PROJECT**  |  X |
 
 ### ADDITIONAL RESOURCES
+
 - see ipython notebook
