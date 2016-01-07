@@ -91,16 +91,16 @@ So far we've been using iPython notebook in place of a text editor. However, the
 
 Let's do a demo of Sublime with python. 
 
-> Instructor- pull up the text editor and demo writing a simple python program and running it or use say-hi.py 
+> Instructor Note: Pull up the text editor and demo writing a simple python program. You can also use [say-hi.py ](.code/say-hi.py).
 
 <a name="intro2"></a>
 ## iPython Notebook
 Where does IPython Notebook fit in? 
 
-From the Notebook website- 
+From the iPython Notebook docs- 
 	"The notebook extends the console-based approach to interactive computing in a qualitatively new direction, providing a web-based application suitable for capturing the whole computation process: developing, documenting, and executing code, as well as communicating the results. 
 	
-The IPython notebook combines two components:
+iPython notebooks combine two components:
 
 - A web application: a browser-based tool for interactive authoring of documents which combine explanatory text, mathematics, computations and their rich media output.
 
