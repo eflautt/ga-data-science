@@ -64,6 +64,7 @@
 
 ##Unit 3
 
+- Aperiodic cycles
 - ARIMA model - Autoregressive integrated moving average
 - Decision trees
 - Dimensional reduction
@@ -71,6 +72,7 @@
 - LDA - latent dirichlet allocation
 - NLP - natural language processing
 - NLTK - natural language toolkit
+- Periodicity
 - Random forests
 - Relational databases
 - Rolling means
