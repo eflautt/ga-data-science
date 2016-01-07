@@ -7,8 +7,8 @@ from gensim import Word2Vec
 
 # Solution for 1a/b
 # Write a function that can take a take a sentence parsed by `spacy` and 
-# identify it mentions a company named 'Google'. 
-# Remember, `spacy` can find entities and codes them `ORG` if they are a company.
+# identify if it mentions a company named 'Google'. 
+# Remember, `spacy` can find entities and code them `ORG` if they are a company.
 def mentions_company(parsed, company='Google'):
     for entity in parsed.ents:
         if entity.text == company and entity.label_ == 'ORG':
@@ -27,7 +27,7 @@ def get_actions(parsed):
 
 # Solution for 1e
 # Write a function that identifies countries - HINT: the entity label for 
-# countries is GPE  (or GeoPolitical Entity)
+# countries is GPE (or GeoPolitical Entity)
 def mentions_country(parsed, country):
     for entity in parsed.ents:
         if entity.text == country and entity.label_ == 'GPE':
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     nlp_toolkit = English()
 
     # Solution to 1d
-    # For each tweet, parse it using it `spacy` and print it out if the tweet 
+    # For each tweet, parse it using `spacy` and print out if the tweet 
     # has 'release' or 'announce' as a verb.
     for tweet in tweets:
         parsed = nlp_toolkit(tweet)
@@ -54,7 +54,7 @@ if __name__ == '__main__':
                 print(tweet)
 
     # Solution to 1f
-    # Re-run (d) find countries tweets that discuss 'Iran' announcing or releasing.
+    # Re-run (d) find country tweets that discuss 'Iran' announcing or releasing.
     for tweet in tweets:
         parsed = nlp_toolkit(tweet)
 
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     # Solution to 2a
     # First take the collection of tweets and tokenize them using `spacy`
 
-    # Many solutions here
+    # Many solutions here!
     # I decided to lemmatized the verbs for easier searching and keep symbols
     # and punctuations
 
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     model.most_similar(positive=['Syria'])
 
     # Solution to 3
-    # Filter tweets to those that mention 'Iran' or similar entities and 
+    # Filter tweets down to those that mention 'Iran' or similar entities and 
     # 'war' or similar entities
 
     # a: Using spacy
