@@ -255,6 +255,8 @@ gs.grid_scores_
     - Steps that KNN Regression would follow
     - How it predicts a regression value
 
+> Instructor Note: See [solution code](./code/solution-code/solution-code-8.ipynb) for more detail.
+
 ---
 
 <a name="conclusion"></a>
