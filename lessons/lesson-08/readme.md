@@ -265,3 +265,15 @@ gs.grid_scores_
 3. How does the KNN algorithm work?
 4. What primary parameters are available for tuning a KNN estimator?
 5. How do you define: accuracy, misclassification?
+
+***
+
+### BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **UPCOMING PROJECTS**  | [Final Project, Deliverable 1](../../projects/final-projects/01-lightning-talk/readme.md)  |
+
+### ADDITIONAL RESOURCES
+
+- Go crazy!
+- Add your own!
