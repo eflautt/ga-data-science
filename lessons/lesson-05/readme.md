@@ -134,7 +134,7 @@ GIt is a way of tracking changes we've made to our programs and go back in time 
 
 Let's see it in action. As I'm sure you've guessed, a common way to do this is through CL! You can also use the github GUI. 
 
-> Instructor note: demo making a small change to say-hi.py (e.g. change howdy to hello). Save it.
+> Instructor Note: Demo making a small change to [say-hi.py](./code/say-hi.py) (e.g. change howdy to hello). Save it.
 
 ```
 git add
