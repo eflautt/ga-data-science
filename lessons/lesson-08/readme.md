@@ -8,31 +8,35 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Introduction to Classification
-Week # | Lesson 8
+Week 4 | Lesson 8
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Define class label and classification
 - Build a K-Nearest Neighbors using the sci-kit-learn library
 - Evaluate and tune model by using metrics such as classification accuracy/error
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Understand how to optimize for error in a model
 - Understand the concept of iteration to solve problems
-- measure basic probability
+- Measure basic probability
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will have to:*
-- review materials
-- be familiar with the datasets
+
+- Review materials
+- Be familiar with the datasets
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Discuss lesson objectives  |
-| 10-15 mins  | [Introduction](#introduction-class) | What is Classification? |
-| 30-35 mins  | [Independent Practice](#ind-practice-class)  | Basics of Classification Learning |
+| 10-15 mins  | [Introduction](#introduction-class) | What is Classification? | 
+| 20 mins  | [Guided Practice](#guided-practice-class) | Regression vs Classification | 
+| 20 mins  | [Independent Practice](#ind-practice-class)  | Build a Classifier |
 | 10-15 mins  | [Introduction](#introduction-knn)  | Introduction to K Nearest Neighbors |
 | 10-15 mins  | [Demo](#demo-knn)  | Demo of KNN |
 | 10-15 mins  | [Introduction](#introduction-eval)   | First Classification Metrics |
@@ -77,7 +81,7 @@ The easiest way to understand if our `y`, the dependent variable, is a classific
 <a name="guided-practice-class"></a>
 ## Guided Practice: Regression or Classification? (20 mins)
 
-On your own, decide for each of the following situations if it is a regression problem, classification problem, or neither.
+On your own, decide for each of the following situations if it is a regression problem, classification problem, or neither:
 
 1. Using the total number of explosions in a movie, predict if the movie is by JJ Abrams or Michael Bay.
 2. Determine how many tickets will be sold to a concert given who is performing, where, and the date and time.
@@ -85,7 +89,7 @@ On your own, decide for each of the following situations if it is a regression p
 4. Using data from four cell phone microphones, reduce the noisy sounds so the voice is crystal clear to the receiving phone.
 5. With customer data, determine if a user will return or not in the next 7 days to an e-commerce website.
 
-The primary difference between regression and classification is the _result_; the data used as input should resonate with what we've used in the past. In fact, writing a classifier could look a lot like control flow, a pattern in coding.
+**Note:** The primary difference between regression and classification is the _result_; the data used as input should resonate with what we've used in the past. In fact, writing a classifier could look a lot like control flow, a pattern in coding.
 
 <a name="independent-practice-class"></a>
 ## Independent Practice: Build a classifier! (20 mins)
@@ -208,7 +212,7 @@ One of the primary challenges of KNN is solving for k--how many neighbors do we 
 1. The **smallest** k we can use is 1: however, using only one neighbor will probably perform poorly.
 2. The **largest** k we can use is n-1; that is, every _other_ point in the data set. But without weighting, this would always set it to the class with the largest sample size! Within the Iris data set, we should see at some value k and greater, the performance will flat line (in a bad way).
 
-Use the following starter code, and the iris data set, test and evaluate the following questions:
+Use the [following starter code](./code/starter-code/starter-code-8.ipynb) and the iris data set, test and evaluate the following questions:
 
 1. What is the accuracy for when using k=1?
 2. What is the accuracy for using (most of, all) the other points as neighbors perform?
@@ -232,13 +236,15 @@ gs.fit(iris.data, iris.target)
 gs.grid_scores_
 ```
 
-Extra:
+#### Extra:
 
-1. By default, the KNN classifier in SKlearn uses the Minkowski metric for distance, given p: this is how it decides to calculate distance (using a triangle, p=1 is using the length of sides 1+2 to get the distance from a to c; p=2 using the length of side 3). What _type_ of data does this metric work best for? What _type_ of data does this distance metric may not work for?
-    a. For help, read about [distance metrics in the sklearn documentation](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.DistanceMetric.html#sklearn.neighbors.DistanceMetric).
-2. It is possible to use KNN as a regression estimator: either with some independent reading or using some creativity, come up with:
-    a. steps that KNN Regression would follow
-    b. determine how it predict a regression value
+1. By default, the KNN classifier in SKlearn uses the _Minkowski metric_ for distance, given p: this is how it decides to calculate distance (using a triangle, p=1 is using the length of sides 1+2 to get the distance from a to c; p=2 using the length of side 3). 
+    - What _type_ of data does this metric work best for? 
+    - What _type_ of data does this distance metric may not work for?
+        - For help, read about [distance metrics in the sklearn documentation](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.DistanceMetric.html#sklearn.neighbors.DistanceMetric).
+2. It is possible to use KNN as a regression estimator. Either with independent reading or your own brilliant creativity, come up with the following:
+    - Steps that KNN Regression would follow
+    - How it predicts a regression value
 
 ---
 
