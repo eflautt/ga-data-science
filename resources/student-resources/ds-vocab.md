@@ -70,6 +70,7 @@
 - Dimensional reduction
 - Document-based databases
 - LDA - latent dirichlet allocation
+- Moving Average
 - NLP - natural language processing
 - NLTK - natural language toolkit
 - Periodicity
