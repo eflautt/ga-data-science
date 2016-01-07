@@ -1,6 +1,6 @@
 ---
 title: Introduction to Classification
-duration: 3:00
+duration: 2:30
 creator:
     name: Ed Podojil
     city: NYC
@@ -34,11 +34,9 @@ Week # | Lesson 8
 | 10-15 mins  | [Introduction](#introduction-class) | What is Classification? |
 | 30-35 mins  | [Independent Practice](#ind-practice-class)  | Basics of Classification Learning |
 | 10-15 mins  | [Introduction](#introduction-knn)  | Introduction to K Nearest Neighbors |
-| 20-25 mins  | [Guided Practice](#guided-practice-knn)  | Guided Practice: Implementing KNN |
+| 10-15 mins  | [Demo](#demo-knn)  | Demo of KNN |
+| 10-15 mins  | [Introduction](#introduction-eval)   | First Classification Metrics |
 | 30-35 mins  | [Independent Practice](#ind-practice-knn)  | Solving for K |
-| 10-15 mins  | [Introduction](#introduction-eval)   | Additional Classification Metrics |
-| 20-25 mins  | [Guided Practice](#guided-practice-eval)  | When to pick what metric? |
-| 30-35 mins  | [Independent Practice](#ind-practice-eval)  | Evaluating alternative metrics for KNN |
 | 5-10 mins  | [Conclusion](#conclusion)  | Review topics |
 
 ---
@@ -110,15 +108,17 @@ from sklearn import datasets, neighbors, metrics
 import pandas as pd
 
 iris = datasets.load_iris()
-irisdf = pd.DataFrame(iris.data, names=iris.feature_names)
+irisdf = pd.DataFrame(iris.data, columns=iris.feature_names)
 irisdf['target'] = iris.target
-irisdf.plot('petal length (cm)', 'petal width (cm)', kind='scatter', c=irisdf.target)
-print irisdf.plot('petal length (cm)', 'petal width (cm)', kind='scatter', c=irisdf.target)
+cmap = {'0': 'r', '1': 'g', '2': 'b' }
+irisdf['ctarget'] = irisdf.target.apply(lambda x: cmap[str(x)])
+irisdf.plot('petal length (cm)', 'petal width (cm)', kind='scatter', c=irisdf.ctarget)
+print irisdf.plot('petal length (cm)', 'petal width (cm)', kind='scatter', c=irisdf.ctarget)
 print irisdf.describe()
 
 # starter code
 def my_classifier(row):
-    if row['petal length(cm)'] < 2:
+    if row['petal length (cm)'] < 2:
         return 0
     else:
         return 1
@@ -128,7 +128,7 @@ predictions = irisdf.apply(my_classifier, axis=1)
 ```
 
 1. How simple could the if-else classifier be to still be _relatively_ accurate?
-2. How complicated could this if-else classifier be to be _completely_ accurate? How many if-else statements would you need, or nested if-else statements, in order to get the classifier 100% accurate?
+2. How complicated could this if-else classifier be to be _completely_ accurate? How many if-else statements would you need, or nested if-else statements, in order to get the classifier 100% accurate? (The above uses a count of 2).
 3. **RECALL** Which if-else classifier would work better against iris data that it hasn't seen? Why is that the case?
 
 ---
@@ -181,13 +181,32 @@ In regressions, we could use L1 regularization when we have significantly more f
 
 With KNN, we do _not_ have regularization, and a different problem: since KNN works with distance, higher dimensionality of data (more features) requires _significantly_ more samples in order to have the same predictive power. Consider this: with more dimensions, all points slowly start averaging out to be equally distant; this causes significant issues for KNN! Keep the feature space limited, and KNN can do well.
 
-<a name="guided-practice-knn"></a>
-## Guided Practice: Solving for K
+In a related example, consider similarity of users that use a particular product. When the product is very broad (for example, a newspaper/news website), the audience itself would be very broad, and the newspaper has many features: different sections, topics to cover, types of stories, journalists, etc. With so many different parts that appeals to a broad audience, similarity in users would be very high!
+
+On another note, with a product such as toothpaste, while it also appeals to a broad audience, the _types_ of toothpaste, and the features that separate them, are quite limited. It would be much simpler to identify "distance" between toothpaste users since the feature set ("has flouride," "controls tarter", etc) is much smaller.
+
+<a name="introduction-eval"></a>
+## Introduction to Classification Metrics
+
+The previous metrics we've used for regressions do not apply for classification.
+
+We _could_ measure distance between the probability of a given class and it being in the class: for example, guessing .6 for a 1 is .4 error, while .99 for a 1 is .01 error... but this overly complicates our current goal: understanding when things are right and wrong.
+
+Instead, we will start with two new metrics, which are inverses of each other: accuracy, and misclassification rate.
+
+Accuracy's equation is simple: of all the samples/observations we predicted: how many were correct? This is a value we'd want to increase (like r-squared).
+
+Misclassification rate is directly opposite: of all the samples/observations we predicted, how many were incorrect? This is a value we'd want to decrease (like mean squared error).
+
+Since they are opposite of each other, you can pick one or the other; effectively they will be the same. When coding, **do** make sure you are using a classification metric when solving a classification problem! SKLearn will not intuitively understand if you are doing classification or regression, and accidentally using mean squared error for classification, or accuracy for regression, is a common programming pitfall.
+
+<a name="ind-practice-knn"></a>
+## Independent Practice: Solving for K
 
 One of the primary challenges of KNN is solving for k--how many neighbors do we use?
 
 1. The **smallest** k we can use is 1: however, using only one neighbor will probably perform poorly.
-2. The **largest** k we can use is n-1; that is, every _other_ point in the data set. But without weighting, this would always set it to the class with the largest sample size! (thankfully in this dataset, we will not see that).
+2. The **largest** k we can use is n-1; that is, every _other_ point in the data set. But without weighting, this would always set it to the class with the largest sample size! Within the Iris data set, we should see at some value k and greater, the performance will flat line (in a bad way).
 
 Use the following starter code, and the iris data set, test and evaluate the following questions:
 
@@ -212,6 +231,14 @@ gs = grid_search.GridSearchCV(
 gs.fit(iris.data, iris.target)
 gs.grid_scores_
 ```
+
+Extra:
+
+1. By default, the KNN classifier in SKlearn uses the Minkowski metric for distance, given p: this is how it decides to calculate distance (using a triangle, p=1 is using the length of sides 1+2 to get the distance from a to c; p=2 using the length of side 3). What _type_ of data does this metric work best for? What _type_ of data does this distance metric may not work for?
+    a. For help, read about [distance metrics in the sklearn documentation](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.DistanceMetric.html#sklearn.neighbors.DistanceMetric).
+2. It is possible to use KNN as a regression estimator: either with some independent reading or using some creativity, come up with:
+    a. steps that KNN Regression would follow
+    b. determine how it predict a regression value
 
 ---
 
