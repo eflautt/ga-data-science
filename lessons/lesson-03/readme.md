@@ -54,6 +54,7 @@ Week # 2 | Lesson # 3
 <a name="introduction"></a>
 ## Intro: Laying the ground work (20 mins)
 Define
+
 1. mean
 2. median
 3. mode
@@ -83,7 +84,7 @@ The median refers to the midpoint in a series of numbers.
 
 To find the median, arrange the numbers in order from smallest to largest.  If there is an odd number of values, the middle value is the median.  If there is an even number of values, the average of the two middle values is the median.
 
-Example #1:  Find the median of 19, 29, 36, 15, and 20
+	Example #1:  Find the median of 19, 29, 36, 15, and 20
 
 		In order:  15,  19,  20,  29,  36  since there are 5 values (odd number), 20 is the median (middle number)
 
@@ -112,56 +113,56 @@ The mode of a set of values is the value that occurs most often. A set of values
 A.  For the following groups of numbers, calculate the mean, median and mode by hand
 
 
-1. 18, 24, 17, 21, 24, 16, 29, 18		
-Mean_______
-Median______
-Mode_______
-Max _______
-Min _______
+		1. 18, 24, 17, 21, 24, 16, 29, 18		
+			Mean_______
+			Median______
+			Mode_______
+			Max _______
+			Min _______
 
-Answers:
-Mean = 20.875
-Median = 19.5
-Mode = 18, 24
-Max = 29
-Min = 16
+		Answers:
+			Mean = 20.875
+			Median = 19.5
+			Mode = 18, 24
+			Max = 29
+			Min = 16
 
-2. 75, 87, 49, 68, 75, 84, 98, 92			
-Mean_______
-Median______
-Mode_______
-Max _______
-Min _______
+		2. 75, 87, 49, 68, 75, 84, 98, 92			
+			Mean_______
+			Median______
+			Mode_______
+			Max _______
+			Min _______
 
-Answers:
-Mean = 78.5
-Median = 79.5
-Mode = 75
-Max = 98
-Min = 49
+		Answers:
+			Mean = 78.5
+			Median = 79.5
+			Mode = 75
+			Max = 98
+			Min = 49
 
-3. 55, 47, 38, 66, 56, 64, 44, 39		
-Mean_______
-Median______
-Mode_______
-Max _______
-Min _______
+		3. 55, 47, 38, 66, 56, 64, 44, 39		
+			Mean_______
+			Median______
+			Mode_______
+			Max _______
+			Min _______
 
-Answers:
-Mean = 51.125
-Median = 51
-Mode = none
-Max = 66
-Min = 38
+		Answers:
+			Mean = 51.125
+			Median = 51
+			Mode = none
+			Max = 66
+			Min = 38
 
 
 <a name="#codealong1"></a>
 ## Codealong: Summary statistics in Pandas (30 min)
 
-> Instructor Notes: Have students open the [starter-code](./lab/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](.). 
+> Instructor Note: Have students open the [starter-code](./lab/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](.). 
 
 ### Codealong Part 1: Basic Stats-
-See the following concepts in action on "Part 1. Basic Stats" of the [starter-code]().
+> Instructor Note: Review "Part 1. Basic Stats" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
 
 We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min from above.
 
@@ -174,31 +175,34 @@ We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min
 		.count() - Count the number of observations
 
 
-### Quartiles and Interquartile Range
+#### Quartiles and Interquartile Range
 Quartiles divide a rank-ordered data set into four equal parts. The values that divide each part are called the first, second, and third quartiles; and they are denoted by Q1, Q2, and Q3, respectively. The interquartile range (IQR) is a measure of variability, based on dividing a data set into quartiles. Let's take a look in the notebook. 
 
 ### Codealong Part 2: Box Plot
-See the the following concepts in action "Part 2. Box Plot" of the lesson-3-codealong-starter-code/lesson-3-codealong-solutions.ipynb
-There is a handy graph- the box-plot that gives us a nice visual of these metrics as well as the quartile and the interquaritle range. 
+> Instructor Note: Review "Part 2. Box Plot" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
 
-### Bias vs Variance 
-**Error due to Bias:** The error due to bias is taken as the difference between the expected (or average) prediction of our model and the correct value which we are trying to predict. Imagine you could repeat the whole model building process more than once: each time you gather new data and run a new analysis creating a new model. Due to randomness in the underlying data sets, the resulting models will have a range of predictions. Bias measures how far off in general these models' predictions are from the correct value.  
-**Error due to Variance:** The error due to variance is taken as the variability of a model prediction for a given data point. Again, imagine you can repeat the entire model building process multiple times. The variance is how much the predictions for a given point vary between different realizations of the model. 
-<img(src='images/biasVsVarianceImage.png', style="width: 30%; height: 30%")>
+The box plot is a handy graph that gives us a nice visual of these metrics, as well as the quartile and the interquaritle range. 
 
-### Standard Deviation 
-In statistics, the standard deviation (SD, also represented by the Greek letter sigma, σ for the population standard deviation or s for the sample standard deviation) is a measure that is used to quantify the amount of variation or  dispersion of a set of data values. **It is the square root of the variance.**
+#### Bias vs Variance 
+- **Error due to Bias:**  Error due to bias is taken as the *difference between the expected (or average) prediction of our model and the correct value which we are trying to predict.* Imagine you could repeat the whole model building process more than once: each time you gather new data and run a new analysis, thereby creating a new model. Due to randomness in the underlying data sets, the resulting models will have a range of predictions. Bias measures **how far off in general these models' predictions are from the correct value.**  
 
-### Standard Error
-The standard error of the mean (SEM) quantifies the precision of the mean. It is a measure of how far your sample mean is likely to be from the true population mean. It is expressed in the same units as the data.
+- **Error due to Variance:** The error due to variance is taken as *the variability of a model prediction for a given data point.* Again, imagine you can repeat the entire model building process multiple times. The variance is **how much the predictions for a given point vary between different realizations of the model.** 
+
+![](./assets/images/biasVsVarianceImage.png)
+
+#### Standard Deviation 
+In statistics, the standard deviation (SD, also represented by the Greek letter sigma `σ` for the population standard deviation, or just `s` for the sample standard deviation) is a measure that is used to quantify the amount of variation or dispersion of a set of data values. **Standard deviation is the square root of the variance.**
+
+#### Standard Error
+The _standard error of the mean_ (SEM) quantifies the precision of the mean. It is a measure of **how far your sample mean is likely to be from the true population mean**. It is expressed in the same units as the data.
 
 As the standard error of an estimated value generally increases with the size of the estimate, a large standard error may not necessarily result in an unreliable estimate. Therefore it is often better to compare the error in relation to the size of the estimate.
 
 The regression line is the line that minimizes the sum of squared deviations of prediction (also called the sum of squares error). The standard error of the estimate is closely related to this quantity. 
 
 
-#### Codealong Part 3
-See the the following concepts in action "Part 3. Standard Deviation and Variance" of the lesson-3-codealong-starter-code/lesson-3-codealong-solutions.ipynb
+### Codealong Part 3: Standard Deviation & Variance
+> Instructor Note: Review "Part 3. SD & Variance" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
 
 To calculate the variance and SD in pandas.
 
@@ -207,19 +211,19 @@ To calculate the variance and SD in pandas.
 		.var() - Compute variance
 		.describe() - short cut that prints out count, mean, std, min, quartiles, max
 
-### Correlation
+#### Correlation
 The correlation is a quantity measuring the extent of interdependence of variable quantities. 
 
-### Knowledge Check
+**Knowledge Check:**
 1. What is the difference between bias and variance?
-	- see above for the answer 
+	- see graphic above
 2. What is a commonly used metric that describes variance?
 	- STD
 3. What is the formula for this metric? 
 	- square root of variance
 
 #### Context
-Often times when you are working on a project, descriptive statistics will be the first, and often times the only, step for analysis. Say you need to understand the demographics of your customer base-- descriptive stats will give you the answer. You don't need a fancy model to answer the most common business questions. In the academic setting this information will come in the form of a "table 1". 
+On many projects, descriptive statistics will be the first - and often times only - step for analysis. Say you need to understand the demographics of your customer base-- descriptive stats will give you the answer. You don't necessarily need a fancy model to answer many common business questions.
  
  
 <a name="introduction2"></a>
