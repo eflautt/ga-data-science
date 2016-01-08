@@ -410,11 +410,11 @@ Now we'd like to do a few things:
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
 
-- Latent variable models attempt to uncover structure from text
-- Dimensionality reduction is focused on replacing correlated columns
-- Topic modeling (or LDA) uncovers the topics that are most common to each document and the words most common to those topics
-- Word2Vec builds a representation of a word from the way it was used originally
-- Both techniques avoid learning or using any grammar rules and instead rely on large datasets and learning based on how the words are used making them very flexible
+- Latent variable models attempt to uncover structure from text.
+- Dimensionality reduction is focused on replacing correlated columns.
+- Topic modeling (or LDA) uncovers the topics that are most common to each document and then the words most common to those topics.
+- Word2Vec builds a representation of a word from the way it was used originally.
+- Both techniques avoid learning grammar rules and instead rely on large datasets. They learn based on how the words are used, making them very flexible.
 
 ***
 
