@@ -1,3 +1,5 @@
+## UNDER CONSTRUCTION
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science
 We are building a global community of lifelong learners who are excited about using data to solve real world problems.
 
@@ -25,8 +27,6 @@ If you have any questions about the organization of resources, or about the scop
 Please check out our [contributing guidelines](contributing.md) for more details.
 
 ![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")
-
-## UNDER CONSTRUCTION
 
 <!--
 ##Front-End Web Development v2.1
