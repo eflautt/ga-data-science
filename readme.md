@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science
 
-# *UNDER CONSTRUCTION*
+# UNDER CONSTRUCTION
 
 We are building a global community of lifelong learners who are excited about using data to solve real world problems.
 
