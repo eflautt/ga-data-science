@@ -54,21 +54,22 @@ Week # 2 | Lesson # 3
    
 <a name="introduction"></a>
 ## Intro: Laying the ground work (20 mins)
-Define
 
-1. mean
-2. median
-3. mode
-4. max
-5. min
-6. quartile
-7. inter-quartile range
-8. variance
-9. standard deviation
-10. correlation 
+Define:
+
+1. Mean
+2. Median
+3. Mode
+4. Max
+5. Min
+6. Quartile
+7. Inter-quartile Range
+8. Variance
+9. Standard Deviation
+10. Correlation 
 
 ### Mean 
-> Instructor Note: Content for mean, median and mode sourced from www.yti.edu/lrc/images/math_averages.doc)
+> Instructor Note: Content for mean, median and mode sourced from www.yti.edu/lrc/images/math_averages.doc.
 
 The mean of a set of values is the sum of the values divided by the number of values.  It is also called the average.
 
@@ -83,7 +84,7 @@ The mean of a set of values is the sum of the values divided by the number of va
 
 The median refers to the midpoint in a series of numbers.
 
-To find the median, arrange the numbers in order from smallest to largest.  If there is an odd number of values, the middle value is the median.  If there is an even number of values, the average of the two middle values is the median.
+To find the median, arrange the numbers in order from smallest to largest. If there is an odd number of values, the middle value is the median. If there is an even number of values, the average of the two middle values is the median.
 
 	Example #1:  Find the median of 19, 29, 36, 15, and 20
 
@@ -111,7 +112,7 @@ The mode of a set of values is the value that occurs most often. A set of values
 
 ### Concept Check: 
 
-A.  For the following groups of numbers, calculate the mean, median and mode by hand
+A.  For the following groups of numbers, calculate the mean, median and mode by hand:
 
 
 		1. 18, 24, 17, 21, 24, 16, 29, 18		
