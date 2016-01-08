@@ -4,7 +4,7 @@
 
 We are building a global community of lifelong learners who are excited about using data to solve real world problems.
 
-**Timeline**
+#### Timeline
 
 - Jan 25th: Build Complete
 - Feb 29th: QA Complete
