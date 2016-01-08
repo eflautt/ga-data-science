@@ -344,7 +344,7 @@ brown | 0 | 0 | 0 | 0 | 1
 <a name="wrapup"></a>
 ## Project questions and Next Project (15 mins)
 
-- Review [Project 1](../../unit-projects/project-1/readme.md)
+- Review [Project 1](../../../unit-projects/project-1/readme.md)
 - Introduce the next project
 - Exit tickets
 
@@ -353,7 +353,7 @@ brown | 0 | 0 | 0 | 0 | 1
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **PROJECT**  | [Unit Project 2](../../unit-projects/project-2/readme.md)  |
+| **PROJECT**  | [Unit Project 2](../../../unit-projects/project-2/readme.md)  |
 
 ### ADDITIONAL RESOURCES
 - see ipython notebook
