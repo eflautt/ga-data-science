@@ -223,16 +223,16 @@ The correlation is a quantity measuring the extent of interdependence of variabl
 	- square root of variance
 
 #### Context
-On many projects, descriptive statistics will be the first - and often times only - step for analysis. Say you need to understand the demographics of your customer base-- descriptive stats will give you the answer. You don't necessarily need a fancy model to answer many common business questions.
+On many projects, descriptive statistics will be the first - and often times only - step for analysis. Say you need to understand the demographics of your customer base: descriptive stats will give you the answer. You don't necessarily need a fancy model to answer many common business questions.
  
  
 <a name="introduction2"></a>
 ## Introduction: Is this normal? (10 mins)
-A normal distribution is a key assumption to many models we will later be using. But what is normal? 
+A normal distribution is a key assumption to many models we will later be using. But what is _normal_? 
 
 The graph of the normal distribution depends on two factors - the mean and the standard deviation. The mean of the distribution determines the location of the center of the graph, and the standard deviation determines the height of the graph. When the standard deviation is large, the curve is short and wide; when the standard deviation is small, the curve is tall and narrow. All normal distributions look like a symmetric, bell-shaped curve.
 
-Two metrics are commonly used to describe your distribution- skewness and kurtosis. 
+Two metrics are commonly used to describe your distribution: skewness and kurtosis. 
 
 **Skewness**  
 In probability theory and statistics, skewness is a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean. The skewness value can be positive or negative, or even undefined. 
@@ -243,28 +243,30 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 
 <a name="demo"></a>
 ## Demo: Determining the distribution of your data (15 mins)
-Instructors should use the file "lesson-3-demo" for this section. Walk through each section in the notebook in order. 
+> Instructor Note: Use the [lesson-3-demo](./code/lesson-3-demo.ipynb) for this section. Walk through each section of the notebook in order. 
 
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
-Walk through images of normal, skewed, sigmod etc distributions have students stand up and vote on the types. Instructor note- Use your own work or the images in the asset folder. 
+Walk through images of normal, skewed, sigmod (etc) distributions. Stand up and vote on the types. 
 
-After each discuss methods of correcting the issue. 
+> Instructor note: Use your own work or the images in the asset folder. 
+
+After each image, discuss methods of correcting the issue. 
 
 For example: 
-Skewed? discuss centering on the mean or median
-Not smooth? log transformations
-Sigmodial? that's a feature- use logistic regression! 
+
+- Skewed? discuss centering on the mean or median
+- Not smooth? log transformations
+- Sigmodial? that's a feature- use logistic regression! 
 
 <a name="introduction3"></a>
 ## Variable Types (5 min)
-1. continuous
-2. categorical
 
-Continous variables are things such as height, income, etc.
+1. Continuous: Continous variables are things such as: height, income, etc.
+2. Categorical: Categorical variables are things such as: race, gender, paint colors, movie titles, etc
 
-Categorical variables are things such as race, gender, paint colors, movie titles
+We'll discuss these more in future lessons.
 
 
 <a name="demo2"></a>
@@ -272,22 +274,26 @@ Categorical variables are things such as race, gender, paint colors, movie title
 
 ###Class/Dummy Variables
 Let's say we have a categorical variable called "area". It is saved in our dataset as one of the following strings:  
+
 *	"rural"  
 *	"suburban"  
 *	"urban"
 
-We have to represent categorical variables numerically, but we can't simply code it as 0=rural, 1=suburban, 2=urban because that would imply an **ordered relationship** between suburban and urban (and thus urban is somehow "twice" the suburban category). We do this by converting our 1 location variable into two new variables- area_urban and area_suburban. 
+We have to represent categorical variables numerically, but we can't simply code it `0=rural, 1=suburban, 2=urban` because that would imply an **ordered relationship** between suburban and urban. Is urban somehow "twice" the suburban category? Since an ordered relationship wouldn't make sense, we'll do this by converting our 1 location variable into two new variables: `area_urban` and `area_suburban.` 
 
-####Instructor note- Draw this on the board:
-Using the example above lets draw out the table of how these varibles can be represented mathmatically without implying an order. We can do this with 0s and 1s. One of our categories will be all 0s- that will be our reference category. It is often good to select your reference category to be the group with 1) with the largest sample size 2) one that will help with your interpretations of your models. (e.g., often if you are testing for a disease the reference category will be those without the disease)
+> Instructor note: Draw this on the board
 
-Step 1: Select a reference category. Here we will choose rural as our reference. Because urban is our reference catefory we will not have to include it when we make our two new variables.
+Using the example above, let's draw out how these varibles can be represented mathmatically without implying an order. We can do this with 0s and 1s. 
 
-Step 2. Convert the values urban, suburban and urban to a numeric reprensentation that does not imply an order. 
+One of our categories will be all 0's, that will be our reference category. It is often good to select your reference category to be the group with: 1) the largest sample size and 2) the criteria that will help with your model interpretations. For examoke, often if you are testing for a disease, the reference category would be people without that disease.
 
-Step 3. Create two new variables: area_urban and area_suburban
+- Step 1: Select a reference category. Here we will choose rural as our reference. Because urban is our reference category, we won't have to include it when we make our two new variables.
 
-Why do we only need **two dummy variables, not three?** Because two dummies capture all of the information about the Area feature, and implicitly defines rural as the reference level. (In general, if you have a categorical feature with k levels, you create k-1 dummy variables.)
+- Step 2. Convert the values urban, suburban and urban into a numeric reprensentation that does not imply an order. 
+
+- Step 3. Create two new variables:`1area_urban` and `area_suburban`
+
+Why do we only need _two_ dummy variables, not three? Because two dummy variables will capture all of the information about the `area` feature, and implicitly define `rural` as the reference level. In general, if you have a categorical feature with `k` levels, you create `k-1` dummy variables.
 
  | area_urban | area_suburban 
 --- | --- | ---
@@ -295,24 +301,26 @@ rural | 0 | 0
 suburban | 0 | 1
 urban | 1 | 0 
 
-Great! Let's look at a second example. Let's say we have a category called gender with two categories 1. male and 2. female.  
-1. How many dummy variables will we have in our data set? (# of categories - 1 = 2-1 = 1)
-2. We will make male our reference so male will be coded 0, and female will be coded 1
+Great! Let's look at a second example. Let's say we have a category called "gender" with two categories: 1. male and 2. female.  
+
+1. How many dummy variables will we have in our data set? Determine by looking at the # of categories - 1. In this case, 2-1 = 1!
+2. We'll make female our reference; therefore, female will be coded 0 and male will be coded 1.
 
  | gender_female
 --- | ---
 male | 0
 female | 1
 
-We can do this in pandas with the "get_dummies" method. Let's checkit out in the demo.
-
+We can do this in pandas with the "get_dummies" method. Let's check it out in the demo.
 
 <a name="practice"></a>
 ## Independent Practice: Dummy Colors (15 mins)
-It's important to understand the concept before we use get_dummies so today we will create dummies by hand. In future classes we will use get_dummies to create these.  We will use dummy variables in almost every analysis you complete because it is rare in most fields to only have continuous variables.
 
-Have each student draw a table like we did above on the white board or table. 
-Create dummy varibales for the variable "colors" that has 6 categories- blue, red, green, purple, grey, brown. Set grey as the reference. 
+It's important to understand the concept before we use `get_dummies` so today we'll create dummy variables by hand. In future classes, we'll use `get_dummies` to create these.  In fact, we'll be using dummy variables in almost every analysis you complete because in most fields it is very rare to only have continuous variables.
+
+> Instructor Note: Have each student draw a table like we did above on the white board or table. 
+
+Create dummy varibales for the variable "colors" that has 6 categories: blue, red, green, purple, grey, brown. Set grey as the reference. 
 
 Answer: 
 
@@ -333,19 +341,16 @@ brown | 0 | 0 | 0 | 0 | 1
 
 <a name="wrapup"></a>
 ## Project questions and Next Project (15 mins)
-- Review Unit 1 objectives
-- Project 1 questions
+- Review Project 1
 - Introduce the next project
-- Exit tickes
+- Exit tickets
 
 ***
 
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | TBD |
-| **PREWORK**  | TBD  |
-| **PROJECT**  | TBD  |
+| **PROJECT**  | [Unit Project 2](./unit-projects/project-2/readme.md)  |
 
 ### ADDITIONAL RESOURCES
 - see ipython notebook
