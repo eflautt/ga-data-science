@@ -325,7 +325,7 @@ Create dummy varibales for the variable "colors" that has 6 categories: blue, re
 
 Answer: 
 
-	| `color_blue` | `color_red` | `color_green` | `color_purple` | `color_brown`
+	| color_blue | color_red | color_green | color_purple | color_brown
 --- | --- | --- | --- | --- | --- 
 blue | 1 | 0 | 0 | 0 | 0
 red  | 0 | 1 | 0 | 0 | 0
