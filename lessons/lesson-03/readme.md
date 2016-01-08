@@ -157,10 +157,11 @@ Min = 38
 
 <a name="#codealong1"></a>
 ## Codealong: Summary statistics in Pandas (30 min)
-Have students open and use file- lesson-3-codealong-starter-code. The solutions for the instructors (and after posting class for students) are available in lesson-3-codealong-solutions.ipynb. 
+
+> Instructor Notes: Have students open the [starter-code](./lab/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](.). 
 
 ### Codealong Part 1: Basic Stats-
-See the the following concepts in action "Part 1. Basic Stats" of the lesson-3-codealong-starter-code/lesson-3-codealong-solutions.ipynb
+See the following concepts in action on "Part 1. Basic Stats" of the [starter-code]().
 
 We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min from above.
 
