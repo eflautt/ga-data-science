@@ -21,7 +21,7 @@ Week # 2 | Lesson # 3
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 
-- Create, open and create and IPython Notebook
+- Create, open and create and iPython Notebook
 - Have completed python pre-work
 
 ### INSTRUCTOR PREP
@@ -49,6 +49,7 @@ Week # 2 | Lesson # 3
 ---
 <a name="opening"></a>
 ## Opening (5 min)
+
 - Review Current Lesson Objectives
    
 <a name="introduction"></a>
@@ -159,7 +160,7 @@ A.  For the following groups of numbers, calculate the mean, median and mode by 
 <a name="#codealong1"></a>
 ## Codealong: Summary statistics in Pandas (30 min)
 
-> Instructor Note: Have students open the [starter-code](./lab/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](.). 
+> Instructor Note: Have students open the [starter-code](./code/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](./code/solution-code/solution-code-3.ipynb). 
 
 ### Codealong Part 1: Basic Stats-
 > Instructor Note: Review "Part 1. Basic Stats" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
@@ -184,7 +185,7 @@ Quartiles divide a rank-ordered data set into four equal parts. The values that 
 The box plot is a handy graph that gives us a nice visual of these metrics, as well as the quartile and the interquaritle range. 
 
 #### Bias vs Variance 
-- **Error due to Bias:**  Error due to bias is taken as the *difference between the expected (or average) prediction of our model and the correct value which we are trying to predict.* Imagine you could repeat the whole model building process more than once: each time you gather new data and run a new analysis, thereby creating a new model. Due to randomness in the underlying data sets, the resulting models will have a range of predictions. Bias measures **how far off in general these models' predictions are from the correct value.**  
+- **Error due to Bias:** Error due to bias is taken as the *difference between the expected (or average) prediction of our model and the correct value which we are trying to predict.* Imagine you could repeat the whole model building process more than once: each time you gather new data and run a new analysis, thereby creating a new model. Due to randomness in the underlying data sets, the resulting models will have a range of predictions. Bias measures **how far off in general these models' predictions are from the correct value.**  
 
 - **Error due to Variance:** The error due to variance is taken as *the variability of a model prediction for a given data point.* Again, imagine you can repeat the entire model building process multiple times. The variance is **how much the predictions for a given point vary between different realizations of the model.** 
 
@@ -230,9 +231,9 @@ On many projects, descriptive statistics will be the first - and often times onl
 ## Introduction: Is this normal? (10 mins)
 A normal distribution is a key assumption to many models we will later be using. But what is _normal_? 
 
-The graph of the normal distribution depends on two factors - the mean and the standard deviation. The mean of the distribution determines the location of the center of the graph, and the standard deviation determines the height of the graph. When the standard deviation is large, the curve is short and wide; when the standard deviation is small, the curve is tall and narrow. All normal distributions look like a symmetric, bell-shaped curve.
+The graph of the normal distribution depends on two factors - _the mean and the standard deviation_. The mean of the distribution determines the location of the center of the graph, and the standard deviation determines the height of the graph. When the standard deviation is large, the curve is short and wide; when the standard deviation is small, the curve is tall and narrow. All normal distributions look like a symmetric, bell-shaped curve.
 
-Two metrics are commonly used to describe your distribution: skewness and kurtosis. 
+Two metrics are commonly used to describe your distribution: _skewness and kurtosis_. 
 
 **Skewness**  
 In probability theory and statistics, skewness is a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean. The skewness value can be positive or negative, or even undefined. 
@@ -248,7 +249,7 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
-Walk through images of normal, skewed, sigmod (etc) distributions. Stand up and vote on the types. 
+Walk through images of normal, skewed, sigmoid (etc) distributions. Stand up and vote on the types. 
 
 > Instructor note: Use your own work or the images in the asset folder. 
 
@@ -256,9 +257,9 @@ After each image, discuss methods of correcting the issue.
 
 For example: 
 
-- Skewed? discuss centering on the mean or median
-- Not smooth? log transformations
-- Sigmodial? that's a feature- use logistic regression! 
+- Skewed? Discuss centering on the mean or median
+- Not smooth? Log transformations
+- Sigmodial? That's a feature- use logistic regression! 
 
 <a name="introduction3"></a>
 ## Variable Types (5 min)
@@ -283,7 +284,7 @@ We have to represent categorical variables numerically, but we can't simply code
 
 > Instructor note: Draw this on the board
 
-Using the example above, let's draw out how these varibles can be represented mathmatically without implying an order. We can do this with 0s and 1s. 
+Using the example above, let's draw out how these varibles can be represented mathematically without implying an order. We can do this with 0s and 1s. 
 
 One of our categories will be all 0's, that will be our reference category. It is often good to select your reference category to be the group with: 1) the largest sample size and 2) the criteria that will help with your model interpretations. For examoke, often if you are testing for a disease, the reference category would be people without that disease.
 
@@ -324,7 +325,7 @@ Create dummy varibales for the variable "colors" that has 6 categories: blue, re
 
 Answer: 
 
-	| color_blue | color_red | color_green | color_purple | color_brown
+	| `color_blue` | `color_red` | `color_green` | `color_purple` | `color_brown`
 --- | --- | --- | --- | --- | --- 
 blue | 1 | 0 | 0 | 0 | 0
 red  | 0 | 1 | 0 | 0 | 0
@@ -336,12 +337,14 @@ brown | 0 | 0 | 0 | 0 | 1
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
+
 - Review questions from dummy practice
 - Review objectives from class 
 
 <a name="wrapup"></a>
 ## Project questions and Next Project (15 mins)
-- Review Project 1
+
+- Review [Project 1](../../unit-projects/project-1/readme.md)
 - Introduce the next project
 - Exit tickets
 
@@ -350,7 +353,7 @@ brown | 0 | 0 | 0 | 0 | 1
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **PROJECT**  | [Unit Project 2](./unit-projects/project-2/readme.md)  |
+| **PROJECT**  | [Unit Project 2](../../unit-projects/project-2/readme.md)  |
 
 ### ADDITIONAL RESOURCES
 - see ipython notebook
