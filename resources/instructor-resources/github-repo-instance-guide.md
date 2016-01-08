@@ -3,37 +3,37 @@
 
 ### Repo Guide
 This guide is intended to help create a repository for your DS instance. 
+**The DS instructor repo will include:**
 
-**The DS instructor repo includes:**
 - Lesson Plans & Slide Decks
 - Workshop datasets + starter & solution code
 - Project Prompts, Rubrics, & Solution Code (where applicable)
 - Resources for students and instructors
 
-**The DS student-facing repo includes:**
+Once you create your instance, you should also create a student-facing repo.
+**The DS student-facing repo should include:**
 
 - Lesson Startercode & Datasets
 - Project Prompts & Rubrics
 - Student Resources
- - _Note: It does NOT include solution codes or lesson slide decks._
+ - _Note: It should NOT include solution codes._
 
-For instructions on how to set up a student-facing GitHub repository for your DS class, please see below.
+For instructions on how to set up a GitHub repository for your DS class, please see below.
 > __IMPORTANT: Once you are done setting up your repo, please delete or overwrite the contents of this Readme!__
 
 ---
 
 ## Requirements
 
-* [ ] **Github Usernames**: Before you get started, you should have a list of usernames for all relevant instructors, TA's, and students.
-> If they don't already have one, ask them to signup (it's free). 
+* [ ] **Github Usernames**: Before you get started, you should have a list of usernames for all relevant instructors, TA's, and/or students. If they don't already have one, ask them to signup (it's free). 
 
 * [ ] **Basic Github Familiarity**: Here is a [useful tutorial](https://generalassembly.wistia.com/medias/jkrycndgrs) that will teach you how to create an account, install the Github desktop app, and start a repository.
 
 ***
 
-## Setting Up Your Student-Facing Repo
+## Setting Up Your Repo
 
-In Data Science, we recommend using a student-facing repo to distribute project prompts/rubrics, starter/sample code, and course resources. The instructor should create a student-facing repo for their course by following these steps:
+In Data Science, we recommend using forking the master curriculum repo for your own course instances. We further recommend creating a student-facing repo to distribute project prompts/rubrics, starter/sample code, and course resources.
 
 ***
 
@@ -97,8 +97,8 @@ In Data Science, we recommend using a student-facing repo to distribute project 
 
 ## Benefits
 
-- Students can now use the GitHub desktop app (or Terminal commands) to access all of the materials in the repo, including notes/links, starter code, projects, etc.
-- Optionally, instructors can also choose to give students access to submit their project assignments by pull request, which makes it easy for instructors and TA's to leave comments and feedback. 
+- Students can also use the GitHub desktop app (or Terminal commands) to access all of the materials in the repo, including notes/links, starter code, projects, etc.
+- Instructors can optionally choose to give students access to submit their project assignments by pull request, which makes it easy for instructors and TA's to leave comments and feedback. 
 
 ***
 
