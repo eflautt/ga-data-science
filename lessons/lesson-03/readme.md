@@ -11,19 +11,22 @@ Week # 2 | Lesson # 3
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Use NumPy and Pandas libraries to analyze datasets using basic summary statistics: mean, median, mode, max, min, quartile, inter-quartile range, variance, standard deviation and correlation 
-- Create data visualization - line graph, box plots, and histograms- to discern characteristics and trends in a dataset (scatter plots will come in part 2)
+
+- Use NumPy and Pandas libraries to analyze datasets using basic summary statistics: mean, median, mode, max, min, quartile, inter-quartile range, variance, standard deviation, and correlation 
+- Create data visualizations - including: line graphs, box plots, and histograms- to discern characteristics and trends in a dataset
 - Identify a normal distribution within a dataset using summary statistics and visualization
-- Id variable types and complete dummy coding by hand
+- ID variable types and complete dummy coding by hand
 
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Create, open and create and IPython Notebook
 - Have completed python pre-work
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
+
 - Gather materials needed for class
 - Complete Prep work required
 - Prepare any specific instructions
@@ -63,7 +66,7 @@ Define
 10. correlation 
 
 ### Mean 
-(mean, median and mode from www.yti.edu/lrc/images/math_averages.doc )
+> Instructor Note: Content for mean, median and mode sourced from www.yti.edu/lrc/images/math_averages.doc)
 
 The mean of a set of values is the sum of the values divided by the number of values.  It is also called the average.
 
@@ -91,7 +94,7 @@ Example #1:  Find the median of 19, 29, 36, 15, and 20
 		Average:  (67 + 75) / 2  =    142/2    =    71 is the median value
 
 
-###  Mode
+### Mode
 
 The mode of a set of values is the value that occurs most often. A set of values may have more than one mode or no mode.
 
@@ -109,7 +112,7 @@ The mode of a set of values is the value that occurs most often. A set of values
 A.  For the following groups of numbers, calculate the mean, median and mode by hand
 
 
-1.	18, 24, 17, 21, 24, 16, 29, 18		
+1. 18, 24, 17, 21, 24, 16, 29, 18		
 Mean_______
 Median______
 Mode_______
@@ -123,7 +126,7 @@ Mode = 18, 24
 Max = 29
 Min = 16
 
-2.	75, 87, 49, 68, 75, 84, 98, 92			
+2. 75, 87, 49, 68, 75, 84, 98, 92			
 Mean_______
 Median______
 Mode_______
@@ -137,7 +140,7 @@ Mode = 75
 Max = 98
 Min = 49
 
-3.  55, 47, 38, 66, 56, 64, 44, 39		
+3. 55, 47, 38, 66, 56, 64, 44, 39		
 Mean_______
 Median______
 Mode_______
@@ -217,6 +220,7 @@ The correlation is a quantity measuring the extent of interdependence of variabl
 #### Context
 Often times when you are working on a project, descriptive statistics will be the first, and often times the only, step for analysis. Say you need to understand the demographics of your customer base-- descriptive stats will give you the answer. You don't need a fancy model to answer the most common business questions. In the academic setting this information will come in the form of a "table 1". 
  
+ 
 <a name="introduction2"></a>
 ## Introduction: Is this normal? (10 mins)
 A normal distribution is a key assumption to many models we will later be using. But what is normal? 
@@ -231,9 +235,11 @@ In probability theory and statistics, skewness is a measure of the asymmetry of 
 **Kurtosis**  
 Kurtosis is a measure of whether the data are peaked or flat relative to a normal distribution.That is, data sets with high kurtosis tend to have a distinct peak near the mean, decline rather rapidly, and have heavy tails.
 
+
 <a name="demo"></a>
 ## Demo: Determining the distribution of your data (15 mins)
 Instructors should use the file "lesson-3-demo" for this section. Walk through each section in the notebook in order. 
+
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
@@ -254,6 +260,7 @@ Sigmodial? that's a feature- use logistic regression!
 Continous variables are things such as height, income, etc.
 
 Categorical variables are things such as race, gender, paint colors, movie titles
+
 
 <a name="demo2"></a>
 ## Demo: Classes (15 mins)
@@ -277,7 +284,7 @@ Step 3. Create two new variables: area_urban and area_suburban
 
 Why do we only need **two dummy variables, not three?** Because two dummies capture all of the information about the Area feature, and implicitly defines rural as the reference level. (In general, if you have a categorical feature with k levels, you create k-1 dummy variables.)
 
-	| area_urban | area_suburban 
+ | area_urban | area_suburban 
 --- | --- | ---
 rural | 0 | 0
 suburban | 0 | 1
@@ -287,7 +294,7 @@ Great! Let's look at a second example. Let's say we have a category called gende
 1. How many dummy variables will we have in our data set? (# of categories - 1 = 2-1 = 1)
 2. We will make male our reference so male will be coded 0, and female will be coded 1
 
-	| gender_female
+ | gender_female
 --- | ---
 male | 0
 female | 1
