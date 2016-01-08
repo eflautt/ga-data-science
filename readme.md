@@ -6,8 +6,8 @@ We are building a global community of lifelong learners who are excited about us
 
 #### Timeline
 
-- Jan 25th: Build Complete
-- Feb 29th: QA Complete
+- **Jan 25th**: Build Complete
+- **Feb 29th**: QA Complete
 
 ### DS Curriculum Resources
 
