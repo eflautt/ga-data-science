@@ -43,11 +43,13 @@
 - KNN - K-Nearest Neighbor
 - Lasso Regression
 - Linear regression
+- Link Function
 - Local Minimum
 - Logistic regression
 - Loss functions
 - Mean absolute error
 - Mean squared error
+- Minkowski Metric
 - Model Fit
 - Odds / Odds Ratios
 - Ordinary Least Squares
@@ -64,15 +66,20 @@
 
 ##Unit 3
 
+- Aperiodic cycles
 - ARIMA model - Autoregressive integrated moving average
+- Decay
 - Decision trees
 - Dimensional reduction
 - Document-based databases
 - LDA - latent dirichlet allocation
+- Moving Average
 - NLP - natural language processing
 - NLTK - natural language toolkit
+- Periodicity
 - Random forests
 - Relational databases
 - Rolling means
 - Tokenize
 - Topic models
+- Weighted Moving Average

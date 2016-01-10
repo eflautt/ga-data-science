@@ -1,6 +1,3 @@
 .DS_Store
-materials/create.rb
-node_modules
-npm-debug.log
 
 *.ipynb_checkpoints/*
