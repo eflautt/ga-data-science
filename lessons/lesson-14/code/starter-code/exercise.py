@@ -6,15 +6,15 @@ from spacy.en import English
 from gensim import Word2Vec
 
 # Write a function that can take a take a sentence parsed by `spacy` and 
-# identify it mentions a company named 'Google'. 
-# Remember, `spacy` can find entities and codes them `ORG` if they are a company.
+# identify if it mentions a company named 'Google'. 
+# Remember, `spacy` can find entities and codes them as `ORG` if they are a company.
 
 
 # Write a function that can take a sentence parsed by `spacy` 
 # and return the verbs of the sentence (preferably lemmatized)
 
 # Write a function that identifies countries - HINT: the entity label for 
-# countries is GPE  (or GeoPolitical Entity)
+# countries is GPE (or GeoPolitical Entity)
 
 
 if __name__ == '__main__':

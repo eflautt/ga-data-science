@@ -169,7 +169,9 @@ If you said the second case, you just described what we call a good model fit.
 <a name="demo-cv"></a>
 ## Demo: Cross Validation (20 minutes)
 
-One approach data scientists use to account for bias is cross validation. The basic idea of cross validation is to generate several models based on different cross sections of the data, measure performance of each, and then take the mean performance. This technique is one way to swap bias error for generalized error in our model. In other words, this method helps us create weatherman Scenario #2 - describing previous trends with a general amount of accuracy in order to make more specifically accurate predictions about future trends.
+One approach data scientists use to account for bias is cross validation. The basic idea of cross validation is to generate several models based on different cross sections of the data, measure performance of each, and then take the mean performance. This technique is one way to swap bias error for generalized error in our model. 
+
+In other words, this method helps us create weatherman Scenario #2 - describing previous trends with a general amount of accuracy in order to make more specifically accurate predictions about future trends.
 
 ![crossvalidation_kfold](http://i.stack.imgur.com/8hyyh.png)
 
