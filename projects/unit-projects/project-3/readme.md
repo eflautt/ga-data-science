@@ -17,7 +17,7 @@ In this project, you will perform a logistic regression on the admissions data w
     - Calculate predicted probabilities
 
 - **Bonus:** 
-    - Plot the predicted portabilities
+    - Plot the predicted probabilities
     - Brainstorm ways to improve your analysis
 
 - **Submission:**
