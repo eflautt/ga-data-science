@@ -10,7 +10,7 @@
 > Delete this section ^
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) RUBRIC
-**Project # | Course**	 	 						
+Course | Project #	 						
 
 Your project will be assessed using the following standards:
 					
