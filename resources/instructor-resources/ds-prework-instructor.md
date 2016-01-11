@@ -16,8 +16,8 @@
 - Recall the Python syntax for lists, dictionaries, and functions
 - Create files and navigate directories using the command line interface (for their specific environment)
 
-#### Pre-work Goals:
-*Before the first class, students should be able to:*
+#### Preliminary Goals:
+*After the first week, students will be able to:*
 
 1. Utilize unix commands to navigate the file system and modify files
   - Summarize a basic filesystem structure, including absolute and relative paths
