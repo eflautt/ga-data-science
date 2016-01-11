@@ -6,10 +6,6 @@ We're all really excited that you're joining the General Assembly community. In 
 
 Please complete these pre-work items before your first day so that both you and your computer will be prepared for class. In the meantime, feel free to reach out with any questions (or just to say hi)!
 
-* __Instructor__: (Name | Email)
-* __TA's__: (Names | Emails)
-* __Expert-in-Residence__: (Name | Email)
-
 ## Pre-Course Checklist
 Please complete the following by the first day of class. Feel free to shoot us an email with any questions:
 
