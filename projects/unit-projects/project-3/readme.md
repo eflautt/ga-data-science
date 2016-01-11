@@ -29,7 +29,7 @@ In this project, you will perform a logistic regression on the admissions data w
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 10: Lesson 9 | Project 3  | Basic Modeling Assignment  |
+| Lesson 9 | Project 3  | Basic Modeling Assignment  |
 
 ---
 
