@@ -9,29 +9,10 @@ Please complete these pre-work items before your first day so that both you and 
 ## Pre-Course Checklist
 Please complete the following by the first day of class. Feel free to shoot us an email with any questions:
 
-1. [Schedule](#schedule) 
-2. [Introductions](#intro)
-3. [Accounts](#account)
-4. [Install](#install)
-5. [Practice](#practice)
-6. [Resources](#resources)
-
-<a name="schedule"></a>
-### Schedule
-
-- [ ] Add the following information to your calendars:
-* **Time**: (Time)
-* **Meeting days**: (Days)
-* **Start date**: (Date)
-* **End date**: (Date)
-* **Location**: (Address)
-* **Classroom**: (Number)
-
-<a name="intro"></a>
-### Introductions
-
-1. [ ] Fill out this [Student Profile Survey] in order for us to get to know you.
-2. [ ] Complete this [Preliminary Skills Survey] in order to help us place you in complementary groups.
+1. [Accounts](#account)
+2. [Install](#install)
+3. [Practice](#practice)
+4. [Resources](#resources)
 
 <a name="account"></a>
 ### Accounts
