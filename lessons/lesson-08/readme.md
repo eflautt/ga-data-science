@@ -8,7 +8,7 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Introduction to Classification
-Week 4 | Lesson 8
+DS | Lesson 8
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
