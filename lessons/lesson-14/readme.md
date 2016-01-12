@@ -166,7 +166,7 @@ There are many variants as well, that incorporate attempt to add more structure 
  - Variable number of topics
     - Test different number of topics and find the best model
 
-**Check:** Take an recent news-article. Have students brainstorm what 3 topics this story is most likely made up. Have them brainstorm which words are most likely from which of those 3 topics.
+> **Check:** Take any recent news-article and brainstorm which 3 topics this story is most likely made up of. Next, brainstorm which words are most likely derived from which of those 3 topics.
 
 <a name="demo-lda"></a>
 ## Demo: LDA in gensim (30 mins)
@@ -250,7 +250,8 @@ while
 ```
 is a topic mostly related to fashion and style.
 
-**Check:** Demonstrate the code you used to generate the topics above. Hypothesize other topic interpretations.
+> **Check:** Demonstrate the code you used to generate the topics above. Hypothesize other topic interpretations.
+
 
 <a name="introduction-word2vec"></a>
 ## Introduction: Word2Vec (20 mins)
@@ -301,7 +302,8 @@ A common feature of `word2vec` is being able to ask what words are similar to ea
 
 ![Word2Vec translation](./assets/images/word2vec-translation.png)
 
-**Check:** After reviewing the analogies, brainstorm some other word vector math. For example, consider the prototypical example of 'King' - 'Man' = 'Queen'
+> **Check:** After reviewing the anologies, brainstorm some word vector math. For example, consider the prototypical example of 'King' - 'Man' = 'Queen'
+
 
 <a name="demo-word2vec"></a>
 ## Demo: Word2Vec in `gensim` (20 min)
@@ -331,12 +333,13 @@ model.most_similar(positive=['cookie', 'brownie'])
 
 It can easily identify words related to those from this dataset (remember, most of the articles in this dataset are food or cooking related).
 
-<a name="independent-practice"></a>
+<
+a name="independent-practice"></a>
 ## Independent Practice (45 min)
 
 In this exercise, we will compare some of the classical NLP tools from the last class with these more modern latent variable techniques. We will do this by comparing information extraction techniques on Twitter using the two methods.
 
-> Intructor's Note: If you want students to capture their own collection of tweets using the Twitter API,[ use the following instructions](./code/twitter-instructions.md). It requires some setup and a Twitter account.
+> Intructor Note: If you want students to capture their own collection of tweets using the Twitter API,[ use the following instructions](./code/twitter-instructions.md). It requires some setup and a Twitter account.
 
 If not - you can use a [pre-existing file of captured tweets](./assets/data/captured-tweets.txt) relating tech companies and Middle Eastern companies.
 
@@ -380,7 +383,6 @@ from spacy.en import English
 nlp_toolkit = English()
 ```
 
-
 Now we'd like to do a few things:
 
 1. Use `spacy` to write a function to filter tweets down to those where Google is announcing a product. How might we do this? One way might be to identify verbs, where 'Google' is the noun and there is some action like 'announcing'
@@ -407,8 +409,11 @@ Now we'd like to do a few things:
     a. Do this using just `spacy`
     b. Do this using `word2vec` similarity scores
 
+
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
+
+Concept Review:
 
 - Latent variable models attempt to uncover structure from text.
 - Dimensionality reduction is focused on replacing correlated columns.
