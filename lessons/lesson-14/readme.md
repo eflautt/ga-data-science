@@ -41,8 +41,10 @@ DS | Lesson 14
 | 30 mins  | [Demo](#demo-lda)  | Latent Dirichlet Allocation in gensim |
 | 20 mins  | [Introduction](#introduction-word2vec)   | word2vec  |
 | 20 mins  | [Demo](#demo-word2vec)  | word2vec in gensim |
-| 45 mins  | [Independent Practice](#ind-practice)  |   |
-| 10 mins  | [Conclusion](#conclusion)  |   |
+| 45 mins  | [Independent Practice](#ind-practice)  | Twitter Lab  |
+| 10 mins  | [Conclusion](#conclusion)  | Lesson Review  |
+
+---
 
 <a name="Opening"></a>
 ## Opening
