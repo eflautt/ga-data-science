@@ -249,7 +249,7 @@ Any questions?
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **UPCOMING PROJECTS**  | [Unit Project 2](../projects/unit-projects/project-2/readme.md)  |
+| **UPCOMING PROJECTS**  | [Unit Project 2](../../projects/unit-projects/project-2/readme.md)  |
 
 ### ADDITIONAL RESOURCES
 - See iPython notebook
