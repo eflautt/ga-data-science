@@ -27,6 +27,7 @@ DS | Lesson 13
 - Experience with sckit-learn classifiers, specifically Random Forests and Decision trees
 - Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
+  
   ```python
   python -m spacy.en.download --force all
   ```
@@ -36,6 +37,7 @@ DS | Lesson 13
 
 - Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
+ 
   ```python
   python -m spacy.en.download --force all
   ```
@@ -52,6 +54,7 @@ DS | Lesson 13
 | 10 mins  | [Conclusion](#conclusion)  |   |
 
 ---
+
 <a name="opening"></a>
 ## Review: Decision Trees and Random Forests  (10 mins)
 Recall definitions of Decision Trees and Random Forests from previous lesson.
