@@ -182,8 +182,8 @@ Ok! That was a lot of material. Let's reveiw.
 
 
 <a name="intro4"></a>
-## Introduction: Odds and Probability (5 mins)
-
+## Introduction: Odds and Probability
+How proficient are you with statistical odds? Let's review some quick basics about odds and probability so you can test your familiarity with these concepts.
 
 <a name="guided-practice"></a>
 ## Guided Practice- Odds and Probability (20 min)
