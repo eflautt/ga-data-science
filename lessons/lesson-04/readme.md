@@ -12,7 +12,7 @@ DS | Lesson 4
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
--  Explain the difference between causation vs. correlation
+- Explain the difference between causation vs. correlation
 - Test a hypothesis within a sample case study
 - Validate your findings using statistical analysis (p-values, confidence intervals)
 
@@ -34,13 +34,13 @@ DS | Lesson 4
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Opening](#opening)  | Lesson Objectives  |
-| 5 min  | [Introduction](#introduction1)   | Causation and correlation |
-| 25 min  | [Lecture](#lecture1)  | Causality vs correlation |
+| 5 min  | [Introduction](#introduction1)   | Causation and Correlation |
+| 25 min  | [Lecture](#lecture1)  | Causality vs Correlation |
 | 15 min  | [Guided Practice](#guided-practice)  | Confounding and DAGs |
 | 5 min  | [Introduction](#introduction2)   | Hypothesis Testing |
-| 30 min  | [Demo](#demo)   | Hypothesis testing in case study |
+| 30 min  | [Demo](#demo)   | Hypothesis Testing: Case Study |
 | 5 min  | [Introduction](#introduction3) | Validate your findings |
-| 20 min  | [Demo](#demo2)  | P-values, CI in the case study|
+| 20 min  | [Demo](#demo2)  | P-values, CI: Case Study|
 | 35 min  | [Independent Practice](#independent-practice)  | Practice with p-values and CI|
 | 15 min  | [Wrap-up](#wrapup)  | Review Guided Practice|
 
@@ -48,7 +48,9 @@ DS | Lesson 4
 ---
 <a name="opening"></a>
 ## Opening (5 min)
-- Review Current Lesson Objectives
+- Review any questions from last session
+- Discuss Current Lesson Objectives
+- Review prior exit tickets
 
 #### Data Source
 Today we will use advertising data from an example in 
