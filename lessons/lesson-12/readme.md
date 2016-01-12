@@ -17,6 +17,7 @@ DS | Lesson 12
 - Understand and build random forest models for classification and regression
 - Know how to extract the most important predictors in a random forest model
 
+
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 
@@ -25,10 +26,12 @@ DS | Lesson 12
 - Explain the concepts of cross-validation, logistic regression, and overfitting
 - Know how to build and evaluate _some_ classification model in sckit-learn using cross-validation and AUC
 
+
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
 - Review materials & dataset (sample code)
+
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -54,7 +57,7 @@ DS | Lesson 12
 - Review basics of logistic regression
 - Orient material to the Data Science workflow
 
-**Check**: Define the difference between the precision and recall of a model. What are some common components and use cases for logistic regression?
+> **Check**: Define the difference between the precision and recall of a model. What are some common components and use cases for logistic regression?
 
 #### Review the Data Science Workflow
 In this lesson we will focus on mining the dataset and building a model. We will focus on refining our model for the best predictive ability.
@@ -88,7 +91,7 @@ In a group:
 5. How many articles are there per category?
 6. Create a feature for the title containing "recipe". Is the % of evergreen websites higher or lower on pages that have "recipe" in the the title?
 
-**Check:** Were you able to plot the requested features? Can you explain how you would approach this type of dataset?
+> **Check:** Were you able to plot the requested features? Can you explain how you would approach this type of dataset?
 
 ***
 
@@ -109,7 +112,7 @@ It's important to note the next question we ask is always dependent on the last.
 - If not, does the article contain references to political topics?
 - Etc
 
-**Check**: Using our dataset from earlier, try to predict whether a given article is evergreen.
+> **Check**: Using our dataset from earlier, try to predict whether a given article is evergreen.
 
 #### Comparison to previous models 
 Decision trees have an advantage over logistic regression by being _non-linear_. A _linear_ model is one in which a change in an input variable has a constant change on the output variable. 
@@ -118,7 +121,7 @@ An example of this difference is the relationship between years of education and
 
 Additionally, trees automatically contain interactions of features. Since each question is dependent on the last, the features are naturally interacting.
 
-**Check**: Why do decision trees have an advantage over logistic regression?
+> **Check**: Why do decision trees have an advantage over logistic regression?
 
 #### Training a Decision Tree Model
 Training a decision tree is about deciding on the best set of questions to ask. A good question will be one that best segregates the positive group from the negative group and then narrows in on the correct answer. For example, in our toy problem of classifying news stories, the best question we can ask is one that creates 2 groups, one that is mostly news stories and on that is mostly non-news stories.
@@ -158,7 +161,7 @@ Predictions are made in the decision tree from answering each of the questions. 
 
 In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.
 
-**Check**: How do we classify a new article? How do we make predictions from a decision tree?
+> **Check**: How do we classify a new article? How do we make predictions from a decision tree?
 
 ***
 
@@ -166,11 +169,11 @@ In the sample tree, if we want to classify a new article, we can proceed by firs
 ## Guided Practice: Decision Trees in scikit-learn (15 mins)
 
 #### Training a Model in sckit-learn 
-> See ipython notebook for starter and solution code
+> Instructor Note: Have students open and work through the exercises in the [starter code notebook](./code/starter-code/starter-code-12.ipynb).
 
 In your groups from earlier, work on evaluating the decision tree using cross-validation methods. What metrics would work best? Why?
 
-**Check:** Are you able to evaluate the decision tree model using cross-validation methods?
+> **Check:** Are you able to evaluate the decision tree model using cross-validation methods?
 
 
 <a name="demo"></a>
@@ -200,7 +203,8 @@ We can limit this function in decision trees using a few methods:
 
 <a name="guided-practice3"></a>
 ## Guided Practice: Adjusting Decision Trees to Avoid Overfitting (15 minutes)
-> See ipython notebook for starter and solution code.
+
+
 
 Control for overfitting in the decision model by adjusting one of the following parameters:
 
