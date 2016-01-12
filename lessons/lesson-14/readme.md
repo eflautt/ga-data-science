@@ -168,6 +168,7 @@ There are many variants as well, that incorporate attempt to add more structure 
 
 > **Check:** Take any recent news-article and brainstorm which 3 topics this story is most likely made up of. Next, brainstorm which words are most likely derived from which of those 3 topics.
 
+
 <a name="demo-lda"></a>
 ## Demo: LDA in gensim (30 mins)
 
@@ -333,15 +334,15 @@ model.most_similar(positive=['cookie', 'brownie'])
 
 It can easily identify words related to those from this dataset (remember, most of the articles in this dataset are food or cooking related).
 
-<
-a name="independent-practice"></a>
+
+<a name="independent-practice"></a>
 ## Independent Practice (45 min)
 
 In this exercise, we will compare some of the classical NLP tools from the last class with these more modern latent variable techniques. We will do this by comparing information extraction techniques on Twitter using the two methods.
 
 > Intructor Note: If you want students to capture their own collection of tweets using the Twitter API,[ use the following instructions](./code/twitter-instructions.md). It requires some setup and a Twitter account.
 
-If not - you can use a [pre-existing file of captured tweets](./assets/data/captured-tweets.txt) relating tech companies and Middle Eastern companies.
+> If not - you can use a [pre-existing file of captured tweets](./assets/data/captured-tweets.txt) relating tech companies and Middle Eastern companies.
 
 **Bonus**: Want to collect your own tweets? Here are some instructions. We'll use the Twitter API to build a collection of tweets to learn from. After that, we'll filter future tweets based on some established conditions.
 
