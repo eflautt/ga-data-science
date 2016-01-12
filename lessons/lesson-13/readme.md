@@ -6,7 +6,6 @@ creator:
     city: NYC
 ---
 
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Natural Language Processing and Text Classification
 DS | Lesson 13
 
@@ -59,7 +58,7 @@ DS | Lesson 13
 ## Review: Decision Trees and Random Forests  (10 mins)
 Recall definitions of Decision Trees and Random Forests from previous lesson.
 
-**Check:** What are some important features of decision trees and random forests?
+> **Check:** What are some important features of decision trees and random forests?
 
   - Decision trees are weak learners that are easy to overfit
   - Random forests are strong models that made up a collection of decision trees
@@ -70,7 +69,7 @@ Recall definitions of Decision Trees and Random Forests from previous lesson.
 <a name="introduction-nlp"></a>
 ## Introduction: Natural Language Processing (30 mins)
 
-### What is Natural Language Procesing (NLP)
+### What is Natural Language Procesing? (NLP)
 
 Natural language processing is the task of extracting meaning and information from text documents. There are many types of information we might want to extract; these include simple classification tasks, such as deciding what category a piece of text falls into or what tone it has, as well as more complex tasks like translating or summarizing text.
 
@@ -102,7 +101,7 @@ Stemming and lemmatization are two solutions to this type of problem. Once we've
 
 **Stemming** is a crude process of removing common endings from sentences:
 
-  - Stemming removes endings with `s`, `es`, `ly`, `ing`, and `ed`.
+- Stemming removes endings with `s`, `es`, `ly`, `ing`, and `ed`.
 
 This is useful so that we can treat the word `happy` and `happily` similarly. 
 
@@ -112,7 +111,7 @@ There are many well-known stemmer functions that can import many of these common
 
 For example, we can identify that "bad" and "badly" are similar using stemming.  However, this heuristic won't be able to tell that "better" and "best" are similar. That's where lemmatization comes in handy.
 
-**Check:** Can you think of other problem words or phrases that might require these tools?
+> **Check:** Can you think of other problem words or phrases that might require these tools?
 
 ### Parsing and Tagging
 
@@ -133,7 +132,7 @@ Tagging and parsing is in fact made up of a few overlapping sub-problems:
 
 As you can see, NLP requires a large number of overlapping rules and dictionaries; however, the potential benefits are enormous.
 
-**Check:** How might NLP be applied within your current jobs or final projects? What are some potential use-cases?
+> **Check:** How might NLP be applied within your current jobs or final projects? What are some potential use-cases?
 
 ***
 
@@ -150,7 +149,7 @@ Let's start by attempting to process some of the titles.
 
 First, we'll load our NLP toolkit by specifying the language:
 
-  ``` python
+  ```python
   from spacy.en import English
 
   nlp_toolkit = English()
@@ -170,7 +169,7 @@ The first title is:
 
  From this we may wish to extract that the article references a company and that the company is referencing a new possible product: air-breathing batteries.
 
- ``` python
+ ```python
 
  title = "IBM sees holographic calls, air breathing batteries"
  parsed = nlp_toolkit(title)
@@ -250,7 +249,7 @@ data['references_organization'] = data['title'].fillna('').map(references_organi
 data[data['references_organization']][['title']].head()
 ```
 
-**Check:** Write a function to identify titles that have mention an organization (ORG) and person (PERSON).
+> **Check:** Write a function to identify titles that have mention an organization (ORG) and person (PERSON).
 
 Solution:
 
@@ -292,7 +291,7 @@ In doing so, we'll have many encoding or representation questions along the way,
 
 The answer to each of these is problem dependent, but all of them will affect our modeling problem.
 
-**Check:** What do you think? Does word order matter? Case? Punctuation? Discuss and explain your reasoning.
+> **Check:** What do you think? Does word order matter? Case? Punctuation? Discuss and explain your reasoning.
 
 Solution:
 
@@ -306,16 +305,19 @@ Solution:
 
 Note: Classification using words from the text as features is known as **bag-of-words** classification.
 
-**Check:** What is "bag-of-words" classification stand for and when should it be used? What are some benefits to this approach?
+> **Check:** What is "bag-of-words" classification stand for and when should it be used? What are some benefits to this approach?
 
 ***
 
 <a name="demo-text-sklearn"></a>
 ## Demo / Codealong: Text Processing in scikit-learn (30 mins)
 
+> Instructor Note: Have students open and walk through the [starter code](./code/starter-code/starter-code-13.ipynb) notebook here.
+
 Scikit-learn has many pre-processing utilities that simplify many of the tasks required to convert text into features for a model. These can be found in the `sklearn.preprocesing.text` package.
 
 We will use the StumbleUpon web crawl dataset again and perform a text classification text. Instead of using other features of the webpages, we will use the text content itself to predict whether or not the webpage is 'evergreen'.
+
 
 #### CountVectorizer
 
@@ -425,20 +427,22 @@ vectorizer = TfidfVectorizer()
 
 `TfidfVectorizer` follows the same `fit` and `fit_transform` interface of `CountVectorizer`.
 
-**Check:** What does TF-IDF stand for? What does this function do and why is it useful?
+> **Check:** What does TF-IDF stand for? What does this function do and why is it useful?
 
-**Check:** Use `TfidfVectorizer` to create a feature representation of the stumbleupon titles.
+> **Check:** Use `TfidfVectorizer` to create a feature representation of the stumbleupon titles.
+
+> Instructor Note: You can find the solutions in the [solution code notebook](./code/solution-code/solution-code-13.ipynb).
 
 ***
 
 <a name="ind-practice"></a>
 ## Independent Practice: Text Classification in scikit-learn (30 mins)
 
-- Tie together the text features of the title with one more feature sets from the previous random forest model. Train this model to see if this improves the AUC.
+Tie together the text features of the title with one more feature sets from the previous random forest model. Train this model to see if this improves the AUC.
 - Use the `body` text instead of the `title` text - is this an improvement?
 - Use `TfIdfVectorizer` instead of `CountVectorizer` - is this an improvement?
 
-**Check:** Were you able to prepare a model that uses both quantitative features and text features? Does this model improve the AUC?
+> **Check:** Were you able to prepare a model that uses both quantitative features and text features? Does this model improve the AUC?
 
 ***
 
@@ -453,7 +457,6 @@ Let's review:
 - In `scikit-learn` we use vectorizers to create text features for classification, such as `CountVectorizer` or `TfIdfVectorizer`
 
 ***
-
 
 ### BEFORE NEXT CLASS
 |   |   |
