@@ -40,8 +40,11 @@ Review the following resources as an introduction to some commonly used concepts
 2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands. Pay particular attention to folder navigation and file creation.
    * Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
-3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library used for data analysis that we will be using in this course.
-   * Bonus Option: Practice your Python by working through [Project Euler's computational problems](https://projecteuler.net).
+3. [ ] Complete lessons 1-3 of [Learn Pandas](https://bitbucket.org/hrojas/learn-pandas) to become familiar with a popular library used for data analysis.
+   * Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
+
+4. [ ] Refresh your familiarity with [Probability and Statistics](https://www.khanacademy.org/math/probability) by working through this Khan Academy course.
+ * Bonus Option: Working through some of these famous [Project Euler's computational problems](https://projecteuler.net).
 
 <a name="resources"></a>
 ### Additional Resources (Optional)
