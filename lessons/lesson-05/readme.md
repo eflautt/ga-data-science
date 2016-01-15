@@ -15,7 +15,7 @@ DS | Lesson 5
 
 -  Identify the data science toolkit
 -  Navigate Git and the Command Line
--  Describe Probablity vs Odds
+-  Describe Probability vs Odds
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
