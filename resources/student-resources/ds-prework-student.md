@@ -43,12 +43,12 @@ Review the following resources as an introduction to some commonly used concepts
 3. [ ] Complete lessons 1-3 of [Learn Pandas](https://bitbucket.org/hrojas/learn-pandas) to become familiar with a popular library used for data analysis.
    * _Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)._
 
-4. [ ] Refresh your familiarity with [Probability and Statistics](https://www.khanacademy.org/math/probability) by working through this Khan Academy course.
- * _Bonus Option: Working through some of these famous [Project Euler's computational problems](https://projecteuler.net)._
+4. [ ] Refresh your familiarity with [Probability and Statistics](https://www.khanacademy.org/math/probability) by reviewing this Khan Academy course.
+ * _Bonus Option: Try working through some of [Project Euler's computational problems](https://projecteuler.net)._
 
 <a name="resources"></a>
 ### Additional Resources (Optional)
-Consider the following reading recommendations. These are not required but may help supplement your learning experience:
+The following reading recommendations are not required but may supplement your learning experience:
 
   * [The Quick Python Book](http://www.amazon.com/Quick-Python-Book-Second-Edition/dp/193518220X)
   * [Data Analysis With Open Source Tools](http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358)
