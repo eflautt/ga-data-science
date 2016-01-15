@@ -9,13 +9,13 @@ Before completing an analysis, it is critical to understand your data. You will 
 
 Following these steps will help you better understand your dataset.
 
-**Goal:** An iPython notebook writeup that provides a dataset overview with visualizations and statistical analysis.
+**Goal:** An IPython notebook writeup that provides a dataset overview with visualizations and statistical analysis.
 
 ---
 
 ### DELIVERABLES
 
-#### iPython Notebook Exploratory Analysis
+#### IPython Notebook Exploratory Analysis
 
 - **Requirements:**
   - Read in your dataset, determine how many samples are present, and ID any missing data
@@ -77,9 +77,9 @@ We'll be using the same dataset as UCLA's Logit Regression in R tutorial to expl
 Dataset: [Admissions.csv](./assets/admissions.csv)
 
 #### Starter code
-For this project we will be using an iPython notebook. This notebook will use matplotlib for plotting and visualizing our data. This type of visualization is handy for prototyping and quick data analysis. We will discuss more advanced data visualizations for disseminating your work.
+For this project we will be using an IPython notebook. This notebook will use matplotlib for plotting and visualizing our data. This type of visualization is handy for prototyping and quick data analysis. We will discuss more advanced data visualizations for disseminating your work.
 
-* Open the [starter code instructions](./starter-code/project2-starter.ipynb) in iPython notebook.
+* Open the [starter code instructions](./starter-code/project2-starter.ipynb) in IPython notebook.
 
 #### Suggestions for Getting Started
 
