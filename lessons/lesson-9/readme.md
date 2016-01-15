@@ -59,7 +59,7 @@ Logistic Regression is a _linear_ approach to solving a classification problem. 
 
 Regression results, as defined, can have a value ranged from negative infinity to infinity (even though not all regression problems use that entire range; imagine predicting a football player's salary... it wouldn't be negative, and it has a cap to how high it could go).
 
-We _couldn't_ use this for classification: the math could check out in a binary problem (think: belonging to something, 1, could be greater than not belonging to it, 0), what happens when it predicts a value of 2? 20? 300 Million? -1? We need an approach to normalize the results to _something_ more reasonable.
+Classification is classically defined when the predicted values (class labels) are not greater or lesser than each other. Logically this makes sense, but since must classification problems are binary (0 or 1), and 1 is technically greater than 0, wouldn't it make sense to apply the concept of a regression to solve classification? And how do we contain those bounds? Below we'll review some approaches to regression that will make solving classification more feasible.
 
 ### Fix 1: Probability
 
@@ -68,6 +68,8 @@ One approach we could take is predicting the probability that an observation bel
 **Recall**: This prior probability is most similar to what value in the ordinary least squares formula? (alpha, or the y-intercept)
 
 ### Fix 2: Link Functions and the Sigmoid Function
+
+![logistic fit vs linear regression fit](log_vs_ols.jpg)
 
 Another advantage to Ordinary Least Squares is that it allows for _generalized_ models using a _link_ function. Link functions allow us to build a relationship between a linear function and the mean of a distribution.
 
@@ -101,6 +103,10 @@ with a mean probability of 0.5, means the adjusted probability would be _about_ 
 `1 / (1 + e^-.2)` (python: `1 / (1 + numpy.exp(-0.2)`)
 
 While the logit value (log odds) represents the _coefficients_ in the logistic function, we can convert them into odds ratios that would be more easily interpretable.
+
+Finally, it's through these coefficients that we gain our overall probability: the logistic regression draws a linear decision line which solves if an observation belongs in one class or another:
+
+![](assets/decision_lines.png)
 
 <a name="guided-practice-logit"></a>
 ## Guided Practice: Wager these odds!
@@ -147,7 +153,13 @@ We can split up the accuracy of each label by using _true positive rate_ and _fa
 
 **True Positive Rate (TPR)**: Out of all of the target class label, how many were accurately predicted to belong to that class?
 
-**False Positive Rate (TPR)**: The inverse of TPR: out of all not belonging to a class label, how many were predicted as the target class label?
+Real world example: Given a medical exam that tests for cancer, how often does it correctly identify patients with cancer?
+
+**False Positive Rate (FPR)**: The inverse of TPR: out of all not belonging to a class label, how many were predicted as the target class label?
+
+Real world example: Given a medical exam that tests for cancer, how often does it trigger a "false alarm" by saying a patient has cancer when they really don't?
+
+Likewise, this can be inversed: how often does a test correctly identify patients without cancer, and how often does a test incorrectly identify patients as cancer-free when they actually do (!). By building on true positive rate and false positive rate, you can understand a much clearer picture of where predictions begin to fall apart.
 
 A very good classifier would have a true positive rate approaching 1, and a false positive rate approaching 0. In a binary problem (say, predicting if someone smokes or not), It would accurately predict all of the smokers as smokers, and not predict any of the nonsmokers as smokers.
 
@@ -191,3 +203,13 @@ For each of the following examples:
 3. Build a tuned Logistic model. Be prepared to explain your design (including regularization), metric, and feature set in predicting survival using the tools necessary (such as a fit chart).
 
 Use the starter code included to get you going.
+
+<a name="conclusion"></a>
+### Review
+
+1. What's the link function used in logistic regression?
+2. What kind of machine learning problems does logistic regression address?
+3. What do the _coefficients_ in a logistic regression represent? How does the interpretation differ from ordinary least squares? How is it similar?
+4. How does True Positive Rate and False Positive Rate help explain accuracy?
+5. What would an AUC of 0.5 represent for a model? What about an AUC of 0.9?
+6. Why might one classification metric be more important to tune than another? Give an example of a business problem or project where this would be the case.
