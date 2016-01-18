@@ -46,13 +46,15 @@ In this lesson we will focus on IDENTIFYing problems that are related to time se
 <a name="introduction-timeseries"></a>
 ## Intro: What are (is) time series data? (20 mins)
 
-Time series data is any data where the individual data points change over time. This would be fairly common in most business data, we expect sales to change according to the seasons and trends. You will find this property in many social phenomena as well , it's been documented that there is traditionally more crime in the summer months.
+Time series data is any data where the individual data points change over time. This would be fairly common in most business data, we expect sales to change according to the seasons and trends. You will find this property in many social phenomena as well, it's been documented that there is traditionally more crime in the summer months.
 
-To be honest, _most_ datasets likely to have an important time component, but typically we assume that it's fairly minimal.
+To be honest, _most_ datasets likely to have an important time component, but typically we assume that it's fairly minimal. If we are attempting to analyze salaries in an industry, it's clear that salaries shift over time and depending on the economic period. But, if we are examining the problem on a smaller scale (say 3-5 years) the effect of time on salaries is much smaller than say the industry or position.
 
 When it is not - we often need to focus on identifying the aspects of the data that are influenced by time and those that aren't.
 
-**Check** Have the students identify time components of previous datasets used in class
+Typically, our time series data will be a sequence of values and we will be interested in studying the changes in this series and how related the individual values are. How much does this weeks sales effect next weeks? How much does today's stock price effect tomorrow's.
+
+**Check** Have the students identify time components of previous datasets used in class. For example, the `stumbleupon` dataset. This is a collection of news stories and we are predicting which are ever-lasting. One piece of this is identifying current events stories, so it's likely we will have to retrain our model over time. In a previous regressions on sports statistics or salaries, we likely could include a time component if we have many measurements over a long time horizon.
 
 Time series analysis is useful for sales analysis, stock market trends, studying economic phenomena as well social science problems such as crime prediction.
 
@@ -72,7 +74,7 @@ Similarly, searches for 'Gingerbread Houses' spike every year around the holiday
 
 ![](./assets/images/google-gingerbread.png)
 
-Both of these spikes re-occur on a fixed time-scale, making them seasonal patterns. While we may see other types of regularly occurring up or down swings (for examples growth vs recession year for economic trends), seasonal patterns should repeat on a fixed timescale or _period_. Repeated patterns that are aperiodic are known as _cycles_.
+Both of these spikes re-occur on a fixed time-scale, making them seasonal patterns. While we may see other types of regularly occurring up or down swings (for examples growth vs recession year for economic trends), seasonal patterns should repeat on a fixed timescale or _period_. Repeated patterns that are aperiodic are known as _cycles_. While identifying aperiodic cycles are important, they are often treated differently that seasonal effects. Seasonal effects are useful for there consistency, the fact that last year's (quarters, months, etc.) data is useful as a predictor.
 
 Lastly, searches for 'iphone', have both a general trend upwards (indicating more popularity for the phone) as well as a spike in September, typically when Apple hosts its event to announce new versions
     
@@ -82,6 +84,16 @@ Most often, we are interested in studying the _trend_ and not the seasonal fluct
 
 **Check** Discuss one or two more time-series examples - identify trends and seasonal patterns. Using [Google trends](https://www.google.com/trends/) for this is a nice way to generate these.
 
+- [](https://www.google.com/trends/explore#q=superbowl)
+    - Seasonal pattern, with no real growth upward
+
+- [](https://www.google.com/trends/explore#q=machine%20learning)
+    - Strong trend upward over time
+
+- [](https://www.google.com/trends/explore#q=neural%20networks%2C%20deep%20learning&cmpt=q&tz=Etc%2FGMT%2B5)
+    - Trend downward in the use of neural networks, but upward in the use of deep learning
+
+
 **Check** 
 
 <a name="introduction-timeseries-analysis"></a>
@@ -90,9 +102,13 @@ Most often, we are interested in studying the _trend_ and not the seasonal fluct
 #### Moving Averages
  A _moving average_ replaces each data point with an average of _k_ consecutive data points in time. Typically this is k/2 data points prior to and following a given time point, but could also be the _k_ preceding timepoints. This is also referred to as the 'rolling' average. Our measure of average could be a median or a mean.
 
+ The formula for a rolling _mean_ is below:
+
  ![](assets/images/single_moving_avg_fit.gif)
 
 **Check:** What would a moving (rolling) mean indicate vs. a moving (rolling)median.
+
+A rolling mean would average all values in the window, but can be skewed by outliers (extremely small or large values). This may be useful if we are looking to identify atypical periods or we want evaluate these odd periods. For example, we do want to reward holiday periods or more negatively view slumps or closures. The rolling median would provide the 50% percentile value for the period and perhaps more representative of a 'typical' day.
 
 In the following plot from FiveThirtyEight, they have plotted the 30-day moving average of the Economic Uncertainty Index.
 
@@ -226,7 +242,7 @@ store1_open_data[['Customers']].plot()
 
 We can see that there are large spikes of sales and customers towards end of 2013 and 2014 leading into the first quarter of 2014 and 2015.
 
-**Check:** Have the students filter to just 2015 to zoom-in on changes over time.
+**Check:** Have the students use the index filtering to filter just 2015 to zoom-in on changes over time. This should make it easier to identify the holiday sales bump.
 
 ```python
 store1_data_2015 = store1_data['2015']
@@ -245,7 +261,7 @@ To measure how much the sales are correlated with each other, we want to compute
 data['Sales'].resample('D', how='mean').autocorr(lag=1)
 ```
 
-As with correlation, as this number moves closer to 1 the data is more correlated.
+As with correlation between different variables, as this number moves closer to 1 the data is more correlated.
 
 **Check:** What does the autocorrelation values of Sales and Customers imply about our data.
 
@@ -351,6 +367,8 @@ computes the sum of average sales per store up until that date.
 
 
 <a name="ind-practice"></a>
+> NOTE: The solution code for these are below.
+
 1. Plot the distribution of sales by month and compare the effect of promotions
 1. Are sales more correlated with the prior date, a similar date last year, or a similar date last month?
 1. Plot the 15 day rolling mean of customers in the stores
