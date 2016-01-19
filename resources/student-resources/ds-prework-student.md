@@ -40,8 +40,8 @@ Review the following resources as an introduction to some commonly used concepts
 2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands. Pay particular attention to folder navigation and file creation.
    * _Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/)._
 
-3. [ ] Refresh your familiarity with [Probability and Statistics](https://www.khanacademy.org/math/probability) by reviewing materials this Khan Academy course.
-   * _Bonus Option: Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to become familiar with a popular library we'll be using for data analysis._
+3. [ ] Refresh your familiarity with [Probability and Statistics](https://www.khanacademy.org/math/probability) by reviewing sample materials from this Khan Academy course.
+   * _Bonus Option: Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library we'll be using for data analysis._
 
 <a name="resources"></a>
 ### Additional Resources (Optional)
