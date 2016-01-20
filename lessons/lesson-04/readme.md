@@ -56,7 +56,7 @@ DS | Lesson 4
 Today we will use advertising data from an example in 
 [An Introduction to Statistical Learning by Gareth James](http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv).
 
-> Instructor note: this is used in the demo and can be downloaded directly from the website by running that cell of [demo-starter notebook](./code/starter-code/guided-demo-starter-code-4.ipynb). No other files are needed.  
+> Instructor Note: This is used in the demo and can be downloaded directly from the website by running that specific cell of [demo-starter notebook](./code/starter-code/guided-demo-starter-code-4.ipynb). No other files are needed.  
   
    
 <a name="introduction"></a>
@@ -106,8 +106,7 @@ Most commonly we find an association between two variables. This means that we o
 
 However, we may not fully understand the causal direction or how other factors may be influencing the association we are observing. 
 
-**Check:** What is the difference between causation and association? 
-
+> **Check:** What is the difference between causation and association? 
 
 
 <a name="#guided-practice"></a>
@@ -122,7 +121,7 @@ Let's say we did an analysis to understand what causes lung cancer. We find a st
 
 In fact, people who carry cigarette lighters are 2.4 times as likely to contract lung cancer as people who don’t carry lighters. However, does this mean that the lighters are causing lung cancer? No. 
 
-**Check:** What factor(s) are missing from this model? How might we measure for these?
+> **Check:** What factor(s) are missing from this model? How might we measure for these?
 
 A *DAG- Directed Acyclic Diagram* is a handy tool to help you determine which variables are most important for your model.
 
@@ -141,8 +140,7 @@ Let's say we want to evaluate which type of ad is associated with higher sales.
 
 > Instructor Note: Have students draw a basic DAG on their table or board. Take 2 mins and think about other variables that may predict sales. Discuss in small groups and share one or two examples with the class.
 
-
-> Instructor Note: Look for an example of seasonality (or something similar). Use this a jumping off point to connect to confounding. 
+> Instructor Note: Be alert for an example of seasonality (or something similar). Use this a jumping off point to connect to confounding. 
 
 Great- let's take a look at the association between TV Ads and Sales by taking into account *seasonality*. 
 
@@ -155,7 +153,7 @@ Let's assume that the TV ads were run in November/December (right before holiday
 
 If we compare TV and Google Ads but don't take into account seasonality, then we are likely to make the wrong conclusion. In this case, we might assume that Google ads are not as effective at driving sales as tv ads, but this would be an example of *bias* and *confounding*.
 
-**Check:** What is bias and confounding? What could we do differently in this example to avoid these elements?
+> **Check:** What is bias and confounding? What could we do differently in this example to avoid these elements?
 
 
 #### Real World Application
@@ -200,7 +198,7 @@ Let's dive into this more with the demo.
 > Instructor Note: Have students open the [guided demo starter code](./code/starter-code/guided-demo-starter-code-4.ipynb) and move through Part 1. Answers can be found in the [demo solution code](./code/solution-code/guided-demo-solution-code-4.ipynb). 
 
 
-**Check:** What is the null hypothesis? Why is this important to use?
+> **Check:** What is the null hypothesis? Why is this important to use?
 
 
 <a name="introduction3"></a>
@@ -219,9 +217,9 @@ When data scientists present results and say we found a significant result- it i
 
 > Instructor Note: Have students open the [guided demo starter code](./code/starter-code/guided-demo-starter-code-4.ipynb) and move through Part 2. Answers can be found in the [demo solution code](./code/solution-code/guided-demo-solution-code-4.ipynb). 
 
-**Check:** What does a 95% confidence interval indicate?
+> **Check:** What does a 95% confidence interval indicate?
  
-- Answer: If we repeated our analysis 100 times, the point estimate we found would be there 95% of the time. 
+> - Answer: If we repeated our analysis 100 times, the point estimate we found would be there 95% of the time. 
 
 
 <a name="independent-practice"></a>
@@ -234,13 +232,13 @@ For this lab you will be asked to read these outputs and tables and determine if
 
 You will also get practice looking at the output and understanding how the model was built (e.g. identifying predictor/exposure vs outcome).
 
-> Instructor Note: Have students open the [lab starter code](./code/starter-code/lab-starter-code-4.ipynb).
+> Instructor Note: Have students open and work through the [lab starter code](./code/starter-code/lab-starter-code-4.ipynb).
 
 
 <a name="wrapup"></a>
 ## Project Questions (15 mins)
 
->Instructor Note: Go over the [lab solutions](./code/solution-code/lab-solution-code-4.ipynb) with the class and clarify any confusing points or remaining questions. 
+> Instructor Note: Go over the [lab solutions](./code/solution-code/lab-solution-code-4.ipynb) with the class and clarify any confusing points or remaining questions. 
 
 Any questions?
 
@@ -252,4 +250,4 @@ Any questions?
 | **UPCOMING PROJECTS**  | [Unit Project 2](../../projects/unit-projects/project-2/readme.md)  |
 
 ### ADDITIONAL RESOURCES
-- See iPython notebook
+- If any
