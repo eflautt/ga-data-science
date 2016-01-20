@@ -50,8 +50,7 @@ DS | Lesson 3
 <a name="opening"></a>
 ## Opening (5 min)
 
-> Instructor Note: - Review Prior Lesson Content & Exit Tickets
-> Instructor Note: - Discuss Current Objectives
+> Instructor Note: Review Prior Lesson Content & Exit Tickets. Discuss Current Objectives.
    
 <a name="introduction"></a>
 ## Intro: Laying the ground work (20 mins)
