@@ -44,9 +44,9 @@ Week # | Lesson 9
 <a name="opening"></a>
 ## Opening (5 minutes)
 
-Read through the next two questions and brainstorm some ideas on how to answer each.
+Read through the following two questions and brainstorm some ideas on how to answer each:
 
-1. In class we've covered two different algorithms thus far: the linear model (ordinary least squares, OLS) and k-nearest neighbors (knn). The main difference between these two would be that OLS is used to solve a continuous regression problem, while KNN is used to solve a categorical problem. What other differences lie in how they _approach_ solving the problem? (For example, what is _interpretable_ about OLS, compared to what's _interpretable_ in KNN)
+1. In class we've covered two different algorithms thus far: the linear model (ordinary least squares, OLS) and k-nearest neighbors (knn). The main difference between these two would be that OLS is used to solve a continuous regression problem, while KNN is used to solve a categorical problem. What other differences lie in how they _approach_ solving the problem? For example, what is _interpretable_ about OLS, compared to what's _interpretable_ in KNN?
 
 2. What advantages could we have, compared to KNN, using a linear model like OLS to solve classification? What would be the challenges to using OLS to solve classification (say, if the values were either 1 or 0)?
 
@@ -65,15 +65,17 @@ Classification is classically defined when the predicted values (class labels) a
 
 One approach we could take is predicting the probability that an observation belongs to a certain class. We could assume that the _prior_ probability (the _bias_) of a class is the class distribution. For example, if we know that out of 2200 people on the Titanic that roughly 700 survived, then without knowing anything about the passengers and crew, the probability of survival would be ~0.32 (32%). However, we still need a way to use a linear function to either increase or decrease the probability of an individual, given the data we know about them.
 
-**Recall**: This prior probability is most similar to what value in the ordinary least squares formula? (alpha, or the y-intercept)
+> **Check**: This prior probability is most similar to which value in the ordinary least squares formula?
+> Answer: alpha, or the y-intercept
 
 ### Fix 2: Link Functions and the Sigmoid Function
 
-![logistic fit vs linear regression fit](log_vs_ols.jpg)
+![logistic fit vs linear regression fit](./assets/images/log_vs_ols.jpg)
 
 Another advantage to Ordinary Least Squares is that it allows for _generalized_ models using a _link_ function. Link functions allow us to build a relationship between a linear function and the mean of a distribution.
 
-**RECALL**: What was the distribution most aligned with OLS/Linear Regression? (The Normal Distribution)
+> **Check**: What was the distribution most aligned with OLS/Linear Regression?
+> Answer: The Normal Distribution
 
 For classification, we need a distribution associated for categories: the probability of a given event, given all events. The link function that best allows for this is _logit_ function, which is the inverse of the _sigmoid_ function.
 
@@ -106,7 +108,8 @@ While the logit value (log odds) represents the _coefficients_ in the logistic f
 
 Finally, it's through these coefficients that we gain our overall probability: the logistic regression draws a linear decision line which solves if an observation belongs in one class or another:
 
-![](assets/decision_lines.png)
+![](./assets/images/decision_lines.png)
+
 
 <a name="guided-practice-logit"></a>
 ## Guided Practice: Wager these odds!
@@ -132,6 +135,7 @@ def sigmoid_func(logit):
 4. Houston : Florida State, 1.8:1
 5. Ohio State : Notre Dame, 1.6:1
 
+
 <a name="ind--practice-logit"></a>
 ## Independent Practice: Logistic Regression Implementation
 
@@ -141,6 +145,7 @@ Use the data `collegeadmissions.csv` and the (LogisticRegression)[http://scikit-
 2. Build a simple model with one feature and explore the `coef_` value: does this represent the odds, or logit (log odds)?
 3. Build a more complicated model using multiple features. Interpreting the odds, which features have the most impact on admission rate? Which features have the least?
 4. Report back the accuracy of your model.
+
 
 <a name="intro-eval"></a>
 ## Introduction: Advanced Classification Metrics: Precision, Recall, AUC.
@@ -175,6 +180,7 @@ Using the logic of TPR and FPR above:
 
 Keep in mind that sklearn has all of these metrics on [one handy page](http://scikit-learn.org/stable/modules/classes.html#sklearn-metrics-metrics).
 
+
 <a name="guided-practice-eval"></a>
 ## Guided Practice: How to decide which metric to use?
 
@@ -190,6 +196,7 @@ For each of the following examples:
 1. A test is developed for determining if a patient has cancer or not
 2. A newspaper company is targeting a marketing campaign for "at risk" users that may stop paying for the product soon.
 3. You build a spam classifier for your email system.
+
 
 <a name="ind-practice-eval"></a>
 ## Independent Practice: evaluating Logistic Regression with alternative metrics
@@ -213,3 +220,15 @@ Use the starter code included to get you going.
 4. How does True Positive Rate and False Positive Rate help explain accuracy?
 5. What would an AUC of 0.5 represent for a model? What about an AUC of 0.9?
 6. Why might one classification metric be more important to tune than another? Give an example of a business problem or project where this would be the case.
+
+***
+
+### BEFORE NEXT CLASS
+|   |   |
+|---|---|
+| **DUE TODAY**  | [Project 3](../../projects/unit-projects/project-3/readme.md)  |
+
+### ADDITIONAL RESOURCES
+
+- Go crazy!
+- Add your own!
