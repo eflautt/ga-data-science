@@ -63,14 +63,14 @@ DS | Lesson 2
     6. Build
     7. Present
 
-  Today we will focus on steps 1-2, we will dive into steps 3-5 in the next few classes.
+Today we will focus on steps 1-2, and we will dive into steps 3-5 over the next few classes.
 
 
 <a name="introduction"></a>
 ## Intro: Asking a good question (10 mins)
 
 #### Why we need a good question/aim
-"A problem well stated is half solved."
+> "A problem well stated is half solved."
 
 By having a high quality question/aim you set yourself up for success as you being your analysis. You also establish the basis for making your analysis reproducible. A clearly articulated research question not only helps other data scientists learn from, and reproduce your work, but also helps them expand on your work in the future.
 
@@ -164,11 +164,11 @@ As we saw in the attainable section above, different types of data have differen
         - Takes a long time
         - Vulnerable to missing data
 
-#### Knowledge Check
+> **Check:**
 
-- What type of data is the flightstats data?
-- Determine if the number of passengers on JetBlue, Delta, and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
-- Can you create a cross-sectional analysis from a longitudinal data collection? How?
+> - What type of data is the flightstats data?
+> - Determine if the number of passengers on JetBlue, Delta, and United domestic flights with carry-on luggage is associated with delayed take-off time using data from flightstats.com from January 2015- December 2015.
+> - Can you create a cross-sectional analysis from a longitudinal data collection? How?
 
 <a name="#guidedpractice"></a>
 ## Guided Practice: Write a research question with raw data (10 mins)
@@ -177,15 +177,15 @@ Looking at the data from Kaggle's Titanic competition, let's write a high qualit
 - Resource: [Data dictionary](https://www.kaggle.com/c/titanic/data)
 - Format: Think, Pair, Share
 
-**Check:**
+> **Check:**
 
-1. Q: What type of data is this cross-sectional or longitudinal?
+> 1. Q: What type of data is this cross-sectional or longitudinal?
     - A: cross-sectional
 
-2. Q: What will we be measuring (hint: look back at the previous example)
+> 2. Q: What will we be measuring (hint: look back at the previous example)
     - A: The association between being a woman or a child and survival on the Titanic.
 
-3. Q: Write out a SMART aim for this data:
+> 3. Q: Write out a SMART aim for this data:
     - A: Using data from April 15, 1912, taken from  the Titanic diaster, we will determine the association of gender, age (in years) and survival.
 
 <a name="review1"></a>
@@ -235,7 +235,7 @@ Data dictionaries are often our primary source to help judge the quality of our 
 
 Data dictionaries are also where you'll identify any requirements, assumptions, and constraints of your data. Note that you should never assume that a pre-existing data dictionary is complete. It is often going to be up to you to test your assumptions and add to your dictionary.
 
-**Check:** What is a 'data dictionary' and what is it used for? Why?
+> **Check:** What is a 'data dictionary' and what is it used for? Why?
 
 
 <a name="codealong"></a>
@@ -252,13 +252,13 @@ Pandas uses data structures that will look more familiar to folks who have used 
 
 Similarly, you can select pieces of data, do basic operations, and calculate summary statistics. Let's see some examples:
 
-- View Examples from Lab
+> Instructor's Note: View [Examples from the Sample Notebook](./code/numpy-and-pandas.ipynb)
 
 Additionally, we often have to merge data together, correct missing data, and plot our findings. Let's see some examples of each of these:
 
-- View Examples from Lab
+> Instructor's Note: View [Examples from the Sample Notebook](./code/numpy-and-pandas.ipynb)
 
-**Check:** What is a 'dataframe' and when would you use one?
+> **Check:** What is a 'dataframe' and when would you use one?
 
 
 <a name="introduction3"></a>
@@ -276,15 +276,21 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 
 <a name="lab"></a>
 ## Lesson 2 Lab (20 min)
-> Instructor Note: See [Lesson 2 Lab](./code/starter-code/starter-code-2.ipynb)
+> Instructor Note: Have students walk through each question within the [Lesson 2 Lab](./code/starter-code/starter-code-2.ipynb).
+> Instructor Note: If time, [go over solutions](./code/solution-code/solution-code-2.ipynb)
+
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
-- Review questions from lab
+
+- Review solutions & questions from lab
 - Review objectives from class
+
+> Instructor Note: Ask students to generate a list of the major takeaways
 
 <a name="wrapup"></a>
 ## Unit 1, project, where we're headed (15 mins)
+
 - Review Unit 1 objectives
 - Introduce the first project
 - Exit tickets
@@ -298,3 +304,4 @@ The purpose of this lab is to get some practice working with Pandas. We will div
 
 
 ### ADDITIONAL RESOURCES
+- If any
