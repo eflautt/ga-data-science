@@ -200,8 +200,8 @@ How proficient are you with statistical odds? Let's review some quick basics abo
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **PROJECT**  |  X |
+| **PROJECT**  |  TBA |
 
 ### ADDITIONAL RESOURCES
+- If any
 
-- see ipython notebook
