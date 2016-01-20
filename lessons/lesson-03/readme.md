@@ -21,14 +21,14 @@ DS | Lesson 3
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 
-- Create, open and create and iPython Notebook
-- Have completed python pre-work
+- Create and open an iPython Notebook
+- Have completed all of the python pre-work
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
 - Gather materials needed for class
-- Complete Prep work required
+- Complete prep work required
 - Prepare any specific instructions
 
 ### LESSON GUIDE
@@ -50,8 +50,8 @@ DS | Lesson 3
 <a name="opening"></a>
 ## Opening (5 min)
 
-- Review Prior Lesson Content & Exit Tickets
-- Discuss Current Objectives
+> Instructor Note: - Review Prior Lesson Content & Exit Tickets
+> Instructor Note: - Discuss Current Objectives
    
 <a name="introduction"></a>
 ## Intro: Laying the ground work (20 mins)
@@ -70,7 +70,7 @@ Define:
 10. Correlation 
 
 ### Mean 
-> Instructor Note: Content for mean, median and mode sourced from www.yti.edu/lrc/images/math_averages.doc.
+> Source: Content for mean, median and mode sourced from www.yti.edu/lrc/images/math_averages.doc.
 
 The mean of a set of values is the sum of the values divided by the number of values.  It is also called the average.
 
@@ -111,7 +111,7 @@ The mode of a set of values is the value that occurs most often. A set of values
 	Example #3:  Find the mode of 4, 8, 15, 21, 23
 	      There is no mode since all the values occur the same number of times.
 
-### Concept Check: 
+> **Check:** 
 
 A.  For the following groups of numbers, calculate the mean, median and mode by hand:
 
@@ -123,7 +123,7 @@ A.  For the following groups of numbers, calculate the mean, median and mode by 
 			Max _______
 			Min _______
 
-		Answers:
+		> Answers:
 			Mean = 20.875
 			Median = 19.5
 			Mode = 18, 24
@@ -137,7 +137,7 @@ A.  For the following groups of numbers, calculate the mean, median and mode by 
 			Max _______
 			Min _______
 
-		Answers:
+		> Answers:
 			Mean = 78.5
 			Median = 79.5
 			Mode = 75
@@ -151,7 +151,7 @@ A.  For the following groups of numbers, calculate the mean, median and mode by 
 			Max _______
 			Min _______
 
-		Answers:
+		> Answers:
 			Mean = 51.125
 			Median = 51
 			Mode = none
@@ -217,13 +217,14 @@ To calculate the variance and SD in pandas.
 #### Correlation
 The correlation is a quantity measuring the extent of interdependence of variable quantities. 
 
-**Knowledge Check:**
-1. What is the difference between bias and variance?
-	- see graphic above
-2. What is a commonly used metric that describes variance?
-	- STD
-3. What is the formula for this metric? 
-	- square root of variance
+> **Knowledge Check:**
+
+> 1. What is the difference between bias and variance?
+	- A: see graphic above
+> 2. What is a commonly used metric that describes variance?
+	- A: "STD"
+> 3. What is the formula for this metric? 
+	- A: square root of variance
 
 #### Context
 On many projects, descriptive statistics will be the first - and often times only - step for analysis. Say you need to understand the demographics of your customer base: descriptive stats will give you the answer. You don't necessarily need a fancy model to answer many common business questions.
@@ -251,11 +252,8 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
-Walk through images of normal, skewed, sigmoid (etc) distributions. Stand up and vote on the types. 
 
-> Instructor note: Use your own work or the images in the asset folder. 
-
-After each image, discuss methods of correcting the issue. 
+> Instructor Note: Walk through images of normal, skewed, sigmoid (etc) distributions. Stand up and vote on the types. After each image, discuss methods of correcting the issue. Use your own work or review [the sample images from the asset folder](./assets/images/). 
 
 For example: 
 
@@ -269,13 +267,13 @@ For example:
 1. Continuous: Continous variables are things such as: height, income, etc.
 2. Categorical: Categorical variables are things such as: race, gender, paint colors, movie titles, etc
 
-We'll discuss these more in future lessons.
+We'll discuss these in future lessons.
 
 
 <a name="demo2"></a>
 ## Demo: Classes (15 mins)
 
-###Class/Dummy Variables
+### Class/Dummy Variables
 Let's say we have a categorical variable called "area". It is saved in our dataset as one of the following strings:  
 
 *	"rural"  
@@ -314,19 +312,19 @@ Great! Let's look at a second example. Let's say we have a category called "gend
 male | 0
 female | 1
 
-We can do this in pandas with the "get_dummies" method. Let's check it out in the demo.
+We can do this in pandas with the "get_dummies" method. Let's check it out in practice.
+
 
 <a name="practice"></a>
 ## Independent Practice: Dummy Colors (15 mins)
 
-It's important to understand the concept before we use `get_dummies` so today we'll create dummy variables by hand. In future classes, we'll use `get_dummies` to create these.  In fact, we'll be using dummy variables in almost every analysis you complete because in most fields it is very rare to only have continuous variables.
+It's important to understand the concept before we use `get_dummies` so today we'll create dummy variables by hand. In future classes, we'll use `get_dummies` to create these.  In fact, we'll be using dummy variables in almost every analysis you complete because it is very rare to have continuous variables.
 
-> Instructor Note: Have each student draw a table like we did above on the white board or table. 
+> Instructor Note: Have each student draw a table (like we did above) on the white board or table. 
 
 Create dummy varibales for the variable "colors" that has 6 categories: blue, red, green, purple, grey, brown. Set grey as the reference. 
 
-Answer: 
-
+> Answer: 
 	| color_blue | color_red | color_green | color_purple | color_brown
 --- | --- | --- | --- | --- | --- 
 blue | 1 | 0 | 0 | 0 | 0
@@ -340,23 +338,22 @@ brown | 0 | 0 | 0 | 0 | 1
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
 
-- Review questions from dummy practice
-- Review objectives from class 
+> - Review questions from dummy practice
+> - Review objectives from class 
 
 <a name="wrapup"></a>
 ## Project questions and Next Project (15 mins)
 
-- Review [Project 1](../../projects/unit-projects/project-1/readme.md) 
-- Introduce the next project
-- Exit tickets
+> - Review [Project 1](../../projects/unit-projects/project-1/readme.md) 
+> - Introduce the next project
+> - Exit tickets
 
 ***
 
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **PROJECT**  | [Unit Project 2](../../projects/unit-projects/project-2/readme.md)   |
-
+| **PROJECT 2** | [Unit Project 2](../../projects/unit-projects/project-2/readme.md)   |
 
 ### ADDITIONAL RESOURCES
-- see ipython notebook
+- If any
