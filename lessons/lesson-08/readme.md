@@ -245,7 +245,7 @@ gs.fit(iris.data, iris.target)
 gs.grid_scores_
 ```
 
-#### Extra:
+#### Bonus:
 
 1. By default, the KNN classifier in SKlearn uses the _Minkowski metric_ for distance, given p: this is how it decides to calculate distance (using a triangle, p=1 is using the length of sides 1+2 to get the distance from a to c; p=2 using the length of side 3). 
     - What _type_ of data does this metric work best for? 
