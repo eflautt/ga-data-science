@@ -10,7 +10,7 @@ At the end of each lesson, if you discover:
 
 ---
 
-#  Course Construction Guidelines: Submitting New Material
+#  Course Construction Guidelines: New Material
 
 ### Pull Requests
 
