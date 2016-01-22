@@ -7,12 +7,12 @@ The following resources are provided for students and instructors, including:
 
 ### Instructors
 
-- Course Syllabus
+- [Course Syllabus](./instructor-resources/ds-syllabus.pdf)
 - Suggested Project Timeline
-- Data Science Workflow Guide
-- Pre-Work Objectives
-Github Repo Guide
-Course Feedback Instructions
+- [Data Science Workflow Guide](./instructor-resources/data-science-workflow-final.pdf)
+- [Pre-Work Objectives](./instructor-resources/ds-prework-instructor.md)
+- [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
+- Course Feedback Instructions
 
 ### Students
 
