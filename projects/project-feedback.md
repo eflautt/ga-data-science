@@ -21,7 +21,7 @@ Our goal is to provide meaningful suggestions and personal guidance to all of ou
 
 1. Make a copy of the relevant project rubric.
 2. Score project requirements using rubric criteria.
-  - Note: Half points are ok (1.5) but beyond that, detailed percentages are unnecessary.
+  - _Note: Half points are ok (1.5) but beyond that, detailed percentages are unnecessary._
 3. Enter any notes for specific project deliverables.
 4. Enter any notes for overall student progress report, if applicable.
 
