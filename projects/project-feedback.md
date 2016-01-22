@@ -32,6 +32,7 @@ Our goal is to provide meaningful suggestions and personal guidance to all of ou
 - Give context as to why what action step is important
 - End with a targeted question related to the action step, that tests whether the student has understood the feedback
 
+
   - **Good Example**: 'Great work! Your code is well organized. Good use of breaking tasks into separate functions. I see that in your app.js file you used the variable name x on line 84. Consider using more descriptive variable names. As a code reviewer, this would jump out at me. I want to know what every variable contains just by looking at the variable name itself. I do see some other descriptive variables! If we were to refactor this code, what would you want to rename x on line 84?'
 
   - **Poor Example**: 'Great Work! You’re doing a good job with all this. Do you have any questions about anything?'
