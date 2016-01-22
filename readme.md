@@ -16,6 +16,7 @@ Included in this Repository:
 3. **Resources** - various supplementary instructor and student facing resources, including syllabus & prework.
 4. **Templates** - GA campus educational styleguides with templates and examples for lessons and projects.
 
+---
 
 #### ⑃ Forking and Collaborating
 
