@@ -10,7 +10,7 @@ At the end of each lesson, if you discover:
 
 ---
 
-#  Course Construction Guidelines: Pull Requests
+#  Course Construction Guidelines: Submitting New Material
 
 ### Pull Requests
 
@@ -47,7 +47,7 @@ $ git checkout -b exploratory-data-analysis-lesson
 $ git checkout -b exploratory-data-analysis-lesson
 ```
 
-If submitting a new resource, please also make sure the resources:
+If submitting a new resource, please also make sure to:
 
-- follow our [styleguide](templates/styleguide.md), with appropriate YAML frontmatter data
-- are in the standard [lesson](templates/template-lesson-readme.md) and [project](templates/template-project-readme.md) templates
+- Follow our [styleguide](templates/styleguide.md), with appropriate YAML frontmatter data
+- Use our standard [lesson](templates/template-lesson-readme.md) and [project](templates/template-project-readme.md) templates.
