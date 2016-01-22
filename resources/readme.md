@@ -5,7 +5,7 @@ Our goal is to provide a range of useful resources to maximize student outcomes 
 The following resources are provided for students and instructors, including:
 
 
-## Instructors
+### Instructors
 
 - Course Syllabus
 - Suggested Project Timeline
@@ -14,7 +14,7 @@ The following resources are provided for students and instructors, including:
 Github Repo Guide
 Course Feedback Instructions
 
-## Students
+### Students
 
 - Course Syllabus
 - Data Science Workflow Guide
