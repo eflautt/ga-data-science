@@ -4,15 +4,15 @@ In this folder, you'll find GA's campus education templates for lesson plans, pr
 
 ## Template Directory
 
-1. [**GA Course Styleguide**](./templates/styleguide.md) - The styleguide contains general rules and naming conventions for creating and editing course materials.
+1. [**GA Course Styleguide**](./templates/styleguide.md) - General rules and naming conventions for creating and editing course materials.
 
-2. [**Lesson Template**](./template-lesson-readme.md) - This template contains guiding questions and formatting instructions for weekly lesson plans.
-  - [_Sample Lesson_](./example-lesson/) - Here is a sample lesson plan, based on our template and styleguide.
+2. [**Lesson Template**](./template-lesson-readme.md) - Guiding questions and formatting instructions for weekly lesson plans.
+  - [_Sample Lesson_](./example-lesson/) - Sample lesson plan, based on our template and styleguide.
 
-3. [**Project Template**](./template-project-readme.md) - This template contains guiding questions and formatting instructions for course projects.
-  - [_Sample Project_](./example-project/) -  Here is a sample project, based on our template and styleguide.
+3. [**Project Template**](./template-project-readme.md) - Guiding questions and formatting instructions for course projects.
+  - [_Sample Project_](./example-project/) -  Sample project, based on our template and styleguide.
 
-4. [**Project Rubric Template**](./template-rubric-readme.md) - This template contains guiding questions and formatting instructions for project rubrics.
+4. [**Project Rubric Template**](./template-rubric-readme.md) - Guiding questions and formatting instructions for project rubrics.
 
 
 ---
