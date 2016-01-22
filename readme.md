@@ -2,7 +2,7 @@
 
 # Curriculum Refresh In Progress
 
-Welcome! We are building a global community of lifelong learners who are excited about _using data to solve real world problems_. Here is our timeline:
+Welcome! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our timeline:
 
 - **Feb 1**: Lesson Build Complete
 - **Feb 29th**: Lesson QA Complete
