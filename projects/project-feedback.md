@@ -1,14 +1,18 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Providing Project Feedback
-> _Every student should have the chance to understand how they're doing, and get valuable feedback on the work they've done from trusted mentors like us._
+> _Every student should have a chance to understand how they're doing and to get valuable feedback on the work they've done from trusted mentors like us._
+
+Our goal is to provide meaningful suggestions and personal guidance to all of our students. While there will undoubtedly be nuances in how each of us evaluates student portfolio projects, using these guidelines will ensure that students get the personalized feedback they deserve.
 
 ## Guiding Principles
 
-**The goal of providing feedback on student projects is to give personal guidance to each student, including meaningful suggestions and input that isn’t immediately obvious.**
+- Prompts and rubrics are provided to **structure feedback for student projects**.
+- Rubrics are based on a **simple 3-point scale**, tailored for each project.
+- Metrics for "meets expectations" are clearly defined to help you provide **targeted feedback.**
 
-- **Students should be shown a copy of the blank rubric when given their project prompt**
-- The rubric is based on a **simple 3-point scale**
-- **The actual measurement for “meets expectation” is tied to the project prompt, and will be different by project**
+## Feedback Rules
 
-## Instructor Process
+- Students should be shown a copy of the blank rubric when given their project prompt
+- Rubric categories and evaluation metrics should always be tied to project specifications.
 
-## UNDER CONSTRUCTION
+
+
