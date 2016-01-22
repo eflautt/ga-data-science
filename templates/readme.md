@@ -17,7 +17,7 @@ In this folder, you'll find GA's campus education templates for lesson plans, pr
 
 ---
 
-⑃ Forking and Collaborating
+### ⑃ Forking and Collaborating
 
 The structure of this repository provides a way for us to organize our information and use the same vocabulary.
 
