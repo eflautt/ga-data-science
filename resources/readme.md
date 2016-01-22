@@ -1,8 +1,8 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Resources
 
-> Our goal is to provide a range of useful resources to maximize student outcomes for this course.
+Our goal is to provide a range of useful resources to maximize student outcomes for this course.
 
-We've provided a range of resources for both students and instructors. These include:
+The following resources are provided for students and instructors, including:
 
 
 ## Instructors
