@@ -7,7 +7,8 @@ Welcome! We are building a global community of lifelong learners who are excited
 - **Feb 1**: Lesson Build Complete
 - **Feb 29th**: Lesson QA Complete
 
-### DS Curriculum Repo
+
+## DS Curriculum Repo
 
 Included in this Repository:
 
