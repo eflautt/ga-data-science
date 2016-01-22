@@ -7,17 +7,14 @@ Welcome! We are building a global community of lifelong learners who are excited
 - **Feb 1**: Lesson Build Complete
 - **Feb 29th**: Lesson QA Complete
 
-### DS Curriculum Resources
+### DS Curriculum Repo
 
-<!-- MarkdownTOC -->
-- [Data Science Refresh Curriculum Proposal](https://docs.google.com/a/generalassemb.ly/presentation/d/1M3yH6c7n5ilEXTQSyhFg4L-O8sNZQ0Sm0W24hlU1Zzg/edit?usp=sharing)
-- [Drafted Projects 1-4 Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1R9p5K0rr_yIyMxzijhRI-1kjdLtxRWOF5en2ctcVzas/edit?usp=sharing)
-- [Drafted Final Project Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1kYTSL5ly_NEaP40uFNeVEGYpo93z1HUMRWpkJq53pTo/edit?usp=sharing)
-- [Resources](resources)
-- [Templates](templates)
-- [Data Science Workflow](https://docs.google.com/document/d/14ulmOzIDXhy_1Y864Sn3A8Hs1RtVt9pvJ8VimTlIz0g/edit?ts=56475b14)
+Included in this Repository:
 
-<!-- /MarkdownTOC -->
+1. **Lessons** - lesson plans and corresponding assets, including starter & solution code, datasets, & slide decks.
+2. **Projects** - instructions and materials for both UNIT and FINAL projects, including starter code, rubrics, and datasets.
+3. **Resources** - various supplementary instructor and student facing resources, including the syllabus & prework materials.
+4. **Templates** - GA campus educational styleguides with templates and examples for lessons and projects.
 
 
 #### ⑃ Forking and Collaborating
