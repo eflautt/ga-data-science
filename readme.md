@@ -11,10 +11,10 @@ Welcome! We are building a global community of lifelong learners who are excited
 
 Included in this Repository:
 
-1. **Lessons** - lesson plans and corresponding assets, including starter & solution code, datasets, & slide decks.
-2. **Projects** - instructions and materials for both UNIT and FINAL projects, including starter code, rubrics, and datasets.
-3. **Resources** - various supplementary instructor and student facing resources, including syllabus & prework.
-4. **Templates** - GA campus educational styleguides with templates and examples for lessons and projects.
+1. [**Lessons**](./lessons/) - lesson plans and corresponding assets, including starter & solution code, datasets, & slide decks.
+2. [**Projects**}(./projects/) - instructions and materials for both UNIT and FINAL projects, including starter code, rubrics, and datasets.
+3. [**Resources**](./resources/) - various supplementary instructor and student facing resources, including syllabus & prework.
+4. [**Templates**](./templates/) - GA campus educational styleguides with templates and examples for lessons and projects.
 
 ---
 
