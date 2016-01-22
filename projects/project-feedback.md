@@ -38,11 +38,11 @@ Our goal is to provide meaningful suggestions and personal guidance to all of ou
 
 Instructors and TA's are encouraged to meet with students during office hours or one-on-one to review project feedback and discuss growth opportunities. Students should ideally have up to 30 minutes to review their project evaluation or do a code review with instructors and TA's during the week after project submission.
 
-### Code Review Tips
+### Model / Code Review Tips
 
-Code review is not troubleshooting time, we’re just reviewing code and talking about actionable feedback for enhancing the project in the future.
+Code review is not troubleshooting time, we’re just reviewing code and talking about actionable feedback for enhancing the student's project in the future.
 
-- __Student (10 mins)__: Have the student walk through and defend their code.
+- __Student (10 mins)__: Have the student walk through and defend their project / model / code.
 
 - __Student (10 mins)__: Have the student answer the following questions.
   - What do you like most about your project?
