@@ -12,7 +12,7 @@ The following resources are provided for students and instructors, including:
 - [Data Science Workflow Guide](./instructor-resources/data-science-workflow-final.pdf)
 - [Pre-Work Objectives](./instructor-resources/ds-prework-instructor.md)
 - [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
-- Course Feedback Instructions
+- [Course Feedback Guide](./instructor-resources/course-feedback-guidelines.md)
 
 ### Students
 
