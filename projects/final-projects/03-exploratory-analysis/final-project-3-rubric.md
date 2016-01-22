@@ -39,7 +39,7 @@ Based on the requirements, you can earn a maximum of  **9**  points on this proj
 ## PROGRESS REPORT
 **Student Check-in:**
 
-|WHAT’S GOING WELL?|STRUGGLES|DEVELOPMENT PLAN|
+|HIGHLIGHTS|GROWTH OPPORTUNITIES|DEVELOPMENT PLAN|
 |---|---|---|
 | | | |
 
