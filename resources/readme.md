@@ -8,7 +8,7 @@ The following resources are provided for students and instructors, including:
 ### Instructors
 
 - [Course Syllabus](./instructor-resources/ds-syllabus.pdf)
-- Suggested Project Timeline
+- [Suggested Project Timeline](./instructor-resources/DS-project-due-dates.pdf)
 - [Data Science Workflow Guide](./instructor-resources/data-science-workflow-final.pdf)
 - [Pre-Work Objectives](./instructor-resources/ds-prework-instructor.md)
 - [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
@@ -16,7 +16,8 @@ The following resources are provided for students and instructors, including:
 
 ### Students
 
-- Course Syllabus
-- Data Science Workflow Guide
-- Data Science Vocabulary Guide
-- Python Self-Assessment Quiz
+- [Course Syllabus](//student-resources/ds-syllabus.pdf)
+- [Data Science Workflow Guide](//student-resources/data-science-workflow-final.jpg)
+- [Data Science Vocabulary Guide](./student-resources/ds-vocab.md)
+- [Data Science Pre-Work](//student-resources/ds-prework-student.md)
+- [Python Self-Assessment Quiz](./student-resources/python-self-assessment.md)
