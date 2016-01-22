@@ -11,8 +11,7 @@ Our goal is to provide meaningful suggestions and personal guidance to all of ou
 
 ## Feedback Rules
 
-- Students should be shown a copy of the blank rubric when given their project prompt
+- Students should be shown a copy of the blank rubric when given their project prompt.
 - Rubric categories and evaluation metrics should always be tied to project specifications.
-
-
+- Project categories are based off of the course standards, found in the [Data Science Workflow](../resources/instructor-resources/data-science-workflow-final.pdf).
 
