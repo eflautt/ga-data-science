@@ -9,10 +9,10 @@ In this folder, you'll find GA's campus education templates for lesson plans, pr
 2. [**Lesson Template**](./template-lesson-readme.md) - This template contains guiding questions and formatting instructions for weekly lesson plans.
   - [Sample Lesson](./example-lesson/) - Here is a sample lesson plan, based on our template and styleguide.
 
-3. [Project Template](./template-project-readme.md) - This template contains guiding questions and formatting instructions for course projects.
+3. [**Project Template**](./template-project-readme.md) - This template contains guiding questions and formatting instructions for course projects.
   - [Sample Project](./example-project/) -  Here is a sample project, based on our template and styleguide.
 
-4. [Project Rubric Template](./template-rubric-readme.md) - This template contains guiding questions and formatting instructions for project rubrics.
+4. [**Project Rubric Template**](./template-rubric-readme.md) - This template contains guiding questions and formatting instructions for project rubrics.
 
 
 
