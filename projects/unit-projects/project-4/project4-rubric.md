@@ -62,7 +62,7 @@ Based on all requirements, you can earn a maximum of  **33**  points on this pro
 ## PROGRESS REPORT
 **Student Check-in:**
 
-|WHAT’S GOING WELL?|STRUGGLES|DEVELOPMENT PLAN|
+|HIGHLIGHTS|GROWTH OPPORTUNITIES|DEVELOPMENT PLAN|
 |---|---|---|
 | | | |
 
