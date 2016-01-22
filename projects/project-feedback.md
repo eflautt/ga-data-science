@@ -33,14 +33,14 @@ Instructors and TA's are encouraged to meet with students during office hours or
 
 Code review is not troubleshooting time, we’re just reviewing code and talking about actionable feedback for enhancing the project in the future.
 
-- Student (10 mins): Have the student walk through and defend their code.
+- _Student (10 mins)_: Have the student walk through and defend their code.
 
-- Student (10 mins): Have the student answer the following questions.
+- _Student (10 mins)_: Have the student answer the following questions.
   - What do you like most about your project?
   - What would you change if you started from scratch?
   - What would you like to add when you have more time?
 
-- Instructor/TA (10 mins): Talk through the evaluation, and share a “glow and grow”.
+- _Instructor/TA (10 mins)_: Talk through the evaluation, and share a “glow and grow”.
   - Make it personal – what about the project was exciting or intriguing?
   - Share any highlights and positive areas (“glow”) where the student went “above and beyond” the requirements
   - Share growth areas around time management, workflow, or project approach
