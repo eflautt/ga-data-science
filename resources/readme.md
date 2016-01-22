@@ -3,7 +3,7 @@
 In this folder, you'll find a range of useful support materials. Here you'll find copies of our course syllabus, our standards & learning goals, prework materials, and other documents. Specifically, we've divided materials up by audience:
 
 
-### Instructors
+### For Instructors
 
 - [Course Syllabus](./instructor-resources/ds-syllabus.pdf)
 - [Suggested Project Timeline](./instructor-resources/DS-project-due-dates.pdf)
@@ -12,7 +12,7 @@ In this folder, you'll find a range of useful support materials. Here you'll fin
 - [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
 - [Course Feedback Guide](./instructor-resources/course-feedback-guidelines.md)
 
-### Students
+### For Students
 
 - [Course Syllabus](//student-resources/ds-syllabus.pdf)
 - [Data Science Workflow Guide](//student-resources/data-science-workflow-final.jpg)
