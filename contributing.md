@@ -52,4 +52,6 @@ If submitting a new resource, please also make sure to:
 - Follow our [styleguide](templates/styleguide.md), with appropriate YAML frontmatter data
 - Use our standard [lesson](templates/template-lesson-readme.md) and [project](templates/template-project-readme.md) templates.
 
+
+
 ![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")
