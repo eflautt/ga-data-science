@@ -8,14 +8,14 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 
 ## Project Directory
 
-1. **[Unit Projects](./unit-projects)**
+1. **Unit Projects**
   - [Project 1](./unit-projects/project-1/readme.md)
   - [Project 2](./unit-projects/project-2/readme.md)
   - [Project 3](./unit-projects/project-3/readme.md)
   - [Project 4](./unit-projects/project-4/readme.md)
 
 
-2. **[Final Projects](./final-projects)**
+2. **Final Projects**
   - [Final, Part 1](./final-projects/01-lightning-talk/)
   - [Final, Part 2](./final-projects/02-experiment-writeup/readme.md)
   - [Final, Part 3](./final-projects/03-exploratory-analysis/readme.md)
