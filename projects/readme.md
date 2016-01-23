@@ -9,10 +9,10 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 ## Project Directory
 
 1. **[Unit Projects](./unit-projects)**
-  - [Project 1]()
-  - [Project 2]()
-  - [Project 3]()
-  - [Project 4]()
+  - [Project 1](./unit-projects/project-1/readme.md)
+  - [Project 2](./unit-projects/project-2/readme.md)
+  - [Project 3](./unit-projects/project-3/readme.md)
+  - [Project 4](./unit-projects/project-4/readme.md)
 
 
 2. **[Final Projects](./final-projects)**
