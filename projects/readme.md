@@ -1,16 +1,41 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DS Projects
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Projects
 
-> Globally, we have 4 Unit Projects in DS and 1 Final Project (subdivided into 5 deliverables), each building on top of skills learned previously to scaffold students' learning over the entire course.
+> Globally, we have 4 Unit Projects and 1 Final Project (subdivided into 5 deliverables). Each builds on top of previously learned skills to scaffold student performance over the entire course.
 
-Each project has an objective, deliverables, and recommendations - all of which tie into the overall competencies we focus on in each unit. Dive into the detailed project spec file to read more about each project and [read about our curriculum](#)
+## Project Specs
 
-See the [feedback guidelines](#) to read more about how we provide feedback to students.
+Each project includes objectives, requirements, starter-code, rubric, and suggested resources - all of which tie into the overall competencies for each unit. Dive into the detailed project spec files to read more about each project.
 
-## Directory
-1. [Unit Projects](/projects/unit-projects)
+See the [feedback guidelines](./project-feedback.md) to read more about how we provide feedback to students.
 
-2. [Final Projects](/projects/final-projects)
+## Project Directory
 
-***
+1. **Unit Projects**
+  - [Project 1](./unit-projects/project-1/readme.md)
+  - [Project 2](./unit-projects/project-2/readme.md)
+  - [Project 3](./unit-projects/project-3/readme.md)
+  - [Project 4](./unit-projects/project-4/readme.md)
 
-## UNDER CONSTRUCTION
+
+2. **Final Projects**
+  - [Final, Part 1](./final-projects/01-lightning-talk/)
+  - [Final, Part 2](./final-projects/02-experiment-writeup/readme.md)
+  - [Final, Part 3](./final-projects/03-exploratory-analysis/readme.md)
+  - [Final, Part 4](./final-projects/04-notebook-rough-draft/readme.md)
+  - [Final, Part 5](./final-projects/05-presentation/readme.md)
+
+---
+
+## Assignments and Projects
+
+In order to pass this course, General Assembly students must:
+
+- Complete and submit 80% of all course homework assignments.
+- Complete and submit the course final project, including all milestones.
+
+### Grading & Using GitHub in the Classroom
+
+We'll use GitHub for student-facing materials, project submission, feedback and grading.
+
+Producers should set up a student-facing repo for the course, which will be handed-off to the instructional team. For information on [how to set up a student-facing repo see these instructions](../resources/instructor-resources/github-repo-instance-guide.md).
+

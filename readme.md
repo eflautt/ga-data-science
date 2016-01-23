@@ -1,24 +1,23 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science
 
-# Curriculum Refresh In Progress
+# _Curriculum Refresh In Progress_
 
 Welcome! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our timeline:
 
 - **Feb 1**: Lesson Build Complete
 - **Feb 29th**: Lesson QA Complete
 
-### DS Curriculum Resources
 
-<!-- MarkdownTOC -->
-- [Data Science Refresh Curriculum Proposal](https://docs.google.com/a/generalassemb.ly/presentation/d/1M3yH6c7n5ilEXTQSyhFg4L-O8sNZQ0Sm0W24hlU1Zzg/edit?usp=sharing)
-- [Drafted Projects 1-4 Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1R9p5K0rr_yIyMxzijhRI-1kjdLtxRWOF5en2ctcVzas/edit?usp=sharing)
-- [Drafted Final Project Deliverables](https://docs.google.com/a/generalassemb.ly/document/d/1kYTSL5ly_NEaP40uFNeVEGYpo93z1HUMRWpkJq53pTo/edit?usp=sharing)
-- [Resources](resources)
-- [Templates](templates)
-- [Data Science Workflow](https://docs.google.com/document/d/14ulmOzIDXhy_1Y864Sn3A8Hs1RtVt9pvJ8VimTlIz0g/edit?ts=56475b14)
+## DS Curriculum Repo
 
-<!-- /MarkdownTOC -->
+Included in this Repository:
 
+1. [**Lessons**](./lessons/) - lesson plans and corresponding assets, including starter & solution code, datasets, & slide decks.
+2. [**Projects**](./projects/) - instructions and materials for both UNIT and FINAL projects, including starter code, rubrics, and datasets.
+3. [**Resources**](./resources/) - various supplementary instructor and student facing resources, including syllabus & prework.
+4. [**Templates**](./templates/) - GA campus educational styleguides with templates and examples for lessons and projects.
+
+---
 
 #### ⑃ Forking and Collaborating
 
