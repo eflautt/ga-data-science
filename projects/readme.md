@@ -21,7 +21,3 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
   - [Final, Part 3](./final-projects/03-exploratory-analysis/readme.md)
   - [Final, Part 4](./final-projects/04-notebook-rough-draft/readme.md)
   - [Final, Part 5](./final-projects/05-presentation/readme.md)
-
-***
-
-## UNDER CONSTRUCTION
