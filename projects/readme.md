@@ -39,6 +39,3 @@ We'll use GitHub for student-facing materials, project submission, feedback and 
 
 Producers should set up a student-facing repo for the course, which will be handed-off to the instructional team. For information on [how to set up a student-facing repo see these instructions](../resources/instructor-resources/github-repo-instance-guide.md).
 
-## Exit Tickets
-
-As part of an initiative to collect targeted, topic-based feedback - and encourage our instructors to reflect on their teaching practices - a group of NYC instructors are piloting instructor exit tickets. These short surveys should be completed at the end of each lesson or the end of each day. 
