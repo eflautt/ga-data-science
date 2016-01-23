@@ -13,7 +13,7 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
   - [Project 2]()
   - [Project 3]()
   - [Project 4]()
-  - 
+
 
 2. [Final Projects](./final-projects)
   - [Final, Part 1](./final-projects/01-lightning-talk/)
