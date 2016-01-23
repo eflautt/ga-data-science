@@ -33,7 +33,7 @@ In order to pass this course, General Assembly students must:
 - Complete and submit 80% of all course homework assignments.
 - Complete and submit the course final project, including all milestones.
 
-### Grading, Hosting and Using GitHub in the Classroom
+### Grading & Using GitHub in the Classroom
 
 We'll use GitHub for student-facing materials, project submission, feedback and grading.
 
