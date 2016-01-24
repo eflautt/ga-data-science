@@ -6,7 +6,7 @@
 
 Each project includes objectives, requirements, starter-code, rubric, and suggested resources - all of which tie into the overall competencies for each unit. Dive into the detailed project spec files to read more about each project.
 
-See the [feedback guidelines](./project-feedback.md) to read more about how we provide feedback to students.
+> See the [feedback guidelines](./project-feedback.md) to read more about how we provide feedback to students.
 
 ## Project Directory
 
@@ -41,7 +41,7 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 
 
 
-> Instructor Note: We've also provided you with a [visual timeline for project due dates](../resources/instructor-resources/DS-project-due-dates.pdf).
+> We've also provided you with a [visual timeline for project due dates](../resources/instructor-resources/DS-project-due-dates.pdf).
 
 
 ---
@@ -57,5 +57,5 @@ In order to pass this course, General Assembly students **must**:
 
 You should be using GitHub for student-facing materials, project submission, feedback, and grading.
 
-In addition to your own instructional instance repo, we recommend setting up a separate student-facing repo for the course. For information on [how to set up a student-facing repo, see these instructions](../resources/instructor-resources/github-repo-instance-guide.md).
+> In addition to your own instructional instance repo, we recommend setting up a separate student-facing repo for the course. For information on [how to set up a student-facing repo, see these instructions](../resources/instructor-resources/github-repo-instance-guide.md).
 
