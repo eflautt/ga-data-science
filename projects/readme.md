@@ -28,7 +28,7 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 ## Project Timeline
 
 | Unit | Project | Assigned | Deadline |
-| --- | --- | :---: |
+| --- | --- | :---: | --- |
 | **Unit 1** | Unit Project 1 | Assigned Lesson 1 | Due Lesson 3 |
 | **Unit 1** | Unit Project 2 | Assigned Lesson 3 | Due Lesson 5 |
 | **Unit 2** | Final Project, pt 1 | Assigned Lesson 1 | Due Lesson 8 |
