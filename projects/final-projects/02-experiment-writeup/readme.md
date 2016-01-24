@@ -8,8 +8,7 @@ For this project, you will need to complete a problem statement and research des
 
 Remember, completing this task earlier will give you more chances to iterate and improve!
 
-**Goal:** Create an outline of your research design approach, including hypothesis, assumptions, risks, and success metrics. 
-
+**Goal:** Create an outline of your research design approach, including hypothesis, assumptions, goals, and success metrics.
 ---
 
 ### DELIVERABLES
