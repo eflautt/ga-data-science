@@ -2,11 +2,12 @@
 
 ### PROMPT
 
-Exploratory data analysis is a crucial and informative step in the data process, as it helps confirm or deny your initial hypotheses from the original problem scope, and helps visualize the positive and negative relationships your data has. It can also help inform data transformations that need to occur in order to optimize the machine learning approach that will come.
+Exploratory data analysis is a crucial and informative step in the data process. It helps confirm or deny your initial hypotheses and helps visualize the relationships among your data. Your exploratory analysis also informs the kinds of data transformations that you'll need to optimize for machine learning models.
 
-Your exploratory data analysis will effectively help you tell your data's story, and should help inform the predictive analytics process that your project will take.
+In thi assignment, you will explore and visualize your initial analysis in order to effectively tell your data's story. You'll create an iPython notebook that explores your data mathematically, using a python visualiation package.
 
-**Goal:** Dataset approval and exploratory analysis writeup.
+
+**Goal:** Dataset approval and exploratory analysis writeup, including clean dataframes, stat model, and visualizations.
 
 ---
 
