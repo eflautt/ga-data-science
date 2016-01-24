@@ -10,7 +10,7 @@ You should provide insight into your analysis, using best practices like cross v
 
 Look at how your model performs compared to a dummy model, and articulate the benefit gained by using your specific model to solve this problem. Finally, build visualizations that explain outliers and the relationships of your predicted parameter and independent variables. You might also identify areas where new data could help improve the model in the future.
 
-**Goal:**  An iPython notebook with a “report” of your models
+**Goal:** Detailed iPython technical notebook with a summary of your statistical analysis, model, and evaluation metrics
 
 ---
 
