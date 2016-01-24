@@ -5,17 +5,17 @@ In this folder, you'll find a range of useful support materials. Here you'll fin
 
 ### For Instructors
 
+- [Instructor Prep](./instructor-resources/instructor-prep.md)
+- [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
 - [Course Syllabus](./instructor-resources/ds-syllabus.pdf)
 - [Suggested Project Timeline](./instructor-resources/DS-project-due-dates.pdf)
 - [Data Science Workflow Guide](./instructor-resources/data-science-workflow-final.pdf)
-- [Pre-Work Objectives](./instructor-resources/ds-prework-instructor.md)
-- [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
 - [Course Feedback Guide](./instructor-resources/course-feedback-guidelines.md)
 
 ### For Students
 
+- [Data Science Pre-Work](//student-resources/ds-prework-student.md)
+- [Python Self-Assessment Quiz](./student-resources/python-self-assessment.md)
 - [Course Syllabus](//student-resources/ds-syllabus.pdf)
 - [Data Science Workflow Guide](//student-resources/data-science-workflow-final.jpg)
 - [Data Science Vocabulary Guide](./student-resources/ds-vocab.md)
-- [Data Science Pre-Work](//student-resources/ds-prework-student.md)
-- [Python Self-Assessment Quiz](./student-resources/python-self-assessment.md)
