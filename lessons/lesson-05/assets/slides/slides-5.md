@@ -1,6 +1,6 @@
 
 ## Lesson 5: Slides
-- Here is a [link to Google Slide Deck for this lesson](.
+- Here is a [link to the Google Slide Deck for this lesson](.
 
 > Instructor Note: These slide decks are provided as a content baseline. You are encouraged to create a local copy and make changes or modifications as you see fit. 
 
