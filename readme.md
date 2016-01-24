@@ -18,7 +18,10 @@ Included in this Repository:
 4. [**Templates**](./templates/) - GA campus educational styleguides with templates and examples for lessons and projects.
 
 
-We've provided [github instructions for producers and instructors](./resources/instructor-resources/github-repo-instance-guide.md), as well as [resources to help instructors prepare to teach](./resources/instructor-resources/instructor-prep.md) the revised course.
+## To Get Started
+1. Producers: Review the [github instructions with your instructional team](./resources/instructor-resources/github-repo-instance-guide.md).
+2. Instructors: Review these [resources and lesson prep recommendations](./resources/instructor-resources/instructor-prep.md).
+3. Students: Begin reviewing our [projects](./projects/readme.md), [lessons](./lessons/readme.md), and [resources](./resources/student-resources/) to start learning data science!
 
 ---
 
