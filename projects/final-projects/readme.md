@@ -33,19 +33,19 @@ Exploratory data analysis is a crucial and informative step in the data process.
 
 ### **Project Project, pt. 4**
 
-Students will get to call the shots and come up with their own idea, choosing tools that are appropriate for what they're looking to build.
+By now, you're ready to apply your modeling skills to make machine learning predictions. Our goal for this project is to develop a working technical document that can be shared amongst your peers. 
 
-For this project, students will be working with a team and using product development strategies to come up with a project proposal that will be reviewed with the instructional team; this it to make sure the team's proposal is something that can be accomplish in the time left in the course while also making sure it's something that will challenge students.
+Use your model to display correlations, feature importance, and unexplained variance. Document your research with a summary, explaining your modeling approach as well as the strengths and weaknesses of any variables in the process. You should provide insight into your analysis, using best practices like cross validation or applicable prediction metrics. Look at how your model performs compared to a dummy model, and articulate the benefit gained by using your specific model to solve this problem. Finally, build visualizations that explain outliers and the relationships of your predicted parameter and independent variables. 
 
-- **Goal**: Do user research and use product development methods to pitch an idea that will turn into a working Android app
+- **Goal**: Detailed iPython technical notebook with a summary of your statistical analysis, model, and evaluation metrics.
 - **[Detailed Spec File](./04-notebook-rough-draft/readme.md)**
 
 
 ### **Project Project, pt. 5**
 
-Students will get to call the shots and come up with their own idea, choosing tools that are appropriate for what they're looking to build.
+Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why for pt. 5, you'll create a presentation of your previous findings with a non-technical audience in mind.
 
-For this project, students will be working with a team and using product development strategies to come up with a project proposal that will be reviewed with the instructional team; this it to make sure the team's proposal is something that can be accomplish in the time left in the course while also making sure it's something that will challenge students.
+You should already have the analytical work complete, so now it's time to clean up and clarify your findings. Come up with a detailed 10-20 slide deck or interactive demo that explains your data, visualizes your model, describes your approach, articulates strengths and weaknesses, and presents specific recommendations. Be prepared to explain and defend your model to an inquisitive audience!
 
-- **Goal**: Do user research and use product development methods to pitch an idea that will turn into a working Android app
+- **Goal**: Detailed presentation deck that relates your data, model, and findings to a non-technical audience.
 - **[Detailed Spec File](./05-presentation/readme.md)**
