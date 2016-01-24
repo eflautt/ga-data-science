@@ -52,7 +52,7 @@ In class so far, we've primarily worked with regression problems: machine learni
 
 While predicting something like the cost of a house or the number of clicks on an ad, we use ranges to sort our values. But other problems, like whether a loan is going to default or not, don't make sense within those parameters. A loan is either going to default, or it's not. We call these binary problems.
 
-**Check:** What if we want to build a model to predict set values, like an social media status or photo color? How about the gender of a baby? Do we use regression problems or binary values? Do the same principles apply?
+> **Check:** What if we want to build a model to predict set values, like an social media status or photo color? How about the gender of a baby? Do we use regression problems or binary values? Do the same principles apply?
 
 ---
 
@@ -245,7 +245,7 @@ gs.fit(iris.data, iris.target)
 gs.grid_scores_
 ```
 
-#### Extra:
+#### Bonus:
 
 1. By default, the KNN classifier in SKlearn uses the _Minkowski metric_ for distance, given p: this is how it decides to calculate distance (using a triangle, p=1 is using the length of sides 1+2 to get the distance from a to c; p=2 using the length of side 3). 
     - What _type_ of data does this metric work best for? 

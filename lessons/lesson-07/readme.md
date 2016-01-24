@@ -28,8 +28,8 @@ DS | Lesson 7
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will have to:*
 
-- review materials
-- be familiar with the datasets
+- Review materials
+- Be familiar with the datasets
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -58,7 +58,7 @@ Recall the central metric introduced for linear regressions, r-squared. If we ha
 
 It is typical to use multiple prediction metrics while solving for an optimal solution to a regression problem. In particular, we're interested in the advantages of a loss function; that is, putting a cost against our prediction algorithm. While we use r-squared to inch our ways closer to 1, we'll explore loss functions and find ways to **refine** our model in order to minimize that value toward 0.
 
-**Check:** What is r-squared? What is a residual?
+> **Check:** What is r-squared? What is a residual?
 
 ---
 
@@ -156,13 +156,13 @@ Otherwise, one objective of a _biased_ model is to trade this biased error for _
 
 Since the whole point of prediction is for a model to work on data that the model hasn't seen yet, your want your model to perform _generally_ well on new data! If your model has a lot of _bias_, then even if you have a good r-squared or mean squared error from learned data, it could still perform **poorly** on new predictive data.
 
-**Check:** Which of the following scenarios would be better for a weatherman:
+> **Check:** Which of the following scenarios would be better for a weatherman:
 
-1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
-2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am at most only 10 degrees off on future days?
+> 1. Knowing that I can very accurately "predict" the temperature outside from previous days perfectly, but be 20-30 degrees off for future days?
+> 2. Knowing that I can accurately predict the general trend of the temperate outside from previous days, and therefore am at most only 10 degrees off on future days?
 
 
-If you said the second case, you just described what we call a good model fit.
+> Answer: If you said the second case, you just described what we call a good model fit.
 
 ***
 
@@ -200,7 +200,7 @@ lm = linear_model.LinearRegression().fit(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-**Check:** While the cross validated approach here generated more overall error, which of the two approaches would predict new data more accurately: the single model or the cross validated, averaged one? Why?
+> **Check:** While the cross validated approach here generated more overall error, which of the two approaches would predict new data more accurately: the single model or the cross validated, averaged one? Why?
 
 ***
 
@@ -267,14 +267,14 @@ In this example; L1 (lasso) massively increases our error (likely from not fitti
 
 Regularization, like any important optimization function, will be more important during _cross validation_. In particular, we will optimize the regularization weight parameter _through_ cross validation.
 
-**Check:** Why is regularization important? What does it protect against and how?
+> **Check:** Why is regularization important? What does it protect against and how?
 
 ***
 
 <a name="demo-reg"></a>
 ## Demo: Understanding Regularization Effects (15 mins)
 
-**Check:** We are working with the bikeshare data to predict riders over hours/days with a few features. Why does it make sense to use a ridge regression over a lasso regression?
+> **Check:** We are working with the bikeshare data to predict riders over hours/days with a few features. Why does it make sense to use a ridge regression over a lasso regression?
 
 Let's test a variety of alpha weights for Ridge Regression on the bikeshare data.
 
@@ -384,9 +384,10 @@ while not optimized:
         print start, 'is closest to', num_to_approach
 
 ```
-**Check:**
-1. What is the code doing?
-2. What could go wrong?
+
+> **Check:**
+> 1. What is the code doing?
+> 2. What could go wrong?
 
 One particular challenge with gradient descent is that it could potentially solve for a _local_ minimum of error, instead of a _global_ minimum.
 
@@ -424,7 +425,7 @@ print lm.score(modeldata, y)
 print metrics.mean_squared_error(y, lm.predict(modeldata))
 ```
 
-**Check:** Untuned, how well did gradient descent perform compared to OLS?
+> **Check:** Untuned, how well did gradient descent perform compared to OLS?
 
 ***
 
@@ -468,7 +469,7 @@ print 'ALL ESTIMATORS'
 print gs.grid_scores_
 ```
 
-**Check:** Were you able to answer all three questions? What questions do you have?
+> **Check:** Were you able to answer all three questions? What questions do you have?
 
 ***
 

@@ -3,7 +3,7 @@
 
 Your project will be assessed using the following standards, as defined by the data science workflow:
 
-- [ ] Parse & Mine
+- **Parse & Mine**
 
 Acceptable performance for this standard is based on how well you've applied specific learning goals within your deliverable. To review the full list of data science standards, see the course syllabus.
 
@@ -39,7 +39,7 @@ Based on the requirements, you can earn a maximum of  **9**  points on this proj
 ## PROGRESS REPORT
 **Student Check-in:**
 
-|WHAT’S GOING WELL?|STRUGGLES|DEVELOPMENT PLAN|
+|HIGHLIGHTS|GROWTH OPPORTUNITIES|DEVELOPMENT PLAN|
 |---|---|---|
 | | | |
 

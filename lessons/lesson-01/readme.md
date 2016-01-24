@@ -114,7 +114,7 @@ DS | Lesson 1
 
 <a name="quiz"></a>
 ## Quiz: Data Science Baseline (10 Min)
-> Consider presenting as a game or group activity.
+> Instructor Note: Consider presenting as a game or group activity.
 
 #### Quiz
 1. True or False: Gender (coded: male= 0 female= 1) is a continuous variable
@@ -127,7 +127,7 @@ DS | Lesson 1
 4. True or False: Linear regression is an unsupervised learning algorithm.
 5. What is a hypothesis test? 
 
-**Discuss Results**
+> Instructor Note: Discuss results
 
 ***
 

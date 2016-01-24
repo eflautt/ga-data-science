@@ -1,10 +1,8 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DS Styleguide
 
-While this certainly won't be a totally all-inclusive styleguide, we want to nail down some rules, especially around creating materials, so we can be consistent.
+While this isn't an all-inclusive styleguide, we've outlined some general rules to follow when creating materials, in order to be consistent.
 
-A few may seem arbitrary, but they're based on how easy it is to be inconsistent, so let's consider it a part of working together and use it as our shared defaults.
-
-If there are any really major issues or significantly impactful reasons to change, add, or remove rules from our shared styleguide, make a Github issue & shop it around – let's get feedback from instructors & see what everyone thinks we should do.
+If there are any really major issues or significantly impactful reasons to change, add, or remove rules from our shared styleguide, make a Github issue & shop it around – let's get feedback from instructors & see what others think.
 
 <!-- MarkdownTOC -->
 

@@ -88,7 +88,7 @@ As we mentioned, we can access many tools with terminal. Let's walk through a fe
 
 So far we've been using iPython notebook in place of a text editor. However, there are lots of other options availablee, including: Emacs, Vim, Sublime. 
 
-**Check**: What is a text editor? Can you name any other examples? 
+> **Check**: What is a text editor? Can you name any other examples? 
 
 <a name="demo2"></a>
 ## Text Editor - Sublime
@@ -152,25 +152,22 @@ When a colleague wants to implement our change, they can use a command called `g
 
 Ok! That was a lot of material. Let's reveiw. 
 
-**Check:**
-1. What are the big advantages of using CL?
+> **Check:**
+> 1. What are the big advantages of using CL?
 	- speed
 	- connection withoutside world
 	- flexiblity
 	
-2. What's a GUI?
+> 2. What's a GUI?
 	- Graphical user interface (e.g. finder vs terminal )
 	
-3. Will I destroy my computer if I use terminal?
-	- NO. Although you should be careful with the `sudo` command and cautious when deleting files with `rm`
+> 3. Will I destroy my computer if I use terminal?
+	- NOPE! Although you should be careful with the `sudo` command and cautious when deleting files with `rm`
 
 
 <a name="#lab1"></a>
 ## Independent Practice- GIT and Command Line (50 min)
-> Instructor Note - Review any of the following exercises:
-
-**Course Pre-Work:**
-
+> Instructor Note - Review any of the following exercises from the course pre-work
 - Codecademy Python
 - GA Command Line
 
@@ -203,8 +200,8 @@ How proficient are you with statistical odds? Let's review some quick basics abo
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **PROJECT**  |  X |
+| **PROJECT**  |  TBA |
 
 ### ADDITIONAL RESOURCES
+- If any
 
-- see ipython notebook

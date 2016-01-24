@@ -1,4 +1,16 @@
-# Contributing
+# Course Feedback Guidelines: Bugs & Issues
+
+At the end of each lesson, if you discover:  
+
+- **Bugs & Hotfixes**: If there are any bugs with the content (typos, syntax issues with Python code, incorrect definitions, permissions issues, etc), please submit a _Pull Request_ with a brief description of the bug.
+
+- **Missing Content**: If students had difficulty with lesson concepts due to missing or incomplete content gaps, please log an _Issue_ in Github.
+
+- **Content Suggestions**: If you want to make a content suggestion for future versions of the curriculum, please log an _Issue_ in GitHub.
+
+---
+
+#  Course Construction Guidelines: New Material
 
 ### Pull Requests
 
@@ -35,7 +47,11 @@ $ git checkout -b exploratory-data-analysis-lesson
 $ git checkout -b exploratory-data-analysis-lesson
 ```
 
-If submitting a new resource, please also make sure the resources:
+If submitting a new resource, please also make sure to:
 
-- follow our [styleguide](templates/styleguide.md), with appropriate YAML frontmatter data
-- are in the standard [lesson](templates/template-lesson-readme.md) and [project](templates/template-project-readme.md) templates
+- Follow our [styleguide](templates/styleguide.md), with appropriate YAML frontmatter data
+- Use our standard [lesson](templates/template-lesson-readme.md) and [project](templates/template-project-readme.md) templates.
+
+
+
+![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")

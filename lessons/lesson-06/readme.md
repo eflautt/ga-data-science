@@ -59,6 +59,7 @@ DS | Lesson 6
 
 The data we are working with for this lesson has been **acquired** and **parsed**. Through today's process we will be **refining** the data and **building** models, using some plotting to **represent** the results.
 
+
 <a name="intro1"></a>
 ## Introduction: Simple Linear Regression (10 mins)
 
@@ -85,7 +86,8 @@ A linear regression works best when:
 * The Xs are independent of each other (low multicollinearity)
 * The resulting values passes linear assumptions (dependent on problem)
 
-**Check:** What is linear regression and when does can it be applied?
+> **Check:** What is linear regression and when can it be applied?
+
 
 <a name="demo1"></a>
 ## Demo: Regressing and normal distributions (10 mins)
@@ -143,7 +145,8 @@ sns.lmplot('bodywt', 'brainwt', log_mammals)
 
 ![03-mammals-plot](https://cloud.githubusercontent.com/assets/846010/11454354/ccb17da4-95f6-11e5-98dd-879dd30da086.png)
 
-**Check:** Does this explain the animal's brain weight better or worse than the original data?
+
+> **Check:** Does this explain the animal's brain weight better or worse than the original data?
 
 Even though we changed the way the data was shaped, this is still a _linear_ result: it's just linear in the log10 of the data, instead of in the data's natural state.
 
@@ -163,7 +166,7 @@ sns.lmplot(x, y, mammals)
 sns.lmplot(x, y, log_mammals)
 ```
 
-**Check:** Were students successfully able to use the code to determine correlations between body weight and the variables?
+> **Check:** Were you successfully able to use the code to determine correlations between body weight and the variables?
 
 
 <a name="intro2"></a>
@@ -199,7 +202,7 @@ For today, our `LinearRegression()` does not have a transform function... but so
 
 With this information, we can build a simple process for linear regressions that take advantage of a feature_selection function and the linear regression estimator, as well as get familiar with how to implement parameters.
 
-**Check:** Describe some of the base principles for sklearn model objects. 
+> **Check:** Describe some of the base principles for sklearn model objects. 
 
 
 <a name="demo2"></a>
@@ -246,7 +249,7 @@ R-Squared: 0.871949198087
 
 ![04-mammals-residuals-hist](https://cloud.githubusercontent.com/assets/846010/11454351/cca7186e-95f6-11e5-9e12-e2b7abee9749.png)
 
-**Check:**  What does our ouput tell us?
+> **Check:**  What does our ouput tell us?
 
 Our output tells us that:
 
@@ -268,7 +271,7 @@ print lm.predict([[0]])
 array([ 0.08591731])
 ```
 
-**Check:** What would we expect an animal's brainwt to be if their bodywt is 0?
+> **Check:** What would we expect an animal's brainwt to be if their bodywt is 0?
 
 With linear modeling we call this part of the __linear assumption__. Consider it a test to the model. If an animal's body weights nothing, we expect their brain to be nonexistent. That given, we can improve the model by telling sklearn's LinearRegression object we do not want to fit a y intercept.
 
@@ -290,7 +293,7 @@ R-Squared: 0.864418807451
 * Because we start at 0, the large outliers have a greater effect, so the coefficient has increased.
 * Fitting the this linear assumption also explains slightly less of the variance.
 
-**Check:** Is this a better or worse model? Why?
+> **Check:** Is this a better or worse model? Why?
 
 
 <a name="guided-practice2"></a>
@@ -308,8 +311,7 @@ for boolean in loop:
     get_linear_model_metrics(X, y, lm)
     print
 ```
-**Check:**
-* Out of the four, which model performed the best? The worst?
+> **Check:** Out of the four, which model performed the best? The worst? Why?
 
 
 <a name="ind-practice1"></a>
@@ -321,7 +323,7 @@ Next class we'll go into further detail on other regression techniques, but for 
 * `linear_model.Ridge()`
 * `linear_model.ElasticNet()`
 
-**Check:** Did the implementation run without error? What were the r-squared outputs for each estimator?
+> **Check:** Did the implementation run without error? What were the r-squared outputs for each estimator?
 
 
 <a name="intro3"></a>
@@ -409,7 +411,8 @@ R-Squared: 0.310901196913
 
 While temperature's coefficient is higher, the logical output still makes sense: for guest riders we expected a positive relationship with temperature and a negative relationship with humidity, and our model suggests it as well.
 
-**Check:** What is multicollinearity? Why might this cause problems in a model?
+> **Check:** What is multicollinearity? Why might this cause problems in a model?
+
 
 <a name="guided-practice3"></a>
 ## Guided Practice: Multicollinearity with dummy variables (15 mins)
@@ -440,9 +443,10 @@ y-intercept: 2.66666666652
 R-Squared: 0.0233906873841
 ```
 
-**Check:** Are students able to explain how coefficients changed once all the weather situations were included?
+> **Check:** Are students able to explain how coefficients changed once all the weather situations were included?
 
 This model makes more sense, because we can more easily explain the variables compared to the one we left out. For example, this suggests that a clear day (weathersit:1) on average brings in about 38 more riders hourly than a day with heavy snow. In fact, since the weather situations "degrade" in quality (1 is the nicest day, 4 is the worst), the coefficients now reflect that well. However at this point, there is still a lot of work to do, because weather on its own fails to explain ridership well.
+
 
 <a name="guided-practice4"></a>
 ## Guided Practice: Combining non-correlated features into a better model (15 mins)
@@ -469,7 +473,8 @@ final_feature_set = bikemodel_data[columns_to_keep]
 get_linear_model_metrics(final_feature_set, y, lm)
 ```
 
-**Check:** Were groups able to add all three conditions into the model? Did they come up with two additional predictive features?
+> **Check:** Were groups able to add all three conditions into the model? Did they come up with two additional predictive features?
+
 
 <a name="ind-practice2"></a>
 ## Independent Practice: Building models for other y variables (25 minutes)
@@ -490,10 +495,8 @@ We've completely a model together that explains casual guest riders. It's now yo
 * What features might explain ridership but aren't included in the data set?
     * Is there a way to build these using pandas and the features available?
 
-
-**Check:** If your model at least improves upon the original model and the explanatory effects (coefficients) make sense, consider this a complete task.
-
-- If your model has an r-squared above .4, this a relatively effective model for the data available. Kudos!
+**Outcomes**
+If your model at least improves upon the original model and the explanatory effects (coefficients) make sense, consider this a complete task. If your model has an r-squared above .4, this a relatively effective model for the data available. Kudos!
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
