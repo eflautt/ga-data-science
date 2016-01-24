@@ -2,7 +2,7 @@
 
 At the end of each lesson, if you discover:  
 
-- **Bugs & Hotfixes**: If there are any bugs with the content (typos, syntax issues with Python code, incorrect definitions, etc), please submit a _Pull Request_ with a brief description of the bug.
+- **Bugs & Hotfixes**: If there are any bugs with the content (typos, syntax issues with Python code, incorrect definitions, permissions issues, etc), please submit a _Pull Request_ with a brief description of the bug.
 
 - **Missing Content**: If students had difficulty with lesson concepts due to missing or incomplete content gaps, please log an _Issue_ in Github.
 
