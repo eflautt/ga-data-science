@@ -1,5 +1,5 @@
 
-## Lesson 6: Slides
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson 6: Slides
 - Here is a [link to the Google Slide Deck for this lesson](https://docs.google.com/presentation/d/1902Ak_quWaUWNytcROxj_jaugbBZzmgHVbFroFCrZ9A/edit?usp=sharing).
 
 > Instructor Note: These slide decks are provided as a content baseline. You are encouraged to create a local copy and make changes or modifications as you see fit. 
