@@ -41,7 +41,7 @@ Instructors and TA's are encouraged to meet with students during office hours or
 
 ### Model / Code Review Tips
 
-Code review is not troubleshooting time, we’re just reviewing code and talking about actionable feedback for enhancing the student's project in the future.
+Code review is not troubleshooting time. Instead, the goal is to review code and talk about actionable feedback for enhancing the student's project in the future.
 
 - __Student (10 mins)__: Have the student walk through and defend their project / model / code.
 
