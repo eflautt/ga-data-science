@@ -9,13 +9,13 @@ Our projects include objectives, requirements, starter-code, rubric, and suggest
 
 ### **Project 1**
 
-Student will be building their very first Android app - a todo list app - that runs on a real Android device!
+Students will create a framework to scope out their data science projects, using iPython notebook and a UCLA admissions dataset. 
 
 This project will be split into two phases. First, students will be creating two iterations of a paper prototype. Then, you will be drawing the design of each screen, as well as describing what happens when the user interacts with each element on the screen. Students will receive instructor feedback after each iteration.  Second, you will be coding the app itself. Students will implement the design they created in the first step using all of the knowledge gained during weeks one and two.
 
-- **Goal**: Build a todo list app
+- **Goal**: Create a problem statement, analysis plan, and data dictionary in iPython. 
 - **Project Time**: 3 days
-- **[Detailed Spec File](../projects/project-01/readme.md)**
+- **[Detailed Spec File](./project-1/readme.md)**
 
 
 ### **Project 2**
