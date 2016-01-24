@@ -24,18 +24,30 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
   - [Final, Part 4](./final-projects/04-notebook-rough-draft/readme.md)
   - [Final, Part 5](./final-projects/05-presentation/readme.md)
 
+
+## Project Timeline
+
+| Unit | Lessons | Project | Deadline |
+| --- | :---: |  --- | :---: |
+| **Unit 1: Fundamentals of JavaScript** | Lessons 0 - 4  | Slackbot: Introduced by end of Lesson 3| Slackbot: Due before start of Lesson 5|
+| **Unit 2: The Browser and APIs** | Lessons 6 - 11 | Feedr: Introduced at the end of Lesson 10 and during Lesson 11 Lab Time| Feedr: Due before start of Lesson 14 |
+| **Unit 3: Persisting Data and Advanced Topics**| Lessons 12 - 15 |Final Project: Introduced at end of Lesson 13| |
+| **Unit 4: Building and Deploying Your App**| Lessons 16 - 18 ||Final Project:Due during Lesson 19|
+
+> Instructor Note: We've also provided you with a [visual timeline for project due dates](../resources/instructor-resources/DS-project-due-dates.pdf).
+
 ---
 
 ## Assignments and Projects
 
-In order to pass this course, General Assembly students must:
+In order to pass this course, General Assembly students **must**:
 
 - Complete and submit 80% of all course homework assignments.
-- Complete and submit the course final project, including all milestones.
+- Complete and submit the final project, including all 5 milestones.
 
 ### Grading & Using GitHub in the Classroom
 
-We'll use GitHub for student-facing materials, project submission, feedback and grading.
+You should be using GitHub for student-facing materials, project submission, feedback, and grading.
 
-Producers should set up a student-facing repo for the course, which will be handed-off to the instructional team. For information on [how to set up a student-facing repo see these instructions](../resources/instructor-resources/github-repo-instance-guide.md).
+In addition to your own instructional instance repo, we recommend setting up a separate student-facing repo for the course. For information on [how to set up a student-facing repo see these instructions](../resources/instructor-resources/github-repo-instance-guide.md).
 
