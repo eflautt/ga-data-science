@@ -9,7 +9,7 @@ One of the best ways to test expectations and get feedback is to share your idea
 
 You'll get the opportunity to get immediate feedback and guidance in order to help you choose an awesome final project idea. Keep in mind that it's important to run though this ideation process a few times with different ideas to clarify what your project should focus on. 
 
-**Goal**: Create a brief minute presentation covering three potential project topics.
+**Goal**: Prepare a one-minute lightning talk that covers 3 potential project topics.
 
 ---
 
