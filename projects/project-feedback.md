@@ -14,9 +14,10 @@ Our goal is to provide meaningful suggestions and personal guidance to all of ou
 - Students should be shown a copy of the blank rubric when given their project prompt.
 - Rubric categories and evaluation metrics should always be tied to project specifications.
 - Project categories are based off of the course standards, found in the [Data Science Workflow](../resources/instructor-resources/data-science-workflow-final.pdf).
-- Instructors should work with their TA's to provide targeted feedback for every student. 
+- Instructors should work with their TA's to provide targeted feedback for **every** student. 
 - Students should receive feedback on their projects **within 2 - 4 days** after submission!
 
+---
 
 ## Rubric Assessment Process
 
