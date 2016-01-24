@@ -27,14 +27,20 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 
 ## Project Timeline
 
-| Unit | Lessons | Project | Deadline |
-| --- | :---: |  --- | :---: |
-| **Unit 1: Fundamentals of JavaScript** | Lessons 0 - 4  | Slackbot: Introduced by end of Lesson 3| Slackbot: Due before start of Lesson 5|
-| **Unit 2: The Browser and APIs** | Lessons 6 - 11 | Feedr: Introduced at the end of Lesson 10 and during Lesson 11 Lab Time| Feedr: Due before start of Lesson 14 |
-| **Unit 3: Persisting Data and Advanced Topics**| Lessons 12 - 15 |Final Project: Introduced at end of Lesson 13| |
-| **Unit 4: Building and Deploying Your App**| Lessons 16 - 18 ||Final Project:Due during Lesson 19|
+| Unit | Project | Assigned | Deadline |
+| --- | --- | :---: |
+| **Unit 1** | Unit Project 1 | Assigned Lesson 1 | Due Lesson 3 |
+| **Unit 1** | Unit Project 2 | Assigned Lesson 3 | Due Lesson 5 |
+| **Unit 2** | Final Project, pt 1 | Assigned Lesson 1 | Due Lesson 8 |
+| **Unit 2** | Unit Project 3 | Assigned Lesson 5 | Due Lesson 9 |
+| **Unit 2** | Unit Project 4 | Assigned Lesson 9 | Due Lesson 11 |
+| **Unit 3** | Final Project, pt 2 | Assigned Lesson 8 | Due Lesson 14 |
+| **Unit 3** | Final Project, pt 3 | Assigned Lesson 14 | Due Lesson 16 |
+| **Unit 3** | Final Project, pt 4 | Assigned Lesson 16 | Due Lesson 18 |
+| **Unit 3** | Final Project, pt 5 | Assigned Lesson 18 | Due Lesson 20 |
 
 > Instructor Note: We've also provided you with a [visual timeline for project due dates](../resources/instructor-resources/DS-project-due-dates.pdf).
+
 
 ---
 
