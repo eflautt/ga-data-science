@@ -29,18 +29,16 @@ General Assembly's Data Science course is made up of 20 lessons that are 3 hours
 
 | Class | Title |  | Class | Title |
 | --- | :---: | --- |  --- | :---: |
-| Lesson 0 | [Installfest]() || Lesson 10 | [Advanced APIs]()|
-| Lesson 1 | [What is Data Science](./lesson-01/readme.md) || Lesson 11 | [Lab Time]()|
-| Lesson 2 | [Data Types]() || **Project 2**  |[ Feedr - Your Personalized Feed Reader]() |
-| Lesson 3| [Collections and Loops]() || Lesson 12 | [Prototypical Inheritance]() |
-| Lesson 4 | [Functions and Scope]() || Lesson 13 | [Closures and This]() |
-| **Project 1** | [Slackbot]() ||Lesson 14| [Intro to Crud and Parse]() |
-| Lesson 5 | [Objects and JSON]() ||Lesson 15| [Deploying Your App]() |
-| Lesson 6 | [Intro to DOM & jQuery]()|| Lesson 16 |  [Instructor Student Choice]() |
-| Lesson 7 | [DOM & jQuery Continued]() || Lesson 17 |[Lab Time]() |
-| Lesson 8 | [AJAX and APIs]() ||Lesson 18 | [Lab Time]() |
-| Lesson 9| [Asynchronous JS and Callbacks]() ||**Project 3** |[Your Single Page App]() |
-| | | || Lesson 19 | Final Project Presentations |
+| Lesson 1 | [What is Data Science](./lesson-01/readme.md) || Lesson 11 | Flex Session|
+| Lesson 2 | [Research Design & Pandas](./lesson-02/readme.md) || Lesson 12 | [Decision Trees / Random Forest](/lesson-12/readme.md)|
+| Lesson 3| [Statistics Fundamentals pt. 1](./lesson-03/readme.md) || Lesson 13 | [NLP with Classification](./lesson-13/readme.md) |
+| Lesson 4 | [Statistics Fundamentals pt. 2](./lesson-04/readme.md) || Lesson 14 | [Dimensionality Reduction](./lesson-14/readme.md) |
+| Lesson 5 | [Tool Review / Flex Session](./lesson-05/readme.md) || Lesson 15 | [Time Series Data]) |
+| Lesson 6 | [Intro to Linear Regression](./lesson-06/readme.md) || Lesson 16 | [Modeling Time Series Data]) |
+| Lesson 7 | [Evaluating Model Fit](./lesson-07/readme.md) || Lesson 17 | [Data Science Databases]) |
+| Lesson 8 | [Intro to Classification](./lesson-08/readme.md)|| Lesson 18 | [Data Science Careers]) |
+| Lesson 9 | [Intro to Logistic Regression](./lesson-09/readme.md) || Lesson 19 | Flex Session |
+| Lesson 10 | [Communicating Model Results]) ||Lesson 20 | Final Project Demo Day |
 
 ---
 
@@ -48,19 +46,20 @@ General Assembly's Data Science course is made up of 20 lessons that are 3 hours
 
 We've supplied a folder for each lesson. Each folder includes the following:
 
-|Materials | Description | How to Use It|
+| Materials | Description | How to Use It |
 |----|---------|---------------|
-| __readme.md__| Topic break down and suggested lesson schedule. | Use this to get a high level view, including information on lesson content, in-class activities, objectives, prework, and projects.|
-| __Starter Code Folder__| This is a folder with all the starter code students need for that lesson.| You should share this folder with students before every lesson. Make the necessary changes if you are using different code.|
+| __readme.md__| Topic overview & breakdown | Use this to get a high level view, including information on lesson content, in-class activities, objectives, prework, and projects.|
+| __Starter Code Folder__| Code for demos, codealongs and questions for guided or independent practice | Use this to walk students through code snippets or give students workshops / lab assignments in-class|
+| __Solution Folder__| Solutions for guided & independent practice | Use this to assess or walk students through solutions when needed|
+| __Datasets__| Dataset used during lesson | Use this during demos/codealongs as well as guided and independent practice activities. |
 
-| __Solution Folder__| This is a folder with all solutions to code alongs and exercises| Share individual solution files as needed. Student should be provided with code demo solutions before lab time to use as a reference.|
-| __Project Prompts__| Instructions for completing unit projects | Each project folder includes a prompt with starter and solution code (if applicable) and a rubric. Share the project requirements as early as possible.|
+> Note that you should share Starter code and Datasets in the student-facing repo. Direct them to the relevant file during your lessons. Feel free to share the solution code with them afterward.
 
 ### Folder Navigation
 Each lesson folder is organized in the following pattern:
 
 - **Lesson**: includes the root lesson plan readme
-  - _Code_ supplemental code
+  - _Code_
     - **Starter Code**: iPython notebook for demos, as well as questions for guided and independent practice
     - **Solution Code**: iPython notebook with answers to questions from guided and independent practice
   - _Assets_
@@ -69,24 +68,24 @@ Each lesson folder is organized in the following pattern:
     - **Slides**: Includes and links to the baseline lesson deck for you to modify
 
 
-
 ## Lesson Structure
 
 Each lesson plan outline includes:
 
-- YAML Frontmatter: Revision Log
-- Learning Objectives: What students should be able to do after lesson completion
-- Student Prework: What students should already know how to do before this lesson
-- Instructor Prep: Specific instructions for the instructor
-- High-Level Lesson Guide: Timing overview of lesson structure
-- Lesson Content: Content is divided into modular components by topic. You should feel free to adjust these as needed.
+1. YAML Frontmatter: Content revision log
+2. Learning Objectives: What students should be able to do after lesson completion
+3. Student Prework: What students should already know how to do before this lesson
+4. Instructor Prep: Specific instructions for the instructor
+5. High-Level Lesson Guide: Timing overview of lesson structure
+6. Lesson Content: Content is divided into modular, adjustable components by topic:
   - Opening: Objectives, QA, Reminders
   - Topic: Introduction - Slide deck supported lecture
   - Topic: Demo or Codealong - Walkthrough
   - Topic: Guided Practice - Short practice activity
   - Topic: Independent Practice - Summative activity with deliverable(s)
-  - Conclusion: Lesson & Lab Review, QA, Exit Tickets
-- Upcoming Assignments: Homework or Projects
-- Additional Resources: Links that you should feel free to add to or supplement
+  - Conclusion: Lesson & Lab Review, QA, Exit Tickets 
+7. Upcoming Assignments: Homework or Projects
+8. Additional Resources: Links that you should feel free to add to or supplement
+
 
 For more detail and examples, check out our [GA lesson template](./templates/readme.md).
