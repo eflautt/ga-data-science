@@ -19,9 +19,9 @@ Included in this Repository:
 
 
 ## To Get Started
-1. Producers: Review the [github instructions with your instructional team](./resources/instructor-resources/github-repo-instance-guide.md).
-2. Instructors: Review these [resources and lesson prep recommendations](./resources/instructor-resources/instructor-prep.md).
-3. Students: Begin reviewing our [projects](./projects/readme.md), [lessons](./lessons/readme.md), and [resources](./resources/student-resources/) to start learning data science!
+1. **Producers**: Review the [github instructions with your instructional team](./resources/instructor-resources/github-repo-instance-guide.md).
+2. **Instructors**: Review these [resources and lesson prep recommendations](./resources/instructor-resources/instructor-prep.md).
+3. **Students**: Begin reviewing our [projects](./projects/readme.md), [lessons](./lessons/readme.md), and [resources](./resources/student-resources/) to start learning data science!
 
 ---
 
