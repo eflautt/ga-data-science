@@ -2,7 +2,7 @@
 
 ### PROMPT
 
-Our goal for this project is to develop a working draft that could be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format. Your project should push the reader to ask for more insightful questions, and avoid issues like, "what does this line of code do?" 
+Our goal for this project is to develop a working technical document that can be shared amongst your peers. Similar to any other technical project, it should surface your work and approach in a human readable format. Your project should push the reader to ask for more insightful questions, and avoid issues like, "what does this line of code do?" 
 
 From a presentation perspective, think about the machine learning applications of your data. Use your model to display correlations, feature importance, and unexplained variance. Document your research with a summary, explaining your modeling approach as well as the strengths and weaknesses of any variables in the process. 
 
