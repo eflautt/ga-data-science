@@ -44,7 +44,7 @@ General Assembly's Data Science course is made up of 20 lessons that are 3 hours
 
 ## Available Materials
 
-We've supplied a folder for each lesson. Each folder includes the following:
+We've supplied a folder with materials for each lesson, including the following:
 
 | Materials | Description | How to Use It |
 |----|---------|---------------|
@@ -53,7 +53,7 @@ We've supplied a folder for each lesson. Each folder includes the following:
 | __Solution Folder__| Solutions for guided & independent practice | Use this to assess or walk students through solutions when needed|
 | __Datasets__| Dataset used during lesson | Use this during demos/codealongs as well as guided and independent practice activities. |
 
-> Note that you should share Starter code and Datasets in the student-facing repo. Direct them to the relevant file during your lessons. Feel free to share the solution code with them afterward.
+> Instructor's Note: You should share Starter code and Datasets in the student-facing repo and direct students to the relevant file during your lessons. Feel free to share the solution code with them afterward.
 
 ### Folder Navigation
 Each lesson folder is organized in the following pattern:
