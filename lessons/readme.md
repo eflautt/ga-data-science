@@ -58,7 +58,7 @@ We've supplied a folder with materials for each lesson, including the following:
 ### Folder Navigation
 Each lesson folder is organized in the following pattern:
 
-- **Lesson**: includes the root lesson plan readme
+- **Lesson**: includes the root lesson readme
   - _Code_
     - **Starter Code**: iPython notebook for demos, as well as questions for guided and independent practice
     - **Solution Code**: iPython notebook with answers to questions from guided and independent practice
@@ -70,22 +70,22 @@ Each lesson folder is organized in the following pattern:
 
 ## Lesson Structure
 
-Each lesson plan outline includes:
+Lesson plans are organized as follows:
 
-1. YAML Frontmatter: Content revision log
-2. Learning Objectives: What students should be able to do after lesson completion
-3. Student Prework: What students should already know how to do before this lesson
-4. Instructor Prep: Specific instructions for the instructor
-5. High-Level Lesson Guide: Timing overview of lesson structure
-6. Lesson Content: Content is divided into modular, adjustable components by topic:
-  - Opening: Objectives, QA, Reminders
-  - Topic: Introduction - Slide deck supported lecture
-  - Topic: Demo or Codealong - Walkthrough
-  - Topic: Guided Practice - Short practice activity
-  - Topic: Independent Practice - Summative activity with deliverable(s)
-  - Conclusion: Lesson & Lab Review, QA, Exit Tickets 
-7. Upcoming Assignments: Homework or Projects
-8. Additional Resources: Links that you should feel free to add to or supplement
+1. **YAML Frontmatter**: Content revision log
+2. **Learning Objectives**: What students should be able to do after lesson completion
+3. **Student Prework**: What students should already know how to do before this lesson
+4. **Instructor Prep**: Specific instructions for the instructor
+5. **Lesson Guide**: High level timing overview of lesson structure
+6. **Lesson Content**: Content is divided into modular, adjustable components by topic:
+  - _Opening_: Objectives, QA, Reminders
+  - _Topic - Introduction_: Slide deck supported lecture
+  - _Topic - Demo or Codealong_: Walkthrough
+  - _Topic - Guided Practice_: Short practice activity
+  - _Topic - Independent Practice_: Summative activity with deliverable(s)
+  - _Conclusion_: Lesson & Lab Review, QA, Exit Tickets 
+7. **Upcoming Assignments**: Homework or Projects
+8. **Additional Resources**: Links that you should feel free to add to or supplement
 
 
 For more detail and examples, check out our [GA lesson template](./templates/readme.md).
