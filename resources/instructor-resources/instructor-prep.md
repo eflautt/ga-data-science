@@ -8,6 +8,7 @@ During these preparation weeks you should:
 
 - Review the high-level unit structure, lesson plans, project arcs, and instructor resources provided.
 - Review the objectives as well as sample, starter, and solution code for each lesson, lab, and project.
+- Read through our [student feedback guide](../../projects/project-feedback.md) and review the rubrics for each project.
 - Decide how you want to incorporate your experiences into lesson materials and deliverables.
 - Update the slide decks for each lesson to correspond with the materials you plan to teach.
 
