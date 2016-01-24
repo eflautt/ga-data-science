@@ -46,7 +46,7 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 
 ---
 
-## Assignments and Projects
+## Project Completion
 
 In order to pass this course, General Assembly students **must**:
 
