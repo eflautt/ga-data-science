@@ -1,14 +1,14 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science 2.0
 
 # _Curriculum Refresh In Progress_
 
-Welcome! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our timeline:
+Welcome to Data Science 2.0! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our timeline:
 
 - **Feb 1**: Lesson Build Complete
 - **Feb 29th**: Lesson QA Complete
 
 
-## DS Curriculum Repo
+## Data Science Curriculum Repo
 
 Included in this Repository:
 
