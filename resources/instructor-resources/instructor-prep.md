@@ -1,6 +1,23 @@
-#DAT Pre-Requisites
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Instructor Recommendations & Pre-Work
 
-##Objectives
+## Pre-Course Responsibilities
+
+We highly recommend you begin preparing your lessons at least 2-4 weeks before the course starts. A good benchmark is to prepare the first 5 - 6 lessons before the course actually begins.
+
+During these preparation weeks you should:
+
+- Review the high-level unit structure, lesson plans, project arcs, and instructor resources provided.
+- Review the objectives as well as sample, starter, and solution code for each lesson, lab, and project.
+- Decide how you want to incorporate your experiences into lesson materials and deliverables.
+- Update the slide decks for each lesson to correspond with the materials you plan to teach.
+
+> Note: We recommend that you follow the lesson structure provided as a baseline, but feel free to add or supplement the curriculum with materials based on your experience and students' comfort level. If you'd like to suggest future curriculum revisions, please see [our contributing guidelines](../../contributing.md).
+
+---
+
+## Pre-Work Objectives
+
+When preparing your slide decks and reviewing the curriculum, keep in mind the following pre-work criteria for students:
 
 #### Task Objectives
 *Before the first class, students should have already:*
@@ -41,3 +58,5 @@
   - Describe why arrays are useful and how to use them effectively in Python
   - Write a “for” loop
   - Describe the difference between for and while statements 
+
+> Note that students may need to be reminded to complete the pre-work on the first day of class. We've provided modular lesson components [during your first flex lesson](../../lessons/lesson-05/readme.md) that you can use to review this material.
