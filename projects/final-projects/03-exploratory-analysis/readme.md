@@ -7,7 +7,7 @@ Exploratory data analysis is a crucial and informative step in the data process.
 In this assignment, you will explore and visualize your initial analysis in order to effectively tell your data's story. You'll create an iPython notebook that explores your data mathematically, using a python visualiation package.
 
 
-**Goal:** Dataset approval and exploratory analysis writeup, including clean dataframes, stat model, and visualizations.
+**Goal:** Confirm your data and create an exploratory analysis notebook with stat analysis and visualization.
 
 ---
 
