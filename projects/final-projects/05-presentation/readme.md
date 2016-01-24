@@ -2,13 +2,15 @@
 
 ### PROMPT
 
-This is it! This presentation is your way of showing what you've learned to a non-technical audience. Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why it's important to practice communicating clearly and effectively so that anyone can understand.
+This is it! It's presentation time.
 
-The output here will be a 10 minute presentation that guides your viewers through the problem, original data and hypothesis, findings, and results. This is what you've been building toward over the past few weeks - and indeed, over the entire course! You should already have most of the actual analytical work complete - now it's time to clean up your findings!
+Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why it's important to practice communicating clearly and effectively so that anyone can understand.
 
-After you present your work, you'll participate in a short Q/A session (roughly two minutes) with your peers--both fellow students and instructors--about your project.
+That's why your goal here is to create a 10 minute presentation that guides your viewers through the problem, original data and hypothesis, findings, and results. This is what you've been building toward over the past few weeks! You should already have the analytical work complete, so now it's time to clean up and clarify your findings. 
 
-**Goal:** A 10-20 slide deck that describes your analysis and findings to a non-technical audience.
+Come up with a detailed 10-20 slide deck or interactive demo that explains your data, visualizes your model, describes your approach, articulates strengths and weaknesses, and presents specific recommendations. Plan for a 10 minute presentation with 1-2 minutes of QA; be prepared to explain and defend your model to an inquisitive audience!
+
+**Goal:** A detailed 10-20 slide presentation deck that relates your data, model, and findings to a non-technical audience.
 
 ---
 
