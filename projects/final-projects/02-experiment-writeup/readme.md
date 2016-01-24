@@ -2,9 +2,11 @@
 
 ### PROMPT
 
-Project outlines are a valuable resource to working through data projects. They help keep your project organized. Even if/as challenges come up with your project that may derail you away from your plan, as least you'll go in with a thoughtful approach. A well constructed outline can make your project seem effortless, while a poorly written outline may  of your time.
+Project outlines are a valuable resource when working with data projects, as they help keep your project organized.  A well constructed outline can clarify your goals and serve as a checklist when conducting research and analysis.
 
-For this project, you will need to complete a problem statement and research design outline for ***one*** of the three lightning talks you designed, which serves as the starting point for getting your project off the ground. You should aim to complete this outline as soon as you have a clear idea of which project you want to work on. Remember, completing this task earlier will give you more chances to iterate and improve!
+For this project, you will need to complete a problem statement and research design outline for one of the three lightning talks you designed during pt. 1. This will serve as the starting point for your analysis. Make sure to include a specific aim and hypthesis, well-defined risks and assumptions, and clearly articulated goals and success metrics. 
+
+Remember, completing this task earlier will give you more chances to iterate and improve!
 
 **Goal:** Create an outline of your research design approach, including hypothesis, assumptions, risks, and success metrics. 
 
