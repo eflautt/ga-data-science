@@ -11,41 +11,33 @@ Our projects include objectives, requirements, starter-code, rubric, and suggest
 
 Students will create a framework to scope out their data science projects, using iPython notebook and a UCLA admissions dataset. 
 
-This project will be split into two phases. First, students will be creating two iterations of a paper prototype. Then, you will be drawing the design of each screen, as well as describing what happens when the user interacts with each element on the screen. Students will receive instructor feedback after each iteration.  Second, you will be coding the app itself. Students will implement the design they created in the first step using all of the knowledge gained during weeks one and two.
+This framework will provide you with a guide for exploratory data analysis and help you identify features of the dataset, including the outcome and covariate/predictors. You'll develop a well-articulated problem statement and analysis plan that will be robust and reproducible. Using an iPython notebook, you'll state the risks and assumptions of your data and create a data dictionary.
 
 - **Goal**: Create a problem statement, analysis plan, and data dictionary in iPython. 
-- **Project Time**: 3 days
 - **[Detailed Spec File](./project-1/readme.md)**
 
 
 ### **Project 2**
 
-For project 2, students will be creating an app that integrates many different technologies and principles. This app will allow the user to search for places in their neighborhood (descriptions and images) based on street names, neighborhood names, neighborhood types...it's up to the student!
+Building upon the framework you created in Project 1, now you'll need to explore your dataset using descriptive statistics and basic visualizations, in order to identify biases, limitations, or variables in your model. This will lay the groundwork for your modeling approach in Project 3.
 
-This is another individual project and the project will be spread across four weeks, with separate deliverables due at the end of each week. Although the deliverables will be separate, we will be incorporating them all into a single app, expanding upon the previous week's work. The first week will focus on the user interface, the second week on the back-end database and JUnit tests, and the third will tie everything together.
-
-- **Goal**: Create a neighborhood navigation and search app
-- **Project Time**: 4 days
-- **[Detailed Spec File](../projects/project-02/readme.md)**
+- **Goal**: Explore data with visualizations and statistical analysis in an iPython notebook.
+- **[Detailed Spec File](./project-2/readme.md)**
 
 
 ### **Project 3**
 
-Students have already worked in small groups to accomplish various labs and exercises, but this time, students will be challenged to work on a whole project with a small team.  Instructors will partner students with other classmates, and students will use research provided by partner companies and architect, design, and collaboratively build an app of their own design.
+Students will put into practice the framework and exploratory analysis created in Projects 1 and 2 by completing a logistic regression model on the UCLA admissions dataset. You'll have to create dummy variables and calculate the OR by hand. After plotting the data, your iPython notebook writeup should also include calculations of the predicted probabilities and an interpretation of your findings.
 
-This project is meant to push students both technically and collaboratively.
-
-- **Goal**: Work as a team using agile methodologies to create an Android application
-- **Project Time**: 5 days
-- **[Detailed Spec File](../projects/project-03/readme.md)**
+- **Goal**: Perform logistic regression on UCLA dataset, creating dummy variables and calculating probabilities. 
+- **[Detailed Spec File](./project-3/readme.md)**
 
 
-### **Project 4** *(Weeks 10-12)*
+### **Project 4**
 
-Students will get to call the shots and come up with their own idea, choosing tools that are appropriate for what they're looking to build.
+Students will polish their iPython notebook by combining prior project deliverables into a final, polished iPython notebook that begins with an executive summary, states goals and success criteria, outlines methods and aims, describes risks and assumptions, explains modeling approach using visualizations, and concludes with findings and next steps.
 
-For this project, students will be working with a team and using product development strategies to come up with a project proposal that will be reviewed with the instructional team; this it to make sure the team's proposal is something that can be accomplish in the time left in the course while also making sure it's something that will challenge students.
+This project will familiarize students with the role of audience analysis and model defense in real world data science presentations.
 
-- **Goal**: Do user research and use product development methods to pitch an idea that will turn into a working Android app
-- **Project Time**: 5 days
-- **[Detailed Spec File](../projects/project-04/readme.md)**
+- **Goal**: Present your findings in an iPython notebook with executive summary, visuals, and recommendations.
+- **[Detailed Spec File](./project-4/readme.md)**
