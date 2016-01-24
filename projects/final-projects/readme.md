@@ -9,31 +9,25 @@ Each project deliverable includes objectives, requirements, starter-code, rubric
 
 ### **Final Project, pt. 1**
 
-Student will be building their very first Android app - a todo list app - that runs on a real Android device!
+In the field of data science, projects are practical. A good project is manageable and relates to your working domain; however, it can be hard to filter and scope good ideas when you're new to a field. One of the best ways to test expectations and get feedback is to share your ideas with others. For part one of your final project, you'll come up with a few different ideas you could potentially solve with data, then present them in small groups to the class.
 
-This project will be split into two phases. First, students will be creating two iterations of a paper prototype. Then, you will be drawing the design of each screen, as well as describing what happens when the user interacts with each element on the screen. Students will receive instructor feedback after each iteration.  Second, you will be coding the app itself. Students will implement the design they created in the first step using all of the knowledge gained during weeks one and two.
-
-- **Goal**: Build a todo list app
+- **Goal**: Prepare a one-minute lightning talk that covers 3 potential project topics.
 - **[Detailed Spec File](./01-lightning-talk/readme.md)**
 
 
 ### **Final Project, pt. 2**
 
-For project 2, students will be creating an app that integrates many different technologies and principles. This app will allow the user to search for places in their neighborhood (descriptions and images) based on street names, neighborhood names, neighborhood types...it's up to the student!
+Project outlines are a valuable resource when working through data projects. For this project, you will need to complete a problem statement and research design outline for the topic you chose from pt. 1. This will serve as the starting point for your modeling approach. Make sure to include a specific aim and hypthesis, well-defined risks and assumptions, and clearly articulated goals and success metrics.
 
-This is another individual project and the project will be spread across four weeks, with separate deliverables due at the end of each week. Although the deliverables will be separate, we will be incorporating them all into a single app, expanding upon the previous week's work. The first week will focus on the user interface, the second week on the back-end database and JUnit tests, and the third will tie everything together.
-
-- **Goal**: Create a neighborhood navigation and search app
+- **Goal**: Create an outline of your research design approach, including hypothesis, assumptions, goals, and success metrics.
 - **[Detailed Spec File](./02-experiment-writeup/readme.md)**
 
 
 ### **Final Project, pt. 3**
 
-Students have already worked in small groups to accomplish various labs and exercises, but this time, students will be challenged to work on a whole project with a small team.  Instructors will partner students with other classmates, and students will use research provided by partner companies and architect, design, and collaboratively build an app of their own design.
+Exploratory data analysis is a crucial and informative step in the data process. In this assignment, you will build off of your previous work, by first confirming a dataset, then exploring and visualizing your analysis in order to effectively tell your data's story. You'll create an iPython notebook that explores your data mathematically, using a python visualiation package.
 
-This project is meant to push students both technically and collaboratively.
-
-- **Goal**: Work as a team using agile methodologies to create an Android application
+- **Goal**: Confirm your data and create an exploratory analysis notebook with stat analysis and visualization.
 - **[Detailed Spec File](./03-exploratory-analysis/readme.md)**
 
 
