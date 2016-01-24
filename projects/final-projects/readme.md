@@ -14,8 +14,7 @@ Student will be building their very first Android app - a todo list app - that r
 This project will be split into two phases. First, students will be creating two iterations of a paper prototype. Then, you will be drawing the design of each screen, as well as describing what happens when the user interacts with each element on the screen. Students will receive instructor feedback after each iteration.  Second, you will be coding the app itself. Students will implement the design they created in the first step using all of the knowledge gained during weeks one and two.
 
 - **Goal**: Build a todo list app
-- **Project Time**: 3 days
-- **[Detailed Spec File](../projects/project-01/readme.md)**
+- **[Detailed Spec File](./01-lightning-talk/readme.md)**
 
 
 ### **Final Project, pt. 2**
@@ -25,8 +24,7 @@ For project 2, students will be creating an app that integrates many different t
 This is another individual project and the project will be spread across four weeks, with separate deliverables due at the end of each week. Although the deliverables will be separate, we will be incorporating them all into a single app, expanding upon the previous week's work. The first week will focus on the user interface, the second week on the back-end database and JUnit tests, and the third will tie everything together.
 
 - **Goal**: Create a neighborhood navigation and search app
-- **Project Time**: 4 days
-- **[Detailed Spec File](../projects/project-02/readme.md)**
+- **[Detailed Spec File](./02-experiment-writeup/readme.md)**
 
 
 ### **Final Project, pt. 3**
@@ -36,8 +34,7 @@ Students have already worked in small groups to accomplish various labs and exer
 This project is meant to push students both technically and collaboratively.
 
 - **Goal**: Work as a team using agile methodologies to create an Android application
-- **Project Time**: 5 days
-- **[Detailed Spec File](../projects/project-03/readme.md)**
+- **[Detailed Spec File](./03-exploratory-analysis/readme.md)**
 
 
 ### **Project Project, pt. 4**
@@ -47,8 +44,7 @@ Students will get to call the shots and come up with their own idea, choosing to
 For this project, students will be working with a team and using product development strategies to come up with a project proposal that will be reviewed with the instructional team; this it to make sure the team's proposal is something that can be accomplish in the time left in the course while also making sure it's something that will challenge students.
 
 - **Goal**: Do user research and use product development methods to pitch an idea that will turn into a working Android app
-- **Project Time**: 5 days
-- **[Detailed Spec File](../projects/project-04/readme.md)**
+- **[Detailed Spec File](./04-notebook-rough-draft/readme.md)**
 
 
 ### **Project Project, pt. 5**
@@ -58,5 +54,4 @@ Students will get to call the shots and come up with their own idea, choosing to
 For this project, students will be working with a team and using product development strategies to come up with a project proposal that will be reviewed with the instructional team; this it to make sure the team's proposal is something that can be accomplish in the time left in the course while also making sure it's something that will challenge students.
 
 - **Goal**: Do user research and use product development methods to pitch an idea that will turn into a working Android app
-- **Project Time**: 5 days
-- **[Detailed Spec File](../projects/project-04/readme.md)**
+- **[Detailed Spec File](./05-presentation/readme.md)**
