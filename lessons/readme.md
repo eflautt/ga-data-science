@@ -16,7 +16,7 @@ General Assembly's Data Science course is made up of 20 lessons that are 3 hours
 ## Unit Breakdown
 
 | Unit | Title | Lessons Provided | Flex Session |
-| --- | --- |  --- | :---: |
+| --- | --- |  --- | --- |
 | Unit 1 | Research Design & Data Analysis | Lessons 1 - 4  | Lesson 5 |
 | Unit 2 | Foundations of Modeling | Lessons 6 - 10 | Lesson 11 |
 | Unit 3 | Data Science in the Real World| Lessons 12 - 18 | Lesson 19 |
