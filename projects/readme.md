@@ -39,6 +39,8 @@ See the [feedback guidelines](./project-feedback.md) to read more about how we p
 | **Unit 3** | Final Project, pt 4 | Assigned Lesson 16 | Due Lesson 18 |
 | **Unit 3** | Final Project, pt 5 | Assigned Lesson 18 | Due Lesson 20 |
 
+
+
 > Instructor Note: We've also provided you with a [visual timeline for project due dates](../resources/instructor-resources/DS-project-due-dates.pdf).
 
 
