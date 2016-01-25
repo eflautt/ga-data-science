@@ -21,9 +21,9 @@ DS | Lesson 14
 *Before this lesson, you should already be able to:*
 
 - Install `gensim` with `pip install gensim` 
-- Previous introduction to _unsupervised learning_
-- Previous introduction to probability distributions, specifically discrete multinomial distributions
-- - Previous lesson on NLP essentials, including experience with `spacy`
+- Recall and apply _unsupervised learning_ techniques
+- Recall probability distributions, specifically discrete multinomial distributions
+- Recall NLP essentials, including experience with `spacy`
 - _BONUS_: If you are interested in accessing the Twitter API, you'll need to setup Twitter API credentials. [Here are instructions](./code/twitter-instructions.md)
 
 ### INSTRUCTOR PREP
