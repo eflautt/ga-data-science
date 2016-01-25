@@ -2,10 +2,11 @@
 
 # _Curriculum Refresh In Progress_
 
-Welcome to Data Science 2.0! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our timeline:
+Welcome to Data Science 2.0! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our current timeline:
 
-- **Feb 11**: Lesson Build Complete
-- **Feb 29th**: Lesson QA Complete
+- **Jan 25th:** Lessons 1-12 Complete
+- **Feb 11**: Lessons 12-18 Complete
+- **Feb 25th**: Slides & QA for Lessons 12-18 Complete
 
 
 ## Data Science Curriculum Repo
