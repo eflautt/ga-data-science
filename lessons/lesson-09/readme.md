@@ -19,8 +19,8 @@ DS | Lesson 9
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 - Implement a linear model (LinearRegression) with sklearn
-- Understand what is a coefficient
-- Recall metrics accuracy and misclassification
+- Define the concept of coefficients
+- Recall metrics for accuracy and misclassification
 - Recall the differences between L1 and L2 regularization
 
 ### INSTRUCTOR PREP
