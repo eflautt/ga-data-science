@@ -32,6 +32,7 @@ DS | Lesson 6
 
 - Review [Final Project pt 1](../../projects/final-projects/01-lightning-talk/readme.md)
 - Copy and modify the [lesson slide deck](./assets/slides/slides-6.md)
+- Read through datasets and starter/solution code
 - Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
