@@ -25,9 +25,9 @@ DS | Lesson 4
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+- Review [Unit Project 2](../../projects/unit-projects/project-2/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-4.md)
+- Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
 
