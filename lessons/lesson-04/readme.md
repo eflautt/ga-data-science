@@ -27,6 +27,7 @@ DS | Lesson 4
 
 - Review [Unit Project 2](../../projects/unit-projects/project-2/readme.md)
 - Copy and modify the [lesson slide deck](./assets/slides/slides-4.md)
+- Read through datasets and starter / solution code
 - Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
