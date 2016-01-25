@@ -27,9 +27,11 @@ DS | Lesson 1
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
-- Review syllabus
-- Read through lesson plans
-- Prepare slide decks
+- Review course [syllabus](../../resources/instructor-resources/ds-syllabus.pdf) and [lesson structure](../readme.md)
+- Read through our [lesson preparation guide](../../resources/instructor-resources/instructor-prep.md)
+- Review Unit 1 [projects](../../projects/readme.md)
+- Add to the "Additional Resources" section for this lesson
+- Copy and modify the [lesson slide deck](./assets/slides/slides-1.md)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
