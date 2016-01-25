@@ -30,8 +30,10 @@ DS | Lesson 12
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
-- Review materials & dataset (sample code)
-
+- Remind students about [Final Project, pt. 2](../../projects/final-projects/02-experiment-writeup/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-12.md)
+- Read through datasets and starter/solution code
+- Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
