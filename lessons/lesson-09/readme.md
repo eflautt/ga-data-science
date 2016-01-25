@@ -39,7 +39,7 @@ DS | Lesson 9
 | 20-25 mins | [Introduction](#intro-eval) | Intro to additional classification metrics and the confusion matrix |
 | 10-15 mins | [Guided Practice](#guided-practice-eval) | Determining proper metrics given classification problems |
 | 30-35 mins | [Independent Practice](#ind-practice-eval)  | Optimizing a logistic regression using new metrics  |
-| 5-10 mins | [Conclusion](#conclusion) | Wrapup |
+| 5-10 mins | [Conclusion](#conclusion) | Review |
 
 <a name="opening"></a>
 ## Opening (5 minutes)
