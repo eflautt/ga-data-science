@@ -44,7 +44,7 @@ General Assembly's Data Science course is made up of 20 lessons that are 3 hours
 
 ## Available Materials
 
-We've supplied a folder with materials for each lesson, including the following:
+For every lesson, we've supplied a folder full of materials, including the following:
 
 | Materials | Description | How to Use It |
 |----|---------|---------------|
