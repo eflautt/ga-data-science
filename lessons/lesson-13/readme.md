@@ -34,6 +34,10 @@ DS | Lesson 13
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
+- Remind students about [Final Project, pt. 2](../../projects/final-projects/02-experiment-writeup/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-13.md)
+- Read through datasets and starter/solution code
+- Add to the "Additional Resources" section for this lesson
 - Install `spacy` with `pip install spacy` (or use Anaconda)
 - Run the `spacy` download data command
  
