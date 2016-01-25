@@ -29,6 +29,7 @@ DS | Lesson 3
 
 - Review [project feedback guidelines](../../projects/project-feedback.md)
 - Copy and modify the [lesson slide deck](./assets/slides/slides-3.md)
+- Read through datasets and starter/solution code
 - Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
