@@ -159,7 +159,7 @@ def sigmoid_func(logit):
 <a name="ind--practice-logit"></a>
 ## Independent Practice: Logistic Regression Implementation
 
-Use the data `collegeadmissions.csv` and the (LogisticRegression)[http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html] estimator in sklearn in order to predict the target variable `admit`. Your objectives are:
+Use the data `collegeadmissions.csv` and the [Logistic Regression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) estimator in sklearn in order to predict the target variable `admit`. Your objectives are:
 
 1. What is the bias, or prior probability, of the dataset?
 2. Build a simple model with one feature and explore the `coef_` value: does this represent the odds, or logit (log odds)?
@@ -170,13 +170,15 @@ Use the data `collegeadmissions.csv` and the (LogisticRegression)[http://scikit-
 <a name="intro-eval"></a>
 ## Introduction: Advanced Classification Metrics: Precision, Recall, AUC.
 
-Accuracy is only one of several metrics used when solving for a classification problem. It is best defined as `total predicted correct / total data set`. But accuracy alone isn't always usable: for example, if we know a prediction is 75% accurate, accuracy does'nt provide _any_ insight into why the 25% was wrong.
+Accuracy is only one of several metrics used when solving for a classification problem. It is best defined as `total predicted correct / total data set`. But accuracy alone isn't always usable. 
 
-Was it wrong equally across all class labels? Did it just guess one class label for all predictions and 25% of the data was just the other label? It's important to look at other metrics to fully understand the problem.
+For example, if we know a prediction is 75% accurate, accuracy doesn't provide any insight into why the 25% was wrong. Was it wrong _equally_ across all class labels? Did it just guess one class label for all predictions and 25% of the data was just the other label? 
+
+It's important to look at other metrics to fully understand the problem.
 
 ![confusion_matrix](https://github.com/podopie/DAT18NYC/raw/83dc789584a3349096988bbe14ffd7b87acef5e8/classes/img/confusion_matrix_metrics.png)
 
-We can split up the accuracy of each label by using _true positive rate_ and _false positive rate_.
+We can split up the accuracy of each label by using _True Positive Rate_ and _False Positive Rate_.
 
 - **True Positive Rate (TPR)**: Out of all of the target class labels, how many were accurately predicted to belong to that class?
     - Real world example: Given a medical exam that tests for cancer, how often does it correctly identify patients with cancer?
@@ -184,13 +186,13 @@ We can split up the accuracy of each label by using _true positive rate_ and _fa
 - **False Positive Rate (FPR)**: The inverse of TPR. Out of all items not belonging to a class label, how many were predicted as belonging to the target class label?
     - Real world example: Given a medical exam that tests for cancer, how often does it trigger a "false alarm" by saying a patient has cancer when they actually don't?
 
-Likewise, this can be inverted: how often does a test _correctly_ identify patients without cancer, and how often does a test _incorrectly_ identify patients as cancer-free when they actually may have cancer!! By building on true positive and false positive rates, you can get a much clearer picture of where predictions begin to fall apart.
+Likewise, this can be inverted: how often does a test _correctly_ identify patients without cancer, and how often does a test _incorrectly_ identify patients as being cancer-free when they might actually have cancer! By building on true positive and false positive rates, you can get a much clearer picture of where predictions begin to fall apart.
 
 A good classifier would have a true positive rate approaching 1, and a false positive rate approaching 0. In a binary problem (say, predicting if someone smokes or not), it would accurately predict _all_ of the smokers as smokers, and not accidentally predict any of the nonsmokers as smokers.
 
 Logically, we like single numbers for optimizing, so we can use a metric called Area Under the Curve (AUC), which summarizes the impact of TPR and FPR in one single value. This is also called the Receiver Operating Characteristic (ROC). ROC/AUC is a measure of area under a curve that is described by the TPR and FPR.
 
-![auc](http://scikit-learn.org/stable/_images/plot_roc_001.png)
+![](http://scikit-learn.org/stable/_images/plot_roc_001.png)
 
 Using the logic of TPR and FPR above:
 
