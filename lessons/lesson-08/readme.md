@@ -27,8 +27,10 @@ DS | Lesson 8
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will have to:*
 
-- Review materials
-- Be familiar with the datasets
+- Review [Final Project, pt 2](../../projects/final-projects/02-experiment-writeup/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-8.md)
+- Read through datasets and starter/solution code
+- Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
