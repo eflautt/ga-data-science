@@ -97,7 +97,7 @@ Our sigmoid function is defined mathematically as:
 
 Recall that `e` is the inverse of the natural log. As t increases/decreases, the result is closer to 1 or 0. When t = 0, the result would be 0.5. 
 
-Since it is `t` that decides how much to increase or decrease the value away from 0.5, `t` can help with interpretation to solve for something like a coefficient. But in its current form, it is not as useful.
+Since `t` decides how much to increase or decrease the value away from 0.5, `t` can help with interpretation when solving for something like a coefficient. But in its current form, it is not as useful.
 
 <a name="demo-logit"></a>
 ### Demo: What does the Sigmoid Function look like on a chart?
@@ -114,7 +114,7 @@ Here, the value within the natural log (`p / (1 - p)`) represents _odds_. Taking
 
 The beauty of the logit function is that it allows for values between negative infinity and infinity, but provides us probabilities between 0 and 1.
 
-**Check:** why is this important? What does this remind us of?
+**Check:** Why is this important? What does this remind us of?
 
 For example, a logit value (log odds) of .2 (or odds of ~1.2/1):
 
