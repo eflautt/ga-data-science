@@ -29,7 +29,7 @@ DS | Lesson 5
 - Determine which sections of this flex lesson are applicable for their class
 - Copy and modify the [lesson slide deck](./assets/slides/slides-5.md) as needed
 - Add to the "Additional Resources" section for this lesson
-- _Optional_: Prep for the Github Lesson: 
+- _Optional: Prep for the Github Lesson_
 	- Draw the skeleton (boxes without content) of the landscape.jpg on the white board. 
 	- Fill it in as you talk through the different features. 
 	- Write commands (e.g., git push and git pull) on the lines connecting the correct tool to CL/Terminal as you discuss each one. 
