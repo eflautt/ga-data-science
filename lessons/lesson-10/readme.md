@@ -119,11 +119,11 @@ Below includes a sample plot that shows how precision and recall are related for
 
 This plot is based on choosing decision line thresholds, much like the AUC figure from the previous class. In terms of the Titanic model, this would be like moving the decision line for survival from 0.01 up to 0.99, and then calculating the precision and recall at each decision.
 
-There's a few interesting nuggest from interpreting this:
+There's a few interesting nuggets from interpreting this:
 
 1. There an odd effect where recall is close to 0.
 2. There is a noticeable drop in precision where recall ~.45
-3. precision once again drops immensely whne recall is beyong .8.
+3. precision once again drops immensely when recall is beyond .8.
 
 Depending on optimizing for recall or precision, this plot will help decide on that threshold.
 
@@ -223,7 +223,7 @@ for e, c in enumerate(colors):
 ax.set(title='Probability of Admission\n Based on GRE and School Rank')
 ```
 
-![Plotting Probabilites](assets/images/plotting_proba.png)
+![Plotting Probabilities](assets/images/plotting_proba.png)
 
 A visual like this can help showcase the range of effect on admittance from the school's rank, and how a near perfect GRE score can have roughly the same probability of admittance for one ranking of a school, compared to a low GRE score for another.
 
