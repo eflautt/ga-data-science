@@ -44,13 +44,15 @@ DS | Lesson 9
 <a name="opening"></a>
 ## Opening (5 minutes)
 
-Read through the following two questions and brainstorm some ideas on how to answer each:
+Read through the following questions and brainstorm answers for each:
 
-1. In class we've covered two different algorithms thus far: the *linear model* (ordinary least squares, OLS) and *k-nearest neighbors* (knn). What are the main differences between these two? What other differences lie in how they _approach_ solving the problem? For example, what is _interpretable_ about OLS, compared to what's _interpretable_ in KNN?
+1. In class, we've covered two different types of algorithms so far: the *linear model* (ordinary least squares, OLS) and *k-nearest neighbors* (knn). What are the main differences between these two? What is different about how they approach solving the problem?
+    - For example, what is _interpretable_ about OLS, compared to what's _interpretable_ in KNN?
 
     > A: OLS is used to solve a continuous regression problem, while KNN is used to solve a categorical problem. 
 
-2. What advantages could we have, compared to KNN, using a linear model like OLS to solve classification? What would be the challenges to using OLS to solve classification (say, if the values were either 1 or 0)?
+2. What would be the advantage of using a linear model like OLS to solve a classification problem, compared to KNN?
+    - What are some challenges for using OLS to solve a classification problem (say, if the values were either 1 or 0)?
 
 <a name="intro-logit"></a>
 ## Introduction to Logistic Regression
@@ -61,15 +63,15 @@ Logistic Regression is a _linear_ approach to solving a classification problem. 
 
 Regression results, as defined, can have a value ranged from negative infinity to infinity (even though not all regression problems use that entire range. For example, imagine predicting a football player's salary: it wouldn't be negative and it has a cap to how high it could go).
 
-Classification is used when the predicted values (class labels) are not greater or lesser than each other. Logically this makes sense, but since must classification problems are binary (0 or 1), and 1 is technically greater than 0... wouldn't it make sense to apply the concept of a regression to solve classification? How might we contain those bounds? 
+Classification is used when the predicted values (class labels) are not greater or less than each other. Logically this makes sense, but since most classification problems are binary (0 or 1), and 1 is technically greater than 0... wouldn't it make sense to apply the concept of a regression to solve classification? How might we contain those bounds? 
 
-Below we'll review some approaches to regression that will make solving classification more feasible.
+Below we'll review some approaches to regression that will make solving for classification more feasible.
 
 ### Fix 1: Probability
 
-One approach we could take is predicting the probability that an observation belongs to a certain class. We could assume that the _prior_ probability (the _bias_) of a class is the class distribution. For example, if we know that roughly 700 people from the Titanic survived out of 2200 total, then without knowing anything about the passengers and crew, the probability of survival would be ~0.32 (32%). However, we still need a way to use a linear function to either increase or decrease the probability of an individual, given any additional data we know about them.
+One approach is to predict the probability that an observation belongs to a certain class. We could assume that the _prior_ probability (the _bias_) of a class is the class distribution. For example, if we know that roughly 700 people from the Titanic survived out of 2200 total, then without knowing anything about the passengers and crew, the probability of survival would be ~0.32 (32%). However, we still need a way to use a linear function to either increase or decrease the probability of an individual, given any additional data we know about them.
 
-> **Check**: This prior probability is most similar to which value in the ordinary least squares formula?
+**Check**: This prior probability is most similar to which value in the ordinary least squares formula?
 
 > Answer: Alpha, or the y-intercept
 
@@ -79,8 +81,9 @@ One approach we could take is predicting the probability that an observation bel
 
 Another advantage to Ordinary Least Squares is that it allows for _generalized_ models using a _link_ function. Link functions allow us to build a relationship between a linear function and the mean of a distribution.
 
-> **Check**: What was the distribution most aligned with OLS/Linear Regression?
-    > Answer: The Normal Distribution
+**Check**: What was the distribution most aligned with OLS/Linear Regression?
+
+> Answer: The Normal Distribution
 
 For classification, we need a distribution associated for categories: the probability of a given event, given all events. The link function that best allows for this is the _logit_ function, which is the inverse of the _sigmoid_ function.
 
@@ -107,7 +110,7 @@ As mentioned above, the _logit_ function is the inverse of the _sigmoid_ functio
 
 Here, the value within the natural log (`p / (1 - p)`) represents _odds_. Taking the natural log of odds generates _log odds_ (hence, logit). The beauty of the logit function is that it allows for values between negative infinity and infinity, but provides us probabilities between 0 and 1.
 
-> **Check:** why is this important? What does this remind us of?
+**Check:** why is this important? What does this remind us of?
 
 For example, a logit value (log odds) of .2 (or odds of ~1.2/1):
 
