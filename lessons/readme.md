@@ -4,11 +4,11 @@
 
 ## _CURRENTLY UNDER CONSTRUCTION_
 
-> Timeline: _Lessons 10 - 18 will be complete by mid-February._
+> Timeline: _Lessons 1-12 are complete. Lessons 12 - 18 will be complete by February 11th._
 
 Our lessons contain objectives, prerequisites, sugggested datasets, starter and solution code, and other instructional resources, tying into the overall competencies for each unit. See below for a complete description of all the lesson planning material we provide.
 
-> Instructors should review our [preparatory instructions](../resources/instructor-resources/instructor-prep.md) or read up on our [feedback guidelines](../resources/instructor-resources/course-feedback-guidelines.md) to find out how we provide feedback to students.
+> Instructors should review our [preparatory instructions](../resources/instructor-resources/instructor-prep.md) or read up on our [feedback guidelines](../projects/project-feedback.md) for debriefing student assignments.
 
 
 General Assembly's Data Science course is made up of 20 lessons that are 3 hours each. This course is split into 3 units.
