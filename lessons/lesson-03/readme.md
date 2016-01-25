@@ -27,9 +27,9 @@ DS | Lesson 3
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
-- Gather materials needed for class
-- Complete prep work required
-- Prepare any specific instructions
+- Review [project feedback guidelines](../../projects/project-feedback.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-3.md)
+- Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
