@@ -27,9 +27,10 @@ DS | Lesson 2
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+- Review [Unit Project 1](../../projects/unit-projects/project-1/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-2.md)
+- Add to the "Additional Resources" section for this lesson
+
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -38,10 +39,10 @@ DS | Lesson 2
 | 10 min  | [Introduction](#introduction1)   | The why's and how's of a good question |
 | 10 min  | [Demo](#demo1)  | Diagraming a high quality aim |
 | 10 min  | [Lecture](#lecture1)  | Types of datasets |
-| 10 min  | [Guided Practice](#guidedpractice)  | Write a research question with raw data |
+| 10 min | [Guided Practice](#guidedpractice)  | Write a research question with raw data |
 | 5 min  | [Knowledge Check](#review1)  | Section 1 Review |
 | 5 min  | [Introduction](#introduction2)   | Datascience workflow steps 2. Acquire and 3. Parse |
-| 10 min | [Demo](#demo2)   | Walkthrough Acquire and Parse with Pandas |
+| 10 min | [Demo](#demo2)  | Walkthrough Acquire and Parse with Pandas |
 | 30 min | [Codealong](#codealong)  | Pandas Intro |
 | 5 min  | [Introduction](#introduction3)  | Lab Walkthrough  |
 | 20 min  | [Independent Practice](#lab)  | Lesson 2 lab |
