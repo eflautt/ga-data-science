@@ -1,3 +1,8 @@
+| Title | Duration | Name | City |
+| --- | --- | --- | --- |
+| Title of Lesson | "3:00" | John Doe | NYC |
+
+
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the learning objectives measurable?
@@ -34,11 +39,6 @@
 
 ---
 
-| Title | Duration | Name | City |
-| --- | --- | --- | --- |
-| Title of Lesson | "3:00" | John Doe | NYC |
-
----
 
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title
