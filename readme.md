@@ -4,7 +4,7 @@
 
 Welcome to Data Science 2.0! We are building a global community of lifelong learners who are excited about using data to solve real world problems. Here is our timeline:
 
-- **Feb 1**: Lesson Build Complete
+- **Feb 11**: Lesson Build Complete
 - **Feb 29th**: Lesson QA Complete
 
 
