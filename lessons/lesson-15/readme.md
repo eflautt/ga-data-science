@@ -1,4 +1,4 @@
----
+i---
 title: Timeseries Analysis
 duration: "3:00"
 creator:
@@ -138,6 +138,7 @@ To compute autocorrelation, we fix a 'lag', k, which is how many timepoints earl
 
 <a name="code1"></a>
 ## Demo/Codealong: Exploring Rossmann Drug Store Sales Data (10 mins)
+> INSTRUCTOR NOTE: The data setup and examples of Pandas functionality are in this README as well the starter/solution code notebook.
 
 We will be using data made available by a German drugstore, Rossmann. This data contains the daily sales made at the drugstore as well as whether there was a sale or holiday on that data.
 
@@ -148,7 +149,7 @@ As with previous datasets, we can use Pandas to load our data.
 ```python
 import pandas as pd
 
-data = pd.read_csv('./train.csv', skipinitialspace=True)
+data = pd.read_csv('../assets/data/rossmann.csv', skipinitialspace=True)
 
 ```
 
@@ -265,6 +266,8 @@ As with correlation between different variables, as this number moves closer to 
 
 **Check:** What does the autocorrelation values of Sales and Customers imply about our data.
 
+> Here we are looking for a discussion of the dependence of a certain value, sales, on a previous day's sales. There seems be some dependence day to day, but also year to year.
+
 
 #### Aggregates of sales over time
 
@@ -367,7 +370,7 @@ computes the sum of average sales per store up until that date.
 
 
 <a name="ind-practice"></a>
-> NOTE: The solution code for these are below.
+> INSTRUCTOR NOTE: The solution code for these are below as well in the solution code notebook.
 
 1. Plot the distribution of sales by month and compare the effect of promotions
 1. Are sales more correlated with the prior date, a similar date last year, or a similar date last month?
