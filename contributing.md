@@ -14,11 +14,11 @@ At the end of each lesson, if you discover:
 
 ### Pull Requests
 
-All PRs should be submitted from a feature branch on your local fork, straight to *generalassembly/wdi/master*.
+All PRs should be submitted from a feature branch on your local fork, straight to *generalassembly-studio/ds-curriculum*.
 
-Before submitting a pull request, please make sure your local feature branch is up to date with generalassembly/wdi/master:
+Before submitting a pull request, please make sure your local feature branch is up to date with ds-curriculum/master:
 
-    $ git remote add upstream git@github.com:generalassembly-studio/dat-curriculum
+    $ git remote add upstream git@github.com:generalassembly-studio/ds-curriculum
     $ git fetch --all
     $ git checkout -b my-feature-branch upstream/master
 
