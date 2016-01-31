@@ -56,7 +56,7 @@ When it is not - we often need to focus on identifying the aspects of the data t
 
 Typically, our time series data will be a sequence of values and we will be interested in studying the changes in this series and how related the individual values are. How much does this weeks sales effect next weeks? How much does today's stock price effect tomorrow's.
 
-**Check** Have the students identify time components of previous datasets used in class. For example, the `stumbleupon` dataset. This is a collection of news stories and we are predicting which are ever-lasting. One piece of this is identifying current events stories, so it's likely we will have to retrain our model over time. In a previous regressions on sports statistics or salaries, we likely could include a time component if we have many measurements over a long time horizon.
+> **Check** Have the students identify time components of previous datasets used in class. For example, the `stumbleupon` dataset. This is a collection of news stories and we are predicting which are ever-lasting. One piece of this is identifying current events stories, so it's likely we will have to retrain our model over time. In a previous regressions on sports statistics or salaries, we likely could include a time component if we have many measurements over a long time horizon.
 
 Time series analysis is useful for sales analysis, stock market trends, studying economic phenomena as well social science problems such as crime prediction.
 
@@ -84,7 +84,7 @@ Lastly, searches for 'iphone', have both a general trend upwards (indicating mor
 
 Most often, we are interested in studying the _trend_ and not the seasonal fluctuations. Therefore it is important to identify whether we think a change in our time series is due to an ongoing trend or a seasonal change.
 
-**Check** Discuss one or two more time-series examples - identify trends and seasonal patterns. Using [Google trends](https://www.google.com/trends/) for this is a nice way to generate these.
+> **Check** Discuss one or two more time-series examples - identify trends and seasonal patterns. Using [Google trends](https://www.google.com/trends/) for this is a nice way to generate these.
 
 - [](https://www.google.com/trends/explore#q=superbowl)
     - Seasonal pattern, with no real growth upward
@@ -96,8 +96,6 @@ Most often, we are interested in studying the _trend_ and not the seasonal fluct
     - Trend downward in the use of neural networks, but upward in the use of deep learning
 
 
-**Check** 
-
 <a name="introduction-timeseries-analysis"></a>
 ## Intro: Common analysis for time series data (20 mins)
 
@@ -108,7 +106,7 @@ Most often, we are interested in studying the _trend_ and not the seasonal fluct
 
  ![](assets/images/single_moving_avg_fit.gif)
 
-**Check:** What would a moving (rolling) mean indicate vs. a moving (rolling)median.
+> **Check:** What would a moving (rolling) mean indicate vs. a moving (rolling)median.
 
 A rolling mean would average all values in the window, but can be skewed by outliers (extremely small or large values). This may be useful if we are looking to identify atypical periods or we want evaluate these odd periods. For example, we do want to reward holiday periods or more negatively view slumps or closures. The rolling median would provide the 50% percentile value for the period and perhaps more representative of a 'typical' day.
 
@@ -122,8 +120,7 @@ While this statistic weights all data evenly, it may make more sense to weight d
 
 A common weighting scheme is an _exponential weighted moving average_, where we add in a _decay_ term, and give less and less weight to further data points.
 
-To compute this value, suppose, we have value `v_1, ..., v_N`, and we want to compute a lag `k` average at time `T`. To start, we fix a decay value \alpha.
-Then, we recursively compute the exponential weighted moving average.
+To compute this value, suppose, we have value `v_1, ..., v_N`, and we want to compute a lag `k` average at time `T`. To start, we fix a decay value \alpha. Then, we recursively compute the exponential weighted moving average.
 
 Start with: `M_0 = v_(T-k)`
 Then: `M__i = (1-\alpha) * M_(i-1) + v_(T - k + 1)`
@@ -142,7 +139,7 @@ To compute autocorrelation, we fix a 'lag', k, which is how many timepoints earl
 ## Demo/Codealong: Exploring Rossmann Drug Store Sales Data (10 mins)
 > INSTRUCTOR NOTE: The data setup and examples of Pandas functionality are in this README as well the starter/solution code notebook.
 
-We will be using data made available by a German drugstore, Rossmann. This data contains the daily sales made at the drugstore as well as whether there was a sale or holiday on that data.
+We will be using data made available by a German drugstore, Rossmann. This data contains the daily sales made at the drugstore as well as whether there was a sale or holiday affecting the sales data.
 
 #### Loading the data
 
@@ -165,13 +162,13 @@ data['Year'] = data.index.year
 data['Month'] = data.index.month
 ```
 
-This allows us to easily filter, by date as well. For example, to a particular year
+This allows us to easily filter, by date as well. For example, to a particular year:
 
 ```python
 data['2014']
 ```
 
-or to a particular month
+or to a particular month:
 
 ```python
 data['2015-05']
@@ -198,7 +195,7 @@ sb.factorplot(
 )
 ```
 
-**Check:** Have the students check if there is a difference on sales on promotion days.
+> **Check:** Have the students check if there is a difference on sales on promotion days.
 
 We can see that there _is_ a difference in sales on promotion days.
 
@@ -245,7 +242,7 @@ store1_open_data[['Customers']].plot()
 
 We can see that there are large spikes of sales and customers towards end of 2013 and 2014 leading into the first quarter of 2014 and 2015.
 
-**Check:** Have the students use the index filtering to filter just 2015 to zoom-in on changes over time. This should make it easier to identify the holiday sales bump.
+> **Check:** Have the students use the index filtering to filter just 2015 to zoom-in on changes over time. This should make it easier to identify the holiday sales bump.
 
 ```python
 store1_data_2015 = store1_data['2015']
@@ -266,9 +263,9 @@ data['Sales'].resample('D', how='mean').autocorr(lag=1)
 
 As with correlation between different variables, as this number moves closer to 1 the data is more correlated.
 
-**Check:** What does the autocorrelation values of Sales and Customers imply about our data.
+> **Check:** What does the autocorrelation values of Sales and Customers imply about our data?
 
-> Here we are looking for a discussion of the dependence of a certain value, sales, on a previous day's sales. There seems be some dependence day to day, but also year to year.
+> Instructor's Note: Here we are looking for a discussion of the dependence of a certain value, sales, on a previous day's sales. There seems be some dependence day to day, but also year to year.
 
 
 #### Aggregates of sales over time
@@ -324,7 +321,7 @@ As we discussed earlier, this averages all values in the window evenly, while we
 pd.ewma(data['Sales'], span=10)
 ```
 
-**Check:** Have the student discuss the differences in the plot between the 10-day moving average vs the 10 day exponentially weighted moving average.
+> **Check:** Have the student discuss the differences in the plot between the 10-day moving average and the 10 day exponentially weighted moving average.
 
 #### Pandas Window functions
 
@@ -352,7 +349,7 @@ In the following plot of the month to month change (`diff`) in jobs from FiveThi
 
 ![](./assets/casselman-datalab-wsj2.png)
 
-#### Pandas expanding functions
+#### Pandas Expanding Functions
 
 In addition to the set of `rolling_*` functions, Pandas also provides a similar collection of `expanding_*` functions, which, instead of using a window of N values, use all values up until that time.
 
@@ -362,7 +359,7 @@ For example,
 pd.expanding_mean(data['Sales'], freq='d')
 ```
 
-computes the average sales, from the first date _until_ the date specified.
+computes the average sales, from the first date _until_ the date specified. Meanwhile,
 
 ```python
 pd.expanding_sum(data['Sales'], freq='d')
@@ -372,14 +369,14 @@ computes the sum of average sales per store up until that date.
 
 
 <a name="ind-practice"></a>
-> INSTRUCTOR NOTE: The solution code for these are below as well in the solution code notebook.
+> INSTRUCTOR NOTE: The solution code for these are below as well in the [solution code notebook]().
 
 1. Plot the distribution of sales by month and compare the effect of promotions
-1. Are sales more correlated with the prior date, a similar date last year, or a similar date last month?
-1. Plot the 15 day rolling mean of customers in the stores
-1. Identify the date with largest drop in sales from the same date in the previous month
-1. Compute the total sales up until Dec. 2014
-1. When were the largest differences between 15-day moving/rolling averages?
+2. Are sales more correlated with the prior date, a similar date last year, or a similar date last month?
+3. Plot the 15 day rolling mean of customers in the stores
+4. Identify the date with largest drop in sales from the same date in the previous month
+5. Compute the total sales up until Dec. 2014
+6. When were the largest differences between 15-day moving/rolling averages?
 HINT: Using `rolling_mean` and `diff`
 
 
@@ -398,7 +395,7 @@ sb.factorplot(
 )
 ```
 
-1. Are sales more correlated with the prior date, a similar date last year, or a similar date last month?
+2. Are sales more correlated with the prior date, a similar date last year, or a similar date last month?
 
 ```python
 # Compare the following:
@@ -411,13 +408,13 @@ average_daily_sales['Sales'].autocorr(lag=30)
 average_daily_sales['Sales'].autocorr(lag=365)
 ```
 
-1. Plot the 15 day rolling mean of customers in the stores
+3. Plot the 15 day rolling mean of customers in the stores
 
 ```python
 pd.rolling_mean(data[['Sales']], window=15, freq='D').plot()
 ```
 
-1. Identify the date with largest drop in sales from the same date in the previous month
+4. Identify the date with largest drop in sales from the same date in the previous month
 
 ```python
 average_daily_sales = data[['Sales', 'Open']].resample('D', how='mean')
@@ -435,14 +432,14 @@ average_daily_sales[average_daily_sales.Open == 1].sort(['DiffVsLastWeek'])
 The top values are Dec. 24 and then 2013-12-09 and 2013-10-14 where on average sales were 4k lower than the same day in the previous week.
 
 
-1. Compute the total sales up until Dec. 2014
+5. Compute the total sales up until Dec. 2014
 
 ```python
 total_daily_sales = data[['Sales']].resample('D', how='sum')
 pd.expanding_sum(total_daily_sales)['2014-12']
 ```
 
-Note that this is **not**
+Note that this is **NOT**
 
 ```python
 pd.expanding_sum(data['Sales'], freq='D')
@@ -450,7 +447,7 @@ pd.expanding_sum(data['Sales'], freq='D')
  
 since we do not, want to first average over stores.
 
-1. When were the largest differences between 15-day moving/rolling averages?
+6. When were the largest differences between 15-day moving/rolling averages?
 HINT: Using `rolling_mean` and `diff`
 
 ```python
@@ -475,3 +472,7 @@ Unsurprisingly, they occur at the beginning of every year after the holiday seas
 | Upcoming Projects | [Final Project, Part 3](../../projects/final-projects/03-exploratory-analysis/readme.md)
 
 ### ADDITIONAL RESOURCES
+
+- a
+- b
+- c
