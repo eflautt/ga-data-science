@@ -53,7 +53,7 @@ DS | Lesson 14
 
 This lesson will continue on natural language processing with an emphasis on _latent variable models_.
 
-In our data science workflow, we will often be MINEing datasets with a large amount of text or unstructured data. In our last class, we saw many techniques for MINEing this data, including pre-processing and building linguistic rules to uncover patterns. We could also create _classifiers_ from this unstructured data. In this class, we'll continue with methods for MINEing or REFINEing our understanding of text data by attempting to uncover structure or organization inherent in the text.
+In our data science workflow, we will often be MINING datasets with a large amount of text or unstructured data. In our last class, we saw many techniques for MINING this data, including pre-processing and building linguistic rules to uncover patterns. We could also create _classifiers_ from this unstructured data. In this class, we'll continue with methods for MINEING or REFINING our understanding of text data by attempting to uncover structure or organization inherent in the text.
 
 Many of the advances in natural language processing have been about using data to learn the rules of grammar and language and then using those tools to extract information or build classification algorithms from the text. We saw these tools in our last class, including:
 
@@ -261,7 +261,7 @@ is a topic mostly related to fashion and style.
 <a name="introduction-word2vec"></a>
 ## Introduction: Word2Vec (20 mins)
 
-`Word2Vec` is another unsupervised model for latent variable natural language processing. It is a model that was orginally released by Google (https://code.google.com/p/word2vec/) and further improved at Stanford (http://nlp.stanford.edu/projects/glove/)
+`Word2Vec` is another unsupervised model for latent variable natural language processing. It is a model that was [orginally released by Google](https://code.google.com/p/word2vec/) and further [improved at Stanford](http://nlp.stanford.edu/projects/glove/)
 
 This model creates *word vectors*, which are multi-dimensional representations of word.  It is very similar to having a distribution of concepts or topics that the word may come from.
 
