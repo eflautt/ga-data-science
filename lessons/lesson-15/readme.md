@@ -1,4 +1,4 @@
-i---
+---
 title: Timeseries Analysis
 duration: "3:00"
 creator:
@@ -7,7 +7,7 @@ creator:
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
-Week # | Lesson 15
+DS | Lesson 15
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -33,8 +33,7 @@ Week # | Lesson 15
 | 60 min  | [Demo/Codealong](#code1)  | Demo/Codealong: Exploring Rossmann Drug Store Sales Data |
 | 35 min  | [Independent Practice](#ind-practice)  | Timeseries Exercises |
 | 20 min  | [Independent Practice/Review](#ind-practice-review)  | Review: Timeseries Exercises|
-
-| 5 min  | [Conclusion](#conclusion)  |  |
+| 5 min  | [Conclusion](#conclusion)  | Review Lesson |
 
 ---
 <a name="opening"></a>
@@ -470,5 +469,6 @@ Unsurprisingly, they occur at the beginning of every year after the holiday seas
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
+| Upcoming Projects | [Final Project, Part 3](../../projects/final-projects/03-exploratory-analysis/readme.md)
 
 ### ADDITIONAL RESOURCES
