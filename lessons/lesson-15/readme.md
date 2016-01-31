@@ -347,7 +347,7 @@ This would compute the difference in sales, from every day to the same day in pr
 
 In the following plot of the month to month change (`diff`) in jobs from FiveThiryEight helps identify the seasonal component of the number of retail jobs. 
 
-![](./assets/casselman-datalab-wsj2.png)
+![](./assets/images/casselman-datalab-wsj2.png)
 
 #### Pandas Expanding Functions
 
