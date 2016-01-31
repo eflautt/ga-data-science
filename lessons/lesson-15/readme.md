@@ -104,15 +104,15 @@ Most often, we are interested in studying the _trend_ and not the seasonal fluct
 
  The formula for a rolling _mean_ is below:
 
- ![](assets/images/single_moving_avg_fit.gif)
+ ![](./assets/images/single_moving_avg_fit.gif)
 
-> **Check:** What would a moving (rolling) mean indicate vs. a moving (rolling)median.
+> **Check:** What would a moving (rolling) mean indicate vs. a moving (rolling) median?
 
 A rolling mean would average all values in the window, but can be skewed by outliers (extremely small or large values). This may be useful if we are looking to identify atypical periods or we want evaluate these odd periods. For example, we do want to reward holiday periods or more negatively view slumps or closures. The rolling median would provide the 50% percentile value for the period and perhaps more representative of a 'typical' day.
 
 In the following plot from FiveThirtyEight, they have plotted the 30-day moving average of the Economic Uncertainty Index.
 
-![](./assets/images/flowers-datalab-policy-2.png)
+![](./assets/images/flowers-datalab-policy-2.gif)
 
 Plotting the moving average allows us to more easily visualize trends, by smoothing out random fluctuations and removing outliers.
 
@@ -130,7 +130,7 @@ Finishing with: `M = M_T = (1-\alpha) * M_(T-1) + v_T`
 
 While in previous classes we have been concerned with how correlated two variables are: height and weight, education and salary - autocorrelation is how correlated a variable is with itself. Specifically, how related are variables earlier in time with variables later in time.
 
-![](assets/images/autocorrelation.gif)
+![](./assets/images/autocorrelation.gif)
 
 To compute autocorrelation, we fix a 'lag', k, which is how many timepoints earlier should we use to compute the correlation. With a lag of 1 of we compute how correlated a value is with the prior one and with a lag of 10, we compute how correlated a variable is with one 10 time points earlier.
 
