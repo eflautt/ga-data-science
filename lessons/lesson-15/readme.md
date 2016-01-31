@@ -22,7 +22,10 @@ DS | Lesson 15
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-
+- Review [Final Project, pt. 3](../../projects/final-projects/03-exploratory-analysis/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-15.md)
+- Read through datasets and starter/solution code
+- Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
