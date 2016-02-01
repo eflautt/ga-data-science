@@ -3,7 +3,7 @@ import spacy
 from spacy.en import English
 
 # Gensim is used for LDA and word2vec
-from gensim import Word2Vec
+from gensim.models.word2vec import Word2Vec
 
 # Solution for 1a/b
 # Write a function that can take a take a sentence parsed by `spacy` and 
@@ -37,7 +37,7 @@ def mentions_country(parsed, country):
 
 if __name__ == '__main__':
     # Loading the tweet data
-    tweets = [tweet for tweet in open('../../assets/data/captured-tweets.txt', 'r')]
+    tweets = [unicode(tweet, errors='ignore') for tweet in open('../../assets/dataset/captured-tweets.txt', 'r')]
 
     # Setting up spacy
     nlp_toolkit = English()
@@ -95,7 +95,7 @@ if __name__ == '__main__':
     for tweet in tweets:
         parsed = nlp_toolkit(tweet)
 
-        similarity_to_iran = max([model.similarity('Iran', tok.text) for tok in parsed if tok.text in model.vocab], default=0)
-        similarity_to_war = max([model.similarity('war', tok.text) for tok in parsed if tok.text in model.vocab], default=0)
+        similarity_to_iran = max([model.similarity('Iran', tok.text) for tok in parsed if tok.text in model.vocab], 0)
+        similarity_to_war = max([model.similarity('war', tok.text) for tok in parsed if tok.text in model.vocab], 0)
         if similarity_to_iran > 0.75 and similarity_to_war > 0.75:
             print(similarity_to_iran, similarity_to_war, tweet)
