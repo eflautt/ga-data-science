@@ -85,12 +85,12 @@ For this project we will be using an IPython notebook. This notebook will use ma
 
 - Read in your dataset
 - Try out a few pandas commands for describing your data:
-  - 'df['dataframeName'].describe(),'
-  - 'df['columnName'].sum(),'
-  - 'df['columnName'].mean(),'
-  - 'df['columnName'].count(),'
-  - 'df['columnName'].skew(),'
-  - 'df.corr()'
+  - `df['dataframeName'].describe(),`
+  - `df['columnName'].sum(),`
+  - `df['columnName'].mean(),`
+  - `df['columnName'].count(),`
+  - `df['columnName'].skew(),`
+  - `df.corr()`
 - **Read the docs for Pandas.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a data scientist.
 
 #### Past Projects
