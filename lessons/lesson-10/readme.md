@@ -45,8 +45,10 @@ DS | Lesson 10
 ---
 
 <a name="opening"></a>
-## Opening (5 mins)
+## Opening: We Built A Model (5 mins)
 #### We built a model! Now what?
+
+Congrats! You've been building models. But now there is a major stepping stone between your Jupyter notebooks, some matplotlib figures, and the inevitable PowerPoint that will be presented in front of your colleagues.
 
 Classes so far have heavily focused on two core concepts: developing consistent practice with pandas, matplotlib, and sklearn, and interpreting metrics that help evaluate the performance of models. But what does this really mean to the end user? Imagine user responses to some of the following statements:
 
@@ -56,11 +58,6 @@ Classes so far have heavily focused on two core concepts: developing consistent 
 4. Here's the AUC chart that shows how good the model did.
 
 How could your stakeholders respond? How do you respond back?
-
-<a href='#opening'></a>
-## Opening: We Built A Model
-
-Congrats! You've been building models. But now there is a major stepping stone between your Jupyter notebooks, some matplotlib figures, and the inevitable PowerPoint that will be presented in front of your colleagues.
 
 Recall that in the business setting, you are often the only mathematician/statistician/engineer who can interpret what you've built. Typically it is more common now for others to be at least familiar with basic data visualizations, but the expectation is there will be a lot of "hand holding," especially if your team has _never_ worked with data scientists before.
 
@@ -73,6 +70,8 @@ Let's review the confusion matrix:
 
 ![](assets/images/confusion_matrix.png)
 
+Confusion matrices, for a binary classification problem, allow for the interpretation of correct and incorrect predictions for _each class label_. Remember, the confusion matrix is the beginning to the majority of classification metrics, and gives our predictions deeper meaning beyond an accuracy score.
+
 **Recall** How do we calculate the following metrics?
 
 1. Accuracy
@@ -82,9 +81,11 @@ Let's review the confusion matrix:
 <a href='#intro-precision-recall'></a>
 ## Intro: Precision and Recall
 
+![](assets/images/precision-recall-scatter.png)
+
 Our previous metrics primarily were designed for less biased data problems: we could be interested in both outcomes, so it was important to generalize our approach. Precision and Recall, additional metrics built off the confusion matrix, focus instead on _information retrieval_, particularly when one class label is more interesting than another. With _precision_, we're interested in producing a high amount of relevancy instead of irrelevancy; with _recall_, we're interesting in seeing how a model could return relevant data (literally, can the model _recall_ what a class label looked like).
 
-**Recall** (pun not intended): If the metric "recall" has a goal to identify as many relevant values of a class correctly, what does this metric most sound like? (Answer: TPR! It's the same!)
+**Recall** (pun not intended): If the metric "recall" has a goal to identify as many relevant values of a class correctly, which other metric do we know with the same calculation? (Answer: TPR! Same calculation!)
 
 #### Breaking It Down and Math
 
@@ -102,28 +103,37 @@ Using the same example: if a model predicts 8 of the green marbles as green, the
 
 ![](assets/images/precision-recall-scatter.png)
 
+**Knowledge check**: What would be the precision and recall for the following confusion matrix ("green" being "true")?
+
+             | predicted_green | predicted_not_green
+-------------|-----------------|--------------------
+is_green     | 13              | 7
+is_not_green | 8               | 12
+
+
 The key difference between the two is the attribution, and value, of an error: should our model be more picky in avoiding false positives (precision), or should it be more picky in false negatives (recall)? The answer will need to be determined by your data problem at hand.
 
 <a href='#demo-tradeoff'></a>
 ## Demo: Understanding Tradeoff
 
-Let's consider the Titanic data: we have a list of people who survived, and did not survive, the sinking of the ship. But imagine knowing those survival rates, a boatman had to specifically save those who could be saved: any he attempted to save but was not "save-able" becomes a waste of time attempting to save.
+### REWRITE WITH NEW DATA SET
 
-Optimizing toward precision, the boatman could attempt to just save everyone. The trade-off would be a lower recall (of those he saves initially, many do not survive anyway).
+Let's consider the following data problem: we are given a data set in order to predict or identify traits for typically late flights.
 
-Optimizing toward recall, the boatman would take time to specifically identify who is actually save-able: the trade-off here would be lower precision (he might miss people that could have been saved).
+Optimizing toward precision, we could assume that every flight will be delayed. The trade off, which would be a lower recall, would be that this could create even further delays, missed flights, etc.
 
-Below includes a sample plot that shows how precision and recall are related for a model used to predict Titanic survivors:
+Optimizing toward recall, we would be specifically looking to identify the flights that will be late, the trade-off here would be lower precision (we might miss flights that would be delayed, thus causing other strain in the system).
 
-![](assets/images/titanic-precision-recall.png)
+Below includes a sample plot that shows how precision and recall are related for a model used to predict late survivors:
 
-This plot is based on choosing decision line thresholds, much like the AUC figure from the previous class. In terms of the Titanic model, this would be like moving the decision line for survival from 0.01 up to 0.99, and then calculating the precision and recall at each decision.
+![](assets/images/delays-precision-recall.png)
 
-There's a few interesting nuggets from interpreting this:
+This plot is based on choosing decision line thresholds, much like the AUC figure from the previous class. In terms of the delays model, this would be like moving the decision line for lateness from 0.01 up to 0.99, and then calculating the precision and recall at each decision.
 
-1. There an odd effect where recall is close to 0.
-2. There is a noticeable drop in precision where recall ~.45
-3. precision once again drops immensely when recall is beyond .8.
+There's a few interesting nuggets from interpreting this, compared to the benchmark (blue)
+
+1. At a lower recall (below .2), there is a noticeable lower precision in the model.
+2. Beyond .2 recall, the model outperforms the benchmark.
 
 Depending on optimizing for recall or precision, this plot will help decide on that threshold.
 
@@ -197,7 +207,7 @@ You're encouraged to explore in more detail the various attributes of plotting, 
 
 One effective way to explain your model over particular variables is to plot the predicted variables against the most explanatory variables. For example, with logistic regression, plotting the probability of a class against a variable can help explain the range of effect on the model.
 
-Let's use the data from the college admissions problem as an example:
+Let's use flight delay data as an example:
 
 ```python
 # read in the file and generate a quick model (assume we've done the data exploration already)
@@ -206,31 +216,33 @@ import pandas as pd
 import sklearn.linear_model as lm
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('../assets/collegeadmissions.csv')
+df = pd.read_csv('../../assets/dataset/flight_delays.csv')
 
-df = df.join(pd.get_dummies(df['rank'], prefix='rank'))
+df = df.join(pd.get_dummies(df['DAY_OF_WEEK'], prefix='dow'))
+df = df[df.DEP_DEL15.notnull()].copy()
 
 model = lm.LogisticRegression()
-model.fit(df[['rank', 'gre']], df['admit'])
+features = ['dow_1', 'dow_2', 'dow_3', 'dow_4', 'dow_5', 'dow_6']
+model.fit(df[features + ['CRS_DEP_TIME']], df['DEP_DEL15'])
 
-df['probability'] = model.predict_proba(df[['rank', 'gre']]).T[1]
+df['probability'] = model.predict_proba(df[features + ['CRS_DEP_TIME']]).T[1]
 
 ax = plt.subplot(111)
-colors = ['blue', 'green', 'red', 'purple']
+colors = ['blue', 'green', 'red', 'purple', 'orange', 'brown']
 for e, c in enumerate(colors):
-    df[df['rank'] == e+1].plot(x='gre', y='probability', kind='scatter', color = c, ax=ax)
+    df[df[features[e]] == 1].plot(x='CRS_DEP_TIME', y='probability', kind='scatter', color = c, ax=ax)
 
-ax.set(title='Probability of Admission\n Based on GRE and School Rank')
+ax.set(title='Probability of Delay\n Based on Day of Week and Time of Day')
 ```
 
 ![Plotting Probabilities](assets/images/plotting_proba.png)
 
-A visual like this can help showcase the range of effect on admittance from the school's rank, and how a near perfect GRE score can have roughly the same probability of admittance for one ranking of a school, compared to a low GRE score for another.
+A visual like this can help showcase the range of effect on delays from the both the day of week and the time of day: given this model, some days are more likely to have delays than others, and likelihood of a delay increases as the day goes on.
 
 ### Try it out
 
-1. Adjust the model to predict using rank and GPA, then plot its effect on admit=1.
-2. Try plotting the inverse: pick either model and plot the effect on admit=0.
+1. Adjust the model to predict using airlines instead of day of week, and time, then plot its effect on CRS_DEP_TIME=1.
+2. Try plotting the inverse: pick either model and plot the effect on CRS_DEP_TIME=0.
 
 #### Visualizing Performance Against Baseline
 
@@ -248,46 +260,35 @@ Below, we've plotted several models for AUC: a dummy model, and adding features 
 
 ```python
 model0 = dummy.DummyClassifier()
-model0.fit(df[['rank']], df['admit'])
-df['probability_0'] = model0.predict_proba(df[['rank']]).T[1]
+model0.fit(df[features[1:-1]], df.DEP_DEL15)
+df['probability_0'] = model0.predict_proba(df[features[1:-1]]).T[1]
 
-model1 = lm.LogisticRegression()
-model1.fit(df[['rank']], df['admit'])
-df['probability_1'] = model1.predict_proba(df[['rank']]).T[1]
 
-model2 = lm.LogisticRegression()
-model2.fit(df[['rank', 'gpa']], df['admit'])
-df['probability_2'] = model2.predict_proba(df[['rank', 'gpa']]).T[1]
-
-model3 = lm.LogisticRegression()
-model3.fit(df[['rank', 'gpa', 'gre']], df['admit'])
-df['probability_3'] = model3.predict_proba(df[['rank', 'gpa', 'gre']]).T[1]
+model = lm.LogisticRegression()
+model.fit(df[features[1:-1]], df.DEP_DEL15)
+df['probability_1'] = model.predict_proba(df[features[1:-1]]).T[1]
 
 ax = plt.subplot(111)
-vals = metrics.roc_curve(df.admit, df.probability_0)
+vals = metrics.roc_curve(df.DEP_DEL15, df.probability_0)
 ax.plot(vals[0], vals[1])
-vals = metrics.roc_curve(df.admit, df.probability_1)
-ax.plot(vals[0], vals[1])
-vals = metrics.roc_curve(df.admit, df.probability_2)
-ax.plot(vals[0], vals[1])
-vals = metrics.roc_curve(df.admit, df.probability_3)
+vals = metrics.roc_curve(df.DEP_DEL15, df.probability_1)
 ax.plot(vals[0], vals[1])
 
-ax.set(title='Area Under the Curve for prediction admit=1', ylabel='TPR', xlabel='FPR')
+ax.set(title='Area Under the Curve for prediction delayed=1', ylabel='TRP', xlabel='FRP', xlim=(0, 1), ylim=(0, 1))
 ```
 
 ![](assets/images/auc_curve.png)
 
 This plot showcases:
 
-1. All models using data outperform a baseline dummy model.
-2. There's some give and take with probability as the model gets more complicated: for example, the purple, most complicated model outperforms at some points, but underperforms at others.
+1. The model using data outperforms a baseline dummy model.
+2. By adding other features, there's some give and take with probability as the model gets more complicated. Try adding additional features (such as time of day) and compare models.
 
 ### Try it out
 
 1. In a similar approach, use the sklearn precision_recall_curve function to enable you to plot the precision-recall curve of the four models from above.
     * Keep in mind precision in the first array returned from the function, but in the plot, is the y-axis.
-2. Explain what is occurring when the recall is below 0.2 for all models.
+2. Explain what is occurring when the recall is below 0.2.
 3. Based on this performance, is there a clear winner at different thresholds?
 
 **bonus** Redo both the AUC and precision-recall curves but using models that have been cross validated using kfold. How do these new figures change your expectations on performance?
@@ -295,9 +296,9 @@ This plot showcases:
 <a href='#ind-practice-projects'></a>
 ## Independent Practice: Project Practice
 
-Using models built from the Titanic problem earlier in class, work through the same problems. Your data and models should already be accessible. Your goals:
+Using models built from the flight data problem earlier in class, work through the same problems. Your data and models should already be accessible. Your goals:
 
-1. You should have at least three visuals that clearly explain the relationship of variables you've used against the predictive survival value.
+1. There are _many_ ways to manipulate this data set. Consider what is a proper "categorical" variable, and keep _only_ what is significant. You will easily have 20+ variables. Aim to have at least three visuals that clearly explain the relationship of variables you've used against the predictive survival value.
 2. Generate the AUC or precision-recall curve (based on which you think makes more sense), and have a statement that defines, compared to a baseline, how your model performs, and its caveats. For example: "My model on average performs at x rate, but the features under-perform and explain less of the data at these thresholds."
 
 Consider this as practice to approaching your own project, as the steps to presentation should be relatively similar.
