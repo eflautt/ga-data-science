@@ -6,7 +6,7 @@
 
 > Timeline: _Lessons 1-12 are complete. Lessons 12 - 18 will be complete by February 11th._
 
-Our lessons contain objectives, prerequisites, sugggested datasets, starter and solution code, and other instructional resources, tying into the overall competencies for each unit. See below for a complete description of all the lesson planning material we provide.
+Our lessons contain objectives, prerequisites, suggested datasets, starter and solution code, and other instructional resources, tying into the overall competencies for each unit. See below for a complete description of all the lesson planning material we provide.
 
 > Instructors should review our [preparatory instructions](../resources/instructor-resources/instructor-prep.md) or read up on our [feedback guidelines](../projects/project-feedback.md) for debriefing student assignments.
 
@@ -83,7 +83,7 @@ Lesson plans are organized as follows:
   - _Topic - Demo or Codealong_: Walkthrough
   - _Topic - Guided Practice_: Short practice activity
   - _Topic - Independent Practice_: Summative activity with deliverable(s)
-  - _Conclusion_: Lesson & Lab Review, QA, Exit Tickets 
+  - _Conclusion_: Lesson & Lab Review, QA, Exit Tickets
 7. **Upcoming Assignments**: Homework or Projects
 8. **Additional Resources**: Links that you should feel free to add to or supplement
 
