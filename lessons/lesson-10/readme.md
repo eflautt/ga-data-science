@@ -116,8 +116,6 @@ The key difference between the two is the attribution, and value, of an error: s
 <a href='#demo-tradeoff'></a>
 ## Demo: Understanding Tradeoff
 
-### REWRITE WITH NEW DATA SET
-
 Let's consider the following data problem: we are given a data set in order to predict or identify traits for typically late flights.
 
 Optimizing toward precision, we could assume that every flight will be delayed. The trade off, which would be a lower recall, would be that this could create even further delays, missed flights, etc.
