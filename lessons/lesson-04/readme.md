@@ -84,7 +84,7 @@ It's important that we communicate our findings in a way that doesn't overstate 
 
 
 <a name="#lecture1"></a>
-## Lecture: Causation vs Correlation (10 min)
+## Intro: Causation vs Correlation (10 min)
 
 #### Causal Criteria
 Causal criteria is one approach to assessing causal relationships, but it's very hard (nearly impossible!) to define universal *causal* criteria.
@@ -170,7 +170,7 @@ This example highlights a few key takeaways:
 
 
 <a name="introduction2"></a>
-## Introduction: Hypothesis Testing (5 mins)
+## Intro: Hypothesis Testing (5 mins)
 
 You'll remember from last time that we worked on descriptive statistics. How would we tell if there is a difference between our groups? How would we know if this difference was real or if our finding is simply due to chance? 
 
@@ -203,7 +203,7 @@ Let's dive into this more with the demo.
 
 
 <a name="introduction3"></a>
-## Validate your findings (5 mins)
+## Intro: Validate your findings (5 mins)
 How do we tell if the association we observed is *statistically significant*?
 
 *Statistical Significance* is the likelihood that a result or relationship is caused by something other than mere random chance. Statistical hypothesis testing is traditionally employed to determine if a result is statistically significant or not. 
@@ -237,7 +237,7 @@ You will also get practice looking at the output and understanding how the model
 
 
 <a name="wrapup"></a>
-## Project Questions (15 mins)
+## Conclusion: Questions (15 mins)
 
 > Instructor Note: Go over the [lab solutions](./code/solution-code/lab-solution-code-4.ipynb) with the class and clarify any confusing points or remaining questions. 
 
