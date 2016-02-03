@@ -4,7 +4,7 @@ Welcome to Data Science at General Assembly!
 
 We're all really excited that you're joining the General Assembly community. In order to ensure your success in the course, we’ve created a pre-work checklist that will take most students between 10-15 hours to complete. 
 
-Please complete [these pre-work items](https://gist.github.com/jessicaGA/0c7215de7f75e16f7899) before your first day so that both you and your computer will be prepared for class. In the meantime, feel free to reach out with any questions (or just to say hi)!
+Please complete these pre-work items before your first day so that both you and your computer will be prepared for class. In the meantime, feel free to reach out with any questions (or just to say hi)!
 
 ## Pre-Course Checklist
 Please complete the following by the first day of class. Feel free to shoot us an email with any questions:
@@ -17,7 +17,7 @@ Please complete the following by the first day of class. Feel free to shoot us a
 <a name="account"></a>
 ### Accounts
 
-1. [ ] Create a Github account, if you don't already have one.
+1. [ ] [Create a Github account](https://github.com/join), if you don't already have one.
 
 <a name="install"></a>
 ### Installation
@@ -35,17 +35,17 @@ Please follow the installation instructions below. If your installation is not c
 Review the following resources as an introduction to some commonly used concepts and tools.
 
 1. [ ] Complete Codecademy's free ["Learn Python"](https://www.codecademy.com/learn/python) course to practice your Python syntax. Pay close attention to lists, dictionaries, and functions.
-   * _Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10._
+   * Bonus Option: Check out [Learn Python the Hard  Way](http://learnpythonthehardway.org/book/) and work through exercises 1-10.
 
 2. [ ] Review our [Command Line](http://generalassembly.github.io/prework/cl/#/) tutorial to familiarize yourself with basic Terminal commands. Pay particular attention to folder navigation and file creation.
-   * _Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/)._
+   * Bonus Option: Run through these additional exercises from [Learn Command Line the Hard Way](http://cli.learncodethehardway.org/book/).
 
-3. [ ] Refresh your familiarity with [Probability and Statistics](https://www.khanacademy.org/math/probability) by reviewing sample materials from this Khan Academy course.
-   * _Bonus Option: Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library we'll be using for data analysis._
+3. [ ] Read through this [10 minute guide to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html) to learn about a popular library used for data analysis that we will be using in this course.
+   * Bonus Option: Practice your Python by working through [Project Euler's computational problems](https://projecteuler.net).
 
 <a name="resources"></a>
 ### Additional Resources (Optional)
-The following reading recommendations are **not** required but may supplement your learning experience:
+Consider the following reading recommendations. These are not required but may help supplement your learning experience:
 
   * [The Quick Python Book](http://www.amazon.com/Quick-Python-Book-Second-Edition/dp/193518220X)
   * [Data Analysis With Open Source Tools](http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358)
