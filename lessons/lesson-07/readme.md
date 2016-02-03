@@ -432,7 +432,7 @@ print metrics.mean_squared_error(y, lm.predict(modeldata))
 ***
 
 <a name="ind-practice"></a>
-## On your Own (30 mins)
+## Independent Practice: On your Own (30 mins)
 
 There are tons of ways to approach a regression problem. The regularization techniques appended to ordinary least squares optimizes the size of coefficients to best account for error. Gradient Descent also introduces learning rate (how aggressively do we solve the problem), epsilon (at what point do we say the error margin is acceptable), and iterations (when should we stop no matter what?)
 
