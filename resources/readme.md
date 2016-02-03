@@ -14,7 +14,7 @@ In this folder, you'll find a range of useful support materials. Here you'll fin
 
 ### For Students
 
-- [Data Science Pre-Work](//student-resources/ds-prework-student.md)
+- [Data Science Pre-Work](https://gist.github.com/jessicaGA/0c7215de7f75e16f7899)
 - [Python Self-Assessment Quiz](./student-resources/python-self-assessment.md)
 - [Course Syllabus](//student-resources/ds-syllabus.pdf)
 - [Data Science Workflow Guide](//student-resources/data-science-workflow-final.jpg)
