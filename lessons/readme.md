@@ -65,7 +65,7 @@ Each lesson folder is organized in the following pattern:
   - _Assets_
     - **Dataset**: Includes or links to the dataset(s) used during demo, guided, and independent practice
     - **Images**: Includes or links to any images referenced
-    - **Slides**: Includes and links to the baseline lesson deck for you to modify
+    - **Slides**: Links to the baseline lesson deck for you to copy and modify
 
 
 > Note: Google Slide Decks for each lesson are linked in the "slides" folder for each lesson. To open, click the link then duplicate and rename the deck. You're encouraged to make edits and add material!
