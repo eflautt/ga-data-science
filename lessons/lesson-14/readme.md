@@ -390,28 +390,43 @@ Now we'd like to do a few things:
 1. Use `spacy` to write a function to filter tweets down to those where Google is announcing a product. How might we do this? One way might be to identify verbs, where 'Google' is the noun and there is some action like 'announcing'
 
     a. Write a function that can take a sentence parsed by `spacy` and identify if it mentions a company named 'Google'. Remember, `spacy` can find entities and code them as `ORG` if they are a company.
+    
         i. **BONUS**: Make this function work for any company
-    c. Write a function that can take a sentence parsed by `spacy` and return the verbs of the sentence (preferably lemmatized)
-    d. For each tweet, parse it using `spacy` and print it out if the tweet has 'release' or 'announce' as a verb.
-    e. Write a function that identifies countries. HINT: the entity label for countries is GPE (or "GeoPolitical Entity")
-    f. Re-run (d) to find country tweets that discuss 'Iran' announcing or releasing.
+        
+    b. Write a function that can take a sentence parsed by `spacy` and return the verbs of the sentence (preferably lemmatized)
+    
+    c. For each tweet, parse it using `spacy` and print it out if the tweet has 'release' or 'announce' as a verb.
+    
+    d. Write a function that identifies countries. HINT: the entity label for countries is GPE (or "GeoPolitical Entity")
+    
+    e. Re-run (d) to find country tweets that discuss 'Iran' announcing or releasing.
 
 2. Build a `word2vec` model of the tweets we have collected using `gensim`
 
     a. First take the collection of tweets and tokenize them using `spacy`
+    
         i. Think about how this should be done. Should you only use upper-case or lower-case? Should you remove punctuations or symbols? 
+        
     b. Build a `word2vec` model
+    
         i. Test the window size as well - this is how many surrounding words need to be used to model a word. What do you think is appropriate for Twitter?
+        
     c. Test your word2vec model with a few similarity functions.
+    
         i. Find words similar to 'Syria'
+        
         ii. Find words similar to 'war'
+        
         iii. Find words similar to "Iran"
+        
         iv. Find words similar to 'Verizon'
+        
     d. Adjust the choices in (b) and (c) as necessary
 
 3. Filter tweets to those that mention 'Iran' or similar entities and 'war' or similar entities.
 
     a. Do this using just `spacy`
+    
     b. Do this using `word2vec` similarity scores
 
 
