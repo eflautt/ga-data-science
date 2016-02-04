@@ -388,6 +388,7 @@ nlp_toolkit = English()
 Now we'd like to do a few things:
 
 1. Use `spacy` to write a function to filter tweets down to those where Google is announcing a product. How might we do this? One way might be to identify verbs, where 'Google' is the noun and there is some action like 'announcing'
+
     a. Write a function that can take a sentence parsed by `spacy` and identify if it mentions a company named 'Google'. Remember, `spacy` can find entities and code them as `ORG` if they are a company.
         i. **BONUS**: Make this function work for any company
     c. Write a function that can take a sentence parsed by `spacy` and return the verbs of the sentence (preferably lemmatized)
@@ -396,6 +397,7 @@ Now we'd like to do a few things:
     f. Re-run (d) to find country tweets that discuss 'Iran' announcing or releasing.
 
 2. Build a `word2vec` model of the tweets we have collected using `gensim`
+
     a. First take the collection of tweets and tokenize them using `spacy`
         i. Think about how this should be done. Should you only use upper-case or lower-case? Should you remove punctuations or symbols? 
     b. Build a `word2vec` model
@@ -408,6 +410,7 @@ Now we'd like to do a few things:
     d. Adjust the choices in (b) and (c) as necessary
 
 3. Filter tweets to those that mention 'Iran' or similar entities and 'war' or similar entities.
+
     a. Do this using just `spacy`
     b. Do this using `word2vec` similarity scores
 
