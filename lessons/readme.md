@@ -68,6 +68,8 @@ Each lesson folder is organized in the following pattern:
     - **Slides**: Includes and links to the baseline lesson deck for you to modify
 
 
+> Note: Google Slide Decks for each lesson are linked in the "slides" folder for each lesson. To open, click the link then duplicate and rename the deck. You're encouraged to make edits and add material!
+
 ## Lesson Structure
 
 Lesson plans are organized as follows:
