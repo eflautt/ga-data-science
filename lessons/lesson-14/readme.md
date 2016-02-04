@@ -128,13 +128,13 @@ What this 'model' of text is assuming is that each document is some _mixture_ of
 
 _Latent Dirichlet Allocation_ is a model that assumes this is the way text is generated and then attempts to learn two things:
    
-    1. What is the _word distribution_ of each topic
-    2. What is the _topic distribution_ of each document
+    1. What is the _word distribution_ of each topic?
+    2. What is the _topic distribution_ of each document?
 
 The _word distribution_ is a multinomial distribution for each topic representing what words are most likely from that topic.
 
 Let's say we have 3 topics: sports, business, science.
-For each topic, we uncover the most likely words to come from them:
+For each topic, we uncover the words most likely to come from them:
 
 ```
 sports: [football: 0.3, basketball: 0.2, baseball: 0.2, touchdown: 0.02 ... genetics: 0.0001]
@@ -146,9 +146,7 @@ business: [stocks: 0.1, ipo: 0.08,  ... baseball: 0.0001]
 
 For each word and topic pair, we learn some `P ( word | topic) `
 
-The _topic distribution_ is a multinomial distribution for each document representing what topics are most likely in that document
-
-For all documents we have a distribution over {sports, science, business}
+The _topic distribution_ is a multinomial distribution for each document representing which topics are most likely to be in that document. For all documents, we then have a distribution over {sports, science, business}
 
 ```
 ESPN article: [sports: 0.8, business: 0.2, science: 0.0]
@@ -197,10 +195,10 @@ docs = cv.fit_transform(data.body.dropna())
 id2word = dict(enumerate(cv.get_feature_names()))
 ```
 
-What we want our model to learn is:
-    - What columns are correlated (likely come from the same topic)
+We want our model to learn:
+    - Which columns are correlated (i.e. likely come from the same topic)?
         This is the _word distribution_
-    - What topics are in each document
+    - Which topics are in each document?
         This is the _topic distribution_
 
 ```python
@@ -214,14 +212,14 @@ corpus = Sparse2Corpus(docs, documents_columns = False)
 lda_model = LdaModel(corpus=corpus, id2word=id2word, num_topics=15)
 ```
 
-In the model above, we need to explicitly specify the number of topics we want the model to uncover. This is usually a critical piece but unfortunately there is not a lot of guidance on the best way to select it. Having domain knowledge about your data may help.
+In the model above, we need to explicitly specify the number of topics we want the model to uncover. This is a critical step but unfortunately there is not a lot of guidance on the best way to select it. Having domain knowledge about your data may help.
 
 Once we have `fit` this model, like other unsupervised learning techniques, most of our validation techniques are mostly about interpretation.
 
 - Did we learn reasonable topics? 
 - Do the words that make up a topic make sense?
 
-We can evaluate this by viewing what the top words are topic.
+We can evaluate this by viewing the top words for each topic:
 
 `gensim` has a `show_topics` function for this.
 
@@ -235,20 +233,20 @@ for ti, topic in enumerate(lda.show_topics(num_topics = num_topics, num_words_pe
     print()
 ```
 
-While some of the concepts may not make sense, some represent clear concepts:
+While some of the concepts may not make sense, some may represent clear concepts:
 
 ```
 0.009*cup + 0.009*recipe + 0.007*make + 0.007*food + 0.006*sugar
 ```
 is a topic mostly related to cooking and recipes.
 
-As is 
+As is:
 
 ```
 0.013*butter + 0.010*baking + 0.010*dough + 0.009*cup + 0.009*sugar
 ```
 
-while 
+while:
 
 ```
 0.013*fashion + 0.006*like + 0.006*dress + 0.005*style
@@ -263,11 +261,11 @@ is a topic mostly related to fashion and style.
 
 `Word2Vec` is another unsupervised model for latent variable natural language processing. It is a model that was [orginally released by Google](https://code.google.com/p/word2vec/) and further [improved at Stanford](http://nlp.stanford.edu/projects/glove/)
 
-This model creates *word vectors*, which are multi-dimensional representations of word.  It is very similar to having a distribution of concepts or topics that the word may come from.
+This model creates *word vectors*, which are multi-dimensional representations of words. This is similar to having a distribution of concepts or topics that the word is associated with.
 
-If we take our usual document-word matrix (from `CountVectorizer`) and take it's transpose (by flipping it on it's side), instead of talking about words as being features of a document, we can talk about documents as features of a specific word. Or to put it more abstractly - how do we define or characterize a single word?
+If we take our usual document-word matrix (from `CountVectorizer`) and take its transpose (by flipping it on it's side), instead of talking about words as features of a document, we can talk about _documents as features of a specific word_. In other words, how do we define or characterize a single word?
 
-We can do so by:
+We can do this by:
 
 1) Defining it's dictionary definition, or
 2) Enumerating all the ways we might use it.
@@ -291,19 +289,18 @@ Additionally, the first few represent the *same* concept (or multiple concepts):
 1. Paris is a city like thing, so it contains shops and restaurants
 1. Paris is a capital city
 
-What we want to do is apply **dimensionality reduction** to find a few concepts per word (instead of _all_ of the possible contexts). 
+What we want to do is apply **dimensionality reduction** to find a few concepts per word (instead of looking for _all_ of the possible contexts). 
 
 In **LDA**, we could do this by identifying the topics a word was most likely to come from.
 
-In **word2vec**, we will traditionally replace the overlapping contexts by some concept that represents them.
+In **word2vec**, we will traditionally replace the overlapping contexts by some concept that represents both of them.
 
-Like other dimensionality reduction techniques, our goal is to identify correlated columns and replace them with a new column that represents those replaced.
+Like other dimensionality reduction techniques, our goal is to identify correlated columns and replace them with a new column that represents the columns we replaced.
 
-We replace columns ['_ is a city', '_ is a capital', 'I flew into _ today'] by a single column - 'IsACity' column.
+For example, we can replace columns ['_ is a city', '_ is a capital', 'I flew into _ today'] with a single column - 'IsACity' column.
 
-`word2vec` was originally presented as a deep learning model, but is more closely related to standard dimensionality reduction techniques.
 
-A common feature of `word2vec` is being able to ask what words are similar to each other. If we have data on multiple languages, a system like word2vec could also be used for translation.
+`word2vec` was originally presented as a deep learning model, but is more closely related to standard dimensionality reduction techniques. A common feature of `word2vec` is being able to ask which words are similar to each other? If we have data on multiple languages, a system like word2vec could also be used for translation.
 
 ![Word2Vec translation](./assets/images/word2vec-translation.png)
 
