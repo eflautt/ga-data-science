@@ -166,9 +166,9 @@ There are many variants as well, that attempt to incorporate more structure into
  - Supervised Topic Models
     - Guide the process with pre-decided topics
  - Position-dependent topic models
-    - Use not what words occur in what document but where they occur
+    - Ignore which words occur in what document but instead focus on _where_ they occur
  - Variable number of topics
-    - Test different number of topics and find the best model
+    - Test a different number of topics to find the best model
 
 > **Check:** Take any recent news-article and brainstorm which 3 topics this story is most likely made up of. Next, brainstorm which words are most likely derived from which of those 3 topics.
 
