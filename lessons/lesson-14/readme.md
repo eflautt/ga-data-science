@@ -161,7 +161,7 @@ For each topic and document pair, we learn some `P ( topic | document) `
 
 Topic models are useful for organizing a collection of documents and uncovering the main underlying concepts.
 
-There are many variants as well, that incorporate attempt to add more structure to the 'model'
+There are many variants as well, that attempt to incorporate more structure into the 'model'
 
  - Supervised Topic Models
     - Guide the process with pre-decided topics
