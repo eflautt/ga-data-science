@@ -404,7 +404,7 @@ Now we'd like to do a few things:
 2. Build a `word2vec` model of the tweets we have collected using `gensim`
 
     a. First take the collection of tweets and tokenize them using `spacy`
-    
+
         i. Think about how this should be done. Should you only use upper-case or lower-case? Should you remove punctuations or symbols? 
         
     b. Build a `word2vec` model
