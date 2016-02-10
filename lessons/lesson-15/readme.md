@@ -41,16 +41,22 @@ DS | Lesson 15
 ---
 <a name="opening"></a>
 ## Opening (5 min)
-In this class, we will discuss analyzing data that is changing over time. While most of our previous examples have assumed that our data was collected over time, we didn't care which data points were collected earlier or later. We had made assumptions that the data was _not_ changing over time. In this class, we will discuss statistics associated with data with that is changing over time and look at how to measure that change.
+In this class, we will discuss analyzing data that is changing over time. While most of our previous examples have assumed that our data was collected over time, we didn't care which data points were collected earlier or later. We made assumptions that the data was _not_ changing over time. 
 
-In this lesson we will focus on IDENTIFYING problems that are related to time series data and then understanding the types of questions we are interested in. Additionally, we will discuss the unique aspects of MINING and REFINING time series data.
+In this class, we will discuss statistics associated with data with that is changing over time and look at how to measure that change.
+
+Specifically, we will focus on IDENTIFYING problems that are related to time series data and then understanding the types of questions we are interested in. Additionally, we will discuss the unique aspects of MINING and REFINING time series data.
 
 <a name="introduction-timeseries"></a>
 ## Intro: What are (is) time series data? (20 mins)
 
-Time series data is any dataset where the individual data points change over time. This would be fairly common in most business data, since we expect sales to change according to the seasons and trends. You will find this property in many social phenomena as well; for example, it's been well documented that traditionally there are higher crime rates in the summer.
+Time series data is any dataset where the individual data points change over time. 
 
-To be honest, _most_ datasets likely to have an important time component, but typically we assume that it's fairly minimal. If we are attempting to analyze salaries in an industry, it's clear that salaries shift over time, depending on economic factors. But, if we are examining the problem on a smaller scale (say 3-5 years) the effect of time on salaries is much smaller than other variables, like industry or position.
+This would be fairly common in most business data, since we expect sales to change according to the seasons and trends. You will find this property in many social phenomena as well; for example, it's been well documented that traditionally there are higher crime rates in the summer.
+
+To be honest, _most_ datasets have an important time component, but we typically assume it's fairly minimal. 
+
+If we are attempting to analyze salaries in an industry, it's clear that salaries shift over time, depending on economic factors. But, if we are examining the problem on a smaller scale (say 3-5 years) the effect of time on salaries is much smaller than other variables, like industry or position.
 
 Therefore, we often need to focus on identifying the specific aspects of our data that are influenced by time and those that aren't.
 
@@ -89,14 +95,11 @@ Most often, we are interested in studying the _trend_ and not the seasonal fluct
 
 **Check** Discuss one or two more time-series examples and identify trends and seasonal patterns. [Google trends](https://www.google.com/trends/) is a nice way to generate examples.
 
-- [](https://www.google.com/trends/explore#q=superbowl)
-    - Seasonal pattern, with no real growth upward
+- [Seasonal pattern, with no real growth upward](https://www.google.com/trends/explore#q=superbowl)
 
-- [](https://www.google.com/trends/explore#q=machine%20learning)
-    - Strong trend upward over time
+- [Strong trend upward over time](https://www.google.com/trends/explore#q=machine%20learning)
 
-- [](https://www.google.com/trends/explore#q=neural%20networks%2C%20deep%20learning&cmpt=q&tz=Etc%2FGMT%2B5)
-    - Trend downward in the use of neural networks, but upward in the use of deep learning
+- [Trend downward in the use of neural networks, but upward in the use of deep learning](https://www.google.com/trends/explore#q=neural%20networks%2C%20deep%20learning&cmpt=q&tz=Etc%2FGMT%2B5)
 
 
 <a name="introduction-timeseries-analysis"></a>
