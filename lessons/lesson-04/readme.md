@@ -57,7 +57,7 @@ DS | Lesson 4
 Today we will use advertising data from an example in 
 [An Introduction to Statistical Learning by Gareth James](http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv).
 
-> Instructor Note: This is used in the demo and can be downloaded directly from the website by running that specific cell of [demo-starter notebook](./code/starter-code/guided-demo-starter-code-4.ipynb). No other files are needed.  
+> Instructor Note: This is used in the demo and can be downloaded directly from the website by running that specific cell of [demo-starter notebook](./code/starter-code/demo-starter-code-4.ipynb). No other files are needed.  
   
    
 <a name="introduction"></a>
@@ -196,7 +196,7 @@ Let's dive into this more with the demo.
 ## Demo: Hypothesis Testing Case Study (30 mins)
 > Instructor Note: Walk through the demo with students. Throughout the demo there are certain sections marked student questions. Give  students time to answer these questions individually or as a small group (2 min or so per question), then share with the class and discuss before moving on to the next question. 
 
-> Instructor Note: Have students open the [guided demo starter code](./code/starter-code/guided-demo-starter-code-4.ipynb) and move through Part 1. Answers can be found in the [demo solution code](./code/solution-code/guided-demo-solution-code-4.ipynb). 
+> Instructor Note: Have students open the [guided demo starter code](./code/starter-code/demo-starter-code-4.ipynb) and move through Part 1. Answers can be found in the [demo solution code](./code/solution-code/demo-solution-code-4.ipynb). 
 
 
 > **Check:** What is the null hypothesis? Why is this important to use?
@@ -216,11 +216,11 @@ When data scientists present results and say we found a significant result- it i
 <a name="demo2"></a>
 ## Demo: P-values & CI in the case study (20 mins)
 
-> Instructor Note: Have students open the [guided demo starter code](./code/starter-code/guided-demo-starter-code-4.ipynb) and move through Part 2. Answers can be found in the [demo solution code](./code/solution-code/guided-demo-solution-code-4.ipynb). 
+> Instructor Note: Have students open the [guided demo starter code](./code/starter-code/demo-starter-code-4.ipynb) and move through Part 2. Answers can be found in the [demo solution code](./code/solution-code/demo-solution-code-4.ipynb). 
 
 > **Check:** What does a 95% confidence interval indicate?
  
-> - Answer: If we repeated our analysis 100 times, the point estimate we found would be there 95% of the time. 
+> Answer: If we repeated our analysis 100 times, the point estimate we found would be there 95% of the time. 
 
 
 <a name="independent-practice"></a>
