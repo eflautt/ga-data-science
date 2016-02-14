@@ -26,8 +26,10 @@ DS | Lesson 10
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 
-- Review materials
-- Be familiar with the datasets
+- Review [Unit Project 4](../../projects/unit-projects/project-4/readme.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-10.md)
+- Read through datasets and starter/solution code
+- Add to the "Additional Resources" section for this lesson
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
