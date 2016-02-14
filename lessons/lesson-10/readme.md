@@ -134,7 +134,7 @@ Optimizing toward precision, we could assume that every flight will be delayed. 
 
 Optimizing toward recall, we would specifically look to identify flights that will be late. The trade-off here would be lower precision; we might miss flights that would be delayed, thus causing a strain on the system.
 
-Below is a sample plot that shows how precision and recall are related for a model used to predict late survivors:
+Below is a sample plot that shows how precision and recall are related for a model used to predict late flights:
 
 ![](assets/images/delays-precision-recall.png)
 
