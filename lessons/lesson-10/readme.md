@@ -76,7 +76,7 @@ Let's review the confusion matrix:
 
 Confusion matrices, for a binary classification problem, allow for the interpretation of correct and incorrect predictions for _each class label_. Remember, the confusion matrix is the beginning step for the majority of classification metrics, and gives our predictions deeper meaning beyond an accuracy score.
 
-**Recall** How do we calculate the following metrics?
+**Recall:** How do we calculate the following metrics?
 
 1. Accuracy
 2. True Positive Rate
