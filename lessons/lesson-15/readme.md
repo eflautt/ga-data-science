@@ -93,7 +93,7 @@ Lastly, 'iphone' searches have both a general trend upwards (indicating more pop
 
 Most often, we are interested in studying the _trend_ and not the seasonal fluctuation. Therefore, it is important to identify whether we think a change in our time series is due to an ongoing trend or a seasonal change.
 
-**Check** Discuss one or two more time-series examples and identify trends and seasonal patterns. [Google trends](https://www.google.com/trends/) is a nice way to generate examples.
+**Check:** Discuss one or two more time-series examples and identify trends and seasonal patterns. [Google trends](https://www.google.com/trends/) is a nice way to generate examples.
 
 - [Seasonal pattern, with no real growth upward](https://www.google.com/trends/explore#q=superbowl)
 
@@ -160,7 +160,7 @@ data = pd.read_csv('../assets/data/rossmann.csv', skipinitialspace=True)
 
 ```
 
-Because we are most interested in the `Date` column that contains the date of sales for each store, we will make sure to process that as a `DateTime` type, and make that the index of our dataframe.
+Because we are most interested in the `Date` column (which contains the date of sales for each store), we will make sure to process that as a `DateTime` type, and make it the index of our dataframe.
 
 ```python
 data['Date'] = pd.to_datetime(data['Date'])
@@ -294,9 +294,9 @@ data[['Sales']].resample('M', how=['median', 'mean'])
 
 Here we can see again that December 2013 and 2014 were the highest average sale months.
 
-While identifying the monthly averages are useful, we often want to compare the sales data of a date to a smaller window. To understand holidays sales, we don't want to compare sales data in late December with the entire month, but instead to a few days immediately surrounding it. We can do this using rolling averages.
+While identifying monthly averages is useful, we often want to compare the sales data of a date to a smaller window. To understand holidays sales, we don't want to compare sales data in late December with the entire month, but instead to a few days immediately surrounding it. We can do this using rolling averages.
 
-In pandas we can compute rolling average using the `pd.rolling_mean` or `pd.rolling_median` functions.
+In pandas, we can compute rolling average using the `pd.rolling_mean` or `pd.rolling_median` functions.
 
 ```python
 pd.rolling_mean(data[['Sales']], window=3, center=True, freq='D')
@@ -305,8 +305,7 @@ pd.rolling_mean(data[['Sales']], window=3, center=True, freq='D')
 This computes a rolling mean of sales using the sales on each day, the day preceding and the day following (window = 3, center=True).
 
 
-`rolling_mean` (as well as `rolling_median`) takes these important parameters:
-    - the first is the series to aggregate
+`rolling_mean` (as well as `rolling_median`) takes the series to aggregate as well as three important parameters:
     - `window` is the number of days to include in the average
     - `center` is whether the window should be centered on the date or use data prior to that date
     - `freq` is on what level to roll-up the averages to (as used in `resample`). Either `D` for day, `M` for month or `A` for year, etc.
