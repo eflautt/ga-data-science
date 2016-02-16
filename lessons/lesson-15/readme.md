@@ -65,17 +65,17 @@ Typically, our time series data will be a sequence of values. We will be interes
 
 > **Check** Identify any time components of previous datasets used in class, like the `stumbleupon` dataset, for example. This dataset collects news stories to see which are more long-lasting. In order to do this, we need to identify current event stories, and it's likely we will have to retrain our model over time.
 
-Time series analysis is useful for sales analysis, stock market trends, economic phenomena, as well as social science problems like crime prediction.
+Time series analysis is useful for sales analysis, stock market trends, economic phenomena, social science problems, and more.
 
 Typically we are interested in separating the effects of time into two components:
     - **Trends**: significant increases or decreases over time
     - **Seasonality**: regularly repeating increases or decreases
 
-In the following plot of fireworks injury rates from FiveThirtyEight, we can there is an overall _trend_ of fewer injuries and no seasonal pattern.
+In the following plot of fireworks injury rates from FiveThirtyEight, we can see there is an overall _trend_ of fewer injuries with no _seasonal_ pattern.
 
 ![](./assets/images/munguia-datalab-fireworks2.png)
 
-However, many other phenomena may be entirely seasonal. If we look at the number of searches for the New Hampshire Primary, we can see that there are clear spikes in the number of searches every four years and on election years.
+However, many other phenomena may be entirely seasonal. If we look at the number of searches for the New Hampshire Primary, we can see that there are clear spikes every four years and on election years.
 
 ![](./assets/images/google-nh.png)
 
@@ -85,9 +85,9 @@ Similarly, searches for 'Gingerbread Houses' spike every year around the holiday
 
 Both of these spikes re-occur on a fixed time-scale, making them seasonal patterns. While we may see other types of regularly occurring swings (for example, growth vs recession year economic trends), seasonal patterns should repeat on a fixed timescale or _period_.
 
-Repeated patterns that are aperiodic are known as _cycles_. While identifying aperiodic cycles are important, they are often treated differently that seasonal effects. Seasonal effects are useful for their consistency, because prior data will always be useful as a predictor.
+Repeated patterns that are _aperiodic_ are known as _cycles_. While identifying aperiodic cycles are important, they are often treated differently that seasonal effects. Seasonal effects are useful for their consistency, because prior data from previos years/terms/etc is useful as a predictor.
 
-Lastly, searches for 'iphone', have both a general trend upwards (indicating more popularity for the phone) as well as a spike in September, which is typically when Apple announces new versions.
+Lastly, 'iphone' searches have both a general trend upwards (indicating more popularity for the phone) as well as a spike in September, which is typically when Apple announces new versions.
 
 ![](./assets/images/google-iphone.png)
 
