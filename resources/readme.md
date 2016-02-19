@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Resources
 
-In this folder, you'll find a range of useful support materials. Here you'll find copies of our course syllabus, our standards & learning goals, prework materials, and other documents. Specifically, we've divided materials up by audience:
+In this folder, you'll find a range of useful support materials. Here you'll find copies of our course syllabus, our standards & learning goals, pre-work materials, and other documents. Specifically, we've divided materials up by audience:
 
 
 ### For Instructors
