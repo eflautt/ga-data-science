@@ -295,4 +295,4 @@ Test your code using the [Github markdown API endpoint](https://developer.github
 <a name="contributing-materials"></a>
 ## Contributing Materials
 
-See the [contributing guidelines](../../contributing.md) for information on how to help!
+See the [contributing guidelines](../contributing.md) for information on how to help!
