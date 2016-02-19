@@ -8,9 +8,9 @@ In this folder, you'll find a range of useful support materials. Here you'll fin
 - [Instructor Prep](./instructor-resources/instructor-prep.md)
 - [Github Repo Guide](./instructor-resources/github-repo-instance-guide.md)
 - [Course Syllabus](./instructor-resources/ds-syllabus.pdf)
-- [Suggested Project Timeline](./instructor-resources/DS-project-due-dates.pdf)
+- [Project Timeline](./instructor-resources/DS-project-due-dates.pdf)
 - [Data Science Workflow Guide](./instructor-resources/data-science-workflow-final.pdf)
-- [Course Feedback Guide](./instructor-resources/course-feedback-guidelines.md)
+- [Contributing Guidelines](./instructor-resources/course-feedback-guidelines.md)
 
 ### For Students
 
