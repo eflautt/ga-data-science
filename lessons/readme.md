@@ -4,7 +4,7 @@
 
 ## _CURRENTLY UNDER CONSTRUCTION_
 
-> Timeline: _Lessons 1-12 are complete. Lessons 12 - 18 will be complete by February 11th._
+> Timeline: _Lessons 1-15 are complete. Lessons 16 - 18 will be complete by February 29th._
 
 Our lessons contain objectives, prerequisites, suggested datasets, starter and solution code, and other instructional resources, tying into the overall competencies for each unit. See below for a complete description of all the lesson planning material we provide.
 
