@@ -39,8 +39,6 @@
 
 ---
 
-
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title
 Course Initials | Lesson #
 
@@ -76,6 +74,7 @@ Course Initials | Lesson #
 | 5-10 mins  | [Conclusion](#conclusion)  | Topic description  |
 
 ---
+
 <a name="opening"></a>
 ## Opening (# mins)
 
