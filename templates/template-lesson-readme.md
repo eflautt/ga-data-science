@@ -187,12 +187,11 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 - Cover homework and/or upcoming tasks
 
 ***
-
-### BEFORE NEXT CLASS
+### UPCOMING ASSIGNMENTS
 |   |   |
 |---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
+| **HOMEWORK** | [Example Assignment](#)  |
+| **PROJECTS**  | [Project Title](#)  |
 
 ### ADDITIONAL RESOURCES
 
