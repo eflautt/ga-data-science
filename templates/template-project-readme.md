@@ -1,10 +1,9 @@
 > #### *Guiding Questions When Using This Template*
 >
-> - [ ] Is this for an assignment or project?
 > - [ ] Are the requirements actionable?
 > - [ ] What will students have to do to prepare for this project?
 > - [ ] Are components intended to be worked on individually? In pairs?
-> - [ ] Should students practice pre-work tasks before beginning?
+> - [ ] Should students practice any pre-work tasks before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 
 > Delete this section ^
@@ -44,22 +43,20 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
   - Suggestions for design / style points
 
 - **Submission:**	
-  - TBD by instructor.
-
-> _Iterate as needed with additional deliverables._
+  - Due by X Date
+  - Materials must be in X format.
+  - Submit materials using these instructions.
 
 ---
 
 ## TIMELINE
-> Optional: Only need to include for multi-part projects
+> Optional: Only include for multi-part (final) projects
 
 | Deadline | Deliverable| Description |
 |:-:|---|---|
-| Week 1: Lesson/Date | Title  | Brief component description   |
-| Week 2: Lesson/Date | Title  | Brief component description   |
-| Week 3: Lesson/Date | Title  | Brief component description   |
-| Week 4: Lesson/Date | Title  | Brief component description   |
-| Week 5: Lesson/Date | Title  | Brief component description   |
+| Week X: Lesson/Date | Title  | Brief component description   |
+| Week X: Lesson/Date | Title  | Brief component description   |
+
 
 ---
 
@@ -69,7 +66,6 @@ Your project will assessed using the following course standards:
 
 1. Standard 1
 2. Standard 2
-3. Professional Development
 
 #### Rubric: [Click here for the complete rubric](#). 
 
