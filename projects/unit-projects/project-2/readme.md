@@ -3,7 +3,7 @@ DS | Unit Project 2
 
 ### PROMPT
 
-In this project, you will implement the exploratory analysis plan developed in Project 1. This will lay the groundwork for our our first modeling exercise in Project 3.
+In this project, you will implement the exploratory analysis plan developed in Project 1. This will lay the groundwork for our first modeling exercise in Project 3.
 
 Before completing an analysis, it is critical to understand your data. You will need to identify all the biases and variables in your model in order to accurately assess the strengths and limitations of your analysis and predictions.
 
