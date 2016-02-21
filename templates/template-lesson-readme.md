@@ -87,8 +87,6 @@ Course Initials | Lesson #
 
 **Check:** Ask students to define, explain, or recall any **general** prior concepts or tools.
 
-***
-
 <a name="introduction"></a>
 ## Introduction: Topic (# mins)
 Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
@@ -120,7 +118,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 
 **Check:** Insert 1-2 guiding questions to ensure students are comprehending the material.
 
-***
 
 <a name="demo"></a>
 ## Demo / Codealong: Topic (# mins)
@@ -147,7 +144,6 @@ end
 
 **Check:** By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
-***
 
 <a name="guided-practice"></a>
 ## Guided Practice: Topic (# mins)
@@ -173,8 +169,6 @@ end
 ```
 **Check:** Were students able to successfully solve the problem or complete the task?
 
-***
-
 <a name="ind-practice"></a>
 ## Independent Practice: Topic (# minutes)
 Use the lesson topic/skill to create a deliverable that meets certain criteria. 
@@ -184,8 +178,6 @@ Use the lesson topic/skill to create a deliverable that meets certain criteria.
 Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
 
 **Check:** Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
-
-***
 
 <a name="conclusion"></a>
 ## Conclusion (# mins)
