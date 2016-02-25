@@ -10,8 +10,8 @@ def build_data_frame( cities, states, city_avg_incomes, city_populations ):
     # if all columns are stored in a pandas series or a np array, you do not need to specify index. 
     # index is default ascending
     
-    df.dtypes # get the dataFrame schema
-    df.describe() # get basic dF column statistics 
+    city_table.dtypes # get the dataFrame schema
+    city_table.describe() # get basic dF column statistics 
     return city_table # table has default incremented index
 
 def get_aggregate_mean(x): return x.mean()
