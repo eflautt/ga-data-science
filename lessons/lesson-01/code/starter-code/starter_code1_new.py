@@ -16,8 +16,10 @@ def build_plot(df,x_var,y_var,color):
     plt.legend()
     plt.show()
     
+def convert_datetime_to_date(x): return datetime.datetime.date(x)
 
 def build_plots_for_complaints(df):
+    df['Created Date'] = df['Created Date'].apply(lambda x: convert_datetime_to_date(x))
     complaints = df[(df['Complaint Type'].notnull()) & (df['Complaint Type'] == 'Noise - Street/Sidewalk')]
     
     # filter out rows that have NaN (null) Complaint Types, AND only give me rows that have noise complaints
