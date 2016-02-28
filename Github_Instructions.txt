@@ -1,0 +1,63 @@
+GITHUB INSTRUCTIONS:
+GA PART-TIME DATA SCIENCE
+
+PREREQ:
+
+1. Create a GitHub Account. https://github.com/
+2. Download GitHub Desktop. https://desktop.github.com/
+
+Both Mac and Windows versions are available. 
+
+SETTING UP PERSONAL REPO INSTRUCTIONS:
+
+1. Go to https://github.com/your_github_username
+2. Click on “Repositories”, click new.
+3. Make yourself owner of repository, and use the name. ga-data-science, put a general description, make repository public. 
+4. Click set up in desktop, accept prompt to open GitHub Client.
+5. Clone your repo in a directory you can easily access on your machine (i.e home directory, desktop)
+6. After repository is cloned on GitHub Client, click “Publish” on GitHub Client
+
+Now your repository is created.
+
+1. Go to https://github.com/your_user_name/your_personal_repo_name
+2. Click Settings, go to collaborators, invite Professor and I as collaborators. 
+
+Jonathan Balaban: ultimatist
+Bilind Hajer, bhajer3
+
+Now we can push (write) to your repository. 
+
+SETTING UP CLASS REPO INSTRUCTIONS:
+
+1. Go to https://github.com/ga-students/atl-dat2 
+2. Click Save ga-students/atl-dat2 Icon (Computer bar with arrow icon to the left of Download Zip)
+3. Clone your repo in a directory you can easily access on your machine (i.e home directory, desktop)
+
+Note you should never commit to this repository, if you do, you will not be able to sync (since you are not listed as collaborators, nor will you be able to pull (since you have uncommitted commits). Read more below.
+
+USING GITHUB DESKTOP CLIENT:
+
+Repositories are to the left of the client.
+
+You should have two repositories, once called atl-dat2 and ga-data-science. 
+
+Take files you need from atl-dat2 (cvs files, starter code, etc) and copy over to your ga-data-science directories manual (i.e go to atldat2 folder copy admissions.csv to your ga-data-science folder). 
+
+There are two icons on top of GitHub Client (Commits and History). Whatever your brought over to your ga-data-science folder should show up as a commit. Review commits, make sure these are the files you want to be saved to your repository, enter a commit message, click commit. And then click “Sync.” You can see your commit history on the history tab (“git log” from terminal).
+
+To revert a change/modification (“git revert” in terminal), check all commits that you want to revert (return to its original state), go to repository, and click “discard changes to selected files.” Discarding any changes, removes commit, and returns file to original state before the commit was made.
+
+Your updates should now be reflected on https://github.com/your_github_username/your_personal_repo. 
+
+When you click ga-data-science repository on left bar of GitHub Client, you can pull (get latest updates files) from our class repository. 
+
+Make sure there are no commits to this repo, if you were working from this repo, and saved, there will be commits. Copy over the files that you did create/modify if you want them, to your personal repo, and commit from there. 
+
+You will not be able to pull if there are uncommitted changes to this repo. 
+
+To discard changes to this file (rather modifications or new files), click on individual commits and right click “Discard Changes.” Discarding changes will revert (remove changes to files, or remove new files). And put repository in its latest state from when you last pulled. 
+
+To do a pull from the client on a mac, click repositories on menu tab, and click pull. Now you have most up to date class repository. 
+
+If your using a Windows machine and want to pull from class repository, from the GitHub Desktop, right click the repository name on the left hand side of the GUI, and click “open in git shell”, from here you can type “git pull origin master” and you will have the latest repository on your machine. 
+
